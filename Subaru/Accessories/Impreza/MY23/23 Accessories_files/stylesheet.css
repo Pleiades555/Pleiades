@@ -1,0 +1,1320 @@
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style20
+	{background:#DBDBDB;
+	mso-pattern:black none;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-style-name:"40% - Accent3";
+	mso-style-id:39;}
+.style19
+	{background:#ED7D31;
+	mso-pattern:black none;
+	color:white;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-style-name:Accent2;
+	mso-style-id:33;}
+.style17
+	{color:#0563C1;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-style-name:Hyperlink;
+	mso-style-id:8;}
+a:link
+	{color:#0563C1;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+a:visited
+	{color:#954F72;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;}
+.style16
+	{background:#FFEB9C;
+	mso-pattern:black none;
+	color:#9C5700;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-style-name:Neutral;
+	mso-style-id:28;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+.font16
+	{color:black;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Tahoma, sans-serif;
+	mso-font-charset:0;}
+.font17
+	{color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Tahoma, sans-serif;
+	mso-font-charset:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl65
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;}
+.xl66
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"General Date";}
+.xl67
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;}
+.xl68
+	{mso-style-parent:style0;
+	color:black;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl69
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl70
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl71
+	{mso-style-parent:style20;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl72
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl73
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl74
+	{mso-style-parent:style20;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl75
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl76
+	{mso-style-parent:style20;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl77
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl78
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl79
+	{mso-style-parent:style20;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl80
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl81
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl82
+	{mso-style-parent:style20;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl83
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl84
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl85
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl86
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl87
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl88
+	{mso-style-parent:style20;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl89
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl90
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl91
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border:.5pt solid windowtext;}
+.xl92
+	{mso-style-parent:style17;
+	color:windowtext;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl93
+	{mso-style-parent:style17;
+	color:windowtext;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl94
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl95
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl96
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl97
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl98
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl99
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl100
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl101
+	{mso-style-parent:style17;
+	color:windowtext;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl102
+	{mso-style-parent:style0;
+	color:black;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl103
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl104
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl105
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl106
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl107
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl108
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;}
+.xl109
+	{mso-style-parent:style17;
+	color:windowtext;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl110
+	{mso-style-parent:style17;
+	color:windowtext;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl111
+	{mso-style-parent:style17;
+	color:#0563C1;
+	font-size:18.0pt;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;}
+.xl112
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl113
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid windowtext;}
+.xl114
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl115
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl116
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid windowtext;}
+.xl117
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid black;
+	border-left:none;}
+.xl118
+	{mso-style-parent:style0;
+	color:black;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl119
+	{mso-style-parent:style0;
+	color:black;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl120
+	{mso-style-parent:style0;
+	color:black;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl121
+	{mso-style-parent:style0;
+	color:black;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl122
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl123
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl124
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl125
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl126
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl127
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl128
+	{mso-style-parent:style0;
+	color:black;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;}
+.xl129
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	border:.5pt solid windowtext;}
+.xl130
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	border:.5pt solid windowtext;}
+.xl131
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl132
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl133
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl134
+	{mso-style-parent:style20;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl135
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl136
+	{mso-style-parent:style20;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl137
+	{mso-style-parent:style20;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl138
+	{mso-style-parent:style20;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl139
+	{mso-style-parent:style20;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl140
+	{mso-style-parent:style20;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl141
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl142
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl143
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl144
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	padding-left:9px;
+	mso-char-indent-count:1;}
+.xl145
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl146
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl147
+	{mso-style-parent:style0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl148
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl149
+	{mso-style-parent:style0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl150
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl151
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;}
+.xl152
+	{mso-style-parent:style17;
+	color:#0563C1;
+	font-size:18.0pt;
+	text-decoration:underline;
+	text-underline-style:single;}
+.xl153
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl154
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl155
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl156
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	border:.5pt solid windowtext;}
+.xl157
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl158
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl159
+	{mso-style-parent:style17;
+	color:#0563C1;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;}
+.xl160
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl161
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;}
+.xl162
+	{mso-style-parent:style0;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border:.5pt solid windowtext;}
+.xl163
+	{mso-style-parent:style20;
+	font-weight:700;
+	font-family:"Avenir LT Std 65 Medium", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"General Date";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#DBDBDB;
+	mso-pattern:black none;}
+.xl164
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl165
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl166
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl167
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl168
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl169
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl170
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl171
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl172
+	{mso-style-parent:style16;
+	color:#9C5700;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#FFEB9C;
+	mso-pattern:black none;}
+.xl173
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#ED7D31;
+	mso-pattern:black none;}
+.xl174
+	{mso-style-parent:style19;
+	color:white;
+	font-weight:700;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#ED7D31;
+	mso-pattern:black none;}
