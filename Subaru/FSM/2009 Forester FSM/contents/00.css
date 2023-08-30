@@ -1,0 +1,21 @@
+a.menu { background-image: url(img/bgbutton.gif); border-style:solid; border-width: 1px 1px 1px 1px; border-color:#EFF4F7 #A3B6C5 #A3B6C5 #EFF4F7; color:#425866; height:10px; margin:1px; padding-top: 1px; padding-left: 3px; padding-right: 3px; font-size: 10pt; text-align: center}
+a.menu:hover { background-image: url(img/bgbutton_0.gif); border-style:solid; border-width: 1px 1px 1px 1px; border-color:#EFF4F7 #A3B6C5 #A3B6C5 #EFF4F7; color:#D18A00; height:10px; margin:1px; padding-top: 1px; padding-left: 3px; padding-right: 3px; font-size: 10pt; text-align: center}
+a.menu:active { background-image: url(img/bgbutton_.gif); border-style:solid; border-width: 1px 1px 1px 1px; border-color:#A3B6C5 #E1EBF3 #E1EBF3 #A3B6C5; color:#D18A00; height:10px; margin:1px; padding-top: 1px; padding-left: 3px; padding-right: 3px; font-size: 10pt; text-align: center}
+
+.text01 {  font-size: 9pt; color: #FFFFFF}
+body {  background-image: url(img/headbg.gif)}
+A:link    { color: #425866;   text-decoration: none; }
+A:visited { color: #425866; text-decoration: none; }
+A:active  { color: #425866; text-decoration: none; }
+A:hover   { color: #D18A00;    text-decoration: none; }
+BODY { 
+scrollbar-base-color : #9FABB0;
+scrollbar-face-color : #9FABB0;
+scrollbar-track-color: #8C999F;
+scrollbar-arrow-color : #CED7DB;
+scrollbar-3dlight-color: #CED7DB;
+scrollbar-highlight-color : #9FABB0;
+scrollbar-shadow-color : #9FABB0;
+scrollbar-darkshadow-color : #CED7DB;; background-repeat: repeat-x.gray2 {  background-color: #8C8C8C}
+
+.space {  padding-bottom: 2px}

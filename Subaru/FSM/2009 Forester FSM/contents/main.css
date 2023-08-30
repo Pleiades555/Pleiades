@@ -1,0 +1,30 @@
+
+A:link    { color: #687E8C;   text-decoration: none; }
+A:visited { color: #687E8C; text-decoration: none; }
+A:active  { color: #687E8C; text-decoration: underline; }
+A:hover   { color: #304654;    text-decoration: underline; }
+BODY { 
+scrollbar-base-color : #9FABB0;
+scrollbar-face-color : #FFFFFF;
+scrollbar-track-color: #FFFFFF;
+scrollbar-arrow-color : #CED7DB;
+scrollbar-3dlight-color: #FFFFFF;
+scrollbar-highlight-color : #9FABB0;
+scrollbar-shadow-color : #9FABB0;
+scrollbar-darkshadow-color : #FFFFFF;.gray2 {  background-color: #8C8C8C}
+.text01 {  font-size: 10pt; color: #333333; padding-bottom: 3px; padding-top: 3px; padding-left: 10px; text-align: left; line-height: 1.3em; padding-right: 10px}
+.line {  border: 1px #999999 solid}
+.top {  background-color: #839AAB; border: 2px none; border-color: #CCCCCC solid}
+.logo {  font-size: 13pt; color: #FFFFFF; text-align: center; font-weight: bold; background-color: #AFBEC9}
+.text_midashi {  font-size: 12pt; font-weight: bold; color: #D18A00; background-color: #FBF5F2; height: 40px; width: 40px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; text-align: center; vertical-align: middle; border: 1px #CCCCCC none}
+.waku {  border: 1px solid; border-color: #CCCCCC solid}
+.color {  font-size: 10pt; color: #333333; background-color: #F6F6F6; padding-top: 3px; padding-bottom: 3px; padding-left: 10px; padding-right: 10px}
+.text02 {  font-size: 10pt; color: #FFFFFF; background-color: #D18A00; font-weight: bold; padding-top: 5px; padding-bottom: 5px; padding-left: 10px}.text03 {  font-size: 9pt; color: #666666}
+.shima {  background-image: url(img/shima.gif); padding-left: 10px; font-size: 9pt; color: #587685}
+.car {  background-image: url(img/car.gif); height: 439px; width: 681px; background-repeat: no-repeat; background-position: center center}
+.dots {  border-color: black black #999999; font-size: 9pt; color: #2F4464; border-style: dotted; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px}
+.text04 { font-size: 8pt; color: #666666 }
+
+/*	ここから下は絵目次のポップアップ用(11/26追加)	*/
+.popmenu { background-image: url(img/shima.gif); padding-left: 9px; font-size: 8pt; font-family:"MS UI Gothic"; color: #243A49}
+.menu_v{ position:absolute; visibility:hidden; left:-100; top:-100; filter:Alpha(opacity=85);}
