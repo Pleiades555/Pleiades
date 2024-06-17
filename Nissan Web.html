@@ -15,11 +15,17 @@
             color: #f5f5f5;
             padding: 20px;
             cursor: url('https://cur.cursors-4u.net/mechanics/mec-4/mec381.cur'), auto; /* Replace with actual URL of Nissan cursor */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
         h1 {
             text-align: center;
             animation: fadeInDown 1s ease-out;
+            margin-bottom: 20px;
         }
 
         @keyframes fadeInDown {
@@ -36,7 +42,7 @@
         ul {
             list-style-type: none;
             padding: 0;
-            text-align: center;
+            text-align: left; /* Align list items to the left */
             animation: fadeInUp 1s ease-out;
         }
 
@@ -68,10 +74,14 @@
         a {
             text-decoration: none;
             color: #f5f5f5;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
 
         a:hover {
-            text-decoration: underline;
+            background: rgba(0, 0, 0, 0.7);
         }
     </style>
 </head>
