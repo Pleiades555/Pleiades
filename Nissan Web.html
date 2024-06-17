@@ -18,16 +18,50 @@
 
         h1 {
             text-align: center;
+            animation: fadeInDown 1s ease-out; /* Animation for heading */
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         ul {
             list-style-type: none;
             padding: 0;
             text-align: center;
+            animation: fadeInUp 1s ease-out; /* Animation for list */
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         li {
             margin-bottom: 10px;
+            animation: fadeIn 1s ease-out; /* Animation for list items */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
 
         a {
