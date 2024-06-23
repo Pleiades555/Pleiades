@@ -1,75 +1,55 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
-	<style>
-		
-			
-		body {	
-			background-image: url('back.jpg');
-        		background-repeat: no-repeat;
-        		background-attachment: fixed;
-        		background-position: left;
-			background-size: cover;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {	
+            background-image: url('back.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: left;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            color: #f5f5f5;
+        }
+        a {
+            color: #0B9EEB;
+            background: #1a1a1a;
+            opacity: .75;
+        }
+        .copy-button {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ford Recalls</h1>
+    <ul id="recall-list">
+        <li><a href="./TSB/23P23.pdf">1. 23P23 - Intercooler Hose Recall</a></li>
+        <li><a href="./TSB/23B15.pdf">2. 23B15 - Exhaust Bracket Recall</a></li>
+        <!-- Add more list items as needed -->
+        <li><a href="./TSB/22B07.pdf">26. 22B07 - 2.0L Panther Oil Pump Failure</a></li>
+        <li><a href="../Ford Web.html">?. Back</a></li>
+    </ul>
 
-
-
-
-			font-family: Arial, sans-serif;  /* set font family */
-			font-size: 30px;  /* set font size */
-			color: #f5f5f5;  /* set font color */
-			
-			a {
-		        color: #0B9EEB;
-			background: #1a1a1a;
-			opacity: .75;
-    			  }
-}
-	</style>
-
-
-
-
-
-
-<h1>Ford Recalls</h1>
-
-</ul>
-	<li><a href="./TSB/23P23.pdf">1. 23P23 - Intercooler Hose Recall</a></li>
-	<li><a href="./TSB/23B15.pdf">2. 23B15 - Exhaust Bracket Recall</a></li>
-	<li><a href="./TSB/21P14.pdf">3. 21P14 - Power Roller Shutter Recall</a></li>
-	<li><a href="./TSB/17-2062.pdf">4. 17-2062 - DPS6 Excessive Clutch Shudder</a></li>
-	<li><a href="./TSB/23-2173.pdf">5. 23-2173 - Glow Plug Recall</a></li>
-	<li><a href="./TSB/22S06.pdf">6. 22S06 - Mustang Lid Wiring Recall</a></li>
-	<li><a href="./TSB/21-2279.pdf">7. 21-2279 - Fuel Pump Recall</a></li>
-	<li><a href="./TSB/22B44.pdf">8. 22B44 - Mondeo Front Brake Flexible Hose Recall</a></li>
-	<li><a href="./TSB/14M02.pdf">9. 14M02 - DPS6 Powershift Transmission Control Module Recall</a></li>
-	<li><a href="./TSB/14M02.S3.pdf">10. 14M02/S3 - DPS6 Powershift Transmission Control Module</a></li>
-	<li><a href="./TSB/23-2263.pdf">11. 23-2263 - 2.0L Panther Pump Gear Recalls</a></li>
-	<li><a href="./TSB/16S38S2.pdf">12. 16S38S2 - Focus Fuel Tank Purge Vent</a></li>
-	<li><a href="./TSB/20N13.pdf">13. 20N13 - Door Latch Replacement</a></li>
-	<li><a href="./TSB/15S24.pdf">14. 15S24 - Focus Drive Shafts</a></li>
-	<li><a href="./TSB/21-2035.pdf">15. 21-2035 - Ranger/Everest Front Seat Squeak</a></li>
-	<li><a href="./TSB/23-2262.pdf">16. 23-2262 - B-Pillar Ticking Sound Ranger/Everest</a></li>
-	<li><a href="./TSB/22-2049.pdf">17. 22-2049 - Water Ingress into Electronic Power Assist Steering (EPAS) </a></li>
-	<li><a href="./TSB/22N13.pdf">18. 22N13 - Everest - Adblue Warning and CEL</a></li>
-	<li><a href="./TSB/S1406.pdf">19. S1406 - Fiesta - Glow Plug Control Module</a></li>
-	<li><a href="./TSB/23-2312.pdf">20. 23-2312 - Everest and Ranger 12" Centre Display Screen Blank</a></li>
-	<li><a href="./TSB/23-2323.pdf">21. 23-2323 - Next Gen Ranger and Everest Interior Rattle at Front of Vehicle</a></li>
-	<li><a href="./TSB/23-2303.pdf">22. 23-2303 - Next Gen Everest Liftgate Water Leak from Liftgate Mounted Rear Lamp</a></li>
-	<li><a href="./TSB/20-2335.pdf">23. 20-2335 - Endura Illuminated Malfuction Indication Lamp (MIL)</a></li>
-	<li><a href="./TSB/23-2268.pdf">24. 23-2268 - Focus/Escape/Kuga Rear Brake Squeal</a></li>
-	<li><a href="./TSB/20-2193.pdf">25. 20-2193 - 2.0L Panther engine and 10R80 - Loss of motive power (DTC P0868)</a></li>
-	<li><a href="./TSB/22B07.pdf">26. 22B07 - 2.0L Panther Oil Pump Failure</a></li>
-	
-
-	
-	<li><a href="../Ford Web.html">?. Back</a></li> 
-</ul>
-</p>
-
-<br>
+    <script>
+        // JavaScript to add copy buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            var listItems = document.querySelectorAll('#recall-list li');
+            listItems.forEach(function(item) {
+                var linkText = item.querySelector('a').innerText;
+                var copyButton = document.createElement('span');
+                copyButton.className = 'copy-button';
+                copyButton.innerText = 'Copy';
+                copyButton.addEventListener('click', function() {
+                    navigator.clipboard.writeText(linkText);
+                    alert('Copied to clipboard: ' + linkText);
+                });
+                item.appendChild(copyButton);
+            });
+        });
+    </script>
 </body>
 </html>
