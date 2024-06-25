@@ -55,7 +55,6 @@
             background-color: #1a1a1a;
             padding: 5px 10px;
             border-radius: 5px;
-            margin-left: 10px; /* Space between buttons */
         }
     </style>
 </head>
@@ -97,40 +96,14 @@
         document.addEventListener('DOMContentLoaded', function() {
             var listItems = document.querySelectorAll('#recall-list li');
             listItems.forEach(function(item, index) {
-                var spanText = item.querySelector('span').innerText;
-                var copyText = '';
-
-                // Assign the correct copy text based on the span text
-                switch (spanText) {
-                    case '4x4 Everest Kit':
-                        copyText = '23-2263-4E';
-                        break;
-                    case '4x2 Everest Kit':
-                        copyText = '23-2263-2E';
-                        break;
-                    case '4x4 Ranger Kit':
-                        copyText = '23-2263-4R';
-                        break;
-                    case '4x2 Ranger Kit':
-                        copyText = '23-2263-2R';
-                        break;
-                    case '4x4 Raptor Kit':
-                        copyText = '23-2263-R';
-                        break;
-                    default:
-                        return; // Exit function if not one of the specified lines
-
-                }
-
+                var firstPieceText = item.querySelector('span').innerText;
                 var copyButton = document.createElement('span');
                 copyButton.className = 'copy-button';
                 copyButton.innerText = 'Copy';
                 copyButton.addEventListener('click', function() {
-                    navigator.clipboard.writeText(copyText);
-                    alert('Copied to clipboard: ' + copyText);
+                    navigator.clipboard.writeText(firstPieceText);
+                    alert('Copied to clipboard: ' + firstPieceText);
                 });
-
-                // Append copy button to the current list item
                 item.appendChild(copyButton);
             });
         });
