@@ -37,6 +37,7 @@
             padding: 10px;
             border-radius: 5px;
             display: flex; /* Flexbox for aligning items */
+            flex-wrap: wrap; /* Allow buttons to wrap */
             justify-content: space-between; /* Space between list item content and button */
             align-items: center; /* Center vertically */
         }
@@ -55,6 +56,7 @@
             background-color: #1a1a1a;
             padding: 5px 10px;
             border-radius: 5px;
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -72,7 +74,16 @@
             <li><span>22B44</span> - <a href="./TSB/22B44.pdf">Mondeo Front Brake Flexible Hose Recall</a></li>
             <li><span>14M02</span> - <a href="./TSB/14M02.pdf">DPS6 Powershift Transmission Control Module Recall</a></li>
             <li><span>14M02.S3</span> - <a href="./TSB/14M02.S3.pdf">DPS6 Powershift Transmission Control Module</a></li>
-            <li><span>23-2263</span> - <a href="./TSB/23-2263.pdf">2.0L Panther Pump Gear Recalls</a></li>
+            <li>
+                <span>23-2263</span> - <a href="./TSB/23-2263.pdf">2.0L Panther Pump Gear Recalls</a>
+                <div>
+                    <span class="copy-button" data-copy-text="23-2263-4E">4x4 Everest</span>
+                    <span class="copy-button" data-copy-text="23-2263-2E">4x2 Everest</span>
+                    <span class="copy-button" data-copy-text="23-2263-4R">4x4 Ranger</span>
+                    <span class="copy-button" data-copy-text="23-2263-2R">4x2 Ranger</span>
+                    <span class="copy-button" data-copy-text="23-2263-R">4x4 Raptor</span>
+                </div>
+            </li>
             <li><span>16S38S2</span> - <a href="./TSB/16S38S2.pdf">Focus Fuel Tank Purge Vent</a></li>
             <li><span>20N13</span> - <a href="./TSB/20N13.pdf">Door Latch Replacement</a></li>
             <li><span>15S24</span> - <a href="./TSB/15S24.pdf">Focus Drive Shafts</a></li>
@@ -96,15 +107,14 @@
         document.addEventListener('DOMContentLoaded', function() {
             var listItems = document.querySelectorAll('#recall-list li');
             listItems.forEach(function(item, index) {
-                var firstPieceText = item.querySelector('span').innerText;
-                var copyButton = document.createElement('span');
-                copyButton.className = 'copy-button';
-                copyButton.innerText = 'Copy';
-                copyButton.addEventListener('click', function() {
-                    navigator.clipboard.writeText(firstPieceText);
-                    alert('Copied to clipboard: ' + firstPieceText);
+                var copyButtons = item.querySelectorAll('.copy-button');
+                copyButtons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        var copyText = button.getAttribute('data-copy-text');
+                        navigator.clipboard.writeText(copyText);
+                        alert('Copied to clipboard: ' + copyText);
+                    });
                 });
-                item.appendChild(copyButton);
             });
         });
     </script>
