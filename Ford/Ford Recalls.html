@@ -34,10 +34,9 @@
         li {
             margin-bottom: 10px;
             background-color: #ffffff; /* White background for list items */
-            padding: 10px;
+            padding: 20px; /* Increase padding to make each line taller */
             border-radius: 5px;
             display: flex; /* Flexbox for aligning items */
-            flex-wrap: wrap; /* Allow buttons to wrap */
             justify-content: space-between; /* Space between list item content and button */
             align-items: center; /* Center vertically */
         }
@@ -56,7 +55,6 @@
             background-color: #1a1a1a;
             padding: 5px 10px;
             border-radius: 5px;
-            margin-left: 5px;
         }
     </style>
 </head>
@@ -64,56 +62,50 @@
     <div class="recalls-container">
         <h1>Ford Recalls</h1>
         <ul id="recall-list">
-            <li><span>23P23</span> - <a href="./TSB/23P23.pdf">Intercooler Hose Recall</a></li>
-            <li><span>23B15</span> - <a href="./TSB/23B15.pdf">Exhaust Bracket Recall</a></li>
-            <li><span>21P14</span> - <a href="./TSB/21P14.pdf">Power Roller Shutter Recall</a></li>
-            <li><span>17-2062</span> - <a href="./TSB/17-2062.pdf">DPS6 Excessive Clutch Shudder</a></li>
-            <li><span>23-2173</span> - <a href="./TSB/23-2173.pdf">Glow Plug Recall</a></li>
-            <li><span>22S06</span> - <a href="./TSB/22S06.pdf">Mustang Lid Wiring Recall</a></li>
-            <li><span>21-2279</span> - <a href="./TSB/21-2279.pdf">Fuel Pump Recall</a></li>
-            <li><span>22B44</span> - <a href="./TSB/22B44.pdf">Mondeo Front Brake Flexible Hose Recall</a></li>
-            <li><span>14M02</span> - <a href="./TSB/14M02.pdf">DPS6 Powershift Transmission Control Module Recall</a></li>
-            <li><span>14M02.S3</span> - <a href="./TSB/14M02.S3.pdf">DPS6 Powershift Transmission Control Module</a></li>
-            <li>
-                <span>23-2263</span> - <a href="./TSB/23-2263.pdf">2.0L Panther Pump Gear Recalls</a>
-                <div>
-                    <span class="copy-button" data-copy-text="23-2263-4E">4x4 Everest</span>
-                    <span class="copy-button" data-copy-text="23-2263-2E">4x2 Everest</span>
-                    <span class="copy-button" data-copy-text="23-2263-4R">4x4 Ranger</span>
-                    <span class="copy-button" data-copy-text="23-2263-2R">4x2 Ranger</span>
-                    <span class="copy-button" data-copy-text="23-2263-R">4x4 Raptor</span>
-                </div>
+            <li><span>23P23</span> - <a href="./TSB/23P23.pdf">Intercooler Hose Recall</a><span class="copy-button">Copy</span></li>
+            <li><span>23B15</span> - <a href="./TSB/23B15.pdf">Exhaust Bracket Recall</a><span class="copy-button">Copy</span></li>
+            <li><span>21P14</span> - <a href="./TSB/21P14.pdf">Power Roller Shutter Recall</a><span class="copy-button">Copy</span></li>
+            <li><span>17-2062</span> - <a href="./TSB/17-2062.pdf">DPS6 Excessive Clutch Shudder</a><span class="copy-button">Copy</span></li>
+            <li><span>23-2173</span> - <a href="./TSB/23-2173.pdf">Glow Plug Recall</a><span class="copy-button">Copy</span></li>
+            <li><span>22S06</span> - <a href="./TSB/22S06.pdf">Mustang Lid Wiring Recall</a><span class="copy-button">Copy</span></li>
+            <li><span>21-2279</span> - <a href="./TSB/21-2279.pdf">Fuel Pump Recall</a><span class="copy-button">Copy</span></li>
+            <li><span>22B44</span> - <a href="./TSB/22B44.pdf">Mondeo Front Brake Flexible Hose Recall</a><span class="copy-button">Copy</span></li>
+            <li><span>14M02</span> - <a href="./TSB/14M02.pdf">DPS6 Powershift Transmission Control Module Recall</a><span class="copy-button">Copy</span></li>
+            <li><span>14M02.S3</span> - <a href="./TSB/14M02.S3.pdf">DPS6 Powershift Transmission Control Module</a><span class="copy-button">Copy</span></li>
+            <li><span>23-2263</span> - <a href="./TSB/23-2263.pdf">2.0L Panther Pump Gear Recalls</a>
+                <span class="copy-button" data-copy="23-2263-4E">4x4 Everest</span>
+                <span class="copy-button" data-copy="23-2263-2E">4x2 Everest</span>
+                <span class="copy-button" data-copy="23-2263-4R">4x4 Ranger</span>
+                <span class="copy-button" data-copy="23-2263-2R">4x2 Ranger</span>
+                <span class="copy-button" data-copy="23-2263-R">4x4 Raptor</span>
             </li>
-            <li><span>16S38S2</span> - <a href="./TSB/16S38S2.pdf">Focus Fuel Tank Purge Vent</a></li>
-            <li><span>20N13</span> - <a href="./TSB/20N13.pdf">Door Latch Replacement</a></li>
-            <li><span>15S24</span> - <a href="./TSB/15S24.pdf">Focus Drive Shafts</a></li>
-            <li><span>21-2035</span> - <a href="./TSB/21-2035.pdf">Ranger/Everest Front Seat Squeak</a></li>
-            <li><span>23-2262</span> - <a href="./TSB/23-2262.pdf">B-Pillar Ticking Sound Ranger/Everest</a></li>
-            <li><span>22-2049</span> - <a href="./TSB/22-2049.pdf">Water Ingress into Electronic Power Assist Steering (EPAS)</a></li>
-            <li><span>22N13</span> - <a href="./TSB/22N13.pdf">Everest - Adblue Warning and CEL</a></li>
-            <li><span>S1406</span> - <a href="./TSB/S1406.pdf">Fiesta - Glow Plug Control Module</a></li>
-            <li><span>23-2312</span> - <a href="./TSB/23-2312.pdf">Everest and Ranger 12" Centre Display Screen Blank</a></li>
-            <li><span>23-2323</span> - <a href="./TSB/23-2323.pdf">Next Gen Ranger and Everest Interior Rattle at Front of Vehicle</a></li>
-            <li><span>23-2303</span> - <a href="./TSB/23-2303.pdf">Next Gen Everest Liftgate Water Leak from Liftgate Mounted Rear Lamp</a></li>
-            <li><span>20-2335</span> - <a href="./TSB/20-2335.pdf">Endura Illuminated Malfuction Indication Lamp (MIL)</a></li>
-            <li><span>23-2268</span> - <a href="./TSB/23-2268.pdf">Focus/Escape/Kuga Rear Brake Squeal</a></li>
-            <li><span>20-2193</span> - <a href="./TSB/20-2193.pdf">2.0L Panther engine and 10R80 - Loss of motive power (DTC P0868)</a></li>
-            <li><span>22B07</span> - <a href="./TSB/22B07.pdf">2.0L Panther Oil Pump Failure</a></li>
+            <li><span>16S38S2</span> - <a href="./TSB/16S38S2.pdf">Focus Fuel Tank Purge Vent</a><span class="copy-button">Copy</span></li>
+            <li><span>20N13</span> - <a href="./TSB/20N13.pdf">Door Latch Replacement</a><span class="copy-button">Copy</span></li>
+            <li><span>15S24</span> - <a href="./TSB/15S24.pdf">Focus Drive Shafts</a><span class="copy-button">Copy</span></li>
+            <li><span>21-2035</span> - <a href="./TSB/21-2035.pdf">Ranger/Everest Front Seat Squeak</a><span class="copy-button">Copy</span></li>
+            <li><span>23-2262</span> - <a href="./TSB/23-2262.pdf">B-Pillar Ticking Sound Ranger/Everest</a><span class="copy-button">Copy</span></li>
+            <li><span>22-2049</span> - <a href="./TSB/22-2049.pdf">Water Ingress into Electronic Power Assist Steering (EPAS)</a><span class="copy-button">Copy</span></li>
+            <li><span>22N13</span> - <a href="./TSB/22N13.pdf">Everest - Adblue Warning and CEL</a><span class="copy-button">Copy</span></li>
+            <li><span>S1406</span> - <a href="./TSB/S1406.pdf">Fiesta - Glow Plug Control Module</a><span class="copy-button">Copy</span></li>
+            <li><span>23-2312</span> - <a href="./TSB/23-2312.pdf">Everest and Ranger 12" Centre Display Screen Blank</a><span class="copy-button">Copy</span></li>
+            <li><span>23-2323</span> - <a href="./TSB/23-2323.pdf">Next Gen Ranger and Everest Interior Rattle at Front of Vehicle</a><span class="copy-button">Copy</span></li>
+            <li><span>23-2303</span> - <a href="./TSB/23-2303.pdf">Next Gen Everest Liftgate Water Leak from Liftgate Mounted Rear Lamp</a><span class="copy-button">Copy</span></li>
+            <li><span>20-2335</span> - <a href="./TSB/20-2335.pdf">Endura Illuminated Malfunction Indication Lamp (MIL)</a><span class="copy-button">Copy</span></li>
+            <li><span>23-2268</span> - <a href="./TSB/23-2268.pdf">Focus/Escape/Kuga Rear Brake Squeal</a><span class="copy-button">Copy</span></li>
+            <li><span>20-2193</span> - <a href="./TSB/20-2193.pdf">2.0L Panther engine and 10R80 - Loss of motive power (DTC P0868)</a><span class="copy-button">Copy</span></li>
+            <li><span>22B07</span> - <a href="./TSB/22B07.pdf">2.0L Panther Oil Pump Failure</a><span class="copy-button">Copy</span></li>
             <li><span>Ford Web</span> - <a href="../Ford Web.html">?. Back</a></li>
         </ul>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var listItems = document.querySelectorAll('#recall-list li');
-            listItems.forEach(function(item, index) {
-                var copyButtons = item.querySelectorAll('.copy-button');
-                copyButtons.forEach(function(button) {
-                    button.addEventListener('click', function() {
-                        var copyText = button.getAttribute('data-copy-text');
-                        navigator.clipboard.writeText(copyText);
-                        alert('Copied to clipboard: ' + copyText);
-                    });
+            var copyButtons = document.querySelectorAll('.copy-button');
+            copyButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var copyText = this.getAttribute('data-copy') || this.previousElementSibling.innerText;
+                    navigator.clipboard.writeText(copyText);
+                    alert('Copied to clipboard: ' + copyText);
                 });
             });
         });
