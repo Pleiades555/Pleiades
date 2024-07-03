@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-image: url('https://images.hgmsites.net/hug/jaguar-vision-gran-turismo-sv-concept_100774242_h.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #ff6600;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #ff6600;
+            background: #1a1a1a;
+            opacity: 0.75;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        a:hover {
+            opacity: 1;
+        }
+        button {
+            margin-left: 10px;
+            padding: 10px;
+            background-color: #ff6600;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff3300;
+        }
+    </style>
+</head>
+<body>
+    <h1>L663 Defender D300 Service Kits</h1>
+    <ul>
+        <li>
+            <a href="">1. 34,000kms/24 Months</a>
+            <button onclick="copyText('SRVD300/24')">Copy</button>
+        </li>
+        <li>
+            <a href="">2. 68,000kms/48 Months</a>
+            <button onclick="copyText('SRVD300/48')">Copy</button>
+        </li>
+        <li>
+            <a href="">3. 102,000km/72 Months</a>
+            <button onclick="copyText('SRVD300/72')">Copy</button>
+        </li>
+        <li>
+            <a href="">4. 136,000km/96 Months</a>
+            <button onclick="copyText('SRVD300/96')">Copy</button>
+        </li>
+        <li>
+            <a href="">5. 170,000km/120 Months</a>
+            <button onclick="copyText('SRVD300/120')">Copy</button>
+        </li>
+        <li>
+            <a href="./L663 Defender.html">7. Back</a>
+        </li>
+    </ul>
+
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Copied to clipboard: ' + text);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
