@@ -1,0 +1,2360 @@
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style563
+	{mso-number-format:"_-\0022$\0022* \#\,\#\#0\.00_-\;\\-\0022$\0022* \#\,\#\#0\.00_-\;_-\0022$\0022* \0022-\0022??_-\;_-\@_-";
+	mso-style-name:Currency;
+	mso-style-id:4;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+.style265
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:"Normal 2";}
+.style562
+	{mso-number-format:0%;
+	mso-style-name:Percent;
+	mso-style-id:5;}
+.font29
+	{color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;}
+.font31
+	{color:#1F497D;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;}
+.font39
+	{color:windowtext;
+	font-size:24.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;}
+.font43
+	{color:black;
+	font-size:16.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;}
+.font56
+	{color:#1F497D;
+	font-size:16.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;}
+.font64
+	{color:red;
+	font-size:24.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;}
+.font65
+	{color:red;
+	font-size:24.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl570
+	{mso-style-parent:style0;
+	background:white;
+	mso-pattern:black none;}
+.xl571
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl572
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl573
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	background:white;
+	mso-pattern:black none;}
+.xl574
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl575
+	{mso-style-parent:style0;
+	color:#595959;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl576
+	{mso-style-parent:style265;
+	color:#404040;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl577
+	{mso-style-parent:style265;
+	color:#404040;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl578
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	mso-number-format:Fixed;
+	background:white;
+	mso-pattern:black none;}
+.xl579
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl580
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl581
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl582
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;}
+.xl583
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;}
+.xl584
+	{mso-style-parent:style0;
+	font-size:15.0pt;}
+.xl585
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:20.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl586
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:13.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl587
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl588
+	{mso-style-parent:style0;
+	color:#0033CC;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:top;
+	background:white;
+	mso-pattern:black none;}
+.xl589
+	{mso-style-parent:style0;
+	color:#0033CC;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00_\)\;\[Red\]\\\(\0022$\0022\#\,\#\#0\.00\\\)";
+	text-align:left;
+	vertical-align:top;
+	background:white;
+	mso-pattern:black none;}
+.xl590
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:17.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;}
+.xl591
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.5pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl592
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:17.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;}
+.xl593
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl594
+	{mso-style-parent:style0;
+	color:#1F497D;
+	font-size:15.5pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl595
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl596
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl597
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl598
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl599
+	{mso-style-parent:style265;
+	color:#1F497D;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl600
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-family:"Wingdings 3", serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;}
+.xl601
+	{mso-style-parent:style265;
+	color:#4BACC6;
+	font-size:15.0pt;
+	font-family:"Wingdings 3", serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;}
+.xl602
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;}
+.xl603
+	{mso-style-parent:style0;
+	color:#595959;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;}
+.xl604
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl605
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	background:white;
+	mso-pattern:black none;}
+.xl606
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl607
+	{mso-style-parent:style0;
+	font-size:20.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl608
+	{mso-style-parent:style0;
+	color:#0033CC;
+	font-weight:700;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0_\)\;\[Red\]\\\(\0022$\0022\#\,\#\#0\\\)";
+	text-align:left;
+	vertical-align:top;
+	background:white;
+	mso-pattern:black none;}
+.xl609
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:24.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl610
+	{mso-style-parent:style265;
+	color:#404040;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;}
+.xl611
+	{mso-style-parent:style265;
+	color:#404040;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;}
+.xl612
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;}
+.xl613
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:gray;
+	mso-pattern:black none;}
+.xl614
+	{mso-style-parent:style265;
+	color:#404040;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:gray;
+	mso-pattern:black none;}
+.xl615
+	{mso-style-parent:style265;
+	color:#404040;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:gray;
+	mso-pattern:black none;}
+.xl616
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:gray;
+	mso-pattern:black none;}
+.xl617
+	{mso-style-parent:style0;
+	color:white;
+	font-size:26.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:gray;
+	mso-pattern:black none;}
+.xl618
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:16.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:gray;
+	mso-pattern:black none;}
+.xl619
+	{mso-style-parent:style265;
+	color:white;
+	font-size:20.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:gray;
+	mso-pattern:black none;}
+.xl620
+	{mso-style-parent:style562;
+	color:#0033CC;
+	font-size:18.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0%;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:black none;}
+.xl621
+	{mso-style-parent:style0;
+	color:#0033CC;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:black none;}
+.xl622
+	{mso-style-parent:style0;
+	color:#0033CC;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:top;
+	border:.5pt solid windowtext;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl623
+	{mso-style-parent:style0;
+	color:#948A54;
+	font-size:20.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl624
+	{mso-style-parent:style0;
+	color:#948A54;
+	font-size:12.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl625
+	{mso-style-parent:style0;
+	color:#948A54;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl626
+	{mso-style-parent:style562;
+	font-size:17.0pt;
+	mso-number-format:0%;
+	text-align:center;
+	vertical-align:middle;}
+.xl627
+	{mso-style-parent:style562;
+	font-size:17.0pt;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;}
+.xl628
+	{mso-style-parent:style0;
+	font-size:17.0pt;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;}
+.xl629
+	{mso-style-parent:style0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	background:white;
+	mso-pattern:black none;}
+.xl630
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl631
+	{mso-style-parent:style0;
+	color:#1F497D;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl632
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl633
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:12.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;}
+.xl634
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl635
+	{mso-style-parent:style0;
+	background:#BFBFBF;
+	mso-pattern:black none;}
+.xl636
+	{mso-style-parent:style0;
+	text-align:center;
+	background:#BFBFBF;
+	mso-pattern:black none;}
+.xl637
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl638
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl639
+	{mso-style-parent:style0;
+	font-size:17.0pt;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	text-align:center;
+	vertical-align:middle;}
+.xl640
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl641
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl642
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.5pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl643
+	{mso-style-parent:style0;
+	mso-number-format:0;
+	background:white;
+	mso-pattern:black none;}
+.xl644
+	{mso-style-parent:style265;
+	color:#404040;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl645
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl646
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:24.0pt;
+	font-weight:700;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl647
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl648
+	{mso-style-parent:style0;
+	color:#595959;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl649
+	{mso-style-parent:style0;
+	color:#595959;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl650
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl651
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:24.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl652
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl653
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl654
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl655
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl656
+	{mso-style-parent:style0;
+	color:#404040;
+	font-size:17.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;}
+.xl657
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:17.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#DCE6F1;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl658
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:17.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	mso-number-format:"0\.0";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#DCE6F1;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl659
+	{mso-style-parent:style265;
+	color:#404040;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl660
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl661
+	{mso-style-parent:style563;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl662
+	{mso-style-parent:style563;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl663
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl664
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl665
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:24.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl666
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl667
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl668
+	{mso-style-parent:style0;
+	color:#C0504D;
+	font-size:15.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl669
+	{mso-style-parent:style0;
+	color:#C0504D;
+	font-size:15.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl670
+	{mso-style-parent:style0;
+	color:#C0504D;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl671
+	{mso-style-parent:style0;
+	color:#C0504D;
+	font-size:15.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl672
+	{mso-style-parent:style0;
+	color:#404040;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl673
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl674
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl675
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl676
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl677
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl678
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl679
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl680
+	{mso-style-parent:style563;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl681
+	{mso-style-parent:style265;
+	color:#1F497D;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl682
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl683
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0%;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl684
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:black none;}
+.xl685
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl686
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl687
+	{mso-style-parent:style563;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl688
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0%;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;}
+.xl689
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl690
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl691
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl692
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl693
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl694
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:black none;}
+.xl695
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl696
+	{mso-style-parent:style265;
+	color:#8064A2;
+	font-size:18.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl697
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:black none;}
+.xl698
+	{mso-style-parent:style265;
+	color:#8064A2;
+	font-size:18.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl699
+	{mso-style-parent:style265;
+	color:#8064A2;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl700
+	{mso-style-parent:style265;
+	color:#8064A2;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl701
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	background:white;
+	mso-pattern:black none;}
+.xl702
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:white;
+	mso-pattern:black none;}
+.xl703
+	{mso-style-parent:style563;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl704
+	{mso-style-parent:style0;
+	color:#595959;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl705
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl706
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl707
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl708
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl709
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;}
+.xl710
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;}
+.xl711
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;}
+.xl712
+	{mso-style-parent:style563;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;}
+.xl713
+	{mso-style-parent:style265;
+	color:#1F497D;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;}
+.xl714
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0%;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;}
+.xl715
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	vertical-align:middle;}
+.xl716
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	white-space:normal;}
+.xl717
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;}
+.xl718
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl719
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl720
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl721
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;}
+.xl722
+	{mso-style-parent:style562;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0%;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;}
+.xl723
+	{mso-style-parent:style562;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0%;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl724
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl725
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl726
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl727
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl728
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Webdings, serif;
+	mso-font-charset:2;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl729
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl730
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl731
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl732
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl733
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl734
+	{mso-style-parent:style563;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl735
+	{mso-style-parent:style265;
+	color:#1F497D;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl736
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;}
+.xl737
+	{mso-style-parent:style562;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0%;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl738
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	background:white;
+	mso-pattern:black none;}
+.xl739
+	{mso-style-parent:style0;
+	font-size:15.0pt;
+	font-weight:700;
+	background:white;
+	mso-pattern:black none;}
+.xl740
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl741
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:24.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DCE6F1;
+	mso-pattern:black none;}
+.xl742
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DCE6F1;
+	mso-pattern:black none;}
+.xl743
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:24.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EBF1DE;
+	mso-pattern:black none;}
+.xl744
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EBF1DE;
+	mso-pattern:black none;}
+.xl745
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl746
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EBF1DE;
+	mso-pattern:black none;}
+.xl747
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EBF1DE;
+	mso-pattern:black none;}
+.xl748
+	{mso-style-parent:style0;
+	color:blue;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EBF1DE;
+	mso-pattern:black none;}
+.xl749
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EBF1DE;
+	mso-pattern:black none;}
+.xl750
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DCE6F1;
+	mso-pattern:black none;}
+.xl751
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DCE6F1;
+	mso-pattern:black none;}
+.xl752
+	{mso-style-parent:style0;
+	color:blue;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DCE6F1;
+	mso-pattern:black none;}
+.xl753
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DCE6F1;
+	mso-pattern:black none;}
+.xl754
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl755
+	{mso-style-parent:style0;
+	color:blue;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl756
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00";
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl757
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EBF1DE;
+	mso-pattern:black none;}
+.xl758
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl759
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	vertical-align:middle;
+	background:gray;
+	mso-pattern:black none;}
+.xl760
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl761
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#DCE6F1;
+	mso-pattern:black none;}
+.xl762
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:15.0pt;
+	font-family:"Arial Unicode MS", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#F2DCDB;
+	mso-pattern:black none;}
+.xl763
+	{mso-style-parent:style0;
+	font-size:17.0pt;
+	font-weight:700;
+	vertical-align:middle;
+	background:#C0504D;
+	mso-pattern:black none;}
+.xl764
+	{mso-style-parent:style0;
+	font-size:17.0pt;
+	font-weight:700;
+	vertical-align:middle;
+	background:#9BBB59;
+	mso-pattern:black none;}
+.xl765
+	{mso-style-parent:style265;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl766
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;}
+.xl767
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl768
+	{mso-style-parent:style0;
+	color:#0033CC;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\.00_\)\;\[Red\]\\\(\0022$\0022\#\,\#\#0\.00\\\)";
+	text-align:center;
+	vertical-align:top;
+	background:white;
+	mso-pattern:black none;}
+.xl769
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:#F2F2F2;
+	mso-pattern:black none;}
+.xl770
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#F2F2F2;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl771
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:14.0pt;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;}
+.xl772
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:18.0pt;
+	font-weight:700;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#D9D9D9;
+	mso-pattern:black none;}
+.xl773
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:18.0pt;
+	font-weight:700;
+	font-family:"Univers LT Pro 45 Light", sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	background:#D9D9D9;
+	mso-pattern:black none;}
+.xl774
+	{mso-style-parent:style265;
+	color:windowtext;
+	font-size:18.0pt;
+	font-family:Roobert, monospace;
+	mso-font-charset:0;
+	text-align:left;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;}
+.xl775
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl776
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:middle;}
+.xl777
+	{mso-style-parent:style0;
+	text-align:center;
+	vertical-align:middle;
+	background:yellow;
+	mso-pattern:black none;}
