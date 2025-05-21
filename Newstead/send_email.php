@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $notes = isset($_POST['notes1']) ? $_POST['notes1'] : [];
 
     // Email details
-    $to = "your_email@example.com"; // Replace with your actual email address
+    $to = "awhite@brisbanecityjlr.com.au"; // Replace with your actual email address
     $subject = "Newstead Parts Inquiry from $fullName";
 
     // Construct email body
