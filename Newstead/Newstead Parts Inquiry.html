@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Newstead Parts Inquiry</title>
+  <style>
+    .part-item {
+      margin-bottom: 1em;
+      padding: 0.5em;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
@@ -11,22 +18,35 @@
   <form id="partsInquiryForm">
     <p>Please fill out the form below to inquire about parts.</p>
 
-    <label>Full Name:<input type="text" name="fullName" required></label><br>
-    <label>Phone Number:<input type="tel" name="phoneNumber" required></label><br>
-    <label>Email Address:<input type="email" name="email" required></label><br>
-    <label>Car Make:<input type="text" name="carMake" required></label><br>
-    <label>Queensland Registration Number / VIN:<input type="text" name="regoVin" required></label><br>
-    <label>Date of Inquiry:<input type="date" name="dateOfInquiry" required></label><br>
-    <label>Preferred Contact Method:<input type="text" name="contactMethod" required></label><br>
+    <label for="fullName">Full Name:
+      <input type="text" id="fullName" name="fullName" required>
+    </label><br>
 
-    <div id="partsContainer">
-      <div class="part-item">
-        <label>Part Name/Description:<input type="text" name="partName[]" required></label><br>
-        <label>Part Number:<input type="text" name="partNumber[]"></label><br>
-        <label>Quantity:<input type="number" name="quantity[]" required></label><br>
-        <label>Notes:<textarea name="notes[]"></textarea></label><br>
-      </div>
-    </div>
+    <label for="phoneNumber">Phone Number:
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    </label><br>
+
+    <label for="email">Email Address:
+      <input type="email" id="email" name="email" required>
+    </label><br>
+
+    <label for="carMake">Car Make:
+      <input type="text" id="carMake" name="carMake" required>
+    </label><br>
+
+    <label for="regoVin">Queensland Registration Number / VIN:
+      <input type="text" id="regoVin" name="regoVin" required>
+    </label><br>
+
+    <label for="dateOfInquiry">Date of Inquiry:
+      <input type="date" id="dateOfInquiry" name="dateOfInquiry" required>
+    </label><br>
+
+    <label for="contactMethod">Preferred Contact Method:
+      <input type="text" id="contactMethod" name="contactMethod" required>
+    </label><br>
+
+    <div id="partsContainer"></div>
 
     <button type="button" id="addPartBtn">+ Add Another Part</button><br><br>
     <button type="submit">Submit Inquiry</button>
@@ -35,22 +55,35 @@
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-  emailjs.init("4Ql5nWlN68GuWu7tt"); // ✅ Replace with your EmailJS public key
+  emailjs.init("4Ql5nWlN68GuWu7tt"); // Replace with your actual public key
 
-  let partCount = 1;
-
-  document.getElementById('addPartBtn').addEventListener('click', function () {
-    partCount++;
-    const newPart = document.createElement('div');
-    newPart.classList.add('part-item');
-
-    newPart.innerHTML = `
-      <label>Part Name/Description:<input type="text" name="partName[]" required></label><br>
-      <label>Part Number:<input type="text" name="partNumber[]"></label><br>
-      <label>Quantity:<input type="number" name="quantity[]" required></label><br>
-      <label>Notes:<textarea name="notes[]"></textarea></label><br>
+  const partsContainer = document.getElementById('partsContainer');
+  const partTemplate = () => {
+    const div = document.createElement('div');
+    div.classList.add('part-item');
+    div.innerHTML = `
+      <label>Part Name/Description:
+        <input type="text" name="partName[]" required>
+      </label><br>
+      <label>Part Number:
+        <input type="text" name="partNumber[]">
+      </label><br>
+      <label>Quantity:
+        <input type="number" name="quantity[]" required>
+      </label><br>
+      <label>Notes:
+        <textarea name="notes[]"></textarea>
+      </label><br>
     `;
-    document.getElementById('partsContainer').appendChild(newPart);
+    return div;
+  };
+
+  function addInitialPart() {
+    partsContainer.appendChild(partTemplate());
+  }
+
+  document.getElementById('addPartBtn').addEventListener('click', () => {
+    partsContainer.appendChild(partTemplate());
   });
 
   document.getElementById("partsInquiryForm").addEventListener("submit", function (e) {
@@ -65,7 +98,7 @@
     const notes = formData.getAll('notes[]');
 
     for (let i = 0; i < partNames.length; i++) {
-      parts.push(`Part ${i+1}: ${partNames[i]}<br>Part Number: ${partNumbers[i] || '-'}<br>Quantity: ${quantities[i]}<br>Notes: ${notes[i] || '-'}<br><br>`);
+      parts.push(`Part ${i + 1}: ${partNames[i]}<br>Part Number: ${partNumbers[i] || '-'}<br>Quantity: ${quantities[i]}<br>Notes: ${notes[i] || '-'}<br><br>`);
     }
 
     const emailData = {
@@ -79,17 +112,7 @@
       parts: parts.join('')
     };
 
-    emailjs.send("service_xp1cj3b", "template_vqc44cj", emailData) // ✅ Replace both
+    emailjs.send("service_xp1cj3b", "template_vqc44cj", emailData)
       .then(() => {
         alert("Your inquiry has been submitted!");
-        document.getElementById("partsInquiryForm").reset();
-        partCount = 1;
-        document.getElementById("partsContainer").innerHTML = ''; // Clear old parts
-      }, (error) => {
-        alert("There was an error submitting the form. See console for details.");
-        console.error(error);
-      });
-  });
-</script>
-</body>
-</html>
+        document.getElementById
