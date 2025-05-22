@@ -1,223 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newstead Parts Inquiry</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-image: linear-gradient(45deg, #ff6a00, #ffcc00);
-        }
-        .container {
-            width: 100%;
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 40px;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2em;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 25px; /* Increased vertical spacing */
-        }
-        label {
-            font-size: 1.1em;
-            color: #333;
-        }
-        input[type="text"], input[type="email"], input[type="date"], input[type="tel"], input[type="number"], textarea {
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 1em;
-            width: 100%;
-            background-color: #f9f9f9;
-            box-sizing: border-box;
-            transition: border 0.3s ease;
-        }
-        input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus, input[type="tel"]:focus, input[type="number"]:focus, textarea:focus {
-            border-color: #ff6a00;
-            outline: none;
-        }
-        textarea {
-            resize: vertical;
-        }
-        button {
-            padding: 12px;
-            background-color: #ff6a00;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #ff4500;
-        }
-        .parts-container {
-            display: flex;
-            flex-direction: column;
-            gap: 25px; /* Increased vertical spacing between parts */
-        }
-        .part-item {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fafafa;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-        .remove-part-btn {
-            display: inline-block;
-            color: red;
-            cursor: pointer;
-            font-size: 1em;
-            margin-top: 10px;
-            transition: color 0.3s ease;
-        }
-        .remove-part-btn:hover {
-            color: #ff4500;
-        }
-        .add-part-btn {
-            background-color: #28a745;
-            padding: 12px;
-            color: white;
-            font-size: 1.1em;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .add-part-btn:hover {
-            background-color: #218838;
-        }
-        .form-header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.6em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Newstead Parts Inquiry</title>
+  <style>
+    /* your existing styles unchanged */
+    /* ... */
+  </style>
 </head>
 <body>
-
 <div class="container">
-    <h1>Newstead Parts Inquiry</h1>
-    <form id="partsInquiryForm" action="send_email.php" method="POST">
-        <div class="form-header">
-            <p>Please fill out the form below to inquire about parts.</p>
-        </div>
-        <!-- Customer Information -->
-        <div>
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
+  <h1>Newstead Parts Inquiry</h1>
+  <form id="partsInquiryForm">
+    <div class="form-header">
+      <p>Please fill out the form below to inquire about parts.</p>
+    </div>
+    <!-- Customer Information -->
+    <div>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
 
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
 
-            <label for="carMake">Car Make:</label>
-            <input type="text" id="carMake" name="carMake" required>
+      <label for="carMake">Car Make:</label>
+      <input type="text" id="carMake" name="carMake" required>
 
-            <label for="regoVin">Queensland Registration Number / VIN:</label>
-            <input type="text" id="regoVin" name="regoVin" required>
+      <label for="regoVin">Queensland Registration Number / VIN:</label>
+      <input type="text" id="regoVin" name="regoVin" required>
 
-            <label for="dateOfInquiry">Date of Inquiry:</label>
-            <input type="date" id="dateOfInquiry" name="dateOfInquiry" required>
+      <label for="dateOfInquiry">Date of Inquiry:</label>
+      <input type="date" id="dateOfInquiry" name="dateOfInquiry" required>
 
-            <label for="contactMethod">Preferred Contact Method:</label>
-            <input type="text" id="contactMethod" name="contactMethod" required>
-        </div>
+      <label for="contactMethod">Preferred Contact Method:</label>
+      <input type="text" id="contactMethod" name="contactMethod" required>
+    </div>
 
-        <!-- Parts Inquiry Details -->
-        <div class="parts-container" id="partsContainer">
-            <div class="part-item" id="part1">
-                <label for="part1">Part 1 - Name/Description:</label>
-                <input type="text" id="part1" name="part1[]" required>
+    <!-- Parts Inquiry Details -->
+    <div class="parts-container" id="partsContainer">
+      <div class="part-item" id="part1">
+        <label for="part1">Part 1 - Name/Description:</label>
+        <input type="text" id="part1" name="part1[]" required>
 
-                <label for="partNumber1">Part Number (if known):</label>
-                <input type="text" id="partNumber1" name="partNumber1[]">
+        <label for="partNumber1">Part Number (if known):</label>
+        <input type="text" id="partNumber1" name="partNumber1[]">
 
-                <label for="quantity1">Quantity:</label>
-                <input type="number" id="quantity1" name="quantity1[]" required>
+        <label for="quantity1">Quantity:</label>
+        <input type="number" id="quantity1" name="quantity1[]" required>
 
-                <label for="notes1">Additional Notes:</label>
-                <textarea id="notes1" name="notes1[]"></textarea>
-                <span class="remove-part-btn" onclick="removePart('part1')">Remove Part</span>
-            </div>
-        </div>
+        <label for="notes1">Additional Notes:</label>
+        <textarea id="notes1" name="notes1[]"></textarea>
+        <span class="remove-part-btn" onclick="removePart('part1')">Remove Part</span>
+      </div>
+    </div>
 
-        <button type="button" id="addPartBtn" class="add-part-btn">+ Add Another Part</button>
-        <button type="submit">Submit Inquiry</button>
-    </form>
+    <button type="button" id="addPartBtn" class="add-part-btn">+ Add Another Part</button>
+    <button type="submit">Submit Inquiry</button>
+  </form>
 </div>
 
+<!-- Add this script block -->
 <script>
-    let partCount = 1;
+  let partCount = 1;
 
-    document.getElementById('addPartBtn').addEventListener('click', function() {
-        partCount++;
+  document.getElementById('addPartBtn').addEventListener('click', function () {
+    partCount++;
+    const newPart = document.createElement('div');
+    newPart.classList.add('part-item');
+    newPart.id = 'part' + partCount;
 
-        const newPart = document.createElement('div');
-        newPart.classList.add('part-item');
-        newPart.id = 'part' + partCount;
+    newPart.innerHTML = `
+      <label for="part${partCount}">Part ${partCount} - Name/Description:</label>
+      <input type="text" id="part${partCount}" name="part1[]" required>
 
-        newPart.innerHTML = `
-            <label for="part${partCount}">Part ${partCount} - Name/Description:</label>
-            <input type="text" id="part${partCount}" name="part1[]" required>
+      <label for="partNumber${partCount}">Part Number (if known):</label>
+      <input type="text" id="partNumber${partCount}" name="partNumber1[]">
 
-            <label for="partNumber${partCount}">Part Number (if known):</label>
-            <input type="text" id="partNumber${partCount}" name="partNumber1[]">
+      <label for="quantity${partCount}">Quantity:</label>
+      <input type="number" id="quantity${partCount}" name="quantity1[]" required>
 
-            <label for="quantity${partCount}">Quantity:</label>
-            <input type="number" id="quantity${partCount}" name="quantity1[]" required>
+      <label for="notes${partCount}">Additional Notes:</label>
+      <textarea id="notes${partCount}" name="notes1[]"></textarea>
+      <span class="remove-part-btn" onclick="removePart('part${partCount}')">Remove Part</span>
+    `;
+    document.getElementById('partsContainer').appendChild(newPart);
+  });
 
-            <label for="notes${partCount}">Additional Notes:</label>
-            <textarea id="notes${partCount}" name="notes1[]"></textarea>
-            <span class="remove-part-btn" onclick="removePart('part${partCount}')">Remove Part</span>
-        `;
+  function removePart(partId) {
+    const partElement = document.getElementById(partId);
+    if (partElement) partElement.remove();
+  }
 
-        document.getElementById('partsContainer').appendChild(newPart);
+  document.getElementById("partsInquiryForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    let content = '';
+    for (let [key, value] of formData.entries()) {
+      content += `${key}: ${value}\n`;
+    }
+
+    // ✅ Replace these with your actual GitHub info and token (store token securely for production)
+    const GITHUB_USER = 'YOUR_GITHUB_USERNAME';
+    const REPO_NAME = 'YOUR_REPOSITORY_NAME';
+    const TOKEN = 'YOUR_GITHUB_PERSONAL_ACCESS_TOKEN';
+
+    const response = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${REPO_NAME}/issues`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `token ${TOKEN}`,
+        'Accept': 'application/vnd.github.v3+json'
+      },
+      body: JSON.stringify({
+        title: `New Parts Inquiry from ${formData.get('fullName')}`,
+        body: content
+      })
     });
 
-    function removePart(partId) {
-        const partElement = document.getElementById(partId);
-        partElement.remove();
+    if (response.ok) {
+      alert('Form submitted successfully! Thank you.');
+      this.reset();
+    } else {
+      alert('There was an error submitting the form.');
+      console.error(await response.json());
     }
+  });
 </script>
 
 </body>
