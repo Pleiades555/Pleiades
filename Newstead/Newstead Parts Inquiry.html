@@ -53,11 +53,10 @@
     </form>
   </div>
 
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- Updated EmailJS SDK v3 -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
-    // Initialize EmailJS with your public key
-    emailjs.init("4Ql5nWlN68GuWu7tt"); // Example: public_ABC123xyz
+    emailjs.init("4Ql5nWlN68GuWu7tt"); // Your public key
 
     const partsContainer = document.getElementById('partsContainer');
 
@@ -122,8 +121,6 @@
         contactMethod: formData.get('contactMethod'),
         parts: parts.join('\n\n')
       };
-
-      console.log("Sending email data:", emailData); // Debug
 
       emailjs.send("service_xp1cj3b", "template_vqc44cj", emailData)
         .then(() => {
