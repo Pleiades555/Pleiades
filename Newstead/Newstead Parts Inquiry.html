@@ -13,106 +13,130 @@
   </style>
 </head>
 <body>
-<div class="container">
-  <h1>Newstead Parts Inquiry</h1>
-  <form id="partsInquiryForm">
-    <p>Please fill out the form below to inquire about parts.</p>
+  <div class="container">
+    <h1>Newstead Parts Inquiry</h1>
+    <form id="partsInquiryForm">
+      <p>Please fill out the form below to inquire about parts.</p>
 
-    <label for="fullName">Full Name:
-      <input type="text" id="fullName" name="fullName" required>
-    </label><br>
-
-    <label for="phoneNumber">Phone Number:
-      <input type="tel" id="phoneNumber" name="phoneNumber" required>
-    </label><br>
-
-    <label for="email">Email Address:
-      <input type="email" id="email" name="email" required>
-    </label><br>
-
-    <label for="carMake">Car Make:
-      <input type="text" id="carMake" name="carMake" required>
-    </label><br>
-
-    <label for="regoVin">Queensland Registration Number / VIN:
-      <input type="text" id="regoVin" name="regoVin" required>
-    </label><br>
-
-    <label for="dateOfInquiry">Date of Inquiry:
-      <input type="date" id="dateOfInquiry" name="dateOfInquiry" required>
-    </label><br>
-
-    <label for="contactMethod">Preferred Contact Method:
-      <input type="text" id="contactMethod" name="contactMethod" required>
-    </label><br>
-
-    <div id="partsContainer"></div>
-
-    <button type="button" id="addPartBtn">+ Add Another Part</button><br><br>
-    <button type="submit">Submit Inquiry</button>
-  </form>
-</div>
-
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  emailjs.init("4Ql5nWlN68GuWu7tt"); // Replace with your actual public key
-
-  const partsContainer = document.getElementById('partsContainer');
-  const partTemplate = () => {
-    const div = document.createElement('div');
-    div.classList.add('part-item');
-    div.innerHTML = `
-      <label>Part Name/Description:
-        <input type="text" name="partName[]" required>
+      <label for="fullName">Full Name:
+        <input type="text" id="fullName" name="fullName" required>
       </label><br>
-      <label>Part Number:
-        <input type="text" name="partNumber[]">
+
+      <label for="phoneNumber">Phone Number:
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
       </label><br>
-      <label>Quantity:
-        <input type="number" name="quantity[]" required>
+
+      <label for="email">Email Address:
+        <input type="email" id="email" name="email" required>
       </label><br>
-      <label>Notes:
-        <textarea name="notes[]"></textarea>
+
+      <label for="carMake">Car Make:
+        <input type="text" id="carMake" name="carMake" required>
       </label><br>
-    `;
-    return div;
-  };
 
-  function addInitialPart() {
-    partsContainer.appendChild(partTemplate());
-  }
+      <label for="regoVin">Queensland Registration Number / VIN:
+        <input type="text" id="regoVin" name="regoVin" required>
+      </label><br>
 
-  document.getElementById('addPartBtn').addEventListener('click', () => {
-    partsContainer.appendChild(partTemplate());
-  });
+      <label for="dateOfInquiry">Date of Inquiry:
+        <input type="date" id="dateOfInquiry" name="dateOfInquiry" required>
+      </label><br>
 
-  document.getElementById("partsInquiryForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+      <label for="contactMethod">Preferred Contact Method:
+        <input type="text" id="contactMethod" name="contactMethod" required>
+      </label><br>
 
-    const formData = new FormData(this);
-    const parts = [];
+      <div id="partsContainer"></div>
 
-    const partNames = formData.getAll('partName[]');
-    const partNumbers = formData.getAll('partNumber[]');
-    const quantities = formData.getAll('quantity[]');
-    const notes = formData.getAll('notes[]');
+      <button type="button" id="addPartBtn">+ Add Another Part</button><br><br>
+      <button type="submit">Submit Inquiry</button>
+    </form>
+  </div>
 
-    for (let i = 0; i < partNames.length; i++) {
-      parts.push(`Part ${i + 1}: ${partNames[i]}<br>Part Number: ${partNumbers[i] || '-'}<br>Quantity: ${quantities[i]}<br>Notes: ${notes[i] || '-'}<br><br>`);
-    }
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your public key
+    emailjs.init("4Ql5nWlN68GuWu7tt"); // Example: public_ABC123xyz
 
-    const emailData = {
-      fullName: formData.get('fullName'),
-      phoneNumber: formData.get('phoneNumber'),
-      email: formData.get('email'),
-      carMake: formData.get('carMake'),
-      regoVin: formData.get('regoVin'),
-      dateOfInquiry: formData.get('dateOfInquiry'),
-      contactMethod: formData.get('contactMethod'),
-      parts: parts.join('')
+    const partsContainer = document.getElementById('partsContainer');
+
+    const partTemplate = () => {
+      const div = document.createElement('div');
+      div.classList.add('part-item');
+      div.innerHTML = `
+        <label>Part Name/Description:
+          <input type="text" name="partName[]" required>
+        </label><br>
+        <label>Part Number:
+          <input type="text" name="partNumber[]">
+        </label><br>
+        <label>Quantity:
+          <input type="number" name="quantity[]" required>
+        </label><br>
+        <label>Notes:
+          <textarea name="notes[]"></textarea>
+        </label><br>
+      `;
+      return div;
     };
 
-    emailjs.send("service_xp1cj3b", "template_vqc44cj", emailData)
-      .then(() => {
-        alert("Your inquiry has been submitted!");
-        document.getElementById
+    function addInitialPart() {
+      partsContainer.appendChild(partTemplate());
+    }
+
+    window.addEventListener('DOMContentLoaded', addInitialPart);
+
+    document.getElementById('addPartBtn').addEventListener('click', () => {
+      partsContainer.appendChild(partTemplate());
+    });
+
+    document.getElementById("partsInquiryForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const parts = [];
+
+      const partNames = formData.getAll('partName[]');
+      const partNumbers = formData.getAll('partNumber[]');
+      const quantities = formData.getAll('quantity[]');
+      const notes = formData.getAll('notes[]');
+
+      for (let i = 0; i < partNames.length; i++) {
+        parts.push(
+          `Part ${i + 1}:\n` +
+          `Name: ${partNames[i]}\n` +
+          `Number: ${partNumbers[i] || '-'}\n` +
+          `Quantity: ${quantities[i]}\n` +
+          `Notes: ${notes[i] || '-'}\n`
+        );
+      }
+
+      const emailData = {
+        fullName: formData.get('fullName'),
+        phoneNumber: formData.get('phoneNumber'),
+        email: formData.get('email'),
+        carMake: formData.get('carMake'),
+        regoVin: formData.get('regoVin'),
+        dateOfInquiry: formData.get('dateOfInquiry'),
+        contactMethod: formData.get('contactMethod'),
+        parts: parts.join('\n\n')
+      };
+
+      console.log("Sending email data:", emailData); // Debug
+
+      emailjs.send("service_xp1cj3b", "template_vqc44cj", emailData)
+        .then(() => {
+          alert("Your inquiry has been submitted!");
+          document.getElementById("partsInquiryForm").reset();
+          partsContainer.innerHTML = '';
+          addInitialPart(); // Re-add first part section
+        })
+        .catch((error) => {
+          console.error("EmailJS Error:", error);
+          alert("There was an error sending your inquiry. Please try again later.");
+        });
+    });
+  </script>
+</body>
+</html>
