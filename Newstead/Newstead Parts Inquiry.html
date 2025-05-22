@@ -35,7 +35,7 @@
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-  emailjs.init("YOUR_PUBLIC_KEY"); // ✅ Replace with your EmailJS public key
+  emailjs.init("4Ql5nWlN68GuWu7tt"); // ✅ Replace with your EmailJS public key
 
   let partCount = 1;
 
@@ -79,7 +79,7 @@
       parts: parts.join('')
     };
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", emailData) // ✅ Replace both
+    emailjs.send("service_xp1cj3b", "template_vqc44cj", emailData) // ✅ Replace both
       .then(() => {
         alert("Your inquiry has been submitted!");
         document.getElementById("partsInquiryForm").reset();
