@@ -1,0 +1,1017 @@
+body, td, th {font:11px verdana,arial,helvetica,sans-serif; vertical-align:top; text-align:left;}
+th {font-weight:900;}
+body, form {margin:0px; padding:0px;}
+body {text-align:center; background-color:#7A7B7F;}
+body.iframe {background-color:#F2F2F2; text-align:left;}
+
+img {border-width:0px;}
+img.bio {float:right; margin-left:10px; margin-bottom:5px;}
+img.leadin {float:left; margin-left:10px; margin-bottom:5px;}
+img.logoprom {float:right; margin-left:15px; margin-bottom:10px;}
+.tblcondense {border-collapse:collapse; padding:0px; margin:0px;}
+.wrapup {clear:both;}
+input[type="text"], input[type="password"], textarea, select { font-size:11px; font-family:verdana,helvetica,sans-serif;}
+.form-item {overflow:hidden; border:1px solid #01A0E9; background-color:#FFFFFF;}
+.form-item select, .form-item input, .form-item textarea {border:0px solid #003366;}
+
+.form-item input[type="text"], .form-item input[type="password"], .form-item textarea, .form-item select {outline:none; border:none;}
+
+.evform-label {width:130px; float:left;}
+.evform-field {}
+.evform-item {margin-bottom:5px;}
+
+a {text-decoration:none; color:#005195;}
+a:hover, a:active {text-decoration:underline;}
+
+body div a.undone, body div a.undone {display:none;}
+
+.important {color:#DC291E;}
+.important2 {color:#00773D;}
+.lessor {color:#9A9B9D;}
+
+h1, h2, h3, h4, h5, h6 {margin:0px;}
+h1 {font-size:18px; font-weight:500; margin-bottom:15px; text-rendering:geometricPrecision;}
+h2 {font-size:14px; text-rendering:geometricPrecision;}
+h3 {font-size:13px;}
+h4 {font-size:11px;}
+h5 {font-size:10px;}
+h6 {font-size:9px;}
+
+
+
+p {margin:12px 0px;}
+
+#container {width:997px; margin:0px auto; text-align:left; background-color:#FFFFFF;}
+
+
+/* */
+#ad-leaderboard, #ad-hptakeover {float:right;}
+
+#hd {padding-top:1px; clear:both;}
+#hd-brand {float:left; width:140px; height:69px; margin-top:0px;}
+#hd-logo {padding:2px 15px;}
+
+#hd-nav {float:left; width:857px; height:69px; margin-top:0px;}
+
+#hd-navbar {background-color:#005195; color:#FFFFFF; height:35px; padding:0px 15px; font-size:10px;}
+#hd-navbar-links {width:843px;}
+
+
+#hd-navbar ul {list-style:none; padding:0px; margin:0px; float:left;}
+#hd-navbar ul li {float:left; margin:0px 18px 0px 0px; padding:11px 0px 0px 0px; text-transform:uppercase;}
+#hd-navbar ul li a {color:#FFFFFF; font-weight:bold;}
+#hd-navbar ul li.divider {width:1px; background-color:#7FA7C9; height:24px; padding:0px; margin:6px 18px 0px 0px;}
+#hd-navbar ul li#hd-homeicon {padding-top:10px;}
+#hd-navbar ul li#hd-shop {padding-top:6px;}
+#hd-shop a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/nav-icons.png) 0px 0px no-repeat; display:block; height:17px;}
+#hd-shop a span {display:block; padding:5px 0px 3px 21px;}
+
+
+
+#hd-social {float:left;padding-top:15px;}
+#hd-social ul {list-style:none; margin:0px; padding:6px 0px 0px 22px;}
+#hd-social ul li {margin:0px 0px 0px 6px; padding:0px; float:left;}
+#hd-social ul li a {display:block; height:21px; width:21px;}
+#hd-social-facebook a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/nav-icons.png) 0px -50px no-repeat;}
+#hd-social-linkedin a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/nav-icons.png) 0px -75px no-repeat;}
+#hd-social-twitter a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/nav-icons.png) 0px -100px no-repeat;}
+#hd-social-google a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/nav-icons.png) 0px -125px no-repeat;}
+#hd-social-youtube a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/nav-icons.png) 0px -150px no-repeat;}
+#hd-social-contact a {background:url("/web/20170323170748im_/http://www.sae.org/images/design13/nav-icons.png") 0px -175px no-repeat;}
+
+#hd-aux {background-color:#D4D4D2; height:34px;}
+
+.hd-srch-wrapped {height:22px; position:relative; z-index:5; margin:6px 15px 0px 0px; float:right; width:220px; overflow:hidden;}
+
+.hd-srch {height:22px; padding-right:13px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/search.png) right -150px no-repeat; overflow:hidden;}
+.hd-srch div {height:22px; padding:0px 0px 0px 13px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/search.png) 0px -50px no-repeat;}
+.hd-srch div div {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/search.png) 0px -100px repeat-x;}
+
+.hd-srch-items {width:210px; position:absolute; z-index:5; top:3px; left:10px;}
+
+.hd-srch-input-option {position:absolute; z-index:8; right:30px; font-size:10px;}
+.hd-srch-input-option a {float:right;}
+
+.hd-srch-input-wrapped {float:left; width:185px;}
+.hd-srch-input-wrapped input {background:transparent; border-width:0px; font-size:11px; font-weight:bold; color:#333333; margin:-2px 0px;}
+.hd-srch-input-wrapped input.search-changed {font-weight:500;}
+
+.hd-srch-submit-wrapped {float:right; width:25px; height:16px; overflow:hidden;}
+
+.search-options .hd-srch-wrapped {width:300px;}
+.search-options .hd-srch-items {width:290px;}
+.search-options .hd-srch-input-wrapped {width:260px;}
+
+
+
+#hd-mysae {position:relative; z-index:180;}
+#hd-navbar ul li a#hd-mysae-action {font-weight:normal; text-transform:none; padding:1px 3px; margin:-1px 0px 0px 8px; background-color:#616265; font-size:9px; float:right; display:block;}
+.hdmymn {position:absolute; top:20px; left:-350px; display:none; width:450px; height:49px; overflow:hidden;}
+#hd-mysae:hover .hdmymn, #hd-mysae:focus .hdmymn {display:block;}
+#hd-navbar ul li .hdmymn a, #hd-navbar ul li .hdmymn {text-transform:none; font-weight:normal;}
+.hdmymn-label {padding:11px 18px;}
+.hdmymn-drop {height:49px; float:right; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/mysae.png) right bottom no-repeat;}
+.hdmymn-id {float:right; padding:26px 13px 11px 13px;}
+.hdmymn-id .btn-container-right {margin:-2px 0px 0px 12px;}
+.hdmymn-nav {float:right; width:142px;}
+#hd-navbar ul li .hdmymn-nav a {float:left; display:block; padding:26px 9px 11px 12px;}
+
+#hd-social-drop {position:relative; z-index:180;}
+#hd-navbar ul li#hd-social-drop {margin:0px 16px 0px 0px;float:right;}
+#hd-navbar ul li a#hd-social-drop-action {font-weight:normal; text-transform:none; padding:1px 3px; margin:-1px 0px 0px 8px; background-color:#616265; font-size:9px; float:right; display:block;}
+.hdsoc {position:absolute; top:20px; right:0px; display:none; width:150px; height:49px; overflow:hidden;}
+
+
+
+#hd-social-drop:hover .hdsoc, #hd-social-drop:focus .hdsoc {display:block;}
+#hd-navbar ul li .hdsoc a, #hd-navbar ul li .hdsoc {text-transform:none; font-weight:normal;}
+.hdsoc-drop {height:49px; float:right; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/hd-soc.png) right bottom no-repeat;}
+.hdsoc-nav {float:right; width:167px;}
+
+
+#hd-aux-status {width:700px;}
+.hd-status {padding:10px 15px 3px 15px;}
+
+.hd-status h1 {margin:-2px 0px 0px 0px; font-size:14px; font-weight:bold;}
+
+#main {background-color:#FFFFFF; clear:both; padding-bottom:15px; position:relative; z-index:5;}
+
+.main-h {background-color:#01A0E9; color:#FFFFFF; margin-top:15px; height:26px;}
+.main-h-c {padding:4px 15px 5px 15px;}
+.main-h h1, .main-h h3 {margin:0px; font-size:14px; font-weight:bold; float:left;}
+.main-h a {color:#FFFFFF;}
+.cols-body-content .main-h {margin-top:0px;}
+
+.main-connect .main-h {background-color:#2EB135;}
+.main-develop .main-h {background-color:#FFB201;}
+
+.main-c {margin:11px 0px;}
+.main-c-c {padding:0px 15px; font-size:12px;}
+.main-detail .main-c {padding:11px 0px; margin:0px;}
+.cols-full .main-c {margin-bottom:0px;}
+
+#where-search .main-c, #where-overview .main-c {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/search-main-c.png) 182px 0px repeat-y;}
+#where-search .cols , #where-overview .cols {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/ads-c.png) 870px 0px repeat-y;}
+
+.brd {list-style:none; margin:0px 0px 0px -8px; padding:0px; height:20px;}
+.brd li {margin:0px; padding:0px 0px 3px 19px; float:left; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/brd.png) -488px 0px no-repeat; position:relative; z-index:100;}
+.brd li.brd-opts {background-position:0px 0px; margin-left:5px;}
+.brd li#brd-1 {margin-left:5px;}
+.brd li a {color:#000000;}
+.brd a:hover div, .brd a:focus div {text-decoration:underline;}
+.brd li a div {}
+.brd-peers {width:240px; font-size:10px; display:none; margin:0px; padding:1px 0px; position:absolute; z-index:150; top:14px; left:0px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/film-lowalpha-white.png) repeat;}
+#brd-1-peers {width:130px;}
+.brd-peers-drop {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/brd.png) 0px -33px no-repeat; width:17px; height:17px; position:absolute; z-index:150; top:-15px;}
+.brd-peers ul {list-style:none; margin:0px 1px 1px 1px; padding:2px 0px 0px 0px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/brd.png) -2px -49px no-repeat #E5E5E3; border:1px solid #616265; border-width:0px 1px 1px 1px;}
+.brd-peers ul li {margin:0px; padding:5px 5px 5px 0px; float:none; background:transparent; border-bottom:1px dotted #9A9B9D;}
+.brd-peers ul li:last-child {border-bottom-width:0px;}
+.brd-peers ul li a {display:block; padding-left:17px;}
+.brd-peers ul li.navon a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/bullets.png) 4px -97px no-repeat; color:#005195;}
+.brd li:hover .brd-peers, .brd li:focus .brd-peers {display:block;}
+
+.brd li.brd-tree {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/brd-tree.png) 1px 1px no-repeat; padding:3px 10px 3px 8px; margin:-3px 0px 0px 8px; color:#FFFFFF;}
+.brd li.brd-tree:hover, .brd li.brd-tree:focus {background-position:-101px 0px;}
+.brd li.brd-tree a.brd-tree-label {color:#FFFFFF; text-decoration:none;} 
+.brd li.brd-tree a.brd-tree-label:hover div, .brd li.brd-tree a.brd-tree-label:focus div {text-decoration:none;}
+.brd-tree-drop {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/brd-tree-open.png) 0px -6px no-repeat; position:absolute; z-index:150; top:18px; left:0px; display:none;}
+.brd li.brd-tree:hover .brd-tree-drop, .brd li.brd-tree:focus .brd-tree-drop {display:block;}
+.brd-tree-drop-c {padding:4px 0px 0px 16px;}
+.brd-tree-drop-c-b ol {list-style:none; margin:-2px 0px 0px 9px; overflow:hidden; padding:25px 0px 0px 20px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/brd-tree-branches.png) 0px -200px no-repeat;}
+.brd-tree-drop-c-b ol li {margin:-13px 0px 0px 0px; padding:0px 9px 0px 0px;}
+.brd-tree-drop-c-b ol li div {width:225px; height:18px; overflow:hidden;}
+.brd-tree-drop-c-b ol li div a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/brd-tree-branches.png) 3px 3px no-repeat #D4D4D2; color:#000000; display:block; line-height:12px; padding:1px 6px 2px 17px; font-size:10px;}
+.brd-tree-drop-c-b ol li div a span {height:12px; overflow:hidden; display:block;}
+.brd-tree-drop-c-b ol li.navon div a  {background-position:3px -47px;}
+.brd .brd-tree-drop-c-b li {background:transparent;}
+.brd-tree-c-b-end {display:block; width:285px; height:11px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/brd-tree-close.png) 0px bottom repeat-x; margin-left:-15px;}
+
+.mn-content-zone {padding:6px 20px 17px 15px;}
+.mn-content {width:100%; font-size:12px;}
+
+.mtabs-content-zone {padding:6px 20px 17px 15px;}
+
+/* */
+.cols {width:997px;}
+.cols-main {width:683px; float:left;}
+.cols-main-content {padding:15px 21px 15px 14px;}
+.cols-aux {width:314px; float:left;}
+.cols-aux-content {padding:15px 16px 15px 0px;}
+
+.cols-full {width:997px; float:left;}
+.cols-full-content {padding:0px 0px 15px 0px;}
+
+.cols-nav {width:140px; float:left;}
+.cols-nav-content {padding:6px 4px 15px 0px;}
+.cols-body {width:730px; float:left;}
+.cols-body-content {padding:6px 0px 15px 0px;}
+.cols-bodyfull {width:853px;}
+
+.cols-srchfilt {width:184px; float:left;}
+.cols-srchfilt-content {padding:0px 0px 15px 0px;}
+.cols-srchfilt-placeholder {height:10px; width:10px;}
+.cols-srchfilt-filler {position:absolute; z-index:10; top:37px; left:0px; width:184px;}
+.cols-srchres {width:686px; float:left;}
+.cols-srchres-content {padding:0px 0px 15px 0px;}
+
+.cols-ads {width:127px; float:left;}
+.cols-ads-content {margin:6px 0px; padding:0px 1px 15px 5px;}
+#where-search .cols-ads-content {padding-top:15px;}
+
+.cols-ovw-alpha {width:343px; float:left;}
+.cols-ovw-alpha-content {padding:0px 10px 15px 15px;}
+
+.cols-ovw-omega {width:343px; float:left;}
+.cols-ovw-omega-content {padding:0px 15px 15px 10px;}
+
+.cols-dtheader {width:841px; border-bottom:1px solid #01A0E9; float:left; margin-left:6px;}
+.cols-dtheader-content {padding:9px 8px 4px 8px;}
+.cols-dtheader h1 {display:inline; font-weight:bold;}
+
+.cols-dtmain {width:534px; float:left;}
+.cols-dtmain-content {padding:12px 1px 12px 7px;}
+
+.cols-dtaction {width:323px; float:left;}
+.cols-dtaction-content {padding:12px 11px 11px 13px; position:relative; z-index:15;}
+
+.ad120 {padding:0px 0px 18px 0px; text-align:center;}
+.ad300 {padding:0px 0px 18px 0px;}
+
+/* */
+.sect {padding-bottom:17px;}
+.sect-omega {padding-bottom:0px; margin-bottom:-10px;}
+.sect-h {border-bottom:1px solid #919396; padding:4px 1px 7px 1px;}
+.sect-h h2 {font-size:16px; text-transform:uppercase;}
+.sect-h a, .sect-n a {color:#000000;}
+.sect-n {height:28px; overflow:hidden;}
+.sect-n ul {list-style:none; margin:0px -32px 0px 0px; padding:5px 1px 7px 1px;}
+.sect-n ul li {margin:0px 31px 0px 0px; padding:0px; float:left;}
+.sect-b {background-color:#CCCCCC; width:648px; height:194px;}
+
+.sect-l {padding-top:3px;}
+.sect-l a {color:#000000; display:block; float:left;}
+.sect-l-full a {float:none;}
+.sgrp .sect-l {padding-left:13px; padding-right:4px;}
+.sgrp .sect-l a {color:#005195;}
+.sect-l div {padding:7px 5px 1px 3px;}
+#sect-topics .sect-l ul li {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/bullets.png) 4px 11px no-repeat;}
+#sect-topics .sect-l ul li div {padding-left:13px;}
+.sect-l ul {list-style:none; margin:0px; padding:0px;}
+.sect-l ul li {margin:0px; padding:0px; float:left; width:324px; height:21px;}
+.sect-l-full ul li {width:648px; height:auto; float:none;}
+.cols-srchfilt .sect-l ul li {float:none; width:auto; font-weight:bold; font-size:10px;}
+
+.sect-l ul li span {display:block; float:left; margin:0px 0px 0px 10px; padding-left:9px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/sect-cat.png) 0px 10px no-repeat;}
+
+.main-c .sect {padding-bottom:0px; margin-bottom:-11px;}
+.main-c .sect-n {margin:-9px 0px 0px 14px; font-size:12px;}
+.main-c .sect-b {width:auto; height:auto; clear:both;}
+
+.main-c .prodline .sect {padding-top:17px;}
+
+.prodline .sect-h {padding-left:3px; margin:0px 12px;}
+.prodline .sect-l {padding-left:12px;}
+.prodline .sect-l ul li {width:354px;}
+.prodline {margin-bottom:-20px;}
+
+.prodline .sect-l-full ul li {width:708px;}
+
+.subtop-l {padding:3px 0px 0px 12px;}
+.subtop-l a {color:#005195; display:block; font-weight:bold; font-size:10px;}
+.subtop-l ul {list-style:none; margin:0px; padding:0px;}
+.subtop-l ul li {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/bullets.png) 4px 11px no-repeat; margin:0px; padding:0px;}
+.subtop-l ul li div {padding:7px 9px 3px 13px;}
+
+/* */
+.sld {}
+.sld-back {width:30px; float:left; text-align:center;}
+.sld-back a {display:block; width:12px; height:37px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/sld.png) 0px 0px no-repeat; margin:80px auto 0px auto;}
+.sld-back a.dimmed {background-position:0px -100px;}
+.sld-next {width:30px; float:left; text-align:center;}
+.sld-next a {display:block; width:12px; height:37px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/sld.png) right -50px no-repeat; margin:80px auto 0px auto;}
+.sld-next a.dimmed {background-position:right -150px;}
+.sld-b {width:588px; height:158px; margin:18px 0px; float:left; overflow:hidden; position:relative; z-index:3;}
+.sld-b-viewer {}
+.sld-b ul {margin:0px -18px 0px 0px; padding:0px; list-style:none; position:relative; z-index:3; left:0px; height:158px;}
+.sld-b ul li {margin:0px 18px 0px 0px; padding:0px; float:left; width:184px; height:158px; background-color:#000000; position:relative; z-index:5;}
+
+.sld-full .sld-b {width:auto; float:none; height:auto; margin:0px;}
+.sld-full .sld-b ul {margin:0px -13px 0px 0px; padding:12px 0px 0px 12px;}
+.sld-full .sld-b ul li {margin:0px 13px 13px 0px;}
+.sld-prodline {position:relative; z-index:3;}
+
+.sldi {}
+.sldi a {display:block;}
+
+.sldi-c {position:absolute; z-index:7; width:184px; height:64px; bottom:0px; left:0px; color:#FFFFFF; overflow:hidden; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/film-blue.png) 0px 0px repeat;}
+.sldi-c-content {margin:7px 0px; height:51px; overflow:hidden;}
+#sect-develop .sldi-c, #sect-mesos .sldi-c {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/film-orange.png) 0px 0px repeat;}
+#sect-connect .sldi-c, #sect-omega .sldi-c {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/film-green.png) 0px 0px repeat;}
+.sldi-img {position:absolute; z-index:5; top:0px; left:0px; width:184px; height:158px; overflow:hidden;}
+.sldi-img img {width:184px;}
+.sldi-video .sldi-img img {margin-top:-18px;}
+.sldi-c-what {float:left; width:85px; font-size:10px; font-weight:bold; font-family:sans-serif; white-space:nowrap;}
+.sldi-c-what div {padding:0px 0px 0px 7px;}
+.sldi-c-when {float:left; width:99px; font-size:10px; text-align:right; font-family:sans-serif;}
+.sldi-c-when div {padding:0px 7px 0px 0px;}
+.sldi-c-title {clear:both; font-size:10px; line-height:12px;}
+.sldi-c-title div {padding:2px 7px 3px 7px;}
+.sldi-c-title p {margin:0px;}
+.sldi-c-desc {display:none;}
+
+.sldi a:hover, .sldi a:focus {background-color:#000000;}
+.sldi a:hover img, .sldi a:focus img {display:none;}
+.sldi a:hover .sldi-c, .sldi a:focus .sldi-c {top:0px; height:158px;}
+.sldi a:hover .sldi-c-content, .sldi a:focus .sldi-c-content {height:144px;}
+.sldi a:hover .sldi-c-title, .sldi a:focus .sldi-c-title {font-size:11px; line-height:14px; padding-top:10px;}
+
+/* */
+
+.navmenu {width:136px; font-size:10px;}
+.navmenu-h {border:2px solid #01A0E9; border-width:2px 2px 0px 0px;}
+.navmenu-h a {text-transform:uppercase; padding:8px 3px 6px 14px; color:#005195; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/navmenu.png) 0 bottom no-repeat; display:block; font-weight:bold; font-size:11px;}
+.navmenu-c {border-right:2px solid #01A0E9;}
+.navmenu-c ul {list-style:none; margin:0px; padding:0px;}
+.navmenu-c ul li {padding:7px 3px 7px 14px; margin:0px;}
+.navmenu-c ul li a {color:#000000; font-weight:bold;}
+.navmenu-c ul li.navon a {color:#005195;}
+.navmenu-b {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/navmenu.png) right bottom no-repeat; height:35px; margin-top:-7px;}
+
+/* */
+#refresh-wrapped {position:absolute; z-index:50; left:326px;}
+#refresh {position:fixed; z-index:50; width:388px;}
+#where-overview #refresh-wrapped {display:none;}
+#refresh div {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/refresh.png) 0px 0px no-repeat; overflow:hidden; width:388px; height:31px; display:block;}
+#refresh div a {display:block; float:left; color:#FFFFFF;}
+#refresh div a.major {padding:3px 40px 10px 53px; font-size:18px; text-decoration:underline;}
+#refresh div a.major:hover, #refresh div a.major:focus {text-decoration:none;}
+#refresh div a.minor {float:right; padding:8px 30px 8px 5px; font-size:10px;}
+
+.sgrp {clear:both;}
+.sgrp-h {padding:8px 6px 15px 14px;}
+
+.cols-srchfilt-content .sgrp-h {padding-bottom:13px;}
+.cols-srchfilt-content .sgrp-h-less, .sgrp-h-less {padding-bottom:3px;}
+.sgrp-h h3 {font-size:12px; text-transform:uppercase; font-weight:bold; text-rendering:geometricPrecision;}
+.sgrp-h h4 {font-size:11px; text-transform:uppercase; font-weight:bold;}
+.sgrp-c {}
+.sgrp-n ul {list-style:none; margin:0px; padding:5px 1px 7px 1px;}
+.sgrp-n ul li {margin:0px; padding:0px;}
+
+.srchmd-h {padding:8px 6px 5px 14px; text-transform:uppercase; width:150px;}
+.srchmd-h a {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) 0px -595px no-repeat; padding:0px 5px 0px 11px; color:#005195; font-weight:bold; font-size:12px;}
+.srchmd-h-full {width:600px;}
+.srchmd-c {border-bottom:1px solid #01A0E9; margin:6px 8px; padding:6px 6px 12px 6px;}
+.srchmd-off .srchmd-c {display:none;}
+.srchmd-off .srchmd-h a {background-position:0px -647px;}
+.srchmd-c-img {float:left; margin:0px 12px 0px 0px; width:125px;}
+.srchmd-c-img img {width:125px;}
+.srchmd-c-b {padding:0px;}
+.srchmd-c-scope {font-size:12px; line-height:15px; margin-bottom:3px; text-align:justify;}
+
+.facet {padding:0px 0px 12px 0px;}
+.facet-h {padding:2px 6px 5px 14px;}
+.facet-h a {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) 0px -595px no-repeat; padding:0px 5px 0px 11px; color:#005195; font-weight:bold;}
+.facet-c {font-size:10px;}
+.facet-off .facet-h a {background-position:0px -647px;}
+.facet-off .facet-c {display:none;}
+.facet-c ul {list-style:none; margin:0px; padding:0px;}
+.facet-c ul li {padding:0px; margin:0px; position:relative; z-index:20;}
+.facet-c ul li a {display:block; color:#707070; padding:4px 5px 3px 26px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) 12px -94px no-repeat;}
+.facet-c ul li.faceton a {color:#000000; background-position:12px -294px;}
+
+.facet-num {display:none; position:absolute; left:177px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter-counter.png) 0px 0px no-repeat; height:19px; top:2px; color:#FFFFFF;}
+.facet-num span {display:block; padding:3px 5px 2px 10px; font-size:10px; overflow:hidden; float:left;}
+.facet-c ul li:hover .facet-num, .facet-c ul li:focus .facet-num {display:block;}
+
+.facet-parent {display:none;}
+
+.facet-b-dates {height:20px; color:#707070; overflow:hidden;}
+.facet-b-dates-chk {float:left;}
+.facet-c ul li .facet-b-dates-chk a {padding:0px; width:25px; height:17px;}
+.facet-b-dates-label {float:left; width:42px;}
+.facet-b-dates-label div {padding:4px 0px;}
+.facet-b-dates-condition {float:left; width:22px; text-align:center;}
+.facet-b-dates-condition div {padding:4px 0px;}
+.facet-b-dates-field {float:left; width:43px; padding:3px 0px 0px 0px;}
+.facet-b-dates-field div {padding:0px 1px; margin:0px 5px; border:1px solid #CACAC8;}
+.facet-b-dates-field input {font-size:9px; padding:0px; width:100%; color:#707070; border:none;}
+
+.criteria {}
+
+.crit {padding:0px 0px 7px 0px;}
+.crit-h {float:left; width:80px;}
+.crit-h div {padding:0px 0px 1px 14px;}
+.crit-h a {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) 0px -596px no-repeat; padding:0px 5px 0px 11px; color:#005195; font-weight:bold;}
+.crit-c {float:left; width:592px; padding-top:0px;}
+.crit-off .crit-h a {background-position:0px -647px;}
+.crit-off .crit-c {display:none;}
+.crit-c ul {list-style:none; margin:-7px -7px 0px 0px; padding:0px;}
+.crit-c ul li {padding:0px; margin:7px 7px 0px 0px; float:left; display:none; font-size:10px; line-height:12px;}
+.crit-c ul li a, .search-crit, .search-crit-off, #brwsr-source, .metadata {display:block; line-height:12px; color:#000000; padding:1px 6px 2px 17px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) 2px -197px no-repeat #D4D4D2;}
+.crit-c ul li a.critonpage {background-position:2px -697px;}
+.crit-c ul li.criton {display:block;}
+.crit-c ul li.critaddition {display:block;}
+.crit-c ul li.critaddition span {display:block; line-height:12px; color:#000000; padding:2px 6px 2px 6px; font-size:11px;}
+.crit-c ul li.critaddition:first-child span {padding-left:0px;}
+.crit-c ul li.critaddition a {background:transparent; display:inline; padding:0px; margin:0px; color:#005195; text-decoration:underline;}
+.crit-c ul li.critaddition a:hover, .crit-c ul li.critaddition a:focus {text-decoration:none;}
+.crit-c ul li.critchild {display:block; background:transparent; clear:both;}
+
+.crit-c .form-item {border-color:#B2B2B0; padding:1px 3px; margin-top:-1px;}
+.crit-c ul li.crit-superitm {font-size:12px; font-weight:bold; display:block;}
+.crit-c ul li.crit-superitm a, .dt .crit-c ul li.crit-superitm a {padding:2px 6px 3px 17px; background-position:2px -846px;}
+
+.crit-c ul li.crit-superitm h2 {padding-top:2px; font-size:13px;}
+
+.crit-super .crit-c ul li.criton {margin-top:8px;}
+.crit-super .crit-h div {padding-top:1px;}
+
+.metadata, .dt .crit-c ul li a {background-position:2px -847px;}
+.dt .crit-c ul li.critchild a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/hierarchy-icons.png) 6px 0px no-repeat; padding:0px 0px 0px 18px; margin:0px; color:#005195;}
+
+.metawhere {display:block; background-color:#01A0E9; color:#FFFFFF; padding:2px 7px;}
+h2.metacode {display:block; background-color:#CACAC8; color:#000000; padding:2px 7px; font-size:11px; font-weight:bold;}
+
+.crit-perm .crit-c ul li {display:block;}
+.crit-perm .crit-c ul li a {background-position:2px -297px;}
+.crit-perm .crit-c ul li.critoff a {color:#B4FEFF; background-color:#01A0E9; background-position:2px -797px;}
+.crit-perm .crit-c ul li.critoff a:hover, .crit-perm .crit-c ul li.critoff a:focus {color:#FFFFFF;}
+
+.main-connect .crit-perm .crit-c ul li.critoff a {background-color:#2EB135; color:#96D799;}
+.main-develop .crit-perm .crit-c ul li.critoff a {background-color:#FFB201; color:#FFE3A5;}
+
+.search-crit {background-position:2px -297px;}
+.search-crit-off {background-position:2px -97px; background-color:#FFFFFF; color:#707070;}
+#brwsr-source {background-position:2px -497px; font-size:10px;}
+
+.crit-option {width:400px; float:right; margin:8px 10px 0px 0px;}
+.crit-option .crit-c ul li {display:block;}
+.crit-option .crit-h {float:right; width:72px;}
+.crit-option .crit-c {float:right; width:auto; padding-top:0px;}
+.crit-option .crit-c ul li {float:right;}
+.crit-option .crit-c ul li a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) 2px -97px no-repeat;}
+.crit-option .crit-c ul li.navon a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) 2px -297px no-repeat #D4D4D2;}
+.crit-option .crit-c ul li.navon a.sortdown {background-position:2px -397px;}
+.crit-option .crit-c ul li.navon a.sortup {background-position:2px -497px;}
+
+/* */
+
+.brw-nav {font-size:11px; padding:0px 10px 10px 14px;}
+.brw-nav-status {width:200px; padding:0px; display:inline;}
+#brw-nav-bottom {padding:10px 4px 12px 4px; margin:6px; border-top:1px solid #BBBBBB; clear:both;}
+#brw-nav-bottom .brw-nav {padding:4px 0px 2px 4px;}
+.brw-nav-opt {float:right; width:170px;}
+.brw-nav-opt ul {list-style:none; padding:0px; margin:-1px 0px 0px 0px;}
+.brw-nav-opt ul li {list-style:none; padding:0px 0px 0px 0px; margin:0px; float:right;}
+.brw-nav-opt li a {text-decoration:none; color:#FFFFFF; display:block; background-color:#01A0E9; padding:1px 8px 2px 8px; margin-left:4px;}
+.brw-nav-opt li a:hover, .brw-nav-opt li a:focus {text-decoration:underline;}
+.brw-nav-opt li.dimmed a {background-color:#CCECFA;}
+#brwsr .brw-nav-opt li.dimmed a {background-color:#4D6E7F; color:#808183;}
+
+.brw-pages {clear:both; padding:5px;}
+.brw-pages ul {list-style:none; margin:0px; padding:0px;}
+.brw-pages ul li {float:left; margin:0px 5px 5px 0px;}
+.brw-pages ul li a {font-size:11px; display:block; border:1px solid #01A0E9; background-color:#FFFFFF; color:#000000; padding:1px 4px; text-decoration:none;}
+.brw-pages ul li.navon a, .brw-pages ul li a:hover, .brw-pages ul li a:focus {background-color:#01A0E9; color:#FFFFFF; border-color:#01A0E9;}
+.brw-pages ul li.brw-pages-etc {padding:1px 4px; font-weight:bold;}
+
+/* */
+.brw-i {position:relative; z-index:5;}
+
+.btn.btn-blue div div {background-color:#01A0E9;}
+.act-c-grp a.btn {text-decoration:none; color:#FFFFFF;}
+.act-c-grp.omega {padding-bottom:0px; margin-bottom:-3px;}
+
+.current {
+color:#fff;
+display:inline-block;
+background-color:#2eb135;
+padding: 0px 2px 0px 2px;
+text-transform:capitalize;
+float:left;
+margin-right:5px;
+font-weight:700;
+}
+
+.historical {
+color:#fff;
+display:inline-block;
+background-color:#dc291e;
+padding: 0px 2px 0px 2px;
+text-transform:capitalize;
+float:left;
+margin-right:5px;
+font-weight:700;
+}
+
+.brw-grid .current, .brw-grid .historical {position:absolute; top:3px; right:-2px; padding:3px 4px; z-index:90; font-weight:500;}
+
+.critaddition .current,.critaddition .historical {margin-top:-1px; padding:1px 2px 3px;}
+
+em.highlite {font-style:normal; background-color:#FFB201; color:#000000;}
+
+.ct {padding:12px 6px 6px 6px; margin:6px 8px; border-top:1px solid #BBBBBB;}
+.ct-code {overflow:hidden; height:15px; font-size:10px; font-weight:bold; color:#000000; float:right; text-align:right; white-space:nowrap; width:102px; margin:0px 0px 0px 10px;}
+.ct-code span {display:block; padding:1px 0px 2px 2px;}
+.ct-b {padding:0px;}
+.ct-h {color:#005195; font-weight:bold;}
+a.ct-h:hover, a.ct-h:focus {text-decoration:none;}
+.ct-title {margin-bottom:4px; display:block; font-size:11px;}
+.ct-subtitle {font-size:10px; margin:2px 0px 4px 0px; color:#333333; display:block; font-size:10px; font-style:normal; font-weight:bold;}
+.ct-h:hover .ct-title, .ct-h:focus .ct-title {text-decoration:underline;}
+.ct-credits {font-size:10px; height:14px; overflow:hidden; margin-bottom:4px;}
+.ct-pubdate {float:left; width:150px; position:relative; z-index:6;}
+.ct-type {width:250px; float:right; text-align:right; font-weight:bold; color:#01A0E9;}
+.ct-cattype {width:490px; float:right; text-align:right; font-weight:bold; color:#01A0E9;}
+.ct-cattype span {display:block; float:right; margin-left:20px;}
+.ct-cattype-cat {color:#616265;}
+.ct-status {width:200px; float:right;}
+.ct-authors {font-size:10px; margin-bottom:4px;}
+.ct-scope {font-size:11px; margin-bottom:3px; line-height:14px; text-align:justify;}
+
+.ct-noimg {display:none;}
+.ct-img {float:left; margin:0px 8px 0px 0px;}
+.ct-img div {height:100px; overflow:hidden;}
+.ct-img img {width:150px;}
+
+.ct-video .ct-img img, .ct-book .ct-img img {margin-top:-10px;}
+
+.ct-stats {position:absolute; z-index:20; bottom:7px; left:15px; color:#FFFFFF; font-size:8.5px; font-weight:normal; filter:alpha(opacity=40); opacity:.40; -moz-opacity:.40; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);}
+.ct-stats-length {float:left; background-color:#00773D; padding:1px 3px;}
+.ct:hover .ct-stats, .ct:focus .ct-stats {filter:alpha(opacity=99); opacity:.99; -moz-opacity:.99; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=99);}
+
+.ct-restricted .ct-stats-length {background-color:#DC291E;}
+
+.ct-resmsg {position:absolute; z-index:20; bottom:47px; left:18px; color:#FFFFFF; font-size:8.5px; font-weight:normal; display:none;}
+.ct-resmsg div {background-color:#DC291E; padding:1px 3px 2px 3px; float:left;}
+.ct:hover .ct-resmsg, .ct:focus .ct-resmsg {display:block;}
+
+
+
+
+.ovw .ct-stats {bottom:1px; left:2px;}
+.ovw .ct-resmsg {bottom:40px; left:4px;}
+
+.ct-pubdate a {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/ct-pubdate.png) 0px 0px no-repeat; color:#000000; height:15px; width:115px; margin:-1px 0px 0px 0px; font-size:10px;}
+.ct-pubdate a span {display:block; padding:1px 0px 1px 20px;}
+.ct-pubdate-menu {position:absolute; z-index:15; background-color:#D4D4D2; width:500px; left:0px; top:-1px; display:none; font-size:11px;}
+
+.ct-pubdate-menu-small {position:absolute; z-index:10; background-color:#D4D4D2; width:300px; left:0px; top:-1px; display:none; font-size:11px;}
+
+.ct-pubdate-menu ul {list-style:none; margin:0px; padding:0px;}
+.ct-pubdate-menu ul li {padding:5px 4px 5px 19px; color:#000000;}
+.ct-pubdate-menu a {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/ct-pubdate.png) 0px -50px no-repeat; height:15px; width:15px; float:right; margin:4px 5px;}
+.ct-pubdate-menu em {font-style:normal;}
+.ct-pubdate-launch:hover .ct-pubdate-menu, ct-pubdate-launch:focus .ct-pubdate-menu {display:block;}
+
+.ct-pubdate-launch-small:hover .ct-pubdate-menu-small, ct-pubdate-launch-small:focus .ct-pubdate-menu-small {display:block;}
+
+
+
+.brw-grid .ct-pubdate a {margin-left:3px;}
+.brw-grid .ct-pubdate a span {padding:1px 0px 0px 20px;}
+.brw-grid .ct-pubdate-menu {left:3px;}
+.brw-grid .ct-pubdate-menu em {display:none;}
+.brw-grid .ct-pubdate-menu {width:170px;}
+.brw-grid .ct-pubdate-menu ul {padding:2px 0px;}
+.brw-grid .ct-pubdate-menu ul li {padding:2px 4px 2px 18px;}
+
+.brw-grid .ct-stats {z-index:95; top:3px; right:3px;}
+.brw-grid .ct-stats .ct-stats-length {float:right;}
+.brw-grid .ct-resmsg {z-index:95; bottom:3px; left:3px;}
+.brw-grid .ct-resmsg div {float:right;}
+
+.brw-grid #brw-results-content, .brw-results-content {padding:6px 0px 0px 8px; margin:0px -11px -11px 0px;}
+.brw-grid #brw-nav-bottom {border-top-width:0px; padding-top:0px;}
+
+.brw-grid .brw-i {float:left; margin:0px 11px 11px 0px; width:216px; height:160px; overflow:hidden; position:relative; z-index:5; background-color:#000000;}
+.brw-grid .ct {border-width:0px;}
+.brw-grid .ct-img, .brw-grid .ct-noimg {float:none; position:absolute; top:0px; left:0px; display:block;}
+.brw-grid .ct-img div, .brw-grid .ct-noimg div {height:180px;}
+.brw-grid .ct-img img, .brw-grid .ct-noimg img {width:216px;}
+
+.brw-grid .ct-title {display:block; position:absolute; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/film-blue.png) 0px 0px; z-index:20; margin:0px; bottom:0px; left:0px; width:216px; height:65px; overflow:hidden; line-height:12px; font-size:10px; color:#FFFFFF; font-weight:normal;}
+.brw-grid .ct-title span {display:block; margin:20px 0px 7px 0px; height:38px; padding:0px 7px; overflow:hidden;}
+.brw-grid .ct-code {display:block; position:absolute; z-index:30; margin:0px; font-size:10px; top:99px; right:0px; width:100px; height:21px; overflow:hidden; font-size:10px; color:#FFFFFF; font-weight:normal;}
+.brw-grid .ct-code span {display:block; padding:0px 7px; overflow:hidden;}
+
+.brw-grid .ct-type {display:block; position:absolute; z-index:20; top:3px; left:3px; width:auto; font-size:10px; color:#FFFFFF; font-weight:normal;}
+.brw-grid .ct-type span {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/film-blue.png) 0px 0px; padding:3px 4px;}
+
+.brw-grid .ct-cattype {display:block; position:absolute; z-index:20; top:3px; left:3px; width:auto; font-size:10px; color:#FFFFFF; font-weight:normal;}
+.brw-grid .ct-cattype span {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/film-blue.png) 0px 0px; padding:3px 4px; margin-left:0px;}
+.brw-grid span.ct-cattype-cat {display:none;}
+.brw-grid .ct-cattype span.ct-cattype-vital {display:inline; color:#FFFFFF; padding-right:0px;}
+
+.brw-grid .ct-pubdate {display:block; position:absolute; z-index:30; top:99px; left:0px; width:150px; color:#FFFFFF;}
+.brw-grid .ct-pubdate span {display:block; padding:0px 7px; overflow:hidden;}
+
+.brw-grid .ct-status, .brw-grid .ct-subtitle, .brw-grid .ct-scope, .brw-grid .ct-authors {display:none;}
+
+.brw-grid .ct-video .ct-img img, .brw-grid .ct-book .ct-img img {margin-top:-21px;}
+
+.brw-grid .brw-i:hover .ct-h .ct-title, .brw-grid .brw-i:focus .ct-h .ct-title {top:0px; height:160px; font-size:11px; line-height:13px; text-decoration:none;}
+.brw-grid .brw-i:hover .ct-title span, .brw-grid .brw-i:focus .ct-title span {height:106px; margin-top:55px; margin-bottom:0px;}
+.brw-grid .brw-i:hover img, .brw-grid .brw-i:focus img {display:none;}
+.brw-grid .brw-i:hover .ct-type span, .brw-grid .brw-i:focus .ct-type span, .brw-grid .brw-i:hover .ct-cattype span, .brw-grid .brw-i:focus .ct-cattype span {background:transparent;}
+.brw-grid .brw-i:hover .ct-pubdate, .brw-grid .brw-i:focus .ct-pubdate {top:30px; display:block;}
+.brw-grid .brw-i:hover .ct-code, .brw-grid .brw-i:focus .ct-code {top:30px;}
+
+#where-articles .prodline .ct-article .ct-pubdate {display:none;}
+#where-articles .prodline .ct-article .ct-title {height:38px;}
+#where-articles .prodline .brw-i:hover .ct-article .ct-title, #where-articles .prodline .brw-i:focus .ct-article .ct-title {height:160px;}
+#where-articles .prodline .ct-article .ct-title span {margin-top:6px; height:26px;}
+
+.prodline .ct-video .ct-pubdate {display:none;}
+.prodline .ct-video .ct-title {height:40px;}
+.prodline .ct-video .ct-title span {margin-top:6px; height:26px;}
+
+.brw-grid .brw-i-blurb .ct-title span {margin-top:8px; height:50px;}
+.brw-grid .brw-i-blurb:hover .ct-title span, .brw-grid .brw-i-blurb:focus .ct-title span {margin-top:38px;}
+
+.brw-grid .brw-i-blurbtight .ct-title span {margin-top:8px; height:50px;}
+.brw-grid .brw-i-blurbtight:hover .ct-title span, .brw-grid .brw-i-blurbtight:focus .ct-title span {margin-top:38px; font-size:10px; line-height:12px; height:110px;}
+.brw-grid .brw-i-placeholder {background:transparent; position:static; z-index:1;}
+
+/* */
+.smpl {background-color:#DDDDDD; margin:-8px 0px 0px 0px;}
+.smpl-n {height:30px; overflow:hidden;}
+.smpl-n ul {list-style:none; margin:0px; padding:0px 0px 0px 5px;}
+.smpl-n ul li {float:left; margin:0px; padding:11px 8px 0px 4px;}
+.smpl-n ul li a {display:block; padding:3px 5px; font-size:11px; color:#000000;}
+.smpl-n ul li.navon a {background-color:#01A0E9; color:#FFFFFF;}
+
+.smpl-back {width:30px; float:left; text-align:center;}
+.smpl-back a {display:block; width:12px; height:37px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/sld.png) 0px 0px no-repeat; margin:163px auto 0px auto;}
+.smpl-back a.dimmed {background-position:0px -100px;}
+.smpl-next {width:30px; float:left; text-align:center;}
+.smpl-next a {display:block; width:12px; height:37px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/sld.png) right -50px no-repeat; margin:163px auto 0px auto;}
+.smpl-next a.dimmed {background-position:right -150px;}
+.smpl-b {float:left; width:670px; height:345px; overflow:hidden; margin:10px 0px 8px 0px;}
+.smpl-b-c {margin:0px -11px 0px -8px;}
+
+.smpl .crit-option {width:150px; margin-top:14px; padding-bottom:0px;}
+.smpl .crit-option .crit-c ul li.navon a {background-color:#01A0E9; color:#FFFFFF;}
+
+.smpl-all {padding:2px 10px 14px 10px; text-align:center;}
+.smpl-all a {color:#000000;}
+.smpl-all a span {background-color:#01A0E9; color:#FFFFFF; padding:0px 2px; margin:0px 1px;}
+
+.filt {background-color:#DDDDDD; margin:-8px 0px 0px 0px;}
+.filt-content {position:relative; z-index:50;}
+.filt-n {width:205px; position:absolute; z-index:5; top:0px; left:0px; margin-left:5px;}
+.gen-toggle-closed .filt-n {position:static; margin-top:10px;}
+.filt-n-h {padding:10px 11px 0px 10px;}
+.filt-n-subh {float:left; width:53px; font-weight:bold; font-size:13px;}
+.filt-n-subh div {padding:10px 0px 0px 21px;}
+.filt-n ul {list-style:none; margin:0px; padding:0px; float:left; width:148px;}
+.filt-n ul li {margin:0px 0px -2px 0px; padding:9px 8px 0px 10px;}
+.filt-list li a {display:block; padding:2px 5px 3px 20px; font-size:12px; color:#000000; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filt.png) 0px -50px no-repeat;}
+.filt-list li.checked a {background-position:0px 0px;}
+.filt-list li a.filt-h-enterprise {background-color:#005195;}
+.filt-list li a.filt-h-smallbiz {background-color:#EA7125;}
+.filt-list li a.filt-h-academia {background-color:#00773D;}
+.filt-list li a.filt-h-individuals {background-color:#DC291E;}
+.filt-summary {padding:10px 15px 5px 15px; text-align:justify; font-size:12px;}
+.filt-b {width:670px; margin:10px 0px 8px 30px;}
+.filt-b-c {margin:0px -11px 0px -8px;}
+
+.gen-toggler {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) 0px -645px no-repeat; padding-left:12px; color:#005195; cursor:pointer;}
+.gen-toggled {display:none;}
+.gen-toggle-open .gen-toggler {background-position:0px -593px; color:#000000;}
+.gen-toggle-open .gen-toggled {display:block;} 
+.filt-n ul li {display:none;}
+.gen-toggle-open .filt-n ul li, .filt-n ul li.lead {display:block}
+
+/* */
+.main-h-c .crit {float:left; margin:1px 0px 0px 20px; width:350px; overflow:hidden;}
+
+/* */
+#brwsr-anchor {height:40px; width:0px;}
+#brwsr-wrapped {height:27px; background-color:#FFFFFF; position:fixed; z-index:500; top:0px;}
+#brwsr {height:26px; width:997px; margin-bottom:15px; overflow:hidden; color:#FFFFFF; background-color:#7A7B7F;}
+#brwsr .brw-nav-opt {width:100px;}
+#brwsr-c {padding:5px 15px 0px 150px;}
+#brwsr-close {position:absolute; z-index:55; bottom:1px; left:33px; width:70px; height:21px; overflow:hidden;}
+#brwsr-close a {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/filter.png) center -734px no-repeat; display:block; text-align:center; padding:1px 1px 21px 1px; color:#FFFFFF; font-size:10px;}
+#brwsr-where {float:right; padding:0px 5px 0px 0px;}
+#brwsr-title {float:left;}
+#brwsr-title div {font-weight:bold; padding:0px 5px;}
+#brwsr-sourcezone {float:left;}
+#brwsr-sourcezone div {padding:0px 3px;}
+
+/* */
+.brwres-i-spons {margin:15px 0px 12px 0px; }
+.brwres-i-spons-c {border-top:1px dashed #EA7125; padding:0px; margin:0px 8px 6px 8px;}
+.brwres-i-spons-h {color:#EA7125; text-transform:uppercase; font-size:9px; font-weight:bold; margin:-7px 0px 0px 11px; padding:0px 3px 0px 3px; float:left; background-color:#FFFFFF;}
+.brwres-i-spons .ct {border:none; border-bottom:1px dashed #EA7125; margin:0px; padding-bottom:12px;}
+.brwres-i-spons .ct-scope a, .brw-i-spons .ct-scope a:hover, .brw-i-spons .ct-scope a:focus {color:#000000; text-decoration:none;}
+
+/* */
+table.gdp {border-collapse:collapse;}
+.gdp {padding:4px 6px;}
+
+.gds {border:1px solid #979797; padding:3px 5px; vertical-align:top;}
+table.gds {border-collapse:collapse; border-width:0px;}
+.gds-th-maj {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/design-accents.png) 0px -32px repeat-x; background-color:#D5D5D5; color:#053C5F;}
+.gds-th {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/design-accents.png) 0px -96px repeat-x; background-color:#F0F0F0;}
+.iframe table.gds {border:1px solid #979797;}
+
+.gdi {border:1px solid #D4D4D4; padding:3px 5px; vertical-align:top;}
+table.gdi {border-collapse:collapse; border-width:0px;}
+.gdi-th-maj {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/design-accents.png) 0px -120px repeat-x; background-color:#EEEEEE; color:#222222; padding:1px 5px;}
+.gdi-th {background-color:#F4F4F4; color:#444444; padding:2px 5px;}
+
+.grd {border:1px solid #B5B5C5; padding:3px 5px; vertical-align:top;}
+table.grd {border-collapse:collapse; border-width:0px;}
+.grd-th-maj {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/design-accents.png) 0px -190px repeat-x; background-color:#DDDDEE; color:#222244;}
+.grd-th {background-color:#F2F2F5; color:#444444; padding:2px 5px;}
+
+.gdl {border-style:solid; border-width:0px; border-color:#D7D7D7; padding:4px 5px;}
+table.gdl {border-collapse:collapse; border-width:0px;}
+.gdl-th-maj {background-color:#F0F0F2; border:1px solid #A0A0B0;}
+.gdl-th {background-color:#F4F4F4; border-width:1px; color:#646464; border-style:dashed;}
+.gdl-leftcell {padding-left:12px;}
+.gdl-toprow {border:0px solid #A0A0B0; border-width:0px 0px 1px 0px;}
+.gdl-bottomrow {border:0px solid #A0A0B0; border-width:1px 0px 0px 0px;}
+.gdl-midrow {border:0px solid #A0A0B0; border-width:1px 0px;}
+
+.gcenter {text-align:center;}
+.gexpand {padding:5px; padding-left:8px; padding-right:8px;}
+.gleft, .gmiddle {border-right-width:0px;}
+.gtightleft {padding-left:0px;}
+.gtightright {padding-right:0px;}
+.gmiddle, .gright {border-left-width:0px;}
+.gvtop {border-bottom-width:0px !important;}
+.gvmiddle {border-bottom-width:0px !important; border-top-width:0px !important;}
+.gvbottom {border-top-width:0px !important;}
+.gcontainer {padding:9px;}
+.gcontainertight {padding:0px;}
+.gcontainerroomy {padding:16px;}
+.money, .gmoney {text-align:right;}
+.goverflow {overflow:auto; height:150px; padding:0px;}
+.goverflow-content {padding:3px 5px;}
+.gplain {font-weight:normal;}
+
+ul.ul-lev1 {margin:0px; padding:0px; list-style:none;}
+.ul-lev1 li, ul li .ul-lev1 li  {margin:0px; padding:1px 0px 2px 8px; background:url(/web/20170323170748im_/http://www.sae.org/images/design07/bullet_dash_dark.gif) top left no-repeat;} 
+.ul-lev1 li.sup-offset {background:url(/web/20170323170748im_/http://www.sae.org/images/design07/bullet_offset_dash_dark.gif) top left no-repeat;} 
+
+ul.ul-dash {margin:0px; padding:0px; list-style:none;}
+.ul-dash li, ul li .ul-dash li  {margin:0px; padding:1px 0px 2px 8px; background:url(/web/20170323170748im_/http://www.sae.org/images/design07/bullet_dash_dark.gif) top left no-repeat;} 
+.ul-dash li.sup-offset {background:url(/web/20170323170748im_/http://www.sae.org/images/design07/bullet_                     offset_dash_dark.gif) top left no-repeat;} 
+
+ul.ul-disc {margin:0px; padding:0px; list-style:none;}
+.ul-disc li, ul li .ul-disc li {margin:0px; padding:1px 0px 2px 9px; background:url(/web/20170323170748im_/http://www.sae.org/images/design07/bullet_disc_dark.gif) top left no-repeat;} 
+.ul-disc li.sup-offset {background:url(/web/20170323170748im_/http://www.sae.org/images/design07/bullet_offset_disc_dark.gif) top left no-repeat;} 
+
+ul.ul-square {margin:0px; padding:0px; list-style:none;}
+.ul-square li, ul li .ul-square li  {margin:0px; padding:1px 0px 2px 9px; background:url(/web/20170323170748im_/http://www.sae.org/images/design07/bullet_square_dark.gif) top left no-repeat;} 
+.ul-square li.sup-offset {background:url(/web/20170323170748im_/http://www.sae.org/images/design07/bullet_offset_square_dark.gif) top left no-repeat;} 
+
+ul.ul-indent-maj {margin-left:15px;}
+ul.ul-indent-med {margin-left:10px;}
+ul.ul-indent {margin-left:5px;}
+
+/* */
+.main-c-topped {position:relative; z-index:4;}
+.main-c-topped .cols-ads {position:absolute; z-index:10; right:0px; top:-10px; float:none;}
+.cols-topped {float:left; width:871px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/sect-b-full.png) 840px bottom no-repeat #DBDBD7; border-bottom:12px solid #FFFFFF; margin-top:-8px;}
+.srchmd-h-wrapped {float:left; width:184px; padding:4px 0px;}
+.srchmd-c-wrapped {float:left; width:670px; padding:0px;}
+.srchmd-h-img {margin:6px 0px 0px 14px;}
+.srchmd-h-img img {width:167px;}
+.srchmd-off .srchmd-off-suppress {display:none;}
+
+.main-c-topped .srchmd-h {text-transform:none;}
+.main-c-topped .srchmd-c {border-bottom:none; padding-bottom:4px;}
+
+/* paper citation download*/
+.get_citation {display: block;font-style:italic;float:right;width:21%;background: rgba(0, 0, 0, 0) url("/web/20170323170748im_/http://www.sae.org/images/design10/cp-icons.png") no-repeat scroll 0px -153px;}
+.get_citation span {display:block;text-align:right;}
+
+.crit-c .criton .criton-download {background: #d4d4d2 url("/web/20170323170748im_/http://www.sae.org/images/design10/cp-icons.png") no-repeat scroll -3px -212px; /*-3px -178px;
+border: 1px solid #9a9b9d ;*/
+color: #000000;
+    display: block;
+    line-height: 12px;
+    padding: 1px 6px 2px 17px;
+	margin:3px 0 7px 0;}
+
+/* */
+#footer {background-color:#7A7B7F; color:#FFFFFF;}
+#footer a {color:#FFFFFF;}
+
+#footer-copy {float:left; width:326px;}
+#footer-copy div {padding:5px 14px 20px 12px;}
+#footer-supplier {float:left; width:305px;}
+#footer-supplier div {padding:8px 14px 20px 14px;}
+#footer-links {float:left; width:357px;}
+#footer-links div {padding:8px 14px 20px 14px;}
+#footer-links ul {list-style:none; margin:0px; padding:8px 0px;}
+#footer-links ul li {float:left; margin:0px; padding:0px 8px;}
+#footer-links ul li.divider {padding:0px; margin-top:3px; background-color:#FFFFFF; width:1px; height:9px;}
+
+#footer-global {list-style:none; margin:8px 0px 0px 13px; padding:0px; height:15px;}
+#footer-global li {margin:0px 1px 0px 0px; padding:0px; float:left; width:21px; height:15px; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/global-flags.png) 0px 0px no-repeat;}
+#footer-global li:hover, #footer-global ul li:focus {background:none;}
+#footer-global li span {display:block; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/global-flags.png) 0px -19px no-repeat; width:21px; height:15px; cursor:pointer;}
+#footer-global li#flag-br span {background-position:0px -19px;}
+#footer-global li#flag-cn span {background-position:0px -34px;}
+#footer-global li#flag-de span {background-position:0px -64px;}
+#footer-global li#flag-fr span {background-position:0px -49px;}
+#footer-global li#flag-gb span {background-position:0px -79px;}
+#footer-global li#flag-it span {background-position:0px -94px;}
+#footer-global li#flag-jp span {background-position:0px -109px;}
+#footer-global li#flag-kr span {background-position:0px -124px;}
+#footer-global li#flag-ru span {background-position:0px -139px;}
+
+/* */
+.overlay-wrapper {position:fixed; z-index:850; top:100px; left:0px; text-align:center; width:100%;}
+.overlay {margin:0px auto; width:650px; text-align:left;}
+
+.overlay-h {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/overlay.png) left -53px no-repeat; padding-left:32px; height:28px; overflow:hidden;}
+.overlay-h-in {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/overlay.png) right -53px no-repeat; padding-right:32px; overflow:hidden;}
+.overlay-h-inset {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/overlay.png) 0px -116px repeat-x; height:28px;}
+
+.overlay-c {padding:0px 21px;}
+.overlay-c-in {background-color:#F4F4F4; padding:5px 14px; border:1px solid #808185; border-width:0px 1px;}
+
+.overlay-b {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/overlay.png) left 0px no-repeat; padding-left:32px; height:12px; overflow:hidden;}
+.overlay-b-in {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/overlay.png) right 0px no-repeat; padding-right:32px; height:12px;}
+.overlay-b-in div {background-color:#F4F4F4; border-bottom:1px solid #808185;}
+.overlay-b-in div span {height:11px; width:10px; display:block;}
+
+.overlay-heading {font-weight:bold; padding:6px 2px 2px 2px; color:#FFFFFF; font-size:15px; width:400px; float:left;}
+.overlay-content {padding:9px 3px 3px 3px; background-color:#F4F4F4;}
+.overlay-content p:first-child {margin-top:0px;}
+.overlay-close {margin-top:3px; width:24px; height:25px; float:right; background:url(/web/20170323170748im_/http://www.sae.org/images/design13/overlay.png) -30px -211px no-repeat;}
+.overlay-close:hover, .overlay-close:focus {background-position:-30px -249px;}
+
+#overlaycloser {position:fixed; top:0px; background-color:#EEEEEE; z-index:840; width:997px; height:4000px; display:block; filter:alpha(opacity=40); opacity:.40; -moz-opacity:.40; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);}
+
+
+
+
+/* ADDED FROM DL FOR OVERLAY */
+.ovr-h {margin:0px -7px;}
+
+.ovr-h h1 {font-size:14px; margin:0px 7px 6px 11px; font-weight:bold;}
+.ovr-h .dtab {}
+.ovr-b {margin:12px 0px 12px 10px;}
+.ovr-c {margin:10px 0px 12px 2px;}
+.ovr-b-overflow {overflow:auto;}
+
+
+.ovr-info {font-size:12px;}
+.ovr-info-k {float:left; width:126px; font-size:11px;}
+.ovr-info-k div {padding:6px 0px;}
+.ovr-info-v {float:left; width:250px;}
+.ovr-info-v div {padding:6px 0px;}
+
+.tbl-lite {border-collapse:collapse; width:100%; margin:0px 0px 0px -6px;}
+.tbl-lite th {padding:4px 6px 10px 6px;}
+
+
+.tbl-lite tr {border-top:1px dashed #CACAC8;}
+.tbl-lite thead tr {border-top:none;}
+
+.tbl-lite td {padding:5px 6px 10px 6px;}
+.tbl-lite td .key { margin:-6px -3px -3px -3px; padding:6px 3px;}
+.tbl-lite td .value {margin:-3px; padding:6px 3px 3px 3px;}
+
+.ovr-collections {font-size:12px;}
+.ovr-collections ul {list-style:none; margin:-5px 0px 0px 0px; padding:0px;}
+.ovr-collections ul li {margin:0px; padding:3px 5px 6px 5px; clear:both;}
+.ovr-collections ul li.lead {font-weight:600; padding-top:8px; font-size:11px;}
+.ovr-collections ul li div {float:left; width:70px; text-align:center; background-color:#2EB135; color:#FFFFFF; font-size:10px; margin:1px 8px 0px 0px;}
+.ovr-collections ul li div span {display:block; padding:0px 3px 1px 3px;}
+.ovr-collections ul li div.inactive {background-color:#9A9B9D;}
+
+.ovr-cols {}
+.ovr-cols-equal-alpha {float:left; width:390px; margin:0px 10px 0px 0px;}
+.ovr-cols-equal-omega {float:left; width:390px; margin:0px 0px 0px 10px;}
+
+.rmenu {margin:0px 2px 12px 2px;}
+.rmenu .key {padding:0px 0px 6px 2px;}
+.rmenu ul {list-style:none; margin:0px; padding:0px; font-size:12px;}
+.rmenu ul li {padding:4px 2px; margin:0px; border-top:1px dotted #CACAC8; clear:left;}
+.rmenu ul li a {display:block; color:#000000; padding:3px 5px 3px 15px; background:url(/web/20170323170748im_/http://www.sae.org/exdomains/dl/elements/design/dl-icons.png) 0px -2345px no-repeat; width:100px; float:left; clear:left;}
+.rmenu ul li a span {display:block; padding-right:18px}
+.rmenu ul li em {display:block; font-size:10px; float:left;}
+.rmenu ul li.dimmed {opacity:.25;}
+
+/* */
+.btn-bar {margin-top:12px; height:21px;}
+.btn-bar-right {float:right; margin-top:12px; height:21px;}
+.btn-container {float:left; margin:0px 5px 5px 0px;}
+.btn-container-right {float:right; margin:0px 0px 0px 5px;}
+.btn-stackem {margin:0px 0px 6px 0px;}
+
+.btn {color:#FFFFFF; display:block; font-weight:bold; font-size:12px; white-space:nowrap;}
+.btn div {border:1px solid #616265;}
+.btn div div {padding:2px 9px; background-color:#EA7125; border:1px solid #FFFFFF;}
+a.btn span {display:block; padding:1px 2px;}
+.btn input {background:transparent; border-width:0px; min-width:50px; padding:0px; margin:0px; color:#FFFFFF; font-weight:bold; font-family:verdana,arial,helvetica,sans-serif;}
+.btn:hover span, .btn:focus span, .btn:hover input, .btn:focus input {text-decoration:underline;}
+.btn:hover div, .btn:focus div {border-color:#616265;}
+.btn:hover div div, .btn:focus div div {border-color:#FFFFFF; background-color:#9A9B9D;}
+
+.btn-minor {font-size:10px; font-weight:normal;}
+.btn-minor div {border-width:0px;}
+.btn-minor div div {padding:0px 5px 1px 5px;}
+.btn-minor input {font-size:10px; font-weight:normal;}
+a.btn-minor span {padding:1px;}
+.btn-minor:hover div div, .btn-minor:focus div div {border-color:#FFFFFF;}
+
+.btn-super {font-size:14px;}
+.btn-super div {}
+.btn-super div div {padding:4px 12px;}
+.btn-super input {font-size:15px;}
+a.btn-super span {padding:1px;}
+
+.btn-del div div {background-color:#DC291E;}
+
+table.buttonbar {width:100%; border-collapse:collapse; margin-top:5px;}
+#btn-rightmost {padding-right:0px; text-align:right; width:25%;}
+#btn-leftmost {padding-left:0px; width:25%;}
+#btn-nearright {padding-right:20px; text-align:right; width:25%;}
+#btn-nearleft {padding-left:20px; width:25%;}
+
+/* */
+#helpbubble {z-index:150; width:232px; position:absolute; }
+
+#helpbubble-outer {padding-bottom:6px; background:url(/web/20170323170748im_/http://www.sae.org/images/design10/bubble.png) -696px bottom no-repeat;}
+#helpbubble-shell {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/bubble.png) -462px 0px no-repeat; overflow:hidden;}
+#helpbubble-content {padding:6px 12px 6px 8px; font-size:11px; text-align:left;}
+.helpbubble-right #helpbubble-outer {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/bubble.png) 3px bottom no-repeat;}
+.helpbubble-right #helpbubble-shell {background-position:-231px 0px;}
+.helpbubble-right #helpbubble-content {padding:6px 6px 6px 14px;}
+.helpbubble-down #helpbubble-outer {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/bubble-down.png) 0px bottom no-repeat;}
+.helpbubble-down #helpbubble-shell {background:url(/web/20170323170748im_/http://www.sae.org/images/design13/bubble-down.png) -231px 0px no-repeat;}
+.helpbubble-down #helpbubble-content {padding:18px 6px 6px 12px;}
+
+#helpbubble-title {display:block;}
+.helptext {font-style:normal; cursor:help; padding-right:12px; background:url(/web/20170323170748im_/http://www.sae.org/images/design10/sae-icons.png) right 0px no-repeat;}
+.helptext:hover, .helptext:focus {border-bottom:1px dashed #731702;}
+.helptext span {display:none;}
+#helpbubble .ct-code, #helpbubble .ct-pubdate, #helpbubble .helptext-suppress {display:none;}
+
+/* OLD */
+
+
+.tabs-leader {margin-bottom:10px; font-style:italic;}
+.tabs {padding:0px; clear:both; height:21px; background:url(/web/20170323170748im_/http://www.sae.org/images/design10/tabs.png) 0px 0px repeat-x; margin:0px 0px 11px 0px; line-height:1em;}
+.tabs ul {margin:0px; padding:0px; list-style:none; bottom:-1px;}
+.tabs li {display:block; float:left; background:url(/web/20170323170748im_/http://www.sae.org/images/design10/tabs.png) 0px -41px no-repeat; padding-left:3px; margin-right:3px; background-color:#4C4C4C;}
+.tabs li a {float:left; font-weight:500; color:#FFFFFF; font-size:11px; padding:3px 3px; text-decoration:none; height:21px;}
+.tabs li a:hover, .tabs li a:visited, .tabs li a:focus {color:#FFFFFF;}
+.tabs li div {display:block; float:left; padding:0px; background:url(/web/20170323170748im_/http://www.sae.org/images/design10/tabs.png) right -205px no-repeat; padding-right:3px; background-color:#4C4C4C;}
+.tabs li div div {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/tabs.png) 0px -123px repeat-x; display:block; float:left; padding:0px; background-color:#4C4C4C;}
+.tabs li.tabon {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/tabs.png) 0px -82px no-repeat;}
+.tabs li.tabon div {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/tabs.png) right -246px no-repeat;}
+.tabs li.tabon div div {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/tabs.png) 0px -164px repeat-x;}
+.tabs li.tabon a {color:#000000; padding-bottom:3px;}
+.tabs li.tabon a:hover, .tabs li a:hover {text-decoration:underline;}
+.tabs li.tabon a:hover {color:#000000;}
+.tabs li.tabon a:visited {color:#000000;}
+.tabs li.lead {color:#000000; padding-top:3px;}
+.tabs li.lead a {font-size:11px; font-weight:bold; padding:0px; color:#000000;}
+.tabs li.lead a:hover, .tabs li.lead a:visited {color:#000000;}
+.tabs li.lead {background:url(/web/20170323170748im_/http://www.sae.org/images/design10/tabs.png) 0px 0px repeat-x; top:0px; margin-right:10px; padding-left:0px;}
+
+.tabs-level td.tblcondense {vertical-align:bottom;}
+.tabs-level h1 {margin-bottom:11px; border-bottom:1px solid #5C5C5C;}
+.tabs-right li {float:right; margin:0px 0px 0px 3px;}
+.tabs-right li.lead {margin:0px 7px 0px 0px;}
+
+
+
+
+
+
+.alertbox {background-color:#FDF2AB; border-top:1px solid #A29330;}
+.alertbox .important {font-weight:bold;}
+.alertbox div {width:973px; margin:0px auto; padding:20px 12px; font-size:12px; text-align:left; line-height:16px;}
+/*
+     FILE ARCHIVED ON 17:07:48 Mar 23, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:03:56 May 18, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.539
+  captures_list: 0.605
+  exclusion.robots: 0.053
+  exclusion.robots.policy: 0.042
+  esindex: 0.008
+  cdx.remote: 17.119
+  LoadShardBlock: 110.17 (3)
+  PetaboxLoader3.datanode: 112.666 (5)
+  PetaboxLoader3.resolve: 476.398 (3)
+  load_resource: 554.719 (2)
+*/

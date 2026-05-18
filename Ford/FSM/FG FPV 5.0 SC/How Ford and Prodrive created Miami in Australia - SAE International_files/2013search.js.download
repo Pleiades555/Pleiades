@@ -1,0 +1,490 @@
+var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opens = _____WB$wombat$assign$function_____("opens");
+var selectedFacets = new Array(); 
+
+function submitSearch()
+{
+if (dfacetSubmit()){
+document.forms.searchForm.submit();
+}
+}
+
+function toggleFacet(thegroup) {
+if (document.getElementById("facet-" + thegroup).className == 'facet') {
+changeClass("facet-" + thegroup,'facet facet-off');
+} else {
+changeClass("facet-" + thegroup,'facet');
+}
+}
+
+function toggleModule(thegroup) {
+if (document.getElementById("srchmd-" + thegroup).className == 'srchmd') {
+changeClass("srchmd-" + thegroup,'srchmd srchmd-off');
+} else {
+changeClass("srchmd-" + thegroup,'srchmd');
+}
+}
+
+function mfacet(thegroup,thenum) {
+var crit = document.getElementById("crit-" + thegroup + "-" + thenum)
+if (crit != null && crit.className == "criton") {
+mfacetRemove(thegroup,thenum);
+changeClass("facet-" + thegroup + "-" + thenum,"");
+} else {
+mfacetAdd(thegroup,thenum)
+changeClass("facet-" + thegroup + "-" + thenum,"faceton");
+}
+mfacetGroup(thegroup);
+startRefreshButton();
+}
+
+function dfacet(type)
+{
+var crit = document.getElementById("crit-dt-value")
+if (crit != null && crit.className == "criton")
+{
+dfacetRemove();
+} else {
+dfacetAdd(type)
+changeClass("facet-dt-" + type,"faceton");
+changeClass("facet-dt-s","faceton");
+changeClass("facet-dt-e","faceton");
+}
+startRefreshButton();
+}
+
+function rfacet(type)
+{
+var crit = document.getElementById("crit-" + type);
+var input = document.getElementById("frmFacet-" + type);
+
+if (crit != null)
+crit.parentNode.removeChild(crit);
+if (input != null)
+input.parentNode.removeChild(input);
+
+startRefreshButton();
+}
+
+function dfacetAdd(type) {
+dfacetRemove();
+document.getElementById("crit-dt").style.display = "";
+var ul = document.getElementById("crit-dt-ul")
+var text = "";
+var inputs = "";
+var form = document.getElementById("facetFormArea");
+
+if (type == 'r')
+{ 
+var start = document.getElementById("facet-dt-s-val").value;
+var end = document.getElementById("facet-dt-e-val").value;
+text = start + " to " + end;
+
+var in_start = document.createElement("input");
+in_start.setAttribute("type", "hidden");
+in_start.setAttribute("name", "sdate");
+in_start.setAttribute("id", "sdate");
+in_start.setAttribute("value", start);
+form.appendChild(in_start);
+
+var in_end = document.createElement("input");
+in_end.setAttribute("type", "hidden");
+in_end.setAttribute("name", "edate");
+in_end.setAttribute("id", "edate");
+in_end.setAttribute("value", end);
+form.appendChild(in_end);
+
+} else {
+var start = document.getElementById("facet-dt-y-val").value;
+text = start;
+var in_start = document.createElement("input");
+in_start.setAttribute("type", "hidden");
+in_start.setAttribute("name", "sdate");
+in_start.setAttribute("id", "sdate");
+in_start.setAttribute("value", start);
+form.appendChild(in_start);
+}
+
+ul.innerHTML = '<li id="crit-dt-value" class="criton"><a href="" onclick="dfacetRemove();return false;" title="Remove">' + text + '</a></li>';
+}
+
+function dfacetUpdate(type, theCurrentElement) {
+var startElm = document.getElementById("sdate");
+var endElm = document.getElementById("edate");
+if (theCurrentElement.value!=""||(startElm.value!=""||endElm.value!="")){
+if (type == 'r')
+{
+if (startElm != null && endElm != null)
+{
+document.getElementById("crit-dt-value").innerHTML = 
+'<a href="" onclick="dfacetRemove();return false;" title="Remove" id="dateFacetButton">' + 
+document.getElementById("facet-dt-s-val").value + " to " + document.getElementById("facet-dt-e-val").value + '</a>';
+if(document.getElementById("sdate").value != document.getElementById("facet-dt-s-val").value){
+document.getElementById("sdate").value = document.getElementById("facet-dt-s-val").value;
+startRefreshButton();
+}
+if(document.getElementById("edate").value != document.getElementById("facet-dt-e-val").value){
+document.getElementById("edate").value = document.getElementById("facet-dt-e-val").value;
+startRefreshButton();
+}
+}
+else
+dfacet('r');
+} else {
+if (startElm != null && endElm == null)
+{
+document.getElementById("crit-dt-value").innerHTML = 
+'<a href="" onclick="dfacetRemove();return false;" title="Remove" id="yearFacetButton">' + 
+document.getElementById("facet-dt-y-val").value + '</a>';
+document.getElementById("sdate").value = document.getElementById("facet-dt-y-val").value;
+startRefreshButton();
+}
+else 
+dfacet('y');
+}
+}
+}
+
+function dfacetRemove()
+{
+changeClass("facet-dt-r","");
+changeClass("facet-dt-y","");
+changeClass("facet-dt-s","");
+changeClass("facet-dt-e","");
+document.getElementById("crit-dt").style.display = "none";
+document.getElementById("crit-dt-ul").innerHTML = "";
+
+var form = document.getElementById("facetFormArea");
+var start = document.getElementById("sdate");
+var end = document.getElementById("edate");
+
+if (start != null) { form.removeChild(start); }
+if (end != null) { form.removeChild(end); } 
+startRefreshButton();
+}
+
+function validateNumeric(evt)
+{
+var theEvent = evt || window.event;
+var key = theEvent.keyCode || theEvent.which;
+key = String.fromCharCode( key );
+var regex = /[0-9]|\./;
+if( !regex.test(key) && evt.keyCode != 8) {
+theEvent.returnValue = false;
+if(theEvent.preventDefault) theEvent.preventDefault();
+return false;
+} else {return true;}
+}
+
+function dfacetSubmit(){
+var drangeFacet = document.getElementById('dateFacetButton');
+var start = document.getElementById("sdate");
+var end = document.getElementById("edate");
+if (drangeFacet!=null){
+if (start.value==""||end.value==""){
+alert("Please enter both a start and an end date.");
+return false;
+}
+if	(start.value>end.value){
+alert("Please enter a start date earlier than the end date.");
+return false;
+}
+}
+return true;
+}
+
+function mfacetAdd(thegroup,thenum)
+{
+var ul = document.getElementById("crit-" + thegroup + "-ul");
+var fct = document.getElementById("facet-" + thegroup + "-" + thenum + "-lnk")
+ul.innerHTML  = ul.innerHTML  + '<li id="crit-' + thegroup + '-' + thenum + '" class="criton"><a href="" onclick="mfacet(\'' + thegroup + '\',' + thenum + ');return false;" title="Remove">' + fct.innerHTML  + '</a>'
++ '<input type="hidden" name="selectedFacet" value="' + thegroup + '-' + thenum + '" />' + '</li>';
+arrayAddFacet(thegroup, thenum);
+}
+
+function mfacetRemove(thegroup,thenum)
+{
+var ul = document.getElementById("crit-" + thegroup + "-ul");
+var crt = document.getElementById("crit-" + thegroup + "-" + thenum)
+ul.removeChild(crt);
+arrayRemoveFacet(thegroup,thenum);
+}
+
+function arrayPreset(fname,fval)
+{
+if (selectedFacets[fname] == undefined)
+selectedFacets[fname] = new Array();
+
+selectedFacets[fname].push(fval);
+}
+
+function arrayAddFacet(thegroup,thenum)
+{
+var fname = document.getElementById("facet-name-" + thegroup).value;
+var fval = document.getElementById("facet-val-" + thegroup + "-" + thenum).value;
+
+if (selectedFacets[fname] == undefined)
+selectedFacets[fname] = new Array();
+
+selectedFacets[fname].push(fval);
+setFacetFormElement(fname, buildFacetValue(selectedFacets[fname]));
+}
+
+function arrayRemoveFacet(thegroup,thenum)
+{
+var fname = document.getElementById("facet-name-" + thegroup).value;
+var fval = document.getElementById("facet-val-" + thegroup + "-" + thenum).value;
+
+if (selectedFacets[fname] == undefined)
+return
+
+var index = selectedFacets[fname].indexOf(fval)
+if (index == -1)
+return
+
+selectedFacets[fname].splice(index, 1);
+setFacetFormElement(fname, buildFacetValue(selectedFacets[fname]));
+}
+
+function buildFacetValue(facetValArray)
+{
+var str = "(";
+for (i in facetValArray)
+{
+if (i > 0)
+str += (' OR "' + facetValArray[i] + '"');
+else
+str += ('"' + facetValArray[i] + '"');
+}
+str += ")";
+
+return str
+}
+
+function setFacetFormElement(fname, value)
+{
+var container = document.getElementById("facetFormArea");
+var existing = document.getElementById("frmFacet-" + fname);
+
+if (value == "()" && existing != undefined)
+{
+container.removeChild(existing)
+return
+}
+
+if(existing == undefined)
+{
+existing = document.createElement("input");
+existing.type = "hidden";
+existing.id = "frmFacet-" + fname;
+existing.name = fname;
+container.appendChild(existing);
+}
+
+existing.value = value;
+}
+
+function setSort(num)
+{
+var frmSort = document.getElementById("frmSortField");
+var frmDir = document.getElementById("frmSortDir");
+
+var frmNVal = document.getElementById("sort-val-" + num);
+
+if (frmNVal != null && frmSort.value == frmNVal.value)
+{
+if (frmDir.value == "asc")
+{
+changeClass("crit-sort-link-" + num,"sortdown");
+frmDir.value = "desc";
+}
+else
+{
+changeClass("crit-sort-link-" + num,"sortup");
+frmDir.value = "asc";
+}
+} else {
+manageSortBy(num);
+changeClass("crit-sort-link-" + num,"sortdown");
+frmDir.value = "desc";
+}
+
+frmSort.value = frmNVal.value;
+startRefreshButton();
+}
+
+function manageSortBy(theon) {
+for (var i = 1; i < 10; i++) {
+changeClass("crit-sort-" + i,"");
+changeClass("crit-sort-link-" + i,"");
+}
+changeClass("crit-sort-" + theon,"navon");
+}
+
+function setDisplay(type)
+{
+if (type == 'grid')
+{
+changeClass('brw-results','brw-grid');
+changeClass('crit-display-1','navon');
+changeClass('crit-display-2','');	
+} else {
+changeClass('brw-results','');
+changeClass('crit-display-1','');
+changeClass('crit-display-2','navon');	
+}
+
+document.getElementById('frmDisplay').value = type;
+setNavBtnDispType(type)
+}
+
+function setNavBtnDispType(type)
+{
+var next = document.getElementsByClassName("brw-nav-next");
+var prev = document.getElementsByClassName("brw-nav-back");
+var pgs = document.getElementsByClassName("brw-pages");
+
+for (var i=0; i < prev.length; i++){
+if(prev[i].href != "")
+{
+prev[i].href = prev[i].href.replace(new RegExp("[&?]display=((grid)|(list))"), "");
+if (prev[i].href.slice(-1) == '/') prev[i].href += "?display=" + type; else prev[i].href += "&display=" + type;
+prev[i].href = prev[i].href.replace(new RegExp("/\\??&"),'/?');
+}
+}
+
+for (var i=0; i < next.length; i++){
+if(next[i].href != "")
+{
+next[i].href = next[i].href.replace(new RegExp("[&?]display=((grid)|(list))"), "");
+if (next[i].href.slice(-1) == '/') next[i].href += "?display=" + type; else next[i].href += "&display=" + type;
+next[i].href = next[i].href.replace(new RegExp("/\\??&"),'/?');
+}
+}
+
+for (var i=0; i < pgs.length; i++){
+var li = pgs[i].getElementsByTagName("a");
+for (var l=0; l < li.length; l++){
+li[l].href = li[l].href.replace(new RegExp("[&?]display=((grid)|(list))"), "");
+if (li[l].href.slice(-1) == '/') li[l].href += "?display=" + type; else li[l].href += "&display=" + type;
+li[i].href = li[i].href.replace(new RegExp("/\\??&"),'/?');
+}
+}
+
+}
+
+function mfacetGroup(thegroup) {
+var active = 0;
+for (var i = 1; i < 101; i++) {
+if (document.getElementById("crit-" + thegroup + "-" + i) != null) {
+if (document.getElementById("crit-" + thegroup + "-" + i).className == 'criton') {active++;} 
+}
+}
+if (active) {
+displayItem('crit-' + thegroup);
+} else {
+hideItem('crit-' + thegroup);
+}
+}
+
+function sectorcrit(thegroup,thenum) {
+if (document.getElementById("crit-" + thegroup + "-" + thenum).className == "criton") {
+changeClass("crit-" + thegroup + "-" + thenum,"critoff");
+} else {
+changeClass("crit-" + thegroup + "-" + thenum,"criton");
+}
+}
+
+function searchOptionToggle() {
+if (document.getElementById('search-option').className == 'search-crit') {
+changeClass('search-option','search-crit-off');
+} else {
+changeClass('search-option','search-crit');
+}
+}
+
+
+
+/* */
+document.refreshBtnTop = 384;
+document.refreshBtnTopFinal = 95;
+
+function startRefreshButton() {
+if (document.getElementById('refresh-wrapped').style.display == 'none') {
+document.refreshBtnTop = 384;
+document.refreshBtnTopFinal = 95;
+if (document.getElementById('brwsr-anchor') != null) {
+if (document.getElementById('brwsr-anchor').style.display == 'none') {} else {
+document.refreshBtnTop = document.refreshBtnTop + document.getElementById('brwsr-anchor').clientHeight;
+document.refreshBtnTopFinal = document.refreshBtnTopFinal + document.getElementById('brwsr-anchor').clientHeight;
+}
+}
+if (document.getElementById('ad-leaderboard').style.display == 'none') {} else {
+document.refreshBtnTop = document.refreshBtnTop + document.getElementById('ad-leaderboard').clientHeight;
+document.refreshBtnTopFinal = document.refreshBtnTopFinal + document.getElementById('ad-leaderboard').clientHeight;
+}
+
+moveRefreshButtonAct();
+}
+if (document.getElementById('refresh-btn').className == 'alt') {
+changeClass('refresh-btn','');
+} else {
+changeClass('refresh-btn','alt');
+}
+}
+
+function moveRefreshButton() {
+document.moveRefresh = window.setTimeout('moveRefreshButtonAct()', 1);
+displayItem('refresh-wrapped');
+}
+
+function moveRefreshButtonAct() {
+if (document.getElementById("refresh-wrapped") != null) {
+document.refreshBtnTop = document.refreshBtnTop - 6;
+if (document.refreshBtnTop > (document.refreshBtnTopFinal - 3)) {
+document.getElementById("refresh").style.top = document.refreshBtnTop + "px";
+moveRefreshButton();
+} else {
+window.clearTimeout(document.moveRefresh);
+document.getElementById("refresh").style.top = document.refreshBtnTopFinal;
+}
+}
+}
+
+function profileRemove(theDomain){
+document.getElementById("searchForm").action = "http://"+theDomain+"/search/";
+submitSearch();
+}
+
+function returnToMainSearch(theDomain){
+document.getElementById("searchForm").action = "http://"+theDomain+"/search/";
+}
+}
+
+/*
+     FILE ARCHIVED ON 03:26:34 Mar 21, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:03:58 May 18, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.57
+  captures_list: 0.61
+  exclusion.robots: 0.055
+  exclusion.robots.policy: 0.043
+  esindex: 0.011
+  cdx.remote: 10.465
+  LoadShardBlock: 65.634 (3)
+  PetaboxLoader3.datanode: 75.526 (4)
+  load_resource: 28.401
+*/

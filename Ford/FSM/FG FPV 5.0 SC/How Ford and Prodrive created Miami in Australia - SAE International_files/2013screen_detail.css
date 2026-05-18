@@ -1,0 +1,360 @@
+.cols-dtheader-containtabs {border-bottom:0px;}
+
+.cols-dtheader-content-tabs {margin-top:8px;}
+
+.cols-dtheader-content-tabs .tabs li.lead a {padding-left:8px;}
+.cols-dtheader-content-tabs .btn-container-right {margin-right:8px;}
+
+
+
+.dt-video {width:526px; padding-bottom:2px;}
+
+.dt-img {width:526px; position:relative; z-index:16; margin-bottom:8px;}
+.dt-img-brw {position:absolute; z-index:110; left:518px; width:11px; height:80px; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/detail-img-more.png) 4px center no-repeat #616265;}
+.dt-img-brw ul {list-style:none; margin:0px; padding:0px 0px 9px 0px; display:none;}
+.dt-img-brw ul li {margin:9px 0px 0px 9px; padding:0px; float:left; border:1px solid #616265;}
+.dt-img-brw ul li:hover, .dt-img-brw ul li:focus {border-color:#CACAC8;}
+.dt-img-brw ul li a {display:block; width:145px; height:90px; overflow:hidden;}
+.dt-img-brw ul li a img {width:145px;}
+.dt-img-brw ul li.navon {border-color:#FFB201;}
+
+.dt-img-brw:hover, .dt-img-brw:focus {width:322px; height:auto; background:transparent; background-color:#616265;}
+.dt-img-brw:hover ul, .dt-img-brw:focus ul {display:block;}
+
+.dt-img-brw-opener {height:80px; width:11px; display:block;}
+.dt-img-brw:hover .dt-img-brw-opener, .dt-img-brw:focus .dt-img-brw-opener {display:none;}
+
+.dt-img-image {overflow:hidden;}
+.dt-img-image img {padding:0px; margin:0px;}
+
+.dt-img-caption {font-size:10px; text-align:justify; width:516px; background-color:#616265; margin-top:-2px; border-top:1px solid #FFFFFF;}
+.dt-img-caption div {padding:5px 9px 6px 8px; color:#FFFFFF;}
+.dt-img-caption p {margin:0px;}
+.dt-img-caption a {color:#CACAC8; text-decoration:underline;}
+.dt-img-caption a:hover, .dt-img-caption a:focus {text-decoration:none;}
+
+.dt-text {font-size:12px; width:516px; line-height:150%; border-bottom:1px solid #9A9B9D; margin-bottom:12px;}
+.dt-text-content {padding:0px 8px 6px 8px; margin:-3px 0px;}
+
+.dt-summary {font-size:12px; text-align:justify; width:524px; line-height:150%; border-bottom:1px solid #9A9B9D; margin-bottom:12px;}
+.dt-summary-content {padding:0px 8px 12px 8px; margin:-3px 0px;}
+.dt-summary-content p:first-child {margin-top:0px;}
+.dt-summary-content p:last-child {margin-bottom:0px;}
+
+.dt-cover {float:right; padding:4px 0px 3px 12px; background-color:#FFFFFF;}
+
+.dt-scope {}
+.dt-scope-h {float:left; width:74px;}
+.dt-scope-h div {padding:0px 0px 6px 8px;}
+.dt-scope-c {float:left; width:443px;}
+.dt-scope-c-content {padding:0px 8px 13px 0px; font-size:12px; text-align:justify; line-height:150%; margin:-2px 0px 0px 0px;}
+.dt-scope-c-content p:first-child {margin-top:0px;}
+.dt-scope-c-content p:last-child {margin-bottom:0px;}
+
+.dt-generic {padding:0px 8px 12px 8px; border-bottom:1px solid #9A9B9D; margin-bottom:12px;}
+
+.dt-citation {}
+.dt-citation-h {float:left; width:74px;}
+.dt-citation-h div {padding:0px 0px 6px 8px;}
+.dt-citation-c {float:left; width:443px;}
+.dt-citation-c-content {padding:0px 8px 13px 0px; font-size:11px; text-align:justify; line-height:150%; margin:-2px 0px 0px 0px;}
+
+.dt-history {}
+.dt-history-h {float:left; width:74px;}
+.dt-history-h div {padding:0px 0px 6px 8px;}
+.dt-history-c {float:left; width:443px;}
+.dt-history-c-content {padding:0px 8px 10px 0px; font-size:12px; text-align:justify; line-height:150%; margin:-2px 0px 0px 0px;}
+
+.dt-restricted {padding:9px 7px 15px 7px; background-color:#E4E4E2;}
+.dt-restricted-h {padding-bottom:11px;}
+.dt-restricted-h a {color:#DC291E;}
+.dt-restricted-stats {float:right; width:150px;}
+.dt-restricted-stats-length {background-color:#DC291E; color:#FFFFFF; padding:1px 3px; float:right;} 
+.dt-restricted-stats-label {padding:1px 7px; float:right;}
+.dt-restricted-b {padding:5px 13px; border-top:1px solid #DC291E;}
+.dt-restricted-b-c {padding-bottom:10px; text-align:center;}
+
+.act-quote-c {padding:1px 0px; margin:0px 3px; text-align:justify; font-size:10px; background-color:#FFFFFF;}
+.act-quote-c p:first-child {margin-top:0px;}
+.act-quote-c p:last-child {margin-bottom:0px;}
+
+.main-detail .crit-c {padding-bottom:5px;}
+
+.dth-meta {float:right;}
+.dth-meta ul {list-style:none; margin:0px; padding:0px;}
+.dth-meta ul li {margin:0px; padding:2px 0px 0px 7px; float:right;}
+.dth-meta ul li#dth-meta-date {padding-top:3px;}
+
+.dt-meta {}
+.dt-meta .crit-h {width:74px;}
+.dt-meta .crit-h div {padding-left:8px;}
+.dt-meta .crit-c {width:445px;}
+
+.gst-container {padding:1px 0px 2px 0px;}
+.gst {padding:2px 0px; vertical-align:middle; font-size:11px;}
+.ovrmnu .gst {vertical-align:top;}
+table.gst {border-collapse:collapse;}
+.gst-th {color:#616265; font-weight:normal; border-bottom:1px solid #E4E4E3;}
+.gst-th-maj {font-weight:normal; border-bottom:1px solid #E4E4E3;}
+.gst-lead a {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/filter.png) 0px -93px no-repeat; color:#005195; display:block; padding:4px 5px 3px 14px;}
+.gst-lead a.navon {background-position:0px -843px; color:#000000;}
+.gst-lead span {display:block; padding:4px 5px 3px 14px;}
+.gst-child {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/hierarchy-icons.png) 3px 5px no-repeat; padding-left:13px;}
+
+.dt-buy-saving-container {position:relative; z-index:100;}
+.dt-buy-saving {display:none; position:absolute; z-index:120; left:-120px; top:5px; width:120px; padding-bottom:3px; font-size:10px; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/buy-original-price.png) right 0px no-repeat;}
+.dt-buy-saving div {color:#FFFFFF; padding:3px 15px 2px 5px; text-align:right;}
+tr:hover .dt-buy-saving, tr:focus .dt-buy-saving {display:block;}
+
+.dt-buy-h-select {padding:0px 3px 2px 3px;}
+.dt-buy-h-type {padding:0px 5px 2px 3px; font-weight:bold; float:right;}
+.dt-buy-h-price {padding:0px 3px 2px 3px; float:right;}
+
+.dt-buy-c-select {padding:6px 3px 0px 3px; text-align:center;}
+.dt-buy-c-type {padding:7px 3px 1px 2px;}
+.dt-buy-c-num {padding:7px 3px 1px 2px;}
+.dt-buy-c-price {padding:7px 3px 2px 3px; color:#00773D; text-align:right; font-weight:bold;}
+
+.dt-buy-opener, .dt-buy-closer {display:block; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/buy-icons.png) 3px 2px no-repeat; padding:2px 0px 1px 43px; color:#005195; margin-top:-2px;}
+.dt-buy-closer {background-position:3px -48px; color:#000000;}
+.dt-buy-closer span {display:block; width:12px; height:18px; position:absolute; left:67px; z-index:110; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/ovrmenu-arrow.png) 0px 0px no-repeat;}
+
+.act .gst-container {padding:0px 0px 6px 0px; margin-top:-1px;}
+
+.dt-buy-member {border-top:1px solid #E4E4E3;}
+.dt-buy-member-msg {padding:3px 2px 3px 3px; font-size:10px;}
+.dt-buy-member-login {padding:3px 3px; font-size:11px;}
+.dt-buy-member-login a {color:#005195; text-decoration:underline;}
+.dt-buy-member-login a:hover, .dt-buy-member-info a:focus {text-decoration:none;}
+
+.dt-buy-notavail {padding:1px 2px 6px 3px;}
+
+.dt-buy-orderinfo {padding:3px 2px 3px 3px;}
+.dt-buy-orderinfo a {color:#005195; text-decoration:underline;}
+.dt-buy-orderinfo a:hover, .dt-buy-orderinfo a:focus {text-decoration:none;}
+
+img.bio {float:right; margin:0px 0px 5px 5px;}
+
+
+/* */
+.cols-dtheader .crit {padding:3px 0px 2px 0px;}
+.cols-dtheader .crit-h {width:68px;}
+.cols-dtheader .crit-h div {padding-left:9px;}
+
+
+/* */
+.dt-buy-special {border-top:1px solid #2EB135; margin-top:10px;}
+.dt-buy-special-msg {padding:7px 2px 7px 3px; font-size:10px;}
+.dt-buy-special-price {float:right; color:#00773D;}
+
+/* */
+
+.dt-buy-additional {padding:10px 2px 3px 3px;}
+
+.gen-toggle-closed .content{display:none;}
+.gen-toggle-open .content{display:block; margin-left:11px;}
+.content {margin:3px 0px 0px; font-size:10px;}
+.gen-h a {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/toggler.png) no-repeat scroll 0px -911px transparent; color:#2EB135; display:block; font-weight:bold; padding:0px 5px 0px 11px;}
+.gen-toggle-closed .gen-h a {background-position: 0px -963px}
+
+/* */
+.ovrmnu-wrapper {position:absolute; z-index:95; top:42px; left:-311px;}
+.ovrmnu {margin:0px auto; width:400px; text-align:left;}
+
+.ovrmnu-h {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/overlay.png) left -53px no-repeat; padding-left:32px; height:28px; overflow:hidden;}
+.ovrmnu-h-in {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/overlay.png) right -53px no-repeat; padding-right:32px; overflow:hidden;}
+.ovrmnu-h-inset {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/overlay.png) 0px -116px repeat-x; height:28px;}
+
+.ovrmnu-c {padding:0px 21px;}
+.ovrmnu-c-in {background-color:#F4F4F4; padding:0px 6px; border:1px solid #808185; border-width:0px 1px;}
+
+.ovrmnu-b {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/overlay.png) left 0px no-repeat; padding-left:32px; height:12px; overflow:hidden;}
+.ovrmnu-b-in {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/overlay.png) right 0px no-repeat; padding-right:32px; height:12px;}
+.ovrmnu-b-in div {background-color:#F4F4F4; border-bottom:1px solid #808185;}
+.ovrmnu-b-in div span {height:11px; width:10px; display:block;}
+
+.ovrmnu-heading {font-weight:bold; padding:9px 2px 2px 2px; color:#FFFFFF; font-size:11px; width:300px; float:left;}
+.ovrmnu-content {padding:5px 3px 3px 3px; background-color:#F4F4F4;}
+.ovrmnu-close {margin-top:3px; width:24px; height:25px; float:right; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/overlay.png) -30px -211px no-repeat;}
+.ovrmnu-close:hover, .ovrmnu-close:focus {background-position:-30px -249px;}
+
+/* */
+.act {border-top:1px solid #616265; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/act.png) 0px bottom no-repeat #616265; width:300px; margin-bottom:11px;}
+
+.act-sq {border-top:1px solid #00773d; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/act_sq.png) 0px bottom no-repeat #00773d; width:300px; margin-bottom:11px;}
+
+.act-h {float:left; width:56px; color:#FFFFFF;}
+.act-h div {padding:10px 5px; text-align:center; font-weight:bold;}
+.act-c {float:left; width:242px;}
+.act-c-content {padding:10px 10px;}
+
+.act-view {border-color:#005195; background-color:#005195}
+.act-view .act-h div {margin-top:4px;}
+.act-trial {border-color:#DC291E; background-color:#DC291E;}
+.act-buy {border-color:#2EB135; background-color:#2EB135;}
+.act-opine {border-color:#EA7125; background-color:#EA7125;}
+.act-share {border-color:#FFB201; background-color:#FFB201;}
+.act-dl {border-color:#00773D; background-color:#00773D;}
+
+.act-preview {border-color:#005195; background-color:#005195;}
+.act-p {float:left; width:242px; position:relative; z-index:5;}
+.act-p a {display:block; height:154px; overflow:hidden; background-color:#D4D4D2; margin:0px -1px 1px -1px;}
+.act-p-title {position:absolute; z-index:15; top:9px; left:10px; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/act-preview.png) right -200px no-repeat #005195; padding:3px 23px 3px 4px; color:#FFFFFF;}
+.act-p a:hover .act-p-img img, .act-p a:focus .act-p-img img {border-color:#005195;}
+.act-p-decorative {position:absolute; z-index:20; bottom:0px; right:-2px; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/act-preview.png) 0px 0px no-repeat; width:23px; height:23px;}
+.act-p-pages {margin:0px -10px 0px 0px;}
+.act-p-img {float:left; margin:5px 1px 0px 5px; position:relative; z-index:5;}
+.act-p-img-decorative {position:absolute; z-index:20; bottom:2px; right:0px; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/act-preview.png) 0px -100px no-repeat; width:10px; height:10px;}
+.act-p a:hover .act-p-img-decorative, .act-p a:focus .act-p-img-decorative {background-position:0px -150px;}
+.act-p-img img {border:2px solid #01A0E9;}
+
+
+
+
+.act-go {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/act-go.png) 0px 0px repeat-y #616265; border-width:0px;}
+.act-quote {background-color:#01A0E9; border-color:#01A0E9;}
+.act-quote .act-h div {font-size:10px;}
+.act-share .act-h {color:#000000;}
+
+.act-c-cols-alpha {float:left; width:111px;}
+.act-c-cols-omega {float:left; width:111px;}
+
+.act-c-h {padding:0px 3px 3px 3px;}
+.act-c-b {padding:2px 3px 3px 3px;}
+
+.act-c-grp {padding:10px 0px 5px 0px;}
+.act-c-grp a {color:#00346B; text-decoration:underline;}
+.act-c-grp a:hover, .act-c-grp a:focus {text-decoration:none;}
+
+.act-c-grp .label {padding:0px 0px 3px 0px;}
+.act-c-grp .field {padding:2px 5px 0px 0px;}
+
+.act-go .act-c-content, .act-preview .act-c-content {padding:0px 0px 0px 2px;}
+.act .brw-grid .brw-i {width:241px; margin:0px;}
+.act .brw-grid .ct-img img, .act .brw-grid .ct-noimg img {width:241px;}
+.act .brw-grid .ct-title {width:241px;}
+.act .brw-grid .ct-title span {padding:0px 11px;}
+.act .brw-grid .ct-type {left:8px; top:8px;}
+.act .brw-grid .ct-pubdate span {padding:0px 11px;}
+
+.act-c-try {padding:0px 3px 5px 3px; font-size:12px;}
+
+/* */
+.socialize ul {list-style:none; margin:0px -9px 0px 0px; padding:0px; height:20px;}
+.socialize ul li {float:left; padding:0px; margin:0px 9px 0px 0px;}
+.socialize ul li a {display:block; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/social.png) 0px 0px no-repeat; width:16px; height:16px; overflow:hidden;}
+.socialize ul li a#share-social-delicious {background-position:-50px 0px;}
+.socialize ul li a#share-social-digg {background-position:-74px 0px;}
+.socialize ul li a#share-social-facebook {background-position:-99px 0px;}
+.socialize ul li a#share-social-google {background-position:-124px 0px;}
+.socialize ul li a#share-social-linkedin {background-position:0px 0px;}
+.socialize ul li a#share-social-mixxit {background-position:-149px 0px;}
+.socialize ul li a#share-social-reddit {background-position:-174px 0px;}
+.socialize ul li a#share-social-stumble {background-position:-200px 0px;}
+.socialize ul li a#share-social-twitter {background-position:-25px 0px;}
+
+.share-email a {font-weight:600; text-decoration:underline; color:#003366;}
+.share-email a:hover, .share-email a:focus {text-decoration:none;}
+.share-html {margin-top:12px;}
+.share-url {margin-top:12px;}
+
+#share-advanced {}
+.act-share:hover #share-advanced, .act-share:focus #share-advanced {display:block;}
+
+/* */
+ul.starrate, ul.starrate li {list-style:none; margin:0px; padding:0px; width:85px; height:19px;}
+ul.starrate li {width:17px; float:left;}
+ul.starrate li a {display:block; height:17px; width:17px; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/stars.png) 0px 0px no-repeat;}
+ul.starrate li.starrate-off a {background-position:0px -20px;}
+div.starrate {width:85px; height:19px; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/stars.png) 0px -20px repeat-x;}
+div.starrated {height:19px; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/stars.png) 0px -39px repeat-x;}
+.starrate-done a {cursor:default;}
+
+/* */
+#rltd-zone {margin-top:-15px;}
+.rltd {padding:0px 11px 5px 11px;}
+.rltd-h {background-color:#01A0E9; color:#FFFFFF; margin-top:15px; height:26px;}
+.rltd-h-c {padding:4px 15px 5px 15px;}
+.rltd-h h1 {margin:0px; font-size:14px; font-weight:bold; float:left;}
+.rltd-h a {color:#FFFFFF;}
+.rltd-c {margin:11px 0px 0px 0px;}
+.rltd .smpl-b {width:897px;}
+.rltd .smpl-back {margin-left:9px;}
+
+.rltd-simple .smpl-b {height:174px; margin-left:39px;}
+
+.rltd-morebelow {padding-bottom:15px;}
+
+.rltd-c-items {margin-bottom:-20px;}
+
+
+/* */
+.dtlst-wrapped {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/subs-dtlst.png) 0px bottom repeat-x; padding-bottom:2px; margin:10px -5px; line-height:100%;}
+.dtlst {background:url(/web/20170314025034im_/http://www.sae.org/images/design13/subs-dtlst.png) 0px top repeat-x; padding-top:1px;}
+.dtlst-h {height:21px; overflow:hidden;}
+.dtlst-h a {display:block;}
+.dtlst-h a:hover, .dtlst-h a:focus {text-decoration:none;}
+.dtlst-h a:hover strong, .dtlst-h a:focus strong {text-decoration:underline;}
+.dtlst-h a strong {float:left; display:block; background:url(/web/20170314025034im_/http://www.sae.org/images/design13/subs.png) 5px -92px no-repeat; padding:5px 5px 4px 18px;}
+.dtlst-h a em {float:left; display:block; font-style:normal; background-color:#01A0E9; color:#FFFFFF; padding:0px 2px; font-size:9px; margin:5px 3px 0px 3px;}
+.dtlst-closed .dtlst-b {display:none;}
+.dtlst-closed .dtlst-h a strong {background-position:6px 6px;}
+.dtlst-b {padding:3px 0px;}
+.dtlst-b ul {list-style:none; margin:0px; padding:0px;}
+.dtlst-b ul li {margin:0px; padding:1px 0px;}
+.dtlst-b ul li.alt {background-color:#EBEBE8;}
+.dtlst a {display:block; text-decoration:none;}
+.dtlst-num {float:left; text-align:right; color:#9A9B9D; font-size:9px; width:32px;}
+.dtlst-num span {display:block; padding:6px 4px 7px 0px;}
+.dtlst-title {float:left; color:#000000; font-size:11px; width:364px;}
+.dtlst-title span {display:block; padding:6px 4px 6px 2px;}
+.dtlst-code {float:left; color:#000000; font-size:10px; font-weight:bold; width:120px; text-align:right;}
+.dtlst-code span {display:block; padding:6px 4px 6px 1px; color:#005195;}
+.dtlst a:hover .dtlst-title, .dtlst a:focus .dtlst-title {text-decoration:underline;}
+
+/* */
+#where-collections .dt-scope {border-bottom:1px solid #9A9B9D; margin-bottom:12px;}
+#where-collections .dt-scope .btn-container {margin:-8px 0px 12px 0px;}
+#coll-pub-date {width:100px;}
+#coll-prod-code {width:270px;}
+
+/* Collections Detail Overlay Page */
+#where-collections .brw-results-content {margin-right:0px;}
+#where-collections .cols-srchres-content {height:400px; overflow:auto;}
+#where-collections  #crit-text-content {width:500px}
+#where-colldetailovr #brw-results-content {margin:0px 0px 0px 0px;}
+#where-colldetailovr  .brw-grid .brw-i {margin:0px 10px 10px 0px;}
+
+
+/* articles */
+.Subhead {font-weight:bold;}
+
+
+
+
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 02:50:34 Mar 14, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:04:02 May 18, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.387
+  captures_list: 0.544
+  exclusion.robots: 0.045
+  exclusion.robots.policy: 0.035
+  esindex: 0.009
+  cdx.remote: 7.41
+  LoadShardBlock: 65.206 (3)
+  PetaboxLoader3.datanode: 81.121 (5)
+  PetaboxLoader3.resolve: 128.04 (3)
+  load_resource: 170.543 (2)
+*/

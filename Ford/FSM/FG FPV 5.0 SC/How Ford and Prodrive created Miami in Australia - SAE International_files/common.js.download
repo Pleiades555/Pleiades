@@ -1,0 +1,107 @@
+var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opens = _____WB$wombat$assign$function_____("opens");
+function smallWinLink(url,width,height) {
+	win=window.open(url,"smallwin","width=" + width + ",height=" + height + ",scrollbars=yes,resizable,left=10,top=10");
+}
+function displayItem(theid) {
+if (document.getElementById(theid) != null) {
+var theidn = document.getElementById(theid);
+theidn.style.display = "";
+}
+}
+function hideItem(theid) {
+if (document.getElementById(theid) != null) {
+var theidn = document.getElementById(theid);
+theidn.style.display = "none";
+}
+}
+
+function changeClass(theitem,theclass) {
+if (document.getElementById(theitem) != null) {
+var theid = document.getElementById(theitem);
+theid.className = theclass;
+}
+}
+
+/* */
+function manageRFilter(thegroup,theon,theaction) {
+changeClass("sbrw-update-btn1","sbrw-update");
+changeClass("sbrw-update-btn2","sbrw-update");
+if (theaction == 2) {
+for (var i = 1; i < 20; i++) {
+changeClass("sbrwc-" + thegroup + i,"sbrwc-off");
+updateCheckbox("sbrwc-check-" + thegroup + i, 0);
+}
+changeClass("sbrwc-" + theon,"sbrwc-on");
+updateCheckbox("sbrwc-check-" + theon, 1);
+} else if (theaction == 1) {
+changeClass("sbrwc-" + theon,"sbrwc-on");
+updateCheckbox("sbrwc-check-" + theon, 1);
+} else {
+changeClass("sbrwc-" + theon,"sbrwc-off");
+updateCheckbox("sbrwc-check-" + theon, 0);
+}
+}
+
+/* */
+function manageAuxTabs(thegroup,theon) {
+for (var i = 1; i < 7; i++) {
+changeClass('auxtabs-t-' + thegroup + i,'');
+hideItem('auxtabs-c-' + thegroup + i);
+}
+changeClass('auxtabs-t-' + thegroup + theon,'navon');
+displayItem('auxtabs-c-' + thegroup + theon);
+}
+
+
+
+
+
+/* Mini Prototype 6.0 version */
+function $(element) {
+  if (arguments.length > 1) {
+    for (var i = 0, elements = [], length = arguments.length; i < length; i++)		elements[i] = ($(arguments[i]));
+    return elements;
+  }
+  if (isString(element))   element = document.getElementById(element);
+  return element; //Element.extend(element);
+}
+function isString( object ) {	return typeof object == "string";}
+String.prototype.stripTags = function( ) {    return this.replace(/<\/?[^>]+>/gi, '');}
+  
+String.prototype.strip = function() {    return this.replace(/^\s+/, '').replace(/\s+$/, '');} 
+String.prototype.empty = function() {    return this == '';}
+
+String.prototype.blank =  function() {    return /^\s*$/.test(this);}
+ 
+var Ajax = { getTransport: function() {	return Try.these(	function() {return new XMLHttpRequest()},	function() {return new ActiveXObject('Msxml2.XMLHTTP')}, function() {return new ActiveXObject('Microsoft.XMLHTTP')}	) || false;	}	} 
+
+var Try = { these: function() {   var returnValue;    for (var i = 0, length = arguments.length; i < length; i++) {     var lambda = arguments[i];
+      try {       returnValue = lambda();        break;      } catch (e) { }    }   return returnValue;  }};
+			
+function spot_selection(cls_id) { if(! $(cls_id))	{cls_id="HOME";}	$(cls_id).className="navon"; } 
+
+}
+
+/*
+     FILE ARCHIVED ON 11:09:27 Feb 11, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:03:59 May 18, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 1.215
+  load_resource: 92.94
+  PetaboxLoader3.resolve: 86.295
+  PetaboxLoader3.datanode: 5.348
+*/

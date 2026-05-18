@@ -1,0 +1,943 @@
+var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opens = _____WB$wombat$assign$function_____("opens");
+
+//
+// This script has functions to validate form input.
+//
+//
+// @author Jon Steffey
+// @version 0.9.1  28 Dec 2001
+//
+//
+// JS note to self: finish this later, so maybe user of this script
+//  can simply set up an array of funcs - fields - errmsgs, 
+//  and then this func is called automatically for each elem in array
+//function validator(funcName, formField, errorMessage) {
+//	funcName(formField, errorMessage);
+//}
+
+
+// do not call this directly-- just for other funcs
+function getInput() {
+
+	var arg = arguments[0];
+	
+	if ( (typeof arg != "string") && (arg.type == "text" || arg.type == "textarea" ) ) {
+		return arg.value;
+	} else if ( typeof arguments[0] == "string") {
+		return arg;
+	} else {
+		return null;
+	}
+	
+}
+
+
+//String trim methods . 
+//In using the keyword this in each of these methods, we are anticipating the fact 
+//that the method will be added to the String object, in which case this represents the object. 
+//To complete our solution, all we need to do is to add the methods to the String object via the prototype property (as follows:)
+// These methods will be available to ALL String objects within our javasctript.
+
+// String left trim. Removes spaces from beginning of a string. 
+// To Use:  mystring.ltrim()
+function strltrim() {
+return this.replace(/^\s+/,'');
+}
+
+// String  right trim. Removes spaces from end of a string. 
+// To Use:  mystring.rtrim()
+function strrtrim() {
+return this.replace(/\s+$/,'');
+}
+
+// String trim. Removes spaces from beginning and end of a string.
+// To Use:  mystring.trim()
+function strtrim() {
+return this.replace(/^\s+/,'').replace(/\s+$/,'');
+}
+
+String.prototype.ltrim = strltrim;
+String.prototype.rtrim = strrtrim;
+String.prototype.trim = strtrim;
+
+
+//
+// Used for textfields and textareas -- returns true 
+//  if field contained anything.
+//
+// Optional 2nd param, "strict", forces textfields to 
+//  return false if input contains only whitespace or any
+//  non-alphanumerics (anything not a letter, digit, or underscore.
+//
+function textfieldHasInput() {
+
+	if ( arguments.length == 0 ) {
+		return true;  // no data sent, so they can't have failed this field
+	}
+	
+	var input = getInput(arguments[0]);
+	if ( null == input ) {
+		return true; // bad data, can't really validate field
+	}
+	
+	if (arguments.length > 1) {
+		if ( arguments[1] == "strict" || arguments[1] == "STRICT" ) {
+			var wOnlyRegexp = /^\s+$/;
+			if ( wOnlyRegexp.exec(input) ) {
+				return false;
+			}
+			var alnumRegexp = /^[\w\s]+$/i;
+			if ( !alnumRegexp.exec(input) ) {
+				return false;
+			}
+		}
+	} else {
+		if (input == "") {
+			return false;
+		}
+	}
+	
+	return true;
+	
+}
+
+
+
+
+//
+// Used to see if textfield input is a validly-formatted
+//  email address.  
+//
+// Note to anyone using this function: it doesn't mean the 
+//  address passing _is actually deliverable_; it just means
+//  it fits the format of a deliverable address.  Doing a true 
+//  email validation in real-time is next to impossible, 
+//  requiring (a) changing the pattern below to a 6598-byte
+//  pattern that validates according to RFC-822, (b) DNS MX
+//  record lookup, (c) maybe stop lists for certain words
+//  and addresses, and (d) a turing test (preferably voice-
+//  or image-based) so mailspam robots get screened out.  
+//
+function textfieldIsValidEmail() {
+
+	if ( arguments.length == 0 ) { return true; }
+	
+	var eml = getInput(arguments[0]);
+	if ( null == eml ) {
+		return true; // bad data, can't really validate field
+	}
+
+	//var regexp = /^[\w\.\-\+]+\@[\w\.\+\-]+\.[a-z]{2,4}$/i;
+	var regexp = /^[\w!#$%&'*+/=?`{|}~^-]+(?:\.[\w!#$%&'*+/=?`{|}~^-]+)*@(?:[A-Z0-9-]+\.)+[A-Z]{2,6}$/i;
+	if (regexp.exec(eml)) {
+		return true;
+	} else {
+		return false;	
+	}
+	
+}
+
+
+//
+// Returns true if one radio button in a group has been selected.
+//
+function oneRadioSelected() {
+
+	if ( arguments.length == 0 ) { return true; }
+
+	var radioSet;
+	if ( typeof arguments[0] != "object" ) {
+		alert("We are unable to validate radio buttons within the form.\n\nPlease contact webmaster@sae.org to let SAE know\nthat an error occured on this page.");
+		return false;
+	}
+	radioSet = arguments[0];
+	
+
+	// if radio button set actually only contained
+	//  one radio button, browsers don't seem to think this is an array !?!
+	if ( radioSet.type == 'radio' ) {
+		if ( radioSet.checked ) {
+			return true;
+		}
+	} else {
+		if ( radioSet.length == null || radioSet.length == 0 || radioSet[0].type != "radio" ) {
+			alert("We are unable to validate radio buttons within the form.\n\nPlease contact webmaster@sae.org to let SAE know\nthat an error occured on this page.");
+			return false;
+		}
+		for ( var i=0; i<radioSet.length; i++ ) {
+			if ( radioSet[i].checked ) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+
+}
+
+
+
+
+//
+// Checks for valid postal code.  For US (the default),
+//  requires zip to be 5 digits, 5-4, or 9.
+//
+// Can pass in a 2nd optional arg ("can", "canad", "canada"
+//  case insensitive) to validate canadian postal codes, 
+//  to the forms 'A0A 0A0', 'A0A-0A0', or 'A0A0A0'.
+//
+function textfieldIsValidPostalCode() {
+
+	if ( arguments.length == 0 ) { return true; }
+	
+	var zip = getInput(arguments[0]);
+	if ( null == zip ) {
+		return true; // bad data, can't really validate field
+	}
+
+	var regexp;
+	if ( arguments.length > 1 ) {
+		var canadaRegexp = /^can(ada?)?$/i;
+		if ( canadaRegexp.exec(arguments[1]) ) {
+			regexp = /^[a-z]\d[a-z][\- ]?\d[a-z]\d$/i;
+		}
+	} else {
+		regexp = /^\d{5}([\- ]?\d{4})?$/i;
+	}
+	
+	if (regexp.exec(zip)) {
+		return true;
+	} else {
+		return false;	
+	}
+	
+}
+
+
+
+
+//
+// Checks for valid social security number, in the form
+//  3digits dash 2 digits dash 4 digits, with the dash being
+//  optional and a single space also working for the dash.
+//
+function textfieldIsValidSSN() {
+
+	if ( arguments.length == 0 ) { return true; }
+	
+	var ssn = getInput(arguments[0]);
+	if ( null == ssn ) {
+		return true; // bad data, can't really validate field
+	}
+
+	var regexp = /^\d{3}[\- ]?\d{2}[\- ]?\d{4}$/i;
+	if (regexp.exec(ssn)) {
+		return true;
+	} else {
+		return false;	
+	}
+
+}
+
+
+
+
+//
+// Checks for US phone or fax numbers, area code required.
+//
+// If you're really curious or masochistic, ask me to explain
+//  what/how it's validating.
+//
+
+function textfieldIsValidPhoneFax() {
+	if ( arguments.length == 0 ) { return true; }
+	
+	var phone = getInput(arguments[0]);
+	if ( null == phone ) {
+		return true; // bad data, can't really validate field
+	}
+	var regexp = /^(\+?\d* ?\-?)?(\()?(\d{3,})([\)\-\. ])? ?(\d{3,})?[\-\. ]?(\d*)$/i;
+	if (regexp.exec(phone)) {
+		if ( RegExp.$2 == "(" ) {
+			if ( RegExp.$4 != ")" ) {
+				return false;
+			}
+		}
+		var nums = ""+RegExp.$3+RegExp.$5+RegExp.$6;
+		if (( nums.charAt(0) == "0" ) || ( nums.charAt(0) == "1" )) { return false; }
+		if (nums.length==10) {
+			return true;
+		} else {
+			return false;
+		}
+	} else {
+		return false;	
+	}
+
+}
+
+
+
+
+//
+// Check to see that a textfield contains digits only.
+//
+// Optional 2nd param, "loose", allows decimal numbers.
+//
+// Note: if you want to validate currency fields, display
+//  the currency symbol outside (just in front of) the 
+//  actual input field-- it's be too much of a headache 
+//  to validate against currency symbol optionally 
+//  prepended to the numeric data.
+//
+// Note: I choose RegExp to do the validation instead of
+//  parseFloat|parseInt->isNaN, b/c I thought it was cleaner
+//  this way, instead of having to check for the loose arg first,
+//  then call parseFloat(s) or parseInt(s, 10) b/f calling isNaN.
+//
+function textfieldIsNum() {
+
+	if ( arguments.length == 0 ) { return true; }
+	
+	var myInput = getInput(arguments[0]);
+	if ( null == myInput ) {
+		return true; // bad data, can't really validate field
+	}
+
+	var regexp = /^\d+$/i;
+	if (arguments.length > 1) {
+		if ( arguments[1] == "loose" || arguments[1] == "LOOSE" ) {
+			regexp = /^\d*(\.)?\d*$/i;
+		}
+	}
+	
+	if ( regexp.exec(myInput) && myInput.length != 0 && myInput != "." ) {
+		return true;
+	}
+	
+	return false;
+	
+}
+
+
+
+
+//
+// Checks for valid credit card number ( 13-16 digits).
+//  No spaces or dashes are allowed in the input (as far as
+//  I'm aware, all server-side cc validation routines 
+//  validate against digits only).
+//
+function textfieldIsValidCCNum() {
+
+	if ( arguments.length == 0 ) { return true; }
+	
+	var ccNum = getInput(arguments[0]);
+	if ( null == ccNum ) {
+		return true; // bad data, can't really validate field
+	}
+
+	var regexp = /\D+/i;
+	if (regexp.exec(ccNum)) {
+		return false;
+	} else {
+		if ( ccNum.length < 13 || ccNum.length > 16 ) {
+			return false;
+		}
+	}
+
+//	return luhnCheck(ccNum);
+    return true;
+
+}
+
+function luhnCheck(str) 
+{
+  var result = true;
+
+  var sum = 0; 
+  var mul = 1; 
+  var strLen = str.length;
+  
+  for (i = 0; i < strLen; i++) 
+  {
+    var digit = str.substring(strLen-i-1,strLen-i);
+    var tproduct = parseInt(digit ,10)*mul;
+    if (tproduct >= 10)
+      sum += (tproduct % 10) + 1;
+    else
+      sum += tproduct;
+    if (mul == 1)
+      mul++;
+    else
+      mul--;
+  }
+  if ((sum % 10) != 0)
+    result = false;
+    
+  return result;
+}
+
+
+
+
+
+//
+// Monster date-validation routine.
+// Much easier with Perl!
+// 
+//
+// Checks for valid date, based on the 'mask' passed in.
+// 
+// Currently available masks are:
+// 	d		1- or 2-digit day of month
+//  dd		2-digit day of month (leading '0' needed for 1-9)
+//  m		1- or 2-digit month
+//  mm		2-digit month
+//  yy		2-digit year
+//  yyyy	4-digit year
+//  /		'/' field separator
+//  -		'-' field separator
+//
+// Not yet implemented masks are (unlikely to be 
+//  implemented):
+//  D		day-of-week letter(s) (M|T|W|R|F|St|Sn) 
+//  DD		short day-of-week name (eg 'Mon')
+//  DDD		full day-of-week name (eg 'Monday')
+//  MM		short month name (eg 'Jan')
+//  MMM		long month name (eg 'January')
+//  ,		',' field separator, with optional trailing space
+//
+function textfieldIsValidDate() {
+
+	if ( arguments.length < 2 ) { return true; }
+	
+	var theDate = getInput(arguments[0]);
+	if ( null == theDate ) {
+		return true; // bad data, can't really validate field
+	}
+	
+	var theMask = arguments[1];
+	var regexp;
+	
+	if ( theMask == "yyyy" ) {
+		regexp = /^(\d{2})\d{2}$/; 
+		if (regexp.exec(theDate)) {
+			if ( !isFourDigitYear(RegExp.$1) ) { return false; }
+			return true;
+		}
+		return false;
+	} else if ( theMask == "yy" ) {
+		regexp = /^\d{2}$/;
+		if (regexp.exec(theDate)) {
+			return true;
+		}
+		return false;
+	} else if ( theMask == "mm" ) { 
+		regexp = /^(\d{2})$/; 
+		if (regexp.exec(theDate)) {
+			if ( !isMonth(RegExp.$1) ) { return false; }
+			return true;
+		}
+		return false;
+	} else if ( theMask == "m" ) {
+		regexp = /^(\d{1,2})$/; 
+		if (regexp.exec(theDate)) {
+			if ( !isMonth(RegExp.$1) ) { return false; }
+			return true;
+		}
+		return false;
+	} else if ( theMask == "mm/yy" ) {
+		regexp = /^(\d{2})\/\d{2}$/; 
+		if (regexp.exec(theDate)) {
+			if ( !isMonth(RegExp.$1) ) { return false; }
+			return true;
+		}
+		return false;
+	} else if ( theMask == "mm-yy" ) {
+		regexp = /^(\d{2})\-\d{2}$/;
+		if (regexp.exec(theDate)) {
+			if ( !isMonth(RegExp.$1) ) { return false; }
+			return true;
+		}
+		return false;
+	} else if ( theMask == "mm/yyyy" ) {
+		regexp = /^(\d{2})\/(\d{2})\d{2}$/;
+		if (regexp.exec(theDate)) {
+			if ( !isMonth(RegExp.$1) ) { return false; }
+			if ( !isFourDigitYear(RegExp.$2) ) { return false; }
+			return true;
+		}
+		return false;
+	} else if ( theMask == "mm-yyyy" ) {
+		regexp = /^(\d{2})\-(\d{2})\d{2}$/;
+		if (regexp.exec(theDate)) {
+			if ( !isMonth(RegExp.$1) ) { return false; }
+			if ( !isFourDigitYear(RegExp.$2) ) { return false; }
+			return true;
+		}
+		return false;
+	} else if ( theMask == "mmyyyy" ) {
+		regexp = /^(\d{2})(\d{2})\d{2}$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$2) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "mmyy" ) {
+		regexp = /^(\d{2})\d{2}$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yyyymm" ) {
+		regexp = /^(\d{2})\d{2}(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yyyy-mm" ) {
+		regexp = /^(\d{2})\d{2}\-(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yyyy/mm" ) {
+		regexp = /^(\d{2})\d{2}\/(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yymm" ) {
+		regexp = /^\d{2}(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yy/mm" ) {
+		regexp = /^\d{2}\/(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yy-mm" ) {
+		regexp = /^\d{2}\-(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "m/yy" ) {
+		regexp = /^(\d{1,2})\/\d{2}$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "m-yy" ) {
+		regexp = /^(\d{1,2})\-\d{2}$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "m/yyyy" ) {
+		regexp = /^(\d{1,2})\/(\d{2})\d{2}$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$2) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "m-yyyy" ) {
+		regexp = /^(\d{1,2})\-(\d{2})\d{2}$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$2) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "d/m/yy" ) {
+		regexp = /^(\d{1,2})\/(\d{1,2})\/(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isDay(RegExp.$1, RegExp.$2, RegExp.$3) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "d/m/yyyy" ) {
+		regexp = /^(\d{1,2})\/(\d{1,2})\/(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$3) ) { return false; }
+				if ( !isDay(RegExp.$1, RegExp.$2, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "m/d/yy" ) {
+		regexp = /^(\d{1,2})\/(\d{1,2})\/(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isDay(RegExp.$2, RegExp.$1, RegExp.$3) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "m/d/yyyy" ) {
+		regexp = /^(\d{1,2})\/(\d{1,2})\/(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$3) ) { return false; }
+				if ( !isDay(RegExp.$2, RegExp.$1, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "mm/dd/yyyy" ) {
+		regexp = /^(\d{2})\/(\d{2})\/(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$3) ) { return false; }
+				if ( !isDay(RegExp.$2, RegExp.$1, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "mm/dd/yy" ) {
+		regexp = /^(\d{2})\/(\d{2})\/(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isDay(RegExp.$2, RegExp.$1, RegExp.$3) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "dd/mm/yy" ) {
+		regexp = /^(\d{2})\/(\d{2})\/(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isDay(RegExp.$1, RegExp.$2, RegExp.$3) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "dd/mm/yyyy" ) {
+		regexp = /^(\d{2})\/(\d{2})\/(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$3) ) { return false; }
+				if ( !isDay(RegExp.$1, RegExp.$2, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "mm-dd-yyyy" ) {
+		regexp = /^(\d{2})\-(\d{2})\-(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$3) ) { return false; }
+				if ( !isDay(RegExp.$2, RegExp.$1, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "mm-dd-yy" ) {
+		regexp = /^(\d{2})\-(\d{2})\-(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isDay(RegExp.$2, RegExp.$1, RegExp.$3) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "dd-mm-yyyy" ) {
+		regexp = /^(\d{2})\-(\d{2})\-(\d{2})(\d{2})}$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$3) ) { return false; }
+				if ( !isDay(RegExp.$1, RegExp.$2, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "dd-mm-yy" ) {
+		regexp = /^(\d{2})\-(\d{2})\-(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isDay(RegExp.$1, RegExp.$2, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "ddmmyy" ) {
+		regexp = /^(\d{2})(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isDay(RegExp.$1, RegExp.$2, RegExp.$3) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "ddmmyyyy" ) {
+		regexp = /^(\d{2})(\d{2})(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$3) ) { return false; }
+				if ( !isDay(RegExp.$21, RegExp.$2, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "mmddyy" ) {
+		regexp = /^(\d{2})(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isDay(RegExp.$2, RegExp.$1, RegExp.$3) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "mmddyyyy" ) {
+		regexp = /^(\d{2})(\d{2})(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$1) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$3) ) { return false; }
+				if ( !isDay(RegExp.$2, RegExp.$1, RegExp.$4) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yyyy/mm/dd" ) {
+		regexp = /^(\d{2})(\d{2})\/(\d{2})\/(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$3) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$1) ) { return false; }
+				if ( !isDay(RegExp.$4, RegExp.$3, RegExp.$2) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yyyy-mm-dd" ) {
+		regexp = /^(\d{2})(\d{2})\-(\d{2})\-(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$3) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$1) ) { return false; }
+				if ( !isDay(RegExp.$4, RegExp.$3, RegExp.$2) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yyyymmdd" ) {
+		regexp = /^(\d{2})(\d{2})(\d{2})(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$3) ) { return false; }
+				if ( !isFourDigitYear(RegExp.$1) ) { return false; }
+				if ( !isDay(RegExp.$4, RegExp.$3, RegExp.$2) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yy/mm/dd" ) {
+		regexp = /^(\d{2})\/(\d{2})\/(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isDay(RegExp.$3, RegExp.$2, RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else if ( theMask == "yy-mm-dd" ) {
+		regexp = /^(\d{2})\-(\d{2})\-(\d{2})$/;
+			if (regexp.exec(theDate)) {
+				if ( !isMonth(RegExp.$2) ) { return false; }
+				if ( !isDay(RegExp.$3, RegExp.$2, RegExp.$1) ) { return false; }
+				return true;
+			}
+		return false;
+	} else {
+		alert("I've been asked to validate the date, but the developer of this page did not \nproperly tell me how, so I'm letting your date pass.");
+		return true; // no valid mask, date must be okay?
+	}
+	
+	return false;
+}
+
+// do not call this directly-- just for other funcs
+function isFourDigitYear() {
+	if ( arguments[0] == "19" || arguments[0] == "20" ) {
+		return true;
+	}
+	return false;
+}
+
+// do not call this directly-- just for other funcs
+function isMonth() {
+	var monthNum = Number(arguments[0]);
+	if ( isNaN(monthNum) ) { 
+		return false; 
+	}
+	if ( monthNum < 1 || monthNum > 12 ) {
+		return false;
+	}
+	return true;
+}
+
+// do not call this directly-- just for other funcs
+//
+// (another astute developer noted that I'm not really 
+//  doing a mature leap year validation -- the real 
+//  leap year rule is 
+//   %4?(%100?(%400?true:false):true):false
+//  But the problem here is I'm already allowing the 
+//  developer calling the data validation func to choose
+//  to use a 2-digit year mask (eg for a cc exp date),
+//  so we're just going to take the only available way
+//  out without disallowing that mask, which is to 
+//  assume '00' year value is 2000.
+//
+//  The real "impact" of this is that anyone entering
+//  eg 29021900 or 29022100 for ddmmyyyy
+//   or 290200 for ddmmyy (and meaning !2000 for the year)
+//  passes with a valid date, even those aren't really 
+//  valid dates.  Note I put "impact" in quotes. ;^>
+function isDay() {
+	var theDay = Number(arguments[0]);
+	var theMonth = Number(arguments[1]);
+	var theYear = Number(arguments[2]);
+	var isLeapYear = ( ((theYear%4)==0)?true:false );
+	if ( theDay < 1 ) { return false; }
+	if ( theMonth == 2 ) {
+		if ( isLeapYear ) {
+			if ( theDay > 29 ) { return false; }
+		} else {
+			if ( theDay > 28 ) { return false; }
+		}
+		return true;
+	} else if ( theMonth == 1 || theMonth == 3 || theMonth == 5 || theMonth == 7 || theMonth == 8 || theMonth == 10 || theMonth == 12 ) {
+		if ( theDay > 31 ) { return false; }
+		return true;
+	} else if ( theMonth == 4 || theMonth == 6 || theMonth == 9 || theMonth == 11 ) {
+		if ( theDay > 30 ) { return false; }
+		return true;
+	}
+	return false;
+}
+
+
+
+
+//
+// Checks to see if length of input into textarea
+//  does not exceed numeric limit, passed in as 2nd arg.
+//
+function textareaHasValidInput() {
+
+	if ( arguments.length < 2 ) { return true; }
+	var theArea;
+	if ( typeof arguments[0] != "object" ) {
+		alert("We are unable to validate a text area within the form.\n\nPlease contact webmaster@sae.org to let SAE know\nthat an error occured on this page.");
+		return false;
+	}
+	theArea = arguments[0];
+	if ( theArea.type != "textarea" ) {
+		alert("We are unable to validate a text area within the form.\n\nPlease contact webmaster@sae.org to let SAE know\nthat an error occured on this page.");
+		return false;
+	}
+	var limit;
+	if ( (typeof arguments[1] != "string") && (typeof arguments[1] != "number" ) ) {
+		alert("We are unable to validate a text area within the form.\n\nPlease contact webmaster@sae.org to let SAE know\nthat an error occured on this page.");
+		return false;
+	}
+	limit = Number(arguments[1]);
+	if ( isNaN(limit) ) {
+		alert("We are unable to validate a text area within the form.\n\nPlease contact webmaster@sae.org to let SAE know\nthat an error occured on this page.");
+		return false;
+	}
+	
+	var textInput = theArea.value;
+	if (textInput.length > limit) {
+		var front = textInput.substring(0, (limit - 1));
+		var back = textInput.substring(limit, (textInput.length - 1));
+		theArea.value = front+"*****"+back;
+		return false;
+	}
+	return true;
+
+}
+
+
+
+
+//
+// Provisionally implemented.  For popup menus, requires that 
+//  an option with a value other than "" or "0" be selected.
+//
+function selectHasValidSelection() {
+
+	if (arguments.length == 0) { return true; }
+	var theMenu;
+	if ( typeof arguments[0] != "object" ) {
+		alert("We are unable to validate a popup menu within the form.\n\nPlease contact webmaster@sae.org to let SAE know\nthat an error occured on this page.");
+		return false;
+	}
+	theMenu = arguments[0];
+	if ( theMenu.type != "select-one" ) {
+		alert("We are unable to validate a popup menu within the form.\n\nPlease contact webmaster@sae.org to let SAE know\nthat an error occured on this page.");
+		return false;
+	}
+	
+	var menuVal = theMenu.options[theMenu.selectedIndex].value;
+	if ( menuVal == "" || menuVal == "0" ) {
+		return false;
+	} 
+
+	return true;
+	
+}
+
+// 1. Must be at least 5 characters in length and cannot exceed 15 characters;
+// 2. Can include numbers and letters;
+// 3. Can be in upper or lowercase;
+// 4. Can include only these special characters: dash (-), underscore (_), or period (.) (no other special characters may be used).
+function isWellFormedUserId(userId) {
+   if(userId.trim() == "") { return false; }
+   if(userId.trim().length < 5) { return false; }
+   if(userId.trim().length > 15) { return false; }
+   var regexp = /^[a-zA-Z\-\_\.\d]{5,15}$/;
+   if(regexp.exec(userId)) { return true; }
+   
+   return false;
+}
+
+// 1. Must be at least 5 characters in length and cannot exceed 15 characters;
+// 2. Can include numbers and letters;
+// 3. Can be in upper or lowercase;
+// 4. Can include only these special characters: dash (-), underscore (_), or period (.) (no other special characters may be used).
+function isWellFormedPassword(password) {
+   if(password.trim() == "") { return false; }
+   if(password.trim().length < 5) { return false; }
+   if(password.trim().length > 15) { return false; }
+   var regexp = /^[a-zA-Z\-\_\.\d]{5,15}$/;
+   if(regexp.exec(password)) { return true; }
+   
+   return false;
+}
+
+
+}
+
+/*
+     FILE ARCHIVED ON 17:07:47 Mar 23, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:07:33 May 18, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.373
+  load_resource: 6983.59 (2)
+  PetaboxLoader3.resolve: 6914.822 (2)
+  PetaboxLoader3.datanode: 34.347 (2)
+*/

@@ -1,0 +1,60 @@
+body {background:transparent;}
+#hd-navbar, #hd-aux-search {display:none;}
+#hd-aux {background:transparent;}
+.brd li {font-size:15px; border-left:5px solid #00773D; padding:0px 10px; margin:15px 0px; background:transparent;}
+
+
+
+/* */
+.cols-nav, .cols-srchfilt, .cols-ads, .cols-srchfilt {display:none;}
+.cols-srchres {float:none; width:99%;}
+
+
+.brw-nav-opt, #brw-nav-bottom {display:none;}
+
+
+#rltd-zone {display:none;}
+
+#ad-square, .act-go, .act-share, .act-opine, .ad120 {display:none;}
+
+
+.cols-dtheader {float:none; width:99%;}
+.cols-dtmain, .dt-text, .cols-body {width:99%; display:inline; float:none;}
+.cols-dtaction-content {padding:0px; display:inline;}
+.cols-dtaction {float:none; display:inline;}
+.act-buy {float:none; clear:both;}
+.dt-img-brw {display:none;}
+
+.crit-c ul li a, .search-crit, .search-crit-off, #brwsr-source, .metadata, .crit-c ul li.crit-superitm a, .dt .crit-c ul li.crit-superitm a {padding-left:0px; background:transparent;}
+
+
+/* */
+#footer {border-top:1px solid #000000; padding-top:8px; background:transparent; color:#000000;}
+#footer a {color:#000000;}
+#footer-global, #footer-supplier, #footer-links  {display:none;}
+
+
+
+
+
+
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 17:11:09 Mar 23, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:07:35 May 18, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 26.302
+  load_resource: 75.074 (2)
+  PetaboxLoader3.resolve: 38.571
+  PetaboxLoader3.datanode: 24.671 (2)
+*/
