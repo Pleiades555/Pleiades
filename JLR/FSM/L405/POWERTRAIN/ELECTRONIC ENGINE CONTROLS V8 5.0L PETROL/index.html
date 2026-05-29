@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electronic Engine Controls V8 5.0L Petrol</title>
+<style>
+body { --bg-img: url('../../back.jpg'); }
+
+:root {
+    --bg: #0e1117;
+    --panel: rgba(17, 21, 28, 0.92);
+    --panel-soft: rgba(255,255,255,0.055);
+    --panel-hover: rgba(255,255,255,0.085);
+    --line: rgba(255,255,255,0.13);
+    --text: #f3f6fb;
+    --muted: #aab6c3;
+    --accent2: #ff9c40;
+    --blue: #67c4ff;
+    --green: #8bdc9d;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.76)), var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wrapper {
+    width: min(1500px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: 24px 0 44px;
+}
+.hero, .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+.hero {
+    padding: 26px;
+    background: linear-gradient(135deg, rgba(255,102,0,.18), rgba(103,196,255,.10)), var(--panel);
+}
+h1 {
+    margin: 0 0 8px;
+    color: var(--accent2);
+    font-size: clamp(26px, 4vw, 46px);
+}
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.search {
+    flex: 1 1 300px;
+    padding: 14px 16px;
+    border-radius: 13px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: rgba(0,0,0,.36);
+    font-size: 16px;
+    outline: none;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid rgba(255,102,0,.34);
+    background: rgba(255,102,0,.17);
+    color: var(--accent2);
+    border-radius: 13px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+.btn:hover { color: white; background: rgba(255,102,0,.28); }
+.folder-list, .file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 12px;
+}
+.panel {
+    padding: 18px;
+    margin-top: 18px;
+}
+.panel-title {
+    margin: 0 0 12px;
+    color: var(--accent2);
+}
+.breadcrumb {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.item {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: var(--panel-soft);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 12px 13px;
+    color: var(--text);
+    text-decoration: none;
+}
+.item a:hover { background: var(--panel-hover); }
+.item .name { line-height: 1.35; }
+.item .tag {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+.folder a .name { color: var(--blue); font-weight: 700; }
+.pdf a .name { color: var(--accent2); }
+.html a .name { color: var(--green); }
+.hidden-by-search { display: none !important; }
+.footer {
+    color: var(--muted);
+    text-align: center;
+    margin-top: 26px;
+    font-size: 12px;
+}
+@media (max-width: 700px) {
+    .wrapper { width: min(100% - 18px, 1500px); padding-top: 10px; }
+    .hero, .panel { border-radius: 16px; padding: 18px; }
+    .folder-list, .file-list { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <section class="hero">
+        <div class="breadcrumb"><a href="../../L405%20FSM.html">Home</a> &gt; <a href="../L405%20Powertrain.html">Powertrain</a> &gt; <a href="index.html">Electronic Engine Controls V8 5.0L Petrol</a></div>
+        <h1>Electronic Engine Controls V8 5.0L Petrol</h1>
+        <p class="subtitle">0 subsections · 24 PDFs · 24 files</p>
+        <div class="toolbar">
+            <input id="searchBox" class="search" type="search" oninput="filterPage()" placeholder="Search this page...">
+            <a class="btn" href="../../L405%20FSM.html">Home</a><a class="btn" href="../L405%20Powertrain.html">Up one level</a>
+        </div>
+    </section>
+
+    
+<section class="panel">
+    <h2 class="panel-title">Files</h2>
+    <ul class="file-list">
+        
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol brake pedal position switch adjustment.pdf">
+    <a href="BRAKE%20PEDAL%20POSITION%20SWITCH%20ADJUSTMENT.pdf">
+        <span>📄</span>
+        <span class="name">BRAKE PEDAL POSITION SWITCH ADJUSTMENT.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol crankshaft position sensor removal and installation.pdf">
+    <a href="CRANKSHAFT%20POSITION%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">CRANKSHAFT POSITION SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol electronic engine controls - v8 s_c 5.0l petrol description .pdf">
+    <a href="ELECTRONIC%20ENGINE%20CONTROLS%20-%20V8%20S_C%205.0L%20PETROL%20DESCRIPTION%20.pdf">
+        <span>📄</span>
+        <span class="name">ELECTRONIC ENGINE CONTROLS - V8 S_C 5.0L PETROL DESCRIPTION .pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol electronic engine controls - v8 s_c 5.0l petrol diagnosis an.pdf">
+    <a href="ELECTRONIC%20ENGINE%20CONTROLS%20-%20V8%20S_C%205.0L%20PETROL%20DIAGNOSIS%20AN.pdf">
+        <span>📄</span>
+        <span class="name">ELECTRONIC ENGINE CONTROLS - V8 S_C 5.0L PETROL DIAGNOSIS AN.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol electronic engine controls - v8 s_c 5.0l petrol electronic e.pdf">
+    <a href="ELECTRONIC%20ENGINE%20CONTROLS%20-%20V8%20S_C%205.0L%20PETROL%20Electronic%20E.pdf">
+        <span>📄</span>
+        <span class="name">ELECTRONIC ENGINE CONTROLS - V8 S_C 5.0L PETROL Electronic E.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol electronic engine controls - v8 s_c 5.0l petrol specificatio.pdf">
+    <a href="ELECTRONIC%20ENGINE%20CONTROLS%20-%20V8%20S_C%205.0L%20PETROL%20SPECIFICATIO.pdf">
+        <span>📄</span>
+        <span class="name">ELECTRONIC ENGINE CONTROLS - V8 S_C 5.0L PETROL SPECIFICATIO.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol engine control module removal and installation.pdf">
+    <a href="ENGINE%20CONTROL%20MODULE%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">ENGINE CONTROL MODULE REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol engine coolant temperature sensor removal and installation.pdf">
+    <a href="ENGINE%20COOLANT%20TEMPERATURE%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">ENGINE COOLANT TEMPERATURE SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol engine oil level sensor removal and installation.pdf">
+    <a href="ENGINE%20OIL%20LEVEL%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">ENGINE OIL LEVEL SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol front left knock sensor removal and installation.pdf">
+    <a href="FRONT%20LEFT%20KNOCK%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">FRONT LEFT KNOCK SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol fuel rail pressure sensor removal and installation.pdf">
+    <a href="FUEL%20RAIL%20PRESSURE%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">FUEL RAIL PRESSURE SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol left camshaft position sensor removal and installation.pdf">
+    <a href="LEFT%20CAMSHAFT%20POSITION%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">LEFT CAMSHAFT POSITION SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol left mid catalyst heated oxygen sensor removal and installat.pdf">
+    <a href="LEFT%20MID%20CATALYST%20HEATED%20OXYGEN%20SENSOR%20REMOVAL%20AND%20INSTALLAT.pdf">
+        <span>📄</span>
+        <span class="name">LEFT MID CATALYST HEATED OXYGEN SENSOR REMOVAL AND INSTALLAT.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol left variable valve timing oil control solenoid removal and .pdf">
+    <a href="LEFT%20VARIABLE%20VALVE%20TIMING%20OIL%20CONTROL%20SOLENOID%20REMOVAL%20AND%20.pdf">
+        <span>📄</span>
+        <span class="name">LEFT VARIABLE VALVE TIMING OIL CONTROL SOLENOID REMOVAL AND .pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol manifold absolute pressure sensor removal and installation.pdf">
+    <a href="MANIFOLD%20ABSOLUTE%20PRESSURE%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">MANIFOLD ABSOLUTE PRESSURE SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol mass air flow sensor removal and installation.pdf">
+    <a href="MASS%20AIR%20FLOW%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">MASS AIR FLOW SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol post catalyst heated oxygen sensor removal and installation.pdf">
+    <a href="POST%20CATALYST%20HEATED%20OXYGEN%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">POST CATALYST HEATED OXYGEN SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol pre catalyst heated oxygen sensor removal and installation.pdf">
+    <a href="PRE%20CATALYST%20HEATED%20OXYGEN%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">PRE CATALYST HEATED OXYGEN SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol rear left knock sensor removal and installation.pdf">
+    <a href="REAR%20LEFT%20KNOCK%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">REAR LEFT KNOCK SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol rear right knock sensor removal and installation.pdf">
+    <a href="REAR%20RIGHT%20KNOCK%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">REAR RIGHT KNOCK SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol right camshaft position sensor removal and installation.pdf">
+    <a href="RIGHT%20CAMSHAFT%20POSITION%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT CAMSHAFT POSITION SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol right front knock sensor removal and installation.pdf">
+    <a href="RIGHT%20FRONT%20KNOCK%20SENSOR%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT FRONT KNOCK SENSOR REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol right mid catalyst heated oxygen sensor removal and installa.pdf">
+    <a href="RIGHT%20MID%20CATALYST%20HEATED%20OXYGEN%20SENSOR%20REMOVAL%20AND%20INSTALLA.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT MID CATALYST HEATED OXYGEN SENSOR REMOVAL AND INSTALLA.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain electronic engine controls v8 5.0l petrol right variable valve timing oil control solenoid removal and.pdf">
+    <a href="RIGHT%20VARIABLE%20VALVE%20TIMING%20OIL%20CONTROL%20SOLENOID%20REMOVAL%20AND.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT VARIABLE VALVE TIMING OIL CONTROL SOLENOID REMOVAL AND.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+    </ul>
+</section>
+
+    <div class="footer">Generated from tree.txt. Self-referencing relative links only.</div>
+</div>
+<script>
+function normalizeText(value) {
+    return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+}
+function filterPage() {
+    const box = document.getElementById('searchBox');
+    const q = normalizeText(box ? box.value : '');
+    document.querySelectorAll('[data-search]').forEach(el => {
+        const visible = !q || normalizeText(el.getAttribute('data-search')).includes(q);
+        el.classList.toggle('hidden-by-search', !visible);
+    });
+}
+</script>
+</body>
+</html>

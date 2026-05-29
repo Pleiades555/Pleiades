@@ -1,59 +1,257 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
-	<style>
-		
-			
-		body {	
-			background-image: url('back.jpg');
-        	background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            color: #333;
-            margin: 0;
-            padding: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L405 Range Rover 2013 - 2021 FSM</title>
+<style>
+body { --bg-img: url('back.jpg'); }
 
-
-
-			
+:root {
+    --bg: #0e1117;
+    --panel: rgba(17, 21, 28, 0.92);
+    --panel-soft: rgba(255,255,255,0.055);
+    --panel-hover: rgba(255,255,255,0.085);
+    --line: rgba(255,255,255,0.13);
+    --text: #f3f6fb;
+    --muted: #aab6c3;
+    --accent2: #ff9c40;
+    --blue: #67c4ff;
+    --green: #8bdc9d;
 }
-			a {
-		        color: #ff6600;
-			background: #1a1a1a;
-			opacity: .75;
-    			  }
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.76)), var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wrapper {
+    width: min(1500px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: 24px 0 44px;
+}
+.hero, .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+.hero {
+    padding: 26px;
+    background: linear-gradient(135deg, rgba(255,102,0,.18), rgba(103,196,255,.10)), var(--panel);
+}
+h1 {
+    margin: 0 0 8px;
+    color: var(--accent2);
+    font-size: clamp(26px, 4vw, 46px);
+}
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.search {
+    flex: 1 1 300px;
+    padding: 14px 16px;
+    border-radius: 13px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: rgba(0,0,0,.36);
+    font-size: 16px;
+    outline: none;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid rgba(255,102,0,.34);
+    background: rgba(255,102,0,.17);
+    color: var(--accent2);
+    border-radius: 13px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+.btn:hover { color: white; background: rgba(255,102,0,.28); }
+.folder-list, .file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 12px;
+}
+.panel {
+    padding: 18px;
+    margin-top: 18px;
+}
+.panel-title {
+    margin: 0 0 12px;
+    color: var(--accent2);
+}
+.breadcrumb {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.item {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: var(--panel-soft);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 12px 13px;
+    color: var(--text);
+    text-decoration: none;
+}
+.item a:hover { background: var(--panel-hover); }
+.item .name { line-height: 1.35; }
+.item .tag {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+.folder a .name { color: var(--blue); font-weight: 700; }
+.pdf a .name { color: var(--accent2); }
+.html a .name { color: var(--green); }
+.hidden-by-search { display: none !important; }
+.footer {
+    color: var(--muted);
+    text-align: center;
+    margin-top: 26px;
+    font-size: 12px;
+}
+@media (max-width: 700px) {
+    .wrapper { width: min(100% - 18px, 1500px); padding-top: 10px; }
+    .hero, .panel { border-radius: 16px; padding: 18px; }
+    .folder-list, .file-list { grid-template-columns: 1fr; }
+}
 
-		}
-	</style>
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <section class="hero">
+        <div class="breadcrumb"><a href="L405%20FSM.html">Home</a></div>
+        <h1>L405 Range Rover 2013 - 2021 FSM</h1>
+        <p class="subtitle">Dashboard homepage</p>
+        <div class="toolbar">
+            <input id="searchBox" class="search" type="search" oninput="filterPage()" placeholder="Search this page...">
+            <a class="btn" href="../Land%20Rover%20FSM.html">Back</a>
+        </div>
+    </section>
 
+    
+<section class="panel">
+    <h2 class="panel-title">Subsections</h2>
+    <ul class="folder-list">
+        
+<li class="item folder" data-search="body and paint">
+    <a href="BODY%20AND%20PAINT/L405%20Body.html">
+        <span>📁</span>
+        <span class="name">Body and Paint</span>
+        <span class="tag">401 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="chassis">
+    <a href="CHASSIS/L405%20Chassis.html">
+        <span>📁</span>
+        <span class="name">Chassis</span>
+        <span class="tag">184 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="electrical">
+    <a href="ELECTRICAL/L405%20Electrical.html">
+        <span>📁</span>
+        <span class="name">Electrical</span>
+        <span class="tag">207 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="general information">
+    <a href="GENERAL%20INFORMATION/L405%20General%20Information.html">
+        <span>📁</span>
+        <span class="name">General Information</span>
+        <span class="tag">8 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="powertrain">
+    <a href="POWERTRAIN/L405%20Powertrain.html">
+        <span>📁</span>
+        <span class="name">Powertrain</span>
+        <span class="tag">548 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="wiring diagrams">
+    <a href="WIRING%20DIAGRAMS/L405%20Wiring%20Diagrams.html">
+        <span>📁</span>
+        <span class="name">Wiring Diagrams</span>
+        <span class="tag">0 PDFs</span>
+    </a>
+</li>
+    </ul>
+</section>
+<section class="panel">
+    <h2 class="panel-title">Supplements</h2>
+    <ul class="file-list">
+        
+<li class="item pdf" data-search="supplement (apply from 2014-electrical).pdf">
+    <a href="Supplement%20(Apply%20From%202014-Electrical).pdf">
+        <span>📄</span>
+        <span class="name">Supplement (Apply From 2014-Electrical).pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="supplement (apply from 2014-powertrain).pdf">
+    <a href="Supplement%20(Apply%20From%202014-Powertrain).pdf">
+        <span>📄</span>
+        <span class="name">Supplement (Apply From 2014-Powertrain).pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+    </ul>
+</section>
 
-
-
-
-
-<h1>L405 Range Rover 2013 - 2021 FSM</h1>
-
-</ul>
-	<li><a href="./BODY AND PAINT/L405 Body.html">1. L405 Body and Paint</a></li>
-	<li><a href="./Chassis/L405 Chassis.html">2. L405 Chassis</a></li>
-	<li><a href="./Electrical/L405 Electrical.html">3. L405 Electrical</a></li>
-	<li><a href="./General Information/L405 General Information.html">4. L405 General Information</a></li>
-	<li><a href="./Powertrain/L405 Powertrain.html">5. L405 Powertrain</a></li>
-	<li><a href="./Wiring Diagrams/L405 Wiring Diagrams.html">6. L405 Wiring Diagrams</a></li>
-	<li><a href="./Supplement (Apply From 2014 - Electrical).pdf">7. L405 Electrical Supplement</a></li>
-	<li><a href="./Supplement (Apply From 2014 - Powertrain).pdf">8. L405 Powertrain Supplement</a></li>	
-	<li><a href="../Land Rover FSM.html">9. Back</a></li>
-
-
-</ul>
-</p>
-
-<br>
+    <div class="footer">Generated from tree.txt. Self-referencing relative links only.</div>
+</div>
+<script>
+function normalizeText(value) {
+    return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+}
+function filterPage() {
+    const box = document.getElementById('searchBox');
+    const q = normalizeText(box ? box.value : '');
+    document.querySelectorAll('[data-search]').forEach(el => {
+        const visible = !q || normalizeText(el.getAttribute('data-search')).includes(q);
+        el.classList.toggle('hidden-by-search', !visible);
+    });
+}
+</script>
 </body>
 </html>

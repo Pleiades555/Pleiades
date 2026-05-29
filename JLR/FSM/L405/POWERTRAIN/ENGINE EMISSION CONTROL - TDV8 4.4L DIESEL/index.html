@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engine Emission Control - Tdv8 4.4L Diesel</title>
+<style>
+body { --bg-img: url('../../back.jpg'); }
+
+:root {
+    --bg: #0e1117;
+    --panel: rgba(17, 21, 28, 0.92);
+    --panel-soft: rgba(255,255,255,0.055);
+    --panel-hover: rgba(255,255,255,0.085);
+    --line: rgba(255,255,255,0.13);
+    --text: #f3f6fb;
+    --muted: #aab6c3;
+    --accent2: #ff9c40;
+    --blue: #67c4ff;
+    --green: #8bdc9d;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.76)), var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wrapper {
+    width: min(1500px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: 24px 0 44px;
+}
+.hero, .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+.hero {
+    padding: 26px;
+    background: linear-gradient(135deg, rgba(255,102,0,.18), rgba(103,196,255,.10)), var(--panel);
+}
+h1 {
+    margin: 0 0 8px;
+    color: var(--accent2);
+    font-size: clamp(26px, 4vw, 46px);
+}
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.search {
+    flex: 1 1 300px;
+    padding: 14px 16px;
+    border-radius: 13px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: rgba(0,0,0,.36);
+    font-size: 16px;
+    outline: none;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid rgba(255,102,0,.34);
+    background: rgba(255,102,0,.17);
+    color: var(--accent2);
+    border-radius: 13px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+.btn:hover { color: white; background: rgba(255,102,0,.28); }
+.folder-list, .file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 12px;
+}
+.panel {
+    padding: 18px;
+    margin-top: 18px;
+}
+.panel-title {
+    margin: 0 0 12px;
+    color: var(--accent2);
+}
+.breadcrumb {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.item {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: var(--panel-soft);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 12px 13px;
+    color: var(--text);
+    text-decoration: none;
+}
+.item a:hover { background: var(--panel-hover); }
+.item .name { line-height: 1.35; }
+.item .tag {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+.folder a .name { color: var(--blue); font-weight: 700; }
+.pdf a .name { color: var(--accent2); }
+.html a .name { color: var(--green); }
+.hidden-by-search { display: none !important; }
+.footer {
+    color: var(--muted);
+    text-align: center;
+    margin-top: 26px;
+    font-size: 12px;
+}
+@media (max-width: 700px) {
+    .wrapper { width: min(100% - 18px, 1500px); padding-top: 10px; }
+    .hero, .panel { border-radius: 16px; padding: 18px; }
+    .folder-list, .file-list { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <section class="hero">
+        <div class="breadcrumb"><a href="../../L405%20FSM.html">Home</a> &gt; <a href="../L405%20Powertrain.html">Powertrain</a> &gt; <a href="index.html">Engine Emission Control - Tdv8 4.4L Diesel</a></div>
+        <h1>Engine Emission Control - Tdv8 4.4L Diesel</h1>
+        <p class="subtitle">0 subsections · 7 PDFs · 7 files</p>
+        <div class="toolbar">
+            <input id="searchBox" class="search" type="search" oninput="filterPage()" placeholder="Search this page...">
+            <a class="btn" href="../../L405%20FSM.html">Home</a><a class="btn" href="../L405%20Powertrain.html">Up one level</a>
+        </div>
+    </section>
+
+    
+<section class="panel">
+    <h2 class="panel-title">Files</h2>
+    <ul class="file-list">
+        
+<li class="item pdf" data-search="powertrain engine emission control - tdv8 4.4l diesel crankcase vent oil separator (g1509515) removal and install.pdf">
+    <a href="CRANKCASE%20VENT%20OIL%20SEPARATOR%20(G1509515)%20REMOVAL%20AND%20INSTALL.pdf">
+        <span>📄</span>
+        <span class="name">CRANKCASE VENT OIL SEPARATOR (G1509515) REMOVAL AND INSTALL.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine emission control - tdv8 4.4l diesel description and operation.pdf">
+    <a href="DESCRIPTION%20AND%20OPERATION.pdf">
+        <span>📄</span>
+        <span class="name">DESCRIPTION AND OPERATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine emission control - tdv8 4.4l diesel diagnosis and testing.pdf">
+    <a href="DIAGNOSIS%20AND%20TESTING.pdf">
+        <span>📄</span>
+        <span class="name">DIAGNOSIS AND TESTING.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine emission control - tdv8 4.4l diesel exhaust gas recirculation cooler (g1509516) removal and ins.pdf">
+    <a href="EXHAUST%20GAS%20RECIRCULATION%20COOLER%20(G1509516)%20REMOVAL%20AND%20INS.pdf">
+        <span>📄</span>
+        <span class="name">EXHAUST GAS RECIRCULATION COOLER (G1509516) REMOVAL AND INS.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine emission control - tdv8 4.4l diesel exhaust gas recirculation valve (g1509517) removal and inst.pdf">
+    <a href="EXHAUST%20GAS%20RECIRCULATION%20VALVE%20(G1509517)%20REMOVAL%20AND%20INST.pdf">
+        <span>📄</span>
+        <span class="name">EXHAUST GAS RECIRCULATION VALVE (G1509517) REMOVAL AND INST.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine emission control - tdv8 4.4l diesel exhaust gas recirculation valve outlet tube (g1509518) remo.pdf">
+    <a href="EXHAUST%20GAS%20RECIRCULATION%20VALVE%20OUTLET%20TUBE%20(G1509518)%20REMO.pdf">
+        <span>📄</span>
+        <span class="name">EXHAUST GAS RECIRCULATION VALVE OUTLET TUBE (G1509518) REMO.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine emission control - tdv8 4.4l diesel specifications.pdf">
+    <a href="SPECIFICATIONS.pdf">
+        <span>📄</span>
+        <span class="name">SPECIFICATIONS.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+    </ul>
+</section>
+
+    <div class="footer">Generated from tree.txt. Self-referencing relative links only.</div>
+</div>
+<script>
+function normalizeText(value) {
+    return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+}
+function filterPage() {
+    const box = document.getElementById('searchBox');
+    const q = normalizeText(box ? box.value : '');
+    document.querySelectorAll('[data-search]').forEach(el => {
+        const visible = !q || normalizeText(el.getAttribute('data-search')).includes(q);
+        el.classList.toggle('hidden-by-search', !visible);
+    });
+}
+</script>
+</body>
+</html>

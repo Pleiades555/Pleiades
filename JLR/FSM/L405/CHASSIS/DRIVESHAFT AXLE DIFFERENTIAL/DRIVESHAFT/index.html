@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Driveshaft</title>
+<style>
+body { --bg-img: url('../../../back.jpg'); }
+
+:root {
+    --bg: #0e1117;
+    --panel: rgba(17, 21, 28, 0.92);
+    --panel-soft: rgba(255,255,255,0.055);
+    --panel-hover: rgba(255,255,255,0.085);
+    --line: rgba(255,255,255,0.13);
+    --text: #f3f6fb;
+    --muted: #aab6c3;
+    --accent2: #ff9c40;
+    --blue: #67c4ff;
+    --green: #8bdc9d;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.76)), var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wrapper {
+    width: min(1500px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: 24px 0 44px;
+}
+.hero, .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+.hero {
+    padding: 26px;
+    background: linear-gradient(135deg, rgba(255,102,0,.18), rgba(103,196,255,.10)), var(--panel);
+}
+h1 {
+    margin: 0 0 8px;
+    color: var(--accent2);
+    font-size: clamp(26px, 4vw, 46px);
+}
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.search {
+    flex: 1 1 300px;
+    padding: 14px 16px;
+    border-radius: 13px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: rgba(0,0,0,.36);
+    font-size: 16px;
+    outline: none;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid rgba(255,102,0,.34);
+    background: rgba(255,102,0,.17);
+    color: var(--accent2);
+    border-radius: 13px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+.btn:hover { color: white; background: rgba(255,102,0,.28); }
+.folder-list, .file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 12px;
+}
+.panel {
+    padding: 18px;
+    margin-top: 18px;
+}
+.panel-title {
+    margin: 0 0 12px;
+    color: var(--accent2);
+}
+.breadcrumb {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.item {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: var(--panel-soft);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 12px 13px;
+    color: var(--text);
+    text-decoration: none;
+}
+.item a:hover { background: var(--panel-hover); }
+.item .name { line-height: 1.35; }
+.item .tag {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+.folder a .name { color: var(--blue); font-weight: 700; }
+.pdf a .name { color: var(--accent2); }
+.html a .name { color: var(--green); }
+.hidden-by-search { display: none !important; }
+.footer {
+    color: var(--muted);
+    text-align: center;
+    margin-top: 26px;
+    font-size: 12px;
+}
+@media (max-width: 700px) {
+    .wrapper { width: min(100% - 18px, 1500px); padding-top: 10px; }
+    .hero, .panel { border-radius: 16px; padding: 18px; }
+    .folder-list, .file-list { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <section class="hero">
+        <div class="breadcrumb"><a href="../../../L405%20FSM.html">Home</a> &gt; <a href="../../L405%20Chassis.html">Chassis</a> &gt; <a href="../index.html">Driveshaft Axle Differential</a> &gt; <a href="index.html">Driveshaft</a></div>
+        <h1>Driveshaft</h1>
+        <p class="subtitle">0 subsections · 7 PDFs · 7 files</p>
+        <div class="toolbar">
+            <input id="searchBox" class="search" type="search" oninput="filterPage()" placeholder="Search this page...">
+            <a class="btn" href="../../../L405%20FSM.html">Home</a><a class="btn" href="../index.html">Up one level</a>
+        </div>
+    </section>
+
+    
+<section class="panel">
+    <h2 class="panel-title">Files</h2>
+    <ul class="file-list">
+        
+<li class="item pdf" data-search="chassis driveshaft axle differential driveshaft front - tdv6 3.0l diesel removal and installation.pdf">
+    <a href="FRONT%20-%20TDV6%203.0L%20DIESEL%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">FRONT - TDV6 3.0L DIESEL REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="chassis driveshaft axle differential driveshaft front - tdv8 4.4l diesel.pdf">
+    <a href="FRONT%20-%20TDV8%204.4L%20DIESEL.pdf">
+        <span>📄</span>
+        <span class="name">FRONT - TDV8 4.4L DIESEL.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="chassis driveshaft axle differential driveshaft front - v6 s_c 3.0l petrol _v8 n_a 5.0l petrol_v8 s_c 5.0l p.pdf">
+    <a href="FRONT%20-%20V6%20S_C%203.0L%20PETROL%20_V8%20N_A%205.0L%20PETROL_V8%20S_C%205.0L%20P.pdf">
+        <span>📄</span>
+        <span class="name">FRONT - V6 S_C 3.0L PETROL _V8 N_A 5.0L PETROL_V8 S_C 5.0L P.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="chassis driveshaft axle differential driveshaft rear - tdv6 3.0l diesel removal and installation.pdf">
+    <a href="REAR%20-%20TDV6%203.0L%20DIESEL%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">REAR - TDV6 3.0L DIESEL REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="chassis driveshaft axle differential driveshaft rear - tdv8 4.4l diesel.pdf">
+    <a href="REAR%20-%20TDV8%204.4L%20DIESEL.pdf">
+        <span>📄</span>
+        <span class="name">REAR - TDV8 4.4L DIESEL.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="chassis driveshaft axle differential driveshaft rear - v6 s_c 3.0l petrol _v8 n_a 5.0l petrol_v8 s_c 5.0l pe.pdf">
+    <a href="REAR%20-%20V6%20S_C%203.0L%20PETROL%20_V8%20N_A%205.0L%20PETROL_V8%20S_C%205.0L%20PE.pdf">
+        <span>📄</span>
+        <span class="name">REAR - V6 S_C 3.0L PETROL _V8 N_A 5.0L PETROL_V8 S_C 5.0L PE.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="chassis driveshaft axle differential driveshaft specifications.pdf">
+    <a href="SPECIFICATIONS.pdf">
+        <span>📄</span>
+        <span class="name">SPECIFICATIONS.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+    </ul>
+</section>
+
+    <div class="footer">Generated from tree.txt. Self-referencing relative links only.</div>
+</div>
+<script>
+function normalizeText(value) {
+    return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+}
+function filterPage() {
+    const box = document.getElementById('searchBox');
+    const q = normalizeText(box ? box.value : '');
+    document.querySelectorAll('[data-search]').forEach(el => {
+        const visible = !q || normalizeText(el.getAttribute('data-search')).includes(q);
+        el.classList.toggle('hidden-by-search', !visible);
+    });
+}
+</script>
+</body>
+</html>

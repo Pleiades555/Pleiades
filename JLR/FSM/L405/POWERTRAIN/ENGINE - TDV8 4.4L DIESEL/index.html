@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engine - Tdv8 4.4L Diesel</title>
+<style>
+body { --bg-img: url('../../back.jpg'); }
+
+:root {
+    --bg: #0e1117;
+    --panel: rgba(17, 21, 28, 0.92);
+    --panel-soft: rgba(255,255,255,0.055);
+    --panel-hover: rgba(255,255,255,0.085);
+    --line: rgba(255,255,255,0.13);
+    --text: #f3f6fb;
+    --muted: #aab6c3;
+    --accent2: #ff9c40;
+    --blue: #67c4ff;
+    --green: #8bdc9d;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.76)), var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wrapper {
+    width: min(1500px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: 24px 0 44px;
+}
+.hero, .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+.hero {
+    padding: 26px;
+    background: linear-gradient(135deg, rgba(255,102,0,.18), rgba(103,196,255,.10)), var(--panel);
+}
+h1 {
+    margin: 0 0 8px;
+    color: var(--accent2);
+    font-size: clamp(26px, 4vw, 46px);
+}
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.search {
+    flex: 1 1 300px;
+    padding: 14px 16px;
+    border-radius: 13px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: rgba(0,0,0,.36);
+    font-size: 16px;
+    outline: none;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid rgba(255,102,0,.34);
+    background: rgba(255,102,0,.17);
+    color: var(--accent2);
+    border-radius: 13px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+.btn:hover { color: white; background: rgba(255,102,0,.28); }
+.folder-list, .file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 12px;
+}
+.panel {
+    padding: 18px;
+    margin-top: 18px;
+}
+.panel-title {
+    margin: 0 0 12px;
+    color: var(--accent2);
+}
+.breadcrumb {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.item {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: var(--panel-soft);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 12px 13px;
+    color: var(--text);
+    text-decoration: none;
+}
+.item a:hover { background: var(--panel-hover); }
+.item .name { line-height: 1.35; }
+.item .tag {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+.folder a .name { color: var(--blue); font-weight: 700; }
+.pdf a .name { color: var(--accent2); }
+.html a .name { color: var(--green); }
+.hidden-by-search { display: none !important; }
+.footer {
+    color: var(--muted);
+    text-align: center;
+    margin-top: 26px;
+    font-size: 12px;
+}
+@media (max-width: 700px) {
+    .wrapper { width: min(100% - 18px, 1500px); padding-top: 10px; }
+    .hero, .panel { border-radius: 16px; padding: 18px; }
+    .folder-list, .file-list { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <section class="hero">
+        <div class="breadcrumb"><a href="../../L405%20FSM.html">Home</a> &gt; <a href="../L405%20Powertrain.html">Powertrain</a> &gt; <a href="index.html">Engine - Tdv8 4.4L Diesel</a></div>
+        <h1>Engine - Tdv8 4.4L Diesel</h1>
+        <p class="subtitle">0 subsections · 27 PDFs · 27 files</p>
+        <div class="toolbar">
+            <input id="searchBox" class="search" type="search" oninput="filterPage()" placeholder="Search this page...">
+            <a class="btn" href="../../L405%20FSM.html">Home</a><a class="btn" href="../L405%20Powertrain.html">Up one level</a>
+        </div>
+    </section>
+
+    
+<section class="panel">
+    <h2 class="panel-title">Files</h2>
+    <ul class="file-list">
+        
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel crankshaft front seal removal and installation.pdf">
+    <a href="CRANKSHAFT%20FRONT%20SEAL%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">CRANKSHAFT FRONT SEAL REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel crankshaft pulley removal and installation.pdf">
+    <a href="CRANKSHAFT%20PULLEY%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">CRANKSHAFT PULLEY REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel crankshaft rear seal removal and installation.pdf">
+    <a href="CRANKSHAFT%20REAR%20SEAL%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">CRANKSHAFT REAR SEAL REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel diesel description and operation.pdf">
+    <a href="DIESEL%20DESCRIPTION%20AND%20OPERATION.pdf">
+        <span>📄</span>
+        <span class="name">DIESEL DESCRIPTION AND OPERATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel diesel specifications.pdf">
+    <a href="DIESEL%20SPECIFICATIONS.pdf">
+        <span>📄</span>
+        <span class="name">DIESEL SPECIFICATIONS.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel engine installation.pdf">
+    <a href="ENGINE%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">ENGINE INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel engine oil draining and filling.pdf">
+    <a href="ENGINE%20OIL%20DRAINING%20AND%20FILLING.pdf">
+        <span>📄</span>
+        <span class="name">ENGINE OIL DRAINING AND FILLING.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel engine oil vacuum draining and filling.pdf">
+    <a href="ENGINE%20OIL%20VACUUM%20DRAINING%20AND%20FILLING.pdf">
+        <span>📄</span>
+        <span class="name">ENGINE OIL VACUUM DRAINING AND FILLING.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel engine removal.pdf">
+    <a href="ENGINE%20REMOVAL.pdf">
+        <span>📄</span>
+        <span class="name">ENGINE REMOVAL.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel exhaust manifold cross-over pipe removal and installation.pdf">
+    <a href="EXHAUST%20MANIFOLD%20CROSS-OVER%20PIPE%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">EXHAUST MANIFOLD CROSS-OVER PIPE REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel flexplate removal and installation.pdf">
+    <a href="FLEXPLATE%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">FLEXPLATE REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel intake manifold plenum chamber removal and installation.pdf">
+    <a href="INTAKE%20MANIFOLD%20PLENUM%20CHAMBER%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">INTAKE MANIFOLD PLENUM CHAMBER REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel left camshaft removal and installation.pdf">
+    <a href="LEFT%20CAMSHAFT%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">LEFT CAMSHAFT REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel left cylinder head removal and installation.pdf">
+    <a href="LEFT%20CYLINDER%20HEAD%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">LEFT CYLINDER HEAD REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel left engine mount removal and installation.pdf">
+    <a href="LEFT%20ENGINE%20MOUNT%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">LEFT ENGINE MOUNT REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel left exhaust manifold removal and installation.pdf">
+    <a href="LEFT%20EXHAUST%20MANIFOLD%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">LEFT EXHAUST MANIFOLD REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel left valve cover removal and installation.pdf">
+    <a href="LEFT%20VALVE%20COVER%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">LEFT VALVE COVER REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel oil cooler removal and installation.pdf">
+    <a href="OIL%20COOLER%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">OIL COOLER REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel oil filter element removal and installation.pdf">
+    <a href="OIL%20FILTER%20ELEMENT%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">OIL FILTER ELEMENT REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel oil pan removal and installation.pdf">
+    <a href="OIL%20PAN%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">OIL PAN REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel oil pump removal and installation.pdf">
+    <a href="OIL%20PUMP%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">OIL PUMP REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel right camshaft removal and installation.pdf">
+    <a href="RIGHT%20CAMSHAFT%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT CAMSHAFT REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel right cylinder head removal and installation.pdf">
+    <a href="RIGHT%20CYLINDER%20HEAD%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT CYLINDER HEAD REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel right engine mount removal and installation.pdf">
+    <a href="RIGHT%20ENGINE%20MOUNT%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT ENGINE MOUNT REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel right exhaust manifold removal and installation.pdf">
+    <a href="RIGHT%20EXHAUST%20MANIFOLD%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT EXHAUST MANIFOLD REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel right valve cover removal and installation.pdf">
+    <a href="RIGHT%20VALVE%20COVER%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">RIGHT VALVE COVER REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine - tdv8 4.4l diesel timing drive components removal and installation.pdf">
+    <a href="TIMING%20DRIVE%20COMPONENTS%20REMOVAL%20AND%20INSTALLATION.pdf">
+        <span>📄</span>
+        <span class="name">TIMING DRIVE COMPONENTS REMOVAL AND INSTALLATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+    </ul>
+</section>
+
+    <div class="footer">Generated from tree.txt. Self-referencing relative links only.</div>
+</div>
+<script>
+function normalizeText(value) {
+    return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+}
+function filterPage() {
+    const box = document.getElementById('searchBox');
+    const q = normalizeText(box ? box.value : '');
+    document.querySelectorAll('[data-search]').forEach(el => {
+        const visible = !q || normalizeText(el.getAttribute('data-search')).includes(q);
+        el.classList.toggle('hidden-by-search', !visible);
+    });
+}
+</script>
+</body>
+</html>

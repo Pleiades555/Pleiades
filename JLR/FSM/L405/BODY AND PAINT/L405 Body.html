@@ -1,76 +1,376 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
-	<style>
-		
-			
-		body {	
-			background-image: url('back.jpg');
-        	background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            color: #333;
-            margin: 0;
-            padding: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Body and Paint</title>
+<style>
+body { --bg-img: url('../back.jpg'); }
 
-
-
-			
+:root {
+    --bg: #0e1117;
+    --panel: rgba(17, 21, 28, 0.92);
+    --panel-soft: rgba(255,255,255,0.055);
+    --panel-hover: rgba(255,255,255,0.085);
+    --line: rgba(255,255,255,0.13);
+    --text: #f3f6fb;
+    --muted: #aab6c3;
+    --accent2: #ff9c40;
+    --blue: #67c4ff;
+    --green: #8bdc9d;
 }
-			a {
-		        color: #ff6600;
-			background: #1a1a1a;
-			opacity: .75;
-    			  }
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.76)), var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wrapper {
+    width: min(1500px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: 24px 0 44px;
+}
+.hero, .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+.hero {
+    padding: 26px;
+    background: linear-gradient(135deg, rgba(255,102,0,.18), rgba(103,196,255,.10)), var(--panel);
+}
+h1 {
+    margin: 0 0 8px;
+    color: var(--accent2);
+    font-size: clamp(26px, 4vw, 46px);
+}
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.search {
+    flex: 1 1 300px;
+    padding: 14px 16px;
+    border-radius: 13px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: rgba(0,0,0,.36);
+    font-size: 16px;
+    outline: none;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid rgba(255,102,0,.34);
+    background: rgba(255,102,0,.17);
+    color: var(--accent2);
+    border-radius: 13px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+.btn:hover { color: white; background: rgba(255,102,0,.28); }
+.folder-list, .file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 12px;
+}
+.panel {
+    padding: 18px;
+    margin-top: 18px;
+}
+.panel-title {
+    margin: 0 0 12px;
+    color: var(--accent2);
+}
+.breadcrumb {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.item {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: var(--panel-soft);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 12px 13px;
+    color: var(--text);
+    text-decoration: none;
+}
+.item a:hover { background: var(--panel-hover); }
+.item .name { line-height: 1.35; }
+.item .tag {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+.folder a .name { color: var(--blue); font-weight: 700; }
+.pdf a .name { color: var(--accent2); }
+.html a .name { color: var(--green); }
+.hidden-by-search { display: none !important; }
+.footer {
+    color: var(--muted);
+    text-align: center;
+    margin-top: 26px;
+    font-size: 12px;
+}
+@media (max-width: 700px) {
+    .wrapper { width: min(100% - 18px, 1500px); padding-top: 10px; }
+    .hero, .panel { border-radius: 16px; padding: 18px; }
+    .folder-list, .file-list { grid-template-columns: 1fr; }
+}
 
-		}
-	</style>
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <section class="hero">
+        <div class="breadcrumb"><a href="../L405%20FSM.html">Home</a> &gt; <a href="L405%20Body.html">Body and Paint</a></div>
+        <h1>Body and Paint</h1>
+        <p class="subtitle">23 subsections · 401 PDFs · 405 files</p>
+        <div class="toolbar">
+            <input id="searchBox" class="search" type="search" oninput="filterPage()" placeholder="Search this page...">
+            <a class="btn" href="../L405%20FSM.html">Home</a><a class="btn" href="../L405%20FSM.html">Up one level</a>
+        </div>
+    </section>
 
+    
+<section class="panel">
+    <h2 class="panel-title">Subsections</h2>
+    <ul class="folder-list">
+        
+<li class="item folder" data-search="body and paint body closures">
+    <a href="BODY%20CLOSURES/index.html">
+        <span>📁</span>
+        <span class="name">Body Closures</span>
+        <span class="tag">19 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint body repairs">
+    <a href="BODY%20REPAIRS/index.html">
+        <span>📁</span>
+        <span class="name">Body Repairs</span>
+        <span class="tag">11 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint body system general information">
+    <a href="BODY%20SYSTEM%20GENERAL%20INFORMATION/index.html">
+        <span>📁</span>
+        <span class="name">Body System General Information</span>
+        <span class="tag">2 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint bumpers">
+    <a href="BUMPERS/index.html">
+        <span>📁</span>
+        <span class="name">Bumpers</span>
+        <span class="tag">6 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint exterior trim and ornamentation">
+    <a href="EXTERIOR%20TRIM%20AND%20ORNAMENTATION/index.html">
+        <span>📁</span>
+        <span class="name">Exterior Trim and Ornamentation</span>
+        <span class="tag">17 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint front end body panels">
+    <a href="FRONT%20END%20BODY%20PANELS/index.html">
+        <span>📁</span>
+        <span class="name">Front End Body Panels</span>
+        <span class="tag">10 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint front end sheet metal repairs">
+    <a href="FRONT%20END%20SHEET%20METAL%20REPAIRS/index.html">
+        <span>📁</span>
+        <span class="name">Front End Sheet Metal Repairs</span>
+        <span class="tag">10 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint full frame and body mounting">
+    <a href="FULL%20FRAME%20AND%20BODY%20MOUNTING/index.html">
+        <span>📁</span>
+        <span class="name">Full Frame and Body Mounting</span>
+        <span class="tag">4 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint glass frames and mechanisms">
+    <a href="GLASS%20FRAMES%20AND%20MECHANISMS/index.html">
+        <span>📁</span>
+        <span class="name">Glass Frames and Mechanisms</span>
+        <span class="tag">21 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint handles locks latches and entry systems">
+    <a href="HANDLES%20LOCKS%20LATCHES%20AND%20ENTRY%20SYSTEMS/index.html">
+        <span>📁</span>
+        <span class="name">Handles Locks Latches and Entry Systems</span>
+        <span class="tag">14 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint instrument panel and console">
+    <a href="INSTRUMENT%20PANEL%20AND%20CONSOLE/index.html">
+        <span>📁</span>
+        <span class="name">Instrument Panel and Console</span>
+        <span class="tag">57 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint interior trim and ornamentation">
+    <a href="INTERIOR%20TRIM%20AND%20ORNAMENTATION/index.html">
+        <span>📁</span>
+        <span class="name">Interior Trim and Ornamentation</span>
+        <span class="tag">29 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint rear end sheet metal repairs">
+    <a href="REAR%20END%20SHEET%20METAL%20REPAIRS/index.html">
+        <span>📁</span>
+        <span class="name">Rear End Sheet Metal Repairs</span>
+        <span class="tag">19 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint rear view mirrors">
+    <a href="REAR%20VIEW%20MIRRORS/index.html">
+        <span>📁</span>
+        <span class="name">Rear View Mirrors</span>
+        <span class="tag">8 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint roof opening panel">
+    <a href="ROOF%20OPENING%20PANEL/index.html">
+        <span>📁</span>
+        <span class="name">Roof Opening Panel</span>
+        <span class="tag">12 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint roof sheet metal repairs">
+    <a href="ROOF%20SHEET%20METAL%20REPAIRS/index.html">
+        <span>📁</span>
+        <span class="name">Roof Sheet Metal Repairs</span>
+        <span class="tag">5 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint seatbelt system">
+    <a href="SEATBELT%20SYSTEM/index.html">
+        <span>📁</span>
+        <span class="name">Seatbelt System</span>
+        <span class="tag">10 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint seating">
+    <a href="SEATING/index.html">
+        <span>📁</span>
+        <span class="name">Seating</span>
+        <span class="tag">110 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint side panel sheet metal repairs">
+    <a href="SIDE%20PANEL%20SHEET%20METAL%20REPAIRS/index.html">
+        <span>📁</span>
+        <span class="name">Side Panel Sheet Metal Repairs</span>
+        <span class="tag">13 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint supplemental restraint system">
+    <a href="SUPPLEMENTAL%20RESTRAINT%20SYSTEM/index.html">
+        <span>📁</span>
+        <span class="name">Supplemental Restraint System</span>
+        <span class="tag">16 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint towbar">
+    <a href="TOWBAR/index.html">
+        <span>📁</span>
+        <span class="name">Towbar</span>
+        <span class="tag">3 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint uni-body subframe and mounting system">
+    <a href="UNI-BODY%20SUBFRAME%20AND%20MOUNTING%20SYSTEM/index.html">
+        <span>📁</span>
+        <span class="name">Uni-Body Subframe and Mounting System</span>
+        <span class="tag">5 PDFs</span>
+    </a>
+</li>
+<li class="item folder" data-search="body and paint wipers and washers">
+    <a href="WIPERS%20AND%20WASHERS/index.html">
+        <span>📁</span>
+        <span class="name">Wipers and Washers</span>
+        <span class="tag">0 PDFs</span>
+    </a>
+</li>
+    </ul>
+</section>
+<section class="panel">
+    <h2 class="panel-title">Files</h2>
+    <ul class="file-list">
+        
+<li class="item html" data-search="body and paint l405 body.html">
+    <a href="L405%20Body.html">
+        <span>🌐</span>
+        <span class="name">L405 Body.html</span>
+        <span class="tag">HTML</span>
+    </a>
+</li>
+<li class="item file" data-search="body and paint back.jpg">
+    <a href="back.jpg">
+        <span>🖼️</span>
+        <span class="name">back.jpg</span>
+        <span class="tag">Image</span>
+    </a>
+</li>
+    </ul>
+</section>
 
-
-
-
-
-<h1>L405 Range Rover 2013 - 2021 Body and Paint FSM's</h1>
-
-</ul>
-	<li><a href="./Body Closures/L405 Body Closures.html">1. L405 Body Closures</a></li>
-	<li><a href="./Body Repairs/L405 Body Repairs.html">2. L405 Body Repairs</a></li>
-	<li><a href="./Body System General Information/L405 Body information.html">3. L405 Body System General Information</a></li>
-	<li><a href="./Bumpers/L405 Bumpers.html">4. L405 Bumpers</a></li>
-	<li><a href="./Exterior Trim and Ornamentation/L405 Exterior Trim.html">5. L405 Exterior Trim and Ornamention</a></li>
-	<li><a href="./Front End Body Panels/L405 Front Body.html">6. L405 Front End Body Panels</a></li>
-	<li><a href="./Front End Sheet Metal Repairs/L405 Front Sheet.html">7. L405 Front End Sheet Metal Repairs</a></li>
-	<li><a href="./Full Frame and body mounting/L405 Frame.html">8. L405 Full frame and body mounting</a></li>
-	<li><a href="./GLASS FRAMES AND MECHANISMS/L405 Glass.html">9. L405 Glass Frames and Mechanisms</a></li>
-	<li><a href="./HANDLES LOCKS LATCHES AND ENTRY SYSTEMS/L405 Handles.html">10. L405 Handles, Locks, Latches and Entry Systems</a></li>
-	<li><a href="./INSTRUMENT PANEL AND CONSOLE/L405 Instrument.html">11. L405 Instrument Panel and Console</a></li>
-	<li><a href="./Interior trim and ornamentation/L405 Interior Trim.html">12. L405 Interior Trim and Ornamentation</a></li>
-	<li><a href="./Rear End Sheet Metal Repairs/L405 Rear Sheet.html">13. L405 Rear End Sheet Metal Repairs</a></li>
-	<li><a href="./Rear View Mirrors/L405 Mirrors.html">14. L405 Rear View Mirrors</a></li>
-	<li><a href="./Roof Opening Panel/L405 Roof Opening Panel.html">15. L405 Roof Opening Panel</a></li>
-	<li><a href="./Roof Sheet Metal Repairs/L405 Roof Metal.html">16. L405 Roof Sheet Metal Repairs</a></li>
-	<li><a href="./Seatbelt system/L405 Seatbelt.html">17. L405 Seatbelt System</a></li>
-	<li><a href="./Seating/L405 Seats.html">18. L405 Seating</a></li>	
-	<li><a href="./Side Panel Sheet Metal Repairs/L405 Side Metal.html">19. L405 Side Panel Sheet Metal Repairs</a></li>
-	<li><a href="./Supplemental Restraint System/L405 Supp Restraint.html">20. L405 Supplemental Restraint System</a></li>
-	<li><a href="./TOWBAR/L405 Towbar.html">21. L405 Towbar</a></li>
-	<li><a href="./Uni-body subframe and mounting system/L405 Unibody.html">22. L405 Uni-Body subframe and mounting system</a></li>
-	<li><a href="./Wipers and Washers/L405 Wipers.html">23. L405 Wipers and Washers</a></li>
-
-	
-	<li><a href="../L405 FSM.html">9. Back</a></li>
-
-
-</ul>
-</p>
-
-<br>
+    <div class="footer">Generated from tree.txt. Self-referencing relative links only.</div>
+</div>
+<script>
+function normalizeText(value) {
+    return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+}
+function filterPage() {
+    const box = document.getElementById('searchBox');
+    const q = normalizeText(box ? box.value : '');
+    document.querySelectorAll('[data-search]').forEach(el => {
+        const visible = !q || normalizeText(el.getAttribute('data-search')).includes(q);
+        el.classList.toggle('hidden-by-search', !visible);
+    });
+}
+</script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+INSTALLATION
+
+This corrected version fixes the folder mapping.
+
+Important fix:
+- The tree parser now preserves the extra folder level before PDFs.
+- Example path now maps as:
+  L405/POWERTRAIN/ACCESSORY DRIVE TDV6 3.0L DIESEL/[PDF files]
+- The “Complete Tree From Here” section is not included.
+- Search remains available on each page.
+- Root page only shows the two supplement PDFs as direct files.
+- Links are self-referencing relative paths only.
+
+Install:
+1. Extract this ZIP.
+2. Copy/merge it over your existing L405 FSM folder.
+3. Allow it to overwrite existing/generated HTML files.
+4. Keep all original PDFs/folders exactly where they are.

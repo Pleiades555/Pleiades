@@ -1,0 +1,4 @@
+Open File Explorer and navigate to the folder you want to diagram.
+Hold down the Shift key, right-click any empty space inside the folder, and select Open command window here (or Open in Terminal).
+Type the following command and press Enter:tree /F > tree.txt
+A new text file named tree.txt will be created instantly in that folder. Double-click it to open and view your diagram.

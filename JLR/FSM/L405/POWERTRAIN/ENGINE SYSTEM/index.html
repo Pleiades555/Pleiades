@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engine System</title>
+<style>
+body { --bg-img: url('../../back.jpg'); }
+
+:root {
+    --bg: #0e1117;
+    --panel: rgba(17, 21, 28, 0.92);
+    --panel-soft: rgba(255,255,255,0.055);
+    --panel-hover: rgba(255,255,255,0.085);
+    --line: rgba(255,255,255,0.13);
+    --text: #f3f6fb;
+    --muted: #aab6c3;
+    --accent2: #ff9c40;
+    --blue: #67c4ff;
+    --green: #8bdc9d;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.76)), var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.wrapper {
+    width: min(1500px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: 24px 0 44px;
+}
+.hero, .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+.hero {
+    padding: 26px;
+    background: linear-gradient(135deg, rgba(255,102,0,.18), rgba(103,196,255,.10)), var(--panel);
+}
+h1 {
+    margin: 0 0 8px;
+    color: var(--accent2);
+    font-size: clamp(26px, 4vw, 46px);
+}
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.search {
+    flex: 1 1 300px;
+    padding: 14px 16px;
+    border-radius: 13px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: rgba(0,0,0,.36);
+    font-size: 16px;
+    outline: none;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid rgba(255,102,0,.34);
+    background: rgba(255,102,0,.17);
+    color: var(--accent2);
+    border-radius: 13px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+.btn:hover { color: white; background: rgba(255,102,0,.28); }
+.folder-list, .file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 12px;
+}
+.panel {
+    padding: 18px;
+    margin-top: 18px;
+}
+.panel-title {
+    margin: 0 0 12px;
+    color: var(--accent2);
+}
+.breadcrumb {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.item {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: var(--panel-soft);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 12px 13px;
+    color: var(--text);
+    text-decoration: none;
+}
+.item a:hover { background: var(--panel-hover); }
+.item .name { line-height: 1.35; }
+.item .tag {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 12px;
+    white-space: nowrap;
+}
+.folder a .name { color: var(--blue); font-weight: 700; }
+.pdf a .name { color: var(--accent2); }
+.html a .name { color: var(--green); }
+.hidden-by-search { display: none !important; }
+.footer {
+    color: var(--muted);
+    text-align: center;
+    margin-top: 26px;
+    font-size: 12px;
+}
+@media (max-width: 700px) {
+    .wrapper { width: min(100% - 18px, 1500px); padding-top: 10px; }
+    .hero, .panel { border-radius: 16px; padding: 18px; }
+    .folder-list, .file-list { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <section class="hero">
+        <div class="breadcrumb"><a href="../../L405%20FSM.html">Home</a> &gt; <a href="../L405%20Powertrain.html">Powertrain</a> &gt; <a href="index.html">Engine System</a></div>
+        <h1>Engine System</h1>
+        <p class="subtitle">0 subsections · 26 PDFs · 26 files</p>
+        <div class="toolbar">
+            <input id="searchBox" class="search" type="search" oninput="filterPage()" placeholder="Search this page...">
+            <a class="btn" href="../../L405%20FSM.html">Home</a><a class="btn" href="../L405%20Powertrain.html">Up one level</a>
+        </div>
+    </section>
+
+    
+<section class="panel">
+    <h2 class="panel-title">Files</h2>
+    <ul class="file-list">
+        
+<li class="item pdf" data-search="powertrain engine system 4.4l diesel general information.pdf">
+    <a href="4.4L%20DIESEL%20GENERAL%20INFORMATION.pdf">
+        <span>📄</span>
+        <span class="name">4.4L DIESEL GENERAL INFORMATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system 5.0l petrol general information.pdf">
+    <a href="5.0L%20PETROL%20GENERAL%20INFORMATION.pdf">
+        <span>📄</span>
+        <span class="name">5.0L PETROL GENERAL INFORMATION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  bearing inspection.pdf">
+    <a href="GENERAL%20INFORMATION%20%20BEARING%20INSPECTION.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  BEARING INSPECTION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  camshaft bearing journal diameter.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CAMSHAFT%20BEARING%20JOURNAL%20DIAMETER.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CAMSHAFT BEARING JOURNAL DIAMETER.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  camshaft end play.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CAMSHAFT%20END%20PLAY.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CAMSHAFT END PLAY.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  camshaft lobe lift.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CAMSHAFT%20LOBE%20LIFT.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CAMSHAFT LOBE LIFT.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  camshaft surface inspection.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CAMSHAFT%20SURFACE%20INSPECTION.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CAMSHAFT SURFACE INSPECTION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  connecting rod cleaning.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CONNECTING%20ROD%20CLEANING.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CONNECTING ROD CLEANING.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  connecting rod large end bore.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CONNECTING%20ROD%20LARGE%20END%20BORE.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CONNECTING ROD LARGE END BORE.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  crankshaft end play.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CRANKSHAFT%20END%20PLAY.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CRANKSHAFT END PLAY.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  cylinder bore out-of-round.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CYLINDER%20BORE%20OUT-OF-ROUND.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CYLINDER BORE OUT-OF-ROUND.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  cylinder head compression test - tdv8 4.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CYLINDER%20HEAD%20COMPRESSION%20TEST%20-%20TDV8%204.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CYLINDER HEAD COMPRESSION TEST - TDV8 4.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  cylinder head compression test - v8 s_c.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CYLINDER%20HEAD%20COMPRESSION%20TEST%20-%20V8%20S_C.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CYLINDER HEAD COMPRESSION TEST - V8 S_C.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  cylinder head distortion.pdf">
+    <a href="GENERAL%20INFORMATION%20%20CYLINDER%20HEAD%20DISTORTION.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  CYLINDER HEAD DISTORTION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  exhaust manifold cleaning and inspectio.pdf">
+    <a href="GENERAL%20INFORMATION%20%20EXHAUST%20MANIFOLD%20CLEANING%20AND%20INSPECTIO.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  EXHAUST MANIFOLD CLEANING AND INSPECTIO.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  leakage test using smoke test equipment.pdf">
+    <a href="GENERAL%20INFORMATION%20%20LEAKAGE%20TEST%20USING%20SMOKE%20TEST%20EQUIPMENT.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  LEAKAGE TEST USING SMOKE TEST EQUIPMENT.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  piston inspection.pdf">
+    <a href="GENERAL%20INFORMATION%20%20PISTON%20INSPECTION.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  PISTON INSPECTION.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  piston pin diameter.pdf">
+    <a href="GENERAL%20INFORMATION%20%20PISTON%20PIN%20DIAMETER.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  PISTON PIN DIAMETER.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  piston pin to bore diameter.pdf">
+    <a href="GENERAL%20INFORMATION%20%20PISTON%20PIN%20TO%20BORE%20DIAMETER.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  PISTON PIN TO BORE DIAMETER.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  piston ring end gap.pdf">
+    <a href="GENERAL%20INFORMATION%20%20PISTON%20RING%20END%20GAP.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  PISTON RING END GAP.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  piston ring-to-groove clearance.pdf">
+    <a href="GENERAL%20INFORMATION%20%20PISTON%20RING-TO-GROOVE%20CLEARANCE.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  PISTON RING-TO-GROOVE CLEARANCE.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  thread repair.pdf">
+    <a href="GENERAL%20INFORMATION%20%20THREAD%20REPAIR.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  THREAD REPAIR.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  valve spring free length.pdf">
+    <a href="GENERAL%20INFORMATION%20%20VALVE%20SPRING%20FREE%20LENGTH.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  VALVE SPRING FREE LENGTH.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  valve stem diamete.pdf">
+    <a href="GENERAL%20INFORMATION%20%20VALVE%20STEM%20DIAMETE.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  VALVE STEM DIAMETE.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information  valve stem diameter.pdf">
+    <a href="GENERAL%20INFORMATION%20%20VALVE%20STEM%20DIAMETER.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION  VALVE STEM DIAMETER.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+<li class="item pdf" data-search="powertrain engine system general information diesel diagnosis and testing.pdf">
+    <a href="GENERAL%20INFORMATION%20DIESEL%20DIAGNOSIS%20AND%20TESTING.pdf">
+        <span>📄</span>
+        <span class="name">GENERAL INFORMATION DIESEL DIAGNOSIS AND TESTING.pdf</span>
+        <span class="tag">PDF</span>
+    </a>
+</li>
+    </ul>
+</section>
+
+    <div class="footer">Generated from tree.txt. Self-referencing relative links only.</div>
+</div>
+<script>
+function normalizeText(value) {
+    return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
+}
+function filterPage() {
+    const box = document.getElementById('searchBox');
+    const q = normalizeText(box ? box.value : '');
+    document.querySelectorAll('[data-search]').forEach(el => {
+        const visible = !q || normalizeText(el.getAttribute('data-search')).includes(q);
+        el.classList.toggle('hidden-by-search', !visible);
+    });
+}
+</script>
+</body>
+</html>
