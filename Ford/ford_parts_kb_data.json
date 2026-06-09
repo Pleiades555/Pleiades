@@ -3805,15 +3805,15 @@
   },
   {
     "basic": "3078",
-    "description": "Lower control arm RH",
-    "category": "Front axle / suspension",
-    "aliases": "",
+    "description": "Arm Assy",
+    "category": "Suspension",
+    "aliases": "Front Lower Control Arm",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "notes": "LH & RH are different PN's",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:19:15"
   },
   {
     "basic": "3079",
@@ -3925,15 +3925,15 @@
   },
   {
     "basic": "3K185",
-    "description": "Knuckle",
-    "category": "Front axle / suspension",
-    "aliases": "",
+    "description": "Knuckle - Front Wheel",
+    "category": "Suspension",
+    "aliases": "Front Knuckle",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:25:11"
   },
   {
     "basic": "3K186",
@@ -6637,27 +6637,27 @@
   },
   {
     "basic": "5482",
-    "description": "Front stabilizer bar",
+    "description": "Bar - Stabilizer",
     "category": "Suspension",
-    "aliases": "",
+    "aliases": "Front Sway Bar, Front Stabiliser bar",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:22:35"
   },
   {
     "basic": "5484",
-    "description": "Sway bar bushing",
+    "description": "Insulator Assy",
     "category": "Suspension",
-    "aliases": "",
+    "aliases": "Front Sway Bar Bushes",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:21:01"
   },
   {
     "basic": "5486",
@@ -6853,15 +6853,15 @@
   },
   {
     "basic": "5K484",
-    "description": "Front end link",
+    "description": "Link",
     "category": "Suspension",
-    "aliases": "",
+    "aliases": "Front Sway Bar Links",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:19:55"
   },
   {
     "basic": "5K848",
@@ -6925,15 +6925,15 @@
   },
   {
     "basic": "17080",
-    "description": "Jack",
-    "category": "Tools / accessories",
-    "aliases": "",
+    "description": "Jack Assy Lifting",
+    "category": "Tools",
+    "aliases": "Car jack",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "notes": "May not come with nut wrench (17035)",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:11:15"
   },
   {
     "basic": "19D520",
@@ -7705,15 +7705,15 @@
   },
   {
     "basic": "1104",
-    "description": "Front hub and bearing",
-    "category": "Wheels, hubs & bearings",
-    "aliases": "lug nut, wheel nut, nut",
+    "description": "Hub Assy - Wheel",
+    "category": "Suspension",
+    "aliases": "Wheel Hub Assembly",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:24:24"
   },
   {
     "basic": "1107",
@@ -7969,15 +7969,15 @@
   },
   {
     "basic": "3B477",
-    "description": "Hub assembly nut / retainer",
-    "category": "Wheels, hubs & bearings",
-    "aliases": "",
+    "description": "Retainer",
+    "category": "Suspension",
+    "aliases": "Axle Nut, Wheel Hub Nut, Spindel Nut",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:27:33"
   },
   {
     "basic": "17508",
@@ -8098,5 +8098,77 @@
     "notes": "",
     "source": "Manual Entry",
     "updated": "2026-06-09 02:27:31"
+  },
+  {
+    "basic": "42528",
+    "description": "Name Plates",
+    "category": "Name Plates",
+    "aliases": "Ford Badge, Name Plate, Badge",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:06:48"
+  },
+  {
+    "basic": "1532",
+    "description": "Tyre Spec Label/Decal/Sticker",
+    "category": "Name Plates",
+    "aliases": "Tyre specifications sticker",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:09:55"
+  },
+  {
+    "basic": "17035",
+    "description": "Wheel Nut Wrench",
+    "category": "Tools",
+    "aliases": "Tyre removal tool, wheel nut remover",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "May not come with jack (17080)",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:12:32"
+  },
+  {
+    "basic": "17A954",
+    "description": "Front tow hook",
+    "category": "Tools",
+    "aliases": "Towing Hook, tow spot",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:15:12"
+  },
+  {
+    "basic": "17B068",
+    "description": "Funnel (Petrol Engine)",
+    "category": "Tools",
+    "aliases": "Filler funnel, fuel funnel",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:15:54"
+  },
+  {
+    "basic": "1215",
+    "description": "Bearing Assy - Wheel Hub",
+    "category": "Suspension",
+    "aliases": "Wheel Bearing",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 05:26:31"
   }
 ]
