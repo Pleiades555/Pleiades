@@ -8086,5 +8086,17 @@
     "notes": "",
     "source": "Preview starter dataset",
     "updated": ""
+  },
+  {
+    "basic": "6B624",
+    "description": "Diesel Oil Cooler Assembly",
+    "category": "Engine",
+    "aliases": "Engine Oil Cooler, Diesel Oil Cooler",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "Manual Entry",
+    "updated": "2026-06-09 02:27:31"
   }
 ]
