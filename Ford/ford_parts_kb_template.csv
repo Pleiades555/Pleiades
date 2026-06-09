@@ -1,0 +1,675 @@
+basic,description,category,aliases,part_numbers,applications,supersessions,notes,source
+3C247,4WD actuator,4WD / driveline,,,,,Shift-on-the-fly,Preview starter dataset
+4A322,4WD hub O-ring,4WD / driveline,,,,,,Preview starter dataset
+7E453,4x4 module,4WD / electrical,,,,,,Preview starter dataset
+7E063,Transfer case skid plate,4WD / transfer case,,,,,,Preview starter dataset
+7G360,Transfer case drive motor,4WD / transfer case,,,,,4x4 shift motor,Preview starter dataset
+7A195,Transfer case,4WD / transmission,,,,,,Preview starter dataset
+9H465,Vacuum solenoid,4WD / vacuum,,,,,Front hubs 4WD,Preview starter dataset
+19A412,Full car cover,Accessories,,,,,,Preview starter dataset
+19A414,Front end cover,Accessories,,,,,,Preview starter dataset
+19B507,Soft luggage carrier bag,Accessories,,,,,,Preview starter dataset
+3C331,3-way air line coupler,Air suspension,,,,,,Preview starter dataset
+5B322,2-way air line coupler,Air suspension,,,,,,Preview starter dataset
+14B004,Forward crash sensor,Airbag / safety,,,,,,Preview starter dataset
+14B056,Air bag diagnostic module,Airbag / safety,,,,,,Preview starter dataset
+14B268,Passenger deactivation switch,Airbag / safety,,,,,,Preview starter dataset
+14B321,Air bag sensor,Airbag / safety,,,,,,Preview starter dataset
+14B022,Seat air bag harness,Airbag / seats,,,,,,Preview starter dataset
+14B422,Occupant weight sensor,Airbag / seats,,,,,Also 632A22,Preview starter dataset
+14B720,Seat air bag harness,Airbag / seats,,,,,,Preview starter dataset
+14A664,Clock spring contact,Airbag / steering,"clock spring, clockspring, spiral cable",,,,Passive restraint,Preview starter dataset
+18806,Radio,Audio,,,,,Premium/cassette,Preview starter dataset
+18A806,Radio chassis,Audio,,,,,,Preview starter dataset
+18C833,CD cartridge,Audio,,,,,,Preview starter dataset
+18C852,Radio,Audio,,,,,JBL system,Preview starter dataset
+18D806,CD changer,Audio,,,,,,Preview starter dataset
+18813,Manual antenna mast,Audio / antenna,,,,,,Preview starter dataset
+18850,Electric antenna,Audio / antenna,,,,,,Preview starter dataset
+18936,Antenna base,Audio / antenna,,,,,,Preview starter dataset
+18A886,Electric antenna mast,Audio / antenna,,,,,,Preview starter dataset
+19G399,Bluetooth module,Audio / connectivity,,,,,,Preview starter dataset
+18814,GPS navigation,Audio / navigation,,,,,,Preview starter dataset
+7K509,Firewall reinforcement,Body,,,,,,Preview starter dataset
+8349,Lower air deflector,Body,,,,,Under bumper,Preview starter dataset
+16450,Running board,Body / accessories,,,,,,Preview starter dataset
+16490,Running board mat,Body / accessories,,,,,,Preview starter dataset
+18246,Side window deflector,Body / accessories,,,,,Vent shade kit,Preview starter dataset
+17626,Rock guard / front spoiler,Body / aero,,,,,Below front bumper / rock guard,Preview starter dataset
+19E525,Deflector,Body / aero,,,,,Explorer under front bumper,Preview starter dataset
+17757,Front bumper cover,Body / bumper,,,,,Metal noted,Preview starter dataset
+17A385,License plate bracket,Body / bumper,,,,,,Preview starter dataset
+17A750,Rear bumper end cap,Body / bumper,,,,,500/Taurus,Preview starter dataset
+17B807,Bumper pads / filler,Body / bumper,,,,,,Preview starter dataset
+17C830,Rear bumper moulding,Body / bumper,,,,,Center / Town Car,Preview starter dataset
+17C882,Front bumper isolator,Body / bumper,,,,,Styrofoam,Preview starter dataset
+17D826,Rear bumper reinforcement,Body / bumper,,,,,Trailer tow rating / hitch,Preview starter dataset
+17D957,Front bumper cover,Body / bumper,,,,,,Preview starter dataset
+17K832,Rear bumper chrome strip,Body / bumper,,,,,Corner / Town Car,Preview starter dataset
+17K833,Front bumper moulding,Body / bumper,,,,,,Preview starter dataset
+17K835,Rear bumper cover,Body / bumper,,,,,,Preview starter dataset
+6A023,Transmission crossmember,Body / engine,,,,,,Preview starter dataset
+16138,Radiator support,Body / front end,,,,,Focus,Preview starter dataset
+16612,Hood,Body / front end,,,,,,Preview starter dataset
+16700,Hood latch,Body / front end,,,,,,Preview starter dataset
+16707,Hood latch support,Body / front end,,,,,Bracket,Preview starter dataset
+16738,Hood insulator,Body / front end,,,,,,Preview starter dataset
+16740,Hood pad seal,Body / front end,,,,,,Preview starter dataset
+16796,Hood hinge,Body / front end,,,,,,Preview starter dataset
+16916,Hood release cable,Body / front end,,,,,Complete,Preview starter dataset
+8190,Header panel,Body / front end,,,,,,Preview starter dataset
+8200,Front grille,Body / front end,"grille, grill, front grille",,,,,Preview starter dataset
+8A284,Header panel / headlamp bracket,Body / front end,,,,,,Preview starter dataset
+16006,Front fender LH,Body / panels,,,,,RH may use adjacent 16005,Preview starter dataset
+16054,Front fender apron deflector,Body / panels,,,,,,Preview starter dataset
+16055,Inner fender,Body / panels,,,,,Trucks and RWD,Preview starter dataset
+16103,Inner fender,Body / panels,,,,,Taurus,Preview starter dataset
+16313,Fiberglass fender,Body / panels,,,,,Dually,Preview starter dataset
+17754,Isolator,Body / trim,,,,,Taurus?,Preview starter dataset
+17B390,Rear license plate housing,Body / trim,,,,,,Preview starter dataset
+9B242,Trunk/fuel door switch,Body electrical,,,,,,Preview starter dataset
+14B205,GEM module,Body electronics,,,,,General electrical module,Preview starter dataset
+14B291,Liftgate module,Body electronics,,,,,,Preview starter dataset
+14B350,Liftgate actuator motor,Body electronics,,,,,,Preview starter dataset
+16028,Emblem,Body trim,,,,,Mach 1 trunk,Preview starter dataset
+16038,Front RH wheel opening moulding,Body trim,,,,,,Preview starter dataset
+16039,Front LH wheel opening moulding,Body trim,,,,,,Preview starter dataset
+16720,Emblem,Body trim,,,,,Metal,Preview starter dataset
+2001,Front brake pad,Brakes,,,,,Also 2V001,Preview starter dataset
+2005,Brake booster,Brakes,,,,,,Preview starter dataset
+2069,Rear brake spring kit,Brakes,,,,,,Preview starter dataset
+2078,Front brake hose,Brakes,,,,,,Preview starter dataset
+2140,Brake master cylinder,Brakes,,,,,,Preview starter dataset
+2200,Rear brake pad,Brakes,,,,,Also 2V200,Preview starter dataset
+2261,Wheel cylinder / brake cylinder,Brakes,,,,,,Preview starter dataset
+2267,Rear brake hose,Brakes,,,,,,Preview starter dataset
+2552,Rear brake caliper,Brakes,,,,,,Preview starter dataset
+2553,Rear brake caliper,Brakes,,,,,Mustang LH side in source list,Preview starter dataset
+2783,Parking brake handle,Brakes,,,,,,Preview starter dataset
+2853,Front parking brake cable,Brakes,,,,,,Preview starter dataset
+2A635,Rear parking brake cable,Brakes,,,,,,Preview starter dataset
+2B091,RABS proportioning valve,Brakes,,,,,,Preview starter dataset
+2B120,Front brake caliper,Brakes,"caliper, brake caliper, front brake caliper",,,,,Preview starter dataset
+2B373,RABS proportioning valve,Brakes,,,,,,Preview starter dataset
+2C026,Rear brake rotor,Brakes,,,,,,Preview starter dataset
+2C320,Brake pressure switch adapter,Brakes,,,,,Recall reference in source list,Preview starter dataset
+2K478,Brake/clutch reservoir,Brakes,,,,,Focus noted in source list,Preview starter dataset
+2N712,Parking brake,Brakes,,,,,,Preview starter dataset
+2V001,Front brake pads,Brakes,,,,,,Preview starter dataset
+2V121,Brake caliper,Brakes,,,,,Also 2V120,Preview starter dataset
+2V200,Rear brake pads,Brakes,,,,,,Preview starter dataset
+2V563,Rear brake caliper,Brakes,,,,,,Preview starter dataset
+2C018,ABS control module,Brakes / ABS,,,,,RABS,Preview starter dataset
+2C065,ABS ECU / electronic brake module,Brakes / ABS,,,,,,Preview starter dataset
+2C190,Rear ABS sensor,Brakes / ABS,,,,,,Preview starter dataset
+2C204,Front ABS sensor,Brakes / ABS,,,,,,Preview starter dataset
+2C205,Front wheel speed sensor,Brakes / ABS,,,,,,Preview starter dataset
+2C215,ABS module,Brakes / ABS,,,,,,Preview starter dataset
+2C266,ABS HCU / hydraulic control unit,Brakes / ABS,,,,,,Preview starter dataset
+2143,Clutch master cylinder rod,Brakes / clutch,,,,,,Preview starter dataset
+2A451,Vacuum pump,Brakes / diesel,,,,,Diesel,Preview starter dataset
+3C187,Yaw sensor,Brakes / stability,,,,,,Preview starter dataset
+10153,6G alternator bracket,Charging system,,,,,Updated manual noted,Preview starter dataset
+10346,Alternator,Charging system,"alternator, generator",,,,,Preview starter dataset
+7506,Clutch cable pivot,Clutch,,,,,,Preview starter dataset
+7526,Clutch rod bushing,Clutch,,,,,Master cylinder,Preview starter dataset
+7548,Throwout bearing,Clutch,,,,,,Preview starter dataset
+7550,Manual transmission disc,Clutch,,,,,Pressure plate noted,Preview starter dataset
+7563,Pressure plate,Clutch,,,,,,Preview starter dataset
+7600,Pilot bearing,Clutch,,,,,,Preview starter dataset
+7641,Clutch push rod,Clutch,,,,,Manual,Preview starter dataset
+7A512,Clutch-to-slave line,Clutch,,,,,Includes O-ring,Preview starter dataset
+7A543,Clutch master cylinder,Clutch,,,,,Manual,Preview starter dataset
+7A654,Clutch slave cylinder,Clutch,,,,,Manual,Preview starter dataset
+7B602,Clutch lever clip,Clutch,,,,,Manual,Preview starter dataset
+7C522,Clutch master cylinder,Clutch,,,,,Manual,Preview starter dataset
+7K553,Clutch cable,Clutch,,,,,,Preview starter dataset
+7L596,Clutch kit,Clutch,,,,,,Preview starter dataset
+18599,Water outlet tube,Cooling,,,,,Elbow 90/45,Preview starter dataset
+8005,Radiator,Cooling,"radiator, cooling radiator",,,,,Preview starter dataset
+8100,Radiator cap,Cooling,,,,,,Preview starter dataset
+8146,Fan shroud,Cooling,,,,,,Preview starter dataset
+8255,Thermostat gasket,Cooling,,,,,,Preview starter dataset
+8260,Upper radiator hose,Cooling,,,,,,Preview starter dataset
+8275,Thermostat,Cooling,,,,,,Preview starter dataset
+8286,Lower radiator hose,Cooling,,,,,,Preview starter dataset
+8501,Engine water pump,Cooling,"water pump, coolant pump, cooling pump",,,,,Preview starter dataset
+8507,Water pump gasket,Cooling,,,,,,Preview starter dataset
+8509,Water pump pulley,Cooling,,,,,7.3L,Preview starter dataset
+8548,Water bypass tube,Cooling,,,,,,Preview starter dataset
+8575,Thermostat,Cooling,,,,,,Preview starter dataset
+8592,Water inlet housing,Cooling,,,,,2.0L Focus,Preview starter dataset
+8597,Water bypass hose,Cooling,,,,,,Preview starter dataset
+8600,Fan,Cooling,,,,,,Preview starter dataset
+8A080,Radiator overflow,Cooling,,,,,,Preview starter dataset
+8A586,Thermostat housing,Cooling,,,,,,Preview starter dataset
+8A616,Fan clutch,Cooling,,,,,,Preview starter dataset
+8C607,Radiator fan and motor assembly,Cooling,,,,,,Preview starter dataset
+8C628,Hydraulic fan pump,Cooling,,,,,,Preview starter dataset
+8L603,Cooling fan controller,Cooling,,,,,Dropping resistor,Preview starter dataset
+8327,Radiator lower air deflector,Cooling / body,,,,,,Preview starter dataset
+8C291,Radiator upper sight shield / cowl shield,Cooling / body,,,,,,Preview starter dataset
+3783,Hydraulic fan pump actuator,Cooling / steering,,,,,,Preview starter dataset
+9C735,Cruise control servo,Cruise control,,,,,,Preview starter dataset
+9C888,Cruise control switches,Cruise control,,,,,In steering wheel,Preview starter dataset
+9F924,Cruise deactivation switch,Cruise control,,,,,Near master cylinder,Preview starter dataset
+12B533,Glow plug relay,Diesel electrical,,,,,,Preview starter dataset
+3A331,CV boot,Driveline,,,,,,Preview starter dataset
+3B436,CV half shaft,Driveline,,,,,,Preview starter dataset
+3B437,CV half shaft,Driveline,,,,,,Preview starter dataset
+4851,Differential flange,Driveline,,,,,,Preview starter dataset
+4865,Driveshaft flange,Driveline,,,,,,Preview starter dataset
+4R602,Driveshaft,Driveline,,,,,Related to 4602,Preview starter dataset
+2L373,Speed sensor on differential,Driveline / sensors,,,,,,Preview starter dataset
+9E731,Speed sensor on differential,Driveline sensors,,,,,,Preview starter dataset
+4800,Center support bearing,Driveshaft,,,,,Two-piece driveshaft,Preview starter dataset
+10655,Battery,Electrical,,,,,,Preview starter dataset
+10732,Battery tray,Electrical,,,,,,Preview starter dataset
+13832,Horn,Electrical,,,,,,Preview starter dataset
+14A003,Fuse box cover,Electrical,,,,,,Preview starter dataset
+14A068,Fuse box panel,Electrical,,,,,Under dash/under hood,Preview starter dataset
+19A547,Wiring harness / listed line,Electrical,,,,,Verify by catalogue,Preview starter dataset
+19A905,Ground strap,Electrical,,,,,,Preview starter dataset
+14A658,Sliding door contact,Electrical / body,,,,,Windstar,Preview starter dataset
+18801,Capacitor,Electrical / radio,,,,,,Preview starter dataset
+19G364,Remote start,Electrical accessories,,,,,,Preview starter dataset
+14411,Pigtail connector,Electrical connectors,,,,,,Preview starter dataset
+14488,Splice,Electrical connectors,,,,,,Preview starter dataset
+14489,Connector,Electrical connectors,,,,,,Preview starter dataset
+14A411,Pigtail,Electrical connectors,,,,,,Preview starter dataset
+14S411,Pigtail / airbag pigtail,Electrical connectors,,,,,WPT-177 / airbag note,Preview starter dataset
+14N089,Relay,Electrical relays,,,,,Fuel pump/AC clutch commonly listed,Preview starter dataset
+11654,Headlight switch,Electrical switches,,,,,,Preview starter dataset
+11691,Dimmer switch,Electrical switches,,,,,,Preview starter dataset
+13480,Stop light switch,Electrical switches,,,,,,Preview starter dataset
+13713,Courtesy lamp switch,Electrical switches,,,,,Door jamb,Preview starter dataset
+13752,Courtesy lamp switch,Electrical switches,,,,,Door latch,Preview starter dataset
+14401,Wiring assembly,Electrical wiring,,,,,,Preview starter dataset
+9A486,Thermactor pump,Emissions,,,,,,Preview starter dataset
+9A487,Reed valve,Emissions,,,,,Thermactor system,Preview starter dataset
+9A491,Divertor valve,Emissions,,,,,Thermactor system,Preview starter dataset
+9B289,Thermactor bypass valve,Emissions,,,,,,Preview starter dataset
+9B445,Secondary air injection lines,Emissions,,,,,Needs 9B471 nuts,Preview starter dataset
+9B447,Thermactor pump pulley,Emissions,,,,,,Preview starter dataset
+9B449,Head-to-head pipe,Emissions,,,,,Thermactor system,Preview starter dataset
+9B471,Secondary air injection ferrule nuts,Emissions,,,,,,Preview starter dataset
+9B593,EVAP fuel vapor valve,Emissions,,,,,,Preview starter dataset
+9C047,EVAP valve,Emissions,,,,,,Preview starter dataset
+9C915,EVAP management valve / VMV,Emissions,,,,,Under hood,Preview starter dataset
+9D459,EGR vacuum regulator,Emissions,,,,,,Preview starter dataset
+9D475,EGR valve,Emissions,,,,,,Preview starter dataset
+9D476,EGR gasket,Emissions,,,,,,Preview starter dataset
+9D477,EGR tube,Emissions,,,,,,Preview starter dataset
+9D650,Carbon canister,Emissions,,,,,,Preview starter dataset
+9D653,Fuel vapor emission canister,Emissions,,,,,,Preview starter dataset
+9D665,Fuel vapor canister bracket,Emissions,,,,,,Preview starter dataset
+9D761,DPFE hose,Emissions,,,,,,Preview starter dataset
+9E469,EGR tube,Emissions,,,,,,Preview starter dataset
+9F452,EGR valve,Emissions,,,,,Diesel,Preview starter dataset
+9F491,Thermactor divertor valve,Emissions,,,,,,Preview starter dataset
+9F945,EVAP solenoid / canister vent solenoid,Emissions,,,,,,Preview starter dataset
+9G271,EVAP hose,Emissions,,,,,,Preview starter dataset
+9J459,EGR regulator valve / EVR,Emissions,,,,,,Preview starter dataset
+9P761,DPFE hose / rubber heat tube,Emissions / HVAC,,,,,Villager noted,Preview starter dataset
+9E498,Vacuum harness,Emissions / vacuum,,,,,,Preview starter dataset
+9J460,DPFE/EGR pressure sensor,Emissions sensors,,,,,,Preview starter dataset
+6006,Engine,Engine,,,,,AER noted in source list,Preview starter dataset
+6007,Complete engine assembly,Engine,,,,,,Preview starter dataset
+6009,Engine,Engine,,,,,,Preview starter dataset
+6010,Engine assembly / long block,Engine,,,,,,Preview starter dataset
+6012,Engine,Engine,,,,,Also 6V012,Preview starter dataset
+6019,Front engine timing cover,Engine,,,,,,Preview starter dataset
+6026,Freeze plugs,Engine,,,,,Head and block,Preview starter dataset
+6049,Cylinder head,Engine,,,,,,Preview starter dataset
+6051,Head gasket,Engine,,,,,,Preview starter dataset
+6065,Head bolt,Engine,,,,,,Preview starter dataset
+6079,Engine gasket kit,Engine,,,,,,Preview starter dataset
+6200,Piston rod,Engine,,,,,,Preview starter dataset
+6211,Connecting rod bearing,Engine,,,,,,Preview starter dataset
+6250,Camshaft,Engine,,,,,,Preview starter dataset
+6268,Timing chain,Engine,,,,,,Preview starter dataset
+6303,Crankshaft,Engine,,,,,,Preview starter dataset
+6306,Crankshaft gear,Engine,,,,,Timing belt/chain,Preview starter dataset
+6316,Harmonic balancer / damper,Engine,,,,,,Preview starter dataset
+6333,Crankshaft main bearing,Engine,,,,,,Preview starter dataset
+6513,Valve spring,Engine,,,,,,Preview starter dataset
+6582,Valve cover,Engine,,,,,,Preview starter dataset
+6584,Valve cover gasket,Engine,,,,,,Preview starter dataset
+6626,Oil pump seal,Engine,,,,,,Preview starter dataset
+6700,Front oil seal,Engine,,,,,,Preview starter dataset
+6701,Rear main seal,Engine,,,,,,Preview starter dataset
+6710,Oil pan gasket,Engine,,,,,,Preview starter dataset
+6730,Oil pan drain plug,Engine,,,,,,Preview starter dataset
+6750,Engine dipstick,Engine,,,,,,Preview starter dataset
+6754,Oil fill tube / dipstick tube,Engine,,,,,,Preview starter dataset
+6766,Oil filler cap,Engine,,,,,,Preview starter dataset
+6840,Oil filter adapter gasket,Engine,,,,,,Preview starter dataset
+6881,Oil filter adapter,Engine,,,,,,Preview starter dataset
+6890,Oil filter adapter nipple,Engine,,,,,,Preview starter dataset
+6A051,Engine heater,Engine,,,,,,Preview starter dataset
+6A636,Oil cooler gaskets,Engine,,,,,Diesel,Preview starter dataset
+6A642,Oil cooler,Engine,,,,,,Preview starter dataset
+6A715,Oil cooler hose,Engine,,,,,4.6/5.4,Preview starter dataset
+6A785,Breather box,Engine,,,,,,Preview starter dataset
+6B041,Front cover dowel pin,Engine,,,,,,Preview starter dataset
+6B321,Harmonic balancer and pulley,Engine,,,,,4.2L,Preview starter dataset
+6B752,Breather box seal,Engine,,,,,,Preview starter dataset
+6B773,Dipstick tube O-ring,Engine,,,,,,Preview starter dataset
+6B895,Oil filter adapter / cooler assembly,Engine,,,,,,Preview starter dataset
+6C501,Hydraulic lifter,Engine,,,,,,Preview starter dataset
+6C610,Oil cooler O-rings,Engine,,,,,Diesel,Preview starter dataset
+6D309,Crankshaft bearing set,Engine,,,,,Main bearing set,Preview starter dataset
+6E078,Lower gasket set,Engine,,,,,,Preview starter dataset
+6K292,Camshaft seal,Engine,,,,,,Preview starter dataset
+6K301,Rear oil seal retainer,Engine,,,,,5.4L,Preview starter dataset
+6L713,Camshaft timing solenoid,Engine,,,,,2.0L Contour noted,Preview starter dataset
+6375,Flywheel,Engine / clutch,,,,,,Preview starter dataset
+6379,Flywheel bolts,Engine / clutch,,,,,,Preview starter dataset
+6758,Emission tube / PCV hose,Engine / emissions,,,,,,Preview starter dataset
+6767,Emission elbow,Engine / emissions,,,,,,Preview starter dataset
+6A664,PCV hose / emission hose,Engine / emissions,,,,,,Preview starter dataset
+6A666,PCV valve,Engine / emissions,,,,,,Preview starter dataset
+6C324,PCV pipe hose,Engine / emissions,,,,,,Preview starter dataset
+9424,Intake manifold,Engine / intake,,,,,,Preview starter dataset
+9439,Intake manifold gasket,Engine / intake,,,,,Gas,Preview starter dataset
+9461,Upper intake plenum gasket,Engine / intake,,,,,,Preview starter dataset
+6A899,Rubber tee,Engine / vacuum,,,,,3/8 inch,Preview starter dataset
+3F671,Idler pulley,Engine accessory drive,,,,,,Preview starter dataset
+6B209,Tensioner pulley,Engine accessory drive,,,,,,Preview starter dataset
+6B348,Idler pulley,Engine accessory drive,,,,,,Preview starter dataset
+8620,Serpentine belt,Engine accessory drive,,,,,,Preview starter dataset
+8678,Idler pulley / tensioner,Engine accessory drive,,,,,"4.2, 4.6, 5.4L",Preview starter dataset
+12A650,PCM processor / main computer,Engine electronics,"pcm, ecu, engine computer, powertrain control module",,,,,Preview starter dataset
+12B577,PCM / powertrain control module,Engine electronics,,,,,,Preview starter dataset
+6028,Front engine mount,Engine mounts,,,,,,Preview starter dataset
+6030,Upper engine mount,Engine mounts,,,,,Also 6F055,Preview starter dataset
+6038,Front engine mount,Engine mounts,,,,,,Preview starter dataset
+10884,Temp sending unit / ECT,Engine sensors,,,,,,Preview starter dataset
+12A648,ECT sensor,Engine sensors,,,,,,Preview starter dataset
+12A697,IAT sensor,Engine sensors,,,,,,Preview starter dataset
+12B579,MAF sensor,Engine sensors,,,,,,Preview starter dataset
+12K073,Diesel cam sensor,Engine sensors,,,,,,Preview starter dataset
+14C718,Pedal position sensor,Engine sensors,,,,,,Preview starter dataset
+17B384,RPM sensor,Engine sensors,,,,,7.3L,Preview starter dataset
+6B288,Cam sensor,Engine sensors,,,,,,Preview starter dataset
+6B351,Crankshaft sensor,Engine sensors,,,,,,Preview starter dataset
+6C315,Crankshaft sensor,Engine sensors,,,,,Rear 2.0 DOHC in source list,Preview starter dataset
+6C351,Crankshaft sensor,Engine sensors,,,,,5.0L,Preview starter dataset
+9278,Oil pressure sender switch,Engine sensors,,,,,,Preview starter dataset
+9B989,Throttle position sensor / TPS,Engine sensors,,,,,,Preview starter dataset
+9F472,Front oxygen sensor,Engine sensors,,,,,Upstream,Preview starter dataset
+9F479,MAP sensor,Engine sensors,,,,,Manifold absolute pressure,Preview starter dataset
+9F715,IAC sensor / idle air control motor,Engine sensors,,,,,,Preview starter dataset
+9G444,Rear oxygen sensor,Engine sensors,,,,,Downstream,Preview starter dataset
+5A231,Exhaust clamp,Exhaust,,,,,,Preview starter dataset
+5A246,Exhaust insulator bracket,Exhaust,,,,,,Preview starter dataset
+5A262,Exhaust insulator / hanger,Exhaust,,,,,,Preview starter dataset
+5A294,Muffler hanger,Exhaust,,,,,On body,Preview starter dataset
+5E212,Catalytic converter,Exhaust,,,,,,Preview starter dataset
+5E241,Catalytic converter gasket,Exhaust,,,,,,Preview starter dataset
+5F223,Exhaust heat shield,Exhaust,,,,,,Preview starter dataset
+5F250,Catalytic converter,Exhaust,,,,,,Preview starter dataset
+5F262,Exhaust insulator rubber,Exhaust,,,,,,Preview starter dataset
+9430,Exhaust manifold,Exhaust,,,,,,Preview starter dataset
+9448,Exhaust manifold gasket,Exhaust,,,,,,Preview starter dataset
+9450,Exhaust flange gasket,Exhaust,,,,,,Preview starter dataset
+3049,Upper ball joint,Front axle / suspension,,,,,Also 3V049,Preview starter dataset
+3050,Lower ball joint,Front axle / suspension,,,,,Also 3V050,Preview starter dataset
+3069,Lower control arm bushing,Front axle / suspension,,,,,,Preview starter dataset
+3078,Lower control arm RH,Front axle / suspension,,,,,,Preview starter dataset
+3079,Lower control arm LH,Front axle / suspension,,,,,,Preview starter dataset
+3082,Upper control arm,Front axle / suspension,,,,,,Preview starter dataset
+3084,Upper control arm RH,Front axle / suspension,,,,,,Preview starter dataset
+3085,Upper control arm LH,Front axle / suspension,,,,,,Preview starter dataset
+3106,Spindle,Front axle / suspension,,,,,Left; related right may use adjacent number per source list,Preview starter dataset
+3C084,Front axle seal,Front axle / suspension,,,,,,Preview starter dataset
+3C294,Front spindle nut,Front axle / suspension,,,,,Truck,Preview starter dataset
+3K070,Excluder seal,Front axle / suspension,,,,,,Preview starter dataset
+3K093,Axle bearing,Front axle / suspension,,,,,FWD,Preview starter dataset
+3K185,Knuckle,Front axle / suspension,,,,,,Preview starter dataset
+3K186,Steering knuckle,Front axle / suspension,,,,,,Preview starter dataset
+9D930,Injector sub-harness,Fuel / electrical,,,,,Under valve cover 7.3L,Preview starter dataset
+9280,Gas gauge,Fuel / instruments,,,,,In dash,Preview starter dataset
+9510,Carburetor,Fuel / intake,,,,,Gas,Preview starter dataset
+14A069,Flex fuel sensor,Fuel system,,,,,Taurus noted,Preview starter dataset
+9002,Fuel tank,Fuel system,,,,,,Preview starter dataset
+9030,Gas cap,Fuel system,,,,,,Preview starter dataset
+9034,Fuel filler pipe,Fuel system,,,,,Fuel tank filler hose,Preview starter dataset
+9047,Fuel tank filler hose,Fuel system,,,,,,Preview starter dataset
+9072,Fuel tank filler pipe seal,Fuel system,,,,,,Preview starter dataset
+9092,Fuel tank strap,Fuel system,,,,,,Preview starter dataset
+9186,Fuel selector valve,Fuel system,,,,,On frame rail - electric,Preview starter dataset
+9189,Fuel tank selector valve,Fuel system,,,,,On frame rail,Preview starter dataset
+9202,Fuel tank float,Fuel system,,,,,83-2003 noted,Preview starter dataset
+9275,Fuel sender / fuel pump sender unit,Fuel system,,,,,,Preview starter dataset
+9324,Filler neck tube,Fuel system,,,,,Between tank and filler,Preview starter dataset
+9341,Inertia switch,Fuel system,,,,,,Preview starter dataset
+9350,Fuel pump,Fuel system,,,,,Old style / sender unit,Preview starter dataset
+9417,Fuel pump gasket,Fuel system,,,,,Diesel,Preview starter dataset
+9A050,Fuel tank selector switch,Fuel system,,,,,Dash unit,Preview starter dataset
+9A153,Diesel drain valve,Fuel system,,,,,Fuel filter,Preview starter dataset
+9A299,Fuel pump sending unit,Fuel system,,,,,Also 9A407,Preview starter dataset
+9A317,Small fuel clip,Fuel system,,,,,,Preview starter dataset
+9A322,Fuel line from tank,Fuel system,,,,,,Preview starter dataset
+9A543,Injector pump,Fuel system,,,,,Diesel / gas as listed,Preview starter dataset
+9A555,Diesel fuel line,Fuel system,,,,,Pump to cylinder,Preview starter dataset
+9A564,Fuel line T,Fuel system,,,,,Diesel,Preview starter dataset
+9B190,Fuel pressure regulator valve,Fuel system,,,,,,Preview starter dataset
+9B263,Fuel tank selector,Fuel system,,,,,On frame rail - pressure,Preview starter dataset
+9C264,Water in fuel sensor,Fuel system,,,,,Diesel,Preview starter dataset
+9C387,Fuel line kit,Fuel system,,,,,7.3L O-ring kit,Preview starter dataset
+9C968,Fuel pressure control regulator / sensor,Fuel system,,,,,,Preview starter dataset
+9E527,Injector,Fuel system,,,,,Diesel 7.3/6.0,Preview starter dataset
+9F593,Injector,Fuel system,,,,,Gas,Preview starter dataset
+9F792,Fuel manifold,Fuel system,,,,,,Preview starter dataset
+9F972,Electronic fuel pressure control regulator,Fuel system,,,,,,Preview starter dataset
+9G804,Injector pump O-ring kit,Fuel system,,,,,Diesel repair kit,Preview starter dataset
+9H307,In-tank fuel pump,Fuel system,,,,,,Preview starter dataset
+9H407,Fuel pump,Fuel system,,,,,,Preview starter dataset
+9K044,Fuel tank selector valve with filter,Fuel system,,,,,On frame rail,Preview starter dataset
+9S317,Fuel line clips,Fuel system,,,,,,Preview starter dataset
+9B007,Fuel tank shield,Fuel system / body,,,,,,Preview starter dataset
+9G291,Fuel vapor return line,Fuel system / emissions,,,,,,Preview starter dataset
+18471,Air distribution chamber,HVAC,,,,,Air box / A/C,Preview starter dataset
+18476,Heater core,HVAC,,,,,,Preview starter dataset
+18478,Heater core housing,HVAC,,,,,,Preview starter dataset
+18495,Electric heater control valve,HVAC,,,,,,Preview starter dataset
+18518,Heater control cable,HVAC,,,,,With A/C,Preview starter dataset
+18578,Blower switch,HVAC,,,,,Switch only,Preview starter dataset
+18591,Blower motor resistor,HVAC,,,,,,Preview starter dataset
+18A318,Vacuum motor,HVAC,,,,,A/C,Preview starter dataset
+18B545,Temperature blend door,HVAC,,,,,A/C,Preview starter dataset
+18D371,Hot water/heater lockout valve or switch,HVAC,,,,,Heater hose / Lincoln TC,Preview starter dataset
+18D434,Heater hose connector coupler kit,HVAC,,,,,,Preview starter dataset
+18D473,Heater hose connector,HVAC,,,,,Kit,Preview starter dataset
+19805,Blower motor,HVAC,,,,,,Preview starter dataset
+19834,Blower wheel / cage,HVAC,,,,,,Preview starter dataset
+19835,A/C hose / orifice tube,HVAC,,,,,Condenser-to-evaporator hose also listed,Preview starter dataset
+19837,A/C hose,HVAC,,,,,,Preview starter dataset
+19849,Expansion valve,HVAC,,,,,Rear,Preview starter dataset
+19850,A/C evaporator,HVAC,,,,,,Preview starter dataset
+19860,A/C evaporator,HVAC,,,,,,Preview starter dataset
+19893,A/C vent / air register,HVAC,,,,,Dash vent,Preview starter dataset
+19972,Hose,HVAC,,,,,,Preview starter dataset
+19986,Blower switch,HVAC,,,,,Taurus,Preview starter dataset
+19A566,A/C vacuum reservoir,HVAC,,,,,,Preview starter dataset
+19B594,Condenser mounts,HVAC,,,,,Rubber bushing,Preview starter dataset
+19C836,A/C accumulator/dryer,HVAC,,,,,,Preview starter dataset
+19D594,A/C switch,HVAC,,,,,High pressure cut-off,Preview starter dataset
+19D701,A/C core / Schrader valve,HVAC,,,,,,Preview starter dataset
+19D734,A/C manifold line,HVAC,,,,,Also 19D850,Preview starter dataset
+19D742,Hose,HVAC,,,,,,Preview starter dataset
+19D784,A/C compressor pulley,HVAC,,,,,,Preview starter dataset
+19D786,A/C compressor clutch disc,HVAC,,,,,,Preview starter dataset
+19D798,A/C compressor field,HVAC,,,,,,Preview starter dataset
+19D850,A/C manifold hose assembly / hose,HVAC,,,,,,Preview starter dataset
+19D990,A/C orifice valve,HVAC,,,,,,Preview starter dataset
+19E561,A/C low pressure cycling switch,HVAC,,,,,,Preview starter dataset
+19E616,Blend door actuator,HVAC,,,,,,Preview starter dataset
+19E624,Blower speed controller,HVAC,,,,,EATC,Preview starter dataset
+19N619,Cabin / pollen filter,HVAC,,,,,,Preview starter dataset
+18472,Heater hose,HVAC / cooling,,,,,,Preview starter dataset
+18663,Heater hose,HVAC / cooling,,,,,Truck,Preview starter dataset
+18B402,Heater hose,HVAC / cooling,,,,,Metal/rubber,Preview starter dataset
+6A614,A/C drain hose / crankcase hose,HVAC / engine,,,,,Multiple uses listed,Preview starter dataset
+18519,A/C knob,HVAC controls,,,,,,Preview starter dataset
+19980,EATC controller,HVAC controls,,,,,Dash unit,Preview starter dataset
+19B888,A/C mode switch,HVAC controls,,,,,Dash unit,Preview starter dataset
+19C733,A/C temp switch,HVAC controls,,,,,Dash unit,Preview starter dataset
+19C734,In-car heater temp sensor,HVAC sensors,,,,,,Preview starter dataset
+19E633,Dash sensor,HVAC sensors,,,,,,Preview starter dataset
+11572,Ignition switch,Ignition,,,,,,Preview starter dataset
+11582,Ignition cylinder,Ignition,,,,,,Preview starter dataset
+12029,Coil on plug / ignition coil,Ignition,,,,,,Preview starter dataset
+12106,Distributor cap,Ignition,,,,,,Preview starter dataset
+12127,Distributor,Ignition,,,,,,Preview starter dataset
+12143,Distributor O-ring,Ignition,,,,,,Preview starter dataset
+12200,Distributor rotor,Ignition,,,,,,Preview starter dataset
+12259,Spark plug wires,Ignition,,,,,TFI system,Preview starter dataset
+12405,Spark plugs,Ignition,,,,,,Preview starter dataset
+12A112,Stator assembly,Ignition,,,,,TFI system,Preview starter dataset
+12A127,Distributor assembly,Ignition,,,,,Complete,Preview starter dataset
+12A297,Ignition module,Ignition,,,,,TFI system,Preview starter dataset
+12A362,Synchronizer,Ignition,,,,,DIS system,Preview starter dataset
+12A402,Coil boot,Ignition,,,,,,Preview starter dataset
+10849,Instrument cluster,Instruments,,,,,,Preview starter dataset
+10850,Ammeter gauge,Instruments,,,,,,Preview starter dataset
+17255,Speedometer,Instruments,,,,,Analog,Preview starter dataset
+17260,Speedometer cable,Instruments,,,,,,Preview starter dataset
+17271,Speedometer driven gear,Instruments / transmission,,,,,,Preview starter dataset
+17285,Speedometer drive gear,Instruments / transmission,,,,,,Preview starter dataset
+17292,Gear retainer,Instruments / transmission,,,,,,Preview starter dataset
+9600,Air cleaner,Intake,,,,,,Preview starter dataset
+9601,Air filter,Intake,"air filter, air cleaner element, filter",,,,,Preview starter dataset
+9B659,Air box to throttle body hose / intake hose,Intake,,,,,Snorkel tube,Preview starter dataset
+9D936,Throttle body gasket,Intake,,,,,,Preview starter dataset
+9E926,Throttle body,Intake,,,,,Gas,Preview starter dataset
+9F955,IMRC link clip,Intake,,,,,,Preview starter dataset
+9H486,Intake manifold gasket,Intake,,,,,Plastic intakes,Preview starter dataset
+9J559,IMRC control,Intake,,,,,,Preview starter dataset
+9S479,Intake isolator bolts,Intake,,,,,Windstar noted,Preview starter dataset
+13000,Carpet - front/full,Interior,,,,,,Preview starter dataset
+13106,Rear floor mat,Interior,,,,,,Preview starter dataset
+13182,Third row floor mat,Interior,,,,,,Preview starter dataset
+13300,Full floor mat kit,Interior,,,,,,Preview starter dataset
+14527,Door switch bezel panel,Interior / electrical,,,,,,Preview starter dataset
+14528,Window switch housing,Interior / electrical,,,,,,Preview starter dataset
+14529,Window switch,Interior / electrical,,,,,Master and individual,Preview starter dataset
+13A805,Horn pad,Interior / steering wheel,,,,,,Preview starter dataset
+13B802,Horn pad kit,Interior / steering wheel,,,,,,Preview starter dataset
+15052,Cigar lighter element,Interior electrical,,,,,,Preview starter dataset
+15055,Cigar lighter base,Interior electrical,,,,,Dash,Preview starter dataset
+19N236,Power port / lighter,Interior electrical,,,,,,Preview starter dataset
+11661,Headlamp knob,Interior switches,,,,,,Preview starter dataset
+11666,4x4/headlamp knob,Interior switches,,,,,,Preview starter dataset
+13008,Headlamp assembly,Lighting,"headlight, head lamp, headlamp, front lamp",,,,,Preview starter dataset
+13101,Headlight bulb,Lighting,,,,,,Preview starter dataset
+13201,Front park lamp,Lighting,,,,,,Preview starter dataset
+13350,Flasher relay,Lighting,,,,,Blue / wig-wag module noted,Preview starter dataset
+13404,Rear turn signal lamp,Lighting,"tail light, tail lamp, rear lamp, stop lamp",,,,,Preview starter dataset
+13405,Tail lamp,Lighting,"tail light, tail lamp, rear lamp, stop lamp",,,,Rear,Preview starter dataset
+13466,Bulb,Lighting,,,,,,Preview starter dataset
+13550,Rear license plate lamp assembly,Lighting,,,,,,Preview starter dataset
+13776,Interior lamp,Lighting,,,,,,Preview starter dataset
+13A613,Third brake lamp,Lighting,,,,,,Preview starter dataset
+13A756,Trunk lamp,Lighting,,,,,,Preview starter dataset
+13B218,Daytime running lamp,Lighting,,,,,,Preview starter dataset
+13N019,Headlamp retainer,Lighting,,,,,,Preview starter dataset
+13N021,Headlamp bulb,Lighting,,,,,,Preview starter dataset
+15200,Fog lamp,Lighting,,,,,Factory,Preview starter dataset
+15442,Clearance lamp,Lighting,,,,,Amber/red side marker,Preview starter dataset
+15266,Fog lamp cover,Lighting / body,,,,,Focus,Preview starter dataset
+17E810,Fog lamp cover / valance blank,Lighting / bumper,,,,,,Preview starter dataset
+13K359,Multifunction switch,Lighting / wipers,,,,,Turn signals,Preview starter dataset
+13C788,Lighting control module,Lighting electronics,,,,,Includes rear electronics module notes,Preview starter dataset
+6384,Ring gear,Manual transmission / flywheel,,,,,,Preview starter dataset
+17682,Outside mirror,Mirrors,,,,,Also 17683,Preview starter dataset
+17700,Inside mirror,Mirrors,,,,,,Preview starter dataset
+17D743,Mirror cover,Mirrors,,,,,,Preview starter dataset
+17K707,Mirror glass,Mirrors,,,,,Replacement,Preview starter dataset
+17B676,Mirror switch,Mirrors / electrical,,,,,,Preview starter dataset
+7583,Pedal bumper,Pedals,,,,,,Preview starter dataset
+9F836,Accelerator pedal / AP pedal sensor,Pedals / engine sensors,,,,,,Preview starter dataset
+2454,Brake/clutch pedal pad - manual,Pedals / interior,,,,,,Preview starter dataset
+2457,Pedal pad - automatic,Pedals / interior,,,,,,Preview starter dataset
+4209,Ring and pinion,Rear axle / differential,,,,,,Preview starter dataset
+4214,Differential clutch spring,Rear axle / differential,,,,,,Preview starter dataset
+4216,Ring and pinion bolts,Rear axle / differential,,,,,,Preview starter dataset
+4234,Rear axle,Rear axle / differential,,,,,,Preview starter dataset
+4567,Differential / rear axle related,Rear axle / differential,,,,,General placeholder group; verify by catalogue,Preview starter dataset
+4616,Front pinion bearing race,Rear axle / differential,,,,,,Preview starter dataset
+4621,Front pinion bearing,Rear axle / differential,,,,,,Preview starter dataset
+4630,Rear pinion bearing,Rear axle / differential,,,,,,Preview starter dataset
+4A324,Clutch pack shim,Rear axle / differential,,,,,,Preview starter dataset
+4B416,Differential seal,Rear axle / differential,,,,,Independent rear end,Preview starter dataset
+4B477,Rear axle nut,Rear axle / differential,,,,,Front wheel drive noted in source list,Preview starter dataset
+18D508,Seat heater TED,Seats / HVAC,,,,,,Preview starter dataset
+19N550,Heated/cooled seat blower,Seats / HVAC,,,,,,Preview starter dataset
+14711,Seat back control switch,Seats / electrical,,,,,,Preview starter dataset
+14A701,Seat switch,Seats / electrical,,,,,,Preview starter dataset
+14C708,Seat memory module,Seats / electrical,,,,,,Preview starter dataset
+14C715,Lumbar switch,Seats / electrical,,,,,,Preview starter dataset
+14C724,Seat heater switch,Seats / electrical,,,,,,Preview starter dataset
+14D696,Seat heater element,Seats / electrical,,,,,,Preview starter dataset
+14A706,Seat bezel,Seats / interior,,,,,,Preview starter dataset
+14A626,Keyless entry keypad / actuator,Security / electrical,,,,,,Preview starter dataset
+15604,Keyless entry module,Security / electrical,,,,,,Preview starter dataset
+15607,PATS transceiver ring / transducer,Security / ignition,,,,,,Preview starter dataset
+11002,Starter motor,Starting system,,,,,,Preview starter dataset
+11450,Starter regulator / solenoid,Starting system,,,,,,Preview starter dataset
+19E708,Power steering bracket,Steering,,,,,7.3L,Preview starter dataset
+3280,Inner tie rod,Steering,,,,,Also 3V280 / 3V131,Preview starter dataset
+3350,Idler arm,Steering,,,,,,Preview starter dataset
+3355,Idler arm,Steering,,,,,,Preview starter dataset
+3504,Steering gear / rack and pinion,Steering,,,,,,Preview starter dataset
+3517,Upper steering column bearing,Steering,,,,,,Preview starter dataset
+3524,Upper steering shaft,Steering,,,,,,Preview starter dataset
+3590,Pitman arm,Steering,,,,,Also 3V590,Preview starter dataset
+3932,Steering stop,Steering,,,,,,Preview starter dataset
+3A006,Power steering reservoir cap,Steering,,,,,,Preview starter dataset
+3A130,Outer tie rod,Steering,,,,,Also 3V130,Preview starter dataset
+3A674,Power steering pump,Steering,,,,,,Preview starter dataset
+3A714,Power steering hose,Steering,,,,,,Preview starter dataset
+3A719,Power steering pressure hose,Steering,,,,,,Preview starter dataset
+3A733,Power steering pump pulley,Steering,,,,,,Preview starter dataset
+3B676,Steering shaft,Steering,,,,,,Preview starter dataset
+3C529,Steering column,Steering,,,,,,Preview starter dataset
+3D746,Power steering cooler,Steering,,,,,,Preview starter dataset
+3E651,Steering stabilizer / damper,Steering,,,,,F-Series/front,Preview starter dataset
+3530,Steering column shroud,Steering / interior,,,,,,Preview starter dataset
+3E723,Ignition switch actuator - upper,Steering column / ignition,,,,,,Preview starter dataset
+3F723,Ignition switch actuator - lower,Steering column / ignition,,,,,,Preview starter dataset
+18124,Front shock,Suspension,"muffler, silencer, rear muffler",,,,,Preview starter dataset
+18125,Rear shock,Suspension,,,,,,Preview starter dataset
+18183,Upper shock mount,Suspension,,,,,,Preview starter dataset
+3A197,Spring seats,Suspension,,,,,,Preview starter dataset
+3B186,Radius arm bushing retainer,Suspension,,,,,,Preview starter dataset
+3B203,Radius arm bushing,Suspension,,,,,,Preview starter dataset
+3B244,Radius arm spacer,Suspension,,,,,,Preview starter dataset
+3B463,Radius arm bushing shield,Suspension,,,,,,Preview starter dataset
+3C067,Control arm bushing,Suspension,,,,,,Preview starter dataset
+3C098,Front suspension air bag,Suspension,,,,,,Preview starter dataset
+5310,Front suspension air bag / coil spring,Suspension,"spring, front spring, coil spring",,,,,Preview starter dataset
+5319,Air suspension compressor,Suspension,,,,,,Preview starter dataset
+5359,Front air ride height sensor,Suspension,,,,,,Preview starter dataset
+5482,Front stabilizer bar,Suspension,,,,,,Preview starter dataset
+5484,Sway bar bushing,Suspension,,,,,,Preview starter dataset
+5486,Front stabilizer bar bracket,Suspension,,,,,,Preview starter dataset
+5493,Front stabilizer bar bushing,Suspension,,,,,,Preview starter dataset
+5494,Rear stabilizer bar bushing,Suspension,,,,,,Preview starter dataset
+5495,Front stabilizer bar link,Suspension,,,,,,Preview starter dataset
+5500,Rear trailing arm,Suspension,,,,,,Preview starter dataset
+5560,Rear suspension air bag / spring,Suspension,"spring, rear spring, leaf spring",,,,Eaton example uses 5560 as coil spring group,Preview starter dataset
+5580,Rear suspension air bag,Suspension,,,,,,Preview starter dataset
+5586,Front spring spacer,Suspension,,,,,F350,Preview starter dataset
+5705,Leaf spring U-bolts,Suspension,,,,,,Preview starter dataset
+5A772,Rear stabilizer bar,Suspension,,,,,,Preview starter dataset
+5A919,Air suspension module,Suspension,,,,,,Preview starter dataset
+5A965,Rear suspension air bag,Suspension,,,,,,Preview starter dataset
+5A967,Rear air ride height sensor,Suspension,,,,,,Preview starter dataset
+5C486,Rear end link,Suspension,,,,,,Preview starter dataset
+5F264,Spring,Suspension,,,,,,Preview starter dataset
+5K483,Front stabilizer link,Suspension,,,,,,Preview starter dataset
+5K484,Front end link,Suspension,,,,,,Preview starter dataset
+5K848,Rear suspension toe adjust,Suspension,,,,,Mustang noted in source list,Preview starter dataset
+3B236,Eccentrics,Suspension / alignment,,,,,,Preview starter dataset
+3C178,Eccentrics,Suspension / alignment,,,,,,Preview starter dataset
+2C013,Air suspension relay,Suspension / brakes,,,,,,Preview starter dataset
+13D730,Upfitter switches,Switches,,,,,Diesel noted,Preview starter dataset
+17080,Jack,Tools / accessories,,,,,,Preview starter dataset
+19D520,Trailer hitch,Towing,,,,,F-Series,Preview starter dataset
+17A654,Tow hook,Towing / body,,,,,,Preview starter dataset
+17F000,Hitch cover,Towing / body,,,,,,Preview starter dataset
+17N808,Tow hook,Towing / body,,,,,,Preview starter dataset
+13A576,Hitch wiring,Towing / electrical,,,,,,Preview starter dataset
+15437,Trailer towing module,Towing / electrical,,,,,,Preview starter dataset
+7B215,Transfer case output shaft seal,Transfer case,,,,,,Preview starter dataset
+3F719,Shift interlock solenoid,Transmission,,,,,Automatic,Preview starter dataset
+6068,Transmission mount,Transmission,,,,,,Preview starter dataset
+6441,Torque converter nuts,Transmission,,,,,Automatic,Preview starter dataset
+7000,Automatic transmission,Transmission,,,,,Also 7V000,Preview starter dataset
+7003,Manual transmission,Transmission,,,,,,Preview starter dataset
+7007,Separator plate,Transmission,,,,,Between engine and transmission,Preview starter dataset
+7052,Tail shaft / extension housing seal,Transmission,,,,,Also angle gear/transfer seal use,Preview starter dataset
+7086,Extension housing gasket,Transmission,,,,,,Preview starter dataset
+7210,Shifter,Transmission,,,,,Automatic,Preview starter dataset
+7212,Shift tube,Transmission,,,,,Automatic,Preview starter dataset
+7213,Shifter knob,Transmission,,,,,Manual,Preview starter dataset
+7330,Downshift bushing,Transmission,,,,,AOD,Preview starter dataset
+7902,Torque converter,Transmission,,,,,,Preview starter dataset
+7A020,Transmission dipstick,Transmission,,,,,Automatic,Preview starter dataset
+7A030,Transmission cooler line,Transmission,,,,,Automatic,Preview starter dataset
+7A031,Transmission cooler line,Transmission,,,,,Automatic,Preview starter dataset
+7A095,Transmission cooler,Transmission,,,,,,Preview starter dataset
+7A098,Transmission filter,Transmission,,,,,Automatic,Preview starter dataset
+7A100,Transmission valve body,Transmission,,,,,,Preview starter dataset
+7A110,PRNDL,Transmission,,,,,Automatic,Preview starter dataset
+7A130,Center support,Transmission,,,,,Automatic,Preview starter dataset
+7A184,Downshift cable,Transmission,,,,,Automatic,Preview starter dataset
+7A228,Transmission oil fill tube,Transmission,,,,,,Preview starter dataset
+7A248,Torque converter seal,Transmission,,,,,,Preview starter dataset
+7B498,Shift shaft seal,Transmission,,,,,,Preview starter dataset
+7C391,Transmission gasket kit,Transmission,,,,,Also 7H575,Preview starter dataset
+7D273,Transmission cooler connector,Transmission,,,,,AX4N/AX4S/4F50N,Preview starter dataset
+7E395,Transmission shift cable,Transmission,,,,,Automatic,Preview starter dataset
+7F332,TV rod,Transmission,,,,,AOD,Preview starter dataset
+7G136,TCC solenoid,Transmission,,,,,5R55E,Preview starter dataset
+7G383,EPC solenoid,Transmission,,,,,,Preview starter dataset
+7G391,Transmission solenoid pack,Transmission,,,,,,Preview starter dataset
+7J136,Transmission solenoid,Transmission,,,,,"L/R, O/D, TCC, intermediate",Preview starter dataset
+7M121,Transmission mount,Transmission,,,,,,Preview starter dataset
+7R264,Shifter plunger,Transmission,,,,,Automatic,Preview starter dataset
+7B200,Vacuum shift valve,Transmission / 4WD,,,,,7.3L,Preview starter dataset
+7H332,Tow cut-off switch,Transmission / towing,,,,,,Preview starter dataset
+7A247,Transmission range sensor / PNP,Transmission sensors,,,,,Automatic,Preview starter dataset
+7E731,Transmission speed sensor,Transmission sensors,,,,,,Preview starter dataset
+7F293,Transmission range sensor / PNP,Transmission sensors,,,,,Automatic,Preview starter dataset
+7H103,Output shaft speed sensor,Transmission sensors,,,,,Automatic,Preview starter dataset
+7M101,Turbine speed sensor,Transmission sensors,,,,,AX4N/AX4S,Preview starter dataset
+7Z101,Turbine speed sensor seal,Transmission sensors,,,,,Automatic,Preview starter dataset
+9G441,Turbo oil hose,Turbo,,,,,,Preview starter dataset
+9F739,Turbo control valve,Turbo / emissions,,,,,,Preview starter dataset
+9440,Turbo return line seal,Turbo / exhaust,,,,,,Preview starter dataset
+9E436,Turbo/manifold O-ring,Turbo / exhaust,,,,,,Preview starter dataset
+6C640,CAC tube / turbo hose,Turbo / intake,,,,,,Preview starter dataset
+6K682,Turbo,Turbo / intake,,,,,Also 9G438,Preview starter dataset
+6K775,Intercooler,Turbo / intake,,,,,,Preview starter dataset
+6N639,Turbo pedestal,Turbo / intake,,,,,7.3 & 6.0,Preview starter dataset
+9F695,Turbo air hose,Turbo / intake,,,,,Also 9F722,Preview starter dataset
+9G438,Turbo,Turbo / intake,,,,,Also 6K682,Preview starter dataset
+9S283,Vacuum switch,Vacuum / diesel,,,,,,Preview starter dataset
+1007,Wheel / rim,"Wheels, hubs & bearings","wheel, rim, alloy wheel, steel wheel, road wheel",,,,Includes common Ford wheel basic number. Example format: prefix-1007-suffix.,Preview starter dataset
+1012,Lug nut,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1015,Wheel - steel,"Wheels, hubs & bearings",,,,,Some lists show 1015 as steel wheel.,Preview starter dataset
+1104,Front hub and bearing,"Wheels, hubs & bearings","lug nut, wheel nut, nut",,,,,Preview starter dataset
+1107,Wheel stud / hub stud,"Wheels, hubs & bearings","wheel stud, lug stud, stud",,,,,Preview starter dataset
+1130,Hub cap,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1175,Axle seal - inner,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1177,Axle seal / rear wheel bearing oil seal,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1190,Hub seal,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1201,Inner bearing - front axle,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1216,Outer bearing - front axle,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1386,Spare tire lock,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1553,Tire pressure sensor / TPMS,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1A043,Locking lug nut kit,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1A131,Spare tire carrier,"Wheels, hubs & bearings",,,,,Truck,Preview starter dataset
+1A150,Tire pressure sensor - early model,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1A160,Air sensor nut,"Wheels, hubs & bearings",,,,,Early model,Preview starter dataset
+1A189,Tire pressure sensor / inflation sensor,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1A193,Wheel sensor band kit,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1K007,Full size spare tire kit,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1K104,4WD hub,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1K105,4WD hub,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1S177,Front seal / axle seal,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1V102,Hub and rotor,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+1V125,Rotor assembly,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+3B477,Hub assembly nut / retainer,"Wheels, hubs & bearings",,,,,,Preview starter dataset
+17508,Wiper motor,Wipers / washers,,,,,,Preview starter dataset
+17513,Wiper knob,Wipers / washers,,,,,,Preview starter dataset
+17526,Wiper arm,Wipers / washers,,,,,,Preview starter dataset
+17528,Wiper blades,Wipers / washers,,,,,,Preview starter dataset
+17566,Wiper transmission,Wipers / washers,,,,,,Preview starter dataset
+17603,Windshield washer jet,Wipers / washers,,,,,,Preview starter dataset
+17618,Windshield washer reservoir,Wipers / washers,,,,,,Preview starter dataset
+17A553,Wiper switch,Wipers / washers,,,,,,Preview starter dataset
+17C476,Wiper governor,Wipers / washers,,,,,,Preview starter dataset

@@ -1,0 +1,254 @@
+[
+  {
+    "type": "year",
+    "code": "X",
+    "value": "1999",
+    "description": "Model year 1999",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "Y",
+    "value": "2000",
+    "description": "Model year 2000",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "1",
+    "value": "2001",
+    "description": "Model year 2001",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "2",
+    "value": "2002",
+    "description": "Model year 2002",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "3",
+    "value": "2003",
+    "description": "Model year 2003",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "4",
+    "value": "2004",
+    "description": "Model year 2004",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "5",
+    "value": "2005",
+    "description": "Model year 2005",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "6",
+    "value": "2006",
+    "description": "Model year 2006",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "7",
+    "value": "2007",
+    "description": "Model year 2007",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "8",
+    "value": "2008",
+    "description": "Model year 2008",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "9",
+    "value": "2009",
+    "description": "Model year 2009",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "A",
+    "value": "2010",
+    "description": "Model year 2010",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "B",
+    "value": "2011",
+    "description": "Model year 2011",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "C",
+    "value": "2012",
+    "description": "Model year 2012",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "D",
+    "value": "2013",
+    "description": "Model year 2013",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "E",
+    "value": "2014",
+    "description": "Model year 2014",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "F",
+    "value": "2015",
+    "description": "Model year 2015",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "G",
+    "value": "2016",
+    "description": "Model year 2016",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "H",
+    "value": "2017",
+    "description": "Model year 2017",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "J",
+    "value": "2018",
+    "description": "Model year 2018",
+    "notes": "I is normally skipped"
+  },
+  {
+    "type": "year",
+    "code": "K",
+    "value": "2019",
+    "description": "Model year 2019",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "L",
+    "value": "2020",
+    "description": "Model year 2020",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "M",
+    "value": "2021",
+    "description": "Model year 2021",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "N",
+    "value": "2022",
+    "description": "Model year 2022",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "P",
+    "value": "2023",
+    "description": "Model year 2023",
+    "notes": "O is normally skipped"
+  },
+  {
+    "type": "year",
+    "code": "R",
+    "value": "2024",
+    "description": "Model year 2024",
+    "notes": "Q is normally skipped"
+  },
+  {
+    "type": "year",
+    "code": "S",
+    "value": "2025",
+    "description": "Model year 2025",
+    "notes": ""
+  },
+  {
+    "type": "year",
+    "code": "T",
+    "value": "2026",
+    "description": "Model year 2026",
+    "notes": ""
+  },
+  {
+    "type": "design",
+    "code": "Z",
+    "value": "Ford service parts / Ford Customer Service Division",
+    "description": "Common service part design responsibility code",
+    "notes": "Verify by catalogue"
+  },
+  {
+    "type": "design",
+    "code": "A",
+    "value": "Ford design responsibility code",
+    "description": "Design responsibility code A",
+    "notes": "User-expand/verify"
+  },
+  {
+    "type": "design",
+    "code": "B",
+    "value": "Body / vehicle engineering responsibility code",
+    "description": "Design responsibility code B",
+    "notes": "User-expand/verify"
+  },
+  {
+    "type": "design",
+    "code": "C",
+    "value": "Chassis / vehicle engineering responsibility code",
+    "description": "Design responsibility code C",
+    "notes": "User-expand/verify"
+  },
+  {
+    "type": "product",
+    "code": "BL",
+    "value": "Example product/model line code",
+    "description": "Product line code BL",
+    "notes": "Replace/add verified model/product line codes"
+  },
+  {
+    "type": "product",
+    "code": "AB",
+    "value": "Ranger / Australia-market example prefix family",
+    "description": "Product line code AB",
+    "notes": "Verify by catalogue"
+  },
+  {
+    "type": "product",
+    "code": "JB",
+    "value": "Ranger/Everest example prefix family",
+    "description": "Product line code JB",
+    "notes": "Verify by catalogue"
+  },
+  {
+    "type": "product",
+    "code": "BG",
+    "value": "Falcon/Territory example prefix family",
+    "description": "Product line code BG",
+    "notes": "Verify by catalogue"
+  }
+]

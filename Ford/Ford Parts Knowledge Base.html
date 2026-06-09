@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ford Basic Number / Parts Knowledge Base</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#111}
+header{background:#12355b;color:white;padding:22px} header h1{margin:0}
+main{max-width:1320px;margin:auto;padding:16px}
+.box{background:white;border:1px solid #ccd3dc;border-radius:10px;padding:14px;margin-bottom:14px}
+input,select,button,textarea{font-size:15px;padding:10px;margin:4px;border:1px solid #999;border-radius:6px}
+input[type=text],input[type=password],input[type=number],textarea{width:min(620px,94%)}
+textarea{min-height:56px;vertical-align:top} button{cursor:pointer;background:#eaf1f8}
+button.primary{background:#12355b;color:white;border-color:#12355b} button.good{background:#0f766e;color:white;border-color:#0f766e} button.danger{background:#b91c1c;color:white;border-color:#b91c1c}
+table{width:100%;border-collapse:collapse;background:white} th,td{border:1px solid #d8dee8;padding:8px;text-align:left;vertical-align:top}
+th{background:#eaf1f8;position:sticky;top:0} .num{font-weight:bold;font-size:18px} .status{font-weight:bold;margin-top:8px}
+.note{color:#444;font-size:13px} .small{font-size:12px;color:#555}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:8px} .grid3{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:8px}
+.full{grid-column:1/-1} .badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:2px 6px;border-radius:999px;font-size:12px;margin:1px}
+.pn{background:#ecfdf5;color:#065f46} .app{background:#fff7ed;color:#9a3412} .sup{background:#fef2f2;color:#991b1b}
+#tableWrap{max-height:62vh;overflow:auto;border:1px solid #d8dee8;border-radius:8px} .hiddenInput{display:none}
+details summary{cursor:pointer;color:#12355b;font-weight:bold;user-select:none;padding:6px 0}
+details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opacity:1;font-size:15px}
+.locked-control{display:none} .unlocked .locked-control{display:initial} .lockbox{background:#f8fafc;border:1px dashed #94a3b8;border-radius:8px;padding:10px;margin-top:8px}
+.msg{margin-top:8px;padding:9px;border-radius:6px;background:#ecfdf5;color:#064e3b} .warn{margin-top:8px;padding:9px;border-radius:6px;background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa}
+.guess{font-size:22px;font-weight:bold;color:#12355b;background:#eef6ff;border:1px solid #bfdbfe;padding:12px;border-radius:8px;display:inline-block;margin:8px 0}
+.muted{color:#6b7280} .pill{display:inline-block;border:1px solid #ccd3dc;border-radius:999px;padding:3px 8px;margin:2px;background:#fff}
+.toplink{color:#12355b;font-weight:bold;text-decoration:none} .successline{color:#047857;font-weight:bold} .errorline{color:#b91c1c;font-weight:bold}
+@media(max-width:900px){.grid,.grid3{grid-template-columns:1fr} input[type=text],input[type=password],input[type=number],textarea{width:94%}}
+</style>
+</head>
+<body>
+<header>
+<h1>Ford Basic Part Number / Parts Knowledge Base</h1>
+<p>Search basic numbers, service part numbers, applications, aliases, supersessions and notes.</p>
+</header>
+<main>
+
+<div class="box">
+<a class="toplink" href="../Ford Web.html">← Back to Ford Web</a><br><br>
+<input id="search" placeholder="Search basic number, term, part number, application or notes" autofocus oninput="render()">
+<select id="category" onchange="render()"><option value="">All categories</option></select>
+<button onclick="clearSearch()">Reset</button>
+<button onclick="reloadSiteData()">Reload site data</button>
+<div id="status" class="status">Loading table...</div>
+<div class="note">Starter data loaded from the preview file: 674 rows. Examples: <b>1007</b>, <b>rim</b>, <b>JB3Z-1007-B</b>, <b>Ranger</b>, <b>ABS</b>, <b>PCM</b>.</div>
+</div>
+
+<div class="box lockbox">
+<b>Update Lock</b><br>
+<span class="note">Enter password to unlock manual update, import, export and GitHub commit controls.</span><br>
+<input id="editPassword" type="password" placeholder="Password" oninput="checkEditPassword()">
+<button onclick="checkEditPassword()">Unlock</button>
+<button onclick="lockEditing()">Lock</button>
+<span id="lockStatus" class="note"> Locked</span>
+</div>
+
+<div class="box">
+<details class="hidden-tools">
+<summary>GitHub live update settings</summary>
+<p class="warn"><b>Warning:</b> A token stored in public HTML/browser storage can be seen by others. Use a fine-grained token restricted only to this repo with Contents read/write.</p>
+<div class="grid">
+<div><label>GitHub owner<br><input id="ghOwner" type="text" placeholder="Pleiades555"></label></div>
+<div><label>Repository<br><input id="ghRepo" type="text" placeholder="Pleiades"></label></div>
+<div><label>Branch<br><input id="ghBranch" type="text" placeholder="main"></label></div>
+<div><label>GitHub token<br><input id="ghToken" type="password" placeholder="github_pat_..."></label></div>
+</div>
+<button class="good locked-control" onclick="saveGithubSettings()">Save GitHub Settings Locally</button>
+<button class="primary locked-control" onclick="commitPartsToGithub()">Commit Parts JSON to GitHub</button>
+<button class="primary locked-control" onclick="commitPrefixesToGithub()">Commit Prefix JSON to GitHub</button>
+<div id="ghMsg"></div>
+<p class="small">Convenient workflow: edit/add entries → click Commit Parts JSON to GitHub → page reloads JSON automatically after GitHub Pages updates.</p>
+</details>
+</div>
+
+<div class="box">
+<details class="hidden-tools">
+<summary>Part number guess / prefix builder</summary>
+<p class="note">Hidden by default. This produces structured guesses only. Verify with Microcat/dealer catalogue.</p>
+<div class="grid3">
+<div><label>Model Year<br><input id="guessYear" type="number" placeholder="2011" oninput="updateGuess()"></label></div>
+<div><label>Product Line / Model Code<br><input id="guessProduct" type="text" placeholder="BL / JB / AB" oninput="updateGuess()" list="productCodes"></label></div>
+<div><label>Design Responsibility Code<br><input id="guessDesign" type="text" placeholder="Z" oninput="updateGuess()" list="designCodes"></label></div>
+<div><label>Basic No. or Description<br><input id="guessBasic" type="text" placeholder="1007 or wheel/rim" oninput="updateGuess()"></label></div>
+<div><label>Release / Revision<br><input id="guessSuffix" type="text" placeholder="A / AA / B" oninput="updateGuess()"></label></div>
+<div><label>Result Format<br><select id="guessFormat" onchange="updateGuess()"><option value="hyphen">Prefix-Basic-Suffix</option><option value="compact">Compact</option></select></label></div>
+</div>
+<datalist id="productCodes"></datalist><datalist id="designCodes"></datalist>
+<div id="guessOutput" class="guess">Enter year, product/model code, design code and basic number.</div>
+<div id="guessDetails" class="note"></div>
+</details>
+</div>
+
+<div class="box">
+<details class="hidden-tools">
+<summary>Prefix code add / update</summary>
+<div class="grid3">
+<div><label>Code Type<br><select id="prefixType"><option value="year">Year Code</option><option value="product">Product Line / Model Code</option><option value="design">Design Responsibility Code</option></select></label></div>
+<div><label>Code<br><input id="prefixCode" type="text" placeholder="B / BL / Z"></label></div>
+<div><label>Value / Meaning<br><input id="prefixValue" type="text" placeholder="2011 / Ranger PX / Ford Service Parts"></label></div>
+<div class="full"><label>Description<br><input id="prefixDescription" type="text" placeholder="Model year 2011 or product line description"></label></div>
+<div class="full"><label>Notes<br><textarea id="prefixNotes" placeholder="Source, confidence, model usage, etc."></textarea></label></div>
+</div>
+<button class="good locked-control" onclick="savePrefix()">Save / Update Prefix Code</button>
+<button class="locked-control" onclick="resetPrefixForm()">Clear Prefix Form</button>
+<button class="danger locked-control" onclick="deletePrefix()">Delete Prefix Code</button>
+<div id="prefixMsg"></div>
+<div style="max-height:260px;overflow:auto;margin-top:10px">
+<table><thead><tr><th>Type</th><th>Code</th><th>Value</th><th>Description</th><th>Notes</th><th>Edit</th></tr></thead><tbody id="prefixBody"></tbody></table>
+</div>
+</details>
+</div>
+
+<div class="box">
+<details class="hidden-tools">
+<summary>Manual add / update entry</summary>
+<div class="grid">
+<div><label>Basic No.<br><input id="basic" type="text" placeholder="1007"></label></div>
+<div><label>Description<br><input id="description" type="text" placeholder="Wheel Assembly"></label></div>
+<div><label>Category<br><input id="entryCategory" type="text" placeholder="Wheels / Tyres"></label></div>
+<div><label>Alternative names<br><input id="aliases" type="text" placeholder="rim, alloy wheel, road wheel"></label></div>
+<div class="full"><label>Ford service part numbers<br><textarea id="part_numbers" placeholder="AB39-1007-AA, JB3Z-1007-B"></textarea></label></div>
+<div><label>Applications<br><textarea id="applications" placeholder="Ranger PX, Everest UA, Falcon FG"></textarea></label></div>
+<div><label>Supersessions<br><textarea id="supersessions" placeholder="AB39-1007-AA > JB3Z-1007-B"></textarea></label></div>
+<div><label>Notes<br><textarea id="notes"></textarea></label></div>
+<div><label>Source<br><textarea id="source" placeholder="Microcat, Jefferson, Eaton, TSB, manual entry"></textarea></label></div>
+</div>
+<button class="good locked-control" onclick="saveEntry()">Save / Update</button>
+<button class="locked-control" onclick="resetForm()">Clear Form</button>
+<button class="danger locked-control" onclick="deleteCurrent()">Delete Current</button>
+<div id="msg"></div>
+</details>
+</div>
+
+<div class="box">
+<details class="hidden-tools">
+<summary>Advanced / backup / import</summary>
+<button class="primary locked-control" onclick="exportJSON()">Export parts JSON</button>
+<button class="primary locked-control" onclick="exportCSV()">Export parts CSV</button>
+<button class="locked-control" onclick="document.getElementById('jsonFile').click()">Import parts JSON</button>
+<button class="locked-control" onclick="document.getElementById('csvFile').click()">Import parts CSV</button>
+<button class="primary locked-control" onclick="exportPrefixJSON()">Export prefix JSON</button>
+<button class="locked-control" onclick="document.getElementById('prefixJsonFile').click()">Import prefix JSON</button>
+<button class="locked-control" onclick="mergeSiteData()">Merge site JSON into local</button>
+<button class="danger locked-control" onclick="wipeLocalOnly()">Clear local additions only</button>
+<input class="hiddenInput" id="jsonFile" type="file" accept=".json" onchange="importJSON(event)">
+<input class="hiddenInput" id="csvFile" type="file" accept=".csv" onchange="importCSV(event)">
+<input class="hiddenInput" id="prefixJsonFile" type="file" accept=".json" onchange="importPrefixJSON(event)">
+<p class="small">Manual edits save locally first. Use GitHub commit buttons to update the site JSON files.</p>
+</details>
+</div>
+
+<div class="box">
+<div id="tableWrap">
+<table id="tbl">
+<thead><tr><th>Basic No.</th><th>Description</th><th>Category</th><th>Aliases</th><th>Part Numbers</th><th>Applications</th><th>Supersessions</th><th>Notes</th><th>Source</th><th>Edit</th></tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+</div>
+
+</main>
+<script>
+const PARTS_KEY="ford_parts_kb_local_additions_v3";
+const PREFIX_KEY="ford_prefix_codes_local_additions_v3";
+const GH_KEY="ford_parts_kb_github_settings_v1";
+const EDIT_PASSWORD = "11290";
+const fallbackParts=[{"basic": "3C247", "description": "4WD actuator", "category": "4WD / driveline", "aliases": "", "part_numbers": "", "applications": "", "supersessions": "", "notes": "Shift-on-the-fly", "source": "Preview starter dataset", "updated": ""}];
+const fallbackPrefixes=[{"type": "year", "code": "X", "value": "1999", "description": "Model year 1999", "notes": ""}];
+let siteParts=[]; let sitePrefixes=[]; let localParts=[]; let localPrefixes=[]; let db=[]; let prefixes=[]; let editUnlocked=false;
+
+function checkEditPassword(){ editUnlocked=(editPassword.value===EDIT_PASSWORD); document.body.classList.toggle("unlocked",editUnlocked); lockStatus.textContent=editUnlocked?" Unlocked":" Locked"; return editUnlocked; }
+function lockEditing(){ editUnlocked=false; document.body.classList.remove("unlocked"); editPassword.value=""; lockStatus.textContent=" Locked"; }
+function requireEditPassword(){ if(editUnlocked)return true; alert("Enter password 11290 to unlock updates."); return false; }
+function stamp(){return new Date().toISOString().slice(0,19).replace("T"," ");}
+function norm(v){return String(v||"").trim().toUpperCase().replace(/\s+/g,"");}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function splitList(s){return String(s||"").split(/[;,\n]/).map(x=>x.trim()).filter(Boolean);}
+function badges(s,cls=""){return splitList(s).map(x=>`<span class="badge ${cls}">${esc(x)}</span>`).join(" ");}
+function showBox(el,t,bad=false){el.className=bad?"warn":"msg";el.innerHTML=t;setTimeout(()=>{el.innerHTML="";el.className="";},6500);}
+
+async function fetchJson(path, fallback){ try{const r=await fetch(path+"?v="+Date.now(),{cache:"no-store"}); if(!r.ok)throw new Error(r.status); const data=await r.json(); return Array.isArray(data)?data:fallback;}catch(e){return fallback;} }
+function loadLocal(){ try{localParts=JSON.parse(localStorage.getItem(PARTS_KEY)||"[]")||[];}catch(e){localParts=[];} try{localPrefixes=JSON.parse(localStorage.getItem(PREFIX_KEY)||"[]")||[];}catch(e){localPrefixes=[];} }
+function saveLocal(){localStorage.setItem(PARTS_KEY,JSON.stringify(localParts));localStorage.setItem(PREFIX_KEY,JSON.stringify(localPrefixes));}
+function mergeByBasic(a,b){const map=new Map(); for(const e of a.concat(b)){if(e&&(e.basic||e.basic_number))map.set(norm(e.basic||e.basic_number),{...e,basic:norm(e.basic||e.basic_number)});} return [...map.values()];}
+function mergePrefixes(a,b){const map=new Map(); for(const p of a.concat(b)){if(p&&p.type&&p.code)map.set(p.type+"|"+norm(p.code),{...p,code:norm(p.code)});} return [...map.values()];}
+function rebuildMerged(){db=mergeByBasic(siteParts,localParts); prefixes=mergePrefixes(sitePrefixes,localPrefixes);}
+async function reloadSiteData(){siteParts=await fetchJson("ford_parts_kb_data.json",fallbackParts); sitePrefixes=await fetchJson("ford_prefix_codes.json",fallbackPrefixes); loadLocal(); rebuildMerged(); render(); loadGithubSettings();}
+
+function cats(){return [...new Set(db.map(e=>e.category||"").filter(Boolean))].sort();}
+function updateCats(){let cur=category.value;category.innerHTML='<option value="">All categories</option>'+cats().map(c=>`<option>${esc(c)}</option>`).join("");category.value=cur;}
+function hay(e){return [e.basic,e.description,e.category,e.aliases,e.part_numbers,e.applications,e.supersessions,e.notes,e.source].join(" ").toLowerCase();}
+function render(){ updateCats(); renderPrefixes(); updateGuess(); const q=search.value.trim().toLowerCase(), cat=category.value; let rows=db.filter(e=>(!cat||e.category===cat)&&(!q||hay(e).includes(q))); rows.sort((a,b)=>String(a.basic||"").localeCompare(String(b.basic||""),undefined,{numeric:true})); tbody.innerHTML=rows.map(e=>`<tr><td class="num">${esc(e.basic)}</td><td>${esc(e.description)}</td><td>${esc(e.category)}</td><td>${badges(e.aliases)}</td><td>${badges(e.part_numbers,"pn")}</td><td>${badges(e.applications,"app")}</td><td>${badges(e.supersessions,"sup")}</td><td>${esc(e.notes)}</td><td>${esc(e.source)}</td><td><button onclick="if(requireEditPassword()) editEntry('${esc(e.basic)}')">Edit</button></td></tr>`).join(""); status.textContent=rows.length+" shown / "+db.length+" total entries"; }
+function clearSearch(){search.value="";category.value="";render();}
+
+function formEntry(){return {basic:norm(basic.value),description:description.value.trim(),category:entryCategory.value.trim(),aliases:aliases.value.trim(),part_numbers:part_numbers.value.trim(),applications:applications.value.trim(),supersessions:supersessions.value.trim(),notes:notes.value.trim(),source:source.value.trim(),updated:stamp()};}
+function saveEntry(){if(!requireEditPassword())return; let e=formEntry(); if(!e.basic||!e.description)return showBox(msg,"Basic No. and Description are required.",true); localParts=localParts.filter(x=>norm(x.basic)!==e.basic); localParts.push(e); saveLocal(); rebuildMerged(); render(); showBox(msg,e.basic+" saved locally. Use GitHub commit to update site JSON.");}
+function editEntry(b){let e=db.find(x=>norm(x.basic)===norm(b)); if(!e)return; basic.value=e.basic||"";description.value=e.description||"";entryCategory.value=e.category||"";aliases.value=e.aliases||"";part_numbers.value=e.part_numbers||"";applications.value=e.applications||"";supersessions.value=e.supersessions||"";notes.value=e.notes||"";source.value=e.source||"";scrollTo({top:0,behavior:"smooth"});}
+function resetForm(){if(!requireEditPassword())return; ["basic","description","entryCategory","aliases","part_numbers","applications","supersessions","notes","source"].forEach(id=>document.getElementById(id).value="");}
+function deleteCurrent(){if(!requireEditPassword())return; let b=norm(basic.value); if(!b)return showBox(msg,"Select/enter a basic number first.",true); localParts=localParts.filter(x=>norm(x.basic)!==b); saveLocal(); rebuildMerged(); resetForm(); render(); showBox(msg,b+" removed from local additions. Site JSON seed remains unless committed/edited.");}
+
+function renderPrefixes(){productCodes.innerHTML=prefixes.filter(p=>p.type==="product").map(p=>`<option value="${esc(p.code)}">${esc(p.value||p.description||"")}</option>`).join("");designCodes.innerHTML=prefixes.filter(p=>p.type==="design").map(p=>`<option value="${esc(p.code)}">${esc(p.value||p.description||"")}</option>`).join("");prefixBody.innerHTML=prefixes.slice().sort((a,b)=>(a.type+a.code).localeCompare(b.type+b.code)).map(p=>`<tr><td>${esc(p.type)}</td><td><b>${esc(p.code)}</b></td><td>${esc(p.value)}</td><td>${esc(p.description)}</td><td>${esc(p.notes)}</td><td><button onclick="if(requireEditPassword()) editPrefix('${esc(p.type)}','${esc(p.code)}')">Edit</button></td></tr>`).join("");}
+function prefixEntry(){return {type:prefixType.value,code:norm(prefixCode.value),value:prefixValue.value.trim(),description:prefixDescription.value.trim(),notes:prefixNotes.value.trim()};}
+function savePrefix(){if(!requireEditPassword())return; let p=prefixEntry(); if(!p.code)return showBox(prefixMsg,"Code is required.",true); localPrefixes=localPrefixes.filter(x=>!(x.type===p.type&&norm(x.code)===p.code)); localPrefixes.push(p); saveLocal(); rebuildMerged(); render(); showBox(prefixMsg,p.type+" code "+p.code+" saved locally.");}
+function editPrefix(t,c){let p=prefixes.find(x=>x.type===t&&norm(x.code)===norm(c)); if(!p)return; prefixType.value=p.type;prefixCode.value=p.code;prefixValue.value=p.value||"";prefixDescription.value=p.description||"";prefixNotes.value=p.notes||"";}
+function resetPrefixForm(){if(!requireEditPassword())return; ["prefixCode","prefixValue","prefixDescription","prefixNotes"].forEach(id=>document.getElementById(id).value="");}
+function deletePrefix(){if(!requireEditPassword())return; let p=prefixEntry(); localPrefixes=localPrefixes.filter(x=>!(x.type===p.type&&norm(x.code)===p.code)); saveLocal(); rebuildMerged(); render(); resetPrefixForm(); showBox(prefixMsg,"Removed from local prefix additions.");}
+
+function findYearCode(yearOrCode){const raw=String(yearOrCode||"").trim().toUpperCase(); if(!raw)return ""; let byValue=prefixes.find(p=>p.type==="year"&&String(p.value)===raw); if(byValue)return byValue.code; let byCode=prefixes.find(p=>p.type==="year"&&norm(p.code)===raw); return byCode?byCode.code:raw;}
+function findBasic(term){const q=String(term||"").trim().toLowerCase(); if(!q)return null; let exact=db.find(e=>norm(e.basic)===norm(q)); if(exact)return exact; return db.find(e=>hay(e).includes(q))||null;}
+function updateGuess(){const y=findYearCode(guessYear.value), prod=norm(guessProduct.value), des=norm(guessDesign.value), suffix=norm(guessSuffix.value)||"A"; const found=findBasic(guessBasic.value); const basicNo=found?found.basic:norm(guessBasic.value); if(!y||!prod||!des||!basicNo){guessOutput.textContent="Enter year, product/model code, design code and basic number."; guessDetails.innerHTML=""; return;} const prefix=y+prod+des; const pn=guessFormat.value==="compact"?prefix+basicNo+suffix:prefix+"-"+basicNo+"-"+suffix; guessOutput.textContent=pn; guessDetails.innerHTML=`<span class="pill">Basic: ${esc(basicNo)} ${found?esc(found.description):""}</span><br><span class="muted">Structured guess only; verify before use.</span>`;}
+
+function mergeEntries(arr){if(!requireEditPassword())return; let n=0; for(const r of arr){let e={basic:norm(r.basic||r.basic_number),description:String(r.description||r.desc||"").trim(),category:String(r.category||"").trim(),aliases:String(r.aliases||r.alias||"").trim(),part_numbers:String(r.part_numbers||r.parts||r.part_number||"").trim(),applications:String(r.applications||r.application||r.vehicles||"").trim(),supersessions:String(r.supersessions||r.supersession||"").trim(),notes:String(r.notes||"").trim(),source:String(r.source||"").trim(),updated:r.updated||stamp()}; if(!e.basic||!e.description)continue; localParts=localParts.filter(x=>norm(x.basic)!==e.basic); localParts.push(e); n++;} saveLocal(); rebuildMerged(); render(); alert("Imported/merged locally: "+n+" rows.");}
+function mergeSiteData(){if(!requireEditPassword())return; mergeEntries(siteParts);}
+function download(name,content,type){let blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;a.click();URL.revokeObjectURL(url);}
+function exportJSON(){if(!requireEditPassword())return; download("ford_parts_kb_data.json",JSON.stringify(db,null,2),"application/json");}
+function exportPrefixJSON(){if(!requireEditPassword())return; download("ford_prefix_codes.json",JSON.stringify(prefixes,null,2),"application/json");}
+function csvEsc(v){v=String(v??"");return /[",\n\r]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function exportCSV(){if(!requireEditPassword())return; let cols=["basic","description","category","aliases","part_numbers","applications","supersessions","notes","source","updated"];download("ford_parts_kb_export.csv",[cols.join(","),...db.map(e=>cols.map(c=>csvEsc(e[c])).join(","))].join("\n"),"text/csv");}
+function importJSON(ev){if(!requireEditPassword())return; let f=ev.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let arr=JSON.parse(r.result);if(!Array.isArray(arr))throw Error("JSON must be an array");mergeEntries(arr);}catch(e){alert("JSON import failed: "+e.message);}ev.target.value="";};r.readAsText(f);}
+function importPrefixJSON(ev){if(!requireEditPassword())return; let f=ev.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let arr=JSON.parse(r.result);if(!Array.isArray(arr))throw Error("JSON must be an array");localPrefixes=arr.filter(p=>p.type&&p.code);saveLocal();rebuildMerged();render();alert("Imported prefix codes locally: "+localPrefixes.length);}catch(e){alert("Prefix JSON import failed: "+e.message);}ev.target.value="";};r.readAsText(f);}
+function parseCSV(t){let rows=[],row=[],cur="",q=false;for(let i=0;i<t.length;i++){let ch=t[i],nx=t[i+1];if(q){if(ch=='"'&&nx=='"'){cur+='"';i++;}else if(ch=='"')q=false;else cur+=ch;}else{if(ch=='"')q=true;else if(ch==","){row.push(cur);cur="";}else if(ch=="\n"){row.push(cur);rows.push(row);row=[];cur="";}else if(ch!="\r")cur+=ch;}}row.push(cur);rows.push(row);return rows.filter(r=>r.some(c=>String(c).trim()));}
+function importCSV(ev){if(!requireEditPassword())return; let f=ev.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let rows=parseCSV(r.result),head=rows.shift().map(h=>h.trim().toLowerCase());mergeEntries(rows.map(row=>{let o={};head.forEach((h,i)=>o[h]=row[i]||"");return o;}));}catch(e){alert("CSV import failed: "+e.message);}ev.target.value="";};r.readAsText(f);}
+function wipeLocalOnly(){if(!requireEditPassword())return; if(confirm("Clear local additions only? Site JSON data will remain.")){localStorage.removeItem(PARTS_KEY);localStorage.removeItem(PREFIX_KEY);localParts=[];localPrefixes=[];rebuildMerged();render();}}
+
+function loadGithubSettings(){try{const s=JSON.parse(localStorage.getItem(GH_KEY)||"{}");ghOwner.value=s.owner||"Pleiades555";ghRepo.value=s.repo||"Pleiades";ghBranch.value=s.branch||"main";ghToken.value=s.token||"";}catch(e){ghOwner.value="Pleiades555";ghRepo.value="Pleiades";ghBranch.value="main";}}
+function saveGithubSettings(){if(!requireEditPassword())return; localStorage.setItem(GH_KEY,JSON.stringify({owner:ghOwner.value.trim(),repo:ghRepo.value.trim(),branch:ghBranch.value.trim()||"main",token:ghToken.value.trim()})); showBox(ghMsg,"GitHub settings saved locally.",false);}
+async function githubGetFile(path){const owner=ghOwner.value.trim(), repo=ghRepo.value.trim(), branch=ghBranch.value.trim()||"main", token=ghToken.value.trim(); const url=`https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(path).replaceAll("%2F","/")}?ref=${encodeURIComponent(branch)}`; const r=await fetch(url,{headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"}}); if(!r.ok)throw new Error("GitHub GET failed: "+r.status+" "+await r.text()); return await r.json();}
+async function githubPutFile(path, content, message){const owner=ghOwner.value.trim(), repo=ghRepo.value.trim(), branch=ghBranch.value.trim()||"main", token=ghToken.value.trim(); if(!owner||!repo||!token)throw new Error("Owner, repo and token are required."); const current=await githubGetFile(path); const encoded=btoa(unescape(encodeURIComponent(content))); const body={message,content:encoded,sha:current.sha,branch}; const url=`https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(path).replaceAll("%2F","/")}`; const r=await fetch(url,{method:"PUT",headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json","Content-Type":"application/json","X-GitHub-Api-Version":"2022-11-28"},body:JSON.stringify(body)}); if(!r.ok)throw new Error("GitHub PUT failed: "+r.status+" "+await r.text()); return await r.json();}
+async function commitPartsToGithub(){if(!requireEditPassword())return; try{saveGithubSettings(); showBox(ghMsg,"Committing parts JSON to GitHub...",false); await githubPutFile("Ford/ford_parts_kb_data.json",JSON.stringify(db,null,2),"Update Ford parts knowledge base"); localParts=[]; saveLocal(); showBox(ghMsg,"<span class='successline'>Parts JSON committed to GitHub.</span>",false);}catch(e){showBox(ghMsg,"<span class='errorline'>"+esc(e.message)+"</span>",true);}}
+async function commitPrefixesToGithub(){if(!requireEditPassword())return; try{saveGithubSettings(); showBox(ghMsg,"Committing prefix JSON to GitHub...",false); await githubPutFile("Ford/ford_prefix_codes.json",JSON.stringify(prefixes,null,2),"Update Ford prefix codes"); localPrefixes=[]; saveLocal(); showBox(ghMsg,"<span class='successline'>Prefix JSON committed to GitHub.</span>",false);}catch(e){showBox(ghMsg,"<span class='errorline'>"+esc(e.message)+"</span>",true);}}
+
+reloadSiteData();
+</script>
+</body>
+</html>
