@@ -171,7 +171,7 @@ let siteParts=[]; let sitePrefixes=[]; let localParts=[]; let localPrefixes=[]; 
 
 function checkEditPassword(){ editUnlocked=(editPassword.value===EDIT_PASSWORD); document.body.classList.toggle("unlocked",editUnlocked); lockStatus.textContent=editUnlocked?" Unlocked":" Locked"; return editUnlocked; }
 function lockEditing(){ editUnlocked=false; document.body.classList.remove("unlocked"); editPassword.value=""; lockStatus.textContent=" Locked"; }
-function requireEditPassword(){ if(editUnlocked)return true; alert("Enter password 11290 to unlock updates."); return false; }
+function requireEditPassword(){ if(editUnlocked)return true; alert("Enter password to unlock updates."); return false; }
 function stamp(){return new Date().toISOString().slice(0,19).replace("T"," ");}
 function norm(v){return String(v||"").trim().toUpperCase().replace(/\s+/g,"");}
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
