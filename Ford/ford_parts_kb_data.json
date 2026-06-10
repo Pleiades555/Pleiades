@@ -7705,15 +7705,15 @@
   },
   {
     "basic": "1104",
-    "description": "Hub Assy - Wheel",
-    "category": "Suspension",
-    "aliases": "Wheel Hub Assembly",
+    "description": "Wheel hub",
+    "category": "Wheels, hubs & bearings",
+    "aliases": "Wheel Hub",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:24:24"
+    "source": "Preview starter dataset",
+    "updated": "2026-06-09 05:34:23"
   },
   {
     "basic": "1107",
@@ -8170,5 +8170,17 @@
     "notes": "",
     "source": "Manual Entry",
     "updated": "2026-06-09 05:26:31"
+  },
+  {
+    "basic": "15K609",
+    "description": "Sensor and Bracket - Interior Scan",
+    "category": "Electrical",
+    "aliases": "Ultrasonic sensor, anti-theft sensor, motion sensor, volumetric sensor",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "Interior ultrasonic sensors for detecting unauthorised access to the vehicle.",
+    "source": "Manual Entry",
+    "updated": "2026-06-10 02:38:57"
   }
 ]
