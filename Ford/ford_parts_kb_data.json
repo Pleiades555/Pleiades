@@ -2569,27 +2569,27 @@
   },
   {
     "basic": "6006",
-    "description": "Engine",
+    "description": "Service Engine",
     "category": "Engine",
-    "aliases": "",
+    "aliases": "Complete Engine, Warranty Engine",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "AER noted in source list",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "notes": "A basic long block. It features the engine block, pistons, connecting rods, crankshaft, camshaft, and cylinder heads. Other accessories may come seperately:\nIntake and Exhaust Manifolds: These usually must be transferred from the old engine.\nEngine Electrical & Sensors: Wiring harnesses, fuel injectors, ignition coils, and alternators are normally excluded.Turbocharger: If your vehicle is turbocharged, it does not come with the turbo unless specifically ordered as a long-block variant that includes it.\nFuel System Components: High-pressure fuel pumps and related lines are generally omitted.\nFront End Accessories: Water pumps, power steering pumps, A/C compressors, and drive belts.",
+    "source": "Manual Entry",
+    "updated": "2026-06-10 04:21:47"
   },
   {
     "basic": "6007",
-    "description": "Complete engine assembly",
+    "description": "Complete Dressed Engine Assembly",
     "category": "Engine",
-    "aliases": "",
+    "aliases": "Complete Engine",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "",
+    "notes": "The engine block, cylinder heads, oil pan, valve covers, timing cover, water pump, and all front-drive accessories (alternator, power steering, A/C compressor, and sometimes the turbocharger)",
     "source": "Preview starter dataset",
-    "updated": ""
+    "updated": "2026-06-10 04:18:42"
   },
   {
     "basic": "6009",
