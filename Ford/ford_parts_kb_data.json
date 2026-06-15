@@ -3793,15 +3793,15 @@
   },
   {
     "basic": "3069",
-    "description": "Lower control arm bushing",
+    "description": "Front Lower Control Arm Bushing",
     "category": "Front axle / suspension",
-    "aliases": "",
+    "aliases": "LCA bush, Front Lower Control Arm Bushing",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "notes": "May not be applicable to certain cars and you'll have to get the arm itself (Callout 3078)",
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 22:49:57"
   },
   {
     "basic": "3078",
@@ -6481,15 +6481,15 @@
   },
   {
     "basic": "18124",
-    "description": "Front shock",
-    "category": "Suspension",
-    "aliases": "muffler, silencer, rear muffler",
+    "description": "Front Suspension Absorber",
+    "category": "Front axle / suspension",
+    "aliases": "front suspension absorber, front suspension shock, front coil absorber, front coil shock",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 23:10:14"
   },
   {
     "basic": "18125",
@@ -6517,15 +6517,15 @@
   },
   {
     "basic": "3A197",
-    "description": "Spring seats",
-    "category": "Suspension",
-    "aliases": "",
+    "description": "Front Upper Suspension Strut Mount",
+    "category": "Front axle / suspension",
+    "aliases": "strut top, absorber top mount, shock top mount, top mount, strut bearing plate",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 22:55:22"
   },
   {
     "basic": "3B186",
@@ -6601,15 +6601,15 @@
   },
   {
     "basic": "5310",
-    "description": "Front suspension air bag / coil spring",
-    "category": "Suspension",
-    "aliases": "spring, front spring, coil spring",
+    "description": "Front Suspension Coil",
+    "category": "Front axle / suspension",
+    "aliases": "front suspension spring, front suspension coil, front coil spring",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 23:09:26"
   },
   {
     "basic": "5319",
@@ -6727,9 +6727,9 @@
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "Eaton example uses 5560 as coil spring group",
-    "source": "Preview starter dataset",
-    "updated": ""
+    "notes": "",
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 23:10:58"
   },
   {
     "basic": "5580",
@@ -8182,5 +8182,53 @@
     "notes": "Interior ultrasonic sensors for detecting unauthorised access to the vehicle.",
     "source": "Manual Entry",
     "updated": "2026-06-10 02:38:57"
+  },
+  {
+    "basic": "18061",
+    "description": "Front Suspension Strut Bumper",
+    "category": "Front axle / suspension",
+    "aliases": "front suspension strut bumper",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "Also shows as 18A085/3020\nAbsorbs extreme suspension travel to protect struts and prevent metal-on-metal bottoming out.",
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 23:04:53"
+  },
+  {
+    "basic": "3020",
+    "description": "Front Suspension Strut Bumper",
+    "category": "Front axle / suspension",
+    "aliases": "front suspension strut bumper",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "Also shows as 18A085/18061\nAbsorbs extreme suspension travel to protect struts and prevent metal-on-metal bottoming out.",
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 23:05:12"
+  },
+  {
+    "basic": "18A085",
+    "description": "Front Suspension Strut Bumper",
+    "category": "Front axle / suspension",
+    "aliases": "front suspension strut bumper",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "Also shows as 3020/18061\nAbsorbs extreme suspension travel to protect struts and prevent metal-on-metal bottoming out.",
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 23:05:36"
+  },
+  {
+    "basic": "18A047",
+    "description": "Front Suspension Strut Dust Cover and Boot Kit",
+    "category": "Front axle / suspension",
+    "aliases": "shock boot, absorber boot, dust boot,",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "Manual Entry -Ash",
+    "updated": "2026-06-14 23:06:56"
   }
 ]
