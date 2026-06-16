@@ -32,5 +32,22 @@
     "description": "In the Transit Tow Pack, Existing wiring harness P/N RK3Z15A416F was too short in length for certain variants (LWB).",
     "status": "Current",
     "supersededBy": ""
+  },
+  "22S06": {
+    "number": "22S06",
+    "type": "FSA",
+    "displayNumber": "22S06",
+    "title": "22S06 – MUSTANG Luggage Compartment Lid Wiring and Rear View Camera Inspection",
+    "model": "Mustang",
+    "yearRange": "2015-2017, 2016-2017",
+    "years": [
+      "2015-2017",
+      "2016-2017"
+    ],
+    "concern": "In all of the affected vehicles, damage to the luggage compartment lid wiring harness in the area of the\nright side luggage compartment lid hinge may lead to intermittent rear view camera operation, loss of\nsatellite radio reception, inoperative luggage compartment lamp and/or inoperable luggage\ncompartment release.\nIn addition, in some of the affected 2015 model year vehicles, insufficient electrical conductivity within\nthe Printed Circuit Board (PCB) internal to the camera may also lead to intermittent rear view camera\noperation",
+    "symptom": "In all of the affected vehicles, damage to the luggage compartment lid wiring harness in the area of the\nright side luggage compartment lid hinge may lead to intermittent rear view camera operation, loss of\nsatellite radio reception, inoperative luggage compartment lamp and/or inoperable luggage\ncompartment release.\nIn addition, in some of the affected 2015 model year vehicles, insufficient electrical conductivity within\nthe Printed Circuit Board (PCB) internal to the camera may also lead to intermittent rear view camera\noperation",
+    "description": "In all of the affected vehicles, damage to the luggage compartment lid wiring harness in the area of the\nright side luggage compartment lid hinge may lead to intermittent rear view camera operation, loss of\nsatellite radio reception, inoperative luggage compartment lamp and/or inoperable luggage\ncompartment release.\nIn addition, in some of the affected 2015 model year vehicles, insufficient electrical conductivity within\nthe Printed Circuit Board (PCB) internal to the camera may also lead to intermittent rear view camera\noperation",
+    "status": "Current",
+    "supersededBy": ""
   }
 }
