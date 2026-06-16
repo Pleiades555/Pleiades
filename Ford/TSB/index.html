@@ -3,87 +3,588 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ford TSB Library</title>
+  <title>Ford Technical Bulletin Library | Pleiades</title>
   <style>
-    :root { --bg:#0b1220; --panel:rgba(255,255,255,.08); --panel2:rgba(255,255,255,.12); --text:#f4f7fb; --muted:#b8c1d1; --accent:#6ec6ff; --warn:#ffb74d; --ok:#81c784; }
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#07101f,#14213d);color:var(--text);min-height:100vh}
-    header{padding:28px 20px;text-align:center;background:rgba(0,0,0,.35);border-bottom:1px solid rgba(255,255,255,.12)}
-    header h1{margin:0 0 8px;font-size:32px} header p{margin:0;color:var(--muted)}
-    main{max-width:1250px;margin:0 auto;padding:24px}
-    .toolbar{background:var(--panel);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:18px;margin-bottom:20px;backdrop-filter:blur(8px)}
-    #search{width:100%;padding:16px 18px;font-size:17px;border:0;border-radius:12px;outline:none;margin-bottom:14px}
-    .filters{display:flex;gap:10px;flex-wrap:wrap}.filters select,.filters button{padding:10px 12px;border:0;border-radius:10px;background:var(--panel2);color:var(--text)}
-    .stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:14px}.stat{background:rgba(0,0,0,.2);padding:8px 10px;border-radius:999px}
-    .card{background:var(--panel);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
-    .card.superseded{border-left:6px solid var(--warn)}.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.title{font-size:20px;font-weight:700;margin:0 0 6px}.meta{color:var(--muted);font-size:14px;line-height:1.5}.badge{display:inline-block;padding:4px 9px;border-radius:999px;font-size:12px;margin-right:6px;background:rgba(255,255,255,.15)}.badge.warn{background:var(--warn);color:#1b1000}.badge.ok{background:var(--ok);color:#06140a}
-    .section{margin-top:12px}.label{font-weight:700;color:#dbe9ff;margin-bottom:4px}.text{color:#eef3fb;line-height:1.45}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.chip{font-size:12px;padding:4px 8px;border-radius:999px;background:rgba(110,198,255,.16);border:1px solid rgba(110,198,255,.25)}
-    ul.compact{margin:6px 0 0 20px;padding:0} ul.compact li{margin:4px 0;color:#eef3fb}.actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}.actions a{color:#061424;background:var(--accent);padding:9px 12px;border-radius:10px;text-decoration:none;font-weight:700}.actions a.secondary{background:rgba(255,255,255,.14);color:var(--text)}
-    .empty{padding:30px;text-align:center;color:var(--muted)}
+    :root {
+      --bg: #07111f;
+      --panel: rgba(13, 25, 43, 0.92);
+      --panel-soft: rgba(255, 255, 255, 0.055);
+      --line: rgba(255, 255, 255, 0.12);
+      --text: #eef5ff;
+      --muted: #9fb2c9;
+      --accent: #5db7ff;
+      --accent-2: #8ad7ff;
+      --warning: #f2b84b;
+      --good: #64d48c;
+      --bad: #ff7b7b;
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(44, 142, 255, 0.22), transparent 34rem),
+        radial-gradient(circle at bottom right, rgba(0, 78, 162, 0.28), transparent 28rem),
+        linear-gradient(135deg, #050b14, var(--bg));
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(5, 11, 20, 0.82);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #0b5cab, #60c8ff);
+      box-shadow: 0 12px 26px rgba(57, 160, 255, 0.24);
+      font-weight: 900;
+    }
+
+    .small-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .passcode {
+      width: 94px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.07);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 12px;
+      outline: none;
+      text-align: center;
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.08);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 10px 15px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, #1464b8, #5ebfff);
+      border-color: rgba(255,255,255,0.24);
+      color: white;
+    }
+
+    .wrap {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 34px 22px 64px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.85fr);
+      gap: 22px;
+      align-items: stretch;
+      margin-bottom: 22px;
+    }
+
+    .hero-card, .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card { padding: 30px; }
+
+    .eyebrow {
+      color: var(--accent-2);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.55;
+      max-width: 780px;
+    }
+
+    .stats {
+      padding: 22px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .stat {
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      padding: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .search-panel { padding: 20px; margin-bottom: 22px; }
+
+    .search-row {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) 180px 180px 160px;
+      gap: 12px;
+    }
+
+    input, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.08);
+      color: var(--text);
+      border-radius: 15px;
+      padding: 14px 15px;
+      outline: none;
+      font-size: 15px;
+    }
+
+    select option { color: #111; }
+
+    .result-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 2px 16px;
+      color: var(--muted);
+      gap: 12px;
+    }
+
+    .results {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(12, 23, 39, 0.94);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 280px;
+      box-shadow: 0 18px 48px rgba(0,0,0,0.22);
+    }
+
+    .card-head {
+      padding: 18px 18px 0;
+    }
+
+    .meta-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.07);
+      border-radius: 999px;
+      padding: 6px 9px;
+      font-size: 12px;
+      color: #dbeaff;
+      font-weight: 700;
+    }
+
+    .pill.good { color: #dfffe9; border-color: rgba(100,212,140,0.35); background: rgba(100,212,140,0.1); }
+    .pill.warn { color: #fff0cc; border-color: rgba(242,184,75,0.38); background: rgba(242,184,75,0.12); }
+
+    .number {
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin: 0 0 9px;
+    }
+
+    .title {
+      color: #d8e8fb;
+      line-height: 1.35;
+      margin: 0 0 12px;
+      font-weight: 750;
+    }
+
+    .details {
+      padding: 0 18px 18px;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+      flex: 1;
+    }
+
+    .field {
+      margin-top: 10px;
+    }
+
+    .field b { color: #f5f9ff; }
+
+    .card-actions {
+      border-top: 1px solid var(--line);
+      padding: 14px 18px;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255,255,255,0.035);
+    }
+
+    .open-link {
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(135deg, #145ea9, #4db9ff);
+      padding: 10px 13px;
+      border-radius: 12px;
+      font-weight: 800;
+    }
+
+    .file-name {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .advanced {
+      display: none;
+      margin-top: 22px;
+      padding: 22px;
+    }
+
+    .advanced.unlocked { display: block; }
+
+    .advanced-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .instruction {
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    code {
+      color: #d7efff;
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 7px;
+    }
+
+    .empty, .loading, .error {
+      grid-column: 1 / -1;
+      padding: 24px;
+      border: 1px dashed var(--line);
+      border-radius: 18px;
+      color: var(--muted);
+      text-align: center;
+      background: rgba(255,255,255,0.035);
+    }
+
+    @media (max-width: 920px) {
+      .hero { grid-template-columns: 1fr; }
+      .search-row { grid-template-columns: 1fr; }
+      .topbar-inner { align-items: flex-start; flex-direction: column; }
+      .small-actions { width: 100%; justify-content: flex-end; }
+    }
   </style>
 </head>
 <body>
-<header><h1>Ford TSB / FSA / SSM Library</h1><p>Search by model, year, TSB/FSA/SSM number, symptom, concern, part number or conditional ordering logic.</p></header>
-<main>
-  <div class="toolbar">
-    <input id="search" type="search" placeholder="Search Ranger, 26-2159, 23P23, battery drain, part number, if damaged order..." />
-    <div class="filters">
-      <select id="typeFilter"><option value="">All types</option><option>TSB</option><option>FSA</option><option>SSM</option><option>Recall</option></select>
-      <select id="statusFilter"><option value="">All statuses</option><option>Current</option><option>Superseded</option></select>
-      <button id="clearBtn">Clear</button>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="mark">F</div>
+        <div>
+          <div>Ford Technical Bulletin Library</div>
+          <small style="color: var(--muted);">Pleiades Knowledge Base</small>
+        </div>
+      </div>
+      <div class="small-actions">
+        <input id="adminPass" class="passcode" type="password" placeholder="Passcode" aria-label="Advanced passcode" />
+        <button id="unlockBtn" class="btn">Advanced</button>
+      </div>
     </div>
-    <div class="stats" id="stats"></div>
-  </div>
-  <div id="results" class="results"><div class="empty">Loading Ford TSB index...</div></div>
-</main>
-<script>
-let records=[];
-const $=id=>document.getElementById(id);
-function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-function pdfHref(path){return encodeURI('../../' + path).replace(/#/g,'%23');}
-function arr(v){return Array.isArray(v)?v:(v?[v]:[])}
-async function load(){
-  try{
-    const res=await fetch('data/tsb-index.json?v='+Date.now(),{cache:'no-store'});
-    records=await res.json();
-    render();
-  }catch(e){$('results').innerHTML='<div class="empty">Could not load data/tsb-index.json. Run the GitHub Action to generate the index.</div>';}
-}
-function filtered(){
-  const q=$('search').value.trim().toLowerCase(); const t=$('typeFilter').value; const s=$('statusFilter').value;
-  return records.filter(r=>{
-    if(t && r.type!==t) return false; if(s && r.status!==s) return false;
-    if(!q) return true;
-    const hay=(r.searchText || [r.number,r.type,r.title,r.model,r.yearRange,r.symptom,r.concern,r.filename,...arr(r.partNumbers),...arr(r.partsTable),...arr(r.conditionalLogic)].join(' ')).toLowerCase();
-    return hay.includes(q);
-  });
-}
-function stats(list){
-  const total=records.length, shown=list.length, current=records.filter(r=>r.status==='Current').length, sup=records.filter(r=>r.status==='Superseded').length;
-  $('stats').innerHTML=`<span class="stat">${shown} shown</span><span class="stat">${total} total</span><span class="stat">${current} current</span><span class="stat">${sup} superseded</span>`;
-}
-function render(){
-  const list=filtered(); stats(list);
-  if(!list.length){$('results').innerHTML='<div class="empty">No matching bulletins found.</div>';return;}
-  $('results').innerHTML=list.map(r=>card(r)).join('');
-}
-function card(r){
-  const parts=arr(r.partNumbers), table=arr(r.partsTable), logic=arr(r.conditionalLogic);
-  const supersedes=arr(r.supersedes), supBy=arr(r.supersededBy);
-  return `<article class="card ${r.status==='Superseded'?'superseded':''}">
-    <div class="top"><div><div class="title">${esc(r.number||r.tsbNumber||'Unknown number')} — ${esc(r.title||r.filename||'Untitled')}</div>
-    <div class="meta"><span class="badge">${esc(r.type||'TSB')}</span><span class="badge ${r.status==='Superseded'?'warn':'ok'}">${esc(r.status||'Current')}</span>
-    <strong>Model:</strong> ${esc(r.model||'Unknown')} &nbsp; <strong>Years:</strong> ${esc(r.yearRange||'Unknown')}</div></div></div>
-    <div class="section"><div class="label">Symptom / Concern</div><div class="text">${esc(r.symptom||r.concern||r.description||'Not extracted')}</div></div>
-    ${parts.length?`<div class="section"><div class="label">Parts / Part Numbers Found</div><div class="chips">${parts.map(p=>`<span class="chip">${esc(p)}</span>`).join('')}</div></div>`:''}
-    ${table.length?`<div class="section"><div class="label">Parts Table / Parts Section Extract</div><ul class="compact">${table.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
-    ${logic.length?`<div class="section"><div class="label">If-Clause / Conditional Ordering Logic</div><ul class="compact">${logic.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}
-    ${supersedes.length||supBy.length?`<div class="section"><div class="label">Supersession</div><div class="text">${supersedes.length?`Supersedes: ${esc(supersedes.join(', '))}. `:''}${supBy.length?`Superseded by: ${esc(Array.isArray(supBy)?supBy.join(', '):supBy)}.`:''}</div></div>`:''}
-    <div class="actions"><a href="${pdfHref(r.file)}" target="_blank" rel="noopener">Open PDF</a><a class="secondary" href="${pdfHref(r.file)}" download>Download</a></div>
-  </article>`;
-}
-['search','typeFilter','statusFilter'].forEach(id=>$(id).addEventListener('input',render));
-$('clearBtn').addEventListener('click',()=>{$('search').value='';$('typeFilter').value='';$('statusFilter').value='';render();});
-load();
-</script>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="eyebrow">Ford Service Intelligence</div>
+        <h1>Technical Bulletins, FSAs, Recalls & SSMs</h1>
+        <p>Search by bulletin number, model, year range, symptom, concern, FSA, recall number or PDF filename. Superseded documents remain visible and clearly marked for reference.</p>
+      </div>
+      <aside class="panel stats">
+        <div class="stat"><strong id="totalCount">0</strong><span>Total documents</span></div>
+        <div class="stat"><strong id="currentCount">0</strong><span>Current</span></div>
+        <div class="stat"><strong id="supersededCount">0</strong><span>Superseded</span></div>
+        <div class="stat"><strong id="shownCount">0</strong><span>Showing</span></div>
+      </aside>
+    </section>
+
+    <section class="panel search-panel">
+      <div class="search-row">
+        <input id="searchInput" type="search" placeholder="Search Ranger, 23P23, 26-2159, battery drain, vibration, FSA..." autocomplete="off" />
+        <select id="typeFilter">
+          <option value="">All types</option>
+          <option value="TSB">TSB</option>
+          <option value="FSA">FSA</option>
+          <option value="SSM">SSM</option>
+          <option value="Recall">Recall</option>
+        </select>
+        <select id="statusFilter">
+          <option value="">All statuses</option>
+          <option value="Current">Current</option>
+          <option value="Superseded">Superseded</option>
+        </select>
+        <select id="sortFilter">
+          <option value="number">Sort by number</option>
+          <option value="model">Sort by model</option>
+          <option value="status">Sort by status</option>
+          <option value="title">Sort by title</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="result-toolbar">
+      <span id="resultSummary">Loading index...</span>
+      <button class="btn" id="clearBtn">Clear search</button>
+    </div>
+
+    <section id="results" class="results">
+      <div class="loading">Loading Ford TSB index...</div>
+    </section>
+
+    <section id="advancedPanel" class="panel advanced">
+      <div class="eyebrow">Advanced / Admin Notes</div>
+      <h2 style="margin-top:0;">Maintenance instructions</h2>
+      <div class="advanced-grid">
+        <div class="instruction">
+          <b>Adding PDFs</b><br />
+          Upload current PDFs into <code>Ford/TSB/pdf/</code>. Upload known superseded PDFs into <code>Ford/TSB/archive/superseded/</code>.
+        </div>
+        <div class="instruction">
+          <b>Regenerating the index</b><br />
+          Go to GitHub Actions and run <code>Update Ford TSB Index</code>. The script writes <code>Ford/TSB/data/tsb-index.json</code>.
+        </div>
+        <div class="instruction">
+          <b>Manual corrections</b><br />
+          Use <code>Ford/TSB/data/manual-overrides.json</code> if a PDF title, year, model or concern extracts incorrectly.
+        </div>
+        <div class="instruction">
+          <b>Passcode</b><br />
+          Advanced view is hidden by default. Enter <code>11290</code> in the top-right passcode field to unlock this panel.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const INDEX_URL = "data/tsb-index.json?v=" + Date.now();
+    const PASSCODE = "11290";
+    let allItems = [];
+
+    const el = (id) => document.getElementById(id);
+    const clean = (value) => (value || "").toString().trim();
+    const escapeHtml = (value) => clean(value).replace(/[&<>"']/g, (m) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
+
+    function primaryNumber(item) {
+      return clean(item.displayNumber || item.number || item.tsbNumber || item.bulletinNumber || item.filename || "Unknown");
+    }
+
+    function safeFileUrl(item) {
+      const file = clean(item.file);
+      if (!file) return "#";
+      if (file.startsWith("http")) return file;
+      if (file.startsWith("Ford/TSB/")) return "../../" + file;
+      if (file.startsWith("pdf/") || file.startsWith("archive/")) return file;
+      return file;
+    }
+
+    function updateStats(items) {
+      el("totalCount").textContent = allItems.length;
+      el("currentCount").textContent = allItems.filter(x => clean(x.status) !== "Superseded").length;
+      el("supersededCount").textContent = allItems.filter(x => clean(x.status) === "Superseded").length;
+      el("shownCount").textContent = items.length;
+    }
+
+    function render(items) {
+      updateStats(items);
+      el("resultSummary").textContent = `${items.length} result${items.length === 1 ? "" : "s"} shown`;
+
+      if (!items.length) {
+        el("results").innerHTML = `<div class="empty">No matching bulletins found.</div>`;
+        return;
+      }
+
+      el("results").innerHTML = items.map(item => {
+        const number = escapeHtml(primaryNumber(item));
+        const type = escapeHtml(item.type || "Bulletin");
+        const status = clean(item.status) === "Superseded" ? "Superseded" : "Current";
+        const title = escapeHtml(item.title || item.description || "Untitled bulletin");
+        const model = escapeHtml(item.model || "Not detected");
+        const years = escapeHtml(item.yearRange || (Array.isArray(item.years) ? item.years.join(", ") : "Not detected"));
+        const concern = escapeHtml(item.concern || item.symptom || item.description || "No concern extracted. Open the PDF for full details.");
+        const fileName = escapeHtml(item.filename || item.file || "PDF");
+        const url = safeFileUrl(item);
+        const sup = Array.isArray(item.supersededBy) ? item.supersededBy.join(", ") : item.supersededBy;
+
+        return `
+          <article class="card">
+            <div class="card-head">
+              <div class="meta-line">
+                <span class="pill">${type}</span>
+                <span class="pill ${status === "Superseded" ? "warn" : "good"}">${status}</span>
+              </div>
+              <h2 class="number">${number}</h2>
+              <p class="title">${title}</p>
+            </div>
+            <div class="details">
+              <div class="field"><b>Model:</b> ${model}</div>
+              <div class="field"><b>Years:</b> ${years}</div>
+              <div class="field"><b>Concern:</b> ${concern}</div>
+              ${sup ? `<div class="field"><b>Superseded by:</b> ${escapeHtml(sup)}</div>` : ""}
+            </div>
+            <div class="card-actions">
+              <span class="file-name" title="${fileName}">${fileName}</span>
+              <a class="open-link" href="${url}" target="_blank" rel="noopener">Open PDF</a>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function applyFilters() {
+      const q = clean(el("searchInput").value).toLowerCase();
+      const type = clean(el("typeFilter").value);
+      const status = clean(el("statusFilter").value);
+      const sort = clean(el("sortFilter").value);
+
+      let items = allItems.filter(item => {
+        const text = clean(item.searchText || Object.values(item).flat().join(" ")).toLowerCase();
+        const typeMatch = !type || clean(item.type) === type;
+        const statusMatch = !status || clean(item.status || "Current") === status;
+        return typeMatch && statusMatch && (!q || text.includes(q));
+      });
+
+      items.sort((a, b) => {
+        const av = sort === "number" ? primaryNumber(a) : clean(a[sort]);
+        const bv = sort === "number" ? primaryNumber(b) : clean(b[sort]);
+        return av.localeCompare(bv, undefined, { numeric: true, sensitivity: "base" });
+      });
+
+      render(items);
+    }
+
+    async function loadIndex() {
+      try {
+        const res = await fetch(INDEX_URL);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        allItems = Array.isArray(data) ? data : [];
+        applyFilters();
+      } catch (error) {
+        el("results").innerHTML = `<div class="error">Could not load <code>Ford/TSB/data/tsb-index.json</code>. Run the GitHub Action or check the JSON file.</div>`;
+        el("resultSummary").textContent = "Index load failed";
+      }
+    }
+
+    ["searchInput", "typeFilter", "statusFilter", "sortFilter"].forEach(id => {
+      el(id).addEventListener("input", applyFilters);
+      el(id).addEventListener("change", applyFilters);
+    });
+
+    el("clearBtn").addEventListener("click", () => {
+      el("searchInput").value = "";
+      el("typeFilter").value = "";
+      el("statusFilter").value = "";
+      el("sortFilter").value = "number";
+      applyFilters();
+    });
+
+    el("unlockBtn").addEventListener("click", () => {
+      if (el("adminPass").value === PASSCODE) {
+        el("advancedPanel").classList.toggle("unlocked");
+        el("unlockBtn").textContent = el("advancedPanel").classList.contains("unlocked") ? "Hide advanced" : "Advanced";
+      } else {
+        el("adminPass").value = "";
+        el("adminPass").placeholder = "Wrong code";
+      }
+    });
+
+    el("adminPass").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") el("unlockBtn").click();
+    });
+
+    loadIndex();
+  </script>
 </body>
 </html>

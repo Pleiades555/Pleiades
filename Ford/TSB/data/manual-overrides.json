@@ -1,4 +1,13 @@
 {
-  "_instructions": "Optional manual corrections. Add a bulletin/program number as a key and override any generated field. Example: \"23P23\": {\"title\": \"Correct title\", \"model\": \"Ranger\", \"yearRange\": \"2022-2023\", \"symptom\": \"Correct concern text\"}",
-  "_global": {}
+  "_notes": "Use this file only when a PDF extracts incorrectly. Match by clean number, e.g. 23P23 or 26-2159.",
+  "_example": {
+    "23P23": {
+      "number": "23P23",
+      "type": "FSA",
+      "title": "Manual title here if required",
+      "model": "Manual model here if required",
+      "yearRange": "Manual years here if required",
+      "symptom": "Manual concern here if required"
+    }
+  }
 }
