@@ -1,1 +1,22 @@
-{}
+{
+  "03-8301": {
+    "number": "S1406",
+    "type": "FSA",
+    "displayNumber": "S1406",
+    "title": "WS Fiesta ECOnetic (Diesel)",
+    "model": "Fiesta",
+    "yearRange": "2010, 2011, 2012, 2014, 2015",
+    "years": [
+      "2010",
+      "2011",
+      "2012",
+      "2014",
+      "2015"
+    ],
+    "concern": "S1406 – WS Fiesta ECOnetic (Diesel)",
+    "symptom": "S1406 – WS Fiesta ECOnetic (Diesel)",
+    "description": "S1406 – WS Fiesta ECOnetic (Diesel)",
+    "status": "Current",
+    "supersededBy": ""
+  }
+}
