@@ -1,1 +1,20 @@
-{}
+{
+  "03-8301": {
+    "number": "S1406",
+    "type": "FSA",
+    "displayNumber": "S1406",
+    "title": "S1406 – WS Fiesta ECOnetic (Diesel) Glow Plug Control Module",
+    "model": "Fiesta",
+    "yearRange": "2010, 2011, 2012",
+    "years": [
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "concern": "The Glow Plug Control Module (GPCM) can be affected by wet conditions due to its\nlocation (front lower left hand side of the engine compartment). The GPCM is not water\nproof and water ingress into the module may cause overheating.\nDealers are required to replace the Glow Plug Control Module with a new water proof Glow\nPlug Control Module.\n\nParts required:\n1x AV61-12A343-CA\n1x SRCC 16D128 B",
+    "symptom": "The Glow Plug Control Module (GPCM) can be affected by wet conditions due to its\nlocation (front lower left hand side of the engine compartment). The GPCM is not water\nproof and water ingress into the module may cause overheating.\nDealers are required to replace the Glow Plug Control Module with a new water proof Glow\nPlug Control Module.\n\nParts required:\n1x AV61-12A343-CA\n1x SRCC 16D128 B",
+    "description": "The Glow Plug Control Module (GPCM) can be affected by wet conditions due to its\nlocation (front lower left hand side of the engine compartment). The GPCM is not water\nproof and water ingress into the module may cause overheating.\nDealers are required to replace the Glow Plug Control Module with a new water proof Glow\nPlug Control Module.\n\nParts required:\n1x AV61-12A343-CA\n1x SRCC 16D128 B",
+    "status": "Current",
+    "supersededBy": ""
+  }
+}
