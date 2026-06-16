@@ -1,5 +1,27 @@
 [
   {
+    "number": "FAB2026033",
+    "tsbNumber": "FAB2026033",
+    "bulletinNumber": "FAB2026033",
+    "displayNumber": "FAB2026033",
+    "type": "FAB",
+    "title": "FAB2026033 - Transit VO 25.5 MY Tow Pack Update (Long Wheel Base/LWB Wiring)",
+    "model": "Transit",
+    "years": [
+      "2026"
+    ],
+    "yearRange": "2026",
+    "symptom": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
+    "concern": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
+    "description": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": "",
+    "file": "Ford/TSB/pdf/FAB2026033.pdf",
+    "filename": "FAB2026033.pdf",
+    "searchText": "fab2026033 fab fab2026033 - transit vo 25.5 my tow pack update (long wheel base/lwb wiring) transit 2026 existing wiring harness p/n rk3z15a416f was short in length for certain variants (lwb). current fab2026033.pdf"
+  },
+  {
     "number": "14M02",
     "tsbNumber": "14M02",
     "bulletinNumber": "14M02",
@@ -508,28 +530,6 @@
     "file": "Ford/TSB/pdf/23S12.pdf",
     "filename": "23S12.pdf",
     "searchText": "23s12 recall 23s12 current 23s12.pdf"
-  },
-  {
-    "number": "FAB2026033",
-    "tsbNumber": "FAB2026033",
-    "bulletinNumber": "FAB2026033",
-    "displayNumber": "FAB2026033",
-    "type": "Recall",
-    "title": "CONFIDENTIAL: This Ford Accessories Bulletin is for internal purposes only and must not be disclosed to any person outside the Ford Dealer Network. - Ford Accessories Bulletin",
-    "model": "Transit",
-    "years": [
-      "2026"
-    ],
-    "yearRange": "2026",
-    "symptom": "CONFIDENTIAL: This Ford Accessories Bulletin is for internal purposes only and must not be disclosed to any person outside the Ford Dealer Network. - Ford Accessories Bulletin",
-    "concern": "CONFIDENTIAL: This Ford Accessories Bulletin is for internal purposes only and must not be disclosed to any person outside the Ford Dealer Network. - Ford Accessories Bulletin",
-    "description": "CONFIDENTIAL: This Ford Accessories Bulletin is for internal purposes only and must not be disclosed to any person outside the Ford Dealer Network. - Ford Accessories Bulletin",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/FAB2026033.pdf",
-    "filename": "FAB2026033.pdf",
-    "searchText": "fab2026033 recall confidential: this ford accessories bulletin is for internal purposes only and must not be disclosed to any person outside the ford dealer network. - ford accessories bulletin transit 2026 confidential: this ford accessories bulletin is for internal purposes only and must not be disclosed to any person outside the ford dealer network. - ford accessories bulletin current fab2026033.pdf"
   },
   {
     "number": "17-2062",
