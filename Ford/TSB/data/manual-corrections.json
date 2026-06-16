@@ -1,0 +1,16 @@
+{
+  "supersessions": {
+    "OLD-BULLETIN-NUMBER": "NEW-BULLETIN-NUMBER"
+  },
+  "metadata": {
+    "EXAMPLE-25-2205": {
+      "title": "Correct title here",
+      "model": [
+        "Ranger"
+      ],
+      "yearRange": "2022-2024",
+      "symptom": "Correct symptom/concern here",
+      "documentType": "TSB"
+    }
+  }
+}
