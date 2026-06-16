@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ford TSB & Bulletin Library</title>
+  <link rel="stylesheet" href="assets/css/tsb-library.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Pleiades · Ford Knowledge Base</p>
+      <h1>Ford TSB & Bulletin Library</h1>
+      <p class="subhead">Search by model, TSB/bulletin number, symptom, engine, transmission, status or supersession.</p>
+    </div>
+    <nav class="top-links">
+      <a href="../../Ford Web.html">Ford Home</a>
+      <a href="../Recalls/">Recalls</a>
+      <a href="../FSM/">FSM</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="search-panel">
+      <label for="tsbSearch">Search TSBs</label>
+      <input id="tsbSearch" type="search" placeholder="Example: 25-2205, Ranger PX3, vibration, battery drain, no start" autocomplete="off" />
+      <div class="filters">
+        <button type="button" class="filter active" data-filter="all">All</button>
+        <button type="button" class="filter" data-filter="current">Current</button>
+        <button type="button" class="filter" data-filter="superseded">Superseded</button>
+        <button type="button" class="filter" data-filter="missing-meta">Needs details</button>
+      </div>
+      <p id="summary" class="summary">Loading TSB index…</p>
+    </section>
+
+    <section id="results" class="results" aria-live="polite"></section>
+  </main>
+
+  <template id="resultTemplate">
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2 class="title"></h2>
+          <p class="meta"></p>
+        </div>
+        <span class="status"></span>
+      </div>
+      <p class="symptom"></p>
+      <div class="supersession"></div>
+      <div class="details"></div>
+      <div class="actions">
+        <a class="open" target="_blank" rel="noopener">Open PDF</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="assets/js/tsb-library.js"></script>
+</body>
+</html>
