@@ -1,14 +1,6 @@
 {
-  "supersessions": {
-    "EXAMPLE-OLD-TSB": "EXAMPLE-NEW-TSB"
-  },
-  "metadata": {
-    "EXAMPLE-TSB": {
-      "model": ["Ranger"],
-      "years": ["2022", "2023"],
-      "engine": ["P5AT"],
-      "symptom": ["Battery drain"],
-      "title": "Manual title override"
-    }
+  "_global": {},
+  "23P23": {
+    "type": "FSA"
   }
 }
