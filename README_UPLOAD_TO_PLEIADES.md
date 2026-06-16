@@ -1,28 +1,19 @@
-# Pleiades Ford TSB v10 - Advanced editor package
+# Pleiades Ford TSB v11 - Variant Parts Selector
 
-Upload the contents of this ZIP to the root of the Pleiades GitHub repository and overwrite existing files.
+Upload the contents of this ZIP to the root of your Pleiades repository.
 
-## What changed
+## Added
 
-- Keeps the v9 working PDF index generator.
-- Keeps clean bulletin number display and removes the parts table / if-clause sections.
-- Adds an Advanced panel behind passcode `11290`.
-- Advanced panel can:
-  - edit TSB/FSA/SSM/Recall fields by writing to `Ford/TSB/data/manual-overrides.json`
-  - upload PDFs to `Ford/TSB/pdf/` or `Ford/TSB/archive/superseded/`
-  - request the `Update Ford TSB Index` GitHub Action to regenerate JSON
+- A professional Variant Parts Selector section on `Ford/TSB/index.html`.
+- `Ford/TSB/data/variant-parts.json` for parts lists.
+- Supports:
+  - variant-specific parts, for example PX2, PX3, Next Gen
+  - static whole-model lists for TSBs that apply across all variants
+  - related TSB numbers per list
+  - advanced editor hidden behind passcode `11290`
 
-## Token safety
+## Important
 
-Do not hard-code a GitHub token in the HTML. The page asks for a token at runtime.
-Use a fine-grained GitHub token restricted to this repo with contents read/write and actions workflow permission.
+This does not hard-code any GitHub token into the page. The included advanced editor lets you edit and download `variant-parts.json`. You can then upload/commit the JSON safely.
 
-## After upload
-
-1. Go to the live page.
-2. Enter passcode `11290`.
-3. Open `GitHub connection`.
-4. Paste the token.
-5. Save connection.
-6. Edit fields or upload a PDF.
-7. The page will request the workflow to regenerate the JSON.
+The safer next step is adding a GitHub API push button that asks for the token at runtime only.

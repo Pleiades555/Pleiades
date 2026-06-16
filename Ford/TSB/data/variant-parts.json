@@ -1,0 +1,68 @@
+{
+  "models": [
+    {
+      "model": "Ranger",
+      "notes": "Example starter data only. Edit through advanced mode or directly in this JSON.",
+      "staticLists": [
+        {
+          "name": "Whole range / all variants",
+          "appliesTo": "All Ranger variants unless otherwise noted in the TSB",
+          "tsbNumbers": [],
+          "parts": [
+            {
+              "partNumber": "EXAMPLE-BASE",
+              "description": "Example common part",
+              "quantity": "1",
+              "notes": "Replace with genuine data"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant": "PX2",
+          "years": "2015-2018",
+          "engine": "2.2 / 3.2 Diesel",
+          "parts": []
+        },
+        {
+          "variant": "PX3",
+          "years": "2018-2022",
+          "engine": "2.0 Bi-Turbo / 3.2 Diesel",
+          "parts": []
+        },
+        {
+          "variant": "Next Gen",
+          "years": "2022+",
+          "engine": "2.0 Bi-Turbo / V6 Diesel / Petrol depending market",
+          "parts": []
+        }
+      ]
+    },
+    {
+      "model": "Everest",
+      "staticLists": [
+        {
+          "name": "Whole range / all variants",
+          "appliesTo": "All Everest variants unless otherwise noted in the TSB",
+          "tsbNumbers": [],
+          "parts": []
+        }
+      ],
+      "variants": [
+        {
+          "variant": "UA",
+          "years": "2015-2022",
+          "engine": "2.0 Bi-Turbo / 3.2 Diesel",
+          "parts": []
+        },
+        {
+          "variant": "Next Gen",
+          "years": "2022+",
+          "engine": "2.0 Bi-Turbo / V6 Diesel",
+          "parts": []
+        }
+      ]
+    }
+  ]
+}
