@@ -3,14 +3,26 @@
     "OLD-BULLETIN-NUMBER": "NEW-BULLETIN-NUMBER"
   },
   "metadata": {
+    "23P23": {
+      "documentNumber": "23P23",
+      "tsbNumber": "23P23",
+      "bulletinNumber": "23P23",
+      "documentType": "Customer Satisfaction Program"
+    },
     "EXAMPLE-25-2205": {
       "title": "Correct title here",
-      "model": [
-        "Ranger"
-      ],
+      "model": ["Ranger"],
       "yearRange": "2022-2024",
       "symptom": "Correct symptom/concern here",
       "documentType": "TSB"
+    }
+  },
+  "files": {
+    "23P23.pdf": {
+      "documentNumber": "23P23",
+      "tsbNumber": "23P23",
+      "bulletinNumber": "23P23",
+      "documentType": "Customer Satisfaction Program"
     }
   }
 }

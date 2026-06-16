@@ -1,60 +1,54 @@
-# Pleiades Ford TSB accuracy fix
+# Ford TSB v4 Concern / Symptom Cut-Off Fix
 
-Upload these files into the root of your Pleiades repository and overwrite existing files when asked.
+Upload the contents of this ZIP to the root of your Pleiades GitHub repository and overwrite existing files.
+
+Then run:
+
+GitHub > Actions > Update Ford TSB Index > Run workflow
 
 ## What this fixes
 
-- Better TSB/FSA/SSM number detection.
-- Year ranges now use vehicle/model context instead of random publication dates.
-- Titles now favour `Title`, `Subject`, or Issue/Concern wording instead of disclaimers/page text.
-- Symptoms now favour Ford fields such as `Issue`, `Condition`, `Concern`, `Reason For This Bulletin`, and `Summary`.
-- Supersession filter now correctly checks for non-empty supersession arrays.
-- Manual correction file added for PDFs that are badly formatted or image-only.
+This v4 update improves the Ford PDF parser where concerns/symptoms were being cut off.
 
-## Upload paths
+Previous behaviour:
+- grabbed only the first line or one continuation line after `Issue`, `Condition`, or `Reason For This Program`
+- stopped too early at punctuation or PDF line breaks
+- could miss the rest of the Ford concern statement
 
-```text
-.github/workflows/update-ford-tsb-index.yml
-Ford/TSB/index.html
-Ford/TSB/scripts/generate-tsb-index.py
-Ford/TSB/data/manual-corrections.json
-Ford/TSB/data/tsb-index.json
-```
+New behaviour:
+- allows multi-line Issue / Condition / Concern / Reason fields
+- stops only when it reaches real Ford section headers such as Service Procedure, Parts Requirements, Labor Allowance, Warranty Status, Affected Vehicles, etc.
+- expands fallback sentence extraction from 390 characters to 900 characters
+- keeps 23P23 / FSA / CSP / SSM / TSB number detection from v3
 
-## After upload
+## Files changed
 
-Go to GitHub Actions and run **Update Ford TSB Index** manually once.
+- `Ford/TSB/scripts/generate-tsb-index.py`
+- existing `index.html`, workflow, data folders and correction files are included so this can be uploaded as a complete patch
 
-The action will scan:
+## Manual corrections still supported
 
-```text
-Ford/TSB/pdf/
-Ford/TSB/archive/superseded/
-```
+For ugly PDFs, use:
 
-and rewrite:
+`Ford/TSB/data/manual-corrections.json`
 
-```text
-Ford/TSB/data/tsb-index.json
-```
-
-## Manual correction example
-
-Use `Ford/TSB/data/manual-corrections.json` like this when a PDF is ugly or image-only:
+Example:
 
 ```json
 {
-  "supersessions": {
-    "25-2205": "26-2159"
-  },
   "metadata": {
-    "26-2159": {
-      "title": "Battery drain / no start condition",
-      "model": ["Ranger", "Everest"],
-      "yearRange": "2022-2025",
-      "symptom": "Battery drain or intermittent no start condition.",
-      "documentType": "TSB"
+    "23P23": {
+      "documentNumber": "23P23",
+      "documentType": "Customer Satisfaction Program",
+      "title": "Your corrected title",
+      "model": ["Ranger"],
+      "yearRange": "2022-2023",
+      "symptom": "Full corrected concern text goes here.",
+      "needsReview": false,
+      "reviewReason": "manual correction applied"
     }
-  }
+  },
+  "files": {},
+  "supersessions": {}
 }
 ```

@@ -1,60 +1,39 @@
-# Pleiades Ford TSB accuracy fix
+# Ford TSB extraction fix notes v3
 
-Upload these files into the root of your Pleiades repository and overwrite existing files when asked.
+## Main change
 
-## What this fixes
+`23P23` style programme numbers are now treated as first-class Ford bulletin/campaign numbers.
 
-- Better TSB/FSA/SSM number detection.
-- Year ranges now use vehicle/model context instead of random publication dates.
-- Titles now favour `Title`, `Subject`, or Issue/Concern wording instead of disclaimers/page text.
-- Symptoms now favour Ford fields such as `Issue`, `Condition`, `Concern`, `Reason For This Bulletin`, and `Summary`.
-- Supersession filter now correctly checks for non-empty supersession arrays.
-- Manual correction file added for PDFs that are badly formatted or image-only.
+## Extraction priority
 
-## Upload paths
+The indexer now prioritises fields in this order:
+
+1. PDF filename
+2. Ford header fields
+3. first-page/header text
+4. early PDF body text
+5. filename fallback
+
+This prevents random body text, page numbers, publication dates and disclaimer text from becoming the title or bulletin number.
+
+## Ford number formats recognised
+
+- TSB: `23-2353`
+- SSM: `SSM52344`, `SSM 52344`
+- Safety/FSA: `23S33`, `23S33-S1`
+- Customer programmes: `23P23`, `23N06`, `25M01`
+- Other campaigns: `23B12`, `25C02`
+
+## Still not perfect
+
+Some PDFs are scanned images or have poor text extraction. These will appear in:
 
 ```text
-.github/workflows/update-ford-tsb-index.yml
-Ford/TSB/index.html
-Ford/TSB/scripts/generate-tsb-index.py
+Ford/TSB/data/tsb-review-report.json
+```
+
+Correct those in:
+
+```text
 Ford/TSB/data/manual-corrections.json
-Ford/TSB/data/tsb-index.json
-```
-
-## After upload
-
-Go to GitHub Actions and run **Update Ford TSB Index** manually once.
-
-The action will scan:
-
-```text
-Ford/TSB/pdf/
-Ford/TSB/archive/superseded/
-```
-
-and rewrite:
-
-```text
-Ford/TSB/data/tsb-index.json
-```
-
-## Manual correction example
-
-Use `Ford/TSB/data/manual-corrections.json` like this when a PDF is ugly or image-only:
-
-```json
-{
-  "supersessions": {
-    "25-2205": "26-2159"
-  },
-  "metadata": {
-    "26-2159": {
-      "title": "Battery drain / no start condition",
-      "model": ["Ranger", "Everest"],
-      "yearRange": "2022-2025",
-      "symptom": "Battery drain or intermittent no start condition.",
-      "documentType": "TSB"
-    }
-  }
-}
 ```

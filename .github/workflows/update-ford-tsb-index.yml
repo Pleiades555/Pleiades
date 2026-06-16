@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add Ford/TSB/data/tsb-index.json Ford/TSB/pdf Ford/TSB/archive/superseded Ford/TSB/index.html Ford/TSB/scripts/generate-tsb-index.py Ford/TSB/data/manual-corrections.json
-          git commit -m "Improve Ford TSB extraction and update index" || echo "No changes to commit"
+          git add Ford/TSB/data/tsb-index.json Ford/TSB/data/tsb-review-report.json Ford/TSB/pdf Ford/TSB/archive/superseded Ford/TSB/index.html Ford/TSB/scripts/generate-tsb-index.py Ford/TSB/data/manual-corrections.json
+          git commit -m "Improve Ford TSB extraction v3 and update index" || echo "No changes to commit"
           git push
