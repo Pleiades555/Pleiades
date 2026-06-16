@@ -16,5 +16,21 @@
     "description": "The Glow Plug Control Module (GPCM) can be affected by wet conditions due to its\nlocation (front lower left hand side of the engine compartment). The GPCM is not water\nproof and water ingress into the module may cause overheating.\nDealers are required to replace the Glow Plug Control Module with a new water proof Glow\nPlug Control Module.\n\nParts required:\n1x AV61-12A343-CA\n1x SRCC 16D128 B",
     "status": "Current",
     "supersededBy": ""
+  },
+  "FAB2026033": {
+    "number": "FAB2026033",
+    "type": "FAB",
+    "displayNumber": "FAB2026033",
+    "title": "FAB2026033 - Transit VO 25.5 MY Tow Pack Update (Long Wheel Base/LWB Wiring)",
+    "model": "Transit",
+    "yearRange": "2026",
+    "years": [
+      "2026"
+    ],
+    "concern": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
+    "symptom": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
+    "description": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
+    "status": "Current",
+    "supersededBy": ""
   }
 }
