@@ -1,9 +1,14 @@
 {
-  "README": "Use this file only when the PDF or filename does not contain enough detail. Key by TSB number or exact filename.",
-  "25-2205": {
-    "model": "Ranger PX3",
-    "vehicleGeneration": "PX3",
-    "symptom": "Example override only - replace or delete this entry",
-    "status": "Current"
+  "supersessions": {
+    "EXAMPLE-OLD-TSB": "EXAMPLE-NEW-TSB"
+  },
+  "metadata": {
+    "EXAMPLE-TSB": {
+      "model": ["Ranger"],
+      "years": ["2022", "2023"],
+      "engine": ["P5AT"],
+      "symptom": ["Battery drain"],
+      "title": "Manual title override"
+    }
   }
 }
