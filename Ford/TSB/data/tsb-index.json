@@ -285,22 +285,22 @@
     "bulletinNumber": "22S06",
     "displayNumber": "22S06",
     "type": "FSA",
-    "title": "22S06 – MUSTANG Luggage Compartment Lid Wiring Inspection and Rear View Camera Improper Function Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action wit",
+    "title": "22S06 – MUSTANG Luggage Compartment Lid Wiring and Rear View Camera Inspection",
     "model": "Mustang",
     "years": [
       "2015-2017",
       "2016-2017"
     ],
     "yearRange": "2015-2017, 2016-2017",
-    "symptom": "22S06 – MUSTANG Luggage Compartment Lid Wiring Inspection and Rear View Camera Improper Function Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action wit",
-    "concern": "22S06 – MUSTANG Luggage Compartment Lid Wiring Inspection and Rear View Camera Improper Function Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action wit",
-    "description": "22S06 – MUSTANG Luggage Compartment Lid Wiring Inspection and Rear View Camera Improper Function Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action wit",
+    "symptom": "In all of the affected vehicles, damage to the luggage compartment lid wiring harness in the area of the\nright side luggage compartment lid hinge may lead to intermittent rear view camera operation, loss of\nsatellite radio reception, inoperative luggage compartment lamp and/or inoperable luggage\ncompartment release.\nIn addition, in some of the affected 2015 model year vehicles, insufficient electrical conductivity within\nthe Printed Circuit Board (PCB) internal to the camera may also lead to intermittent rear view camera\noperation",
+    "concern": "In all of the affected vehicles, damage to the luggage compartment lid wiring harness in the area of the\nright side luggage compartment lid hinge may lead to intermittent rear view camera operation, loss of\nsatellite radio reception, inoperative luggage compartment lamp and/or inoperable luggage\ncompartment release.\nIn addition, in some of the affected 2015 model year vehicles, insufficient electrical conductivity within\nthe Printed Circuit Board (PCB) internal to the camera may also lead to intermittent rear view camera\noperation",
+    "description": "In all of the affected vehicles, damage to the luggage compartment lid wiring harness in the area of the\nright side luggage compartment lid hinge may lead to intermittent rear view camera operation, loss of\nsatellite radio reception, inoperative luggage compartment lamp and/or inoperable luggage\ncompartment release.\nIn addition, in some of the affected 2015 model year vehicles, insufficient electrical conductivity within\nthe Printed Circuit Board (PCB) internal to the camera may also lead to intermittent rear view camera\noperation",
     "status": "Current",
     "supersedes": [],
-    "supersededBy": [],
+    "supersededBy": "",
     "file": "Ford/TSB/pdf/22S06.pdf",
     "filename": "22S06.pdf",
-    "searchText": "22s06 fsa 22s06 – mustang luggage compartment lid wiring inspection and rear view camera improper function special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action wit mustang 2015-2017, 2016-2017 22s06 – mustang luggage compartment lid wiring inspection and rear view camera improper function special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action wit current 22s06.pdf"
+    "searchText": "22s06 fsa 22s06 – mustang luggage compartment lid wiring and rear view camera inspection mustang 2015-2017, 2016-2017 in all of the affected vehicles, damage to the luggage compartment lid wiring harness in the area of the right side luggage compartment lid hinge may lead to intermittent rear view camera operation, loss of satellite radio reception, inoperative luggage compartment lamp and/or inoperable luggage compartment release. in addition, in some of the affected 2015 model year vehicles, insufficient electrical conductivity within the printed circuit board (pcb) internal to the camera may also lead to intermittent rear view camera operation current 22s06.pdf"
   },
   {
     "number": "23B15",
