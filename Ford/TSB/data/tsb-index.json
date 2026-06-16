@@ -11,15 +11,15 @@
       "2026"
     ],
     "yearRange": "2026",
-    "symptom": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
-    "concern": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
-    "description": "Existing wiring harness P/N RK3Z15A416F was short in length for certain variants (LWB).",
+    "symptom": "In the Transit Tow Pack, Existing wiring harness P/N RK3Z15A416F was too short in length for certain variants (LWB).",
+    "concern": "In the Transit Tow Pack, Existing wiring harness P/N RK3Z15A416F was too short in length for certain variants (LWB).",
+    "description": "In the Transit Tow Pack, Existing wiring harness P/N RK3Z15A416F was too short in length for certain variants (LWB).",
     "status": "Current",
     "supersedes": [],
     "supersededBy": "",
     "file": "Ford/TSB/pdf/FAB2026033.pdf",
     "filename": "FAB2026033.pdf",
-    "searchText": "fab2026033 fab fab2026033 - transit vo 25.5 my tow pack update (long wheel base/lwb wiring) transit 2026 existing wiring harness p/n rk3z15a416f was short in length for certain variants (lwb). current fab2026033.pdf"
+    "searchText": "fab2026033 fab fab2026033 - transit vo 25.5 my tow pack update (long wheel base/lwb wiring) transit 2026 in the transit tow pack, existing wiring harness p/n rk3z15a416f was too short in length for certain variants (lwb). current fab2026033.pdf"
   },
   {
     "number": "14M02",
