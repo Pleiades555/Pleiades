@@ -1,6 +1,4 @@
 {
-  "_global": {},
-  "23P23": {
-    "type": "FSA"
-  }
+  "_instructions": "Optional manual corrections. Add a bulletin/program number as a key and override any generated field. Example: \"23P23\": {\"title\": \"Correct title\", \"model\": \"Ranger\", \"yearRange\": \"2022-2023\", \"symptom\": \"Correct concern text\"}",
+  "_global": {}
 }
