@@ -15,10 +15,174 @@
     "variants": {
       "1.6L TiVCT with DPS6 Powershift Transmission": [
         {
-          "partNumber": "BV61-3B436-VA",
+          "partNumber": "BV613B436VA",
           "qty": "1",
           "quantity": "1",
-          "description": "Shaft & Joint Assy RH",
+          "description": "Shaft and Joint Assembly RH",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "BV613B437VA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Shaft and Joint Assembly LH",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W520102S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "M8 Nut - Bearing Retainer",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "97AG3N324AC",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Retainer Bearing",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W707209S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "Bolt - Ball Joint",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W520415S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "Nut - Ball Joint",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "SRCC16D128B",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Campaign Completion Decal",
+          "comments": "",
+          "note": ""
+        }
+      ],
+      "2.0L GDI with MTX75 Transmission": [
+        {
+          "partNumber": "BV613B436XA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Shaft and Joint Assembly RH",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "BV613B437XA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Shaft and Joint Assembly LH",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W520102S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "M8 Nut - Bearing Retainer",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "97AG3N324AC",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Retainer Bearing",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W707209S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "Bolt - Ball Joint",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W520415S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "Nut – Ball Joint",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "SRCC16D128B",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Campaign Completion Decal",
+          "comments": "",
+          "note": ""
+        }
+      ],
+      "2.0L GDI with DPS6 PowerShift Transmission": [
+        {
+          "partNumber": "BV613B436ZA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Shaft and Joint Assembly RH",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "BV613B437ZA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Shaft and Joint Assembly LH",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W520102S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "M8 Nut – Bearing Retainer",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "97AG3N324AC",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Retainer Bearing",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W707209S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "Bolt – Ball Joint",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W520415S442",
+          "qty": "2",
+          "quantity": "2",
+          "description": "Nut – Ball Joint",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "SRCC16D128B",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Campaign Completion Decal",
           "comments": "",
           "note": ""
         }
