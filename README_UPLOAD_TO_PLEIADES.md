@@ -1,18 +1,17 @@
-# Ford TSB v18 Production Polish
+# Ford TSB v18.1 Scenery + ERA Parts Alignment Update
 
-Upload these files to the root of the Pleiades repository and overwrite existing files.
+Upload these files to the root of your Pleiades GitHub repository and overwrite existing files.
 
-Included:
+## Included
+- Adds an **Enjoy the scenery** button at the top right.
+  - This hides the page overlay/content so the GT40 background can be viewed clearly.
+  - Press **Back to TSBs** to restore the normal readable website.
+- Cleans up ERA Parts rows.
+  - Part Number, Qty, Description and Copy now align horizontally on desktop.
+  - The variant/scope chip such as **Whole bulletin** has more breathing room under the part number.
+  - Mobile layout still stacks cleanly.
 
-- `Ford/TSB/index.html` updated with:
-  - GT40 background image
-  - dark readability overlay
-  - glass-style panels/cards
-  - mobile responsive layout
-  - mobile-friendly ERA parts layout
-  - full-width mobile Open PDF/Copy buttons
-  - better spacing around part numbers, scope chips and variant groups
-- `Ford/TSB/images/gt40-background.jpg`
-- Existing workflow and parser files are included from the previous update so the package can be uploaded as one folder.
+## Files changed
+- `Ford/TSB/index.html`
 
-Do not overwrite your live `manual-overrides.json` or `manual-parts.json` if GitHub asks, unless you intentionally want to replace your manual edits.
+No data files are included, so this will not overwrite your live manual edits, `manual-overrides.json`, or `manual-parts.json`.
