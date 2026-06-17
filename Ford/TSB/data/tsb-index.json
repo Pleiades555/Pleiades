@@ -32,6 +32,52 @@
     }
   },
   {
+    "number": "23P23",
+    "tsbNumber": "23P23",
+    "bulletinNumber": "23P23",
+    "displayNumber": "23P23",
+    "type": "FSA",
+    "title": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose",
+    "model": "Ranger, Everest",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "yearRange": "2021, 2022, 2023, 2024",
+    "fordUploadDate": "2023-12-22",
+    "issueDate": "2023-12-23",
+    "symptom": "In some affected Stage V Panther 2.0L Bi-Turbo Ranger/Everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. In some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable.\nThe driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. The engine will continue to run at decreased power, but with hesitation and/or a misfire.",
+    "concern": "In some affected Stage V Panther 2.0L Bi-Turbo Ranger/Everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. In some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable.\nThe driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. The engine will continue to run at decreased power, but with hesitation and/or a misfire.",
+    "description": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/23P23.pdf",
+    "filename": "23P23.pdf",
+    "manualOnly": false,
+    "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose ranger, everest 2021, 2022, 2023, 2024 2023-12-22 2023-12-23 in some affected stage v panther 2.0l bi-turbo ranger/everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. in some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable. the driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. the engine will continue to run at decreased power, but with hesitation and/or a misfire. current 23p23.pdf",
+    "parts": {
+      "staticParts": [
+        {
+          "partNumber": "MB3Z6C646R",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Duct Air/Intercooler Hose",
+          "comments": "",
+          "note": ""
+        }
+      ],
+      "variants": {}
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2244",
     "tsbNumber": "26-2244",
     "bulletinNumber": "26-2244",
@@ -921,52 +967,6 @@
       "variants": {}
     },
     "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "23P23",
-    "tsbNumber": "23P23",
-    "bulletinNumber": "23P23",
-    "displayNumber": "23P23",
-    "type": "FSA",
-    "title": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
-    "model": "Ranger, Everest",
-    "years": [
-      "2021",
-      "2022",
-      "2023",
-      "2024"
-    ],
-    "yearRange": "2021, 2022, 2023, 2024",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
-    "concern": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
-    "description": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/23P23.pdf",
-    "filename": "23P23.pdf",
-    "manualOnly": false,
-    "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer ranger, everest 2021, 2022, 2023, 2024 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer current 23p23.pdf",
-    "parts": {
-      "staticParts": [
-        {
-          "partNumber": "MB3Z6C646R",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Duct Air/Intercooler Hose",
-          "comments": "",
-          "note": ""
-        }
-      ],
-      "variants": {}
-    },
-    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
