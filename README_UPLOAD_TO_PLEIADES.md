@@ -1,32 +1,60 @@
-# Pleiades Ford TSB v12 - merged editor + parts section
+# Ford TSB v13 - EraLink Part Copy Update
 
-Upload the contents of this ZIP to the root of your Pleiades repository and overwrite existing files.
+Upload the contents of this ZIP into the root of your Pleiades GitHub repository and overwrite existing files.
 
-This version restores/preserves the advanced editor functions from v10 and adds a parts section inside the same advanced editor.
+This package keeps the existing advanced editor functions and adds the EraLink-safe part copy behaviour.
 
-## Kept from existing editor
+## What changed
 
-- Passcode advanced mode: `11290`
-- GitHub token field at runtime only
-- Edit bulletin field overrides
-- Upload PDF to GitHub
-- Run GitHub indexing workflow
-- Clean bulletin display
-
-## New parts editor
-
-Advanced mode now includes a **Parts lists** tab. It saves to:
+- Keeps the advanced editor, GitHub token tools, PDF upload, field override tools and workflow trigger.
+- Keeps the bulletin-level/static parts editor.
+- Keeps the variant-specific parts editor.
+- Adds a **Copy** button to every displayed part row.
+- Each Copy button copies **only that part row**.
+- Clipboard format is vertical for Excel/Pentana EraLink:
 
 ```text
-Ford/TSB/data/variant-parts.json
+PART NUMBER
+QTY
 ```
 
-Each bulletin can have:
+Example:
 
-1. **Whole-bulletin/static parts** - parts that apply to the entire bulletin regardless of vehicle variant.
-2. **Variant-specific parts** - parts shown through a variant dropdown on the bulletin card.
+```text
+AB39-7A543-AC
+2
+```
 
-Use this line format in the editor:
+When pasted into Excel:
+
+```text
+A1 = AB39-7A543-AC
+A2 = 2
+```
+
+No bulk copy button has been added, because bulk copy can break the EraLink stock/order-in process.
+
+## Files included
+
+```text
+.github/workflows/update-ford-tsb-index.yml
+Ford/TSB/index.html
+Ford/TSB/scripts/generate-tsb-index.py
+Ford/TSB/data/manual-overrides.json
+Ford/TSB/data/variant-parts.json
+Ford/TSB/data/tsb-index.json
+```
+
+## After upload
+
+1. Upload the ZIP contents to the repo root.
+2. Commit changes.
+3. Go to **Actions → Update Ford TSB Index → Run workflow**.
+4. Refresh the TSB page after GitHub Pages updates.
+
+## Parts editor format
+
+Use this format per line:
 
 ```text
 part number | qty | description | notes
@@ -35,9 +63,5 @@ part number | qty | description | notes
 Example:
 
 ```text
-AB39-12345-A | 1 | Harness kit | Use when connector is damaged
+AB39-7A543-AC | 2 | Clutch pedal switch | Required for manual variants
 ```
-
-## Important
-
-Do not put your token directly in the HTML. Paste it into the advanced page only when needed, or save it in your own browser.
