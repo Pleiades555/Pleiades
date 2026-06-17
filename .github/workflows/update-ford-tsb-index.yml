@@ -14,9 +14,11 @@ on:
 permissions:
   contents: write
 
+
 jobs:
   update-ford-tsb-index:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -35,11 +37,13 @@ jobs:
         run: |
           python Ford/TSB/scripts/generate-tsb-index.py
 
-      - name: Commit updated generated index only
+      - name: Commit updated TSB data
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add Ford/TSB/data/tsb-index.json
+          git add Ford/TSB/data/manual-overrides.json
+          git add Ford/TSB/data/manual-parts.json
           git add Ford/TSB/pdf
           git add Ford/TSB/archive/superseded
           git commit -m "Auto-update Ford TSB index" || echo "No changes to commit"

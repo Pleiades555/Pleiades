@@ -1,55 +1,21 @@
-# Ford TSB v14.1 — Persistence + Date Uploaded by Ford
+# Ford TSB v15 Manual Persistence Fix
 
-Upload the contents of this ZIP to the root of your Pleiades GitHub repository and overwrite existing files.
+Upload the contents of this ZIP to the root of the Pleiades GitHub repository and overwrite existing files.
 
-## What this update adds
+This fixes the issue where manual entries such as FAB2026033 save to manual-overrides.json but do not appear on the live site because tsb-index.json is regenerated from PDFs only.
 
-- Keeps v14 persistence behaviour:
-  - manual field edits save to `Ford/TSB/data/manual-overrides.json`
-  - manual parts save to `Ford/TSB/data/manual-parts.json`
-  - regenerated `tsb-index.json` should not wipe manual edits
-- Adds a new field: `Date uploaded by Ford`
-- Adds optional `Issue date`
-- Shows both dates on each bulletin card
-- Adds both date fields to Advanced Mode
-- Sort dropdown now includes `Sort by Ford upload date`
+## What changed
 
-## Important
-
-This package does **not** include blank `manual-overrides.json` or `manual-parts.json`, so it should not overwrite your existing manual edits.
-
-## Manual override example
-
-In `Ford/TSB/data/manual-overrides.json`:
-
-```json
-{
-  "23P23": {
-    "fordUploadDate": "2023-11-15",
-    "issueDate": "2023-11-13",
-    "title": "Corrected FSA title"
-  }
-}
-```
-
-Use ISO format for dates:
-
-```text
-YYYY-MM-DD
-```
-
-The page displays them as:
-
-```text
-DD/MM/YYYY
-```
+- The GitHub workflow now includes real line breaks and tracks manual-parts.json.
+- The generator now creates index entries from manual-overrides.json even when there is no matching PDF.
+- manual-parts.json is created automatically if missing.
+- Manual fields such as title, model, yearRange, fordUploadDate, issueDate, concern, status and supersededBy persist through regeneration.
 
 ## After upload
 
-Run:
+1. Go to GitHub Actions.
+2. Run `Update Ford TSB Index` manually.
+3. Wait for it to commit the regenerated `Ford/TSB/data/tsb-index.json`.
+4. Refresh the live TSB page.
 
-GitHub → Actions → Update Ford TSB Index → Run workflow
-
-Then refresh:
-
-https://pleiades555.github.io/Pleiades/Ford/TSB/index.html
+For FAB2026033, the manual override should now appear even if there is no matching PDF.
