@@ -225,5 +225,26 @@
       }
     ],
     "variants": {}
+  },
+  "26-2215": {
+    "staticParts": [
+      {
+        "partNumber": "K2GZ7B343A",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Gasket",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "N/A",
+        "qty": "2",
+        "quantity": "2",
+        "description": "Cable Tie",
+        "comments": "Workshop supplied",
+        "note": "Workshop supplied"
+      }
+    ],
+    "variants": {}
   }
 }
