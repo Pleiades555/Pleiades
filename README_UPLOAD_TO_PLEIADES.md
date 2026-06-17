@@ -1,21 +1,37 @@
-# Ford TSB v15 Manual Persistence Fix
+# Ford TSB v16 - Parts Display + Supersession Links
 
-Upload the contents of this ZIP to the root of the Pleiades GitHub repository and overwrite existing files.
+Upload the contents of this ZIP to the root of the Pleiades repository and overwrite existing files.
 
-This fixes the issue where manual entries such as FAB2026033 save to manual-overrides.json but do not appear on the live site because tsb-index.json is regenerated from PDFs only.
+## Important before uploading
 
-## What changed
+If your live repo already contains edited files, do **not** overwrite them blindly:
 
-- The GitHub workflow now includes real line breaks and tracks manual-parts.json.
-- The generator now creates index entries from manual-overrides.json even when there is no matching PDF.
-- manual-parts.json is created automatically if missing.
-- Manual fields such as title, model, yearRange, fordUploadDate, issueDate, concern, status and supersededBy persist through regeneration.
+- `Ford/TSB/data/manual-overrides.json`
+- `Ford/TSB/data/manual-parts.json`
+
+If GitHub asks whether to replace those two files, keep your existing live versions unless you know they are empty. They contain your manual corrections and parts rows.
+
+## What this fixes
+
+- Restores the Parts list display on each bulletin card.
+- Shows static whole-bulletin parts plus variant-specific parts.
+- Adds a variant dropdown on cards that have variant parts.
+- Each part row has its own EraLink copy button.
+- Copy format is vertical:
+
+  PART NUMBER
+  QTY
+
+- Adds clickable supersession links:
+  - Supersedes old bulletin
+  - Superseded by replacement bulletin
 
 ## After upload
 
-1. Go to GitHub Actions.
-2. Run `Update Ford TSB Index` manually.
-3. Wait for it to commit the regenerated `Ford/TSB/data/tsb-index.json`.
-4. Refresh the live TSB page.
+Run:
 
-For FAB2026033, the manual override should now appear even if there is no matching PDF.
+GitHub → Actions → Update Ford TSB Index → Run workflow
+
+Then refresh:
+
+https://pleiades555.github.io/Pleiades/Ford/TSB/index.html

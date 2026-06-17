@@ -319,6 +319,51 @@ def build_manual_only_item(number, override):
     return finish_item(item)
 
 
+
+def normalise_parts_payload(payload):
+    if not isinstance(payload, dict):
+        return {"staticParts": [], "variants": {}}
+    static_parts = payload.get("staticParts") or payload.get("static") or payload.get("bulletinParts") or []
+    variants = payload.get("variants") or payload.get("variantParts") or {}
+    if not isinstance(static_parts, list):
+        static_parts = []
+    if not isinstance(variants, dict):
+        variants = {}
+    cleaned_static = [clean_part_row(x) for x in static_parts if isinstance(x, dict)]
+    cleaned_variants = {}
+    for variant, rows in variants.items():
+        if not isinstance(rows, list):
+            continue
+        cleaned_rows = [clean_part_row(x) for x in rows if isinstance(x, dict)]
+        if cleaned_rows:
+            cleaned_variants[str(variant)] = cleaned_rows
+    return {"staticParts": cleaned_static, "variants": cleaned_variants}
+
+
+def clean_part_row(row):
+    part_number = clean_text(row.get("partNumber") or row.get("part") or row.get("number") or "").upper()
+    qty = clean_text(row.get("qty") or row.get("quantity") or "1")
+    description = clean_text(row.get("description") or row.get("desc") or "")
+    note = clean_text(row.get("note") or "")
+    return {"partNumber": part_number, "qty": qty, "quantity": qty, "description": description, "note": note}
+
+
+def get_manual_parts_for_number(number, parts):
+    clean_number = normalise_number(number)
+    if not clean_number:
+        return {"staticParts": [], "variants": {}}
+    for key, value in parts.items():
+        if normalise_number(key) == clean_number:
+            return normalise_parts_payload(value)
+    return {"staticParts": [], "variants": {}}
+
+
+def attach_manual_parts(item, parts):
+    part_payload = get_manual_parts_for_number(item.get("number") or item.get("displayNumber"), parts)
+    item["parts"] = part_payload
+    item["hasManualParts"] = bool(part_payload.get("staticParts") or part_payload.get("variants"))
+    return item
+
 def finish_item(item):
     number = normalise_number(item.get("number", ""))
     item["number"] = number
@@ -348,13 +393,29 @@ def apply_supersession_links(items):
     by_number = {item.get("number"): item for item in items if item.get("number")}
     for item in items:
         current = item.get("number", "")
+        normalised_supersedes = []
         for old in item.get("supersedes", []) or []:
-            old_item = by_number.get(normalise_number(old))
+            old_clean = normalise_number(old)
+            if old_clean and old_clean not in normalised_supersedes:
+                normalised_supersedes.append(old_clean)
+            old_item = by_number.get(old_clean)
             if old_item:
                 old_item["status"] = "Superseded"
                 old_item["supersededBy"] = current
+        item["supersedes"] = normalised_supersedes
+        sb = item.get("supersededBy")
+        if isinstance(sb, list):
+            item["supersededBy"] = [normalise_number(x) for x in sb if normalise_number(x)]
+        elif sb:
+            item["supersededBy"] = normalise_number(sb)
+        else:
+            item["supersededBy"] = ""
         if item.get("supersededBy"):
             item["status"] = "Superseded"
+        item["supersessionLinks"] = {
+            "supersedes": item.get("supersedes", []),
+            "supersededBy": item.get("supersededBy", ""),
+        }
     return items
 
 
@@ -381,7 +442,7 @@ def main():
     write_json(PARTS_FILE, parts)
     write_json(OVERRIDES_FILE, overrides)
 
-    items = [build_item_from_pdf(path, overrides) for path in collect_pdfs()]
+    items = [attach_manual_parts(build_item_from_pdf(path, overrides), parts) for path in collect_pdfs()]
     existing_numbers = {item.get("number") for item in items if item.get("number")}
 
     for number, override in overrides.items():
@@ -389,19 +450,19 @@ def main():
             continue
         clean_number = normalise_number(number)
         if clean_number not in existing_numbers:
-            items.append(build_manual_only_item(clean_number, override))
+            items.append(attach_manual_parts(build_manual_only_item(clean_number, override), parts))
 
     items = apply_supersession_links(items)
     move_superseded_files(items)
 
-    items = [build_item_from_pdf(path, overrides) for path in collect_pdfs()]
+    items = [attach_manual_parts(build_item_from_pdf(path, overrides), parts) for path in collect_pdfs()]
     existing_numbers = {item.get("number") for item in items if item.get("number")}
     for number, override in overrides.items():
         if str(number).startswith("_") or not isinstance(override, dict):
             continue
         clean_number = normalise_number(number)
         if clean_number not in existing_numbers:
-            items.append(build_manual_only_item(clean_number, override))
+            items.append(attach_manual_parts(build_manual_only_item(clean_number, override), parts))
 
     items = apply_supersession_links(items)
     items.sort(key=lambda x: (

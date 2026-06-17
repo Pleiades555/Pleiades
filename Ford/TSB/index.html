@@ -1,113 +1,107 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ford TSB Library</title>
-  <style>
-    :root{--bg:#0b1220;--panel:#111827;--panel2:#172033;--line:#263244;--text:#e5e7eb;--muted:#9ca3af;--blue:#60a5fa;--green:#22c55e;--red:#ef4444;--amber:#f59e0b}
-    *{box-sizing:border-box} body{margin:0;background:linear-gradient(135deg,#07101e,#111827 55%,#0b1220);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}
-    header{padding:28px 22px 18px;border-bottom:1px solid var(--line);position:relative;background:rgba(17,24,39,.86);backdrop-filter:blur(12px)}
-    .top{max-width:1250px;margin:auto;display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.brand h1{margin:0;font-size:30px;letter-spacing:.2px}.brand p{margin:8px 0 0;color:var(--muted)}
-    .admin-toggle{display:flex;gap:8px;align-items:center}.admin-toggle input{width:96px;padding:10px;border-radius:10px;border:1px solid var(--line);background:#0b1220;color:var(--text)}
-    button{border:0;border-radius:10px;padding:10px 13px;font-weight:700;cursor:pointer;background:var(--blue);color:#06101f}.btn-secondary{background:#243145;color:var(--text);border:1px solid var(--line)}.btn-danger{background:var(--red);color:white}.btn-green{background:var(--green);color:#04120a}.btn-small{padding:7px 9px;font-size:12px}
-    main{max-width:1250px;margin:24px auto;padding:0 18px}.toolbar{display:grid;grid-template-columns:1fr repeat(3,160px);gap:12px;margin-bottom:18px}.toolbar input,.toolbar select,textarea{padding:13px;border-radius:12px;border:1px solid var(--line);background:#0d1627;color:var(--text);width:100%}textarea{min-height:85px;resize:vertical}
-    .stats{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}.pill{border:1px solid var(--line);background:rgba(23,32,51,.9);padding:9px 12px;border-radius:999px;color:var(--muted)}.pill strong{color:var(--text)}
-    .grid{display:grid;gap:14px}.card{background:rgba(17,24,39,.93);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 28px rgba(0,0,0,.22)}.card.superseded{border-left:6px solid var(--amber)}
-    .card-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.num{font-size:22px;font-weight:800}.type{font-size:12px;background:#1e3a5f;color:#bfdbfe;border-radius:999px;padding:4px 8px;margin-left:8px}.manual{background:#14532d;color:#bbf7d0}.sup{background:#78350f;color:#fde68a}.title{margin:8px 0;color:#f8fafc;font-size:17px}.meta{color:var(--muted);font-size:14px;display:flex;gap:12px;flex-wrap:wrap;margin:10px 0}.concern{line-height:1.45;color:#d1d5db}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}a.open{color:#bfdbfe;text-decoration:none;font-weight:800}
-    .parts{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}.parts h4{margin:0 0 10px}.variant-select{max-width:260px;margin-bottom:10px}.part-row{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px;margin:7px 0;background:#0d1627}.part-row span{color:var(--muted)}
-    .admin-panel{display:none;margin-bottom:18px;background:#101827;border:1px solid var(--line);border-radius:18px;padding:18px}.admin-panel.show{display:block}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.form-grid .wide{grid-column:1/-1}.section-title{font-size:18px;font-weight:800;margin:10px 0 12px}.note{color:var(--muted);font-size:13px}.toast{position:fixed;right:18px;bottom:18px;background:#052e16;color:#bbf7d0;border:1px solid #166534;border-radius:12px;padding:12px 14px;display:none}.toast.show{display:block}
-    @media(max-width:850px){.toolbar{grid-template-columns:1fr}.top,.card-head{display:block}.form-grid{grid-template-columns:1fr}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ford TSB Library</title>
+<style>
+:root{--bg:#07111f;--panel:#0d1a2b;--panel2:#101f33;--line:#2b3d56;--text:#f4f7fb;--muted:#b8c6d8;--blue:#57a6ff;--green:#1fd36a;--orange:#ffb454;--red:#ff6b6b;--chip:#17283f}*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,#07111f,#0a1627 65%,#101c2d);color:var(--text)}a{color:var(--blue)}.wrap{max-width:1280px;margin:0 auto;padding:24px}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}.brand h1{margin:0 0 8px;font-size:34px;letter-spacing:-.04em}.brand p{margin:0;color:var(--muted)}.advanced-btn{background:#14253d;border:1px solid var(--line);color:var(--text);border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer}.panel{background:rgba(13,26,43,.92);border:1px solid var(--line);border-radius:18px;padding:18px;margin:16px 0;box-shadow:0 18px 60px rgba(0,0,0,.25)}.controls{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:10px}.controls input,.controls select,.editor input,.editor select,.editor textarea{width:100%;background:#0a1322;border:1px solid #3b4f6b;border-radius:10px;color:var(--text);padding:10px;font:inherit}.editor textarea{min-height:90px;resize:vertical}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.stat,.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:13px}.grid{display:grid;gap:14px}.card{background:rgba(16,31,51,.95);border:1px solid var(--line);border-radius:18px;padding:18px}.card.superseded{border-left:5px solid var(--orange)}.card.manual{border-left:5px solid var(--green)}.card-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.num{font-size:22px;font-weight:900;letter-spacing:.01em}.title{font-size:18px;margin:6px 0 10px;font-weight:750}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.badge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;background:#12243a;border:1px solid var(--line);font-size:12px;color:var(--muted)}.badge.current{color:#bfffd7;border-color:#21683d}.badge.sup{color:#ffdba7;border-color:#7a5521}.concern{color:#e9f0fa;line-height:1.45;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.08);padding:12px;border-radius:12px}.btn{background:#182a44;color:var(--text);border:1px solid #49617f;border-radius:10px;padding:9px 12px;font-weight:800;cursor:pointer}.btn.green{background:#16be60;border-color:#16be60;color:white}.btn.small{font-size:12px;padding:6px 9px}.parts{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}.parts-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}.part-row{display:grid;grid-template-columns:1.4fr .35fr 1.4fr auto;gap:8px;align-items:center;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px;margin:7px 0}.partno{font-weight:900}.qty{color:#d8e7ff}.desc{color:var(--muted)}.superlinks{margin-top:10px;color:var(--muted)}.superlinks button{margin-left:4px}.editor{display:none}.editor.open{display:block}.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.wide{grid-column:1/-1}.divider{height:1px;background:var(--line);margin:18px 0}.note{color:var(--muted);font-size:14px}.hidden{display:none}@media(max-width:900px){.controls,.editor-grid,.part-row{grid-template-columns:1fr}.top,.card-head{display:block}}
+</style>
 </head>
 <body>
-<header>
+<div class="wrap">
   <div class="top">
-    <div class="brand"><h1>Ford TSB Library</h1><p>Search Ford TSB, FSA, SSM and recall PDFs. Manual edits are now saved as overrides so regenerated JSON does not wipe them.</p></div>
-    <div class="admin-toggle"><input id="adminCode" placeholder="Passcode"><button class="btn-secondary" onclick="unlockAdmin()">Advanced</button></div>
+    <div class="brand"><h1>Ford TSB Library</h1><p>Search Ford TSB, FSA, SSM and recall PDFs. Manual edits are saved as overrides, not directly into the generated index.</p></div>
+    <button class="advanced-btn" onclick="unlockAdvanced()">Advanced</button>
   </div>
-</header>
-<main>
-  <section id="adminPanel" class="admin-panel">
-    <div class="section-title">Advanced Editor</div>
-    <p class="note">This editor saves corrections to <b>manual-overrides.json</b> and parts to <b>manual-parts.json</b>. It does not edit generated <b>tsb-index.json</b> directly.</p>
-    <div class="form-grid">
-      <label>GitHub token<input id="ghToken" type="password" placeholder="Paste token for this session only"></label>
+
+  <section id="advancedPanel" class="panel editor">
+    <h2>Advanced Editor</h2>
+    <p class="note">Passcode protected. Saves field corrections to <b>manual-overrides.json</b> and parts to <b>manual-parts.json</b>. Each part row copies vertically for EraLink: part number, then quantity on the next line.</p>
+    <div class="editor-grid">
+      <label>GitHub token<input id="ghToken" type="password" autocomplete="off"></label>
       <label>Repo<input id="ghRepo" value="Pleiades555/Pleiades"></label>
       <label>Branch<input id="ghBranch" value="main"></label>
-      <label>Bulletin/FSA/SSM number<input id="editNumber" placeholder="Example: 23P23 or 26-2159"></label>
-      <label class="wide">Title<input id="editTitle" placeholder="Manual title override"></label>
-      <label>Model<input id="editModel" placeholder="Ranger, Everest"></label>
-      <label>Year range<input id="editYearRange" placeholder="2022-2024"></label>
-      <label>Date uploaded by Ford<input id="editFordUploadDate" type="date" placeholder="YYYY-MM-DD"></label>
-      <label>Issue date<input id="editIssueDate" type="date" placeholder="YYYY-MM-DD"></label>
-      <label class="wide">Symptom / concern<textarea id="editConcern" placeholder="Manual concern override"></textarea></label>
-      <label>Status<select id="editStatus"><option value="">No override</option><option>Current</option><option>Superseded</option></select></label>
+      <label>Bulletin/FSA/SSM number<input id="editNumber" placeholder="FAB2026033"></label>
+      <label>Title<input id="editTitle"></label>
+      <label>Model<input id="editModel"></label>
+      <label>Year range<input id="editYearRange"></label>
+      <label>Date uploaded by Ford<input id="editFordDate" type="date"></label>
+      <label>Issue date<input id="editIssueDate" type="date"></label>
+      <label>Status<select id="editStatus"><option>Current</option><option>Superseded</option></select></label>
       <label>Superseded by<input id="editSupersededBy" placeholder="Replacement bulletin"></label>
-      <div class="wide"><button class="btn-green" onclick="saveOverride()">Save Field Overrides</button></div>
+      <label class="wide">Symptom / concern<textarea id="editConcern"></textarea></label>
     </div>
-    <hr style="border-color:var(--line);margin:18px 0">
-    <div class="section-title">Manual Parts for EraLink</div>
-    <p class="note">Each part row gets its own copy button. Clipboard format is vertical: part number, then quantity on the next line.</p>
-    <div class="form-grid">
-      <label>Parts bulletin number<input id="partsNumber" placeholder="Example: 23P23"></label>
-      <label>Variant<input id="partsVariant" placeholder="Leave blank for whole bulletin/static parts"></label>
-      <label>Part number<input id="partsPartNumber" placeholder="AB39-7A543-AC"></label>
-      <label>Quantity<input id="partsQty" placeholder="1"></label>
-      <label class="wide">Description<input id="partsDesc" placeholder="Optional description"></label>
-      <div class="wide"><button class="btn-green" onclick="addPartAndSave()">Add Part Row</button></div>
+    <button class="btn green" onclick="saveFieldOverrides()">Save Field Overrides</button>
+    <div class="divider"></div>
+    <h3>Manual Parts for EraLink</h3>
+    <div class="editor-grid">
+      <label>Parts bulletin number<input id="partBulletin" placeholder="FAB2026033"></label>
+      <label>Variant <input id="partVariant" placeholder="Leave blank for whole bulletin / all variants"></label>
+      <label>Part number<input id="partNumber"></label>
+      <label>Quantity<input id="partQty" value="1"></label>
+      <label class="wide">Description<input id="partDescription"></label>
     </div>
-    <div class="actions"><button class="btn-secondary" onclick="runWorkflow()">Run GitHub Action</button><button class="btn-secondary" onclick="exportManualData()">Export Manual Data Backup</button></div>
+    <button class="btn green" onclick="addPartRow()">Add Part Row</button>
+    <div class="divider"></div>
+    <h3>Upload PDFs</h3>
+    <p class="note">Uploads selected PDFs to <code>Ford/TSB/pdf/</code>. Then run the GitHub Action to regenerate the index.</p>
+    <input id="pdfUpload" type="file" accept="application/pdf" multiple>
+    <button class="btn" onclick="uploadPdfs()">Upload PDFs</button>
+    <button class="btn" onclick="runWorkflow()">Run GitHub Action</button>
+    <button class="btn" onclick="exportBackup()">Export Manual Data Backup</button>
+    <div id="adminMsg" class="note" style="margin-top:10px"></div>
   </section>
 
-  <div class="toolbar"><input id="search" placeholder="Search by TSB/FSA/SSM, model, symptom, title or part number"><select id="typeFilter"><option value="">All types</option><option>TSB</option><option>FSA</option><option>SSM</option><option>Recall</option></select><select id="statusFilter"><option value="">All status</option><option>Current</option><option>Superseded</option></select><select id="sort"><option value="fordUploadDate">Sort by Ford upload date</option><option value="number">Sort by number</option><option value="title">Sort by title</option><option value="model">Sort by model</option></select></div>
-  <div class="stats"><div class="pill"><strong id="total">0</strong> total</div><div class="pill"><strong id="shown">0</strong> shown</div><div class="pill"><strong id="manualCount">0</strong> manual edits</div><div class="pill"><strong id="partsCount">0</strong> with parts</div></div>
-  <div id="results" class="grid"></div>
-</main>
-<div id="toast" class="toast"></div>
+  <section class="panel">
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search number, model, year, symptom, title, part number...">
+      <select id="typeFilter"><option value="">All types</option><option>TSB</option><option>FSA</option><option>SSM</option><option>Recall</option></select>
+      <select id="statusFilter"><option value="">All status</option><option>Current</option><option>Superseded</option></select>
+      <select id="sortMode"><option value="fordDate">Sort by Ford upload date</option><option value="number">Sort by number</option><option value="title">Sort by title</option><option value="model">Sort by model</option></select>
+      <select id="partsFilter"><option value="">All parts status</option><option value="with">With parts</option><option value="without">Without parts</option></select>
+    </div>
+    <div class="stats"><span class="stat"><b id="totalCount">0</b> total</span><span class="stat"><b id="shownCount">0</b> shown</span><span class="stat"><b id="manualCount">0</b> manual edits</span><span class="stat"><b id="partsCount">0</b> with parts</span></div>
+  </section>
+
+  <main id="results" class="grid"></main>
+</div>
 <script>
-const PASSCODE = "11290";
-let records = [];
-let manualOverrides = {};
-let manualParts = {};
-
-const DATA_URL = "data/tsb-index.json?v=" + Date.now();
-const OVERRIDES_PATH = "Ford/TSB/data/manual-overrides.json";
-const PARTS_PATH = "Ford/TSB/data/manual-parts.json";
-const WORKFLOW_ID = "update-ford-tsb-index.yml";
-
-function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500)}
-function esc(v){return String(v ?? '').replace(/[&<>'"]/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[s]))}
-function formatDate(v){if(!v)return ''; const m=String(v).match(/^(\d{4})-(\d{2})-(\d{2})$/); return m?`${m[3]}/${m[2]}/${m[1]}`:String(v)}
-function keyOf(r){return r.displayNumber || r.number || r.tsbNumber || r.bulletinNumber || r.filename || ''}
-function unlockAdmin(){if(document.getElementById('adminCode').value===PASSCODE){document.getElementById('adminPanel').classList.add('show');toast('Advanced mode unlocked')}else toast('Incorrect passcode')}
-
-async function safeJson(url, fallback){try{const r=await fetch(url,{cache:'no-store'}); if(!r.ok) return fallback; return await r.json()}catch{return fallback}}
-async function load(){records = await safeJson(DATA_URL, []); manualOverrides = await safeJson('data/manual-overrides.json?v='+Date.now(), {}); manualParts = await safeJson('data/manual-parts.json?v='+Date.now(), {}); render();}
-
-function renderParts(r){const parts = r.parts || {staticParts:[],variants:{}}; const staticParts = parts.staticParts || []; const variants = parts.variants || {}; const names = Object.keys(variants); if(!staticParts.length && !names.length) return '';
-  const id = 'v_' + btoa(unescape(encodeURIComponent(keyOf(r)))).replace(/=/g,'').replace(/[^a-zA-Z0-9]/g,'');
-  const options = names.map(v=>`<option>${esc(v)}</option>`).join('');
-  return `<div class="parts"><h4>Parts</h4>${names.length?`<select class="variant-select" id="${id}" onchange="render()"><option value="">Whole bulletin/static parts</option>${options}</select>`:''}<div>${partRows(staticParts, 'Whole bulletin')}${names.map(v=>`<div class="variant-group" data-v="${esc(v)}">${partRows(variants[v]||[], v)}</div>`).join('')}</div></div>`;
-}
-function partRows(rows, variant){if(!rows || !rows.length) return ''; return rows.map(p=>`<div class="part-row"><div><b>${esc(p.partNumber||p.part||'')}</b> <span>Qty: ${esc(p.qty||p.quantity||'')}</span><br><span>${esc(variant)}${p.description?' — '+esc(p.description):''}</span></div><button class="btn-small btn-secondary" onclick="copyPart('${esc(p.partNumber||p.part||'')}','${esc(p.qty||p.quantity||'')}')">Copy</button></div>`).join('')}
-async function copyPart(part, qty){await navigator.clipboard.writeText(`${part}\n${qty}`);toast('Copied for EraLink')}
-
-function render(){let q=document.getElementById('search').value.toLowerCase().trim(), type=document.getElementById('typeFilter').value, status=document.getElementById('statusFilter').value, sort=document.getElementById('sort').value; let list=records.filter(r=>{const partsText=JSON.stringify(r.parts||{}).toLowerCase(); const text=((r.searchText||'')+' '+partsText).toLowerCase(); return (!q||text.includes(q))&&(!type||r.type===type)&&(!status||r.status===status)}); if(sort==='fordUploadDate'){list.sort((a,b)=>String(b.fordUploadDate||'').localeCompare(String(a.fordUploadDate||'')) || String(keyOf(a)).localeCompare(String(keyOf(b))))}else{list.sort((a,b)=>String(a[sort]||keyOf(a)).localeCompare(String(b[sort]||keyOf(b))))}; document.getElementById('total').textContent=records.length; document.getElementById('shown').textContent=list.length; document.getElementById('manualCount').textContent=records.filter(r=>r.manualOverride).length; document.getElementById('partsCount').textContent=records.filter(r=>r.hasManualParts).length;
- document.getElementById('results').innerHTML=list.map(r=>`<article class="card ${r.status==='Superseded'?'superseded':''}"><div class="card-head"><div><div class="num">${esc(keyOf(r))}<span class="type">${esc(r.type||'TSB')}</span>${r.manualOverride?'<span class="type manual">Edited Manually</span>':''}${r.status==='Superseded'?'<span class="type sup">Superseded</span>':''}</div><div class="title">${esc(r.title||'Untitled')}</div></div><a class="open" target="_blank" href="../../${esc(r.file||'')}">Open PDF</a></div><div class="meta"><span><b>Model:</b> ${esc(r.model||'')}</span><span><b>Years:</b> ${esc(r.yearRange||'')}</span><span><b>Date uploaded by Ford:</b> ${esc(formatDate(r.fordUploadDate||''))}</span><span><b>Issue date:</b> ${esc(formatDate(r.issueDate||''))}</span><span><b>Status:</b> ${esc(r.status||'')}</span></div><div class="concern">${esc(r.concern||r.symptom||'')}</div>${renderParts(r)}<div class="actions"><button class="btn-small btn-secondary" onclick="loadIntoEditor('${esc(keyOf(r))}')">Edit</button></div></article>`).join('') || '<div class="card">No matching bulletins found.</div>'}
-['search','typeFilter','statusFilter','sort'].forEach(id=>document.getElementById(id).addEventListener('input',render));
-
-function loadIntoEditor(num){const r=records.find(x=>keyOf(x)===num); if(!r)return; document.getElementById('adminPanel').classList.add('show'); document.getElementById('editNumber').value=keyOf(r); document.getElementById('partsNumber').value=keyOf(r); document.getElementById('editTitle').value=r.title||''; document.getElementById('editModel').value=r.model||''; document.getElementById('editYearRange').value=r.yearRange||''; document.getElementById('editFordUploadDate').value=r.fordUploadDate||''; document.getElementById('editIssueDate').value=r.issueDate||''; document.getElementById('editConcern').value=r.concern||r.symptom||''; document.getElementById('editStatus').value=r.status||''; document.getElementById('editSupersededBy').value=Array.isArray(r.supersededBy)?r.supersededBy.join(', '):(r.supersededBy||''); window.scrollTo({top:0,behavior:'smooth'});}
-function auth(){const token=document.getElementById('ghToken').value.trim(); if(!token){toast('Paste GitHub token first'); throw new Error('No token')} return token}
-function repo(){return document.getElementById('ghRepo').value.trim()}
-function branch(){return document.getElementById('ghBranch').value.trim()||'main'}
-async function getFile(path){const r=await fetch(`https://api.github.com/repos/${repo()}/contents/${path}?ref=${branch()}`,{headers:{Authorization:`Bearer ${auth()}`,Accept:'application/vnd.github+json'}}); if(r.status===404)return {json:{},sha:null}; if(!r.ok)throw new Error(await r.text()); const d=await r.json(); const txt=decodeURIComponent(escape(atob(d.content.replace(/\n/g,'')))); return {json:JSON.parse(txt||'{}'),sha:d.sha};}
-async function putFile(path,obj,sha,msg){const content=btoa(unescape(encodeURIComponent(JSON.stringify(obj,null,2)+'\n'))); const body={message:msg,content,branch:branch()}; if(sha)body.sha=sha; const r=await fetch(`https://api.github.com/repos/${repo()}/contents/${path}`,{method:'PUT',headers:{Authorization:`Bearer ${auth()}`,Accept:'application/vnd.github+json'},body:JSON.stringify(body)}); if(!r.ok)throw new Error(await r.text());}
-async function saveOverride(){try{const num=document.getElementById('editNumber').value.trim().toUpperCase(); if(!num)return toast('Enter bulletin number'); const f=await getFile(OVERRIDES_PATH); const data=f.json||{}; data[num]={...(data[num]||{})}; const map={title:'editTitle',model:'editModel',yearRange:'editYearRange',fordUploadDate:'editFordUploadDate',issueDate:'editIssueDate',symptom:'editConcern',concern:'editConcern',status:'editStatus',supersededBy:'editSupersededBy'}; Object.entries(map).forEach(([k,id])=>{const v=document.getElementById(id).value.trim(); if(v)data[num][k]=k==='supersededBy'?v.split(',').map(x=>x.trim()).filter(Boolean):v;}); await putFile(OVERRIDES_PATH,data,f.sha,`Manual override ${num}`); toast('Saved override');}catch(e){toast('Save failed');console.error(e)}}
-async function addPartAndSave(){try{const num=document.getElementById('partsNumber').value.trim().toUpperCase(); const variant=document.getElementById('partsVariant').value.trim(); const partNumber=document.getElementById('partsPartNumber').value.trim().toUpperCase(); const qty=document.getElementById('partsQty').value.trim(); const description=document.getElementById('partsDesc').value.trim(); if(!num||!partNumber||!qty)return toast('Number, part and qty required'); const f=await getFile(PARTS_PATH); const data=f.json||{}; data[num]=data[num]||{staticParts:[],variants:{}}; const row={partNumber,qty,description}; if(variant){data[num].variants=data[num].variants||{}; data[num].variants[variant]=data[num].variants[variant]||[]; data[num].variants[variant].push(row)}else{data[num].staticParts=data[num].staticParts||[]; data[num].staticParts.push(row)} await putFile(PARTS_PATH,data,f.sha,`Manual parts ${num}`); toast('Saved part row');}catch(e){toast('Parts save failed');console.error(e)}}
-async function runWorkflow(){try{const r=await fetch(`https://api.github.com/repos/${repo()}/actions/workflows/${WORKFLOW_ID}/dispatches`,{method:'POST',headers:{Authorization:`Bearer ${auth()}`,Accept:'application/vnd.github+json'},body:JSON.stringify({ref:branch()})}); if(!r.ok)throw new Error(await r.text()); toast('Workflow started')}catch(e){toast('Workflow failed');console.error(e)}}
-function exportManualData(){const blob=new Blob([JSON.stringify({manualOverrides,manualParts},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='ford-tsb-manual-backup.json'; a.click();}
-load();
+const DATA_PATH='data/tsb-index.json';
+const OVERRIDES_PATH='Ford/TSB/data/manual-overrides.json';
+const PARTS_PATH='Ford/TSB/data/manual-parts.json';
+let allItems=[], filtered=[], manualParts={}, manualOverrides={};
+function norm(n){return String(n||'').trim().toUpperCase().replace(/\s+/g,'-').replace(/--+/g,'-')}
+function esc(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+function adminMsg(m){document.getElementById('adminMsg').textContent=m}
+async function loadJson(path, fallback){try{const r=await fetch(path+'?v='+Date.now()); if(!r.ok) return fallback; return await r.json()}catch(e){return fallback}}
+async function init(){allItems=await loadJson(DATA_PATH,[]); manualParts=await loadJson('data/manual-parts.json',{}); manualOverrides=await loadJson('data/manual-overrides.json',{}); allItems=allItems.map(applyClientParts); bindFilters(); render()}
+function applyClientParts(item){const key=norm(item.number||item.displayNumber); const p=findParts(key); if(p){item.parts=normaliseParts(p); item.hasManualParts=hasParts(item.parts)} if(manualOverrides[key]) item.manualOverride=true; return item}
+function findParts(key){for(const [k,v] of Object.entries(manualParts||{})){if(norm(k)===key)return v} return null}
+function normaliseParts(p){return {staticParts:Array.isArray(p.staticParts)?p.staticParts:[], variants:p.variants&&typeof p.variants==='object'?p.variants:{}}}
+function hasParts(p){return !!(p&&(p.staticParts?.length||Object.keys(p.variants||{}).length))}
+function bindFilters(){['search','typeFilter','statusFilter','sortMode','partsFilter'].forEach(id=>document.getElementById(id).addEventListener('input',render))}
+function render(){const q=document.getElementById('search').value.toLowerCase();const tf=document.getElementById('typeFilter').value;const sf=document.getElementById('statusFilter').value;const pf=document.getElementById('partsFilter').value;const sm=document.getElementById('sortMode').value;filtered=allItems.filter(x=>{const text=[x.searchText,x.number,x.displayNumber,x.type,x.title,x.model,x.yearRange,x.symptom,JSON.stringify(x.parts||{})].join(' ').toLowerCase();return(!q||text.includes(q))&&(!tf||x.type===tf)&&(!sf||x.status===sf)&&(!pf||(pf==='with'?x.hasManualParts:!x.hasManualParts))});filtered.sort((a,b)=>{if(sm==='number')return String(a.displayNumber||a.number).localeCompare(String(b.displayNumber||b.number),undefined,{numeric:true});if(sm==='title')return String(a.title).localeCompare(String(b.title));if(sm==='model')return String(a.model).localeCompare(String(b.model));return String(b.fordUploadDate||'').localeCompare(String(a.fordUploadDate||''))});document.getElementById('totalCount').textContent=allItems.length;document.getElementById('shownCount').textContent=filtered.length;document.getElementById('manualCount').textContent=allItems.filter(x=>x.manualOverride||manualOverrides[norm(x.number)]).length;document.getElementById('partsCount').textContent=allItems.filter(x=>x.hasManualParts).length;document.getElementById('results').innerHTML=filtered.map(card).join('')||'<div class="panel">No matching bulletins.</div>'}
+function card(x){const n=esc(x.displayNumber||x.number||x.filename||'Unknown');const file=x.file?`<a class="btn small" href="../../${esc(x.file).replace(/^Ford\/TSB\//,'')}" target="_blank">Open PDF</a>`:'';return `<article class="card ${x.status==='Superseded'?'superseded':''} ${x.manualOverride?'manual':''}" id="b-${esc(norm(x.number||x.displayNumber))}"><div class="card-head"><div><div class="num">${n}</div><div class="title">${esc(x.title||'Untitled')}</div></div><div>${file}</div></div><div class="meta"><span class="badge">${esc(x.type||'TSB')}</span><span class="badge ${x.status==='Superseded'?'sup':'current'}">${esc(x.status||'Current')}</span>${x.manualOverride?'<span class="badge">Manual edit</span>':''}${x.hasManualParts?'<span class="badge">Parts list</span>':''}</div><div class="meta"><span class="badge">Model: ${esc(x.model||'Not listed')}</span><span class="badge">Years: ${esc(x.yearRange||'Not listed')}</span><span class="badge">Ford upload: ${esc(formatDate(x.fordUploadDate)||'Not listed')}</span><span class="badge">Issue: ${esc(formatDate(x.issueDate)||'Not listed')}</span></div><div class="concern">${esc(x.symptom||x.concern||x.description||'No concern listed')}</div>${supersessionHtml(x)}${partsHtml(x)}</article>`}
+function formatDate(d){if(!d)return''; const m=String(d).match(/^(\d{4})-(\d{2})-(\d{2})$/); return m?`${m[3]}/${m[2]}/${m[1]}`:d}
+function supersessionHtml(x){let out=[];(x.supersedes||[]).forEach(n=>out.push(`Supersedes ${linkBulletin(n)}`));const sb=x.supersededBy;if(Array.isArray(sb))sb.forEach(n=>out.push(`Superseded by ${linkBulletin(n)}`));else if(sb)out.push(`Superseded by ${linkBulletin(sb)}`);return out.length?`<div class="superlinks">${out.join(' &nbsp; | &nbsp; ')}</div>`:''}
+function linkBulletin(n){const clean=norm(n);const exists=allItems.some(x=>norm(x.number||x.displayNumber)===clean);return exists?`<button class="btn small" onclick="focusBulletin('${esc(clean)}')">${esc(clean)}</button>`:`<span class="chip">${esc(clean)}</span>`}
+function focusBulletin(n){document.getElementById('search').value=n;render();setTimeout(()=>document.getElementById('b-'+CSS.escape(n))?.scrollIntoView({behavior:'smooth',block:'center'}),50)}
+function partsHtml(x){const p=normaliseParts(x.parts||{}); if(!hasParts(p))return''; const variants=Object.keys(p.variants||{}); const selId='var-'+norm(x.number||x.displayNumber); let rows=[...p.staticParts.map(r=>partRow(r,'Whole bulletin'))]; variants.forEach(v=>(p.variants[v]||[]).forEach(r=>rows.push(partRow(r,v,v)))); const dropdown=variants.length?`<select onchange="filterVariantParts('${selId}',this.value)"><option value="">Show all variants</option>${variants.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join('')}</select>`:'';return `<section class="parts"><div class="parts-head"><h3>Parts</h3>${dropdown}</div><div id="${selId}">${rows.join('')}</div></section>`}
+function partRow(r,scope,variant=''){const pn=esc(r.partNumber||r.part||'');const qty=esc(r.qty||r.quantity||'1');return `<div class="part-row" data-variant="${esc(variant)}"><div><span class="partno">${pn}</span><br><span class="chip">${esc(scope)}</span></div><div class="qty">Qty ${qty}</div><div class="desc">${esc(r.description||'')}</div><button class="btn small" onclick="copyPart('${pn}','${qty}',this)">Copy</button></div>`}
+function filterVariantParts(containerId,variant){document.querySelectorAll('#'+CSS.escape(containerId)+' .part-row').forEach(row=>{const v=row.dataset.variant||'';row.style.display=(!variant||!v||v===variant)?'grid':'none'})}
+async function copyPart(part,qty,btn){await navigator.clipboard.writeText(`${part}\n${qty}`);const old=btn.textContent;btn.textContent='Copied';setTimeout(()=>btn.textContent=old,900)}
+function unlockAdvanced(){const p=prompt('Advanced passcode');if(p==='11290')document.getElementById('advancedPanel').classList.add('open')}
+async function ghGet(path){const repo=document.getElementById('ghRepo').value.trim();const branch=document.getElementById('ghBranch').value.trim();const token=document.getElementById('ghToken').value.trim();const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}`,{headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'}}); if(r.status===404)return {sha:null,data:{}}; if(!r.ok)throw new Error(await r.text()); const j=await r.json(); const txt=decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))); return {sha:j.sha,data:JSON.parse(txt||'{}')}}
+async function ghPut(path,data,msg){const repo=document.getElementById('ghRepo').value.trim();const branch=document.getElementById('ghBranch').value.trim();const token=document.getElementById('ghToken').value.trim();let current={sha:null};try{current=await ghGet(path)}catch(e){}const content=btoa(unescape(encodeURIComponent(JSON.stringify(data,null,2))));const body={message:msg,content,branch};if(current.sha)body.sha=current.sha;const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}`,{method:'PUT',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify(body)});if(!r.ok)throw new Error(await r.text());return await r.json()}
+async function saveFieldOverrides(){try{const num=norm(document.getElementById('editNumber').value);if(!num)throw new Error('Enter bulletin number');const got=await ghGet(OVERRIDES_PATH);const data=got.data||{};data[num]={...(data[num]||{}),title:val('editTitle'),model:val('editModel'),yearRange:val('editYearRange'),fordUploadDate:val('editFordDate'),issueDate:val('editIssueDate'),symptom:val('editConcern'),concern:val('editConcern'),status:val('editStatus'),supersededBy:val('editSupersededBy')};Object.keys(data[num]).forEach(k=>{if(data[num][k]==='')delete data[num][k]});await ghPut(OVERRIDES_PATH,data,`Update Ford TSB overrides for ${num}`);adminMsg('Saved field overrides. Run GitHub Action to refresh index.')}catch(e){adminMsg('Save failed: '+e.message)}}
+async function addPartRow(){try{const num=norm(document.getElementById('partBulletin').value||document.getElementById('editNumber').value);if(!num)throw new Error('Enter parts bulletin number');const got=await ghGet(PARTS_PATH);const data=got.data||{};data[num]=normaliseParts(data[num]||{});const row={partNumber:val('partNumber').toUpperCase(),qty:val('partQty')||'1',quantity:val('partQty')||'1',description:val('partDescription')};if(!row.partNumber)throw new Error('Enter part number');const variant=val('partVariant');if(variant){data[num].variants[variant]=data[num].variants[variant]||[];data[num].variants[variant].push(row)}else{data[num].staticParts.push(row)}await ghPut(PARTS_PATH,data,`Update Ford TSB parts for ${num}`);adminMsg('Part row saved. Run GitHub Action to refresh index.')}catch(e){adminMsg('Part save failed: '+e.message)}}
+function val(id){return document.getElementById(id).value.trim()}
+async function uploadPdfs(){try{const files=[...document.getElementById('pdfUpload').files];if(!files.length)throw new Error('Choose PDFs');for(const f of files){const ab=await f.arrayBuffer();const bytes=new Uint8Array(ab);let binary='';bytes.forEach(b=>binary+=String.fromCharCode(b));await ghPutFileRaw(`Ford/TSB/pdf/${f.name}`,btoa(binary),`Upload Ford TSB PDF ${f.name}`)}adminMsg('PDFs uploaded. Run GitHub Action.')}catch(e){adminMsg('Upload failed: '+e.message)}}
+async function ghPutFileRaw(path,content,msg){const repo=val('ghRepo'),branch=val('ghBranch'),token=val('ghToken');let sha=null;try{const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}`,{headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'}});if(r.ok)sha=(await r.json()).sha}catch(e){}const body={message:msg,content,branch};if(sha)body.sha=sha;const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}`,{method:'PUT',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify(body)});if(!r.ok)throw new Error(await r.text())}
+async function runWorkflow(){try{const repo=val('ghRepo'),branch=val('ghBranch'),token=val('ghToken');const r=await fetch(`https://api.github.com/repos/${repo}/actions/workflows/update-ford-tsb-index.yml/dispatches`,{method:'POST',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify({ref:branch})});if(!r.ok)throw new Error(await r.text());adminMsg('GitHub Action triggered. Wait a minute, then refresh the page.')}catch(e){adminMsg('Action failed: '+e.message)}}
+async function exportBackup(){const backup={manualOverrides,manualParts,exportedAt:new Date().toISOString()};const blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ford-tsb-manual-backup.json';a.click()}
+init();
 </script>
 </body>
 </html>
