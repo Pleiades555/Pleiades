@@ -6,5 +6,15 @@
     "symptom": "In some affected Stage V Panther 2.0L Bi-Turbo Ranger/Everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. In some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable.\nThe driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. The engine will continue to run at decreased power, but with hesitation and/or a misfire.",
     "concern": "In some affected Stage V Panther 2.0L Bi-Turbo Ranger/Everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. In some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable.\nThe driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. The engine will continue to run at decreased power, but with hesitation and/or a misfire.",
     "status": "Current"
+  },
+  "15S24": {
+    "title": "15S24 – Focus – Front Drive Halfshafts Replacement",
+    "model": "Focus",
+    "yearRange": "2012-2014",
+    "fordUploadDate": "2015-09-24",
+    "issueDate": "2015-09-24",
+    "symptom": "Certain Focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. Under certain conditions the halfshafts may fracture.",
+    "concern": "Certain Focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. Under certain conditions the halfshafts may fracture.",
+    "status": "Current"
   }
 }
