@@ -9,5 +9,20 @@
       }
     ],
     "variants": {}
+  },
+  "15S24": {
+    "staticParts": [],
+    "variants": {
+      "1.6L TiVCT with DPS6 Powershift Transmission": [
+        {
+          "partNumber": "BV61-3B436-VA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Shaft & Joint Assy RH",
+          "comments": "",
+          "note": ""
+        }
+      ]
+    }
   }
 }
