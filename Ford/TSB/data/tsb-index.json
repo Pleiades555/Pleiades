@@ -377,10 +377,43 @@
     "manualOnly": false,
     "searchText": "26-2159 tsb transmission not in park message when driving below 10kmph - 20 may 2026 transit 2023-2026 some of the vehicles listed in the model statement above may exhibit the following warning messages • <transmission not in park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • in combination with two other messages: <hill start assist not available> / <park brake limited function> or • stored dtcs p166b in the sccm sometimes in combination with u0404 in the abs module, this may be caused by the sobdmc, current 26-2159.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "PZ3114B427AB",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Mat Sensor",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "PZ31V632A22AD",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Foam",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "PZ3114D698AB",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Heater Mat",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "JX7BA60078AA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Plastic Bracket",
+          "comments": "",
+          "note": ""
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "25-2160"
