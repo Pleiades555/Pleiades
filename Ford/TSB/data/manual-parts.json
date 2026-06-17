@@ -246,5 +246,42 @@
       }
     ],
     "variants": {}
+  },
+  "22B44": {
+    "staticParts": [
+      {
+        "partNumber": "JG9Z2078B",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Right Front Flexible Brake Hose",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "JG9Z2078A",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Left Front Flexible Brake Hose",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "W711784S300",
+        "qty": "4",
+        "quantity": "4",
+        "description": "Banjo Washers",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "WSSM6C65A2MC",
+        "qty": "0",
+        "quantity": "0",
+        "description": "Brake Fluid Dot 4 330ml",
+        "comments": "As Required/ No specified Quantity",
+        "note": "As Required/ No specified Quantity"
+      }
+    ],
+    "variants": {}
   }
 }
