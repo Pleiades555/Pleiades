@@ -188,5 +188,42 @@
         }
       ]
     }
+  },
+  "26-2159": {
+    "staticParts": [
+      {
+        "partNumber": "PZ3114B427AB",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Seat Mat Sensor",
+        "comments": "(If Required)",
+        "note": "(If Required)"
+      },
+      {
+        "partNumber": "PZ31V632A22AD",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Seat Foam",
+        "comments": "(If Required)",
+        "note": "(If Required)"
+      },
+      {
+        "partNumber": "PZ3114D698AB",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Seat Heater Mat",
+        "comments": "(If Required)",
+        "note": "(If Required)"
+      },
+      {
+        "partNumber": "JX7BA60078AA",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Plastic Bracket",
+        "comments": "",
+        "note": ""
+      }
+    ],
+    "variants": {}
   }
 }
