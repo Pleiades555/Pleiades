@@ -32,6 +32,64 @@
     }
   },
   {
+    "number": "26-2215",
+    "tsbNumber": "26-2215",
+    "bulletinNumber": "26-2215",
+    "displayNumber": "26-2215",
+    "type": "TSB",
+    "title": "Illuminated MIL In Conjunction With Intermittent Transmission Shift - Concerns In FORWARD Or REVERSE Gear With DTCs Stored",
+    "model": "Transit Custom/Torneo, Transit",
+    "years": [
+      "2023-2025",
+      "2023-2026",
+      "2024-2025",
+      "2024-2026"
+    ],
+    "yearRange": "2023-2026, 2024-2026",
+    "fordUploadDate": "2026-06-06",
+    "issueDate": "2026-06-05",
+    "symptom": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission",
+    "concern": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission",
+    "description": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
+    "status": "Current",
+    "supersedes": [
+      "25-2366"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2215.pdf",
+    "filename": "26-2215.pdf",
+    "manualOnly": false,
+    "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit custom/torneo, transit 2023-2026, 2024-2026 2026-06-06 2026-06-05 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf",
+    "parts": {
+      "staticParts": [
+        {
+          "partNumber": "K2GZ7B343A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Gasket",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "N/A",
+          "qty": "2",
+          "quantity": "2",
+          "description": "Cable Tie",
+          "comments": "Workshop supplied",
+          "note": "Workshop supplied"
+        }
+      ],
+      "variants": {}
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [
+        "25-2366"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "15S24",
     "tsbNumber": "15S24",
     "bulletinNumber": "15S24",
@@ -306,47 +364,6 @@
     "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2215",
-    "tsbNumber": "26-2215",
-    "bulletinNumber": "26-2215",
-    "displayNumber": "26-2215",
-    "type": "TSB",
-    "title": "Illuminated MIL In Conjunction With Intermittent Transmission Shift - Concerns In FORWARD Or REVERSE Gear With DTCs Stored",
-    "model": "Transit",
-    "years": [
-      "2023-2025",
-      "2023-2026",
-      "2024-2025",
-      "2024-2026"
-    ],
-    "yearRange": "2023-2025, 2023-2026, 2024-2025, 2024-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
-    "concern": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
-    "description": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
-    "status": "Current",
-    "supersedes": [
-      "25-2366"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2215.pdf",
-    "filename": "26-2215.pdf",
-    "manualOnly": false,
-    "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit 2023-2025, 2023-2026, 2024-2025, 2024-2026 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [
-        "25-2366"
-      ],
       "supersededBy": []
     }
   },
