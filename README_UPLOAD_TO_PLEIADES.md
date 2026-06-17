@@ -1,35 +1,18 @@
-# Ford TSB v17.2 - ERA Comments + UI Cleanup
+# Ford TSB v18 Production Polish
 
-Upload these files/folders into the **root** of your `Pleiades` repository and overwrite existing files.
+Upload these files to the root of the Pleiades repository and overwrite existing files.
 
-This update keeps the v17 True Save behaviour and adds:
+Included:
 
-- `Comments` field to **Manual Parts for ERA**
-- Comments saved into `Ford/TSB/data/manual-parts.json`
-- Comments displayed underneath each ERA part row
-- Cleaner ERA parts layout:
-  - `Applies to all variants`
-  - separate variant sections
-  - variant dropdown no longer mixes static and variant parts awkwardly
-- Cleaner card footer so `Open PDF` no longer gets pushed/cut off
-- Keeps individual ERA-safe copy buttons only:
+- `Ford/TSB/index.html` updated with:
+  - GT40 background image
+  - dark readability overlay
+  - glass-style panels/cards
+  - mobile responsive layout
+  - mobile-friendly ERA parts layout
+  - full-width mobile Open PDF/Copy buttons
+  - better spacing around part numbers, scope chips and variant groups
+- `Ford/TSB/images/gt40-background.jpg`
+- Existing workflow and parser files are included from the previous update so the package can be uploaded as one folder.
 
-```text
-PART NUMBER
-QTY
-```
-
-## Important
-
-This ZIP deliberately does **not** include your live:
-
-- `Ford/TSB/data/manual-overrides.json`
-- `Ford/TSB/data/manual-parts.json`
-
-Do not overwrite those files if GitHub asks, because they contain your saved manual work.
-
-After upload, run:
-
-```text
-GitHub → Actions → Update Ford TSB Index → Run workflow
-```
+Do not overwrite your live `manual-overrides.json` or `manual-parts.json` if GitHub asks, unless you intentionally want to replace your manual edits.
