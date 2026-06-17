@@ -344,8 +344,8 @@ def clean_part_row(row):
     part_number = clean_text(row.get("partNumber") or row.get("part") or row.get("number") or "").upper()
     qty = clean_text(row.get("qty") or row.get("quantity") or "1")
     description = clean_text(row.get("description") or row.get("desc") or "")
-    note = clean_text(row.get("note") or "")
-    return {"partNumber": part_number, "qty": qty, "quantity": qty, "description": description, "note": note}
+    comments = clean_text(row.get("comments") or row.get("comment") or row.get("note") or "")
+    return {"partNumber": part_number, "qty": qty, "quantity": qty, "description": description, "comments": comments, "note": comments}
 
 
 def get_manual_parts_for_number(number, parts):
