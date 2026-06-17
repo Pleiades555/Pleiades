@@ -8,7 +8,7 @@ This update keeps the v16 parts + supersession behaviour and changes the Advance
 - **Save Part Row to GitHub** writes to `Ford/TSB/data/manual-parts.json`.
 - After either save, the page automatically triggers the `Update Ford TSB Index` workflow.
 - The generated `tsb-index.json` is still not edited directly.
-- EraLink copy remains one part at a time: part number on the first line, quantity on the second line.
+- ERA copy remains one part at a time: part number on the first line, quantity on the second line.
 
 ## Important
 
@@ -27,3 +27,13 @@ Do **not** overwrite your live `manual-overrides.json` or `manual-parts.json` if
 ## Token permissions
 
 Your GitHub token needs repository content write permission and workflow dispatch permission.
+
+
+## v17.1 update
+
+- Renames EraLink wording to ERA.
+- Re-adds Manual Parts for ERA comments/instructions.
+- Keeps true-save GitHub behaviour from v17.
+- Keeps per-part vertical copy format only: part number on one line, quantity beneath.
+
+Do not overwrite live `manual-overrides.json` or `manual-parts.json` if they already contain saved edits.

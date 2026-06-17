@@ -17,7 +17,7 @@
 
   <section id="advancedPanel" class="panel editor">
     <h2>Advanced Editor</h2>
-    <p class="note">Passcode protected. Saves field corrections to <b>manual-overrides.json</b> and parts to <b>manual-parts.json</b>. Each part row copies vertically for EraLink: part number, then quantity on the next line. Manual edits and parts are saved to GitHub, then the index workflow is triggered automatically.</p>
+    <p class="note">Passcode protected. Saves field corrections to <b>manual-overrides.json</b> and parts to <b>manual-parts.json</b>. Each part row copies vertically for ERA: part number, then quantity on the next line. Manual edits and parts are saved to GitHub, then the index workflow is triggered automatically.</p>
     <div class="editor-grid">
       <label>GitHub token<input id="ghToken" type="password" autocomplete="off"></label>
       <label>Repo<input id="ghRepo" value="Pleiades555/Pleiades"></label>
@@ -34,7 +34,17 @@
     </div>
     <button class="btn green" onclick="saveFieldOverrides(true)">Save Field Overrides to GitHub</button>
     <div class="divider"></div>
-    <h3>Manual Parts for EraLink</h3>
+    <h3>Manual Parts for ERA</h3>
+    <div class="note" style="background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px;margin:8px 0 14px">
+      <b>ERA Ordering Notes</b><br>
+      Each part receives its own Copy button. The clipboard format is vertical and optimised for ERA ordering:<br>
+      <code>Part Number</code><br>
+      <code>Quantity</code><br>
+      Paste directly into ERA when prompted. Variant-specific parts only display for the selected variant. Leave Variant blank for parts that apply to the whole bulletin/all variants.<br>
+      <span style="display:inline-block;margin-top:8px;color:#d8e7ff">Example copied output:</span><br>
+      <code>BK3Z15A416G</code><br>
+      <code>1</code>
+    </div>
     <div class="editor-grid">
       <label>Parts bulletin number<input id="partBulletin" placeholder="FAB2026033"></label>
       <label>Variant <input id="partVariant" placeholder="Leave blank for whole bulletin / all variants"></label>
