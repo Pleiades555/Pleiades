@@ -1,17 +1,26 @@
-# Pleiades Ford TSB v18.3 PDF directory fix
+# Ford TSB v18.4 - ERA Multi-Part Builder
 
-Upload these files to the root of your Pleiades repository and overwrite existing files.
+Upload this package into the root of your Pleiades repository and overwrite existing files.
 
-## What this fixes
+## What changed
 
-- Corrects Open PDF links from the Ford TSB page.
-- Converts generated JSON paths like `Ford/TSB/pdf/23P23.pdf` into page-relative links like `pdf/23P23.pdf`.
-- Converts superseded archive paths like `Ford/TSB/archive/superseded/25-2205.pdf` into `archive/superseded/25-2205.pdf`.
-- Keeps PDF upload target as `Ford/TSB/pdf/`, which is the correct GitHub repository folder.
-- Keeps v18.2 variant dropdown, ERA copy, mobile layout and GT40 background work intact.
+- Manual Parts for ERA now supports adding multiple part numbers before saving.
+- `Add Part Row` now stages the part in a visible list instead of immediately replacing/saving one row.
+- `Save Parts to GitHub` saves the full staged list to `Ford/TSB/data/manual-parts.json`.
+- Existing parts can be loaded, amended, deleted, and reordered.
+- Supports multiple whole-bulletin parts and multiple variant-specific parts.
+- Keeps the ERA copy format: part number on one line, quantity below it.
+- Keeps PDF directory fix, variant dropdown display, scenery mode, mobile layout, true save, and persistence.
 
-## Important
+## How to use
 
-Do not overwrite your live `manual-overrides.json` or `manual-parts.json` if they contain real edits. This package does not include those data files.
+1. Unlock Advanced Mode.
+2. Enter the bulletin/FSA/SSM number.
+3. In Manual Parts for ERA, enter the same bulletin number or let it auto-fill.
+4. Press **Load Existing Parts**.
+5. Enter Part Number, Quantity, Description, Comments and optional Variant.
+6. Press **Add Part Row** for each part required.
+7. Press **Save Parts to GitHub** when the staged list is complete.
 
-After upload, refresh GitHub Pages. If old links persist, force refresh the page with Ctrl+F5.
+Leaving Variant blank stores the part under **Applies to all variants**.
+Entering a Variant stores it under the variant dropdown.

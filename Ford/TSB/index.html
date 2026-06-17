@@ -37,7 +37,9 @@ a{color:var(--blue)}
 .card-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;min-width:0}.num{font-size:24px;font-weight:950;letter-spacing:.01em}.title{font-size:18px;margin:6px 0 10px;font-weight:780;line-height:1.22;overflow-wrap:anywhere}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.badge{display:inline-flex;align-items:center}.badge.current{color:#bfffd7;border-color:#21683d}.badge.sup{color:#ffdba7;border-color:#7a5521}
 .concern{color:#edf5ff;line-height:1.5;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.08);padding:14px;border-radius:13px;overflow-wrap:anywhere}.btn.green{background:#16be60;border-color:#16be60;color:white}.btn.small{font-size:12px;padding:7px 10px;min-height:34px}.hidden{display:none}.note{color:var(--muted);font-size:14px;line-height:1.5}.divider{height:1px;background:var(--line);margin:18px 0}.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.wide{grid-column:1/-1}
 .parts{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;clear:both}.parts h3{margin:0}.parts-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}.variant-picker{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:13px;font-weight:800}.parts-head select{max-width:300px;min-width:220px}.parts-group{background:rgba(0,0,0,.20);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:14px;margin:12px 0}.parts-group-title{font-weight:950;margin-bottom:12px;color:#eaf3ff;font-size:16px}.variant-empty{color:var(--muted);font-size:14px;background:rgba(255,255,255,.045);border:1px dashed rgba(255,255,255,.14);border-radius:13px;padding:12px;margin:12px 0}.part-row{display:grid;grid-template-columns:minmax(230px,.95fr) minmax(80px,.22fr) minmax(300px,1.25fr) auto;gap:22px;align-items:center;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.09);border-radius:13px;padding:14px;margin:10px 0;min-width:0}.part-cell{min-width:0;display:flex;flex-direction:column;justify-content:center}.part-label{display:block;margin-bottom:5px;color:#8ea7c7;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.partno{font-weight:950;display:block;line-height:1.25;overflow-wrap:anywhere}.qty{color:#e1edff;font-weight:850;white-space:nowrap}.desc{color:var(--muted);line-height:1.35;overflow-wrap:anywhere}.part-comment{grid-column:1/-1;color:var(--muted);font-style:italic;border-top:1px solid rgba(255,255,255,.1);padding-top:9px;margin-top:2px}.superlinks{margin-top:10px;color:var(--muted)}.superlinks button{margin-left:4px}.card-footer{margin-top:auto;border-top:1px solid var(--line);padding-top:13px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:flex-end}.card-footer .btn{white-space:nowrap}.no-pdf{color:var(--muted);font-size:12px}
-@media(max-width:980px){.controls{grid-template-columns:1fr 1fr}.card-head,.top{display:block}.top-actions{margin-top:14px;justify-content:flex-start}.advanced-btn{margin-top:0}.editor-grid{grid-template-columns:1fr}.part-row{grid-template-columns:1.2fr .45fr}.part-row .desc{grid-column:1/-1}.part-row .btn{justify-self:start}.card-footer{justify-content:flex-start}}
+.staged-parts{margin-top:14px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:12px}.staged-parts h4{margin:0 0 10px}.staged-row{display:grid;grid-template-columns:minmax(160px,1fr) 70px minmax(220px,1.4fr) minmax(180px,1fr) auto;gap:12px;align-items:center;padding:10px;border-top:1px solid rgba(255,255,255,.08)}.staged-row:first-of-type{border-top:0}.staged-meta{color:var(--muted);font-size:12px}.staged-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.unsaved-dot{display:inline-block;width:9px;height:9px;border-radius:999px;background:var(--orange);margin-right:6px}
+
+@media(max-width:980px){.controls{grid-template-columns:1fr 1fr}.card-head,.top{display:block}.top-actions{margin-top:14px;justify-content:flex-start}.advanced-btn{margin-top:0}.editor-grid{grid-template-columns:1fr}.part-row{grid-template-columns:1.2fr .45fr}.part-row .desc{grid-column:1/-1}.part-row .btn{justify-self:start}.card-footer{justify-content:flex-start}.staged-row{grid-template-columns:1fr 70px}.staged-row .staged-desc,.staged-row .staged-comments,.staged-row .btn{grid-column:1/-1}}
 @media(max-width:700px){body::before{background-attachment:scroll;background-position:68% center}.wrap{padding:14px 10px}.top{margin-bottom:10px}.panel{padding:13px;border-radius:16px;margin:12px 0}.controls{grid-template-columns:1fr}.controls input,.controls select,.editor input,.editor select,.editor textarea{font-size:16px}.panel:nth-of-type(2){position:sticky;top:0;z-index:10;background:rgba(7,18,33,.94)}.stats{gap:7px}.stat,.chip,.badge{font-size:12px;padding:6px 9px}.card{padding:14px;border-radius:17px;gap:10px}.num{font-size:22px}.title{font-size:16px}.meta{display:grid;grid-template-columns:1fr;gap:7px}.badge{width:fit-content;max-width:100%;line-height:1.25}.concern{padding:12px;font-size:14px}.parts-head{display:block}.variant-picker{display:block}.parts-head select{width:100%;max-width:100%;margin-top:10px;min-height:42px}.parts-group{padding:12px;border-radius:14px}.part-row{grid-template-columns:1fr;gap:9px;padding:12px}.partno{margin-bottom:0}.part-row .btn{width:100%;justify-self:stretch}.card-footer{display:grid;grid-template-columns:1fr;gap:9px}.card-footer .btn{width:100%;text-align:center}.advanced-btn,.btn{width:100%;min-height:44px}.editor .btn{margin-top:8px}.brand p{font-size:14px}}
 </style>
 </head>
@@ -79,14 +81,19 @@ a{color:var(--blue)}
       <code>1</code>
     </div>
     <div class="editor-grid">
-      <label>Parts bulletin number<input id="partBulletin" placeholder="FAB2026033"></label>
+      <label>Parts bulletin number<input id="partBulletin" placeholder="FAB2026033" onchange="loadPartsBuilder()"></label>
       <label>Variant <input id="partVariant" placeholder="Leave blank for whole bulletin / all variants"></label>
       <label>Part number<input id="partNumber"></label>
       <label>Quantity<input id="partQty" value="1"></label>
       <label class="wide">Description<input id="partDescription"></label>
       <label class="wide">Comments<textarea id="partComments" placeholder="Example: Only order if harness is damaged, variant has trailer package, or previous repair was not completed."></textarea></label>
     </div>
-    <button class="btn green" onclick="addPartRow(true)">Save Part Row to GitHub</button>
+    <div class="staged-actions">
+      <button class="btn" onclick="loadPartsBuilder()">Load Existing Parts</button>
+      <button class="btn" onclick="stagePartRow()">Add Part Row</button>
+      <button class="btn green" onclick="saveStagedParts(true)">Save Parts to GitHub</button>
+    </div>
+    <div id="partsBuilder" class="staged-parts hidden"></div>
     <div class="divider"></div>
     <h3>Upload PDFs</h3>
     <p class="note">Uploads selected PDFs to <code>Ford/TSB/pdf/</code>. Then run the GitHub Action to regenerate the index.</p>
@@ -114,7 +121,7 @@ a{color:var(--blue)}
 const DATA_PATH='data/tsb-index.json';
 const OVERRIDES_PATH='Ford/TSB/data/manual-overrides.json';
 const PARTS_PATH='Ford/TSB/data/manual-parts.json';
-let allItems=[], filtered=[], manualParts={}, manualOverrides={};
+let allItems=[], filtered=[], manualParts={}, manualOverrides={}, stagedParts=null, stagedPartsNumber='';
 function norm(n){return String(n||'').trim().toUpperCase().replace(/\s+/g,'-').replace(/--+/g,'-')}
 function esc(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function adminMsg(m){document.getElementById('adminMsg').textContent=m}
@@ -134,7 +141,7 @@ function pdfUrl(file){
 async function init(){allItems=await loadJson(DATA_PATH,[]); manualParts=await loadJson('data/manual-parts.json',{}); manualOverrides=await loadJson('data/manual-overrides.json',{}); allItems=allItems.map(applyClientParts); bindFilters(); render()}
 function applyClientParts(item){const key=norm(item.number||item.displayNumber); const p=findParts(key); if(p){item.parts=normaliseParts(p); item.hasManualParts=hasParts(item.parts)} if(manualOverrides[key]) item.manualOverride=true; return item}
 function findParts(key){for(const [k,v] of Object.entries(manualParts||{})){if(norm(k)===key)return v} return null}
-function normaliseParts(p){return {staticParts:Array.isArray(p.staticParts)?p.staticParts:[], variants:p.variants&&typeof p.variants==='object'?p.variants:{}}}
+function normaliseParts(p){const out={staticParts:Array.isArray(p?.staticParts)?[...p.staticParts]:[], variants:{}}; if(p?.variants&&typeof p.variants==='object'){Object.entries(p.variants).forEach(([k,v])=>{out.variants[k]=Array.isArray(v)?[...v]:[]})} return out}
 function hasParts(p){return !!(p&&(p.staticParts?.length||Object.keys(p.variants||{}).length))}
 function bindFilters(){['search','typeFilter','statusFilter','sortMode','partsFilter'].forEach(id=>document.getElementById(id).addEventListener('input',render))}
 function render(){const q=document.getElementById('search').value.toLowerCase();const tf=document.getElementById('typeFilter').value;const sf=document.getElementById('statusFilter').value;const pf=document.getElementById('partsFilter').value;const sm=document.getElementById('sortMode').value;filtered=allItems.filter(x=>{const text=[x.searchText,x.number,x.displayNumber,x.type,x.title,x.model,x.yearRange,x.symptom,JSON.stringify(x.parts||{})].join(' ').toLowerCase();return(!q||text.includes(q))&&(!tf||x.type===tf)&&(!sf||x.status===sf)&&(!pf||(pf==='with'?x.hasManualParts:!x.hasManualParts))});filtered.sort((a,b)=>{if(sm==='number')return String(a.displayNumber||a.number).localeCompare(String(b.displayNumber||b.number),undefined,{numeric:true});if(sm==='title')return String(a.title).localeCompare(String(b.title));if(sm==='model')return String(a.model).localeCompare(String(b.model));return String(b.fordUploadDate||'').localeCompare(String(a.fordUploadDate||''))});document.getElementById('totalCount').textContent=allItems.length;document.getElementById('shownCount').textContent=filtered.length;document.getElementById('manualCount').textContent=allItems.filter(x=>x.manualOverride||manualOverrides[norm(x.number)]).length;document.getElementById('partsCount').textContent=allItems.filter(x=>x.hasManualParts).length;document.getElementById('results').innerHTML=filtered.map(card).join('')||'<div class="panel">No matching bulletins.</div>'}
@@ -191,7 +198,91 @@ function unlockAdvanced(){const p=prompt('Advanced passcode');if(p==='11290')doc
 async function ghGet(path){const repo=document.getElementById('ghRepo').value.trim();const branch=document.getElementById('ghBranch').value.trim();const token=document.getElementById('ghToken').value.trim();const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}`,{headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'}}); if(r.status===404)return {sha:null,data:{}}; if(!r.ok)throw new Error(await r.text()); const j=await r.json(); const txt=decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))); return {sha:j.sha,data:JSON.parse(txt||'{}')}}
 async function ghPut(path,data,msg){const repo=document.getElementById('ghRepo').value.trim();const branch=document.getElementById('ghBranch').value.trim();const token=document.getElementById('ghToken').value.trim();let current={sha:null};try{current=await ghGet(path)}catch(e){}const content=btoa(unescape(encodeURIComponent(JSON.stringify(data,null,2))));const body={message:msg,content,branch};if(current.sha)body.sha=current.sha;const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}`,{method:'PUT',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify(body)});if(!r.ok)throw new Error(await r.text());return await r.json()}
 async function saveFieldOverrides(autoRun=false){try{const num=norm(document.getElementById('editNumber').value);if(!num)throw new Error('Enter bulletin number');const got=await ghGet(OVERRIDES_PATH);const data=got.data||{};data[num]={...(data[num]||{}),title:val('editTitle'),model:val('editModel'),yearRange:val('editYearRange'),fordUploadDate:val('editFordDate'),issueDate:val('editIssueDate'),symptom:val('editConcern'),concern:val('editConcern'),status:val('editStatus'),supersededBy:val('editSupersededBy')};Object.keys(data[num]).forEach(k=>{if(data[num][k]==='')delete data[num][k]});await ghPut(OVERRIDES_PATH,data,`Update Ford TSB overrides for ${num}`);adminMsg('Saved field overrides to GitHub. Triggering index refresh...'); if(autoRun){await runWorkflow(false); adminMsg('Saved field overrides and triggered GitHub Action. Refresh live page in about 60 seconds.')} else {adminMsg('Saved field overrides. Run GitHub Action to refresh index.')}}catch(e){adminMsg('Save failed: '+e.message)}}
-async function addPartRow(autoRun=false){try{const num=norm(document.getElementById('partBulletin').value||document.getElementById('editNumber').value);if(!num)throw new Error('Enter parts bulletin number');const got=await ghGet(PARTS_PATH);const data=got.data||{};data[num]=normaliseParts(data[num]||{});const row={partNumber:val('partNumber').toUpperCase(),qty:val('partQty')||'1',quantity:val('partQty')||'1',description:val('partDescription'),comments:val('partComments'),note:val('partComments')};if(!row.partNumber)throw new Error('Enter part number');const variant=val('partVariant');if(variant){data[num].variants[variant]=data[num].variants[variant]||[];data[num].variants[variant].push(row)}else{data[num].staticParts.push(row)}await ghPut(PARTS_PATH,data,`Update Ford TSB parts for ${num}`);adminMsg('Part row saved to GitHub. Triggering index refresh...'); if(autoRun){await runWorkflow(false); adminMsg('Part row saved and GitHub Action triggered. Refresh live page in about 60 seconds.')} else {adminMsg('Part row saved. Run GitHub Action to refresh index.')}}catch(e){adminMsg('Part save failed: '+e.message)}}
+function currentPartsNumber(){return norm(document.getElementById('partBulletin').value||document.getElementById('editNumber').value)}
+function loadPartsBuilder(){
+  const num=currentPartsNumber();
+  if(!num){adminMsg('Enter a parts bulletin number first.');return}
+  stagedPartsNumber=num;
+  const existing=findParts(num);
+  stagedParts=normaliseParts(existing||{});
+  document.getElementById('partBulletin').value=num;
+  renderPartsBuilder();
+  adminMsg(`Loaded staged ERA parts for ${num}. Add as many rows as needed, then Save Parts to GitHub.`);
+}
+function stagePartRow(){
+  const num=currentPartsNumber();
+  if(!num){adminMsg('Enter a parts bulletin number first.');return}
+  if(!stagedParts || stagedPartsNumber!==num){
+    stagedPartsNumber=num;
+    stagedParts=normaliseParts(findParts(num)||{});
+  }
+  const partNumber=val('partNumber').toUpperCase();
+  if(!partNumber){adminMsg('Enter part number.');return}
+  const row={
+    partNumber,
+    qty:val('partQty')||'1',
+    quantity:val('partQty')||'1',
+    description:val('partDescription'),
+    comments:val('partComments'),
+    note:val('partComments')
+  };
+  const variant=val('partVariant');
+  if(variant){
+    stagedParts.variants[variant]=stagedParts.variants[variant]||[];
+    stagedParts.variants[variant].push(row);
+  }else{
+    stagedParts.staticParts.push(row);
+  }
+  ['partNumber','partDescription','partComments'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('partQty').value='1';
+  renderPartsBuilder();
+  adminMsg(`Part staged for ${num}. Add more rows or Save Parts to GitHub.`);
+}
+function removeStagedPart(section,variant,index){
+  if(!stagedParts)return;
+  if(section==='static') stagedParts.staticParts.splice(index,1);
+  if(section==='variant' && stagedParts.variants[variant]) stagedParts.variants[variant].splice(index,1);
+  renderPartsBuilder();
+  adminMsg('Part removed from staged list. Save Parts to GitHub to make it permanent.');
+}
+function moveStagedPart(section,variant,index,delta){
+  const arr=section==='static'?stagedParts.staticParts:stagedParts.variants[variant];
+  if(!arr)return;
+  const ni=index+delta;
+  if(ni<0||ni>=arr.length)return;
+  [arr[index],arr[ni]]=[arr[ni],arr[index]];
+  renderPartsBuilder();
+}
+function stagedRowHtml(r,section,variant,index){
+  return `<div class="staged-row"><div><b>${esc(r.partNumber||'')}</b><div class="staged-meta">${section==='static'?'Applies to all variants':esc(variant)}</div></div><div><span class="staged-meta">Qty</span><br><b>${esc(r.qty||r.quantity||'1')}</b></div><div class="staged-desc">${esc(r.description||'')}</div><div class="staged-comments"><i>${esc(r.comments||r.comment||r.note||'')}</i></div><div style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn small" onclick="moveStagedPart('${section}','${esc(variant)}',${index},-1)">↑</button><button class="btn small" onclick="moveStagedPart('${section}','${esc(variant)}',${index},1)">↓</button><button class="btn small" onclick="removeStagedPart('${section}','${esc(variant)}',${index})">Delete</button></div></div>`;
+}
+function renderPartsBuilder(){
+  const box=document.getElementById('partsBuilder');
+  if(!box)return;
+  if(!stagedParts){box.classList.add('hidden');return}
+  const staticRows=(stagedParts.staticParts||[]).map((r,i)=>stagedRowHtml(r,'static','',i)).join('') || '<div class="note">No whole-bulletin parts staged.</div>';
+  const variantBlocks=Object.entries(stagedParts.variants||{}).map(([v,rows])=>`<h4>Variant: ${esc(v)}</h4>${rows.map((r,i)=>stagedRowHtml(r,'variant',v,i)).join('')||'<div class="note">No parts in this variant.</div>'}`).join('') || '<div class="note">No variant-specific parts staged.</div>';
+  box.classList.remove('hidden');
+  box.innerHTML=`<h4><span class="unsaved-dot"></span>Staged ERA Parts for ${esc(stagedPartsNumber)}</h4><div class="note">Rows shown here are staged in the browser. They become permanent only after <b>Save Parts to GitHub</b>.</div><h4>Applies to all variants</h4>${staticRows}<div class="divider"></div><h4>Variant-specific parts</h4>${variantBlocks}`;
+}
+async function saveStagedParts(autoRun=false){
+  try{
+    const num=currentPartsNumber();
+    if(!num)throw new Error('Enter parts bulletin number');
+    if(!stagedParts || stagedPartsNumber!==num) loadPartsBuilder();
+    const got=await ghGet(PARTS_PATH);
+    const data=got.data||{};
+    data[num]=normaliseParts(stagedParts||{});
+    // Remove empty variant buckets.
+    Object.keys(data[num].variants).forEach(v=>{if(!data[num].variants[v]?.length)delete data[num].variants[v]});
+    await ghPut(PARTS_PATH,data,`Update Ford TSB ERA parts for ${num}`);
+    manualParts=data;
+    allItems=allItems.map(applyClientParts);
+    render();
+    adminMsg('ERA parts saved to GitHub. Triggering index refresh...');
+    if(autoRun){await runWorkflow(false); adminMsg('ERA parts saved and GitHub Action triggered. Refresh live page in about 60 seconds.')} else {adminMsg('ERA parts saved. Run GitHub Action to refresh index.')}
+  }catch(e){adminMsg('Parts save failed: '+e.message)}
+}
 function val(id){return document.getElementById(id).value.trim()}
 async function uploadPdfs(){try{const files=[...document.getElementById('pdfUpload').files];if(!files.length)throw new Error('Choose PDFs');for(const f of files){const ab=await f.arrayBuffer();const bytes=new Uint8Array(ab);let binary='';bytes.forEach(b=>binary+=String.fromCharCode(b));await ghPutFileRaw(`Ford/TSB/pdf/${f.name}`,btoa(binary),`Upload Ford TSB PDF ${f.name}`)}adminMsg('PDFs uploaded. Run GitHub Action.')}catch(e){adminMsg('Upload failed: '+e.message)}}
 async function ghPutFileRaw(path,content,msg){const repo=val('ghRepo'),branch=val('ghBranch'),token=val('ghToken');let sha=null;try{const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}`,{headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'}});if(r.ok)sha=(await r.json()).sha}catch(e){}const body={message:msg,content,branch};if(sha)body.sha=sha;const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}`,{method:'PUT',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify(body)});if(!r.ok)throw new Error(await r.text())}
@@ -213,6 +304,8 @@ function fillEditorFromBulletin(){
     if(item.supersededBy) document.getElementById('editSupersededBy').value=Array.isArray(item.supersededBy)?item.supersededBy.join(', '):item.supersededBy;
   }
   document.getElementById('partBulletin').value=num;
+  stagedParts=null;
+  loadPartsBuilder();
 }
 setTimeout(()=>{document.getElementById('editNumber')?.addEventListener('change',fillEditorFromBulletin)},500);
 
