@@ -1,18 +1,17 @@
-# Ford TSB v18.2 Variant Dropdown + Parts Alignment Update
+# Pleiades Ford TSB v18.3 PDF directory fix
 
-Upload the contents of this ZIP into the root of the Pleiades repository and overwrite existing files when prompted.
+Upload these files to the root of your Pleiades repository and overwrite existing files.
 
-## Changes included
+## What this fixes
 
-- Removes the repeated "Whole bulletin" badge from every part row.
-- Keeps the "Applies to all variants" group heading instead.
-- Aligns Part Number, Qty, Description and Copy button on the same row.
-- Adds a proper variant dropdown for bulletins with variant-specific ERA parts.
-- Static whole-bulletin parts always remain visible.
-- Variant-specific parts are shown only when a variant is selected.
-- If there is only one variant, it is pre-selected automatically.
-- Keeps the scenery mode, mobile responsiveness, ERA copy format, True Save and GitHub persistence intact.
+- Corrects Open PDF links from the Ford TSB page.
+- Converts generated JSON paths like `Ford/TSB/pdf/23P23.pdf` into page-relative links like `pdf/23P23.pdf`.
+- Converts superseded archive paths like `Ford/TSB/archive/superseded/25-2205.pdf` into `archive/superseded/25-2205.pdf`.
+- Keeps PDF upload target as `Ford/TSB/pdf/`, which is the correct GitHub repository folder.
+- Keeps v18.2 variant dropdown, ERA copy, mobile layout and GT40 background work intact.
 
-## After upload
+## Important
 
-No data files need to be overwritten manually. This package only updates the site files and keeps your live manual data model compatible.
+Do not overwrite your live `manual-overrides.json` or `manual-parts.json` if they contain real edits. This package does not include those data files.
+
+After upload, refresh GitHub Pages. If old links persist, force refresh the page with Ctrl+F5.

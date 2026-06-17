@@ -120,6 +120,17 @@ function esc(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&l
 function adminMsg(m){document.getElementById('adminMsg').textContent=m}
 async function loadJson(path, fallback){try{const r=await fetch(path+'?v='+Date.now()); if(!r.ok) return fallback; return await r.json()}catch(e){return fallback}}
 function toggleScenery(){const on=document.body.classList.toggle('scenery-mode');document.getElementById('sceneryBtn').textContent=on?'Back to TSBs':'Enjoy the scenery'}
+function pdfUrl(file){
+  const raw=String(file||'').trim();
+  if(!raw)return '';
+  if(/^https?:\/\//i.test(raw))return raw;
+  let p=raw.replace(/\\/g,'/').replace(/^\/+/, '');
+  p=p.replace(/^Pleiades\//i,'');
+  p=p.replace(/^Ford\/TSB\//i,'');
+  p=p.replace(/^\.\//,'');
+  if(!/^pdf\//i.test(p)&&!/^archive\//i.test(p)&&/\.pdf$/i.test(p))p='pdf/'+p;
+  return encodeURI(p).replace(/#/g,'%23');
+}
 async function init(){allItems=await loadJson(DATA_PATH,[]); manualParts=await loadJson('data/manual-parts.json',{}); manualOverrides=await loadJson('data/manual-overrides.json',{}); allItems=allItems.map(applyClientParts); bindFilters(); render()}
 function applyClientParts(item){const key=norm(item.number||item.displayNumber); const p=findParts(key); if(p){item.parts=normaliseParts(p); item.hasManualParts=hasParts(item.parts)} if(manualOverrides[key]) item.manualOverride=true; return item}
 function findParts(key){for(const [k,v] of Object.entries(manualParts||{})){if(norm(k)===key)return v} return null}
@@ -130,7 +141,7 @@ function render(){const q=document.getElementById('search').value.toLowerCase();
 function card(x){
   const n=esc(x.displayNumber||x.number||x.filename||'Unknown');
   const hasPdf=!!x.file;
-  const pdfHref=hasPdf?`../../${esc(x.file).replace(/^Ford\/TSB\//,'')}`:'';
+  const pdfHref=hasPdf?esc(pdfUrl(x.file)):'';
   return `<article class="card ${x.status==='Superseded'?'superseded':''} ${x.manualOverride?'manual':''}" id="b-${esc(norm(x.number||x.displayNumber))}">
     <div class="card-head">
       <div>
