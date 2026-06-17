@@ -26,5 +26,15 @@
     "symptom": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission",
     "concern": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission",
     "status": "Current"
+  },
+  "22B44": {
+    "title": "22B44 - MONDEO - Front Flexible Brake Hose Replacement",
+    "model": "Mondeo",
+    "yearRange": "2014-2017",
+    "fordUploadDate": "2023-08-07",
+    "issueDate": "2023-08-07",
+    "symptom": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
+    "concern": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
+    "status": "Current"
   }
 }
