@@ -1,17 +1,18 @@
-# Ford TSB v18.1 Scenery + ERA Parts Alignment Update
+# Ford TSB v18.2 Variant Dropdown + Parts Alignment Update
 
-Upload these files to the root of your Pleiades GitHub repository and overwrite existing files.
+Upload the contents of this ZIP into the root of the Pleiades repository and overwrite existing files when prompted.
 
-## Included
-- Adds an **Enjoy the scenery** button at the top right.
-  - This hides the page overlay/content so the GT40 background can be viewed clearly.
-  - Press **Back to TSBs** to restore the normal readable website.
-- Cleans up ERA Parts rows.
-  - Part Number, Qty, Description and Copy now align horizontally on desktop.
-  - The variant/scope chip such as **Whole bulletin** has more breathing room under the part number.
-  - Mobile layout still stacks cleanly.
+## Changes included
 
-## Files changed
-- `Ford/TSB/index.html`
+- Removes the repeated "Whole bulletin" badge from every part row.
+- Keeps the "Applies to all variants" group heading instead.
+- Aligns Part Number, Qty, Description and Copy button on the same row.
+- Adds a proper variant dropdown for bulletins with variant-specific ERA parts.
+- Static whole-bulletin parts always remain visible.
+- Variant-specific parts are shown only when a variant is selected.
+- If there is only one variant, it is pre-selected automatically.
+- Keeps the scenery mode, mobile responsiveness, ERA copy format, True Save and GitHub persistence intact.
 
-No data files are included, so this will not overwrite your live manual edits, `manual-overrides.json`, or `manual-parts.json`.
+## After upload
+
+No data files need to be overwritten manually. This package only updates the site files and keeps your live manual data model compatible.
