@@ -17,7 +17,7 @@
 
   <section id="advancedPanel" class="panel editor">
     <h2>Advanced Editor</h2>
-    <p class="note">Passcode protected. Saves field corrections to <b>manual-overrides.json</b> and parts to <b>manual-parts.json</b>. Each part row copies vertically for EraLink: part number, then quantity on the next line.</p>
+    <p class="note">Passcode protected. Saves field corrections to <b>manual-overrides.json</b> and parts to <b>manual-parts.json</b>. Each part row copies vertically for EraLink: part number, then quantity on the next line. Manual edits and parts are saved to GitHub, then the index workflow is triggered automatically.</p>
     <div class="editor-grid">
       <label>GitHub token<input id="ghToken" type="password" autocomplete="off"></label>
       <label>Repo<input id="ghRepo" value="Pleiades555/Pleiades"></label>
@@ -32,7 +32,7 @@
       <label>Superseded by<input id="editSupersededBy" placeholder="Replacement bulletin"></label>
       <label class="wide">Symptom / concern<textarea id="editConcern"></textarea></label>
     </div>
-    <button class="btn green" onclick="saveFieldOverrides()">Save Field Overrides</button>
+    <button class="btn green" onclick="saveFieldOverrides(true)">Save Field Overrides to GitHub</button>
     <div class="divider"></div>
     <h3>Manual Parts for EraLink</h3>
     <div class="editor-grid">
@@ -42,13 +42,13 @@
       <label>Quantity<input id="partQty" value="1"></label>
       <label class="wide">Description<input id="partDescription"></label>
     </div>
-    <button class="btn green" onclick="addPartRow()">Add Part Row</button>
+    <button class="btn green" onclick="addPartRow(true)">Save Part Row to GitHub</button>
     <div class="divider"></div>
     <h3>Upload PDFs</h3>
     <p class="note">Uploads selected PDFs to <code>Ford/TSB/pdf/</code>. Then run the GitHub Action to regenerate the index.</p>
     <input id="pdfUpload" type="file" accept="application/pdf" multiple>
     <button class="btn" onclick="uploadPdfs()">Upload PDFs</button>
-    <button class="btn" onclick="runWorkflow()">Run GitHub Action</button>
+    <button class="btn" onclick="runWorkflow()">Run GitHub Action Manually</button>
     <button class="btn" onclick="exportBackup()">Export Manual Data Backup</button>
     <div id="adminMsg" class="note" style="margin-top:10px"></div>
   </section>
@@ -94,13 +94,32 @@ async function copyPart(part,qty,btn){await navigator.clipboard.writeText(`${par
 function unlockAdvanced(){const p=prompt('Advanced passcode');if(p==='11290')document.getElementById('advancedPanel').classList.add('open')}
 async function ghGet(path){const repo=document.getElementById('ghRepo').value.trim();const branch=document.getElementById('ghBranch').value.trim();const token=document.getElementById('ghToken').value.trim();const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}`,{headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'}}); if(r.status===404)return {sha:null,data:{}}; if(!r.ok)throw new Error(await r.text()); const j=await r.json(); const txt=decodeURIComponent(escape(atob(j.content.replace(/\n/g,'')))); return {sha:j.sha,data:JSON.parse(txt||'{}')}}
 async function ghPut(path,data,msg){const repo=document.getElementById('ghRepo').value.trim();const branch=document.getElementById('ghBranch').value.trim();const token=document.getElementById('ghToken').value.trim();let current={sha:null};try{current=await ghGet(path)}catch(e){}const content=btoa(unescape(encodeURIComponent(JSON.stringify(data,null,2))));const body={message:msg,content,branch};if(current.sha)body.sha=current.sha;const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}`,{method:'PUT',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify(body)});if(!r.ok)throw new Error(await r.text());return await r.json()}
-async function saveFieldOverrides(){try{const num=norm(document.getElementById('editNumber').value);if(!num)throw new Error('Enter bulletin number');const got=await ghGet(OVERRIDES_PATH);const data=got.data||{};data[num]={...(data[num]||{}),title:val('editTitle'),model:val('editModel'),yearRange:val('editYearRange'),fordUploadDate:val('editFordDate'),issueDate:val('editIssueDate'),symptom:val('editConcern'),concern:val('editConcern'),status:val('editStatus'),supersededBy:val('editSupersededBy')};Object.keys(data[num]).forEach(k=>{if(data[num][k]==='')delete data[num][k]});await ghPut(OVERRIDES_PATH,data,`Update Ford TSB overrides for ${num}`);adminMsg('Saved field overrides. Run GitHub Action to refresh index.')}catch(e){adminMsg('Save failed: '+e.message)}}
-async function addPartRow(){try{const num=norm(document.getElementById('partBulletin').value||document.getElementById('editNumber').value);if(!num)throw new Error('Enter parts bulletin number');const got=await ghGet(PARTS_PATH);const data=got.data||{};data[num]=normaliseParts(data[num]||{});const row={partNumber:val('partNumber').toUpperCase(),qty:val('partQty')||'1',quantity:val('partQty')||'1',description:val('partDescription')};if(!row.partNumber)throw new Error('Enter part number');const variant=val('partVariant');if(variant){data[num].variants[variant]=data[num].variants[variant]||[];data[num].variants[variant].push(row)}else{data[num].staticParts.push(row)}await ghPut(PARTS_PATH,data,`Update Ford TSB parts for ${num}`);adminMsg('Part row saved. Run GitHub Action to refresh index.')}catch(e){adminMsg('Part save failed: '+e.message)}}
+async function saveFieldOverrides(autoRun=false){try{const num=norm(document.getElementById('editNumber').value);if(!num)throw new Error('Enter bulletin number');const got=await ghGet(OVERRIDES_PATH);const data=got.data||{};data[num]={...(data[num]||{}),title:val('editTitle'),model:val('editModel'),yearRange:val('editYearRange'),fordUploadDate:val('editFordDate'),issueDate:val('editIssueDate'),symptom:val('editConcern'),concern:val('editConcern'),status:val('editStatus'),supersededBy:val('editSupersededBy')};Object.keys(data[num]).forEach(k=>{if(data[num][k]==='')delete data[num][k]});await ghPut(OVERRIDES_PATH,data,`Update Ford TSB overrides for ${num}`);adminMsg('Saved field overrides to GitHub. Triggering index refresh...'); if(autoRun){await runWorkflow(false); adminMsg('Saved field overrides and triggered GitHub Action. Refresh live page in about 60 seconds.')} else {adminMsg('Saved field overrides. Run GitHub Action to refresh index.')}}catch(e){adminMsg('Save failed: '+e.message)}}
+async function addPartRow(autoRun=false){try{const num=norm(document.getElementById('partBulletin').value||document.getElementById('editNumber').value);if(!num)throw new Error('Enter parts bulletin number');const got=await ghGet(PARTS_PATH);const data=got.data||{};data[num]=normaliseParts(data[num]||{});const row={partNumber:val('partNumber').toUpperCase(),qty:val('partQty')||'1',quantity:val('partQty')||'1',description:val('partDescription')};if(!row.partNumber)throw new Error('Enter part number');const variant=val('partVariant');if(variant){data[num].variants[variant]=data[num].variants[variant]||[];data[num].variants[variant].push(row)}else{data[num].staticParts.push(row)}await ghPut(PARTS_PATH,data,`Update Ford TSB parts for ${num}`);adminMsg('Part row saved to GitHub. Triggering index refresh...'); if(autoRun){await runWorkflow(false); adminMsg('Part row saved and GitHub Action triggered. Refresh live page in about 60 seconds.')} else {adminMsg('Part row saved. Run GitHub Action to refresh index.')}}catch(e){adminMsg('Part save failed: '+e.message)}}
 function val(id){return document.getElementById(id).value.trim()}
 async function uploadPdfs(){try{const files=[...document.getElementById('pdfUpload').files];if(!files.length)throw new Error('Choose PDFs');for(const f of files){const ab=await f.arrayBuffer();const bytes=new Uint8Array(ab);let binary='';bytes.forEach(b=>binary+=String.fromCharCode(b));await ghPutFileRaw(`Ford/TSB/pdf/${f.name}`,btoa(binary),`Upload Ford TSB PDF ${f.name}`)}adminMsg('PDFs uploaded. Run GitHub Action.')}catch(e){adminMsg('Upload failed: '+e.message)}}
 async function ghPutFileRaw(path,content,msg){const repo=val('ghRepo'),branch=val('ghBranch'),token=val('ghToken');let sha=null;try{const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}`,{headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'}});if(r.ok)sha=(await r.json()).sha}catch(e){}const body={message:msg,content,branch};if(sha)body.sha=sha;const r=await fetch(`https://api.github.com/repos/${repo}/contents/${path}`,{method:'PUT',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify(body)});if(!r.ok)throw new Error(await r.text())}
-async function runWorkflow(){try{const repo=val('ghRepo'),branch=val('ghBranch'),token=val('ghToken');const r=await fetch(`https://api.github.com/repos/${repo}/actions/workflows/update-ford-tsb-index.yml/dispatches`,{method:'POST',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify({ref:branch})});if(!r.ok)throw new Error(await r.text());adminMsg('GitHub Action triggered. Wait a minute, then refresh the page.')}catch(e){adminMsg('Action failed: '+e.message)}}
+async function runWorkflow(showMessage=true){try{const repo=val('ghRepo'),branch=val('ghBranch'),token=val('ghToken');const r=await fetch(`https://api.github.com/repos/${repo}/actions/workflows/update-ford-tsb-index.yml/dispatches`,{method:'POST',headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json'},body:JSON.stringify({ref:branch})});if(!r.ok)throw new Error(await r.text());if(showMessage) adminMsg('GitHub Action triggered. Wait a minute, then refresh the page.')}catch(e){adminMsg('Action failed: '+e.message); throw e}}
 async function exportBackup(){const backup={manualOverrides,manualParts,exportedAt:new Date().toISOString()};const blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ford-tsb-manual-backup.json';a.click()}
+
+function fillEditorFromBulletin(){
+  const num=norm(document.getElementById('editNumber').value);
+  if(!num)return;
+  const item=allItems.find(x=>norm(x.number||x.displayNumber)===num);
+  if(item){
+    if(!val('editTitle')) document.getElementById('editTitle').value=item.title||'';
+    if(!val('editModel')) document.getElementById('editModel').value=item.model||'';
+    if(!val('editYearRange')) document.getElementById('editYearRange').value=item.yearRange||'';
+    if(!val('editFordDate')) document.getElementById('editFordDate').value=item.fordUploadDate||'';
+    if(!val('editIssueDate')) document.getElementById('editIssueDate').value=item.issueDate||'';
+    if(!val('editConcern')) document.getElementById('editConcern').value=item.symptom||item.concern||'';
+    if(item.status) document.getElementById('editStatus').value=item.status;
+    if(item.supersededBy) document.getElementById('editSupersededBy').value=Array.isArray(item.supersededBy)?item.supersededBy.join(', '):item.supersededBy;
+  }
+  document.getElementById('partBulletin').value=num;
+}
+setTimeout(()=>{document.getElementById('editNumber')?.addEventListener('change',fillEditorFromBulletin)},500);
+
 init();
 </script>
 </body>

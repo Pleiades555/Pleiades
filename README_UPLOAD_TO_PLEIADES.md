@@ -1,37 +1,29 @@
-# Ford TSB v16 - Parts Display + Supersession Links
+# Ford TSB v17 - True Save Update
 
-Upload the contents of this ZIP to the root of the Pleiades repository and overwrite existing files.
+Upload these folders/files into the root of your `Pleiades` repository and overwrite existing files.
 
-## Important before uploading
+This update keeps the v16 parts + supersession behaviour and changes the Advanced Editor save flow:
 
-If your live repo already contains edited files, do **not** overwrite them blindly:
+- **Save Field Overrides to GitHub** writes to `Ford/TSB/data/manual-overrides.json`.
+- **Save Part Row to GitHub** writes to `Ford/TSB/data/manual-parts.json`.
+- After either save, the page automatically triggers the `Update Ford TSB Index` workflow.
+- The generated `tsb-index.json` is still not edited directly.
+- EraLink copy remains one part at a time: part number on the first line, quantity on the second line.
 
-- `Ford/TSB/data/manual-overrides.json`
-- `Ford/TSB/data/manual-parts.json`
+## Important
 
-If GitHub asks whether to replace those two files, keep your existing live versions unless you know they are empty. They contain your manual corrections and parts rows.
+Do **not** overwrite your live `manual-overrides.json` or `manual-parts.json` if they already contain manual data. This package includes blank starter files only for fresh installs.
 
-## What this fixes
+## How to use
 
-- Restores the Parts list display on each bulletin card.
-- Shows static whole-bulletin parts plus variant-specific parts.
-- Adds a variant dropdown on cards that have variant parts.
-- Each part row has its own EraLink copy button.
-- Copy format is vertical:
+1. Open Ford TSB page.
+2. Click **Advanced**.
+3. Enter passcode `11290`.
+4. Enter GitHub token, repo, and branch.
+5. Enter bulletin number.
+6. Save fields or part row.
+7. Wait around 30-90 seconds for GitHub Actions/GitHub Pages to refresh.
 
-  PART NUMBER
-  QTY
+## Token permissions
 
-- Adds clickable supersession links:
-  - Supersedes old bulletin
-  - Superseded by replacement bulletin
-
-## After upload
-
-Run:
-
-GitHub → Actions → Update Ford TSB Index → Run workflow
-
-Then refresh:
-
-https://pleiades555.github.io/Pleiades/Ford/TSB/index.html
+Your GitHub token needs repository content write permission and workflow dispatch permission.
