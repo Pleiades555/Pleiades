@@ -90,6 +90,40 @@
     }
   },
   {
+    "number": "22B44",
+    "tsbNumber": "22B44",
+    "bulletinNumber": "22B44",
+    "displayNumber": "22B44",
+    "type": "FSA",
+    "title": "22B44 - MONDEO - Front Flexible Brake Hose Replacement",
+    "model": "Mondeo",
+    "years": [
+      "2014-2017"
+    ],
+    "yearRange": "2014-2017",
+    "fordUploadDate": "2023-08-07",
+    "issueDate": "2023-08-07",
+    "symptom": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
+    "concern": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
+    "description": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/22B44.pdf",
+    "filename": "22B44.pdf",
+    "manualOnly": false,
+    "searchText": "22b44 fsa 22b44 - mondeo - front flexible brake hose replacement mondeo 2014-2017 2023-08-07 2023-08-07 in some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. if the amount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light will illuminate. current 22b44.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "15S24",
     "tsbNumber": "15S24",
     "bulletinNumber": "15S24",
@@ -1326,40 +1360,6 @@
     "filename": "22N13.pdf",
     "manualOnly": false,
     "searchText": "22n13 fsa 22n13 - everest - adblue warning and check engine light on special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. everest 2015-2019 22n13 - everest - adblue warning and check engine light on special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22n13.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "22B44",
-    "tsbNumber": "22B44",
-    "bulletinNumber": "22B44",
-    "displayNumber": "22B44",
-    "type": "FSA",
-    "title": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "model": "Mondeo",
-    "years": [
-      "2014-2017"
-    ],
-    "yearRange": "2014-2017",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "concern": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "description": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/22B44.pdf",
-    "filename": "22B44.pdf",
-    "manualOnly": false,
-    "searchText": "22b44 fsa 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. mondeo 2014-2017 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22b44.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
