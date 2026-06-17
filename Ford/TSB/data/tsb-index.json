@@ -20,7 +20,16 @@
     "file": "Ford/TSB/archive/superseded/23-2263.pdf",
     "filename": "23-2263.pdf",
     "manualOnly": false,
-    "searchText": "23-2263 tsb choose the appropriate kit for the car out of the 5 options. - **optional, don't order until asked choose the appropriate kit for the car out of the 5 options. - **optional, don't order until asked superseded 23-2263.pdf"
+    "searchText": "23-2263 tsb choose the appropriate kit for the car out of the 5 options. - **optional, don't order until asked choose the appropriate kit for the car out of the 5 options. - **optional, don't order until asked superseded 23-2263.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "23P23",
@@ -48,7 +57,16 @@
     "file": "Ford/TSB/pdf/23P23.pdf",
     "filename": "23P23.pdf",
     "manualOnly": false,
-    "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose ranger, everest 2021, 2022, 2023, 2024 2023-12-22 2023-12-22 in some affected stage v panther 2.0l bi-turbo ranger/everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. in some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable. the driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. the engine will continue to run at decreased power, but with hesitation and/or a misfire current 23p23.pdf"
+    "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose ranger, everest 2021, 2022, 2023, 2024 2023-12-22 2023-12-22 in some affected stage v panther 2.0l bi-turbo ranger/everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. in some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable. the driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. the engine will continue to run at decreased power, but with hesitation and/or a misfire current 23p23.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "26-2244",
@@ -74,7 +92,16 @@
     "file": "Ford/TSB/pdf/26-2244.pdf",
     "filename": "26-2244.pdf",
     "manualOnly": false,
-    "searchText": "26-2244 tsb led headlamp functional concerns - 10 june 2026 ranger, everest, ra 2021-2026, 2022-2026 some 2021-2026 next-generation ranger and everest vehicles may experience led headlamp (led reflector and led projector) functionality concerns such as led reflector headlamps (figure 1) • day time running lamp inoperable • low beam inoperable • high beam inoperable led projector headlamps (figure 2) • day time running lamp inoperable • low beam inoperable current 26-2244.pdf"
+    "searchText": "26-2244 tsb led headlamp functional concerns - 10 june 2026 ranger, everest, ra 2021-2026, 2022-2026 some 2021-2026 next-generation ranger and everest vehicles may experience led headlamp (led reflector and led projector) functionality concerns such as led reflector headlamps (figure 1) • day time running lamp inoperable • low beam inoperable • high beam inoperable led projector headlamps (figure 2) • day time running lamp inoperable • low beam inoperable current 26-2244.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "26-2232",
@@ -99,7 +126,16 @@
     "file": "Ford/TSB/pdf/26-2232.pdf",
     "filename": "26-2232.pdf",
     "manualOnly": false,
-    "searchText": "26-2232 tsb left hand rear leaf spring squeak, scraping or knocking noise - 08 june 2026 ranger, ra 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the left hand (lh) rear. this condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise. current 26-2232.pdf"
+    "searchText": "26-2232 tsb left hand rear leaf spring squeak, scraping or knocking noise - 08 june 2026 ranger, ra 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the left hand (lh) rear. this condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise. current 26-2232.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "26-2215",
@@ -129,7 +165,18 @@
     "file": "Ford/TSB/pdf/26-2215.pdf",
     "filename": "26-2215.pdf",
     "manualOnly": false,
-    "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit 2023-2025, 2023-2026, 2024-2025, 2024-2026 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf"
+    "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit 2023-2025, 2023-2026, 2024-2025, 2024-2026 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "25-2366"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "26-2159",
@@ -156,7 +203,18 @@
     "file": "Ford/TSB/pdf/26-2159.pdf",
     "filename": "26-2159.pdf",
     "manualOnly": false,
-    "searchText": "26-2159 tsb transmission not in park message when driving below 10kmph - 20 may 2026 transit 2023-2026 some of the vehicles listed in the model statement above may exhibit the following warning messages • <transmission not in park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • in combination with two other messages: <hill start assist not available> / <park brake limited function> or • stored dtcs p166b in the sccm sometimes in combination with u0404 in the abs module, this may be caused by the sobdmc, current 26-2159.pdf"
+    "searchText": "26-2159 tsb transmission not in park message when driving below 10kmph - 20 may 2026 transit 2023-2026 some of the vehicles listed in the model statement above may exhibit the following warning messages • <transmission not in park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • in combination with two other messages: <hill start assist not available> / <park brake limited function> or • stored dtcs p166b in the sccm sometimes in combination with u0404 in the abs module, this may be caused by the sobdmc, current 26-2159.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "25-2160"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "26-2099",
@@ -184,7 +242,18 @@
     "file": "Ford/TSB/pdf/26-2099.pdf",
     "filename": "26-2099.pdf",
     "manualOnly": false,
-    "searchText": "26-2099 tsb engine overheating and/or poor air conditioning (a/c) performance - with dtc p0480 and/or p0217 ranger, everest 2022-2024, 2024-2022 some 2022-2024 next-generation ranger, ranger raptor and everest vehicles may experience engine overheating and/or poor a/c performance with diagnostic trouble code (dtc) p0480 and/or p0217. this may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring. current 26-2099.pdf"
+    "searchText": "26-2099 tsb engine overheating and/or poor air conditioning (a/c) performance - with dtc p0480 and/or p0217 ranger, everest 2022-2024, 2024-2022 some 2022-2024 next-generation ranger, ranger raptor and everest vehicles may experience engine overheating and/or poor a/c performance with diagnostic trouble code (dtc) p0480 and/or p0217. this may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring. current 26-2099.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "24-2224"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "25-2205",
@@ -212,7 +281,19 @@
     "file": "Ford/TSB/pdf/25-2205.pdf",
     "filename": "25-2205.pdf",
     "manualOnly": false,
-    "searchText": "25-2205 tsb from the transmission area at light accelerator input - 30 june 2025 ranger, everest 2018-2022 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf"
+    "searchText": "25-2205 tsb from the transmission area at light accelerator input - 30 june 2025 ranger, everest 2018-2022 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "23-2263",
+        "23-2403"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "24-2373",
@@ -239,7 +320,18 @@
     "file": "Ford/TSB/pdf/24-2373.pdf",
     "filename": "24-2373.pdf",
     "manualOnly": false,
-    "searchText": "24-2373 tsb 2023 - illuminated mil with dtcs p066a/c/e, p067a/c/e or - p06b9/p06ba/bb/bc/bd/be ranger, everest 2022-2024 some 2022-2024 ranger and everest vehicles equipped with a 3.0l (lion) diesel engine built from 20 jun-2023, may exhibit an illuminated malfunction indicator lamp (mil) with one or more of the following diagnostic trouble codes (dtcs): p066a/p066c/p066e, p067a/p067c/p067e or p06b9/p06ba/p06bb/p06bc/p06bd/p06be. • the concern has been isolated and only impacts certain glow plugs. the tsb repair procedure has been revised to only replace the affected glow plug(s). these glow plugs have a distinct current 24-2373.pdf"
+    "searchText": "24-2373 tsb 2023 - illuminated mil with dtcs p066a/c/e, p067a/c/e or - p06b9/p06ba/bb/bc/bd/be ranger, everest 2022-2024 some 2022-2024 ranger and everest vehicles equipped with a 3.0l (lion) diesel engine built from 20 jun-2023, may exhibit an illuminated malfunction indicator lamp (mil) with one or more of the following diagnostic trouble codes (dtcs): p066a/p066c/p066e, p067a/p067c/p067e or p06b9/p06ba/p06bb/p06bc/p06bd/p06be. • the concern has been isolated and only impacts certain glow plugs. the tsb repair procedure has been revised to only replace the affected glow plug(s). these glow plugs have a distinct current 24-2373.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "24-2271"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "23-2323",
@@ -264,7 +356,16 @@
     "file": "Ford/TSB/pdf/23-2323.pdf",
     "filename": "23-2323.pdf",
     "manualOnly": false,
-    "searchText": "23-2323 tsb the instrument panel - 26 october ranger, everest, edge 2021-2023 some 2021-2023 next-generation ranger and everest vehicles built to 20-oct-2022 may experience an interior rattle toward the front of the vehicle below the instrument panel while driving. current 23-2323.pdf"
+    "searchText": "23-2323 tsb the instrument panel - 26 october ranger, everest, edge 2021-2023 some 2021-2023 next-generation ranger and everest vehicles built to 20-oct-2022 may experience an interior rattle toward the front of the vehicle below the instrument panel while driving. current 23-2323.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "23-2312",
@@ -287,7 +388,16 @@
     "file": "Ford/TSB/pdf/23-2312.pdf",
     "filename": "23-2312.pdf",
     "manualOnly": false,
-    "searchText": "23-2312 tsb 23-2312 current 23-2312.pdf"
+    "searchText": "23-2312 tsb 23-2312 current 23-2312.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "23-2303",
@@ -312,7 +422,16 @@
     "file": "Ford/TSB/pdf/23-2303.pdf",
     "filename": "23-2303.pdf",
     "manualOnly": false,
-    "searchText": "23-2303 tsb rear lamp - 25 october everest, edge 2021-2023 some 2021-2023 next-generation everest vehicles built to 1-dec-2022 may experience a water leak from the liftgate into the cabin or water flow from the liftgate drain hole. a possible cause for this concern is a leaking liftgate mounted rear lamp. current 23-2303.pdf"
+    "searchText": "23-2303 tsb rear lamp - 25 october everest, edge 2021-2023 some 2021-2023 next-generation everest vehicles built to 1-dec-2022 may experience a water leak from the liftgate into the cabin or water flow from the liftgate drain hole. a possible cause for this concern is a leaking liftgate mounted rear lamp. current 23-2303.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "23-2268",
@@ -340,7 +459,18 @@
     "file": "Ford/TSB/pdf/23-2268.pdf",
     "filename": "23-2268.pdf",
     "manualOnly": false,
-    "searchText": "23-2268 tsb moan/low frequency squealing noise from the rear brakes under cold - weather conditions while reversing focus, escape, kuga, ba 2018-2022, 2019-2022 some 2018-2022 focus and 2019-2022 kuga/escape vehicles may present with a moan/low frequency squealing noise from the rear brakes while reversing and braking. the probable cause for this concern is the rear brake system excites the rear suspension system which then emits the low frequency noise. current 23-2268.pdf"
+    "searchText": "23-2268 tsb moan/low frequency squealing noise from the rear brakes under cold - weather conditions while reversing focus, escape, kuga, ba 2018-2022, 2019-2022 some 2018-2022 focus and 2019-2022 kuga/escape vehicles may present with a moan/low frequency squealing noise from the rear brakes while reversing and braking. the probable cause for this concern is the rear brake system excites the rear suspension system which then emits the low frequency noise. current 23-2268.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "22-2336"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "23-2173",
@@ -365,7 +495,16 @@
     "file": "Ford/TSB/pdf/23-2173.pdf",
     "filename": "23-2173.pdf",
     "manualOnly": false,
-    "searchText": "23-2173 tsb 22/08/2023, 14:00 - 2022 ranger - ra ranger, everest, ra, bf 2022-2023 some 2022-2023 ranger/everest vehicles (see applicable vehicles above) equipped with a 3.0l (lion) engine, may exhibit an illuminated malfunction indicator lamp (mil) with one or more of the following diagnostic trouble codes (dtc's): p0671/p0672/p0673/p0674/p0675/p0676, p066a/p066c/p066e, p067a/p067c/p067e or p06b9/p06ba/p06bc/p06bd/p06be. current 23-2173.pdf"
+    "searchText": "23-2173 tsb 22/08/2023, 14:00 - 2022 ranger - ra ranger, everest, ra, bf 2022-2023 some 2022-2023 ranger/everest vehicles (see applicable vehicles above) equipped with a 3.0l (lion) engine, may exhibit an illuminated malfunction indicator lamp (mil) with one or more of the following diagnostic trouble codes (dtc's): p0671/p0672/p0673/p0674/p0675/p0676, p066a/p066c/p066e, p067a/p067c/p067e or p06b9/p06ba/p06bc/p06bd/p06be. current 23-2173.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "22-2049",
@@ -393,7 +532,19 @@
     "file": "Ford/TSB/pdf/22-2049.pdf",
     "filename": "22-2049.pdf",
     "manualOnly": false,
-    "searchText": "22-2049 tsb steering effort, operation noise and/or dtc’s c1b00/u3000 - 03 july 2022 ranger, everest, ba 2015-2021 some 2015-2021 ranger and everest/endeavour vehicles equipped with epas may experience water ingress via punctures in the steering gear boots resulting in increased steering efforts, operational noise and diagnostic trouble codes (dtcs) such as c1b00 or u3000. in many cases it can be difficult to determine where the boot damage has occurred without applying test methods not usually adopted by dealerships. for this reason, it is recommended to follow this tsb action on all vehicles that require a current 22-2049.pdf"
+    "searchText": "22-2049 tsb steering effort, operation noise and/or dtc’s c1b00/u3000 - 03 july 2022 ranger, everest, ba 2015-2021 some 2015-2021 ranger and everest/endeavour vehicles equipped with epas may experience water ingress via punctures in the steering gear boots resulting in increased steering efforts, operational noise and diagnostic trouble codes (dtcs) such as c1b00 or u3000. in many cases it can be difficult to determine where the boot damage has occurred without applying test methods not usually adopted by dealerships. for this reason, it is recommended to follow this tsb action on all vehicles that require a current 22-2049.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "21-2256",
+        "21-2361"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "21-2279",
@@ -416,7 +567,16 @@
     "file": "Ford/TSB/pdf/21-2279.pdf",
     "filename": "21-2279.pdf",
     "manualOnly": false,
-    "searchText": "21-2279 tsb 21-2279 current 21-2279.pdf"
+    "searchText": "21-2279 tsb 21-2279 current 21-2279.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "21-2035",
@@ -442,7 +602,16 @@
     "file": "Ford/TSB/pdf/21-2035.pdf",
     "filename": "21-2035.pdf",
     "manualOnly": false,
-    "searchText": "21-2035 tsb 03 may 2021 - 2011-2021 ranger ranger, everest 2011-2021, 2015-2021 some 2011-2021 ranger and 2015-2021 everest/endeavour vehicles equipped with manual front seat(s) may experience a front seat squeak noise while driving on rough roads and/or with pressure applied to the seat. a possible cause for this concern is due to noisy seat cushion spring(s). current 21-2035.pdf"
+    "searchText": "21-2035 tsb 03 may 2021 - 2011-2021 ranger ranger, everest 2011-2021, 2015-2021 some 2011-2021 ranger and 2015-2021 everest/endeavour vehicles equipped with manual front seat(s) may experience a front seat squeak noise while driving on rough roads and/or with pressure applied to the seat. a possible cause for this concern is due to noisy seat cushion spring(s). current 21-2035.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "20-2335",
@@ -469,7 +638,18 @@
     "file": "Ford/TSB/pdf/20-2335.pdf",
     "filename": "20-2335.pdf",
     "manualOnly": false,
-    "searchText": "20-2335 tsb https://www.fordtechservice.dealerconnection.com - 2019-2020 endura vehicles - illuminated malfunction indicator lamp 2019-2020 some 2019-2020 endura vehicles may experience an illuminated mil with dtc p2002. current 20-2335.pdf"
+    "searchText": "20-2335 tsb https://www.fordtechservice.dealerconnection.com - 2019-2020 endura vehicles - illuminated malfunction indicator lamp 2019-2020 some 2019-2020 endura vehicles may experience an illuminated mil with dtc p2002. current 20-2335.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "20-2280"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "20-2193",
@@ -496,7 +676,18 @@
     "file": "Ford/TSB/pdf/20-2193.pdf",
     "filename": "20-2193.pdf",
     "manualOnly": false,
-    "searchText": "20-2193 tsb https://www.fordtechservice.dealerconnection.com - transmission - loss of motive power with dtc p0868 ranger, everest 2018-2019 some 2018-2019 ranger and everest vehicles equipped with a 2.0l (panther) engine and 10r80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with diagnostic trouble code (dtc) p0868. other dtcs may also be present. current 20-2193.pdf"
+    "searchText": "20-2193 tsb https://www.fordtechservice.dealerconnection.com - transmission - loss of motive power with dtc p0868 ranger, everest 2018-2019 some 2018-2019 ranger and everest vehicles equipped with a 2.0l (panther) engine and 10r80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with diagnostic trouble code (dtc) p0868. other dtcs may also be present. current 20-2193.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "19-2350"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "17-2062",
@@ -519,7 +710,16 @@
     "file": "Ford/TSB/pdf/17-2062.pdf",
     "filename": "17-2062.pdf",
     "manualOnly": false,
-    "searchText": "17-2062 tsb 17-2062 current 17-2062.pdf"
+    "searchText": "17-2062 tsb 17-2062 current 17-2062.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "23S12",
@@ -542,7 +742,16 @@
     "file": "Ford/TSB/pdf/23S12.pdf",
     "filename": "23S12.pdf",
     "manualOnly": false,
-    "searchText": "23s12 recall 23s12 current 23s12.pdf"
+    "searchText": "23s12 recall 23s12 current 23s12.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "23-2262",
@@ -569,7 +778,18 @@
     "file": "Ford/TSB/pdf/23-2262.pdf",
     "filename": "23-2262.pdf",
     "manualOnly": false,
-    "searchText": "23-2262 recall b-pillar ticking sound - 25 september ranger, everest, falcon, edge 2022-2024 some 2022-2024 ranger double cab and 2022-2024 everest vehicles may experience a ticking type sound at the b-pillar area. current 23-2262.pdf"
+    "searchText": "23-2262 recall b-pillar ticking sound - 25 september ranger, everest, falcon, edge 2022-2024 some 2022-2024 ranger double cab and 2022-2024 everest vehicles may experience a ticking type sound at the b-pillar area. current 23-2262.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "23-2175"
+      ],
+      "supersededBy": []
+    }
   },
   {
     "number": "FAB2026033",
@@ -594,7 +814,16 @@
     "file": "Ford/TSB/pdf/FAB2026033.pdf",
     "filename": "FAB2026033.pdf",
     "manualOnly": false,
-    "searchText": "fab2026033 fsa confidential: this ford accessories bulletin is for internal purposes only and must not be disclosed to any person outside the ford dealer network. - ford accessories bulletin transit, transit vo, vo 2026 confidential: this ford accessories bulletin is for internal purposes only and must not be disclosed to any person outside the ford dealer network. - ford accessories bulletin current fab2026033.pdf"
+    "searchText": "fab2026033 fsa confidential: this ford accessories bulletin is for internal purposes only and must not be disclosed to any person outside the ford dealer network. - ford accessories bulletin transit, transit vo, vo 2026 confidential: this ford accessories bulletin is for internal purposes only and must not be disclosed to any person outside the ford dealer network. - ford accessories bulletin current fab2026033.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "26B05",
@@ -621,7 +850,16 @@
     "file": "Ford/TSB/pdf/26B05.pdf",
     "filename": "26B05.pdf",
     "manualOnly": false,
-    "searchText": "26b05 fsa 26b05 - certain 2026 model year everest tremor - nameplate replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and br everest 2025, 2026, 2029 26b05 - certain 2026 model year everest tremor - nameplate replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and br current 26b05.pdf"
+    "searchText": "26b05 fsa 26b05 - certain 2026 model year everest tremor - nameplate replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and br everest 2025, 2026, 2029 26b05 - certain 2026 model year everest tremor - nameplate replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and br current 26b05.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "26B04",
@@ -646,7 +884,16 @@
     "file": "Ford/TSB/pdf/26B04.pdf",
     "filename": "26B04.pdf",
     "manualOnly": false,
-    "searchText": "26b04 fsa 26b04 - certain 2025-2026 model year ranger / super duty and everest vehicles driveline control module (dlcm) replacement special attention: the dealer field service action co-ordinator has overall responsibility for imp ranger, everest 2025-2026 26b04 - certain 2025-2026 model year ranger / super duty and everest vehicles driveline control module (dlcm) replacement special attention: the dealer field service action co-ordinator has overall responsibility for imp current 26b04.pdf"
+    "searchText": "26b04 fsa 26b04 - certain 2025-2026 model year ranger / super duty and everest vehicles driveline control module (dlcm) replacement special attention: the dealer field service action co-ordinator has overall responsibility for imp ranger, everest 2025-2026 26b04 - certain 2025-2026 model year ranger / super duty and everest vehicles driveline control module (dlcm) replacement special attention: the dealer field service action co-ordinator has overall responsibility for imp current 26b04.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "25S82",
@@ -671,7 +918,16 @@
     "file": "Ford/TSB/pdf/25S82.pdf",
     "filename": "25S82.pdf",
     "manualOnly": false,
-    "searchText": "25s82 fsa 25s82s1 - new vehicle demonstration / delivery hold – final repair certain 2023-2025 model year f-150 vehicles equipped with 9.75” hd axle – ¾ float axle rear axle half-shaft and hub assembly replacement special attentio f-150 2023-2025 25s82s1 - new vehicle demonstration / delivery hold – final repair certain 2023-2025 model year f-150 vehicles equipped with 9.75” hd axle – ¾ float axle rear axle half-shaft and hub assembly replacement special attentio current 25s82.pdf"
+    "searchText": "25s82 fsa 25s82s1 - new vehicle demonstration / delivery hold – final repair certain 2023-2025 model year f-150 vehicles equipped with 9.75” hd axle – ¾ float axle rear axle half-shaft and hub assembly replacement special attentio f-150 2023-2025 25s82s1 - new vehicle demonstration / delivery hold – final repair certain 2023-2025 model year f-150 vehicles equipped with 9.75” hd axle – ¾ float axle rear axle half-shaft and hub assembly replacement special attentio current 25s82.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "25S39",
@@ -696,7 +952,16 @@
     "file": "Ford/TSB/pdf/25S39-S2.pdf",
     "filename": "25S39-S2.pdf",
     "manualOnly": false,
-    "searchText": "25s39 fsa 25s39 s2 – ranger / everest 3.0l lion engine - camshaft sprocket failure – final repair new vehicle demonstration / delivery hold special attention: the dealer field service action co-ordinator has overall responsibility ranger, everest 2022-2025 25s39 s2 – ranger / everest 3.0l lion engine - camshaft sprocket failure – final repair new vehicle demonstration / delivery hold special attention: the dealer field service action co-ordinator has overall responsibility current 25s39-s2.pdf"
+    "searchText": "25s39 fsa 25s39 s2 – ranger / everest 3.0l lion engine - camshaft sprocket failure – final repair new vehicle demonstration / delivery hold special attention: the dealer field service action co-ordinator has overall responsibility ranger, everest 2022-2025 25s39 s2 – ranger / everest 3.0l lion engine - camshaft sprocket failure – final repair new vehicle demonstration / delivery hold special attention: the dealer field service action co-ordinator has overall responsibility current 25s39-s2.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "23B15",
@@ -723,7 +988,16 @@
     "file": "Ford/TSB/pdf/23B15.pdf",
     "filename": "23B15.pdf",
     "manualOnly": false,
-    "searchText": "23b15 fsa 23b15s2 – ranger/everest - exhaust hot end bracket replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. ranger, everest 2021-2022, 2021-2023, 2022-2023 23b15s2 – ranger/everest - exhaust hot end bracket replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 23b15.pdf"
+    "searchText": "23b15 fsa 23b15s2 – ranger/everest - exhaust hot end bracket replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. ranger, everest 2021-2022, 2021-2023, 2022-2023 23b15s2 – ranger/everest - exhaust hot end bracket replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 23b15.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "22S06",
@@ -749,7 +1023,16 @@
     "file": "Ford/TSB/pdf/22S06.pdf",
     "filename": "22S06.pdf",
     "manualOnly": false,
-    "searchText": "22s06 fsa 22s06 – mustang luggage compartment lid wiring inspection and rear view camera improper function special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action wit mustang 2015-2017, 2016-2017 22s06 – mustang luggage compartment lid wiring inspection and rear view camera improper function special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action wit current 22s06.pdf"
+    "searchText": "22s06 fsa 22s06 – mustang luggage compartment lid wiring inspection and rear view camera improper function special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action wit mustang 2015-2017, 2016-2017 22s06 – mustang luggage compartment lid wiring inspection and rear view camera improper function special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action wit current 22s06.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "22N13",
@@ -774,7 +1057,16 @@
     "file": "Ford/TSB/pdf/22N13.pdf",
     "filename": "22N13.pdf",
     "manualOnly": false,
-    "searchText": "22n13 fsa 22n13 - everest - adblue warning and check engine light on special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. everest 2015-2019 22n13 - everest - adblue warning and check engine light on special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22n13.pdf"
+    "searchText": "22n13 fsa 22n13 - everest - adblue warning and check engine light on special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. everest 2015-2019 22n13 - everest - adblue warning and check engine light on special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22n13.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "22B44",
@@ -799,7 +1091,16 @@
     "file": "Ford/TSB/pdf/22B44.pdf",
     "filename": "22B44.pdf",
     "manualOnly": false,
-    "searchText": "22b44 fsa 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. mondeo 2014-2017 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22b44.pdf"
+    "searchText": "22b44 fsa 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. mondeo 2014-2017 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22b44.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "22B07",
@@ -825,7 +1126,16 @@
     "file": "Ford/TSB/pdf/22B07.pdf",
     "filename": "22B07.pdf",
     "manualOnly": false,
-    "searchText": "22b07 fsa 22b07s2 - panther 2.0l engine oil pump failure special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. ranger, everest 2019, 2022 22b07s2 - panther 2.0l engine oil pump failure special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22b07.pdf"
+    "searchText": "22b07 fsa 22b07s2 - panther 2.0l engine oil pump failure special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. ranger, everest 2019, 2022 22b07s2 - panther 2.0l engine oil pump failure special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22b07.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "21P14",
@@ -848,7 +1158,16 @@
     "file": "Ford/TSB/pdf/21P14.pdf",
     "filename": "21P14.pdf",
     "manualOnly": false,
-    "searchText": "21p14 fsa dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit ranger dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit current 21p14.pdf"
+    "searchText": "21p14 fsa dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit ranger dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit current 21p14.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "21P08",
@@ -871,7 +1190,16 @@
     "file": "Ford/TSB/pdf/21P08.pdf",
     "filename": "21P08.pdf",
     "manualOnly": false,
-    "searchText": "21p08 fsa 21p08 current 21p08.pdf"
+    "searchText": "21p08 fsa 21p08 current 21p08.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "20N13",
@@ -902,7 +1230,16 @@
     "file": "Ford/TSB/pdf/20N13.pdf",
     "filename": "20N13.pdf",
     "manualOnly": false,
-    "searchText": "20n13 fsa 20n13 - multiple car line - door latch replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. ranger, everest, focus, fiesta, mondeo, escape, transit, kuga, ecosport 2008-2017, 2011-2016, 2012-2016, 2012-2017, 2013-2016, 2014-2016, 2015-2017 20n13 - multiple car line - door latch replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 20n13.pdf"
+    "searchText": "20n13 fsa 20n13 - multiple car line - door latch replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. ranger, everest, focus, fiesta, mondeo, escape, transit, kuga, ecosport 2008-2017, 2011-2016, 2012-2016, 2012-2017, 2013-2016, 2014-2016, 2015-2017 20n13 - multiple car line - door latch replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 20n13.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "18S06",
@@ -932,7 +1269,16 @@
     "file": "Ford/TSB/pdf/18S06.pdf",
     "filename": "18S06.pdf",
     "manualOnly": false,
-    "searchText": "18s06 fsa 18s06/s1 – fiesta / ranger – door latch inspect and replace special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. ranger, fiesta 2010, 2011, 2015, 2016, 2018, 2019 18s06/s1 – fiesta / ranger – door latch inspect and replace special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 18s06.pdf"
+    "searchText": "18s06 fsa 18s06/s1 – fiesta / ranger – door latch inspect and replace special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. ranger, fiesta 2010, 2011, 2015, 2016, 2018, 2019 18s06/s1 – fiesta / ranger – door latch inspect and replace special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 18s06.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "16-2060",
@@ -963,7 +1309,16 @@
     "file": "Ford/TSB/pdf/14M02.S3.pdf",
     "filename": "14M02.S3.pdf",
     "manualOnly": false,
-    "searchText": "16-2060 fsa 14m02/ supplement 3 – component extended warranty focus, fiesta, ecosport 2010, 2011, 2013, 2014, 2015, 2016, 2017 14m02/ supplement 3 – component extended warranty current 14m02.s3.pdf"
+    "searchText": "16-2060 fsa 14m02/ supplement 3 – component extended warranty focus, fiesta, ecosport 2010, 2011, 2013, 2014, 2015, 2016, 2017 14m02/ supplement 3 – component extended warranty current 14m02.s3.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "15S24",
@@ -988,7 +1343,16 @@
     "file": "Ford/TSB/pdf/15S24.pdf",
     "filename": "15S24.pdf",
     "manualOnly": false,
-    "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2012-2014 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 15s24.pdf"
+    "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2012-2014 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 15s24.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "14M02",
@@ -1013,7 +1377,16 @@
     "file": "Ford/TSB/pdf/14M02.pdf",
     "filename": "14M02.pdf",
     "manualOnly": false,
-    "searchText": "14m02 fsa 14m02/ supplement 5 – component extended warranty focus / fiesta / ecosport – dps6 powershift transmission control module special attention: the dealer field service action co-ordinator has overall responsibility for imp focus, fiesta, ecosport 2010-2017 14m02/ supplement 5 – component extended warranty focus / fiesta / ecosport – dps6 powershift transmission control module special attention: the dealer field service action co-ordinator has overall responsibility for imp current 14m02.pdf"
+    "searchText": "14m02 fsa 14m02/ supplement 5 – component extended warranty focus / fiesta / ecosport – dps6 powershift transmission control module special attention: the dealer field service action co-ordinator has overall responsibility for imp focus, fiesta, ecosport 2010-2017 14m02/ supplement 5 – component extended warranty focus / fiesta / ecosport – dps6 powershift transmission control module special attention: the dealer field service action co-ordinator has overall responsibility for imp current 14m02.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "",
@@ -1040,7 +1413,16 @@
     "file": "Ford/TSB/pdf/16S38S2.pdf",
     "filename": "16S38S2.pdf",
     "manualOnly": false,
-    "searchText": "fsa 16s38s2– safety recall – focus fuel tank purge vent special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2011, 2015, 2017 16s38s2– safety recall – focus fuel tank purge vent special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 16s38s2.pdf"
+    "searchText": "fsa 16s38s2– safety recall – focus fuel tank purge vent special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2011, 2015, 2017 16s38s2– safety recall – focus fuel tank purge vent special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 16s38s2.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "",
@@ -1065,7 +1447,16 @@
     "file": "Ford/TSB/pdf/25SD9.pdf",
     "filename": "25SD9.pdf",
     "manualOnly": false,
-    "searchText": "fsa 25sd9 – certain 2022-2025 model year transit battery electric vehicles (bev) left-hand rear half shaft inspection - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service act transit 2022-2025 25sd9 – certain 2022-2025 model year transit battery electric vehicles (bev) left-hand rear half shaft inspection - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service act current 25sd9.pdf"
+    "searchText": "fsa 25sd9 – certain 2022-2025 model year transit battery electric vehicles (bev) left-hand rear half shaft inspection - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service act transit 2022-2025 25sd9 – certain 2022-2025 model year transit battery electric vehicles (bev) left-hand rear half shaft inspection - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service act current 25sd9.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   },
   {
     "number": "",
@@ -1094,6 +1485,15 @@
     "file": "Ford/TSB/pdf/S1406.pdf",
     "filename": "S1406.pdf",
     "manualOnly": false,
-    "searchText": "fsa s1406 – ws fiesta econetic (diesel) fiesta 2010, 2011, 2012, 2014, 2015 s1406 – ws fiesta econetic (diesel) current s1406.pdf"
+    "searchText": "fsa s1406 – ws fiesta econetic (diesel) fiesta 2010, 2011, 2012, 2014, 2015 s1406 – ws fiesta econetic (diesel) current s1406.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
   }
 ]
