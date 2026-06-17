@@ -32,6 +32,51 @@
     }
   },
   {
+    "number": "15S24",
+    "tsbNumber": "15S24",
+    "bulletinNumber": "15S24",
+    "displayNumber": "15S24",
+    "type": "FSA",
+    "title": "15S24 – Focus – Front Drive Halfshafts Replacement",
+    "model": "Focus",
+    "years": [
+      "2012-2014"
+    ],
+    "yearRange": "2012-2014",
+    "fordUploadDate": "2015-09-24",
+    "issueDate": "2015-09-24",
+    "symptom": "Certain Focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. Under certain conditions the halfshafts may fracture.",
+    "concern": "Certain Focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. Under certain conditions the halfshafts may fracture.",
+    "description": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/15S24.pdf",
+    "filename": "15S24.pdf",
+    "manualOnly": false,
+    "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement focus 2012-2014 2015-09-24 2015-09-24 certain focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. under certain conditions the halfshafts may fracture. current 15s24.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {
+        "1.6L TiVCT with DPS6 Powershift Transmission": [
+          {
+            "partNumber": "BV61-3B436-VA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft & Joint Assy RH",
+            "comments": "",
+            "note": ""
+          }
+        ]
+      }
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2244",
     "tsbNumber": "26-2244",
     "bulletinNumber": "26-2244",
@@ -1319,40 +1364,6 @@
     "filename": "14M02.S3.pdf",
     "manualOnly": false,
     "searchText": "16-2060 fsa 14m02/ supplement 3 – component extended warranty focus, fiesta, ecosport 2010, 2011, 2013, 2014, 2015, 2016, 2017 14m02/ supplement 3 – component extended warranty current 14m02.s3.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "15S24",
-    "tsbNumber": "15S24",
-    "bulletinNumber": "15S24",
-    "displayNumber": "15S24",
-    "type": "FSA",
-    "title": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "model": "Focus",
-    "years": [
-      "2012-2014"
-    ],
-    "yearRange": "2012-2014",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "concern": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "description": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/15S24.pdf",
-    "filename": "15S24.pdf",
-    "manualOnly": false,
-    "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2012-2014 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 15s24.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
