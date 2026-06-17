@@ -1,1 +1,12 @@
-{}
+{
+  "FAB2026033": {
+    "title": "Transit VO 25.5 MY Tow Pack Update",
+    "model": "Transit, Transit VO, VO",
+    "yearRange": "2026",
+    "fordUploadDate": "2026-06-10",
+    "issueDate": "2026-06-10",
+    "symptom": "Existing wire harness (RK3Z15A416F) was too short in length for certain variants (Long wheel base/LWB)",
+    "concern": "Existing wire harness (RK3Z15A416F) was too short in length for certain variants (Long wheel base/LWB)",
+    "status": "Current"
+  }
+}
