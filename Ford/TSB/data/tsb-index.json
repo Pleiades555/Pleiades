@@ -954,10 +954,18 @@
     "manualOnly": false,
     "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer ranger, everest 2021, 2022, 2023, 2024 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer current 23p23.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "MB3Z6C646R",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Duct Air/Intercooler Hose",
+          "note": ""
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
