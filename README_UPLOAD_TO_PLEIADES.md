@@ -1,67 +1,55 @@
-# Ford TSB v13 - EraLink Part Copy Update
+# Ford TSB v14.1 — Persistence + Date Uploaded by Ford
 
-Upload the contents of this ZIP into the root of your Pleiades GitHub repository and overwrite existing files.
+Upload the contents of this ZIP to the root of your Pleiades GitHub repository and overwrite existing files.
 
-This package keeps the existing advanced editor functions and adds the EraLink-safe part copy behaviour.
+## What this update adds
 
-## What changed
+- Keeps v14 persistence behaviour:
+  - manual field edits save to `Ford/TSB/data/manual-overrides.json`
+  - manual parts save to `Ford/TSB/data/manual-parts.json`
+  - regenerated `tsb-index.json` should not wipe manual edits
+- Adds a new field: `Date uploaded by Ford`
+- Adds optional `Issue date`
+- Shows both dates on each bulletin card
+- Adds both date fields to Advanced Mode
+- Sort dropdown now includes `Sort by Ford upload date`
 
-- Keeps the advanced editor, GitHub token tools, PDF upload, field override tools and workflow trigger.
-- Keeps the bulletin-level/static parts editor.
-- Keeps the variant-specific parts editor.
-- Adds a **Copy** button to every displayed part row.
-- Each Copy button copies **only that part row**.
-- Clipboard format is vertical for Excel/Pentana EraLink:
+## Important
 
-```text
-PART NUMBER
-QTY
+This package does **not** include blank `manual-overrides.json` or `manual-parts.json`, so it should not overwrite your existing manual edits.
+
+## Manual override example
+
+In `Ford/TSB/data/manual-overrides.json`:
+
+```json
+{
+  "23P23": {
+    "fordUploadDate": "2023-11-15",
+    "issueDate": "2023-11-13",
+    "title": "Corrected FSA title"
+  }
+}
 ```
 
-Example:
+Use ISO format for dates:
 
 ```text
-AB39-7A543-AC
-2
+YYYY-MM-DD
 ```
 
-When pasted into Excel:
+The page displays them as:
 
 ```text
-A1 = AB39-7A543-AC
-A2 = 2
-```
-
-No bulk copy button has been added, because bulk copy can break the EraLink stock/order-in process.
-
-## Files included
-
-```text
-.github/workflows/update-ford-tsb-index.yml
-Ford/TSB/index.html
-Ford/TSB/scripts/generate-tsb-index.py
-Ford/TSB/data/manual-overrides.json
-Ford/TSB/data/variant-parts.json
-Ford/TSB/data/tsb-index.json
+DD/MM/YYYY
 ```
 
 ## After upload
 
-1. Upload the ZIP contents to the repo root.
-2. Commit changes.
-3. Go to **Actions → Update Ford TSB Index → Run workflow**.
-4. Refresh the TSB page after GitHub Pages updates.
+Run:
 
-## Parts editor format
+GitHub → Actions → Update Ford TSB Index → Run workflow
 
-Use this format per line:
+Then refresh:
 
-```text
-part number | qty | description | notes
-```
-
-Example:
-
-```text
-AB39-7A543-AC | 2 | Clutch pedal switch | Required for manual variants
-```
+https://pleiades555.github.io/Pleiades/Ford/TSB/index.html

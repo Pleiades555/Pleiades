@@ -7,6 +7,7 @@ on:
       - "Ford/TSB/archive/superseded/**/*.pdf"
       - "Ford/TSB/scripts/generate-tsb-index.py"
       - "Ford/TSB/data/manual-overrides.json"
+      - "Ford/TSB/data/manual-parts.json"
       - ".github/workflows/update-ford-tsb-index.yml"
   workflow_dispatch:
 
@@ -16,7 +17,6 @@ permissions:
 jobs:
   update-ford-tsb-index:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
         run: |
           python Ford/TSB/scripts/generate-tsb-index.py
 
-      - name: Commit updated TSB index
+      - name: Commit updated generated index only
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
