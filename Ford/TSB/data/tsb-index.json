@@ -90,6 +90,38 @@
     }
   },
   {
+    "number": "25SE6.PDF",
+    "tsbNumber": "25SE6.PDF",
+    "bulletinNumber": "25SE6.PDF",
+    "displayNumber": "25SE6.PDF",
+    "type": "TSB",
+    "title": "25SE6 – Transit and Transit / Tourneo Custom 12V AGM Battery Venting",
+    "model": "Transit",
+    "years": [],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "2026-03-25",
+    "issueDate": "2026-03-25",
+    "symptom": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
+    "concern": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
+    "description": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": "",
+    "file": "",
+    "filename": "Manual override only",
+    "manualOnly": true,
+    "searchText": "25se6.pdf tsb 25se6 – transit and transit / tourneo custom 12v agm battery venting transit 2022-2026 2026-03-25 2026-03-25 a number of transit and transit / tourneo custom vehicles built with h7 agm batteries may experience one or more of, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat. gas emissions during a normal absorbent glass mat (agm) battery gassing event produce hydrogen and oxygen, however increased temperatures can lead to a side reaction which produces h2s (hydrogen sulphide). if exposure is prolonged, health impacts such as nausea, dizziness and headaches may become more severe. current manual override only",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": ""
+    }
+  },
+  {
     "number": "25-2205",
     "tsbNumber": "25-2205",
     "bulletinNumber": "25-2205",
