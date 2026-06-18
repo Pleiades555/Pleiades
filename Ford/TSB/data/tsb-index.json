@@ -366,6 +366,117 @@
     }
   },
   {
+    "number": "26-2274",
+    "tsbNumber": "26-2274",
+    "bulletinNumber": "26-2274",
+    "displayNumber": "26-2274",
+    "type": "TSB",
+    "title": "Accelerated Wear Of The Rear Inner Brake Pads Or Scraping And - Grinding Noises",
+    "model": "Ranger",
+    "years": [
+      "2021-2026"
+    ],
+    "yearRange": "2021-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "description": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "status": "Current",
+    "supersedes": [
+      "25-2388"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2274.pdf",
+    "filename": "26-2274.pdf",
+    "manualOnly": false,
+    "searchText": "26-2274 tsb accelerated wear of the rear inner brake pads or scraping and - grinding noises ranger 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes. current 26-2274.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "25-2388"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2253",
+    "tsbNumber": "26-2253",
+    "bulletinNumber": "26-2253",
+    "displayNumber": "26-2253",
+    "type": "TSB",
+    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
+    "model": "Ranger, Everest",
+    "years": [
+      "2022-2026"
+    ],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "description": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2253.pdf",
+    "filename": "26-2253.pdf",
+    "manualOnly": false,
+    "searchText": "26-2253 tsb illuminated airbag warning lamp with diagnostic trouble codes (dtcs) - b1405-13 and/or b1408-13 ranger, everest 2022-2026 some 2022–2026 next-generation ranger, raptor, and everest vehicles may exhibit an illuminated airbag warning lamp with dtcs b1405-13 and/or b1408-13 in the instrument panel cluster (ipc) or fordpass application; • intermittent or active airbag warning indicator lamp. • fordpass application warning message; safety control module detected a fault in the inflatable curtain circuit. current 26-2253.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2249",
+    "tsbNumber": "26-2249",
+    "bulletinNumber": "26-2249",
+    "displayNumber": "26-2249",
+    "type": "TSB",
+    "title": "Gear Shift Module (GSM) Concerns - 02 June 2026",
+    "model": "F-150",
+    "years": [
+      "2021-2025",
+      "2022-2025"
+    ],
+    "yearRange": "2021-2025, 2022-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
+    "concern": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
+    "description": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
+    "status": "Current",
+    "supersedes": [
+      "26-2115"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2249.pdf",
+    "filename": "26-2249.pdf",
+    "manualOnly": false,
+    "searchText": "26-2249 tsb gear shift module (gsm) concerns - 02 june 2026 f-150 2021-2025, 2022-2025 some of the vehicles listed in the model statement above equipped with a console shiftgsm may exhibit at least one of the following conditions • clicking sound coming from the gear shift lever after it is placed and kept in r, n, or d position. (2024 only) • gear shift lever stuck in p • gear shift lever will not shift into p • gear shift lever will not shift out of gear • gear shift lever will not stow/unstow • gear shift lever will move past the p position current 26-2249.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "26-2115"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2244",
     "tsbNumber": "26-2244",
     "bulletinNumber": "26-2244",
@@ -401,6 +512,44 @@
     }
   },
   {
+    "number": "26-2236",
+    "tsbNumber": "26-2236",
+    "bulletinNumber": "26-2236",
+    "displayNumber": "26-2236",
+    "type": "TSB",
+    "title": "Various Driver Assistance System Warning Messages - DTCs C1001:31, - U3000:89, And/Or U3000:49 Stored In The IPMA",
+    "model": "F-150",
+    "years": [
+      "2021-2023"
+    ],
+    "yearRange": "2021-2023",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
+    "concern": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
+    "description": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
+    "status": "Current",
+    "supersedes": [
+      "26-2097"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2236.pdf",
+    "filename": "26-2236.pdf",
+    "manualOnly": false,
+    "searchText": "26-2236 tsb various driver assistance system warning messages - dtcs c1001:31, - u3000:89, and/or u3000:49 stored in the ipma f-150 2021-2023 some of the vehicles listed in the model statement above may exhibit dtcs c1001:31, u3000:89, and/or u3000:49 stored in the ipma and at least one of the following conditions • \"front camera fault service required\" message. • pre-collision assist inoperative. • adaptive cruise control inoperative. • front windshield camera alignment routine fails to complete. this may be due to the coaxial cable between the ipma camera and the ipma. current 26-2236.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "26-2097"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2232",
     "tsbNumber": "26-2232",
     "bulletinNumber": "26-2232",
@@ -424,6 +573,146 @@
     "filename": "26-2232.pdf",
     "manualOnly": false,
     "searchText": "26-2232 tsb left hand rear leaf spring squeak, scraping or knocking noise - 08 june 2026 ranger, ra 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the left hand (lh) rear. this condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise. current 26-2232.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2227",
+    "tsbNumber": "26-2227",
+    "bulletinNumber": "26-2227",
+    "displayNumber": "26-2227",
+    "type": "TSB",
+    "title": "Illuminated Malfunction Indicator Lamp (MIL) With Diagnostic Trouble - Code (DTC) P2C7A-00",
+    "model": "Ranger",
+    "years": [
+      "2026"
+    ],
+    "yearRange": "2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
+    "concern": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
+    "description": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2227.pdf",
+    "filename": "26-2227.pdf",
+    "manualOnly": false,
+    "searchText": "26-2227 tsb illuminated malfunction indicator lamp (mil) with diagnostic trouble - code (dtc) p2c7a-00 ranger 2026 some 2026 ranger super duty vehicles equipped with a 3.0l power stroke diesel engine may exhibit an illuminated mil with only dtc p2c7a-00 stored in the powertrain control module (pcm) current 26-2227.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2221",
+    "tsbNumber": "26-2221",
+    "bulletinNumber": "26-2221",
+    "displayNumber": "26-2221",
+    "type": "TSB",
+    "title": "B-Pillar Ticking Sound With NEW Grab Handle Design - 10 June 2026",
+    "model": "Ranger, Everest",
+    "years": [
+      "2023-2026"
+    ],
+    "yearRange": "2023-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
+    "concern": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
+    "description": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
+    "status": "Current",
+    "supersedes": [
+      "26-2036"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2221.pdf",
+    "filename": "26-2221.pdf",
+    "manualOnly": false,
+    "searchText": "26-2221 tsb b-pillar ticking sound with new grab handle design - 10 june 2026 ranger, everest 2023-2026 some 2023-2026 ranger double cab and everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the b-pillar area. current 26-2221.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "26-2036"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2212",
+    "tsbNumber": "26-2212",
+    "bulletinNumber": "26-2212",
+    "displayNumber": "26-2212",
+    "type": "TSB",
+    "title": "Various Concerns Due To C115 Wiring Connector Water Ingress - 05 May 2026",
+    "model": "Ranger, Everest",
+    "years": [
+      "2022-2026"
+    ],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
+    "concern": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
+    "description": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2212.pdf",
+    "filename": "26-2212.pdf",
+    "manualOnly": false,
+    "searchText": "26-2212 tsb various concerns due to c115 wiring connector water ingress - 05 may 2026 ranger, everest 2022-2026 some 2022-2026 next-generation ranger, ranger raptor and everest vehicles may experience one or more of the following symptoms. this may be due to water ingress into the c115 wiring connector. the vehicle may exhibit any of the following symptoms • power cut off to engine • not able to accelerate the vehicle or change gear • multiple illuminated malfunction indicator lamps (mil)/multiple warnings on the instrument panel cluster (ipc) fuse 10 blown in the power distribution box (pdb) vehicle not current 26-2212.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2177",
+    "tsbNumber": "26-2177",
+    "bulletinNumber": "26-2177",
+    "displayNumber": "26-2177",
+    "type": "TSB",
+    "title": "Embedded Navigation (HKCAB) – Embedded Navigation Maps Out Of - 25 May 2026",
+    "model": "Mustang, Transit, F-150, Kuga",
+    "years": [
+      "2022-2023"
+    ],
+    "yearRange": "2022-2023",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
+    "concern": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
+    "description": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2177.pdf",
+    "filename": "26-2177.pdf",
+    "manualOnly": false,
+    "searchText": "26-2177 tsb embedded navigation (hkcab) – embedded navigation maps out of - 25 may 2026 mustang, transit, f-150, kuga 2022-2023 some vehicles listed in the model statement built from 01-aug-2022 to 26-oct-2024 equipped with embedded navigation (hkcab) may experience the embedded navigation maps are out of date. current 26-2177.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
@@ -506,6 +795,42 @@
     }
   },
   {
+    "number": "26-2105",
+    "tsbNumber": "26-2105",
+    "bulletinNumber": "26-2105",
+    "displayNumber": "26-2105",
+    "type": "TSB",
+    "title": "Sliding Door Exterior Handle Does Not Release Rear Latch When The - Door Is Locked",
+    "model": "Transit",
+    "years": [
+      "2019-2025",
+      "2019-2026",
+      "2023-2026"
+    ],
+    "yearRange": "2019-2025, 2019-2026, 2023-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
+    "concern": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
+    "description": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2105.pdf",
+    "filename": "26-2105.pdf",
+    "manualOnly": false,
+    "searchText": "26-2105 tsb sliding door exterior handle does not release rear latch when the - door is locked transit 2019-2025, 2019-2026, 2023-2026 some 2019-2025 tourneo custom/transit custom vehicles built from 20-may-2019, 2023-2026 transit custom, and 2019-2026 transit vehicles built from 20-may-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism. current 26-2105.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2099",
     "tsbNumber": "26-2099",
     "bulletinNumber": "26-2099",
@@ -550,6 +875,40 @@
       "supersedes": [
         "24-2224"
       ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2072",
+    "tsbNumber": "26-2072",
+    "bulletinNumber": "26-2072",
+    "displayNumber": "26-2072",
+    "type": "TSB",
+    "title": "No Start/No Crank In Cold Condition - 27 May 2026",
+    "model": "Transit",
+    "years": [
+      "2023-2025"
+    ],
+    "yearRange": "2023-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
+    "concern": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
+    "description": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2072.pdf",
+    "filename": "26-2072.pdf",
+    "manualOnly": false,
+    "searchText": "26-2072 tsb no start/no crank in cold condition - 27 may 2026 transit 2023-2025 some 2023-2025 transit custom vehicles built to 16-jun-2025 equipped with a 2.0l (panther) engine may exhibit a no start/no crank in cold condition. this concern may be caused due to blown fuse (275 a) in the auxiliary battery fuse box. this issue, primarily observed in the scandinavian markets, arises from water entering the engine cylinders. under sub-zero temperatures, condensation builds up within the water charge air cooler (wcac). additionally, moisture from the low-pressure egr system con current 26-2072.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
       "supersededBy": []
     }
   },
