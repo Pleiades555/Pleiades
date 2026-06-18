@@ -36,5 +36,15 @@
     "symptom": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
     "concern": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
     "status": "Current"
+  },
+  "25-2205": {
+    "title": "2.0L Panther Engine - Rattle Noise from Transmission area at light acceleration.",
+    "model": "Ranger, Everest",
+    "yearRange": "2018-2022",
+    "fordUploadDate": "2025-06-30",
+    "issueDate": "2025-06-30",
+    "symptom": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
+    "concern": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
+    "status": "Current"
   }
 }
