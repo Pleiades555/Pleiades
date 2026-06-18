@@ -113,9 +113,46 @@
     "searchText": "25se6.pdf tsb 25se6 – transit and transit / tourneo custom 12v agm battery venting transit 2022-2026 2026-03-25 2026-03-25 a number of transit and transit / tourneo custom vehicles built with h7 agm batteries may experience one or more of, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat. gas emissions during a normal absorbent glass mat (agm) battery gassing event produce hydrogen and oxygen, however increased temperatures can lead to a side reaction which produces h2s (hydrogen sulphide). if exposure is prolonged, health impacts such as nausea, dizziness and headaches may become more severe. current manual override only",
     "parts": {
       "staticParts": [],
-      "variants": {}
+      "variants": {
+        "Single Battery": [
+          {
+            "partNumber": "GK2Z10A818A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Single Battery vent tube",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "MBAZ10655N",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Battery",
+            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+          }
+        ],
+        "Twin Battery": [
+          {
+            "partNumber": "GK2Z10A818B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Twin Battery vent tube",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "MBAZ10655N",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Battery",
+            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+          }
+        ]
+      }
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": ""
@@ -2151,9 +2188,46 @@
     "searchText": "fsa 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator transit 2022-2026 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator current 25se6.pdf",
     "parts": {
       "staticParts": [],
-      "variants": {}
+      "variants": {
+        "Single Battery": [
+          {
+            "partNumber": "GK2Z10A818A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Single Battery vent tube",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "MBAZ10655N",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Battery",
+            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+          }
+        ],
+        "Twin Battery": [
+          {
+            "partNumber": "GK2Z10A818B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Twin Battery vent tube",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "MBAZ10655N",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Battery",
+            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+          }
+        ]
+      }
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
