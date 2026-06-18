@@ -32,314 +32,24 @@
     }
   },
   {
-    "number": "26-2274",
-    "tsbNumber": "26-2274",
-    "bulletinNumber": "26-2274",
-    "displayNumber": "26-2274",
-    "type": "TSB",
-    "title": "Accelerated Wear Of The Rear Inner Brake Pads Or Scraping And - Grinding Noises",
-    "model": "Ranger",
-    "years": [
-      "2021-2026"
-    ],
-    "yearRange": "2021-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
-    "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
-    "description": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
-    "status": "Current",
-    "supersedes": [
-      "25-2388"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2274.pdf",
-    "filename": "26-2274.pdf",
-    "manualOnly": false,
-    "searchText": "26-2274 tsb accelerated wear of the rear inner brake pads or scraping and - grinding noises ranger 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes. current 26-2274.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [
-        "25-2388"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2253",
-    "tsbNumber": "26-2253",
-    "bulletinNumber": "26-2253",
-    "displayNumber": "26-2253",
-    "type": "TSB",
-    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
-    "model": "Ranger, Everest",
-    "years": [
-      "2022-2026"
-    ],
-    "yearRange": "2022-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "description": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2253.pdf",
-    "filename": "26-2253.pdf",
-    "manualOnly": false,
-    "searchText": "26-2253 tsb illuminated airbag warning lamp with diagnostic trouble codes (dtcs) - b1405-13 and/or b1408-13 ranger, everest 2022-2026 some 2022–2026 next-generation ranger, raptor, and everest vehicles may exhibit an illuminated airbag warning lamp with dtcs b1405-13 and/or b1408-13 in the instrument panel cluster (ipc) or fordpass application; • intermittent or active airbag warning indicator lamp. • fordpass application warning message; safety control module detected a fault in the inflatable curtain circuit. current 26-2253.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2249",
-    "tsbNumber": "26-2249",
-    "bulletinNumber": "26-2249",
-    "displayNumber": "26-2249",
-    "type": "TSB",
-    "title": "Gear Shift Module (GSM) Concerns - 02 June 2026",
-    "model": "F-150",
-    "years": [
-      "2021-2025",
-      "2022-2025"
-    ],
-    "yearRange": "2021-2025, 2022-2025",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
-    "concern": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
-    "description": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
-    "status": "Current",
-    "supersedes": [
-      "26-2115"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2249.pdf",
-    "filename": "26-2249.pdf",
-    "manualOnly": false,
-    "searchText": "26-2249 tsb gear shift module (gsm) concerns - 02 june 2026 f-150 2021-2025, 2022-2025 some of the vehicles listed in the model statement above equipped with a console shiftgsm may exhibit at least one of the following conditions • clicking sound coming from the gear shift lever after it is placed and kept in r, n, or d position. (2024 only) • gear shift lever stuck in p • gear shift lever will not shift into p • gear shift lever will not shift out of gear • gear shift lever will not stow/unstow • gear shift lever will move past the p position current 26-2249.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [
-        "26-2115"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2244",
-    "tsbNumber": "26-2244",
-    "bulletinNumber": "26-2244",
-    "displayNumber": "26-2244",
-    "type": "TSB",
-    "title": "LED Headlamp Functional Concerns - 10 June 2026",
-    "model": "Ranger, Everest, RA",
-    "years": [
-      "2021-2026",
-      "2022-2026"
-    ],
-    "yearRange": "2021-2026, 2022-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience LED headlamp (LED reflector and LED projector) functionality concerns such as LED Reflector Headlamps (Figure 1) • Day time running lamp inoperable • Low beam inoperable • High beam inoperable LED Projector Headlamps (Figure 2) • Day time running lamp inoperable • Low beam inoperable",
-    "concern": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience LED headlamp (LED reflector and LED projector) functionality concerns such as LED Reflector Headlamps (Figure 1) • Day time running lamp inoperable • Low beam inoperable • High beam inoperable LED Projector Headlamps (Figure 2) • Day time running lamp inoperable • Low beam inoperable",
-    "description": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience LED headlamp (LED reflector and LED projector) functionality concerns such as LED Reflector Headlamps (Figure 1) • Day time running lamp inoperable • Low beam inoperable • High beam inoperable LED Projector Headlamps (Figure 2) • Day time running lamp inoperable • Low beam inoperable",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2244.pdf",
-    "filename": "26-2244.pdf",
-    "manualOnly": false,
-    "searchText": "26-2244 tsb led headlamp functional concerns - 10 june 2026 ranger, everest, ra 2021-2026, 2022-2026 some 2021-2026 next-generation ranger and everest vehicles may experience led headlamp (led reflector and led projector) functionality concerns such as led reflector headlamps (figure 1) • day time running lamp inoperable • low beam inoperable • high beam inoperable led projector headlamps (figure 2) • day time running lamp inoperable • low beam inoperable current 26-2244.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2236",
-    "tsbNumber": "26-2236",
-    "bulletinNumber": "26-2236",
-    "displayNumber": "26-2236",
-    "type": "TSB",
-    "title": "Various Driver Assistance System Warning Messages - DTCs C1001:31, - U3000:89, And/Or U3000:49 Stored In The IPMA",
-    "model": "F-150",
-    "years": [
-      "2021-2023"
-    ],
-    "yearRange": "2021-2023",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
-    "concern": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
-    "description": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
-    "status": "Current",
-    "supersedes": [
-      "26-2097"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2236.pdf",
-    "filename": "26-2236.pdf",
-    "manualOnly": false,
-    "searchText": "26-2236 tsb various driver assistance system warning messages - dtcs c1001:31, - u3000:89, and/or u3000:49 stored in the ipma f-150 2021-2023 some of the vehicles listed in the model statement above may exhibit dtcs c1001:31, u3000:89, and/or u3000:49 stored in the ipma and at least one of the following conditions • \"front camera fault service required\" message. • pre-collision assist inoperative. • adaptive cruise control inoperative. • front windshield camera alignment routine fails to complete. this may be due to the coaxial cable between the ipma camera and the ipma. current 26-2236.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [
-        "26-2097"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2232",
-    "tsbNumber": "26-2232",
-    "bulletinNumber": "26-2232",
-    "displayNumber": "26-2232",
-    "type": "TSB",
-    "title": "Left Hand Rear Leaf Spring Squeak, Scraping Or Knocking Noise - 08 June 2026",
-    "model": "Ranger, RA",
-    "years": [
-      "2021-2026"
-    ],
-    "yearRange": "2021-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the Left Hand (LH) rear. This condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise.",
-    "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the Left Hand (LH) rear. This condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise.",
-    "description": "Some 2021-2026 Next-Generation Ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the Left Hand (LH) rear. This condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2232.pdf",
-    "filename": "26-2232.pdf",
-    "manualOnly": false,
-    "searchText": "26-2232 tsb left hand rear leaf spring squeak, scraping or knocking noise - 08 june 2026 ranger, ra 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the left hand (lh) rear. this condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise. current 26-2232.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2227",
-    "tsbNumber": "26-2227",
-    "bulletinNumber": "26-2227",
-    "displayNumber": "26-2227",
-    "type": "TSB",
-    "title": "Illuminated Malfunction Indicator Lamp (MIL) With Diagnostic Trouble - Code (DTC) P2C7A-00",
-    "model": "Ranger",
-    "years": [
-      "2026"
-    ],
-    "yearRange": "2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
-    "concern": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
-    "description": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2227.pdf",
-    "filename": "26-2227.pdf",
-    "manualOnly": false,
-    "searchText": "26-2227 tsb illuminated malfunction indicator lamp (mil) with diagnostic trouble - code (dtc) p2c7a-00 ranger 2026 some 2026 ranger super duty vehicles equipped with a 3.0l power stroke diesel engine may exhibit an illuminated mil with only dtc p2c7a-00 stored in the powertrain control module (pcm) current 26-2227.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2221",
-    "tsbNumber": "26-2221",
-    "bulletinNumber": "26-2221",
-    "displayNumber": "26-2221",
-    "type": "TSB",
-    "title": "B-Pillar Ticking Sound With NEW Grab Handle Design - 10 June 2026",
-    "model": "Ranger, Everest",
-    "years": [
-      "2023-2026"
-    ],
-    "yearRange": "2023-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
-    "concern": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
-    "description": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
-    "status": "Current",
-    "supersedes": [
-      "26-2036"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2221.pdf",
-    "filename": "26-2221.pdf",
-    "manualOnly": false,
-    "searchText": "26-2221 tsb b-pillar ticking sound with new grab handle design - 10 june 2026 ranger, everest 2023-2026 some 2023-2026 ranger double cab and everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the b-pillar area. current 26-2221.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [
-        "26-2036"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
     "number": "26-2215",
     "tsbNumber": "26-2215",
     "bulletinNumber": "26-2215",
     "displayNumber": "26-2215",
     "type": "TSB",
     "title": "Illuminated MIL In Conjunction With Intermittent Transmission Shift - Concerns In FORWARD Or REVERSE Gear With DTCs Stored",
-    "model": "Transit",
+    "model": "Transit Custom/Torneo, Transit",
     "years": [
       "2023-2025",
       "2023-2026",
       "2024-2025",
       "2024-2026"
     ],
-    "yearRange": "2023-2025, 2023-2026, 2024-2025, 2024-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
-    "concern": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
+    "yearRange": "2023-2026, 2024-2026",
+    "fordUploadDate": "2026-06-06",
+    "issueDate": "2026-06-05",
+    "symptom": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission",
+    "concern": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission",
     "description": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
     "status": "Current",
     "supersedes": [
@@ -349,7 +59,7 @@
     "file": "Ford/TSB/pdf/26-2215.pdf",
     "filename": "26-2215.pdf",
     "manualOnly": false,
-    "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit 2023-2025, 2023-2026, 2024-2025, 2024-2026 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf",
+    "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit custom/torneo, transit 2023-2026, 2024-2026 2026-06-06 2026-06-05 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf",
     "parts": {
       "staticParts": [
         {
@@ -380,257 +90,71 @@
     }
   },
   {
-    "number": "26-2212",
-    "tsbNumber": "26-2212",
-    "bulletinNumber": "26-2212",
-    "displayNumber": "26-2212",
-    "type": "TSB",
-    "title": "Various Concerns Due To C115 Wiring Connector Water Ingress - 05 May 2026",
-    "model": "Ranger, Everest",
+    "number": "25SE6",
+    "tsbNumber": "25SE6",
+    "bulletinNumber": "25SE6",
+    "displayNumber": "25SE6",
+    "type": "FSA",
+    "title": "25SE6 – Transit and Transit / Tourneo Custom 12V AGM Battery Venting",
+    "model": "Transit",
     "years": [
       "2022-2026"
     ],
     "yearRange": "2022-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
-    "concern": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
-    "description": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
+    "fordUploadDate": "2026-03-25",
+    "issueDate": "2026-03-25",
+    "symptom": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
+    "concern": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
+    "description": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
     "status": "Current",
     "supersedes": [],
     "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2212.pdf",
-    "filename": "26-2212.pdf",
+    "file": "Ford/TSB/pdf/25SE6.pdf",
+    "filename": "25SE6.pdf",
     "manualOnly": false,
-    "searchText": "26-2212 tsb various concerns due to c115 wiring connector water ingress - 05 may 2026 ranger, everest 2022-2026 some 2022-2026 next-generation ranger, ranger raptor and everest vehicles may experience one or more of the following symptoms. this may be due to water ingress into the c115 wiring connector. the vehicle may exhibit any of the following symptoms • power cut off to engine • not able to accelerate the vehicle or change gear • multiple illuminated malfunction indicator lamps (mil)/multiple warnings on the instrument panel cluster (ipc) fuse 10 blown in the power distribution box (pdb) vehicle not current 26-2212.pdf",
+    "searchText": "25se6 fsa 25se6 – transit and transit / tourneo custom 12v agm battery venting transit 2022-2026 2026-03-25 2026-03-25 a number of transit and transit / tourneo custom vehicles built with h7 agm batteries may experience one or more of, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat. gas emissions during a normal absorbent glass mat (agm) battery gassing event produce hydrogen and oxygen, however increased temperatures can lead to a side reaction which produces h2s (hydrogen sulphide). if exposure is prolonged, health impacts such as nausea, dizziness and headaches may become more severe. current 25se6.pdf",
     "parts": {
       "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2177",
-    "tsbNumber": "26-2177",
-    "bulletinNumber": "26-2177",
-    "displayNumber": "26-2177",
-    "type": "TSB",
-    "title": "Embedded Navigation (HKCAB) – Embedded Navigation Maps Out Of - 25 May 2026",
-    "model": "Mustang, Transit, F-150, Kuga",
-    "years": [
-      "2022-2023"
-    ],
-    "yearRange": "2022-2023",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
-    "concern": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
-    "description": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2177.pdf",
-    "filename": "26-2177.pdf",
-    "manualOnly": false,
-    "searchText": "26-2177 tsb embedded navigation (hkcab) – embedded navigation maps out of - 25 may 2026 mustang, transit, f-150, kuga 2022-2023 some vehicles listed in the model statement built from 01-aug-2022 to 26-oct-2024 equipped with embedded navigation (hkcab) may experience the embedded navigation maps are out of date. current 26-2177.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2159",
-    "tsbNumber": "26-2159",
-    "bulletinNumber": "26-2159",
-    "displayNumber": "26-2159",
-    "type": "TSB",
-    "title": "Transmission Not In Park Message When Driving Below 10kmph - 20 May 2026",
-    "model": "Transit",
-    "years": [
-      "2023-2026"
-    ],
-    "yearRange": "2023-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some of the vehicles listed in the Model statement above may exhibit the following warning messages • <Transmission not in Park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • In combination with two other messages: <Hill Start Assist Not Available> / <Park Brake Limited Function> or • Stored DTCs P166B in the SCCM sometimes in combination with U0404 in the ABS module, This may be caused by the SOBDMC, ",
-    "concern": "Some of the vehicles listed in the Model statement above may exhibit the following warning messages • <Transmission not in Park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • In combination with two other messages: <Hill Start Assist Not Available> / <Park Brake Limited Function> or • Stored DTCs P166B in the SCCM sometimes in combination with U0404 in the ABS module, This may be caused by the SOBDMC, ",
-    "description": "Some of the vehicles listed in the Model statement above may exhibit the following warning messages • <Transmission not in Park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • In combination with two other messages: <Hill Start Assist Not Available> / <Park Brake Limited Function> or • Stored DTCs P166B in the SCCM sometimes in combination with U0404 in the ABS module, This may be caused by the SOBDMC, ",
-    "status": "Current",
-    "supersedes": [
-      "25-2160"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2159.pdf",
-    "filename": "26-2159.pdf",
-    "manualOnly": false,
-    "searchText": "26-2159 tsb transmission not in park message when driving below 10kmph - 20 may 2026 transit 2023-2026 some of the vehicles listed in the model statement above may exhibit the following warning messages • <transmission not in park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • in combination with two other messages: <hill start assist not available> / <park brake limited function> or • stored dtcs p166b in the sccm sometimes in combination with u0404 in the abs module, this may be caused by the sobdmc, current 26-2159.pdf",
-    "parts": {
-      "staticParts": [
-        {
-          "partNumber": "PZ3114B427AB",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Seat Mat Sensor",
-          "comments": "(If Required)",
-          "note": "(If Required)"
-        },
-        {
-          "partNumber": "PZ31V632A22AD",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Seat Foam",
-          "comments": "(If Required)",
-          "note": "(If Required)"
-        },
-        {
-          "partNumber": "PZ3114D698AB",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Seat Heater Mat",
-          "comments": "(If Required)",
-          "note": "(If Required)"
-        },
-        {
-          "partNumber": "JX7BA60078AA",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Plastic Bracket",
-          "comments": "",
-          "note": ""
-        }
-      ],
-      "variants": {}
+      "variants": {
+        "Single Battery": [
+          {
+            "partNumber": "GK2Z10A818A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Single Battery vent tube",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "MBAZ10655N",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Battery",
+            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+          }
+        ],
+        "Twin Battery": [
+          {
+            "partNumber": "GK2Z10A818B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Twin Battery vent tube",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "MBAZ10655N",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Battery",
+            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+          }
+        ]
+      }
     },
     "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [
-        "25-2160"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2105",
-    "tsbNumber": "26-2105",
-    "bulletinNumber": "26-2105",
-    "displayNumber": "26-2105",
-    "type": "TSB",
-    "title": "Sliding Door Exterior Handle Does Not Release Rear Latch When The - Door Is Locked",
-    "model": "Transit",
-    "years": [
-      "2019-2025",
-      "2019-2026",
-      "2023-2026"
-    ],
-    "yearRange": "2019-2025, 2019-2026, 2023-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
-    "concern": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
-    "description": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2105.pdf",
-    "filename": "26-2105.pdf",
-    "manualOnly": false,
-    "searchText": "26-2105 tsb sliding door exterior handle does not release rear latch when the - door is locked transit 2019-2025, 2019-2026, 2023-2026 some 2019-2025 tourneo custom/transit custom vehicles built from 20-may-2019, 2023-2026 transit custom, and 2019-2026 transit vehicles built from 20-may-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism. current 26-2105.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2099",
-    "tsbNumber": "26-2099",
-    "bulletinNumber": "26-2099",
-    "displayNumber": "26-2099",
-    "type": "TSB",
-    "title": "Engine Overheating And/Or Poor Air Conditioning (A/C) Performance - With DTC P0480 And/Or P0217",
-    "model": "Ranger, Everest",
-    "years": [
-      "2022-2024",
-      "2024-2022"
-    ],
-    "yearRange": "2022-2024, 2024-2022",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2022-2024 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience engine overheating and/or poor A/C performance with Diagnostic Trouble Code (DTC) P0480 and/or P0217. This may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring.",
-    "concern": "Some 2022-2024 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience engine overheating and/or poor A/C performance with Diagnostic Trouble Code (DTC) P0480 and/or P0217. This may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring.",
-    "description": "Some 2022-2024 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience engine overheating and/or poor A/C performance with Diagnostic Trouble Code (DTC) P0480 and/or P0217. This may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring.",
-    "status": "Current",
-    "supersedes": [
-      "24-2224"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2099.pdf",
-    "filename": "26-2099.pdf",
-    "manualOnly": false,
-    "searchText": "26-2099 tsb engine overheating and/or poor air conditioning (a/c) performance - with dtc p0480 and/or p0217 ranger, everest 2022-2024, 2024-2022 some 2022-2024 next-generation ranger, ranger raptor and everest vehicles may experience engine overheating and/or poor a/c performance with diagnostic trouble code (dtc) p0480 and/or p0217. this may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring. current 26-2099.pdf",
-    "parts": {
-      "staticParts": [
-        {
-          "partNumber": "MB3Z14S411E",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Kit Wiring",
-          "comments": "",
-          "note": ""
-        }
-      ],
-      "variants": {}
-    },
-    "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [
-        "24-2224"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2072",
-    "tsbNumber": "26-2072",
-    "bulletinNumber": "26-2072",
-    "displayNumber": "26-2072",
-    "type": "TSB",
-    "title": "No Start/No Crank In Cold Condition - 27 May 2026",
-    "model": "Transit",
-    "years": [
-      "2023-2025"
-    ],
-    "yearRange": "2023-2025",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
-    "concern": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
-    "description": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2072.pdf",
-    "filename": "26-2072.pdf",
-    "manualOnly": false,
-    "searchText": "26-2072 tsb no start/no crank in cold condition - 27 may 2026 transit 2023-2025 some 2023-2025 transit custom vehicles built to 16-jun-2025 equipped with a 2.0l (panther) engine may exhibit a no start/no crank in cold condition. this concern may be caused due to blown fuse (275 a) in the auxiliary battery fuse box. this issue, primarily observed in the scandinavian markets, arises from water entering the engine cylinders. under sub-zero temperatures, condensation builds up within the water charge air cooler (wcac). additionally, moisture from the low-pressure egr system con current 26-2072.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
@@ -642,14 +166,14 @@
     "bulletinNumber": "25-2205",
     "displayNumber": "25-2205",
     "type": "TSB",
-    "title": "From The Transmission Area At Light Accelerator Input - 30 June 2025",
+    "title": "2.0L Panther Engine - Rattle Noise from Transmission area at light acceleration.",
     "model": "Ranger, Everest",
     "years": [
       "2018-2022"
     ],
     "yearRange": "2018-2022",
-    "fordUploadDate": "",
-    "issueDate": "",
+    "fordUploadDate": "2025-06-30",
+    "issueDate": "2025-06-30",
     "symptom": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
     "concern": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
     "description": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
@@ -662,7 +186,7 @@
     "file": "Ford/TSB/pdf/25-2205.pdf",
     "filename": "25-2205.pdf",
     "manualOnly": false,
-    "searchText": "25-2205 tsb from the transmission area at light accelerator input - 30 june 2025 ranger, everest 2018-2022 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
+    "searchText": "25-2205 tsb 2.0l panther engine - rattle noise from transmission area at light acceleration. ranger, everest 2018-2022 2025-06-30 2025-06-30 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
     "parts": {
       "staticParts": [],
       "variants": {
@@ -1044,6 +568,829 @@
         "23-2263",
         "23-2403"
       ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "22B44",
+    "tsbNumber": "22B44",
+    "bulletinNumber": "22B44",
+    "displayNumber": "22B44",
+    "type": "FSA",
+    "title": "22B44 - MONDEO - Front Flexible Brake Hose Replacement",
+    "model": "Mondeo",
+    "years": [
+      "2014-2017"
+    ],
+    "yearRange": "2014-2017",
+    "fordUploadDate": "2023-08-07",
+    "issueDate": "2023-08-07",
+    "symptom": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
+    "concern": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
+    "description": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/22B44.pdf",
+    "filename": "22B44.pdf",
+    "manualOnly": false,
+    "searchText": "22b44 fsa 22b44 - mondeo - front flexible brake hose replacement mondeo 2014-2017 2023-08-07 2023-08-07 in some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. if the amount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light will illuminate. current 22b44.pdf",
+    "parts": {
+      "staticParts": [
+        {
+          "partNumber": "JG9Z2078B",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Right Front Flexible Brake Hose",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "JG9Z2078A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Left Front Flexible Brake Hose",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W711784S300",
+          "qty": "4",
+          "quantity": "4",
+          "description": "Banjo Washers",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "WSSM6C65A2MC",
+          "qty": "0",
+          "quantity": "0",
+          "description": "Brake Fluid Dot 4 330ml",
+          "comments": "As Required/ No specified Quantity",
+          "note": "As Required/ No specified Quantity"
+        }
+      ],
+      "variants": {}
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "15S24",
+    "tsbNumber": "15S24",
+    "bulletinNumber": "15S24",
+    "displayNumber": "15S24",
+    "type": "FSA",
+    "title": "15S24 – Focus – Front Drive Halfshafts Replacement",
+    "model": "Focus",
+    "years": [
+      "2012-2014"
+    ],
+    "yearRange": "2012-2014",
+    "fordUploadDate": "2015-09-24",
+    "issueDate": "2015-09-24",
+    "symptom": "Certain Focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. Under certain conditions the halfshafts may fracture.",
+    "concern": "Certain Focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. Under certain conditions the halfshafts may fracture.",
+    "description": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/15S24.pdf",
+    "filename": "15S24.pdf",
+    "manualOnly": false,
+    "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement focus 2012-2014 2015-09-24 2015-09-24 certain focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. under certain conditions the halfshafts may fracture. current 15s24.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {
+        "1.6L TiVCT with DPS6 Powershift Transmission": [
+          {
+            "partNumber": "BV613B436VA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly RH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "BV613B437VA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly LH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520102S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "M8 Nut - Bearing Retainer",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "97AG3N324AC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retainer Bearing",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W707209S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Bolt - Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520415S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Nut - Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "SRCC16D128B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Campaign Completion Decal",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "2.0L GDI with MTX75 Transmission": [
+          {
+            "partNumber": "BV613B436XA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly RH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "BV613B437XA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly LH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520102S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "M8 Nut - Bearing Retainer",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "97AG3N324AC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retainer Bearing",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W707209S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Bolt - Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520415S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Nut – Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "SRCC16D128B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Campaign Completion Decal",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "2.0L GDI with DPS6 PowerShift Transmission": [
+          {
+            "partNumber": "BV613B436ZA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly RH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "BV613B437ZA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly LH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520102S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "M8 Nut – Bearing Retainer",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "97AG3N324AC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retainer Bearing",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W707209S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Bolt – Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520415S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Nut – Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "SRCC16D128B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Campaign Completion Decal",
+            "comments": "",
+            "note": ""
+          }
+        ]
+      }
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2274",
+    "tsbNumber": "26-2274",
+    "bulletinNumber": "26-2274",
+    "displayNumber": "26-2274",
+    "type": "TSB",
+    "title": "Accelerated Wear Of The Rear Inner Brake Pads Or Scraping And - Grinding Noises",
+    "model": "Ranger",
+    "years": [
+      "2021-2026"
+    ],
+    "yearRange": "2021-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "description": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "status": "Current",
+    "supersedes": [
+      "25-2388"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2274.pdf",
+    "filename": "26-2274.pdf",
+    "manualOnly": false,
+    "searchText": "26-2274 tsb accelerated wear of the rear inner brake pads or scraping and - grinding noises ranger 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes. current 26-2274.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "25-2388"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2253",
+    "tsbNumber": "26-2253",
+    "bulletinNumber": "26-2253",
+    "displayNumber": "26-2253",
+    "type": "TSB",
+    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
+    "model": "Ranger, Everest",
+    "years": [
+      "2022-2026"
+    ],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "description": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2253.pdf",
+    "filename": "26-2253.pdf",
+    "manualOnly": false,
+    "searchText": "26-2253 tsb illuminated airbag warning lamp with diagnostic trouble codes (dtcs) - b1405-13 and/or b1408-13 ranger, everest 2022-2026 some 2022–2026 next-generation ranger, raptor, and everest vehicles may exhibit an illuminated airbag warning lamp with dtcs b1405-13 and/or b1408-13 in the instrument panel cluster (ipc) or fordpass application; • intermittent or active airbag warning indicator lamp. • fordpass application warning message; safety control module detected a fault in the inflatable curtain circuit. current 26-2253.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2249",
+    "tsbNumber": "26-2249",
+    "bulletinNumber": "26-2249",
+    "displayNumber": "26-2249",
+    "type": "TSB",
+    "title": "Gear Shift Module (GSM) Concerns - 02 June 2026",
+    "model": "F-150",
+    "years": [
+      "2021-2025",
+      "2022-2025"
+    ],
+    "yearRange": "2021-2025, 2022-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
+    "concern": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
+    "description": "Some of the vehicles listed in the Model statement above equipped with a console shiftGSM may exhibit at least one of the following conditions • Clicking sound coming from the gear shift lever after it is placed and kept in R, N, or D position. (2024 only) • Gear shift lever stuck in P • Gear shift lever will not shift into P • Gear shift lever will not shift out of gear • Gear shift lever will not stow/unstow • Gear shift lever will move past the P position",
+    "status": "Current",
+    "supersedes": [
+      "26-2115"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2249.pdf",
+    "filename": "26-2249.pdf",
+    "manualOnly": false,
+    "searchText": "26-2249 tsb gear shift module (gsm) concerns - 02 june 2026 f-150 2021-2025, 2022-2025 some of the vehicles listed in the model statement above equipped with a console shiftgsm may exhibit at least one of the following conditions • clicking sound coming from the gear shift lever after it is placed and kept in r, n, or d position. (2024 only) • gear shift lever stuck in p • gear shift lever will not shift into p • gear shift lever will not shift out of gear • gear shift lever will not stow/unstow • gear shift lever will move past the p position current 26-2249.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "26-2115"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2244",
+    "tsbNumber": "26-2244",
+    "bulletinNumber": "26-2244",
+    "displayNumber": "26-2244",
+    "type": "TSB",
+    "title": "LED Headlamp Functional Concerns - 10 June 2026",
+    "model": "Ranger, Everest, RA",
+    "years": [
+      "2021-2026",
+      "2022-2026"
+    ],
+    "yearRange": "2021-2026, 2022-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience LED headlamp (LED reflector and LED projector) functionality concerns such as LED Reflector Headlamps (Figure 1) • Day time running lamp inoperable • Low beam inoperable • High beam inoperable LED Projector Headlamps (Figure 2) • Day time running lamp inoperable • Low beam inoperable",
+    "concern": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience LED headlamp (LED reflector and LED projector) functionality concerns such as LED Reflector Headlamps (Figure 1) • Day time running lamp inoperable • Low beam inoperable • High beam inoperable LED Projector Headlamps (Figure 2) • Day time running lamp inoperable • Low beam inoperable",
+    "description": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience LED headlamp (LED reflector and LED projector) functionality concerns such as LED Reflector Headlamps (Figure 1) • Day time running lamp inoperable • Low beam inoperable • High beam inoperable LED Projector Headlamps (Figure 2) • Day time running lamp inoperable • Low beam inoperable",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2244.pdf",
+    "filename": "26-2244.pdf",
+    "manualOnly": false,
+    "searchText": "26-2244 tsb led headlamp functional concerns - 10 june 2026 ranger, everest, ra 2021-2026, 2022-2026 some 2021-2026 next-generation ranger and everest vehicles may experience led headlamp (led reflector and led projector) functionality concerns such as led reflector headlamps (figure 1) • day time running lamp inoperable • low beam inoperable • high beam inoperable led projector headlamps (figure 2) • day time running lamp inoperable • low beam inoperable current 26-2244.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2236",
+    "tsbNumber": "26-2236",
+    "bulletinNumber": "26-2236",
+    "displayNumber": "26-2236",
+    "type": "TSB",
+    "title": "Various Driver Assistance System Warning Messages - DTCs C1001:31, - U3000:89, And/Or U3000:49 Stored In The IPMA",
+    "model": "F-150",
+    "years": [
+      "2021-2023"
+    ],
+    "yearRange": "2021-2023",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
+    "concern": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
+    "description": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to the coaxial cable between the IPMA camera and the IPMA.",
+    "status": "Current",
+    "supersedes": [
+      "26-2097"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2236.pdf",
+    "filename": "26-2236.pdf",
+    "manualOnly": false,
+    "searchText": "26-2236 tsb various driver assistance system warning messages - dtcs c1001:31, - u3000:89, and/or u3000:49 stored in the ipma f-150 2021-2023 some of the vehicles listed in the model statement above may exhibit dtcs c1001:31, u3000:89, and/or u3000:49 stored in the ipma and at least one of the following conditions • \"front camera fault service required\" message. • pre-collision assist inoperative. • adaptive cruise control inoperative. • front windshield camera alignment routine fails to complete. this may be due to the coaxial cable between the ipma camera and the ipma. current 26-2236.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "26-2097"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2232",
+    "tsbNumber": "26-2232",
+    "bulletinNumber": "26-2232",
+    "displayNumber": "26-2232",
+    "type": "TSB",
+    "title": "Left Hand Rear Leaf Spring Squeak, Scraping Or Knocking Noise - 08 June 2026",
+    "model": "Ranger, RA",
+    "years": [
+      "2021-2026"
+    ],
+    "yearRange": "2021-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the Left Hand (LH) rear. This condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise.",
+    "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the Left Hand (LH) rear. This condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise.",
+    "description": "Some 2021-2026 Next-Generation Ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the Left Hand (LH) rear. This condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2232.pdf",
+    "filename": "26-2232.pdf",
+    "manualOnly": false,
+    "searchText": "26-2232 tsb left hand rear leaf spring squeak, scraping or knocking noise - 08 june 2026 ranger, ra 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with leaf springs, may exhibit squeaking, scraping or knocking noises originating from the left hand (lh) rear. this condition may be caused by diesel fuel spilling from the overflow hose during refuelling; the fuel contaminates the leaf spring assembly, resulting in the noise. current 26-2232.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2227",
+    "tsbNumber": "26-2227",
+    "bulletinNumber": "26-2227",
+    "displayNumber": "26-2227",
+    "type": "TSB",
+    "title": "Illuminated Malfunction Indicator Lamp (MIL) With Diagnostic Trouble - Code (DTC) P2C7A-00",
+    "model": "Ranger",
+    "years": [
+      "2026"
+    ],
+    "yearRange": "2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
+    "concern": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
+    "description": "Some 2026 Ranger Super Duty vehicles equipped with a 3.0L Power Stroke diesel engine may exhibit an illuminated MIL with only DTC P2C7A-00 stored in the Powertrain Control Module (PCM)",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2227.pdf",
+    "filename": "26-2227.pdf",
+    "manualOnly": false,
+    "searchText": "26-2227 tsb illuminated malfunction indicator lamp (mil) with diagnostic trouble - code (dtc) p2c7a-00 ranger 2026 some 2026 ranger super duty vehicles equipped with a 3.0l power stroke diesel engine may exhibit an illuminated mil with only dtc p2c7a-00 stored in the powertrain control module (pcm) current 26-2227.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2221",
+    "tsbNumber": "26-2221",
+    "bulletinNumber": "26-2221",
+    "displayNumber": "26-2221",
+    "type": "TSB",
+    "title": "B-Pillar Ticking Sound With NEW Grab Handle Design - 10 June 2026",
+    "model": "Ranger, Everest",
+    "years": [
+      "2023-2026"
+    ],
+    "yearRange": "2023-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
+    "concern": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
+    "description": "Some 2023-2026 Ranger double cab and Everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the B-pillar area.",
+    "status": "Current",
+    "supersedes": [
+      "26-2036"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2221.pdf",
+    "filename": "26-2221.pdf",
+    "manualOnly": false,
+    "searchText": "26-2221 tsb b-pillar ticking sound with new grab handle design - 10 june 2026 ranger, everest 2023-2026 some 2023-2026 ranger double cab and everest vehicles with the new style grab handle bracket design may experience a ticking type sound at the b-pillar area. current 26-2221.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "26-2036"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2212",
+    "tsbNumber": "26-2212",
+    "bulletinNumber": "26-2212",
+    "displayNumber": "26-2212",
+    "type": "TSB",
+    "title": "Various Concerns Due To C115 Wiring Connector Water Ingress - 05 May 2026",
+    "model": "Ranger, Everest",
+    "years": [
+      "2022-2026"
+    ],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
+    "concern": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
+    "description": "Some 2022-2026 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience one or more of the following symptoms. This may be due to water ingress into the C115 wiring connector. The vehicle may exhibit any of the following symptoms • Power cut off to engine • Not able to accelerate the vehicle or change gear • Multiple illuminated Malfunction Indicator Lamps (MIL)/Multiple warnings on the Instrument Panel Cluster (IPC) Fuse 10 blown in the Power Distribution Box (PDB) Vehicle not ",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2212.pdf",
+    "filename": "26-2212.pdf",
+    "manualOnly": false,
+    "searchText": "26-2212 tsb various concerns due to c115 wiring connector water ingress - 05 may 2026 ranger, everest 2022-2026 some 2022-2026 next-generation ranger, ranger raptor and everest vehicles may experience one or more of the following symptoms. this may be due to water ingress into the c115 wiring connector. the vehicle may exhibit any of the following symptoms • power cut off to engine • not able to accelerate the vehicle or change gear • multiple illuminated malfunction indicator lamps (mil)/multiple warnings on the instrument panel cluster (ipc) fuse 10 blown in the power distribution box (pdb) vehicle not current 26-2212.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2177",
+    "tsbNumber": "26-2177",
+    "bulletinNumber": "26-2177",
+    "displayNumber": "26-2177",
+    "type": "TSB",
+    "title": "Embedded Navigation (HKCAB) – Embedded Navigation Maps Out Of - 25 May 2026",
+    "model": "Mustang, Transit, F-150, Kuga",
+    "years": [
+      "2022-2023"
+    ],
+    "yearRange": "2022-2023",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
+    "concern": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
+    "description": "Some vehicles listed in the Model statement built from 01-Aug-2022 to 26-Oct-2024 equipped with embedded navigation (HKCAB) may experience the embedded navigation maps are out of date.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2177.pdf",
+    "filename": "26-2177.pdf",
+    "manualOnly": false,
+    "searchText": "26-2177 tsb embedded navigation (hkcab) – embedded navigation maps out of - 25 may 2026 mustang, transit, f-150, kuga 2022-2023 some vehicles listed in the model statement built from 01-aug-2022 to 26-oct-2024 equipped with embedded navigation (hkcab) may experience the embedded navigation maps are out of date. current 26-2177.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2159",
+    "tsbNumber": "26-2159",
+    "bulletinNumber": "26-2159",
+    "displayNumber": "26-2159",
+    "type": "TSB",
+    "title": "Transmission Not In Park Message When Driving Below 10kmph - 20 May 2026",
+    "model": "Transit",
+    "years": [
+      "2023-2026"
+    ],
+    "yearRange": "2023-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above may exhibit the following warning messages • <Transmission not in Park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • In combination with two other messages: <Hill Start Assist Not Available> / <Park Brake Limited Function> or • Stored DTCs P166B in the SCCM sometimes in combination with U0404 in the ABS module, This may be caused by the SOBDMC, ",
+    "concern": "Some of the vehicles listed in the Model statement above may exhibit the following warning messages • <Transmission not in Park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • In combination with two other messages: <Hill Start Assist Not Available> / <Park Brake Limited Function> or • Stored DTCs P166B in the SCCM sometimes in combination with U0404 in the ABS module, This may be caused by the SOBDMC, ",
+    "description": "Some of the vehicles listed in the Model statement above may exhibit the following warning messages • <Transmission not in Park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • In combination with two other messages: <Hill Start Assist Not Available> / <Park Brake Limited Function> or • Stored DTCs P166B in the SCCM sometimes in combination with U0404 in the ABS module, This may be caused by the SOBDMC, ",
+    "status": "Current",
+    "supersedes": [
+      "25-2160"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2159.pdf",
+    "filename": "26-2159.pdf",
+    "manualOnly": false,
+    "searchText": "26-2159 tsb transmission not in park message when driving below 10kmph - 20 may 2026 transit 2023-2026 some of the vehicles listed in the model statement above may exhibit the following warning messages • <transmission not in park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • in combination with two other messages: <hill start assist not available> / <park brake limited function> or • stored dtcs p166b in the sccm sometimes in combination with u0404 in the abs module, this may be caused by the sobdmc, current 26-2159.pdf",
+    "parts": {
+      "staticParts": [
+        {
+          "partNumber": "PZ3114B427AB",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Mat Sensor",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "PZ31V632A22AD",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Foam",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "PZ3114D698AB",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Heater Mat",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "JX7BA60078AA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Plastic Bracket",
+          "comments": "",
+          "note": ""
+        }
+      ],
+      "variants": {}
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [
+        "25-2160"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2105",
+    "tsbNumber": "26-2105",
+    "bulletinNumber": "26-2105",
+    "displayNumber": "26-2105",
+    "type": "TSB",
+    "title": "Sliding Door Exterior Handle Does Not Release Rear Latch When The - Door Is Locked",
+    "model": "Transit",
+    "years": [
+      "2019-2025",
+      "2019-2026",
+      "2023-2026"
+    ],
+    "yearRange": "2019-2025, 2019-2026, 2023-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
+    "concern": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
+    "description": "Some 2019-2025 Tourneo Custom/Transit Custom Vehicles Built From 20-May-2019, 2023-2026 Transit Custom, And 2019-2026 Transit Vehicles Built From 20-May-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2105.pdf",
+    "filename": "26-2105.pdf",
+    "manualOnly": false,
+    "searchText": "26-2105 tsb sliding door exterior handle does not release rear latch when the - door is locked transit 2019-2025, 2019-2026, 2023-2026 some 2019-2025 tourneo custom/transit custom vehicles built from 20-may-2019, 2023-2026 transit custom, and 2019-2026 transit vehicles built from 20-may-2019 vehicles may present with concern that the exterior sliding door handle does not release the locking mechanism that keeps the door in fully opened position, the probable cause is a damaged clip of the latch cable from the lower roller mechanism. current 26-2105.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2099",
+    "tsbNumber": "26-2099",
+    "bulletinNumber": "26-2099",
+    "displayNumber": "26-2099",
+    "type": "TSB",
+    "title": "Engine Overheating And/Or Poor Air Conditioning (A/C) Performance - With DTC P0480 And/Or P0217",
+    "model": "Ranger, Everest",
+    "years": [
+      "2022-2024",
+      "2024-2022"
+    ],
+    "yearRange": "2022-2024, 2024-2022",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2022-2024 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience engine overheating and/or poor A/C performance with Diagnostic Trouble Code (DTC) P0480 and/or P0217. This may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring.",
+    "concern": "Some 2022-2024 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience engine overheating and/or poor A/C performance with Diagnostic Trouble Code (DTC) P0480 and/or P0217. This may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring.",
+    "description": "Some 2022-2024 Next-Generation Ranger, Ranger Raptor and Everest vehicles may experience engine overheating and/or poor A/C performance with Diagnostic Trouble Code (DTC) P0480 and/or P0217. This may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring.",
+    "status": "Current",
+    "supersedes": [
+      "24-2224"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2099.pdf",
+    "filename": "26-2099.pdf",
+    "manualOnly": false,
+    "searchText": "26-2099 tsb engine overheating and/or poor air conditioning (a/c) performance - with dtc p0480 and/or p0217 ranger, everest 2022-2024, 2024-2022 some 2022-2024 next-generation ranger, ranger raptor and everest vehicles may experience engine overheating and/or poor a/c performance with diagnostic trouble code (dtc) p0480 and/or p0217. this may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring. current 26-2099.pdf",
+    "parts": {
+      "staticParts": [
+        {
+          "partNumber": "MB3Z14S411E",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Kit Wiring",
+          "comments": "",
+          "note": ""
+        }
+      ],
+      "variants": {}
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [
+        "24-2224"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2072",
+    "tsbNumber": "26-2072",
+    "bulletinNumber": "26-2072",
+    "displayNumber": "26-2072",
+    "type": "TSB",
+    "title": "No Start/No Crank In Cold Condition - 27 May 2026",
+    "model": "Transit",
+    "years": [
+      "2023-2025"
+    ],
+    "yearRange": "2023-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
+    "concern": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
+    "description": "Some 2023-2025 Transit Custom vehicles built to 16-Jun-2025 equipped with a 2.0L (Panther) engine may exhibit a no start/no crank in cold condition. This concern may be caused due to blown fuse (275 A) in the Auxiliary Battery Fuse Box. This issue, primarily observed in the Scandinavian markets, arises from water entering the engine cylinders. Under sub-zero temperatures, condensation builds up within the Water Charge Air Cooler (WCAC). Additionally, moisture from the low-pressure EGR system con",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2072.pdf",
+    "filename": "26-2072.pdf",
+    "manualOnly": false,
+    "searchText": "26-2072 tsb no start/no crank in cold condition - 27 may 2026 transit 2023-2025 some 2023-2025 transit custom vehicles built to 16-jun-2025 equipped with a 2.0l (panther) engine may exhibit a no start/no crank in cold condition. this concern may be caused due to blown fuse (275 a) in the auxiliary battery fuse box. this issue, primarily observed in the scandinavian markets, arises from water entering the engine cylinders. under sub-zero temperatures, condensation builds up within the water charge air cooler (wcac). additionally, moisture from the low-pressure egr system con current 26-2072.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
       "supersededBy": []
     }
   },
@@ -1648,77 +1995,6 @@
     }
   },
   {
-    "number": "25SE6",
-    "tsbNumber": "25SE6",
-    "bulletinNumber": "25SE6",
-    "displayNumber": "25SE6",
-    "type": "FSA",
-    "title": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
-    "model": "Transit",
-    "years": [
-      "2022-2026"
-    ],
-    "yearRange": "2022-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
-    "concern": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
-    "description": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/25SE6.pdf",
-    "filename": "25SE6.pdf",
-    "manualOnly": false,
-    "searchText": "25se6 fsa 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator transit 2022-2026 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator current 25se6.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {
-        "Single Battery": [
-          {
-            "partNumber": "GK2Z10A818A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Single Battery vent tube",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "MBAZ10655N",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Battery",
-            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
-            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
-          }
-        ],
-        "Twin Battery": [
-          {
-            "partNumber": "GK2Z10A818B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Twin Battery vent tube",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "MBAZ10655N",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Battery",
-            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
-            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
-          }
-        ]
-      }
-    },
-    "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
     "number": "25SD9",
     "tsbNumber": "25SD9",
     "bulletinNumber": "25SD9",
@@ -1826,7 +2102,7 @@
     "bulletinNumber": "23P23",
     "displayNumber": "23P23",
     "type": "FSA",
-    "title": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
+    "title": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose",
     "model": "Ranger, Everest",
     "years": [
       "2021",
@@ -1837,8 +2113,8 @@
     "yearRange": "2021, 2022, 2023, 2024",
     "fordUploadDate": "",
     "issueDate": "",
-    "symptom": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
-    "concern": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
+    "symptom": "In some affected Stage V Panther 2.0L Bi-Turbo Ranger/Everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. In some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable.\nThe driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. The engine will continue to run at decreased power, but with hesitation and/or a misfire.",
+    "concern": "In some affected Stage V Panther 2.0L Bi-Turbo Ranger/Everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. In some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable.\nThe driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. The engine will continue to run at decreased power, but with hesitation and/or a misfire.",
     "description": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
     "status": "Current",
     "supersedes": [],
@@ -1846,7 +2122,7 @@
     "file": "Ford/TSB/pdf/23P23.pdf",
     "filename": "23P23.pdf",
     "manualOnly": false,
-    "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer ranger, everest 2021, 2022, 2023, 2024 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer current 23p23.pdf",
+    "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose ranger, everest 2021, 2022, 2023, 2024 in some affected stage v panther 2.0l bi-turbo ranger/everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. in some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable. the driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. the engine will continue to run at decreased power, but with hesitation and/or a misfire. current 23p23.pdf",
     "parts": {
       "staticParts": [
         {
@@ -1966,73 +2242,6 @@
       "variants": {}
     },
     "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "22B44",
-    "tsbNumber": "22B44",
-    "bulletinNumber": "22B44",
-    "displayNumber": "22B44",
-    "type": "FSA",
-    "title": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "model": "Mondeo",
-    "years": [
-      "2014-2017"
-    ],
-    "yearRange": "2014-2017",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "concern": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "description": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/22B44.pdf",
-    "filename": "22B44.pdf",
-    "manualOnly": false,
-    "searchText": "22b44 fsa 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. mondeo 2014-2017 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22b44.pdf",
-    "parts": {
-      "staticParts": [
-        {
-          "partNumber": "JG9Z2078B",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Right Front Flexible Brake Hose",
-          "comments": "",
-          "note": ""
-        },
-        {
-          "partNumber": "JG9Z2078A",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Left Front Flexible Brake Hose",
-          "comments": "",
-          "note": ""
-        },
-        {
-          "partNumber": "W711784S300",
-          "qty": "4",
-          "quantity": "4",
-          "description": "Banjo Washers",
-          "comments": "",
-          "note": ""
-        },
-        {
-          "partNumber": "WSSM6C65A2MC",
-          "qty": "0",
-          "quantity": "0",
-          "description": "Brake Fluid Dot 4 330ml",
-          "comments": "As Required/ No specified Quantity",
-          "note": "As Required/ No specified Quantity"
-        }
-      ],
-      "variants": {}
-    },
-    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
@@ -2247,215 +2456,6 @@
       "variants": {}
     },
     "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "15S24",
-    "tsbNumber": "15S24",
-    "bulletinNumber": "15S24",
-    "displayNumber": "15S24",
-    "type": "FSA",
-    "title": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "model": "Focus",
-    "years": [
-      "2012-2014"
-    ],
-    "yearRange": "2012-2014",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "concern": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "description": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/15S24.pdf",
-    "filename": "15S24.pdf",
-    "manualOnly": false,
-    "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2012-2014 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 15s24.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {
-        "1.6L TiVCT with DPS6 Powershift Transmission": [
-          {
-            "partNumber": "BV613B436VA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly RH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "BV613B437VA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly LH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520102S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "M8 Nut - Bearing Retainer",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "97AG3N324AC",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Retainer Bearing",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W707209S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Bolt - Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520415S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Nut - Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "SRCC16D128B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Campaign Completion Decal",
-            "comments": "",
-            "note": ""
-          }
-        ],
-        "2.0L GDI with MTX75 Transmission": [
-          {
-            "partNumber": "BV613B436XA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly RH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "BV613B437XA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly LH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520102S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "M8 Nut - Bearing Retainer",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "97AG3N324AC",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Retainer Bearing",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W707209S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Bolt - Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520415S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Nut – Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "SRCC16D128B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Campaign Completion Decal",
-            "comments": "",
-            "note": ""
-          }
-        ],
-        "2.0L GDI with DPS6 PowerShift Transmission": [
-          {
-            "partNumber": "BV613B436ZA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly RH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "BV613B437ZA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly LH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520102S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "M8 Nut – Bearing Retainer",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "97AG3N324AC",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Retainer Bearing",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W707209S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Bolt – Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520415S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Nut – Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "SRCC16D128B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Campaign Completion Decal",
-            "comments": "",
-            "note": ""
-          }
-        ]
-      }
-    },
-    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
