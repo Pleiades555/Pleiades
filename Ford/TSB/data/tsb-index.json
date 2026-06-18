@@ -2097,6 +2097,40 @@
     "number": "",
     "tsbNumber": "",
     "bulletinNumber": "",
+    "displayNumber": "25SE6.pdf",
+    "type": "FSA",
+    "title": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
+    "model": "Transit",
+    "years": [
+      "2022-2026"
+    ],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
+    "concern": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
+    "description": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/25SE6.pdf",
+    "filename": "25SE6.pdf",
+    "manualOnly": false,
+    "searchText": "fsa 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator transit 2022-2026 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator current 25se6.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "",
+    "tsbNumber": "",
+    "bulletinNumber": "",
     "displayNumber": "S1406.pdf",
     "type": "FSA",
     "title": "S1406 – WS Fiesta ECOnetic (Diesel)",
