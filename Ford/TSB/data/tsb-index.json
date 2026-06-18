@@ -219,9 +219,380 @@
     "searchText": "25-2205 tsb 2.0l panther engine - rattle noise from transmission area at light acceleration. ranger, everest 2018-2022 2025-06-30 2025-06-30 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
     "parts": {
       "staticParts": [],
-      "variants": {}
+      "variants": {
+        "Everest 4x4": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "EB3G10R80K1TA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Everest 4x4 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z 7A248 A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal stator support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, AUX Pump",
+            "comments": "(Auto Stop Start Cars)",
+            "note": "(Auto Stop Start Cars)"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel pump gear service kit",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Everest 4x2": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "EB3G10R80K1TB",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Everest 4x2 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto stop start cars",
+            "note": "Auto stop start cars"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel Pump Gear Service Kit",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Ranger 4x4": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3G10R80K1TA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Ranger 4x4 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto stop start cars",
+            "note": "Auto stop start cars"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel Pump Gear Service Kit",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Ranger 4x2": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3G10R80K1TB",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Ranger 4x2 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "(Auto Stop Start Cars)",
+            "note": "(Auto Stop Start Cars)"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel Pump Gear Service Kit",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Raptor": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3G10R80K1TC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Raptor 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "(Auto Stop Start Cars)",
+            "note": "(Auto Stop Start Cars)"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel Pump Gear Service Kit",
+            "comments": "",
+            "note": ""
+          }
+        ]
+      }
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "23-2263",
