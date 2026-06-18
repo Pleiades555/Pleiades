@@ -351,10 +351,27 @@
     "manualOnly": false,
     "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit 2023-2025, 2023-2026, 2024-2025, 2024-2026 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "K2GZ7B343A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Gasket",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "N/A",
+          "qty": "2",
+          "quantity": "2",
+          "description": "Cable Tie",
+          "comments": "Workshop supplied",
+          "note": "Workshop supplied"
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "25-2366"
@@ -457,10 +474,43 @@
     "manualOnly": false,
     "searchText": "26-2159 tsb transmission not in park message when driving below 10kmph - 20 may 2026 transit 2023-2026 some of the vehicles listed in the model statement above may exhibit the following warning messages • <transmission not in park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • in combination with two other messages: <hill start assist not available> / <park brake limited function> or • stored dtcs p166b in the sccm sometimes in combination with u0404 in the abs module, this may be caused by the sobdmc, current 26-2159.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "PZ3114B427AB",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Mat Sensor",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "PZ31V632A22AD",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Foam",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "PZ3114D698AB",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Seat Heater Mat",
+          "comments": "(If Required)",
+          "note": "(If Required)"
+        },
+        {
+          "partNumber": "JX7BA60078AA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Plastic Bracket",
+          "comments": "",
+          "note": ""
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "25-2160"
@@ -532,10 +582,19 @@
     "manualOnly": false,
     "searchText": "26-2099 tsb engine overheating and/or poor air conditioning (a/c) performance - with dtc p0480 and/or p0217 ranger, everest 2022-2024, 2024-2022 some 2022-2024 next-generation ranger, ranger raptor and everest vehicles may experience engine overheating and/or poor a/c performance with diagnostic trouble code (dtc) p0480 and/or p0217. this may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring. current 26-2099.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "MB3Z14S411E",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Kit Wiring",
+          "comments": "",
+          "note": ""
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "24-2224"
@@ -606,9 +665,380 @@
     "searchText": "25-2205 tsb from the transmission area at light accelerator input - 30 june 2025 ranger, everest 2018-2022 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
     "parts": {
       "staticParts": [],
-      "variants": {}
+      "variants": {
+        "Everest 4x4": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "EB3G10R80K1TA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Everest 4x4 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z 7A248 A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal stator support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, AUX Pump",
+            "comments": "(Auto Stop Start Cars)",
+            "note": "(Auto Stop Start Cars)"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel pump gear service kit",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Everest 4x2": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "EB3G10R80K1TB",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Everest 4x2 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto stop start cars",
+            "note": "Auto stop start cars"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel Pump Gear Service Kit",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Ranger 4x4": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3G10R80K1TA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Ranger 4x4 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto stop start cars",
+            "note": "Auto stop start cars"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel Pump Gear Service Kit",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Ranger 4x2": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3G10R80K1TB",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Ranger 4x2 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "(Auto Stop Start Cars)",
+            "note": "(Auto Stop Start Cars)"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel Pump Gear Service Kit",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Raptor": [
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3G10R80K1TC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Raptor 10R80 Kit - Aus/NZ",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7902E",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Torque Converter",
+            "comments": "Replace only if the part number is earlier then JB3P7902JC",
+            "note": "Replace only if the part number is earlier then JB3P7902JC"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "(Auto Stop Start Cars)",
+            "note": "(Auto Stop Start Cars)"
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652C",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Steel Pump Gear Service Kit",
+            "comments": "",
+            "note": ""
+          }
+        ]
+      }
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "23-2263",
@@ -1243,9 +1673,46 @@
     "searchText": "25se6 fsa 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator transit 2022-2026 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator current 25se6.pdf",
     "parts": {
       "staticParts": [],
-      "variants": {}
+      "variants": {
+        "Single Battery": [
+          {
+            "partNumber": "GK2Z10A818A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Single Battery vent tube",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "MBAZ10655N",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Battery",
+            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+          }
+        ],
+        "Twin Battery": [
+          {
+            "partNumber": "GK2Z10A818B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Twin Battery vent tube",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "MBAZ10655N",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Battery",
+            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+          }
+        ]
+      }
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
@@ -1381,10 +1848,19 @@
     "manualOnly": false,
     "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer ranger, everest 2021, 2022, 2023, 2024 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer current 23p23.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "MB3Z6C646R",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Duct Air/Intercooler Hose",
+          "comments": "",
+          "note": ""
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
@@ -1520,10 +1996,43 @@
     "manualOnly": false,
     "searchText": "22b44 fsa 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. mondeo 2014-2017 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22b44.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "JG9Z2078B",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Right Front Flexible Brake Hose",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "JG9Z2078A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Left Front Flexible Brake Hose",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "W711784S300",
+          "qty": "4",
+          "quantity": "4",
+          "description": "Banjo Washers",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "WSSM6C65A2MC",
+          "qty": "0",
+          "quantity": "0",
+          "description": "Brake Fluid Dot 4 330ml",
+          "comments": "As Required/ No specified Quantity",
+          "note": "As Required/ No specified Quantity"
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
@@ -1769,9 +2278,184 @@
     "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2012-2014 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 15s24.pdf",
     "parts": {
       "staticParts": [],
-      "variants": {}
+      "variants": {
+        "1.6L TiVCT with DPS6 Powershift Transmission": [
+          {
+            "partNumber": "BV613B436VA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly RH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "BV613B437VA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly LH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520102S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "M8 Nut - Bearing Retainer",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "97AG3N324AC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retainer Bearing",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W707209S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Bolt - Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520415S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Nut - Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "SRCC16D128B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Campaign Completion Decal",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "2.0L GDI with MTX75 Transmission": [
+          {
+            "partNumber": "BV613B436XA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly RH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "BV613B437XA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly LH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520102S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "M8 Nut - Bearing Retainer",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "97AG3N324AC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retainer Bearing",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W707209S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Bolt - Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520415S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Nut – Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "SRCC16D128B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Campaign Completion Decal",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "2.0L GDI with DPS6 PowerShift Transmission": [
+          {
+            "partNumber": "BV613B436ZA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly RH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "BV613B437ZA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Shaft and Joint Assembly LH",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520102S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "M8 Nut – Bearing Retainer",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "97AG3N324AC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retainer Bearing",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W707209S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Bolt – Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W520415S442",
+            "qty": "2",
+            "quantity": "2",
+            "description": "Nut – Ball Joint",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "SRCC16D128B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Campaign Completion Decal",
+            "comments": "",
+            "note": ""
+          }
+        ]
+      }
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
