@@ -533,10 +533,19 @@
     "manualOnly": false,
     "searchText": "26-2099 tsb engine overheating and/or poor air conditioning (a/c) performance - with dtc p0480 and/or p0217 ranger, everest 2022-2024, 2024-2022 some 2022-2024 next-generation ranger, ranger raptor and everest vehicles may experience engine overheating and/or poor a/c performance with diagnostic trouble code (dtc) p0480 and/or p0217. this may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring. current 26-2099.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "MB3Z14S411E",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Kit Wiring",
+          "comments": "",
+          "note": ""
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "24-2224"
