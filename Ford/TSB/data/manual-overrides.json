@@ -46,5 +46,15 @@
     "symptom": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
     "concern": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
     "status": "Current"
+  },
+  "25SE6.PDF": {
+    "title": "25SE6 – Transit and Transit / Tourneo Custom 12V AGM Battery Venting",
+    "model": "Transit",
+    "yearRange": "2022-2026",
+    "fordUploadDate": "2026-03-25",
+    "issueDate": "2026-03-25",
+    "symptom": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
+    "concern": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
+    "status": "Current"
   }
 }
