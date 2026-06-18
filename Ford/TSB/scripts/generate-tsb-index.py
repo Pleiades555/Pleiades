@@ -27,15 +27,13 @@ for file_path, default in [(OVERRIDES_FILE, {}), (PARTS_FILE, {})]:
         file_path.write_text(json.dumps(default, indent=2), encoding="utf-8")
 
 NUMBER_PATTERNS = [
-    r"\b(?:TSB|SSM|FSA|FIELD SERVICE ACTION|BULLETIN|PROGRAM|RECALL|FAB)\s*[:#-]?\s*([0-9]{2}[- ][0-9]{4}|[0-9]{2}[A-Z]{1,3}[0-9]{2,6}|FAB[0-9]{6,8}|SSM[0-9]{4,6})\b",
+    r"\b(?:TSB|SSM|FSA|FIELD SERVICE ACTION|BULLETIN|PROGRAM|RECALL|FAB)\s*[:#-]?\s*([0-9]{2}[- ][0-9]{4}|[0-9]{2}[A-Z]{1,3}[0-9]{1,6}|FAB[0-9]{6,8}|SSM[0-9]{4,6})\b",
     r"\b(FAB[0-9]{6,8})\b",
     r"\b([0-9]{2}[- ][0-9]{4})\b",
-    r"\b([0-9]{2}P[0-9]{2,6})\b",
-    r"\b([0-9]{2}S[0-9]{2,6})\b",
-    r"\b([0-9]{2}B[0-9]{2,6})\b",
+    r"\b([0-9]{2}[A-Z]{1,3}[0-9]{1,6})\b",
     r"\b(SSM[0-9]{4,6})\b",
 ]
-PROGRAM_NUMBER_RE = re.compile(r"\b(\d{2}[- ]\d{4}|\d{2}[A-Z]{1,3}\d{2,6}|FAB\d{6,8}|SSM\d{4,6})\b", re.IGNORECASE)
+PROGRAM_NUMBER_RE = re.compile(r"\b(\d{2}[- ]\d{4}|\d{2}[A-Z]{1,3}\d{1,6}|FAB\d{6,8}|SSM\d{4,6})\b", re.IGNORECASE)
 YEAR_RANGE_RE = re.compile(r"\b(19\d{2}|20\d{2})\s*(?:[-–—]|to|TO)\s*(19\d{2}|20\d{2})\b")
 SINGLE_YEAR_RE = re.compile(r"\b(19\d{2}|20\d{2})\b")
 DATE_RE = re.compile(r"\b(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{4}[/-]\d{1,2}[/-]\d{1,2})\b")
@@ -67,9 +65,20 @@ def clean_text(value):
 
 def normalise_number(value):
     value = clean_text(value).upper()
+    # Users sometimes type or save the bulletin number as the uploaded filename
+    # (example: 25SE6.pdf). The bulletin identity must never include .PDF.
+    value = re.sub(r"\.PDF$", "", value, flags=re.IGNORECASE)
     value = value.replace(" ", "-")
     value = value.replace("--", "-")
-    return value
+    return value.strip("-_. ")
+
+
+def get_override_for_number(number, overrides):
+    clean_number = normalise_number(number)
+    for key, value in (overrides or {}).items():
+        if isinstance(value, dict) and normalise_number(key) == clean_number:
+            return value
+    return {}
 
 
 def read_json(path, default):
@@ -228,8 +237,8 @@ def find_date_after_labels(text, labels):
 
 def find_supersession(text):
     supersedes, superseded_by = [], []
-    old_pattern = r"\b(?:supersedes|replaces|this bulletin supersedes|this article supersedes)\s+(?:TSB|SSM|FSA|bulletin|program)?\s*[:#-]?\s*([0-9]{2}[- ][0-9]{4}|[0-9]{2}[A-Z]{1,3}[0-9]{2,6}|FAB[0-9]{6,8}|SSM[0-9]{4,6})"
-    new_pattern = r"\b(?:superseded by|replaced by)\s+(?:TSB|SSM|FSA|bulletin|program)?\s*[:#-]?\s*([0-9]{2}[- ][0-9]{4}|[0-9]{2}[A-Z]{1,3}[0-9]{2,6}|FAB[0-9]{6,8}|SSM[0-9]{4,6})"
+    old_pattern = r"\b(?:supersedes|replaces|this bulletin supersedes|this article supersedes)\s+(?:TSB|SSM|FSA|bulletin|program)?\s*[:#-]?\s*([0-9]{2}[- ][0-9]{4}|[0-9]{2}[A-Z]{1,3}[0-9]{1,6}|FAB[0-9]{6,8}|SSM[0-9]{4,6})"
+    new_pattern = r"\b(?:superseded by|replaced by)\s+(?:TSB|SSM|FSA|bulletin|program)?\s*[:#-]?\s*([0-9]{2}[- ][0-9]{4}|[0-9]{2}[A-Z]{1,3}[0-9]{1,6}|FAB[0-9]{6,8}|SSM[0-9]{4,6})"
     for match in re.findall(old_pattern, text, re.IGNORECASE):
         supersedes.append(normalise_number(match))
     for match in re.findall(new_pattern, text, re.IGNORECASE):
@@ -239,7 +248,7 @@ def find_supersession(text):
 
 def apply_manual_overrides(item, overrides):
     number = item.get("number", "")
-    override = overrides.get(number, {})
+    override = get_override_for_number(number, overrides)
     if isinstance(override, dict):
         item.update(override)
     clean_number = normalise_number(item.get("number") or number)
@@ -436,6 +445,54 @@ def move_superseded_files(items):
     return moved
 
 
+
+def merge_duplicate_items(items):
+    """Merge entries that resolve to the same bulletin number.
+
+    This prevents duplicates such as 25SE6 and 25SE6.PDF when an older manual
+    override was saved using the filename instead of the bulletin number.
+    Prefer the PDF-backed item for file links, but keep manual fields/parts.
+    """
+    merged = {}
+    order = []
+    for item in items:
+        key = normalise_number(item.get("number") or item.get("displayNumber") or item.get("filename"))
+        if not key:
+            key = clean_text(item.get("filename") or item.get("title") or "UNKNOWN").upper()
+        existing = merged.get(key)
+        if existing is None:
+            item["number"] = key if key != "UNKNOWN" else normalise_number(item.get("number", ""))
+            item["tsbNumber"] = item["number"]
+            item["bulletinNumber"] = item["number"]
+            item["displayNumber"] = item["number"] or item.get("displayNumber") or item.get("filename", "Unknown")
+            merged[key] = item
+            order.append(key)
+            continue
+        # Prefer PDF-backed file link over manual-only blank file.
+        if not existing.get("file") and item.get("file"):
+            existing["file"] = item.get("file")
+            existing["filename"] = item.get("filename")
+            existing["manualOnly"] = False
+        # Preserve manually curated fields when the existing field is empty or generic.
+        for field in ["title", "model", "yearRange", "fordUploadDate", "issueDate", "symptom", "concern", "description", "status"]:
+            if item.get(field) and (not existing.get(field) or existing.get("manualOnly")):
+                existing[field] = item.get(field)
+        # Merge parts.
+        ep = normalise_parts_payload(existing.get("parts", {}))
+        ip = normalise_parts_payload(item.get("parts", {}))
+        if ip.get("staticParts"):
+            ep["staticParts"] = ip["staticParts"]
+        for variant, rows in ip.get("variants", {}).items():
+            if rows:
+                ep["variants"][variant] = rows
+        existing["parts"] = ep
+        existing["hasManualParts"] = bool(ep.get("staticParts") or ep.get("variants"))
+        # Merge supersession data.
+        existing["supersedes"] = sorted(set((existing.get("supersedes") or []) + (item.get("supersedes") or [])))
+        if not existing.get("supersededBy") and item.get("supersededBy"):
+            existing["supersededBy"] = item.get("supersededBy")
+    return [finish_item(merged[key]) for key in order]
+
 def main():
     overrides = read_json(OVERRIDES_FILE, {})
     parts = read_json(PARTS_FILE, {})
@@ -464,6 +521,7 @@ def main():
         if clean_number not in existing_numbers:
             items.append(attach_manual_parts(build_manual_only_item(clean_number, override), parts))
 
+    items = merge_duplicate_items(items)
     items = apply_supersession_links(items)
     items.sort(key=lambda x: (
         x.get("status") == "Superseded",

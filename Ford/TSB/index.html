@@ -122,7 +122,7 @@ const DATA_PATH='data/tsb-index.json';
 const OVERRIDES_PATH='Ford/TSB/data/manual-overrides.json';
 const PARTS_PATH='Ford/TSB/data/manual-parts.json';
 let allItems=[], filtered=[], manualParts={}, manualOverrides={}, stagedParts=null, stagedPartsNumber='';
-function norm(n){return String(n||'').trim().toUpperCase().replace(/\s+/g,'-').replace(/--+/g,'-')}
+function norm(n){return String(n||'').trim().toUpperCase().replace(/\.PDF$/i,'').replace(/\s+/g,'-').replace(/--+/g,'-').replace(/^[-_. ]+|[-_. ]+$/g,'')}
 function esc(s){return String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function adminMsg(m){document.getElementById('adminMsg').textContent=m}
 async function loadJson(path, fallback){try{const r=await fetch(path+'?v='+Date.now()); if(!r.ok) return fallback; return await r.json()}catch(e){return fallback}}
@@ -138,7 +138,8 @@ function pdfUrl(file){
   if(!/^pdf\//i.test(p)&&!/^archive\//i.test(p)&&/\.pdf$/i.test(p))p='pdf/'+p;
   return encodeURI(p).replace(/#/g,'%23');
 }
-async function init(){allItems=await loadJson(DATA_PATH,[]); manualParts=await loadJson('data/manual-parts.json',{}); manualOverrides=await loadJson('data/manual-overrides.json',{}); allItems=allItems.map(applyClientParts); bindFilters(); render()}
+async function init(){allItems=await loadJson(DATA_PATH,[]); manualParts=await loadJson('data/manual-parts.json',{}); manualOverrides=await loadJson('data/manual-overrides.json',{}); allItems=dedupeItems(allItems.map(applyClientParts)); bindFilters(); render()}
+function dedupeItems(items){const map=new Map();for(const item of items){const key=norm(item.number||item.displayNumber||item.filename);if(!key){continue}const existing=map.get(key);if(!existing){item.number=key;item.tsbNumber=key;item.bulletinNumber=key;item.displayNumber=key||item.displayNumber;map.set(key,item);continue}if(!existing.file&&item.file){existing.file=item.file;existing.filename=item.filename;existing.manualOnly=false}for(const f of ['title','model','yearRange','fordUploadDate','issueDate','symptom','concern','description','status']){if(item[f]&&(!existing[f]||existing.manualOnly))existing[f]=item[f]}const ep=normaliseParts(existing.parts||{}),ip=normaliseParts(item.parts||{});if(ip.staticParts?.length)ep.staticParts=ip.staticParts;Object.entries(ip.variants||{}).forEach(([v,rows])=>{if(rows?.length)ep.variants[v]=rows});existing.parts=ep;existing.hasManualParts=hasParts(ep)}return [...map.values()]}
 function applyClientParts(item){const key=norm(item.number||item.displayNumber); const p=findParts(key); if(p){item.parts=normaliseParts(p); item.hasManualParts=hasParts(item.parts)} if(manualOverrides[key]) item.manualOverride=true; return item}
 function findParts(key){for(const [k,v] of Object.entries(manualParts||{})){if(norm(k)===key)return v} return null}
 function normaliseParts(p){const out={staticParts:Array.isArray(p?.staticParts)?[...p.staticParts]:[], variants:{}}; if(p?.variants&&typeof p.variants==='object'){Object.entries(p.variants).forEach(([k,v])=>{out.variants[k]=Array.isArray(v)?[...v]:[]})} return out}
