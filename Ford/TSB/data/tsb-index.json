@@ -90,6 +90,46 @@
     }
   },
   {
+    "number": "25-2205",
+    "tsbNumber": "25-2205",
+    "bulletinNumber": "25-2205",
+    "displayNumber": "25-2205",
+    "type": "TSB",
+    "title": "2.0L Panther Engine - Rattle Noise from Transmission area at light acceleration.",
+    "model": "Ranger, Everest",
+    "years": [
+      "2018-2022"
+    ],
+    "yearRange": "2018-2022",
+    "fordUploadDate": "2025-06-30",
+    "issueDate": "2025-06-30",
+    "symptom": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
+    "concern": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
+    "description": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
+    "status": "Current",
+    "supersedes": [
+      "23-2263",
+      "23-2403"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/25-2205.pdf",
+    "filename": "25-2205.pdf",
+    "manualOnly": false,
+    "searchText": "25-2205 tsb 2.0l panther engine - rattle noise from transmission area at light acceleration. ranger, everest 2018-2022 2025-06-30 2025-06-30 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "23-2263",
+        "23-2403"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "22B44",
     "tsbNumber": "22B44",
     "bulletinNumber": "22B44",
@@ -909,46 +949,6 @@
     "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "25-2205",
-    "tsbNumber": "25-2205",
-    "bulletinNumber": "25-2205",
-    "displayNumber": "25-2205",
-    "type": "TSB",
-    "title": "From The Transmission Area At Light Accelerator Input - 30 June 2025",
-    "model": "Ranger, Everest",
-    "years": [
-      "2018-2022"
-    ],
-    "yearRange": "2018-2022",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
-    "concern": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
-    "description": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
-    "status": "Current",
-    "supersedes": [
-      "23-2263",
-      "23-2403"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/25-2205.pdf",
-    "filename": "25-2205.pdf",
-    "manualOnly": false,
-    "searchText": "25-2205 tsb from the transmission area at light accelerator input - 30 june 2025 ranger, everest 2018-2022 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [
-        "23-2263",
-        "23-2403"
-      ],
       "supersededBy": []
     }
   },
