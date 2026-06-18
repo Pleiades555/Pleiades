@@ -296,5 +296,46 @@
       }
     ],
     "variants": {}
+  },
+  "25SE6.PDF": {
+    "staticParts": [],
+    "variants": {
+      "Single Battery": [
+        {
+          "partNumber": "GK2Z10A818A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Single Battery vent tube",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "MBAZ10655N",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Battery",
+          "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+          "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+        }
+      ],
+      "Twin Battery": [
+        {
+          "partNumber": "GK2Z10A818B",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Twin Battery vent tube",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "MBAZ10655N",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Battery",
+          "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
+          "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
+        }
+      ]
+    }
   }
 }
