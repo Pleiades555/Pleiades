@@ -32,852 +32,6 @@
     }
   },
   {
-    "number": "26-2215",
-    "tsbNumber": "26-2215",
-    "bulletinNumber": "26-2215",
-    "displayNumber": "26-2215",
-    "type": "TSB",
-    "title": "Illuminated MIL In Conjunction With Intermittent Transmission Shift - Concerns In FORWARD Or REVERSE Gear With DTCs Stored",
-    "model": "Transit Custom/Torneo, Transit",
-    "years": [
-      "2023-2025",
-      "2023-2026",
-      "2024-2025",
-      "2024-2026"
-    ],
-    "yearRange": "2023-2026, 2024-2026",
-    "fordUploadDate": "2026-06-06",
-    "issueDate": "2026-06-05",
-    "symptom": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission",
-    "concern": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission",
-    "description": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
-    "status": "Current",
-    "supersedes": [
-      "25-2366"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2215.pdf",
-    "filename": "26-2215.pdf",
-    "manualOnly": false,
-    "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit custom/torneo, transit 2023-2026, 2024-2026 2026-06-06 2026-06-05 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf",
-    "parts": {
-      "staticParts": [
-        {
-          "partNumber": "K2GZ7B343A",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Gasket",
-          "comments": "",
-          "note": ""
-        },
-        {
-          "partNumber": "N/A",
-          "qty": "2",
-          "quantity": "2",
-          "description": "Cable Tie",
-          "comments": "Workshop supplied",
-          "note": "Workshop supplied"
-        }
-      ],
-      "variants": {}
-    },
-    "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [
-        "25-2366"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "25SE6.PDF",
-    "tsbNumber": "25SE6.PDF",
-    "bulletinNumber": "25SE6.PDF",
-    "displayNumber": "25SE6.PDF",
-    "type": "TSB",
-    "title": "25SE6 – Transit and Transit / Tourneo Custom 12V AGM Battery Venting",
-    "model": "Transit",
-    "years": [],
-    "yearRange": "2022-2026",
-    "fordUploadDate": "2026-03-25",
-    "issueDate": "2026-03-25",
-    "symptom": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
-    "concern": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
-    "description": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": "",
-    "file": "",
-    "filename": "Manual override only",
-    "manualOnly": true,
-    "searchText": "25se6.pdf tsb 25se6 – transit and transit / tourneo custom 12v agm battery venting transit 2022-2026 2026-03-25 2026-03-25 a number of transit and transit / tourneo custom vehicles built with h7 agm batteries may experience one or more of, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat. gas emissions during a normal absorbent glass mat (agm) battery gassing event produce hydrogen and oxygen, however increased temperatures can lead to a side reaction which produces h2s (hydrogen sulphide). if exposure is prolonged, health impacts such as nausea, dizziness and headaches may become more severe. current manual override only",
-    "parts": {
-      "staticParts": [],
-      "variants": {
-        "Single Battery": [
-          {
-            "partNumber": "GK2Z10A818A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Single Battery vent tube",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "MBAZ10655N",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Battery",
-            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
-            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
-          }
-        ],
-        "Twin Battery": [
-          {
-            "partNumber": "GK2Z10A818B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Twin Battery vent tube",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "MBAZ10655N",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Battery",
-            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
-            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
-          }
-        ]
-      }
-    },
-    "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": ""
-    }
-  },
-  {
-    "number": "25SE6",
-    "tsbNumber": "25SE6",
-    "bulletinNumber": "25SE6",
-    "displayNumber": "25SE6",
-    "type": "TSB",
-    "title": "25SE6 – Transit and Transit / Tourneo Custom 12V AGM Battery Venting",
-    "model": "Transit",
-    "years": [],
-    "yearRange": "2022-2026",
-    "fordUploadDate": "2026-03-25",
-    "issueDate": "2026-03-25",
-    "symptom": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
-    "concern": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
-    "description": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": "",
-    "file": "",
-    "filename": "Manual override only",
-    "manualOnly": true,
-    "searchText": "25se6 tsb 25se6 – transit and transit / tourneo custom 12v agm battery venting transit 2022-2026 2026-03-25 2026-03-25 a number of transit and transit / tourneo custom vehicles built with h7 agm batteries may experience one or more of, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat. gas emissions during a normal absorbent glass mat (agm) battery gassing event produce hydrogen and oxygen, however increased temperatures can lead to a side reaction which produces h2s (hydrogen sulphide). if exposure is prolonged, health impacts such as nausea, dizziness and headaches may become more severe. current manual override only",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": ""
-    }
-  },
-  {
-    "number": "25-2205",
-    "tsbNumber": "25-2205",
-    "bulletinNumber": "25-2205",
-    "displayNumber": "25-2205",
-    "type": "TSB",
-    "title": "2.0L Panther Engine - Rattle Noise from Transmission area at light acceleration.",
-    "model": "Ranger, Everest",
-    "years": [
-      "2018-2022"
-    ],
-    "yearRange": "2018-2022",
-    "fordUploadDate": "2025-06-30",
-    "issueDate": "2025-06-30",
-    "symptom": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
-    "concern": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
-    "description": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
-    "status": "Current",
-    "supersedes": [
-      "23-2263",
-      "23-2403"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/25-2205.pdf",
-    "filename": "25-2205.pdf",
-    "manualOnly": false,
-    "searchText": "25-2205 tsb 2.0l panther engine - rattle noise from transmission area at light acceleration. ranger, everest 2018-2022 2025-06-30 2025-06-30 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {
-        "Everest 4x4": [
-          {
-            "partNumber": "XT12QULV",
-            "qty": "10",
-            "quantity": "10",
-            "description": "Mercon ULV",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "EB3G10R80K1TA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Everest 4x4 10R80 Kit - Aus/NZ",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z7902E",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Torque Converter",
-            "comments": "Replace only if the part number is earlier then JB3P7902JC",
-            "note": "Replace only if the part number is earlier then JB3P7902JC"
-          },
-          {
-            "partNumber": "7T4Z7Z302A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Filter",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z 7A248 A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Converter Hub",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G090A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal stator support",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G199A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, AUX Pump",
-            "comments": "(Auto Stop Start Cars)",
-            "note": "(Auto Stop Start Cars)"
-          },
-          {
-            "partNumber": "L1MZ7A098A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Filter Assembly",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z6652C",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Steel pump gear service kit",
-            "comments": "",
-            "note": ""
-          }
-        ],
-        "Everest 4x2": [
-          {
-            "partNumber": "XT12QULV",
-            "qty": "10",
-            "quantity": "10",
-            "description": "Mercon ULV",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "EB3G10R80K1TB",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Everest 4x2 10R80 Kit - Aus/NZ",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z7902E",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Torque Converter",
-            "comments": "Replace only if the part number is earlier then JB3P7902JC",
-            "note": "Replace only if the part number is earlier then JB3P7902JC"
-          },
-          {
-            "partNumber": "7T4Z7Z302A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Filter",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7A248A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Converter Hub",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G090A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Stator Support",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G199A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Aux Pump",
-            "comments": "Auto stop start cars",
-            "note": "Auto stop start cars"
-          },
-          {
-            "partNumber": "L1MZ7A098A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Filter Assembly",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z6652C",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Steel Pump Gear Service Kit",
-            "comments": "",
-            "note": ""
-          }
-        ],
-        "Ranger 4x4": [
-          {
-            "partNumber": "XT12QULV",
-            "qty": "10",
-            "quantity": "10",
-            "description": "Mercon ULV",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3G10R80K1TA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Ranger 4x4 10R80 Kit - Aus/NZ",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z7902E",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Torque Converter",
-            "comments": "Replace only if the part number is earlier then JB3P7902JC",
-            "note": "Replace only if the part number is earlier then JB3P7902JC"
-          },
-          {
-            "partNumber": "7T4Z7Z302A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Filter",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7A248A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Converter Hub",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G090A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Stator Support",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G199A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Aux Pump",
-            "comments": "Auto stop start cars",
-            "note": "Auto stop start cars"
-          },
-          {
-            "partNumber": "L1MZ7A098A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Filter Assembly",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z6652C",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Steel Pump Gear Service Kit",
-            "comments": "",
-            "note": ""
-          }
-        ],
-        "Ranger 4x2": [
-          {
-            "partNumber": "XT12QULV",
-            "qty": "10",
-            "quantity": "10",
-            "description": "Mercon ULV",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3G10R80K1TB",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Ranger 4x2 10R80 Kit - Aus/NZ",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z7902E",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Torque Converter",
-            "comments": "Replace only if the part number is earlier then JB3P7902JC",
-            "note": "Replace only if the part number is earlier then JB3P7902JC"
-          },
-          {
-            "partNumber": "7T4Z7Z302A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Filter",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7A248A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Converter Hub",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G090A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Stator Support",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G199A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Aux Pump",
-            "comments": "(Auto Stop Start Cars)",
-            "note": "(Auto Stop Start Cars)"
-          },
-          {
-            "partNumber": "L1MZ7A098A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Filter Assembly",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z6652C",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Steel Pump Gear Service Kit",
-            "comments": "",
-            "note": ""
-          }
-        ],
-        "Raptor": [
-          {
-            "partNumber": "XT12QULV",
-            "qty": "10",
-            "quantity": "10",
-            "description": "Mercon ULV",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3G10R80K1TC",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Raptor 10R80 Kit - Aus/NZ",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z7902E",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Torque Converter",
-            "comments": "Replace only if the part number is earlier then JB3P7902JC",
-            "note": "Replace only if the part number is earlier then JB3P7902JC"
-          },
-          {
-            "partNumber": "7T4Z7Z302A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Filter",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7A248A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Converter Hub",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G090A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal Stator Support",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "HL3Z7G199A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Seal, Aux Pump",
-            "comments": "(Auto Stop Start Cars)",
-            "note": "(Auto Stop Start Cars)"
-          },
-          {
-            "partNumber": "L1MZ7A098A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Filter Assembly",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "JB3Z6652C",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Steel Pump Gear Service Kit",
-            "comments": "",
-            "note": ""
-          }
-        ]
-      }
-    },
-    "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [
-        "23-2263",
-        "23-2403"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "22B44",
-    "tsbNumber": "22B44",
-    "bulletinNumber": "22B44",
-    "displayNumber": "22B44",
-    "type": "FSA",
-    "title": "22B44 - MONDEO - Front Flexible Brake Hose Replacement",
-    "model": "Mondeo",
-    "years": [
-      "2014-2017"
-    ],
-    "yearRange": "2014-2017",
-    "fordUploadDate": "2023-08-07",
-    "issueDate": "2023-08-07",
-    "symptom": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
-    "concern": "In some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. If the\namount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light\nwill illuminate.",
-    "description": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/22B44.pdf",
-    "filename": "22B44.pdf",
-    "manualOnly": false,
-    "searchText": "22b44 fsa 22b44 - mondeo - front flexible brake hose replacement mondeo 2014-2017 2023-08-07 2023-08-07 in some of the affected vehicles, brake fluid may leak from one or both front brake flexible hoses. if the amount of brake fluid is depleted below a predetermined level, the brake fluid warning indicator light will illuminate. current 22b44.pdf",
-    "parts": {
-      "staticParts": [
-        {
-          "partNumber": "JG9Z2078B",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Right Front Flexible Brake Hose",
-          "comments": "",
-          "note": ""
-        },
-        {
-          "partNumber": "JG9Z2078A",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Left Front Flexible Brake Hose",
-          "comments": "",
-          "note": ""
-        },
-        {
-          "partNumber": "W711784S300",
-          "qty": "4",
-          "quantity": "4",
-          "description": "Banjo Washers",
-          "comments": "",
-          "note": ""
-        },
-        {
-          "partNumber": "WSSM6C65A2MC",
-          "qty": "0",
-          "quantity": "0",
-          "description": "Brake Fluid Dot 4 330ml",
-          "comments": "As Required/ No specified Quantity",
-          "note": "As Required/ No specified Quantity"
-        }
-      ],
-      "variants": {}
-    },
-    "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "15S24",
-    "tsbNumber": "15S24",
-    "bulletinNumber": "15S24",
-    "displayNumber": "15S24",
-    "type": "FSA",
-    "title": "15S24 – Focus – Front Drive Halfshafts Replacement",
-    "model": "Focus",
-    "years": [
-      "2012-2014"
-    ],
-    "yearRange": "2012-2014",
-    "fordUploadDate": "2015-09-24",
-    "issueDate": "2015-09-24",
-    "symptom": "Certain Focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. Under certain conditions the halfshafts may fracture.",
-    "concern": "Certain Focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. Under certain conditions the halfshafts may fracture.",
-    "description": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/15S24.pdf",
-    "filename": "15S24.pdf",
-    "manualOnly": false,
-    "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement focus 2012-2014 2015-09-24 2015-09-24 certain focus vehicles have been fitted with front drive halfshafts that have a reduced wall thickness and therefore a reduced load carrying capacity. under certain conditions the halfshafts may fracture. current 15s24.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {
-        "1.6L TiVCT with DPS6 Powershift Transmission": [
-          {
-            "partNumber": "BV613B436VA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly RH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "BV613B437VA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly LH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520102S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "M8 Nut - Bearing Retainer",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "97AG3N324AC",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Retainer Bearing",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W707209S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Bolt - Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520415S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Nut - Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "SRCC16D128B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Campaign Completion Decal",
-            "comments": "",
-            "note": ""
-          }
-        ],
-        "2.0L GDI with MTX75 Transmission": [
-          {
-            "partNumber": "BV613B436XA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly RH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "BV613B437XA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly LH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520102S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "M8 Nut - Bearing Retainer",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "97AG3N324AC",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Retainer Bearing",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W707209S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Bolt - Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520415S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Nut – Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "SRCC16D128B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Campaign Completion Decal",
-            "comments": "",
-            "note": ""
-          }
-        ],
-        "2.0L GDI with DPS6 PowerShift Transmission": [
-          {
-            "partNumber": "BV613B436ZA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly RH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "BV613B437ZA",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Shaft and Joint Assembly LH",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520102S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "M8 Nut – Bearing Retainer",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "97AG3N324AC",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Retainer Bearing",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W707209S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Bolt – Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "W520415S442",
-            "qty": "2",
-            "quantity": "2",
-            "description": "Nut – Ball Joint",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "SRCC16D128B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Campaign Completion Decal",
-            "comments": "",
-            "note": ""
-          }
-        ]
-      }
-    },
-    "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
     "number": "26-2274",
     "tsbNumber": "26-2274",
     "bulletinNumber": "26-2274",
@@ -1168,6 +322,47 @@
     }
   },
   {
+    "number": "26-2215",
+    "tsbNumber": "26-2215",
+    "bulletinNumber": "26-2215",
+    "displayNumber": "26-2215",
+    "type": "TSB",
+    "title": "Illuminated MIL In Conjunction With Intermittent Transmission Shift - Concerns In FORWARD Or REVERSE Gear With DTCs Stored",
+    "model": "Transit",
+    "years": [
+      "2023-2025",
+      "2023-2026",
+      "2024-2025",
+      "2024-2026"
+    ],
+    "yearRange": "2023-2025, 2023-2026, 2024-2025, 2024-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
+    "concern": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
+    "description": "Should a customer express concern that the Malfunction Indicator Lamp (MIL) is illuminated in conjunction with intermittent transmission shift concerns in FORWARD or REVERSE gear or the Transmission Wrench Light (TWL) is illuminated and DTCs (P0791 up to P0718) are stored in the PCM, the probable cause is a single wire of the transmission wiring harness. Abrasive wear to the wire insulation on the K2GP7J069-AC harness may cause the exposed copper wire inside to short circuit to the transmission ",
+    "status": "Current",
+    "supersedes": [
+      "25-2366"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2215.pdf",
+    "filename": "26-2215.pdf",
+    "manualOnly": false,
+    "searchText": "26-2215 tsb illuminated mil in conjunction with intermittent transmission shift - concerns in forward or reverse gear with dtcs stored transit 2023-2025, 2023-2026, 2024-2025, 2024-2026 should a customer express concern that the malfunction indicator lamp (mil) is illuminated in conjunction with intermittent transmission shift concerns in forward or reverse gear or the transmission wrench light (twl) is illuminated and dtcs (p0791 up to p0718) are stored in the pcm, the probable cause is a single wire of the transmission wiring harness. abrasive wear to the wire insulation on the k2gp7j069-ac harness may cause the exposed copper wire inside to short circuit to the transmission current 26-2215.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "25-2366"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2212",
     "tsbNumber": "26-2212",
     "bulletinNumber": "26-2212",
@@ -1262,43 +457,10 @@
     "manualOnly": false,
     "searchText": "26-2159 tsb transmission not in park message when driving below 10kmph - 20 may 2026 transit 2023-2026 some of the vehicles listed in the model statement above may exhibit the following warning messages • <transmission not in park> (driver is not detected / driver does not sit in the seat) permanently when driving below 10 km/h (6 mph) either as stand alone message or • in combination with two other messages: <hill start assist not available> / <park brake limited function> or • stored dtcs p166b in the sccm sometimes in combination with u0404 in the abs module, this may be caused by the sobdmc, current 26-2159.pdf",
     "parts": {
-      "staticParts": [
-        {
-          "partNumber": "PZ3114B427AB",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Seat Mat Sensor",
-          "comments": "(If Required)",
-          "note": "(If Required)"
-        },
-        {
-          "partNumber": "PZ31V632A22AD",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Seat Foam",
-          "comments": "(If Required)",
-          "note": "(If Required)"
-        },
-        {
-          "partNumber": "PZ3114D698AB",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Seat Heater Mat",
-          "comments": "(If Required)",
-          "note": "(If Required)"
-        },
-        {
-          "partNumber": "JX7BA60078AA",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Plastic Bracket",
-          "comments": "",
-          "note": ""
-        }
-      ],
+      "staticParts": [],
       "variants": {}
     },
-    "hasManualParts": true,
+    "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [
         "25-2160"
@@ -1370,19 +532,10 @@
     "manualOnly": false,
     "searchText": "26-2099 tsb engine overheating and/or poor air conditioning (a/c) performance - with dtc p0480 and/or p0217 ranger, everest 2022-2024, 2024-2022 some 2022-2024 next-generation ranger, ranger raptor and everest vehicles may experience engine overheating and/or poor a/c performance with diagnostic trouble code (dtc) p0480 and/or p0217. this may be caused by an inoperative cooling fan due to damage to the cooling fan relay and wiring. current 26-2099.pdf",
     "parts": {
-      "staticParts": [
-        {
-          "partNumber": "MB3Z14S411E",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Kit Wiring",
-          "comments": "",
-          "note": ""
-        }
-      ],
+      "staticParts": [],
       "variants": {}
     },
-    "hasManualParts": true,
+    "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [
         "24-2224"
@@ -1421,6 +574,46 @@
     "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "25-2205",
+    "tsbNumber": "25-2205",
+    "bulletinNumber": "25-2205",
+    "displayNumber": "25-2205",
+    "type": "TSB",
+    "title": "From The Transmission Area At Light Accelerator Input - 30 June 2025",
+    "model": "Ranger, Everest",
+    "years": [
+      "2018-2022"
+    ],
+    "yearRange": "2018-2022",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
+    "concern": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
+    "description": "Some 2018-2022 Ranger and Everest/Endeavour vehicles equipped with a 2.0L (Panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input.",
+    "status": "Current",
+    "supersedes": [
+      "23-2263",
+      "23-2403"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/25-2205.pdf",
+    "filename": "25-2205.pdf",
+    "manualOnly": false,
+    "searchText": "25-2205 tsb from the transmission area at light accelerator input - 30 june 2025 ranger, everest 2018-2022 some 2018-2022 ranger and everest/endeavour vehicles equipped with a 2.0l (panther) engine may present with concerns of a rattle type noise from the transmission during light to medium accelerator input. current 25-2205.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "23-2263",
+        "23-2403"
+      ],
       "supersededBy": []
     }
   },
@@ -2025,6 +1218,74 @@
     }
   },
   {
+    "number": "25SE6",
+    "tsbNumber": "25SE6",
+    "bulletinNumber": "25SE6",
+    "displayNumber": "25SE6",
+    "type": "FSA",
+    "title": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
+    "model": "Transit",
+    "years": [
+      "2022-2026"
+    ],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
+    "concern": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
+    "description": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/25SE6.pdf",
+    "filename": "25SE6.pdf",
+    "manualOnly": false,
+    "searchText": "25se6 fsa 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator transit 2022-2026 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator current 25se6.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "25SD9",
+    "tsbNumber": "25SD9",
+    "bulletinNumber": "25SD9",
+    "displayNumber": "25SD9",
+    "type": "FSA",
+    "title": "25SD9 – Certain 2022-2025 Model Year Transit Battery Electric Vehicles (BEV) Left-Hand Rear Half Shaft Inspection - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Act",
+    "model": "Transit",
+    "years": [
+      "2022-2025"
+    ],
+    "yearRange": "2022-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "25SD9 – Certain 2022-2025 Model Year Transit Battery Electric Vehicles (BEV) Left-Hand Rear Half Shaft Inspection - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Act",
+    "concern": "25SD9 – Certain 2022-2025 Model Year Transit Battery Electric Vehicles (BEV) Left-Hand Rear Half Shaft Inspection - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Act",
+    "description": "25SD9 – Certain 2022-2025 Model Year Transit Battery Electric Vehicles (BEV) Left-Hand Rear Half Shaft Inspection - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Act",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/25SD9.pdf",
+    "filename": "25SD9.pdf",
+    "manualOnly": false,
+    "searchText": "25sd9 fsa 25sd9 – certain 2022-2025 model year transit battery electric vehicles (bev) left-hand rear half shaft inspection - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service act transit 2022-2025 25sd9 – certain 2022-2025 model year transit battery electric vehicles (bev) left-hand rear half shaft inspection - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service act current 25sd9.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "25S82",
     "tsbNumber": "25S82",
     "bulletinNumber": "25S82",
@@ -2098,7 +1359,7 @@
     "bulletinNumber": "23P23",
     "displayNumber": "23P23",
     "type": "FSA",
-    "title": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose",
+    "title": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
     "model": "Ranger, Everest",
     "years": [
       "2021",
@@ -2109,8 +1370,8 @@
     "yearRange": "2021, 2022, 2023, 2024",
     "fordUploadDate": "",
     "issueDate": "",
-    "symptom": "In some affected Stage V Panther 2.0L Bi-Turbo Ranger/Everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. In some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable.\nThe driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. The engine will continue to run at decreased power, but with hesitation and/or a misfire.",
-    "concern": "In some affected Stage V Panther 2.0L Bi-Turbo Ranger/Everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. In some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable.\nThe driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. The engine will continue to run at decreased power, but with hesitation and/or a misfire.",
+    "symptom": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
+    "concern": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
     "description": "23P23 - Ranger/Everest Stage V Panther 2.0L Bi-Turbo Charge Air Cooler Duct Loose Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealer",
     "status": "Current",
     "supersedes": [],
@@ -2118,21 +1379,12 @@
     "file": "Ford/TSB/pdf/23P23.pdf",
     "filename": "23P23.pdf",
     "manualOnly": false,
-    "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose ranger, everest 2021, 2022, 2023, 2024 in some affected stage v panther 2.0l bi-turbo ranger/everest vehicles, the charge air cooler duct joint between the turbo cuff and resonator spigot can become loose and detach causing a blow-off condition. in some cases, prior to a complete separation (partial separation) hissing noises and oil leak are noticeable. the driver will experience reduction of power, an audible change in engine sound and white smoke from the engine bay. the engine will continue to run at decreased power, but with hesitation and/or a misfire. current 23p23.pdf",
+    "searchText": "23p23 fsa 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer ranger, everest 2021, 2022, 2023, 2024 23p23 - ranger/everest stage v panther 2.0l bi-turbo charge air cooler duct loose special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealer current 23p23.pdf",
     "parts": {
-      "staticParts": [
-        {
-          "partNumber": "MB3Z6C646R",
-          "qty": "1",
-          "quantity": "1",
-          "description": "Duct Air/Intercooler Hose",
-          "comments": "",
-          "note": ""
-        }
-      ],
+      "staticParts": [],
       "variants": {}
     },
-    "hasManualParts": true,
+    "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
@@ -2233,6 +1485,40 @@
     "filename": "22N13.pdf",
     "manualOnly": false,
     "searchText": "22n13 fsa 22n13 - everest - adblue warning and check engine light on special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. everest 2015-2019 22n13 - everest - adblue warning and check engine light on special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22n13.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "22B44",
+    "tsbNumber": "22B44",
+    "bulletinNumber": "22B44",
+    "displayNumber": "22B44",
+    "type": "FSA",
+    "title": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "model": "Mondeo",
+    "years": [
+      "2014-2017"
+    ],
+    "yearRange": "2014-2017",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "concern": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "description": "22B44 - MONDEO - FRONT BRAKE FLEXIBLE HOSE REPLACEMENT Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/22B44.pdf",
+    "filename": "22B44.pdf",
+    "manualOnly": false,
+    "searchText": "22b44 fsa 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. mondeo 2014-2017 22b44 - mondeo - front brake flexible hose replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 22b44.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
@@ -2422,10 +1708,80 @@
     }
   },
   {
-    "number": "16-2060",
-    "tsbNumber": "16-2060",
-    "bulletinNumber": "16-2060",
-    "displayNumber": "16-2060",
+    "number": "16S38S2",
+    "tsbNumber": "16S38S2",
+    "bulletinNumber": "16S38S2",
+    "displayNumber": "16S38S2",
+    "type": "FSA",
+    "title": "16S38S2– SAFETY RECALL – Focus Fuel Tank Purge Vent Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "model": "Focus",
+    "years": [
+      "2011",
+      "2015",
+      "2017"
+    ],
+    "yearRange": "2011, 2015, 2017",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "16S38S2– SAFETY RECALL – Focus Fuel Tank Purge Vent Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "concern": "16S38S2– SAFETY RECALL – Focus Fuel Tank Purge Vent Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "description": "16S38S2– SAFETY RECALL – Focus Fuel Tank Purge Vent Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/16S38S2.pdf",
+    "filename": "16S38S2.pdf",
+    "manualOnly": false,
+    "searchText": "16s38s2 fsa 16s38s2– safety recall – focus fuel tank purge vent special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2011, 2015, 2017 16s38s2– safety recall – focus fuel tank purge vent special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 16s38s2.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "15S24",
+    "tsbNumber": "15S24",
+    "bulletinNumber": "15S24",
+    "displayNumber": "15S24",
+    "type": "FSA",
+    "title": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "model": "Focus",
+    "years": [
+      "2012-2014"
+    ],
+    "yearRange": "2012-2014",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "concern": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "description": "15S24 – Focus – Front Drive Halfshafts Replacement Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/15S24.pdf",
+    "filename": "15S24.pdf",
+    "manualOnly": false,
+    "searchText": "15s24 fsa 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2012-2014 15s24 – focus – front drive halfshafts replacement special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 15s24.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "14M02",
+    "tsbNumber": "14M02",
+    "bulletinNumber": "14M02",
+    "displayNumber": "14M02",
     "type": "FSA",
     "title": "14M02/ Supplement 3 – Component Extended Warranty",
     "model": "Focus, Fiesta, Ecosport",
@@ -2450,7 +1806,7 @@
     "file": "Ford/TSB/pdf/14M02.S3.pdf",
     "filename": "14M02.S3.pdf",
     "manualOnly": false,
-    "searchText": "16-2060 fsa 14m02/ supplement 3 – component extended warranty focus, fiesta, ecosport 2010, 2011, 2013, 2014, 2015, 2016, 2017 14m02/ supplement 3 – component extended warranty current 14m02.s3.pdf",
+    "searchText": "14m02 fsa 14m02/ supplement 3 – component extended warranty focus, fiesta, ecosport 2010, 2011, 2013, 2014, 2015, 2016, 2017 14m02/ supplement 3 – component extended warranty current 14m02.s3.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
@@ -2462,185 +1818,10 @@
     }
   },
   {
-    "number": "14M02",
-    "tsbNumber": "14M02",
-    "bulletinNumber": "14M02",
-    "displayNumber": "14M02",
-    "type": "FSA",
-    "title": "14M02/ Supplement 5 – Component Extended Warranty Focus / Fiesta / EcoSport – DPS6 Powershift Transmission Control Module Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for imp",
-    "model": "Focus, Fiesta, Ecosport",
-    "years": [
-      "2010-2017"
-    ],
-    "yearRange": "2010-2017",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "14M02/ Supplement 5 – Component Extended Warranty Focus / Fiesta / EcoSport – DPS6 Powershift Transmission Control Module Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for imp",
-    "concern": "14M02/ Supplement 5 – Component Extended Warranty Focus / Fiesta / EcoSport – DPS6 Powershift Transmission Control Module Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for imp",
-    "description": "14M02/ Supplement 5 – Component Extended Warranty Focus / Fiesta / EcoSport – DPS6 Powershift Transmission Control Module Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for imp",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/14M02.pdf",
-    "filename": "14M02.pdf",
-    "manualOnly": false,
-    "searchText": "14m02 fsa 14m02/ supplement 5 – component extended warranty focus / fiesta / ecosport – dps6 powershift transmission control module special attention: the dealer field service action co-ordinator has overall responsibility for imp focus, fiesta, ecosport 2010-2017 14m02/ supplement 5 – component extended warranty focus / fiesta / ecosport – dps6 powershift transmission control module special attention: the dealer field service action co-ordinator has overall responsibility for imp current 14m02.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "",
-    "tsbNumber": "",
-    "bulletinNumber": "",
-    "displayNumber": "16S38S2.pdf",
-    "type": "FSA",
-    "title": "16S38S2– SAFETY RECALL – Focus Fuel Tank Purge Vent Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "model": "Focus",
-    "years": [
-      "2011",
-      "2015",
-      "2017"
-    ],
-    "yearRange": "2011, 2015, 2017",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "16S38S2– SAFETY RECALL – Focus Fuel Tank Purge Vent Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "concern": "16S38S2– SAFETY RECALL – Focus Fuel Tank Purge Vent Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "description": "16S38S2– SAFETY RECALL – Focus Fuel Tank Purge Vent Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/16S38S2.pdf",
-    "filename": "16S38S2.pdf",
-    "manualOnly": false,
-    "searchText": "fsa 16s38s2– safety recall – focus fuel tank purge vent special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. focus 2011, 2015, 2017 16s38s2– safety recall – focus fuel tank purge vent special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 16s38s2.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "",
-    "tsbNumber": "",
-    "bulletinNumber": "",
-    "displayNumber": "25SD9.pdf",
-    "type": "FSA",
-    "title": "25SD9 – Certain 2022-2025 Model Year Transit Battery Electric Vehicles (BEV) Left-Hand Rear Half Shaft Inspection - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Act",
-    "model": "Transit",
-    "years": [
-      "2022-2025"
-    ],
-    "yearRange": "2022-2025",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "25SD9 – Certain 2022-2025 Model Year Transit Battery Electric Vehicles (BEV) Left-Hand Rear Half Shaft Inspection - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Act",
-    "concern": "25SD9 – Certain 2022-2025 Model Year Transit Battery Electric Vehicles (BEV) Left-Hand Rear Half Shaft Inspection - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Act",
-    "description": "25SD9 – Certain 2022-2025 Model Year Transit Battery Electric Vehicles (BEV) Left-Hand Rear Half Shaft Inspection - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Act",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/25SD9.pdf",
-    "filename": "25SD9.pdf",
-    "manualOnly": false,
-    "searchText": "fsa 25sd9 – certain 2022-2025 model year transit battery electric vehicles (bev) left-hand rear half shaft inspection - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service act transit 2022-2025 25sd9 – certain 2022-2025 model year transit battery electric vehicles (bev) left-hand rear half shaft inspection - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service act current 25sd9.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "",
-    "tsbNumber": "",
-    "bulletinNumber": "",
-    "displayNumber": "25SE6.pdf",
-    "type": "FSA",
-    "title": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
-    "model": "Transit",
-    "years": [
-      "2022-2026"
-    ],
-    "yearRange": "2022-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
-    "concern": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
-    "description": "25SE6 – Certain 2022-2026 Model Year Transit and Transit / Tourneo Custom 12V AGM Battery Venting - NEW VEHICLE DEMONSTRATION / DELIVERY HOLD – Final Repair Special Attention: The Dealer Field Service Action Co-ordinator",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/25SE6.pdf",
-    "filename": "25SE6.pdf",
-    "manualOnly": false,
-    "searchText": "fsa 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator transit 2022-2026 25se6 – certain 2022-2026 model year transit and transit / tourneo custom 12v agm battery venting - new vehicle demonstration / delivery hold – final repair special attention: the dealer field service action co-ordinator current 25se6.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {
-        "Single Battery": [
-          {
-            "partNumber": "GK2Z10A818A",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Single Battery vent tube",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "MBAZ10655N",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Battery",
-            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
-            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
-          }
-        ],
-        "Twin Battery": [
-          {
-            "partNumber": "GK2Z10A818B",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Twin Battery vent tube",
-            "comments": "",
-            "note": ""
-          },
-          {
-            "partNumber": "MBAZ10655N",
-            "qty": "1",
-            "quantity": "1",
-            "description": "Battery",
-            "comments": "As required after approval, Dealers order directly from the supplier – PowerCrank",
-            "note": "As required after approval, Dealers order directly from the supplier – PowerCrank"
-          }
-        ]
-      }
-    },
-    "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "",
-    "tsbNumber": "",
-    "bulletinNumber": "",
-    "displayNumber": "S1406.pdf",
+    "number": "12A343",
+    "tsbNumber": "12A343",
+    "bulletinNumber": "12A343",
+    "displayNumber": "12A343",
     "type": "FSA",
     "title": "S1406 – WS Fiesta ECOnetic (Diesel)",
     "model": "Fiesta",
@@ -2663,7 +1844,7 @@
     "file": "Ford/TSB/pdf/S1406.pdf",
     "filename": "S1406.pdf",
     "manualOnly": false,
-    "searchText": "fsa s1406 – ws fiesta econetic (diesel) fiesta 2010, 2011, 2012, 2014, 2015 s1406 – ws fiesta econetic (diesel) current s1406.pdf",
+    "searchText": "12a343 fsa s1406 – ws fiesta econetic (diesel) fiesta 2010, 2011, 2012, 2014, 2015 s1406 – ws fiesta econetic (diesel) current s1406.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
