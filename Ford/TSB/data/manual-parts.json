@@ -283,5 +283,18 @@
       }
     ],
     "variants": {}
+  },
+  "26-2099": {
+    "staticParts": [
+      {
+        "partNumber": "MB3Z14S411E",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Kit Wiring",
+        "comments": "",
+        "note": ""
+      }
+    ],
+    "variants": {}
   }
 }
