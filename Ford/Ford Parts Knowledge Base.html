@@ -26,14 +26,6 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 .guess{font-size:22px;font-weight:bold;color:#12355b;background:#eef6ff;border:1px solid #bfdbfe;padding:12px;border-radius:8px;display:inline-block;margin:8px 0}
 .muted{color:#6b7280} .pill{display:inline-block;border:1px solid #ccd3dc;border-radius:999px;padding:3px 8px;margin:2px;background:#fff}
 .toplink{color:#12355b;font-weight:bold;text-decoration:none} .successline{color:#047857;font-weight:bold} .errorline{color:#b91c1c;font-weight:bold}
-.modalOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.68);z-index:9999;padding:24px}
-.modalOverlay.open{display:block}
-.modalBox{background:#f8fafc;max-width:900px;margin:4vh auto;border-radius:14px;border:1px solid #cbd5e1;box-shadow:0 20px 60px rgba(0,0,0,.35);max-height:86vh;overflow:auto}
-.modalHeader{background:#12355b;color:white;padding:16px 18px;border-radius:14px 14px 0 0;display:flex;justify-content:space-between;align-items:center}
-.modalHeader h2{margin:0}.modalBody{padding:16px 18px}.closeBtn{background:white;color:#12355b;border:0;border-radius:8px;padding:8px 10px;font-weight:bold}
-.changeItem{background:white;border:1px solid #d8dee8;border-left:5px solid #12355b;border-radius:8px;padding:10px 12px;margin:10px 0}
-.changeItem.add{border-left-color:#047857}.changeItem.edit{border-left-color:#b45309}.changeItem.delete{border-left-color:#b91c1c}.changeItem.system{border-left-color:#475569}
-.changeMeta{font-size:12px;color:#64748b;margin-bottom:4px}.changeTitle{font-weight:bold;font-size:16px}
 @media(max-width:900px){.grid,.grid3{grid-template-columns:1fr} input[type=text],input[type=password],input[type=number],textarea{width:94%}}
 </style>
 </head>
@@ -50,7 +42,6 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 <select id="category" onchange="render()"><option value="">All categories</option></select>
 <button onclick="clearSearch()">Reset</button>
 <button onclick="reloadSiteData()">Reload site data</button>
-<button class="primary" onclick="openChangeLog()">Change Log</button>
 <div id="status" class="status">Loading table...</div>
 <div class="note">Starter data loaded from the preview file: 674 rows. Examples: <b>1007</b>, <b>rim</b>, <b>JB3Z-1007-B</b>, <b>Ranger</b>, <b>ABS</b>, <b>PCM</b>.</div>
 </div>
@@ -77,7 +68,6 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 <button class="good locked-control" onclick="saveGithubSettings()">Save GitHub Settings Locally</button>
 <button class="primary locked-control" onclick="commitPartsToGithub()">Commit Parts JSON to GitHub</button>
 <button class="primary locked-control" onclick="commitPrefixesToGithub()">Commit Prefix JSON to GitHub</button>
-<button class="primary locked-control" onclick="commitChangelogToGithub()">Commit Change Log to GitHub</button>
 <div id="ghMsg"></div>
 <p class="small">Convenient workflow: edit/add entries → click Commit Parts JSON to GitHub → page reloads JSON automatically after GitHub Pages updates.</p>
 </details>
@@ -150,7 +140,6 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 <button class="locked-control" onclick="document.getElementById('jsonFile').click()">Import parts JSON</button>
 <button class="locked-control" onclick="document.getElementById('csvFile').click()">Import parts CSV</button>
 <button class="primary locked-control" onclick="exportPrefixJSON()">Export prefix JSON</button>
-<button class="primary locked-control" onclick="exportChangelogJSON()">Export changelog JSON</button>
 <button class="locked-control" onclick="document.getElementById('prefixJsonFile').click()">Import prefix JSON</button>
 <button class="locked-control" onclick="mergeSiteData()">Merge site JSON into local</button>
 <button class="danger locked-control" onclick="wipeLocalOnly()">Clear local additions only</button>
@@ -170,35 +159,25 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 </div>
 </div>
 
-
-<div id="changeLogOverlay" class="modalOverlay" onclick="if(event.target===this)closeChangeLog()">
-  <div class="modalBox">
-    <div class="modalHeader">
-      <h2>Ford Parts Knowledge Base - Change Log</h2>
-      <button class="closeBtn" onclick="closeChangeLog()">Close</button>
-    </div>
-    <div class="modalBody">
-      <div id="changeLogSummary" class="note">Loading change log...</div>
-      <div id="changeLogList"></div>
-    </div>
-  </div>
-</div>
-
 </main>
 <script>
 const PARTS_KEY="ford_parts_kb_local_additions_v3";
 const PREFIX_KEY="ford_prefix_codes_local_additions_v3";
-const CHANGELOG_KEY="ford_parts_kb_local_changelog_v1";
 const GH_KEY="ford_parts_kb_github_settings_v1";
 const EDIT_PASSWORD = "11290";
 const fallbackParts=[{"basic": "3C247", "description": "4WD actuator", "category": "4WD / driveline", "aliases": "", "part_numbers": "", "applications": "", "supersessions": "", "notes": "Shift-on-the-fly", "source": "Preview starter dataset", "updated": ""}];
-const fallbackChangelog=[{"timestamp": "2026-06-19 01:54:37", "type": "system", "basic": "", "title": "Change log enabled", "details": "Change log support added. Existing starter database preserved with 674 part entries.", "version": "KB changelog v1"}];
 const fallbackPrefixes=[{"type": "year", "code": "X", "value": "1999", "description": "Model year 1999", "notes": ""}];
-let siteParts=[]; let sitePrefixes=[]; let siteChangelog=[]; let localParts=[]; let localPrefixes=[]; let localChangelog=[]; let db=[]; let prefixes=[]; let changelog=[]; let editUnlocked=false;
+let siteParts=[]; let sitePrefixes=[]; let localParts=[]; let localPrefixes=[]; let db=[]; let prefixes=[]; let editUnlocked=false;
 
+<<<<<<< HEAD
 function checkEditPassword(){ editUnlocked=(editPassword.value===EDIT_PASSWORD); document.body.classList.toggle("unlocked",editUnlocked); lockStatus.textContent=editUnlocked?" Unlocked - admin tools visible":" Locked"; if(document.getElementById("adminHint")) adminHint.textContent=editUnlocked?"Admin tools are now visible below.":"Admin tools are hidden until unlocked."; return editUnlocked; }
 function lockEditing(){ editUnlocked=false; document.body.classList.remove("unlocked"); editPassword.value=""; lockStatus.textContent=" Locked"; if(document.getElementById("adminHint")) adminHint.textContent="Admin tools are hidden until unlocked."; }
 function requireEditPassword(){ if(editUnlocked)return true; alert("Enter password 11290 to unlock updates."); return false; }
+=======
+function checkEditPassword(){ editUnlocked=(editPassword.value===EDIT_PASSWORD); document.body.classList.toggle("unlocked",editUnlocked); lockStatus.textContent=editUnlocked?" Unlocked":" Locked"; return editUnlocked; }
+function lockEditing(){ editUnlocked=false; document.body.classList.remove("unlocked"); editPassword.value=""; lockStatus.textContent=" Locked"; }
+function requireEditPassword(){ if(editUnlocked)return true; alert("Enter password to unlock updates."); return false; }
+>>>>>>> parent of 3eb9527 (Update UI on Parts)
 function stamp(){return new Date().toISOString().slice(0,19).replace("T"," ");}
 function norm(v){return String(v||"").trim().toUpperCase().replace(/\s+/g,"");}
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
@@ -207,37 +186,12 @@ function badges(s,cls=""){return splitList(s).map(x=>`<span class="badge ${cls}"
 function showBox(el,t,bad=false){el.className=bad?"warn":"msg";el.innerHTML=t;setTimeout(()=>{el.innerHTML="";el.className="";},6500);}
 
 async function fetchJson(path, fallback){ try{const r=await fetch(path+"?v="+Date.now(),{cache:"no-store"}); if(!r.ok)throw new Error(r.status); const data=await r.json(); return Array.isArray(data)?data:fallback;}catch(e){return fallback;} }
-function loadLocal(){ try{localParts=JSON.parse(localStorage.getItem(PARTS_KEY)||"[]")||[];}catch(e){localParts=[];} try{localPrefixes=JSON.parse(localStorage.getItem(PREFIX_KEY)||"[]")||[];}catch(e){localPrefixes=[];} try{localChangelog=JSON.parse(localStorage.getItem(CHANGELOG_KEY)||"[]")||[];}catch(e){localChangelog=[];} }
-function saveLocal(){localStorage.setItem(PARTS_KEY,JSON.stringify(localParts));localStorage.setItem(PREFIX_KEY,JSON.stringify(localPrefixes));localStorage.setItem(CHANGELOG_KEY,JSON.stringify(localChangelog));}
+function loadLocal(){ try{localParts=JSON.parse(localStorage.getItem(PARTS_KEY)||"[]")||[];}catch(e){localParts=[];} try{localPrefixes=JSON.parse(localStorage.getItem(PREFIX_KEY)||"[]")||[];}catch(e){localPrefixes=[];} }
+function saveLocal(){localStorage.setItem(PARTS_KEY,JSON.stringify(localParts));localStorage.setItem(PREFIX_KEY,JSON.stringify(localPrefixes));}
 function mergeByBasic(a,b){const map=new Map(); for(const e of a.concat(b)){if(e&&(e.basic||e.basic_number))map.set(norm(e.basic||e.basic_number),{...e,basic:norm(e.basic||e.basic_number)});} return [...map.values()];}
 function mergePrefixes(a,b){const map=new Map(); for(const p of a.concat(b)){if(p&&p.type&&p.code)map.set(p.type+"|"+norm(p.code),{...p,code:norm(p.code)});} return [...map.values()];}
-function mergeChangelog(a,b){
-  const map=new Map();
-  for(const c of (a||[]).concat(b||[])){
-    if(!c) continue;
-    const key=(c.timestamp||"")+"|"+(c.type||"")+"|"+(c.basic||"")+"|"+(c.title||"");
-    map.set(key,c);
-  }
-  return [...map.values()].sort((x,y)=>String(y.timestamp||"").localeCompare(String(x.timestamp||"")));
-}
-function rebuildMerged(){db=mergeByBasic(siteParts,localParts); prefixes=mergePrefixes(sitePrefixes,localPrefixes); changelog=mergeChangelog(siteChangelog,localChangelog);}
-function addChange(type,basic,title,details){
-  const item={timestamp:new Date().toISOString().slice(0,19).replace("T"," "),type,basic:norm(basic),title,details,version:"Manual KB update"};
-  localChangelog.unshift(item); saveLocal(); rebuildMerged(); renderChangeLog();
-}
-function describeEntry(e){
-  return [e.description?"Description: "+e.description:"",e.aliases?"Aliases: "+e.aliases:"",e.part_numbers?"Part numbers: "+e.part_numbers:"",e.applications?"Applications: "+e.applications:"",e.supersessions?"Supersessions: "+e.supersessions:"",e.source?"Source: "+e.source:""].filter(Boolean).join(" | ");
-}
-function changeClass(t){return ["add","edit","delete","system"].includes(t)?t:"system";}
-function renderChangeLog(){
-  if(!document.getElementById("changeLogList")) return;
-  const latest=changelog[0];
-  changeLogSummary.textContent=latest ? "Latest update: "+(latest.timestamp||"")+" • "+changelog.length+" logged changes" : "No changes logged yet.";
-  changeLogList.innerHTML=(changelog||[]).slice(0,80).map(c=>`<div class="changeItem ${changeClass(c.type)}"><div class="changeMeta">${esc(c.timestamp||"")} • ${esc(c.type||"update")} ${c.basic?"• "+esc(c.basic):""}</div><div class="changeTitle">${esc(c.title||"Update")}</div><div>${esc(c.details||"")}</div></div>`).join("") || "<p>No changes logged yet.</p>";
-}
-function openChangeLog(){renderChangeLog();changeLogOverlay.classList.add("open");}
-function closeChangeLog(){changeLogOverlay.classList.remove("open");}
-async function reloadSiteData(){siteParts=await fetchJson("ford_parts_kb_data.json",fallbackParts); sitePrefixes=await fetchJson("ford_prefix_codes.json",fallbackPrefixes); siteChangelog=await fetchJson("ford_parts_kb_changelog.json",fallbackChangelog); loadLocal(); rebuildMerged(); render(); loadGithubSettings(); renderChangeLog();}
+function rebuildMerged(){db=mergeByBasic(siteParts,localParts); prefixes=mergePrefixes(sitePrefixes,localPrefixes);}
+async function reloadSiteData(){siteParts=await fetchJson("ford_parts_kb_data.json",fallbackParts); sitePrefixes=await fetchJson("ford_prefix_codes.json",fallbackPrefixes); loadLocal(); rebuildMerged(); render(); loadGithubSettings();}
 
 function cats(){return [...new Set(db.map(e=>e.category||"").filter(Boolean))].sort();}
 function updateCats(){let cur=category.value;category.innerHTML='<option value="">All categories</option>'+cats().map(c=>`<option>${esc(c)}</option>`).join("");category.value=cur;}
@@ -246,14 +200,14 @@ function render(){ updateCats(); renderPrefixes(); updateGuess(); const q=search
 function clearSearch(){search.value="";category.value="";render();}
 
 function formEntry(){return {basic:norm(basic.value),description:description.value.trim(),category:entryCategory.value.trim(),aliases:aliases.value.trim(),part_numbers:part_numbers.value.trim(),applications:applications.value.trim(),supersessions:supersessions.value.trim(),notes:notes.value.trim(),source:source.value.trim(),updated:stamp()};}
-function saveEntry(){if(!requireEditPassword())return; let e=formEntry(); if(!e.basic||!e.description)return showBox(msg,"Basic No. and Description are required.",true); let existing=db.find(x=>norm(x.basic)===e.basic); let changeType=existing?"edit":"add"; localParts=localParts.filter(x=>norm(x.basic)!==e.basic); localParts.push(e); addChange(changeType,e.basic,(changeType==="add"?"Added ":"Updated ")+e.basic+" – "+e.description,describeEntry(e)); saveLocal(); rebuildMerged(); render(); showBox(msg,e.basic+" saved locally and logged. Use GitHub commit to update site JSON.");}
+function saveEntry(){if(!requireEditPassword())return; let e=formEntry(); if(!e.basic||!e.description)return showBox(msg,"Basic No. and Description are required.",true); localParts=localParts.filter(x=>norm(x.basic)!==e.basic); localParts.push(e); saveLocal(); rebuildMerged(); render(); showBox(msg,e.basic+" saved locally. Use GitHub commit to update site JSON.");}
 function editEntry(b){let e=db.find(x=>norm(x.basic)===norm(b)); if(!e)return; basic.value=e.basic||"";description.value=e.description||"";entryCategory.value=e.category||"";aliases.value=e.aliases||"";part_numbers.value=e.part_numbers||"";applications.value=e.applications||"";supersessions.value=e.supersessions||"";notes.value=e.notes||"";source.value=e.source||"";scrollTo({top:0,behavior:"smooth"});}
 function resetForm(){if(!requireEditPassword())return; ["basic","description","entryCategory","aliases","part_numbers","applications","supersessions","notes","source"].forEach(id=>document.getElementById(id).value="");}
-function deleteCurrent(){if(!requireEditPassword())return; let b=norm(basic.value); if(!b)return showBox(msg,"Select/enter a basic number first.",true); let existing=db.find(x=>norm(x.basic)===b); localParts=localParts.filter(x=>norm(x.basic)!==b); addChange("delete",b,"Removed local addition "+b,existing?describeEntry(existing):"Removed from local additions."); saveLocal(); rebuildMerged(); resetForm(); render(); showBox(msg,b+" removed from local additions and logged. Site JSON seed remains unless committed/edited.");}
+function deleteCurrent(){if(!requireEditPassword())return; let b=norm(basic.value); if(!b)return showBox(msg,"Select/enter a basic number first.",true); localParts=localParts.filter(x=>norm(x.basic)!==b); saveLocal(); rebuildMerged(); resetForm(); render(); showBox(msg,b+" removed from local additions. Site JSON seed remains unless committed/edited.");}
 
 function renderPrefixes(){productCodes.innerHTML=prefixes.filter(p=>p.type==="product").map(p=>`<option value="${esc(p.code)}">${esc(p.value||p.description||"")}</option>`).join("");designCodes.innerHTML=prefixes.filter(p=>p.type==="design").map(p=>`<option value="${esc(p.code)}">${esc(p.value||p.description||"")}</option>`).join("");prefixBody.innerHTML=prefixes.slice().sort((a,b)=>(a.type+a.code).localeCompare(b.type+b.code)).map(p=>`<tr><td>${esc(p.type)}</td><td><b>${esc(p.code)}</b></td><td>${esc(p.value)}</td><td>${esc(p.description)}</td><td>${esc(p.notes)}</td><td><button onclick="if(requireEditPassword()) editPrefix('${esc(p.type)}','${esc(p.code)}')">Edit</button></td></tr>`).join("");}
 function prefixEntry(){return {type:prefixType.value,code:norm(prefixCode.value),value:prefixValue.value.trim(),description:prefixDescription.value.trim(),notes:prefixNotes.value.trim()};}
-function savePrefix(){if(!requireEditPassword())return; let p=prefixEntry(); if(!p.code)return showBox(prefixMsg,"Code is required.",true); localPrefixes=localPrefixes.filter(x=>!(x.type===p.type&&norm(x.code)===p.code)); localPrefixes.push(p); addChange("edit","PREFIX-"+p.code,"Updated prefix "+p.type+" "+p.code,(p.value||"")+" "+(p.description||"")); saveLocal(); rebuildMerged(); render(); showBox(prefixMsg,p.type+" code "+p.code+" saved locally and logged.");}
+function savePrefix(){if(!requireEditPassword())return; let p=prefixEntry(); if(!p.code)return showBox(prefixMsg,"Code is required.",true); localPrefixes=localPrefixes.filter(x=>!(x.type===p.type&&norm(x.code)===p.code)); localPrefixes.push(p); saveLocal(); rebuildMerged(); render(); showBox(prefixMsg,p.type+" code "+p.code+" saved locally.");}
 function editPrefix(t,c){let p=prefixes.find(x=>x.type===t&&norm(x.code)===norm(c)); if(!p)return; prefixType.value=p.type;prefixCode.value=p.code;prefixValue.value=p.value||"";prefixDescription.value=p.description||"";prefixNotes.value=p.notes||"";}
 function resetPrefixForm(){if(!requireEditPassword())return; ["prefixCode","prefixValue","prefixDescription","prefixNotes"].forEach(id=>document.getElementById(id).value="");}
 function deletePrefix(){if(!requireEditPassword())return; let p=prefixEntry(); localPrefixes=localPrefixes.filter(x=>!(x.type===p.type&&norm(x.code)===p.code)); saveLocal(); rebuildMerged(); render(); resetPrefixForm(); showBox(prefixMsg,"Removed from local prefix additions.");}
@@ -279,12 +233,8 @@ function loadGithubSettings(){try{const s=JSON.parse(localStorage.getItem(GH_KEY
 function saveGithubSettings(){if(!requireEditPassword())return; localStorage.setItem(GH_KEY,JSON.stringify({owner:ghOwner.value.trim(),repo:ghRepo.value.trim(),branch:ghBranch.value.trim()||"main",token:ghToken.value.trim()})); showBox(ghMsg,"GitHub settings saved locally.",false);}
 async function githubGetFile(path){const owner=ghOwner.value.trim(), repo=ghRepo.value.trim(), branch=ghBranch.value.trim()||"main", token=ghToken.value.trim(); const url=`https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(path).replaceAll("%2F","/")}?ref=${encodeURIComponent(branch)}`; const r=await fetch(url,{headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"}}); if(!r.ok)throw new Error("GitHub GET failed: "+r.status+" "+await r.text()); return await r.json();}
 async function githubPutFile(path, content, message){const owner=ghOwner.value.trim(), repo=ghRepo.value.trim(), branch=ghBranch.value.trim()||"main", token=ghToken.value.trim(); if(!owner||!repo||!token)throw new Error("Owner, repo and token are required."); const current=await githubGetFile(path); const encoded=btoa(unescape(encodeURIComponent(content))); const body={message,content:encoded,sha:current.sha,branch}; const url=`https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(path).replaceAll("%2F","/")}`; const r=await fetch(url,{method:"PUT",headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json","Content-Type":"application/json","X-GitHub-Api-Version":"2022-11-28"},body:JSON.stringify(body)}); if(!r.ok)throw new Error("GitHub PUT failed: "+r.status+" "+await r.text()); return await r.json();}
-async function commitPartsToGithub(){if(!requireEditPassword())return; try{saveGithubSettings(); showBox(ghMsg,"Committing parts JSON to GitHub...",false); await githubPutFile("Ford/ford_parts_kb_data.json",JSON.stringify(db,null,2),"Update Ford parts knowledge base"); await githubPutFile("Ford/ford_parts_kb_changelog.json",JSON.stringify(changelog,null,2),"Update Ford parts knowledge base changelog"); localParts=[]; localChangelog=[]; saveLocal(); showBox(ghMsg,"<span class='successline'>Parts JSON and changelog committed to GitHub.</span>",false);}catch(e){showBox(ghMsg,"<span class='errorline'>"+esc(e.message)+"</span>",true);}}
+async function commitPartsToGithub(){if(!requireEditPassword())return; try{saveGithubSettings(); showBox(ghMsg,"Committing parts JSON to GitHub...",false); await githubPutFile("Ford/ford_parts_kb_data.json",JSON.stringify(db,null,2),"Update Ford parts knowledge base"); localParts=[]; saveLocal(); showBox(ghMsg,"<span class='successline'>Parts JSON committed to GitHub.</span>",false);}catch(e){showBox(ghMsg,"<span class='errorline'>"+esc(e.message)+"</span>",true);}}
 async function commitPrefixesToGithub(){if(!requireEditPassword())return; try{saveGithubSettings(); showBox(ghMsg,"Committing prefix JSON to GitHub...",false); await githubPutFile("Ford/ford_prefix_codes.json",JSON.stringify(prefixes,null,2),"Update Ford prefix codes"); localPrefixes=[]; saveLocal(); showBox(ghMsg,"<span class='successline'>Prefix JSON committed to GitHub.</span>",false);}catch(e){showBox(ghMsg,"<span class='errorline'>"+esc(e.message)+"</span>",true);}}
-
-
-function exportChangelogJSON(){if(!requireEditPassword())return; download("ford_parts_kb_changelog.json",JSON.stringify(changelog,null,2),"application/json");}
-async function commitChangelogToGithub(){if(!requireEditPassword())return; try{saveGithubSettings(); showBox(ghMsg,"Committing changelog JSON to GitHub...",false); await githubPutFile("Ford/ford_parts_kb_changelog.json",JSON.stringify(changelog,null,2),"Update Ford parts knowledge base changelog"); localChangelog=[]; saveLocal(); showBox(ghMsg,"<span class='successline'>Changelog JSON committed to GitHub.</span>",false);}catch(e){showBox(ghMsg,"<span class='errorline'>"+esc(e.message)+"</span>",true);}}
 
 reloadSiteData();
 </script>

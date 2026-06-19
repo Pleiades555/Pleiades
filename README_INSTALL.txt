@@ -36,6 +36,7 @@ Use a fine-grained token limited to this repo only.
 
 Recovery:
 If abused, revoke the token and restore previous JSON from GitHub commit history.
+<<<<<<< HEAD
 
 
 CHANGELOG UPDATE:
@@ -51,3 +52,5 @@ ADMIN HIDDEN v2:
 - The entire admin boxes are hidden using .admin-box until password 11290 is entered.
 - Hidden boxes include GitHub settings, import/export, manual update, prefix tools, and part number guess/builder.
 - Public view now shows search, reload, change log, and password box only.
+=======
+>>>>>>> parent of 3eb9527 (Update UI on Parts)
