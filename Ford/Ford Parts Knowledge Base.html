@@ -21,7 +21,7 @@ th{background:#eaf1f8;position:sticky;top:0} .num{font-weight:bold;font-size:18p
 #tableWrap{max-height:62vh;overflow:auto;border:1px solid #d8dee8;border-radius:8px} .hiddenInput{display:none}
 details summary{cursor:pointer;color:#12355b;font-weight:bold;user-select:none;padding:6px 0}
 details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opacity:1;font-size:15px}
-.locked-control{display:none} .unlocked .locked-control{display:initial} .lockbox{background:#f8fafc;border:1px dashed #94a3b8;border-radius:8px;padding:10px;margin-top:8px}
+.locked-control{display:none}.admin-box{display:none}.unlocked .admin-box{display:block} .unlocked .locked-control{display:initial} .lockbox{background:#f8fafc;border:1px dashed #94a3b8;border-radius:8px;padding:10px;margin-top:8px}
 .msg{margin-top:8px;padding:9px;border-radius:6px;background:#ecfdf5;color:#064e3b} .warn{margin-top:8px;padding:9px;border-radius:6px;background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa}
 .guess{font-size:22px;font-weight:bold;color:#12355b;background:#eef6ff;border:1px solid #bfdbfe;padding:12px;border-radius:8px;display:inline-block;margin:8px 0}
 .muted{color:#6b7280} .pill{display:inline-block;border:1px solid #ccd3dc;border-radius:999px;padding:3px 8px;margin:2px;background:#fff}
@@ -61,10 +61,10 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 <input id="editPassword" type="password" placeholder="Password" oninput="checkEditPassword()">
 <button onclick="checkEditPassword()">Unlock</button>
 <button onclick="lockEditing()">Lock</button>
-<span id="lockStatus" class="note"> Locked</span>
+<span id="lockStatus" class="note"> Locked</span><div class="small" id="adminHint">Admin tools are hidden until unlocked.</div>
 </div>
 
-<div class="box">
+<div class="box admin-box">
 <details class="hidden-tools">
 <summary>GitHub live update settings</summary>
 <p class="warn"><b>Warning:</b> A token stored in public HTML/browser storage can be seen by others. Use a fine-grained token restricted only to this repo with Contents read/write.</p>
@@ -83,7 +83,7 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 </details>
 </div>
 
-<div class="box">
+<div class="box admin-box">
 <details class="hidden-tools">
 <summary>Part number guess / prefix builder</summary>
 <p class="note">Hidden by default. This produces structured guesses only. Verify with Microcat/dealer catalogue.</p>
@@ -101,7 +101,7 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 </details>
 </div>
 
-<div class="box">
+<div class="box admin-box">
 <details class="hidden-tools">
 <summary>Prefix code add / update</summary>
 <div class="grid3">
@@ -121,7 +121,7 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 </details>
 </div>
 
-<div class="box">
+<div class="box admin-box">
 <details class="hidden-tools">
 <summary>Manual add / update entry</summary>
 <div class="grid">
@@ -142,7 +142,7 @@ details.hidden-tools{font-size:13px;opacity:.72} details.hidden-tools[open]{opac
 </details>
 </div>
 
-<div class="box">
+<div class="box admin-box">
 <details class="hidden-tools">
 <summary>Advanced / backup / import</summary>
 <button class="primary locked-control" onclick="exportJSON()">Export parts JSON</button>
@@ -196,8 +196,8 @@ const fallbackChangelog=[{"timestamp": "2026-06-19 01:54:37", "type": "system", 
 const fallbackPrefixes=[{"type": "year", "code": "X", "value": "1999", "description": "Model year 1999", "notes": ""}];
 let siteParts=[]; let sitePrefixes=[]; let siteChangelog=[]; let localParts=[]; let localPrefixes=[]; let localChangelog=[]; let db=[]; let prefixes=[]; let changelog=[]; let editUnlocked=false;
 
-function checkEditPassword(){ editUnlocked=(editPassword.value===EDIT_PASSWORD); document.body.classList.toggle("unlocked",editUnlocked); lockStatus.textContent=editUnlocked?" Unlocked":" Locked"; return editUnlocked; }
-function lockEditing(){ editUnlocked=false; document.body.classList.remove("unlocked"); editPassword.value=""; lockStatus.textContent=" Locked"; }
+function checkEditPassword(){ editUnlocked=(editPassword.value===EDIT_PASSWORD); document.body.classList.toggle("unlocked",editUnlocked); lockStatus.textContent=editUnlocked?" Unlocked - admin tools visible":" Locked"; if(document.getElementById("adminHint")) adminHint.textContent=editUnlocked?"Admin tools are now visible below.":"Admin tools are hidden until unlocked."; return editUnlocked; }
+function lockEditing(){ editUnlocked=false; document.body.classList.remove("unlocked"); editPassword.value=""; lockStatus.textContent=" Locked"; if(document.getElementById("adminHint")) adminHint.textContent="Admin tools are hidden until unlocked."; }
 function requireEditPassword(){ if(editUnlocked)return true; alert("Enter password 11290 to unlock updates."); return false; }
 function stamp(){return new Date().toISOString().slice(0,19).replace("T"," ");}
 function norm(v){return String(v||"").trim().toUpperCase().replace(/\s+/g,"");}
