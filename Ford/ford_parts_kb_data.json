@@ -2569,27 +2569,27 @@
   },
   {
     "basic": "6006",
-    "description": "Service Engine",
+    "description": "Engine",
     "category": "Engine",
-    "aliases": "Complete Engine, Warranty Engine",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "A basic long block. It features the engine block, pistons, connecting rods, crankshaft, camshaft, and cylinder heads. Other accessories may come seperately:\nIntake and Exhaust Manifolds: These usually must be transferred from the old engine.\nEngine Electrical & Sensors: Wiring harnesses, fuel injectors, ignition coils, and alternators are normally excluded.Turbocharger: If your vehicle is turbocharged, it does not come with the turbo unless specifically ordered as a long-block variant that includes it.\nFuel System Components: High-pressure fuel pumps and related lines are generally omitted.\nFront End Accessories: Water pumps, power steering pumps, A/C compressors, and drive belts.",
-    "source": "Manual Entry",
-    "updated": "2026-06-10 04:21:47"
+    "notes": "AER noted in source list",
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "6007",
-    "description": "Complete Dressed Engine Assembly",
+    "description": "Complete engine assembly",
     "category": "Engine",
-    "aliases": "Complete Engine",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "The engine block, cylinder heads, oil pan, valve covers, timing cover, water pump, and all front-drive accessories (alternator, power steering, A/C compressor, and sometimes the turbocharger)",
+    "notes": "",
     "source": "Preview starter dataset",
-    "updated": "2026-06-10 04:18:42"
+    "updated": ""
   },
   {
     "basic": "6009",
@@ -3793,27 +3793,27 @@
   },
   {
     "basic": "3069",
-    "description": "Front Lower Control Arm Bushing",
+    "description": "Lower control arm bushing",
     "category": "Front axle / suspension",
-    "aliases": "LCA bush, Front Lower Control Arm Bushing",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "May not be applicable to certain cars and you'll have to get the arm itself (Callout 3078)",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-14 22:49:57"
+    "notes": "",
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "3078",
-    "description": "Arm Assy",
-    "category": "Suspension",
-    "aliases": "Front Lower Control Arm",
+    "description": "Lower control arm RH",
+    "category": "Front axle / suspension",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "LH & RH are different PN's",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:19:15"
+    "notes": "",
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "3079",
@@ -3925,15 +3925,15 @@
   },
   {
     "basic": "3K185",
-    "description": "Knuckle - Front Wheel",
-    "category": "Suspension",
-    "aliases": "Front Knuckle",
+    "description": "Knuckle",
+    "category": "Front axle / suspension",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:25:11"
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "3K186",
@@ -6481,15 +6481,15 @@
   },
   {
     "basic": "18124",
-    "description": "Front Suspension Absorber",
-    "category": "Front axle / suspension",
-    "aliases": "front suspension absorber, front suspension shock, front coil absorber, front coil shock",
+    "description": "Front shock",
+    "category": "Suspension",
+    "aliases": "muffler, silencer, rear muffler",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-14 23:10:14"
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "18125",
@@ -6517,15 +6517,15 @@
   },
   {
     "basic": "3A197",
-    "description": "Front Upper Suspension Strut Mount",
-    "category": "Front axle / suspension",
-    "aliases": "strut top, absorber top mount, shock top mount, top mount, strut bearing plate",
+    "description": "Spring seats",
+    "category": "Suspension",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-14 22:55:22"
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "3B186",
@@ -6601,15 +6601,15 @@
   },
   {
     "basic": "5310",
-    "description": "Front Suspension Coil",
-    "category": "Front axle / suspension",
-    "aliases": "front suspension spring, front suspension coil, front coil spring",
+    "description": "Front suspension air bag / coil spring",
+    "category": "Suspension",
+    "aliases": "spring, front spring, coil spring",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-14 23:09:26"
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "5319",
@@ -6637,27 +6637,27 @@
   },
   {
     "basic": "5482",
-    "description": "Bar - Stabilizer",
+    "description": "Front stabilizer bar",
     "category": "Suspension",
-    "aliases": "Front Sway Bar, Front Stabiliser bar",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:22:35"
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "5484",
-    "description": "Insulator Assy",
+    "description": "Sway bar bushing",
     "category": "Suspension",
-    "aliases": "Front Sway Bar Bushes",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:21:01"
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "5486",
@@ -6727,9 +6727,9 @@
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-15 00:08:04"
+    "notes": "Eaton example uses 5560 as coil spring group",
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "5580",
@@ -6853,15 +6853,15 @@
   },
   {
     "basic": "5K484",
-    "description": "Link",
+    "description": "Front end link",
     "category": "Suspension",
-    "aliases": "Front Sway Bar Links",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:19:55"
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "5K848",
@@ -6925,15 +6925,15 @@
   },
   {
     "basic": "17080",
-    "description": "Jack Assy Lifting",
-    "category": "Tools",
-    "aliases": "Car jack",
+    "description": "Jack",
+    "category": "Tools / accessories",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
-    "notes": "May not come with nut wrench (17035)",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:11:15"
+    "notes": "",
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "19D520",
@@ -7705,15 +7705,15 @@
   },
   {
     "basic": "1104",
-    "description": "Wheel hub",
+    "description": "Front hub and bearing",
     "category": "Wheels, hubs & bearings",
-    "aliases": "Wheel Hub",
+    "aliases": "lug nut, wheel nut, nut",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
     "source": "Preview starter dataset",
-    "updated": "2026-06-09 05:34:23"
+    "updated": ""
   },
   {
     "basic": "1107",
@@ -7969,15 +7969,15 @@
   },
   {
     "basic": "3B477",
-    "description": "Retainer",
-    "category": "Suspension",
-    "aliases": "Axle Nut, Wheel Hub Nut, Spindel Nut",
+    "description": "Hub assembly nut / retainer",
+    "category": "Wheels, hubs & bearings",
+    "aliases": "",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:27:33"
+    "source": "Preview starter dataset",
+    "updated": ""
   },
   {
     "basic": "17508",
@@ -8086,173 +8086,5 @@
     "notes": "",
     "source": "Preview starter dataset",
     "updated": ""
-  },
-  {
-    "basic": "6B624",
-    "description": "Diesel Oil Cooler Assembly",
-    "category": "Engine",
-    "aliases": "Engine Oil Cooler, Diesel Oil Cooler",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 02:27:31"
-  },
-  {
-    "basic": "42528",
-    "description": "Name Plates",
-    "category": "Name Plates",
-    "aliases": "Ford Badge, Name Plate, Badge",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:06:48"
-  },
-  {
-    "basic": "1532",
-    "description": "Tyre Spec Label/Decal/Sticker",
-    "category": "Name Plates",
-    "aliases": "Tyre specifications sticker",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:09:55"
-  },
-  {
-    "basic": "17035",
-    "description": "Wheel Nut Wrench",
-    "category": "Tools",
-    "aliases": "Tyre removal tool, wheel nut remover",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "May not come with jack (17080)",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:12:32"
-  },
-  {
-    "basic": "17A954",
-    "description": "Front tow hook",
-    "category": "Tools",
-    "aliases": "Towing Hook, tow spot",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:15:12"
-  },
-  {
-    "basic": "17B068",
-    "description": "Funnel (Petrol Engine)",
-    "category": "Tools",
-    "aliases": "Filler funnel, fuel funnel",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:15:54"
-  },
-  {
-    "basic": "1215",
-    "description": "Bearing Assy - Wheel Hub",
-    "category": "Suspension",
-    "aliases": "Wheel Bearing",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-09 05:26:31"
-  },
-  {
-    "basic": "15K609",
-    "description": "Sensor and Bracket - Interior Scan",
-    "category": "Electrical",
-    "aliases": "Ultrasonic sensor, anti-theft sensor, motion sensor, volumetric sensor",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "Interior ultrasonic sensors for detecting unauthorised access to the vehicle.",
-    "source": "Manual Entry",
-    "updated": "2026-06-10 02:38:57"
-  },
-  {
-    "basic": "18061",
-    "description": "Front Suspension Strut Bumper",
-    "category": "Front axle / suspension",
-    "aliases": "front suspension strut bumper",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "Also shows as 18A085/3020\nAbsorbs extreme suspension travel to protect struts and prevent metal-on-metal bottoming out.",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-14 23:04:53"
-  },
-  {
-    "basic": "3020",
-    "description": "Front Suspension Strut Bumper",
-    "category": "Front axle / suspension",
-    "aliases": "front suspension strut bumper",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "Also shows as 18A085/18061\nAbsorbs extreme suspension travel to protect struts and prevent metal-on-metal bottoming out.",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-14 23:05:12"
-  },
-  {
-    "basic": "18A085",
-    "description": "Front Suspension Strut Bumper",
-    "category": "Front axle / suspension",
-    "aliases": "front suspension strut bumper",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "Also shows as 3020/18061\nAbsorbs extreme suspension travel to protect struts and prevent metal-on-metal bottoming out.",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-14 23:05:36"
-  },
-  {
-    "basic": "18A047",
-    "description": "Front Suspension Strut Dust Cover and Boot Kit",
-    "category": "Front axle / suspension",
-    "aliases": "shock boot, absorber boot, dust boot,",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry -Ash",
-    "updated": "2026-06-14 23:06:56"
-  },
-  {
-    "basic": "19H406",
-    "description": "Camera Front",
-    "category": "Electrical",
-    "aliases": "IPMA, Camera, IPMA Camera",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "",
-    "source": "Manual Entry",
-    "updated": "2026-06-19 00:20:34"
-  },
-  {
-    "basic": "14G647",
-    "description": "Module",
-    "category": "Electrical",
-    "aliases": "IPMA Module, IPMA, ADAC Module",
-    "part_numbers": "",
-    "applications": "",
-    "supersessions": "",
-    "notes": "Sits behind instrument cluster",
-    "source": "Manual Entry",
-    "updated": "2026-06-19 00:21:29"
   }
 ]

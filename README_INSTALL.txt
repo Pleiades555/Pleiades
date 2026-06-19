@@ -36,3 +36,12 @@ Use a fine-grained token limited to this repo only.
 
 Recovery:
 If abused, revoke the token and restore previous JSON from GitHub commit history.
+
+
+CHANGELOG UPDATE:
+- Visible Change Log button added near search bar.
+- Opens as overlay/modal.
+- Save/update/delete actions automatically create changelog entries.
+- Commit Parts JSON to GitHub also commits Ford/ford_parts_kb_changelog.json.
+- Existing part data is preserved: site JSON and local additions are merged by basic number.
+- This package includes Ford/ford_parts_kb_changelog.json.
