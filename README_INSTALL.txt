@@ -45,3 +45,11 @@ CHANGELOG UPDATE:
 - Commit Parts JSON to GitHub also commits Ford/ford_parts_kb_changelog.json.
 - Existing part data is preserved: site JSON and local additions are merged by basic number.
 - This package includes Ford/ford_parts_kb_changelog.json.
+
+
+ADMIN VISIBILITY UPDATE:
+- GitHub live update settings are now completely hidden until password 11290 is entered.
+- Manual add/update section is now completely hidden until password 11290 is entered.
+- Prefix code manager is now completely hidden until password 11290 is entered.
+- Advanced/import/export section is now completely hidden until password 11290 is entered.
+- Public users still see search and Change Log only.
