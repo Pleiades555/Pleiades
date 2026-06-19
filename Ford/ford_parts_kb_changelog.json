@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "",
+    "type": "system",
+    "basic": "",
+    "title": "Fresh manual-protected database created",
+    "details": "Core database starts empty. Manual entries are stored separately so future package updates do not wipe them.",
+    "version": "Manual protected v1"
+  }
+]

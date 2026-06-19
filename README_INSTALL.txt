@@ -1,56 +1,35 @@
-FORD GITHUB LIVE UPDATE PACKAGE
+FORD PARTS KNOWLEDGE BASE - FRESH MANUAL-PROTECTED VERSION
 
-Copy this package into the root of your GitHub repo.
+Purpose:
+- Starts fresh with no part entries.
+- Manual entries are stored separately from future package/core updates.
+- Future package updates should NOT replace ford_parts_kb_manual.json, ford_parts_kb_deleted.json, or ford_parts_kb_changelog.json.
 
 Files:
-- Ford Web.html
 - Ford/Ford Parts Knowledge Base.html
-- Ford/ford_parts_kb_data.json
-- Ford/ford_prefix_codes.json
-- Ford/ford_parts_kb_template.csv
+- Ford/ford_parts_kb_core.json       Empty core database for future package/static data
+- Ford/ford_parts_kb_manual.json     Protected manual entry database
+- Ford/ford_parts_kb_deleted.json    Deleted/hidden entry history
+- Ford/ford_parts_kb_changelog.json  Steam-style changelog
+- Ford/backups/                      Automatic GitHub backups before commit
+- Ford/ford_parts_kb_manual_template.csv
 
-Starter data:
-- 674 rows extracted from preview.html
+Admin:
+- Password: 11290
+- Add/update/delete/import/GitHub controls hidden until unlocked.
 
-How updates work:
-1. Open Ford Parts Knowledge Base from your site.
-2. Enter password: 11290
-3. Open "GitHub live update settings".
-4. Add:
-   - owner: Pleiades555
-   - repo: Pleiades
-   - branch: main
-   - GitHub token
-5. Add/update entries.
-6. Click "Commit Parts JSON to GitHub".
+Delete function:
+- Kept as requested.
+- Delete/hide moves the entry into deleted history rather than simply vanishing.
+- Deleted history is backed up and committed separately.
 
-Required token:
-- Fine-grained GitHub token
-- Repository access: Pleiades only
-- Permissions: Contents Read and Write
+GitHub commit:
+- Creates backups in Ford/backups/
+- Then updates:
+  - Ford/ford_parts_kb_manual.json
+  - Ford/ford_parts_kb_deleted.json
+  - Ford/ford_parts_kb_changelog.json
 
-Security warning:
-Putting a token into a public HTML/browser storage is not secure.
-Anyone with access to your browser or source could obtain it.
-Use a fine-grained token limited to this repo only.
-
-Recovery:
-If abused, revoke the token and restore previous JSON from GitHub commit history.
-<<<<<<< HEAD
-
-
-CHANGELOG UPDATE:
-- Visible Change Log button added near search bar.
-- Opens as overlay/modal.
-- Save/update/delete actions automatically create changelog entries.
-- Commit Parts JSON to GitHub also commits Ford/ford_parts_kb_changelog.json.
-- Existing part data is preserved: site JSON and local additions are merged by basic number.
-- This package includes Ford/ford_parts_kb_changelog.json.
-
-
-ADMIN HIDDEN v2:
-- The entire admin boxes are hidden using .admin-box until password 11290 is entered.
-- Hidden boxes include GitHub settings, import/export, manual update, prefix tools, and part number guess/builder.
-- Public view now shows search, reload, change log, and password box only.
-=======
->>>>>>> parent of 3eb9527 (Update UI on Parts)
+Safety rule for future updates:
+- Replace HTML and core JSON only.
+- Do not replace manual/deleted/changelog JSON unless intentionally restoring from backup.
