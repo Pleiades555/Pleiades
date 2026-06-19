@@ -1,74 +1,34 @@
 [
   {
-    "timestamp": "2026-06-19 04:41:26",
+    "timestamp": "2026-06-19 05:15:48",
     "type": "add",
-    "basic": "5484",
-    "title": "Added 5484 – Front Sway Bar Bush",
-    "details": "Description: Front Sway Bar Bush | Aliases: bush retainer, bar retainer | Source: AW",
+    "basic": "3C377",
+    "title": "Added 3C377 – Front Lower Control Arm Rear Bush",
+    "details": "Description: Front Lower Control Arm Rear Bush | Aliases: LCA bush, Lower Control Arm bushing | Source: AW",
     "version": "Manual protected"
   },
   {
-    "timestamp": "2026-06-19 04:40:32",
+    "timestamp": "2026-06-19 05:14:20",
     "type": "add",
-    "basic": "5486",
-    "title": "Added 5486 – Front Sway Bar Bush Retainer",
-    "details": "Description: Front Sway Bar Bush Retainer | Aliases: bush retainer, bar retainer | Source: AW",
+    "basic": "3050",
+    "title": "Added 3050 – Front Lower Control Arm Ball Joint",
+    "details": "Description: Front Lower Control Arm Ball Joint | Aliases: LCA, Lower Control Arm joint | Source: AW",
     "version": "Manual protected"
   },
   {
-    "timestamp": "2026-06-19 04:39:29",
+    "timestamp": "2026-06-19 05:11:56",
     "type": "add",
-    "basic": "5482",
-    "title": "Added 5482 – Front Sway Bar",
-    "details": "Description: Front Sway Bar | Aliases: sway bar, stabilizer bar, stabiliser bar | Source: AW",
+    "basic": "3069",
+    "title": "Added 3069 – Front Lower Control Arm Bush",
+    "details": "Description: Front Lower Control Arm Bush | Aliases: Arm bush | Source: AW",
     "version": "Manual protected"
   },
   {
-    "timestamp": "2026-06-19 04:38:35",
+    "timestamp": "2026-06-19 04:22:23",
     "type": "add",
-    "basic": "5K484",
-    "title": "Added 5K484 – Front Sway Bar Link",
-    "details": "Description: Front Sway Bar Link | Aliases: link, stabiliser link, stabilizer link | Source: AW",
-    "version": "Manual protected"
-  },
-  {
-    "timestamp": "2026-06-19 04:36:20",
-    "type": "add",
-    "basic": "17032",
-    "title": "Added 17032 – Wheel Nut Wrench",
-    "details": "Description: Wheel Nut Wrench | Aliases: wheel spanner, wheel wrench, tyre remover | Source: AW",
-    "version": "Manual protected"
-  },
-  {
-    "timestamp": "2026-06-19 04:34:13",
-    "type": "add",
-    "basic": "17080",
-    "title": "Added 17080 – Jack Assembly",
-    "details": "Description: Jack Assembly | Aliases: wheel jack, jack, stand, car stand | Source: AW",
-    "version": "Manual protected"
-  },
-  {
-    "timestamp": "2026-06-19 04:30:58",
-    "type": "edit",
-    "basic": "1532",
-    "title": "Updated 1532 – Tyre Decal",
-    "details": "Description: Tyre Decal | Aliases: Tyre sticker, tire sticker, tyre decal, tire decal | Source: AW",
-    "version": "Manual protected"
-  },
-  {
-    "timestamp": "2026-06-19 04:30:35",
-    "type": "add",
-    "basic": "1532",
-    "title": "Added 1532 – Decal",
-    "details": "Description: Decal | Aliases: Tyre sticker, tire sticker, tyre decal, tire decal | Source: AW",
-    "version": "Manual protected"
-  },
-  {
-    "timestamp": "2026-06-19 04:28:11",
-    "type": "add",
-    "basic": "8213",
-    "title": "Added 8213 – Name Plate",
-    "details": "Description: Name Plate | Aliases: Badge, Ford Logo, Name, Plate, Name plate | Source: AW",
+    "basic": "1007",
+    "title": "Added 1007 – Wheel",
+    "details": "Description: Wheel | Aliases: rim, alloy wheel, wheel | Source: AW",
     "version": "Manual protected"
   },
   {
