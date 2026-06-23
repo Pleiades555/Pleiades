@@ -56,5 +56,15 @@
     "symptom": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
     "concern": "A number of Transit and Transit / Tourneo Custom vehicles built with H7 AGM batteries may experience one or more\nof, acid smell or smell of rotten eggs in cabin, hissing sound, visible gas venting battery, or heat in the seat.\nGas emissions during a normal Absorbent Glass Mat (AGM) battery gassing event produce hydrogen and oxygen,\nhowever increased temperatures can lead to a side reaction which produces H2S (hydrogen sulphide). If exposure\nis prolonged, health impacts such as nausea, dizziness and headaches may become more severe.",
     "status": "Current"
+  },
+  "26-2274": {
+    "title": "Accelerated Wear Of The Rear Inner Brake Pads Or Scraping And - Grinding Noises",
+    "model": "Ranger",
+    "yearRange": "2021-2026",
+    "fordUploadDate": "2026-06-17",
+    "issueDate": "2026-06-17",
+    "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "status": "Current"
   }
 }
