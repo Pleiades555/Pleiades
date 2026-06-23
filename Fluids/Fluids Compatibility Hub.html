@@ -6,19 +6,31 @@
 <style>
 :root{--blue:#12355b;--line:#ccd3dc;--bg:#f4f6f8;--card:#fff;--ink:#111}
 body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
-header{background:linear-gradient(135deg,#0c2745,#174b80);color:white;padding:22px}header h1{margin:0}header p{margin:6px 0 0;color:#dbeafe}
-main{max-width:1380px;margin:auto;padding:16px}.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-.searchbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}input,select,button,textarea{font-size:15px;padding:10px;margin:4px;border:1px solid #999;border-radius:8px}
-input[type=text],input[type=password],textarea{width:min(680px,94%)}textarea{min-height:58px;vertical-align:top}button{cursor:pointer;background:#eaf1f8}
-button.primary{background:var(--blue);color:white;border-color:var(--blue)}button.good{background:#0f766e;color:white;border-color:#0f766e}button.danger{background:#b91c1c;color:white;border-color:#b91c1c}
-.status{font-weight:bold;margin-top:8px}.note{color:#444;font-size:13px}.small{font-size:12px;color:#555}.grid{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:8px}.full{grid-column:1/-1}
-.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(335px,1fr));gap:12px}.card{background:white;border:1px solid #d8dee8;border-radius:12px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
-.card h3{margin:0 0 8px;color:var(--blue)}.field{margin:5px 0}.label{font-weight:bold;color:#374151}.badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:2px 6px;border-radius:999px;font-size:12px;margin:1px}.spec{background:#ecfdf5;color:#065f46}.brandBadge{background:#dbeafe;color:#1e3a8a}
-.warn{margin-top:8px;padding:9px;border-radius:6px;background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa}.msg{margin-top:8px;padding:9px;border-radius:6px;background:#ecfdf5;color:#064e3b}
-details summary{cursor:pointer;color:var(--blue);font-weight:bold;user-select:none;padding:6px 0}.locked-control{display:none}.unlocked .locked-control{display:initial}.admin-box{display:none}.unlocked .admin-box{display:block}
+header{background:linear-gradient(135deg,#0c2745,#174b80);color:white;padding:22px}
+header h1{margin:0}header p{margin:6px 0 0;color:#dbeafe}
+main{max-width:1380px;margin:auto;padding:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.searchbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input,select,button,textarea{font-size:15px;padding:10px;margin:4px;border:1px solid #999;border-radius:8px}
+input[type=text],input[type=password],textarea{width:min(680px,94%)}
+textarea{min-height:58px;vertical-align:top}button{cursor:pointer;background:#eaf1f8}
+button.primary{background:var(--blue);color:white;border-color:var(--blue)}button.good{background:#0f766e;color:white;border-color:#0f766e}
+.status{font-weight:bold;margin-top:8px}.note{color:#444;font-size:13px}.small{font-size:12px;color:#555}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:8px}.full{grid-column:1/-1}
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(335px,1fr));gap:12px}
+.card{background:white;border:1px solid #d8dee8;border-radius:12px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.card h3{margin:0 0 8px;color:var(--blue)}.field{margin:5px 0}.label{font-weight:bold;color:#374151}
+.badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:2px 6px;border-radius:999px;font-size:12px;margin:1px}
+.spec{background:#ecfdf5;color:#065f46}.brandBadge{background:#dbeafe;color:#1e3a8a}
+.warn{margin-top:8px;padding:9px;border-radius:6px;background:#fff7ed;color:#7c2d12;border:1px solid #fed7aa}
+.msg{margin-top:8px;padding:9px;border-radius:6px;background:#ecfdf5;color:#064e3b}
+details summary{cursor:pointer;color:var(--blue);font-weight:bold;user-select:none;padding:6px 0}
+.locked-control{display:none}.unlocked .locked-control{display:initial}.admin-box{display:none}.unlocked .admin-box{display:block}
 .lockbox{background:#f8fafc;border:1px dashed #94a3b8;border-radius:8px;padding:10px;margin-top:8px}.hiddenInput{display:none}.toplink{color:var(--blue);font-weight:bold;text-decoration:none}
-.modalOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.68);z-index:9999;padding:24px}.modalOverlay.open{display:block}.modalBox{background:#f8fafc;max-width:900px;margin:4vh auto;border-radius:14px;border:1px solid #cbd5e1;box-shadow:0 20px 60px rgba(0,0,0,.35);max-height:86vh;overflow:auto}
-.modalHeader{background:var(--blue);color:white;padding:16px 18px;border-radius:14px 14px 0 0;display:flex;justify-content:space-between;align-items:center}.modalHeader h2{margin:0}.modalBody{padding:16px 18px}.closeBtn{background:white;color:var(--blue);border:0;border-radius:8px;padding:8px 10px;font-weight:bold}
+.modalOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.68);z-index:9999;padding:24px}.modalOverlay.open{display:block}
+.modalBox{background:#f8fafc;max-width:900px;margin:4vh auto;border-radius:14px;border:1px solid #cbd5e1;box-shadow:0 20px 60px rgba(0,0,0,.35);max-height:86vh;overflow:auto}
+.modalHeader{background:var(--blue);color:white;padding:16px 18px;border-radius:14px 14px 0 0;display:flex;justify-content:space-between;align-items:center}
+.modalHeader h2{margin:0}.modalBody{padding:16px 18px}.closeBtn{background:white;color:var(--blue);border:0;border-radius:8px;padding:8px 10px;font-weight:bold}
 .changeItem{background:white;border:1px solid #d8dee8;border-left:5px solid var(--blue);border-radius:8px;padding:10px 12px;margin:10px 0}.changeMeta{font-size:12px;color:#64748b;margin-bottom:4px}.changeTitle{font-weight:bold;font-size:16px}
 @media(max-width:900px){.grid{grid-template-columns:1fr}input[type=text],input[type=password],textarea{width:94%}}
 </style>
@@ -32,12 +44,20 @@ details summary{cursor:pointer;color:var(--blue);font-weight:bold;user-select:no
 <input id="search" placeholder="Search brand, fluid, part number, spec, previous number, compatible substitute..." autofocus oninput="render()">
 <select id="brandFilter" onchange="render()"><option value="">All brands</option></select>
 <select id="descFilter" onchange="render()"><option value="">All fluid descriptions</option></select>
-<button onclick="clearSearch()">Reset</button><button onclick="reloadSiteData()">Reload site data</button><button class="primary" onclick="openChangeLog()">Change Log</button>
-</div><div id="status" class="status">Loading fluids...</div>
-<div class="note">Compatibility includes explicit CSV substitute links and Option B spec-based matches. Always verify final application before substitution.</div></div>
+<button onclick="clearSearch()">Reset</button>
+<button onclick="reloadSiteData()">Reload site data</button>
+<button class="primary" onclick="openChangeLog()">Change Log</button>
+</div>
+<div id="status" class="status">Loading fluids...</div>
+<div class="note">Compatibility includes explicit CSV substitute links and Option B spec-based matches. Always verify final application before substitution.</div>
+</div>
 
-<div class="box lockbox"><b>Update Lock</b><br><span class="note">Enter password to unlock add/update/import/GitHub controls.</span><br>
-<input id="editPassword" type="password" placeholder="Password" oninput="checkEditPassword()"><button onclick="checkEditPassword()">Unlock</button><button onclick="lockEditing()">Lock</button><span id="lockStatus" class="note"> Locked</span><div class="small" id="adminHint">Admin tools are hidden until unlocked.</div></div>
+<div class="box lockbox">
+<b>Update Lock</b><br><span class="note">Enter password to unlock add/update/import controls.</span><br>
+<input id="editPassword" type="password" placeholder="Password" oninput="checkEditPassword()">
+<button onclick="checkEditPassword()">Unlock</button><button onclick="lockEditing()">Lock</button>
+<span id="lockStatus" class="note"> Locked</span><div class="small" id="adminHint">Admin tools are hidden until unlocked.</div>
+</div>
 
 <div class="box admin-box"><details><summary>Add / update fluid entry</summary>
 <div class="grid">
@@ -55,61 +75,369 @@ details summary{cursor:pointer;color:var(--blue);font-weight:bold;user-select:no
 <div><label>Notes<br><textarea id="notes"></textarea></label></div>
 <div class="full"><label>Source<br><textarea id="source"></textarea></label></div>
 </div>
-<button class="good locked-control" onclick="saveFluid()">Save / Update Fluid</button><button class="locked-control" onclick="resetForm()">Clear Form</button><div id="msg"></div>
+<button class="good locked-control" onclick="saveFluid()">Save / Update Fluid</button>
+<button class="locked-control" onclick="resetForm()">Clear Form</button>
+<div id="msg"></div>
 </details></div>
 
 <div class="box admin-box"><details><summary>Advanced / backup / import</summary>
-<button class="primary locked-control" onclick="exportJSON()">Export fluids JSON</button><button class="primary locked-control" onclick="exportCSV()">Export fluids CSV</button><button class="primary locked-control" onclick="exportChangeLogJSON()">Export changelog JSON</button><button class="locked-control" onclick="document.getElementById('jsonFile').click()">Import fluids JSON</button><button class="locked-control" onclick="document.getElementById('csvFile').click()">Import fluids CSV</button>
-<input class="hiddenInput" id="jsonFile" type="file" accept=".json" onchange="importJSON(event)"><input class="hiddenInput" id="csvFile" type="file" accept=".csv" onchange="importCSV(event)">
-<p class="small">Imports merge by brand + part number/engineering number. They do not wipe existing data.</p></details></div>
+<button class="primary locked-control" onclick="exportJSON()">Export fluids JSON</button>
+<button class="primary locked-control" onclick="exportCSV()">Export fluids CSV</button>
+<button class="primary locked-control" onclick="exportChangeLogJSON()">Export changelog JSON</button>
+<button class="locked-control" onclick="document.getElementById('jsonFile').click()">Import fluids JSON</button>
+<button class="locked-control" onclick="document.getElementById('csvFile').click()">Import fluids CSV</button>
+<input class="hiddenInput" id="jsonFile" type="file" accept=".json" onchange="importJSON(event)">
+<input class="hiddenInput" id="csvFile" type="file" accept=".csv" onchange="importCSV(event)">
+<p class="small">Imports merge by brand + part number/engineering number. They do not wipe existing data.</p>
+</details></div>
 
 <div class="box"><div id="results" class="results"></div></div>
-<div id="changeLogOverlay" class="modalOverlay" onclick="if(event.target===this)closeChangeLog()"><div class="modalBox"><div class="modalHeader"><h2>Fluids Hub - Change Log</h2><button class="closeBtn" onclick="closeChangeLog()">Close</button></div><div class="modalBody"><div id="changeLogSummary" class="note">Loading change log...</div><div id="changeLogList"></div></div></div></div>
+
+<div id="changeLogOverlay" class="modalOverlay" onclick="if(event.target===this)closeChangeLog()">
+  <div class="modalBox">
+    <div class="modalHeader"><h2>Fluids Hub - Change Log</h2><button class="closeBtn" onclick="closeChangeLog()">Close</button></div>
+    <div class="modalBody"><div id="changeLogSummary" class="note">Loading change log...</div><div id="changeLogList"></div></div>
+  </div>
+</div>
 </main>
+
 <script>
-const EDIT_PASSWORD="11290", DATA_KEY="aus_fluids_local_additions_v2", LOG_KEY="aus_fluids_local_changelog_v2";
-let editUnlocked=false, siteData=[], localData=[], fluids=[], siteLog=[], localLog=[], changelog=[];
-function checkEditPassword(){editUnlocked=(editPassword.value===EDIT_PASSWORD);document.body.classList.toggle("unlocked",editUnlocked);lockStatus.textContent=editUnlocked?" Unlocked - admin tools visible":" Locked";adminHint.textContent=editUnlocked?"Admin tools are now visible below.":"Admin tools are hidden until unlocked.";return editUnlocked;}
-function lockEditing(){editUnlocked=false;document.body.classList.remove("unlocked");editPassword.value="";lockStatus.textContent=" Locked";adminHint.textContent="Admin tools are hidden until unlocked.";}
-function requireEditPassword(){if(editUnlocked)return true;alert("Enter password 11290 to unlock updates.");return false;}
-function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-function stamp(){return new Date().toISOString().slice(0,19).replace("T"," ");}
-function norm(s){return String(s||"").trim().toUpperCase();}
-function keyOf(f){return norm(f.brand)+"|"+(norm(f.part_number)||norm(f.engineering_part_number)||norm(f.description+"|"+f.brand_spec+"|"+f.volume));}
-function splitList(s){return String(s||"").split(/[;,
-]/).map(x=>x.trim()).filter(Boolean);}
-function badges(s,cls=""){return splitList(s).map(x=>`<span class="badge ${cls}">${esc(x)}</span>`).join(" ");}
-async function fetchJson(path,fallback=[]){try{const r=await fetch(path+"?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error(r.status);const d=await r.json();return Array.isArray(d)?d:fallback;}catch(e){return fallback;}}
-function loadLocal(){try{localData=JSON.parse(localStorage.getItem(DATA_KEY)||"[]")||[];}catch(e){localData=[];}try{localLog=JSON.parse(localStorage.getItem(LOG_KEY)||"[]")||[];}catch(e){localLog=[];}}
-function saveLocal(){localStorage.setItem(DATA_KEY,JSON.stringify(localData));localStorage.setItem(LOG_KEY,JSON.stringify(localLog));}
-function mergeData(a,b){const m=new Map();for(const f of a.concat(b)){if(!f)continue;const k=keyOf(f);if(k)m.set(k,f);}return [...m.values()];}
-function mergeLog(a,b){const m=new Map();for(const l of a.concat(b)){if(!l)continue;m.set((l.timestamp||"")+"|"+(l.title||"")+"|"+(l.brand||""),l);}return [...m.values()].sort((x,y)=>String(y.timestamp||"").localeCompare(String(x.timestamp||"")));}
-function rebuild(){fluids=mergeData(siteData,localData);changelog=mergeLog(siteLog,localLog);}
-async function reloadSiteData(){siteData=await fetchJson("fluids_master.json",[]);siteLog=await fetchJson("fluids_changelog.json",[]);loadLocal();rebuild();render();renderChangeLog();}
-function hay(f){return Object.values(f).join(" ").toLowerCase();}
-function brandOptions(){return [...new Set(fluids.map(f=>f.brand||"").filter(Boolean))].sort();}
-function descOptions(){return [...new Set(fluids.map(f=>f.description||"").filter(Boolean))].sort();}
-function updateFilters(){let b=brandFilter.value,d=descFilter.value;brandFilter.innerHTML='<option value="">All brands</option>'+brandOptions().map(x=>`<option>${esc(x)}</option>`).join("");descFilter.innerHTML='<option value="">All fluid descriptions</option>'+descOptions().map(x=>`<option>${esc(x)}</option>`).join("");brandList.innerHTML=brandOptions().map(x=>`<option value="${esc(x)}"></option>`).join("");brandFilter.value=b;descFilter.value=d;}
-function render(){updateFilters();const q=search.value.trim().toLowerCase(), b=brandFilter.value, d=descFilter.value;let rows=fluids.filter(f=>(!b||f.brand===b)&&(!d||f.description===d)&&(!q||hay(f).includes(q)));rows.sort((a,b)=>String(a.brand||"").localeCompare(String(b.brand||""))||String(a.description||"").localeCompare(String(b.description||"")));status.textContent=rows.length+" shown / "+fluids.length+" total fluid entries";results.innerHTML=rows.map(cardHtml).join("")||"<p>No matching fluids found.</p>";}
-function cardHtml(f){return `<div class="card"><h3>${esc(f.description||"Untitled fluid")}</h3><div>${badges(f.brand,"brandBadge")}</div><div class="field"><span class="label">Engineering PN:</span> ${esc(f.engineering_part_number||"")}</div><div class="field"><span class="label">Part Number:</span> ${esc(f.part_number||"")}</div><div class="field"><span class="label">Volume:</span> ${esc(f.volume||"")}</div><div class="field"><span class="label">Brand Spec:</span> ${badges(f.brand_spec,"spec")}</div><div class="field"><span class="label">General Spec:</span> ${badges(f.general_spec)}</div><div class="field"><span class="label">Industry Standard:</span> ${badges(f.industry_standard)}</div><div class="field"><span class="label">Uses In Brand:</span> ${esc(f.uses_in_brand||"")}</div><div class="field"><span class="label">Previous PNs:</span> ${badges(f.previous_part_numbers)}</div><div class="field"><span class="label">Compatible Substitutes:</span> ${badges(f.compatible_substitutes,"spec")}</div><div class="field"><span class="label">Cross Ref:</span> ${esc(f.cross_reference_group||"")}</div><div class="field"><span class="label">Notes:</span> ${esc(f.notes||"")}</div><button onclick="if(requireEditPassword())editFluid('${esc(keyOf(f))}')">Edit</button></div>`;}
-function clearSearch(){search.value="";brandFilter.value="";descFilter.value="";render();}
-function formFluid(){return {brand:brand.value.trim(),engineering_part_number:engineering_part_number.value.trim(),part_number:part_number.value.trim(),description:description.value.trim(),volume:volume.value.trim(),brand_spec:brand_spec.value.trim(),general_spec:general_spec.value.trim(),industry_standard:industry_standard.value.trim(),uses_in_brand:uses_in_brand.value.trim(),previous_part_numbers:previous_part_numbers.value.trim(),compatible_substitutes:compatible_substitutes.value.trim(),notes:notes.value.trim(),source:source.value.trim(),updated:stamp()};}
-function saveFluid(){if(!requireEditPassword())return;const f=formFluid();if(!f.brand||!f.description||(!f.part_number&&!f.engineering_part_number)){msg.className="warn";msg.textContent="Brand, Description and either Part Number or Engineering Part Number are required.";return;}const k=keyOf(f);localData=localData.filter(x=>keyOf(x)!==k);localData.push(f);localLog.unshift({timestamp:stamp(),type:"edit",title:"Updated "+(f.part_number||f.engineering_part_number||f.description),details:f.brand,brand:f.brand});saveLocal();rebuild();render();msg.className="msg";msg.textContent="Fluid saved locally.";renderChangeLog();}
-function editFluid(k){const f=fluids.find(x=>keyOf(x)===k);if(!f)return;for(const id of ["brand","engineering_part_number","part_number","description","volume","brand_spec","general_spec","industry_standard","uses_in_brand","previous_part_numbers","compatible_substitutes","notes","source"])document.getElementById(id).value=f[id]||"";scrollTo({top:0,behavior:"smooth"});}
-function resetForm(){if(!requireEditPassword())return;for(const id of ["brand","engineering_part_number","part_number","description","volume","brand_spec","general_spec","industry_standard","uses_in_brand","previous_part_numbers","compatible_substitutes","notes","source"])document.getElementById(id).value="";}
-function renderChangeLog(){const latest=changelog[0];changeLogSummary.textContent=latest?"Latest update: "+latest.timestamp+" • "+changelog.length+" logged changes":"No changes logged yet.";changeLogList.innerHTML=changelog.slice(0,80).map(c=>`<div class="changeItem"><div class="changeMeta">${esc(c.timestamp||"")} • ${esc(c.type||"update")} ${c.brand?"• "+esc(c.brand):""}</div><div class="changeTitle">${esc(c.title||"Update")}</div><div>${esc(c.details||"")}</div></div>`).join("")||"<p>No changes logged yet.</p>";}
-function openChangeLog(){renderChangeLog();changeLogOverlay.classList.add("open");}function closeChangeLog(){changeLogOverlay.classList.remove("open");}
-function download(name,content,type){const blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;a.click();URL.revokeObjectURL(url);}
-function exportJSON(){if(!requireEditPassword())return;download("fluids_master.json",JSON.stringify(fluids,null,2),"application/json");}
-function exportChangeLogJSON(){if(!requireEditPassword())return;download("fluids_changelog.json",JSON.stringify(changelog,null,2),"application/json");}
-function csvEsc(v){v=String(v??"");return /[",
-]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
-function exportCSV(){if(!requireEditPassword())return;const cols=["brand","engineering_part_number","part_number","description","volume","brand_spec","general_spec","industry_standard","uses_in_brand","previous_part_numbers","compatible_substitutes","notes","source","cross_reference_group","cross_reference_method"];download("fluids_master_export.csv",[cols.join(","),...fluids.map(f=>cols.map(c=>csvEsc(f[c])).join(",")).join("
-")],"text/csv");}
-function mergeFluids(arr){let n=0;for(const f of arr){if(!f.brand||!f.description||(!f.part_number&&!f.engineering_part_number))continue;localData=localData.filter(x=>keyOf(x)!==keyOf(f));localData.push(f);n++;}localLog.unshift({timestamp:stamp(),type:"import",title:"Imported fluids",details:"Imported/merged "+n+" rows",brand:"All"});saveLocal();rebuild();render();renderChangeLog();alert("Imported/merged "+n+" fluids.");}
-function importJSON(ev){if(!requireEditPassword())return;const file=ev.target.files[0];if(!file)return;const r=new FileReader();r.onload=()=>{try{const arr=JSON.parse(r.result);if(!Array.isArray(arr))throw Error("JSON must be an array");mergeFluids(arr);}catch(e){alert("JSON import failed: "+e.message);}ev.target.value="";};r.readAsText(file);}
-function parseCSV(t){let rows=[],row=[],cur="",q=false;for(let i=0;i<t.length;i++){let ch=t[i],nx=t[i+1];if(q){if(ch=='"'&&nx=='"'){cur+='"';i++;}else if(ch=='"')q=false;else cur+=ch;}else{if(ch=='"')q=true;else if(ch==","){row.push(cur);cur="";}else if(ch=="
-"){row.push(cur);rows.push(row);row=[];cur="";}else if(ch!="")cur+=ch;}}row.push(cur);rows.push(row);return rows.filter(r=>r.some(c=>String(c).trim()));}
-function importCSV(ev){if(!requireEditPassword())return;const file=ev.target.files[0];if(!file)return;const r=new FileReader();r.onload=()=>{try{const rows=parseCSV(r.result),head=rows.shift().map(h=>h.trim());mergeFluids(rows.map(row=>{let o={};head.forEach((h,i)=>o[h]=row[i]||"");return o;}));}catch(e){alert("CSV import failed: "+e.message);}ev.target.value="";};r.readAsText(file);}
+const EDIT_PASSWORD = "11290";
+const DATA_KEY = "aus_fluids_local_additions_v2";
+const LOG_KEY = "aus_fluids_local_changelog_v2";
+
+let editUnlocked = false;
+let siteData = [];
+let localData = [];
+let fluids = [];
+let siteLog = [];
+let localLog = [];
+let changelog = [];
+
+function byId(id){ return document.getElementById(id); }
+function checkEditPassword(){
+  editUnlocked = byId("editPassword").value === EDIT_PASSWORD;
+  document.body.classList.toggle("unlocked", editUnlocked);
+  byId("lockStatus").textContent = editUnlocked ? " Unlocked - admin tools visible" : " Locked";
+  byId("adminHint").textContent = editUnlocked ? "Admin tools are now visible below." : "Admin tools are hidden until unlocked.";
+  return editUnlocked;
+}
+function lockEditing(){
+  editUnlocked = false;
+  document.body.classList.remove("unlocked");
+  byId("editPassword").value = "";
+  byId("lockStatus").textContent = " Locked";
+  byId("adminHint").textContent = "Admin tools are hidden until unlocked.";
+}
+function requireEditPassword(){
+  if(editUnlocked) return true;
+  alert("Enter password 11290 to unlock updates.");
+  return false;
+}
+function esc(value){
+  return String(value ?? "").replace(/[&<>"']/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+  });
+}
+function stamp(){
+  return new Date().toISOString().slice(0,19).replace("T"," ");
+}
+function norm(value){
+  return String(value || "").trim().toUpperCase();
+}
+function keyOf(f){
+  return norm(f.brand) + "|" + (norm(f.part_number) || norm(f.engineering_part_number) || norm((f.description || "") + "|" + (f.brand_spec || "") + "|" + (f.volume || "")));
+}
+function splitList(value){
+  return String(value || "")
+    .split(/[;,\n\r]+/)
+    .map(function(x){ return x.trim(); })
+    .filter(Boolean);
+}
+function badges(value, cls){
+  cls = cls || "";
+  return splitList(value).map(function(x){
+    return '<span class="badge ' + cls + '">' + esc(x) + '</span>';
+  }).join(" ");
+}
+async function fetchJson(path, fallback){
+  try{
+    const response = await fetch(path + "?v=" + Date.now(), {cache:"no-store"});
+    if(!response.ok) throw new Error(response.status);
+    const data = await response.json();
+    return Array.isArray(data) ? data : fallback;
+  }catch(error){
+    console.warn("Could not load", path, error);
+    return fallback;
+  }
+}
+function loadLocal(){
+  try{ localData = JSON.parse(localStorage.getItem(DATA_KEY) || "[]") || []; }catch(e){ localData = []; }
+  try{ localLog = JSON.parse(localStorage.getItem(LOG_KEY) || "[]") || []; }catch(e){ localLog = []; }
+}
+function saveLocal(){
+  localStorage.setItem(DATA_KEY, JSON.stringify(localData));
+  localStorage.setItem(LOG_KEY, JSON.stringify(localLog));
+}
+function mergeData(a, b){
+  const map = new Map();
+  (a || []).concat(b || []).forEach(function(f){
+    if(!f) return;
+    const k = keyOf(f);
+    if(k) map.set(k, f);
+  });
+  return Array.from(map.values());
+}
+function mergeLog(a, b){
+  const map = new Map();
+  (a || []).concat(b || []).forEach(function(l){
+    if(!l) return;
+    map.set((l.timestamp || "") + "|" + (l.title || "") + "|" + (l.brand || ""), l);
+  });
+  return Array.from(map.values()).sort(function(x,y){
+    return String(y.timestamp || "").localeCompare(String(x.timestamp || ""));
+  });
+}
+function rebuild(){
+  fluids = mergeData(siteData, localData);
+  changelog = mergeLog(siteLog, localLog);
+}
+async function reloadSiteData(){
+  byId("status").textContent = "Loading fluids...";
+  siteData = await fetchJson("fluids_master.json", []);
+  siteLog = await fetchJson("fluids_changelog.json", []);
+  loadLocal();
+  rebuild();
+  render();
+  renderChangeLog();
+}
+function hay(f){
+  return Object.values(f).join(" ").toLowerCase();
+}
+function brandOptions(){
+  return Array.from(new Set(fluids.map(function(f){ return f.brand || ""; }).filter(Boolean))).sort();
+}
+function descOptions(){
+  return Array.from(new Set(fluids.map(function(f){ return f.description || ""; }).filter(Boolean))).sort();
+}
+function updateFilters(){
+  const currentBrand = byId("brandFilter").value;
+  const currentDesc = byId("descFilter").value;
+  byId("brandFilter").innerHTML = '<option value="">All brands</option>' + brandOptions().map(function(x){ return '<option>' + esc(x) + '</option>'; }).join("");
+  byId("descFilter").innerHTML = '<option value="">All fluid descriptions</option>' + descOptions().map(function(x){ return '<option>' + esc(x) + '</option>'; }).join("");
+  byId("brandList").innerHTML = brandOptions().map(function(x){ return '<option value="' + esc(x) + '"></option>'; }).join("");
+  byId("brandFilter").value = currentBrand;
+  byId("descFilter").value = currentDesc;
+}
+function render(){
+  updateFilters();
+  const query = byId("search").value.trim().toLowerCase();
+  const brand = byId("brandFilter").value;
+  const desc = byId("descFilter").value;
+  let rows = fluids.filter(function(f){
+    return (!brand || f.brand === brand) && (!desc || f.description === desc) && (!query || hay(f).includes(query));
+  });
+  rows.sort(function(a,b){
+    return String(a.brand || "").localeCompare(String(b.brand || "")) || String(a.description || "").localeCompare(String(b.description || ""));
+  });
+  byId("status").textContent = rows.length + " shown / " + fluids.length + " total fluid entries";
+  byId("results").innerHTML = rows.map(cardHtml).join("") || "<p>No matching fluids found.</p>";
+}
+function cardHtml(f){
+  return '<div class="card">' +
+    '<h3>' + esc(f.description || "Untitled fluid") + '</h3>' +
+    '<div>' + badges(f.brand, "brandBadge") + '</div>' +
+    '<div class="field"><span class="label">Engineering PN:</span> ' + esc(f.engineering_part_number || "") + '</div>' +
+    '<div class="field"><span class="label">Part Number:</span> ' + esc(f.part_number || "") + '</div>' +
+    '<div class="field"><span class="label">Volume:</span> ' + esc(f.volume || "") + '</div>' +
+    '<div class="field"><span class="label">Brand Spec:</span> ' + badges(f.brand_spec, "spec") + '</div>' +
+    '<div class="field"><span class="label">General Spec:</span> ' + badges(f.general_spec) + '</div>' +
+    '<div class="field"><span class="label">Industry Standard:</span> ' + badges(f.industry_standard) + '</div>' +
+    '<div class="field"><span class="label">Uses In Brand:</span> ' + esc(f.uses_in_brand || "") + '</div>' +
+    '<div class="field"><span class="label">Previous PNs:</span> ' + badges(f.previous_part_numbers) + '</div>' +
+    '<div class="field"><span class="label">Compatible Substitutes:</span> ' + badges(f.compatible_substitutes, "spec") + '</div>' +
+    '<div class="field"><span class="label">Cross Ref:</span> ' + esc(f.cross_reference_group || "") + '</div>' +
+    '<div class="field"><span class="label">Notes:</span> ' + esc(f.notes || "") + '</div>' +
+    '<button onclick="if(requireEditPassword())editFluid(\'' + esc(keyOf(f)) + '\')">Edit</button>' +
+  '</div>';
+}
+function clearSearch(){
+  byId("search").value = "";
+  byId("brandFilter").value = "";
+  byId("descFilter").value = "";
+  render();
+}
+function formFluid(){
+  return {
+    brand: byId("brand").value.trim(),
+    engineering_part_number: byId("engineering_part_number").value.trim(),
+    part_number: byId("part_number").value.trim(),
+    description: byId("description").value.trim(),
+    volume: byId("volume").value.trim(),
+    brand_spec: byId("brand_spec").value.trim(),
+    general_spec: byId("general_spec").value.trim(),
+    industry_standard: byId("industry_standard").value.trim(),
+    uses_in_brand: byId("uses_in_brand").value.trim(),
+    previous_part_numbers: byId("previous_part_numbers").value.trim(),
+    compatible_substitutes: byId("compatible_substitutes").value.trim(),
+    notes: byId("notes").value.trim(),
+    source: byId("source").value.trim(),
+    updated: stamp()
+  };
+}
+function saveFluid(){
+  if(!requireEditPassword()) return;
+  const f = formFluid();
+  if(!f.brand || !f.description || (!f.part_number && !f.engineering_part_number)){
+    byId("msg").className = "warn";
+    byId("msg").textContent = "Brand, Description and either Part Number or Engineering Part Number are required.";
+    return;
+  }
+  const k = keyOf(f);
+  localData = localData.filter(function(x){ return keyOf(x) !== k; });
+  localData.push(f);
+  localLog.unshift({timestamp:stamp(), type:"edit", title:"Updated " + (f.part_number || f.engineering_part_number || f.description), details:f.brand, brand:f.brand});
+  saveLocal();
+  rebuild();
+  render();
+  renderChangeLog();
+  byId("msg").className = "msg";
+  byId("msg").textContent = "Fluid saved locally.";
+}
+function editFluid(k){
+  const f = fluids.find(function(x){ return keyOf(x) === k; });
+  if(!f) return;
+  ["brand","engineering_part_number","part_number","description","volume","brand_spec","general_spec","industry_standard","uses_in_brand","previous_part_numbers","compatible_substitutes","notes","source"].forEach(function(id){
+    byId(id).value = f[id] || "";
+  });
+  scrollTo({top:0, behavior:"smooth"});
+}
+function resetForm(){
+  if(!requireEditPassword()) return;
+  ["brand","engineering_part_number","part_number","description","volume","brand_spec","general_spec","industry_standard","uses_in_brand","previous_part_numbers","compatible_substitutes","notes","source"].forEach(function(id){
+    byId(id).value = "";
+  });
+}
+function renderChangeLog(){
+  const latest = changelog[0];
+  byId("changeLogSummary").textContent = latest ? "Latest update: " + latest.timestamp + " • " + changelog.length + " logged changes" : "No changes logged yet.";
+  byId("changeLogList").innerHTML = changelog.slice(0,80).map(function(c){
+    return '<div class="changeItem"><div class="changeMeta">' + esc(c.timestamp || "") + ' • ' + esc(c.type || "update") + (c.brand ? " • " + esc(c.brand) : "") + '</div><div class="changeTitle">' + esc(c.title || "Update") + '</div><div>' + esc(c.details || "") + '</div></div>';
+  }).join("") || "<p>No changes logged yet.</p>";
+}
+function openChangeLog(){
+  renderChangeLog();
+  byId("changeLogOverlay").classList.add("open");
+}
+function closeChangeLog(){
+  byId("changeLogOverlay").classList.remove("open");
+}
+function download(name, content, type){
+  const blob = new Blob([content], {type:type});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = name;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+function exportJSON(){
+  if(!requireEditPassword()) return;
+  download("fluids_master.json", JSON.stringify(fluids, null, 2), "application/json");
+}
+function exportChangeLogJSON(){
+  if(!requireEditPassword()) return;
+  download("fluids_changelog.json", JSON.stringify(changelog, null, 2), "application/json");
+}
+function csvEsc(value){
+  value = String(value ?? "");
+  return /[",\n\r]/.test(value) ? '"' + value.replace(/"/g, '""') + '"' : value;
+}
+function exportCSV(){
+  if(!requireEditPassword()) return;
+  const cols = ["brand","engineering_part_number","part_number","description","volume","brand_spec","general_spec","industry_standard","uses_in_brand","previous_part_numbers","compatible_substitutes","notes","source","cross_reference_group","cross_reference_method"];
+  const lines = [cols.join(",")].concat(fluids.map(function(f){
+    return cols.map(function(c){ return csvEsc(f[c]); }).join(",");
+  }));
+  download("fluids_master_export.csv", lines.join("\n"), "text/csv");
+}
+function mergeFluids(arr){
+  let n = 0;
+  (arr || []).forEach(function(f){
+    if(!f.brand || !f.description || (!f.part_number && !f.engineering_part_number)) return;
+    localData = localData.filter(function(x){ return keyOf(x) !== keyOf(f); });
+    localData.push(f);
+    n++;
+  });
+  localLog.unshift({timestamp:stamp(), type:"import", title:"Imported fluids", details:"Imported/merged " + n + " rows", brand:"All"});
+  saveLocal();
+  rebuild();
+  render();
+  renderChangeLog();
+  alert("Imported/merged " + n + " fluids.");
+}
+function importJSON(event){
+  if(!requireEditPassword()) return;
+  const file = event.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = function(){
+    try{
+      const arr = JSON.parse(reader.result);
+      if(!Array.isArray(arr)) throw new Error("JSON must be an array");
+      mergeFluids(arr);
+    }catch(e){
+      alert("JSON import failed: " + e.message);
+    }
+    event.target.value = "";
+  };
+  reader.readAsText(file);
+}
+function parseCSV(text){
+  const rows = [];
+  let row = [];
+  let cur = "";
+  let quote = false;
+  for(let i = 0; i < text.length; i++){
+    const ch = text[i];
+    const nx = text[i+1];
+    if(quote){
+      if(ch === '"' && nx === '"'){ cur += '"'; i++; }
+      else if(ch === '"') quote = false;
+      else cur += ch;
+    }else{
+      if(ch === '"') quote = true;
+      else if(ch === ","){ row.push(cur); cur = ""; }
+      else if(ch === "\n"){ row.push(cur); rows.push(row); row = []; cur = ""; }
+      else if(ch !== "\r") cur += ch;
+    }
+  }
+  row.push(cur);
+  rows.push(row);
+  return rows.filter(function(r){ return r.some(function(c){ return String(c).trim(); }); });
+}
+function importCSV(event){
+  if(!requireEditPassword()) return;
+  const file = event.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = function(){
+    try{
+      const rows = parseCSV(reader.result);
+      const head = rows.shift().map(function(h){ return h.trim(); });
+      mergeFluids(rows.map(function(row){
+        const o = {};
+        head.forEach(function(h, i){ o[h] = row[i] || ""; });
+        return o;
+      }));
+    }catch(e){
+      alert("CSV import failed: " + e.message);
+    }
+    event.target.value = "";
+  };
+  reader.readAsText(file);
+}
 reloadSiteData();
-</script></body></html>
+</script>
+</body>
+</html>
