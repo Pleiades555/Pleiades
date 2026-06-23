@@ -716,5 +716,34 @@
         }
       ]
     }
+  },
+  "26-2274": {
+    "staticParts": [
+      {
+        "partNumber": "MB3Z2200A",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Kit - Rear Brake Pads",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "MB3Z2C2C028J",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Shield - Rear Brake Disc (RH)",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "MB3Z2C2C028K",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Shield - Rear Brake Disc (LH)",
+        "comments": "",
+        "note": ""
+      }
+    ],
+    "variants": {}
   }
 }
