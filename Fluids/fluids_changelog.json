@@ -1,37 +1,9 @@
 [
   {
-    "timestamp": "2026-06-22 00:31:14",
-    "type": "add",
-    "title": "Added VC13G",
-    "details": "Brand: Ford | Spec: WSS-M97B57-A2 | General: Yellow P-OAT Coolant | Previous: 119001, R152C20L, LU2J19544GCA, AVC13AP",
-    "brand": "Ford"
-  },
-  {
-    "timestamp": "2026-06-22 00:29:49",
-    "type": "add",
-    "title": "Added VC13DLG",
-    "details": "Brand: Ford | Spec: WSS-M97B57-A2 | General: Yellow P-OAT Coolant | Previous: LU2J19544FBA, AVC13DLAP",
-    "brand": "Ford"
-  },
-  {
-    "timestamp": "2026-06-22 00:27:22",
-    "type": "add",
-    "title": "Added R139500ML",
-    "details": "Brand: Ford | Spec: ESZM6C55A | General: Dot 4 | Previous: R139, R139A, 3372595",
-    "brand": "Ford"
-  },
-  {
-    "timestamp": "2026-06-22 00:25:32",
-    "type": "add",
-    "title": "Added WSSM6C65A2MC",
-    "details": "Brand: Ford | Spec: WSSM6C65A2MC | General: Super Dot 4 | Previous: ",
-    "brand": "Ford"
-  },
-  {
     "timestamp": "",
-    "type": "system",
-    "title": "Multi-brand fluids hub created",
-    "details": "Initial hub created with 58 Australian-market brand filters and template rows.",
+    "type": "import",
+    "title": "CSV fluid database import with Option B cross-reference",
+    "details": "Imported 87 CSV rows and generated 15 additional/reverse compatibility entries. Spec-based cross-links created from matching brand spec, general spec and industry standard.",
     "brand": "All"
   }
 ]
