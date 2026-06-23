@@ -58,10 +58,35 @@
     "manualOnly": false,
     "searchText": "26-2274 tsb accelerated wear of the rear inner brake pads or scraping and - grinding noises ranger 2021-2026 2026-06-17 2026-06-17 some 2021-2026 next-generation ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes. current 26-2274.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "MB3Z2200A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Kit - Rear Brake Pads",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "MB3Z2C2C028J",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Shield - Rear Brake Disc (RH)",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "MB3Z2C2C028K",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Shield - Rear Brake Disc (LH)",
+          "comments": "",
+          "note": ""
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "25-2388"
