@@ -1172,6 +1172,41 @@
     }
   },
   {
+    "number": "26-2208",
+    "tsbNumber": "26-2208",
+    "bulletinNumber": "26-2208",
+    "displayNumber": "26-2208",
+    "type": "TSB",
+    "title": "Harsh Shifts Between 3rd And 5th Gears And/Or Harsh Reverse - Engagement, Symptoms Worse When Cold",
+    "model": "Mustang, Transit, F-150, Explorer, Expedition",
+    "years": [
+      "2022-2023",
+      "2022-2024"
+    ],
+    "yearRange": "2022-2023, 2022-2024",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above may exhibit at least one of the following",
+    "concern": "Some of the vehicles listed in the Model statement above may exhibit at least one of the following",
+    "description": "Some of the vehicles listed in the Model statement above may exhibit at least one of the following",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2208.pdf",
+    "filename": "26-2208.pdf",
+    "manualOnly": false,
+    "searchText": "26-2208 tsb harsh shifts between 3rd and 5th gears and/or harsh reverse - engagement, symptoms worse when cold mustang, transit, f-150, explorer, expedition 2022-2023, 2022-2024 some of the vehicles listed in the model statement above may exhibit at least one of the following current 26-2208.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2177",
     "tsbNumber": "26-2177",
     "bulletinNumber": "26-2177",
@@ -1595,6 +1630,38 @@
     "filename": "23-2173.pdf",
     "manualOnly": false,
     "searchText": "23-2173 tsb 22/08/2023, 14:00 - 2022 ranger - ra ranger, everest, ra, bf 2022-2023 some 2022-2023 ranger/everest vehicles (see applicable vehicles above) equipped with a 3.0l (lion) engine, may exhibit an illuminated malfunction indicator lamp (mil) with one or more of the following diagnostic trouble codes (dtc's): p0671/p0672/p0673/p0674/p0675/p0676, p066a/p066c/p066e, p067a/p067c/p067e or p06b9/p06ba/p06bc/p06bd/p06be. current 23-2173.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "22N08",
+    "tsbNumber": "22N08",
+    "bulletinNumber": "22N08",
+    "displayNumber": "22N08",
+    "type": "TSB",
+    "title": "\u0003\u0004\u0005\u0006\u0007\u0002\b\u0005 - \u0003\u0014\u0015\u0016\u0002\u0017\u0014\u0018\u0014\u0015\u0002",
+    "model": "FG",
+    "years": [],
+    "yearRange": "",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "\u0003\u0004\u0005\u0006\u0007\u0002\b\u0005 - \u0003\u0014\u0015\u0016\u0002\u0017\u0014\u0018\u0014\u0015\u0002",
+    "concern": "\u0003\u0004\u0005\u0006\u0007\u0002\b\u0005 - \u0003\u0014\u0015\u0016\u0002\u0017\u0014\u0018\u0014\u0015\u0002",
+    "description": "\u0003\u0004\u0005\u0006\u0007\u0002\b\u0005 - \u0003\u0014\u0015\u0016\u0002\u0017\u0014\u0018\u0014\u0015\u0002",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/22N08.pdf",
+    "filename": "22N08.pdf",
+    "manualOnly": false,
+    "searchText": "22n08 tsb \u0003\u0004\u0005\u0006\u0007\u0002\b\u0005 - \u0003\u0014\u0015\u0016\u0002\u0017\u0014\u0018\u0014\u0015\u0002 fg \u0003\u0004\u0005\u0006\u0007\u0002\b\u0005 - \u0003\u0014\u0015\u0016\u0002\u0017\u0014\u0018\u0014\u0015\u0002 current 22n08.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
