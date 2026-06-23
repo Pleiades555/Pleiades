@@ -32,6 +32,44 @@
     }
   },
   {
+    "number": "26-2274",
+    "tsbNumber": "26-2274",
+    "bulletinNumber": "26-2274",
+    "displayNumber": "26-2274",
+    "type": "TSB",
+    "title": "Accelerated Wear Of The Rear Inner Brake Pads Or Scraping And - Grinding Noises",
+    "model": "Ranger",
+    "years": [
+      "2021-2026"
+    ],
+    "yearRange": "2021-2026",
+    "fordUploadDate": "2026-06-17",
+    "issueDate": "2026-06-17",
+    "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "description": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
+    "status": "Current",
+    "supersedes": [
+      "25-2388"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2274.pdf",
+    "filename": "26-2274.pdf",
+    "manualOnly": false,
+    "searchText": "26-2274 tsb accelerated wear of the rear inner brake pads or scraping and - grinding noises ranger 2021-2026 2026-06-17 2026-06-17 some 2021-2026 next-generation ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes. current 26-2274.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "25-2388"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2215",
     "tsbNumber": "26-2215",
     "bulletinNumber": "26-2215",
@@ -844,44 +882,6 @@
     "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2274",
-    "tsbNumber": "26-2274",
-    "bulletinNumber": "26-2274",
-    "displayNumber": "26-2274",
-    "type": "TSB",
-    "title": "Accelerated Wear Of The Rear Inner Brake Pads Or Scraping And - Grinding Noises",
-    "model": "Ranger",
-    "years": [
-      "2021-2026"
-    ],
-    "yearRange": "2021-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
-    "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
-    "description": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
-    "status": "Current",
-    "supersedes": [
-      "25-2388"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2274.pdf",
-    "filename": "26-2274.pdf",
-    "manualOnly": false,
-    "searchText": "26-2274 tsb accelerated wear of the rear inner brake pads or scraping and - grinding noises ranger 2021-2026 some 2021-2026 next-generation ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes. current 26-2274.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [
-        "25-2388"
-      ],
       "supersededBy": []
     }
   },
