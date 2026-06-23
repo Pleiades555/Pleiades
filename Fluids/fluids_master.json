@@ -383,7 +383,7 @@
     "part_number": "VC13G",
     "description": "Yellow Coolant - Concentrate",
     "volume": "3.78L",
-    "brand_spec": "WSS-M97B57-A2",
+    "brand_spec": "WSSM97B57A2",
     "general_spec": "Yellow P-OAT Coolant",
     "industry_standard": "ASTM D3306",
     "uses_in_brand": "Coolant/Antifreeze",
@@ -391,7 +391,7 @@
     "compatible_substitutes": "",
     "notes": "General Purpose, Supersession of WSSM97B44D",
     "source": "AW",
-    "updated": ""
+    "updated": "2026-06-23 03:15:44"
   },
   {
     "brand": "Ford",
@@ -399,7 +399,7 @@
     "part_number": "VC13DLG",
     "description": "Yellow Coolant - Diluted",
     "volume": "3.78L",
-    "brand_spec": "WSS-M97B57-A2",
+    "brand_spec": "WSSM97B57A2",
     "general_spec": "Yellow P-OAT Coolant",
     "industry_standard": "TBC",
     "uses_in_brand": "Coolant/Antifreeze",
@@ -407,7 +407,7 @@
     "compatible_substitutes": "",
     "notes": "General Purpose, Supersession of WSSM97B44D",
     "source": "AW",
-    "updated": ""
+    "updated": "2026-06-23 03:16:03"
   },
   {
     "brand": "GM",
