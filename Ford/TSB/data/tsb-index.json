@@ -1032,6 +1032,44 @@
     }
   },
   {
+    "number": "26-2234",
+    "tsbNumber": "26-2234",
+    "bulletinNumber": "26-2234",
+    "displayNumber": "26-2234",
+    "type": "TSB",
+    "title": "Various Driver Assistance System Warning Messages - DTCs C1001:31, - U3000:89, And/Or U3000:49 Stored In The IPMA",
+    "model": "Mustang",
+    "years": [
+      "2021-2023"
+    ],
+    "yearRange": "2021-2023",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to a connection issue between the IPMA camera and the IPMA.",
+    "concern": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to a connection issue between the IPMA camera and the IPMA.",
+    "description": "Some of the vehicles listed in the Model statement above may exhibit DTCs C1001:31, U3000:89, and/or U3000:49 stored in the IPMA and at least one of the following conditions • \"Front Camera Fault Service Required\" message. • Pre-collision assist inoperative. • Adaptive cruise control inoperative. • Front windshield camera alignment routine fails to complete. This may be due to a connection issue between the IPMA camera and the IPMA.",
+    "status": "Current",
+    "supersedes": [
+      "26-2068"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2234.pdf",
+    "filename": "26-2234.pdf",
+    "manualOnly": false,
+    "searchText": "26-2234 tsb various driver assistance system warning messages - dtcs c1001:31, - u3000:89, and/or u3000:49 stored in the ipma mustang 2021-2023 some of the vehicles listed in the model statement above may exhibit dtcs c1001:31, u3000:89, and/or u3000:49 stored in the ipma and at least one of the following conditions • \"front camera fault service required\" message. • pre-collision assist inoperative. • adaptive cruise control inoperative. • front windshield camera alignment routine fails to complete. this may be due to a connection issue between the ipma camera and the ipma. current 26-2234.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "26-2068"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2232",
     "tsbNumber": "26-2232",
     "bulletinNumber": "26-2232",
@@ -1312,6 +1350,40 @@
     }
   },
   {
+    "number": "26-2111",
+    "tsbNumber": "26-2111",
+    "bulletinNumber": "26-2111",
+    "displayNumber": "26-2111",
+    "type": "TSB",
+    "title": "Liftgate Mounted Rear Lamp - Child Part Service Procedure - 15 June 2026",
+    "model": "Everest",
+    "years": [
+      "2021-2026"
+    ],
+    "yearRange": "2021-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Dealers are advised that when replacing the liftgate mounted rear lamp on 2021-2026 Next-Generation Everest vehicles for the following concerns (see below), to ensure the most economical service part replacement is performed. Applicable to the following concerns • Lamp lens cracked • Lamp condensation • Lamp inoperable This TSB refers to service part availability and procedures for replacing the liftgate mounted rear lamp, less the electrical components.",
+    "concern": "Dealers are advised that when replacing the liftgate mounted rear lamp on 2021-2026 Next-Generation Everest vehicles for the following concerns (see below), to ensure the most economical service part replacement is performed. Applicable to the following concerns • Lamp lens cracked • Lamp condensation • Lamp inoperable This TSB refers to service part availability and procedures for replacing the liftgate mounted rear lamp, less the electrical components.",
+    "description": "Dealers are advised that when replacing the liftgate mounted rear lamp on 2021-2026 Next-Generation Everest vehicles for the following concerns (see below), to ensure the most economical service part replacement is performed. Applicable to the following concerns • Lamp lens cracked • Lamp condensation • Lamp inoperable This TSB refers to service part availability and procedures for replacing the liftgate mounted rear lamp, less the electrical components.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2111.pdf",
+    "filename": "26-2111.pdf",
+    "manualOnly": false,
+    "searchText": "26-2111 tsb liftgate mounted rear lamp - child part service procedure - 15 june 2026 everest 2021-2026 dealers are advised that when replacing the liftgate mounted rear lamp on 2021-2026 next-generation everest vehicles for the following concerns (see below), to ensure the most economical service part replacement is performed. applicable to the following concerns • lamp lens cracked • lamp condensation • lamp inoperable this tsb refers to service part availability and procedures for replacing the liftgate mounted rear lamp, less the electrical components. current 26-2111.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2105",
     "tsbNumber": "26-2105",
     "bulletinNumber": "26-2105",
@@ -1419,6 +1491,48 @@
     "filename": "26-2072.pdf",
     "manualOnly": false,
     "searchText": "26-2072 tsb no start/no crank in cold condition - 27 may 2026 transit 2023-2025 some 2023-2025 transit custom vehicles built to 16-jun-2025 equipped with a 2.0l (panther) engine may exhibit a no start/no crank in cold condition. this concern may be caused due to blown fuse (275 a) in the auxiliary battery fuse box. this issue, primarily observed in the scandinavian markets, arises from water entering the engine cylinders. under sub-zero temperatures, condensation builds up within the water charge air cooler (wcac). additionally, moisture from the low-pressure egr system con current 26-2072.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2040",
+    "tsbNumber": "26-2040",
+    "bulletinNumber": "26-2040",
+    "displayNumber": "26-2040",
+    "type": "TSB",
+    "title": "Headliner Rattle Or Sagging Around Roof Opening Panel - 17 June 2026",
+    "model": "Escape, F-150, Bronco, Edge, Maverick",
+    "years": [
+      "2019-2020",
+      "2019-2023",
+      "2019-2024",
+      "2020-2026",
+      "2021-2023",
+      "2021-2025",
+      "2021-2026",
+      "2022-2026",
+      "2023-2025"
+    ],
+    "yearRange": "2019-2020, 2019-2023, 2019-2024, 2020-2026, 2021-2023, 2021-2025, 2021-2026, 2022-2026, 2023-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above may exhibit a headliner rattle or sagging condition around the roof opening panel. This may be due to the adhesive separating from the headliner substrate.",
+    "concern": "Some of the vehicles listed in the Model statement above may exhibit a headliner rattle or sagging condition around the roof opening panel. This may be due to the adhesive separating from the headliner substrate.",
+    "description": "Some of the vehicles listed in the Model statement above may exhibit a headliner rattle or sagging condition around the roof opening panel. This may be due to the adhesive separating from the headliner substrate.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2040.pdf",
+    "filename": "26-2040.pdf",
+    "manualOnly": false,
+    "searchText": "26-2040 tsb headliner rattle or sagging around roof opening panel - 17 june 2026 escape, f-150, bronco, edge, maverick 2019-2020, 2019-2023, 2019-2024, 2020-2026, 2021-2023, 2021-2025, 2021-2026, 2022-2026, 2023-2025 some of the vehicles listed in the model statement above may exhibit a headliner rattle or sagging condition around the roof opening panel. this may be due to the adhesive separating from the headliner substrate. current 26-2040.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
