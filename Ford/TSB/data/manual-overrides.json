@@ -66,5 +66,15 @@
     "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
     "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
     "status": "Current"
+  },
+  "21P08": {
+    "title": "Endura - 2.0L EcoBlue (Panther) EGR Mesh Filter Blockage",
+    "model": "Endura",
+    "yearRange": "2018-2020",
+    "fordUploadDate": "2021-06-23",
+    "issueDate": "2021-06-23",
+    "symptom": "21P08",
+    "concern": "21P08",
+    "status": "Current"
   }
 }
