@@ -153,6 +153,57 @@
     }
   },
   {
+    "number": "26-2253",
+    "tsbNumber": "26-2253",
+    "bulletinNumber": "26-2253",
+    "displayNumber": "26-2253",
+    "type": "TSB",
+    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
+    "model": "Ranger, Everest, Raptor",
+    "years": [
+      "2022-2026"
+    ],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "2026-05-27",
+    "issueDate": "",
+    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "description": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2253.pdf",
+    "filename": "26-2253.pdf",
+    "manualOnly": false,
+    "searchText": "26-2253 tsb illuminated airbag warning lamp with diagnostic trouble codes (dtcs) - b1405-13 and/or b1408-13 ranger, everest, raptor 2022-2026 2026-05-27 some 2022–2026 next-generation ranger, raptor, and everest vehicles may exhibit an illuminated airbag warning lamp with dtcs b1405-13 and/or b1408-13 in the instrument panel cluster (ipc) or fordpass application; • intermittent or active airbag warning indicator lamp. • fordpass application warning message; safety control module detected a fault in the inflatable curtain circuit. current 26-2253.pdf",
+    "parts": {
+      "staticParts": [
+        {
+          "partNumber": "DU2Z14474CA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Terminal Wire",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "BU2Z14S411BHA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Kit Wire Assembly",
+          "comments": "",
+          "note": ""
+        }
+      ],
+      "variants": {}
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "25SE6",
     "tsbNumber": "25SE6",
     "bulletinNumber": "25SE6",
@@ -962,40 +1013,6 @@
       }
     },
     "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2253",
-    "tsbNumber": "26-2253",
-    "bulletinNumber": "26-2253",
-    "displayNumber": "26-2253",
-    "type": "TSB",
-    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
-    "model": "Ranger, Everest",
-    "years": [
-      "2022-2026"
-    ],
-    "yearRange": "2022-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "description": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2253.pdf",
-    "filename": "26-2253.pdf",
-    "manualOnly": false,
-    "searchText": "26-2253 tsb illuminated airbag warning lamp with diagnostic trouble codes (dtcs) - b1405-13 and/or b1408-13 ranger, everest 2022-2026 some 2022–2026 next-generation ranger, raptor, and everest vehicles may exhibit an illuminated airbag warning lamp with dtcs b1405-13 and/or b1408-13 in the instrument panel cluster (ipc) or fordpass application; • intermittent or active airbag warning indicator lamp. • fordpass application warning message; safety control module detected a fault in the inflatable curtain circuit. current 26-2253.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
