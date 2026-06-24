@@ -702,6 +702,38 @@
     }
   },
   {
+    "number": "21P08",
+    "tsbNumber": "21P08",
+    "bulletinNumber": "21P08",
+    "displayNumber": "21P08",
+    "type": "FSA",
+    "title": "Endura - 2.0L EcoBlue (Panther) EGR Mesh Filter Blockage",
+    "model": "Endura",
+    "years": [],
+    "yearRange": "2018-2020",
+    "fordUploadDate": "2021-06-23",
+    "issueDate": "2021-06-23",
+    "symptom": "21P08",
+    "concern": "21P08",
+    "description": "21P08",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/21P08.pdf",
+    "filename": "21P08.pdf",
+    "manualOnly": false,
+    "searchText": "21p08 fsa endura - 2.0l ecoblue (panther) egr mesh filter blockage endura 2018-2020 2021-06-23 2021-06-23 21p08 current 21p08.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "15S24",
     "tsbNumber": "15S24",
     "bulletinNumber": "15S24",
@@ -2510,38 +2542,6 @@
     "filename": "21P14.pdf",
     "manualOnly": false,
     "searchText": "21p14 fsa dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit ranger dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit current 21p14.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "21P08",
-    "tsbNumber": "21P08",
-    "bulletinNumber": "21P08",
-    "displayNumber": "21P08",
-    "type": "FSA",
-    "title": "",
-    "model": "",
-    "years": [],
-    "yearRange": "",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "21P08",
-    "concern": "21P08",
-    "description": "21P08",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/21P08.pdf",
-    "filename": "21P08.pdf",
-    "manualOnly": false,
-    "searchText": "21p08 fsa 21p08 current 21p08.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
