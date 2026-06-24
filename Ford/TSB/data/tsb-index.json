@@ -724,10 +724,35 @@
     "manualOnly": false,
     "searchText": "21p08 fsa endura - 2.0l ecoblue (panther) egr mesh filter blockage endura 2018-2020 2021-06-23 2021-06-23 21p08 current 21p08.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "HG9Z9J469B",
+          "qty": "1",
+          "quantity": "1",
+          "description": "EGR Mesh Filter/ Gasket",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "HG9Z8527A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "28.85mm O-Ring",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "N/A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Distilled Water",
+          "comments": "500ml",
+          "note": "500ml"
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
