@@ -66,5 +66,24 @@
     "symptom": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
     "concern": "Some 2021-2026 Next-Generation Ranger vehicles equipped with rear disc brakes, may present with abnormal and accelerated rear brake wear affecting only the inner pads, or scraping and/or grinding noises coming from the rear brakes.",
     "status": "Current"
+  },
+  "21P08": {
+    "title": "Endura - 2.0L EcoBlue (Panther) EGR Mesh Filter Blockage",
+    "model": "Endura",
+    "yearRange": "2018-2020",
+    "fordUploadDate": "2021-06-23",
+    "issueDate": "2021-06-23",
+    "symptom": "21P08",
+    "concern": "21P08",
+    "status": "Current"
+  },
+  "26-2253": {
+    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
+    "model": "Ranger, Everest, Raptor",
+    "yearRange": "2022-2026",
+    "fordUploadDate": "2026-05-27",
+    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "status": "Current"
   }
 }

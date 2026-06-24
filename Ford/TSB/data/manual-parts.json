@@ -745,5 +745,55 @@
       }
     ],
     "variants": {}
+  },
+  "21P08": {
+    "staticParts": [
+      {
+        "partNumber": "HG9Z9J469B",
+        "qty": "1",
+        "quantity": "1",
+        "description": "EGR Mesh Filter/ Gasket",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "HG9Z8527A",
+        "qty": "1",
+        "quantity": "1",
+        "description": "28.85mm O-Ring",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "N/A",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Distilled Water",
+        "comments": "500ml",
+        "note": "500ml"
+      }
+    ],
+    "variants": {}
+  },
+  "26-2253": {
+    "staticParts": [
+      {
+        "partNumber": "DU2Z14474CA",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Terminal Wire",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "BU2Z14S411BHA",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Kit Wire Assembly",
+        "comments": "",
+        "note": ""
+      }
+    ],
+    "variants": {}
   }
 }

@@ -153,6 +153,57 @@
     }
   },
   {
+    "number": "26-2253",
+    "tsbNumber": "26-2253",
+    "bulletinNumber": "26-2253",
+    "displayNumber": "26-2253",
+    "type": "TSB",
+    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
+    "model": "Ranger, Everest, Raptor",
+    "years": [
+      "2022-2026"
+    ],
+    "yearRange": "2022-2026",
+    "fordUploadDate": "2026-05-27",
+    "issueDate": "",
+    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "description": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2253.pdf",
+    "filename": "26-2253.pdf",
+    "manualOnly": false,
+    "searchText": "26-2253 tsb illuminated airbag warning lamp with diagnostic trouble codes (dtcs) - b1405-13 and/or b1408-13 ranger, everest, raptor 2022-2026 2026-05-27 some 2022–2026 next-generation ranger, raptor, and everest vehicles may exhibit an illuminated airbag warning lamp with dtcs b1405-13 and/or b1408-13 in the instrument panel cluster (ipc) or fordpass application; • intermittent or active airbag warning indicator lamp. • fordpass application warning message; safety control module detected a fault in the inflatable curtain circuit. current 26-2253.pdf",
+    "parts": {
+      "staticParts": [
+        {
+          "partNumber": "DU2Z14474CA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Terminal Wire",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "BU2Z14S411BHA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Kit Wire Assembly",
+          "comments": "",
+          "note": ""
+        }
+      ],
+      "variants": {}
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "25SE6",
     "tsbNumber": "25SE6",
     "bulletinNumber": "25SE6",
@@ -702,6 +753,63 @@
     }
   },
   {
+    "number": "21P08",
+    "tsbNumber": "21P08",
+    "bulletinNumber": "21P08",
+    "displayNumber": "21P08",
+    "type": "FSA",
+    "title": "Endura - 2.0L EcoBlue (Panther) EGR Mesh Filter Blockage",
+    "model": "Endura",
+    "years": [],
+    "yearRange": "2018-2020",
+    "fordUploadDate": "2021-06-23",
+    "issueDate": "2021-06-23",
+    "symptom": "21P08",
+    "concern": "21P08",
+    "description": "21P08",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/21P08.pdf",
+    "filename": "21P08.pdf",
+    "manualOnly": false,
+    "searchText": "21p08 fsa endura - 2.0l ecoblue (panther) egr mesh filter blockage endura 2018-2020 2021-06-23 2021-06-23 21p08 current 21p08.pdf",
+    "parts": {
+      "staticParts": [
+        {
+          "partNumber": "HG9Z9J469B",
+          "qty": "1",
+          "quantity": "1",
+          "description": "EGR Mesh Filter/ Gasket",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "HG9Z8527A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "28.85mm O-Ring",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "N/A",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Distilled Water",
+          "comments": "500ml",
+          "note": "500ml"
+        }
+      ],
+      "variants": {}
+    },
+    "hasManualParts": true,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "15S24",
     "tsbNumber": "15S24",
     "bulletinNumber": "15S24",
@@ -905,40 +1013,6 @@
       }
     },
     "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2253",
-    "tsbNumber": "26-2253",
-    "bulletinNumber": "26-2253",
-    "displayNumber": "26-2253",
-    "type": "TSB",
-    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
-    "model": "Ranger, Everest",
-    "years": [
-      "2022-2026"
-    ],
-    "yearRange": "2022-2026",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "description": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2253.pdf",
-    "filename": "26-2253.pdf",
-    "manualOnly": false,
-    "searchText": "26-2253 tsb illuminated airbag warning lamp with diagnostic trouble codes (dtcs) - b1405-13 and/or b1408-13 ranger, everest 2022-2026 some 2022–2026 next-generation ranger, raptor, and everest vehicles may exhibit an illuminated airbag warning lamp with dtcs b1405-13 and/or b1408-13 in the instrument panel cluster (ipc) or fordpass application; • intermittent or active airbag warning indicator lamp. • fordpass application warning message; safety control module detected a fault in the inflatable curtain circuit. current 26-2253.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
@@ -2510,38 +2584,6 @@
     "filename": "21P14.pdf",
     "manualOnly": false,
     "searchText": "21p14 fsa dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit ranger dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit current 21p14.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "21P08",
-    "tsbNumber": "21P08",
-    "bulletinNumber": "21P08",
-    "displayNumber": "21P08",
-    "type": "FSA",
-    "title": "",
-    "model": "",
-    "years": [],
-    "yearRange": "",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "21P08",
-    "concern": "21P08",
-    "description": "21P08",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/21P08.pdf",
-    "filename": "21P08.pdf",
-    "manualOnly": false,
-    "searchText": "21p08 fsa 21p08 current 21p08.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
