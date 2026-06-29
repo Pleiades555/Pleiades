@@ -810,6 +810,44 @@
     }
   },
   {
+    "number": "20-2193",
+    "tsbNumber": "20-2193",
+    "bulletinNumber": "20-2193",
+    "displayNumber": "20-2193",
+    "type": "TSB",
+    "title": "Vehicles Equipped With A 2.0L (Panther) Engine And 10R80 Transmission - Loss Of Motive Power With DTC P0868",
+    "model": "Ranger, Everest",
+    "years": [
+      "2018-2019"
+    ],
+    "yearRange": "2018-2019",
+    "fordUploadDate": "2020-08-20",
+    "issueDate": "",
+    "symptom": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
+    "concern": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
+    "description": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
+    "status": "Current",
+    "supersedes": [
+      "19-2350"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/20-2193.pdf",
+    "filename": "20-2193.pdf",
+    "manualOnly": false,
+    "searchText": "20-2193 tsb vehicles equipped with a 2.0l (panther) engine and 10r80 transmission - loss of motive power with dtc p0868 ranger, everest 2018-2019 2020-08-20 some 2018-2019 ranger and everest vehicles equipped with a 2.0l (panther) engine and 10r80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with diagnostic trouble code (dtc) p0868. other dtcs may also be present. current 20-2193.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "19-2350"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "15S24",
     "tsbNumber": "15S24",
     "bulletinNumber": "15S24",
@@ -2026,44 +2064,6 @@
     "supersessionLinks": {
       "supersedes": [
         "20-2280"
-      ],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "20-2193",
-    "tsbNumber": "20-2193",
-    "bulletinNumber": "20-2193",
-    "displayNumber": "20-2193",
-    "type": "TSB",
-    "title": "https://www.fordtechservice.dealerconnection.com - Transmission - Loss Of Motive Power With DTC P0868",
-    "model": "Ranger, Everest",
-    "years": [
-      "2018-2019"
-    ],
-    "yearRange": "2018-2019",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
-    "concern": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
-    "description": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
-    "status": "Current",
-    "supersedes": [
-      "19-2350"
-    ],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/20-2193.pdf",
-    "filename": "20-2193.pdf",
-    "manualOnly": false,
-    "searchText": "20-2193 tsb https://www.fordtechservice.dealerconnection.com - transmission - loss of motive power with dtc p0868 ranger, everest 2018-2019 some 2018-2019 ranger and everest vehicles equipped with a 2.0l (panther) engine and 10r80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with diagnostic trouble code (dtc) p0868. other dtcs may also be present. current 20-2193.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
-    "supersessionLinks": {
-      "supersedes": [
-        "19-2350"
       ],
       "supersededBy": []
     }
