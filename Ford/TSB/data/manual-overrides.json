@@ -85,5 +85,14 @@
     "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
     "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or FordPass application; • Intermittent or active airbag warning indicator lamp. • FordPass application warning message; Safety control module detected a fault in the inflatable curtain circuit.",
     "status": "Current"
+  },
+  "20-2193": {
+    "title": "Vehicles Equipped With A 2.0L (Panther) Engine And 10R80 Transmission - Loss Of Motive Power With DTC P0868",
+    "model": "Ranger, Everest",
+    "yearRange": "2018-2019",
+    "fordUploadDate": "2020-08-20",
+    "symptom": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
+    "concern": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
+    "status": "Current"
   }
 }
