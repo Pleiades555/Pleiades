@@ -1548,6 +1548,40 @@
     }
   },
   {
+    "number": "26-2292",
+    "tsbNumber": "26-2292",
+    "bulletinNumber": "26-2292",
+    "displayNumber": "26-2292",
+    "type": "TSB",
+    "title": "Engine Misfire With An Illuminated MIL And DTC(s) P0301, P0302, P0303, - And/Or P0304 Stored In The PCM",
+    "model": "Everest, Mustang, Bronco, Explorer",
+    "years": [
+      "2024-2025"
+    ],
+    "yearRange": "2024-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some of the vehicles listed in the Model statement above may exhibit all of the following conditions • Engine misfire condition. • Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
+    "concern": "Some of the vehicles listed in the Model statement above may exhibit all of the following conditions • Engine misfire condition. • Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
+    "description": "Some of the vehicles listed in the Model statement above may exhibit all of the following conditions • Engine misfire condition. • Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2292.pdf",
+    "filename": "26-2292.pdf",
+    "manualOnly": false,
+    "searchText": "26-2292 tsb engine misfire with an illuminated mil and dtc(s) p0301, p0302, p0303, - and/or p0304 stored in the pcm everest, mustang, bronco, explorer 2024-2025 some of the vehicles listed in the model statement above may exhibit all of the following conditions • engine misfire condition. • illuminated mil with dtcs p0301, p0302, p0303, and/or p0304 stored in the pcm. current 26-2292.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2249",
     "tsbNumber": "26-2249",
     "bulletinNumber": "26-2249",
@@ -1728,6 +1762,44 @@
     "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "26-2230",
+    "tsbNumber": "26-2230",
+    "bulletinNumber": "26-2230",
+    "displayNumber": "26-2230",
+    "type": "TSB",
+    "title": "400 Watt DC/AC Inverter System Inoperative With B1330:9A In The BCM - 24 June 2026",
+    "model": "Everest, F-150",
+    "years": [
+      "2021-2025"
+    ],
+    "yearRange": "2021-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "This article supersedes TSB 24-2443 to update the vehicles affected.Some of the vehicles listed in the Model statement above equipped with the 400-watt direct current/alternating current DC/AC inverter system (minor feature code HUKAJ) with a pickup bed AC power outlet socket may exhibit inoperative power outlets with DTC B1330:9A stored in the BCM. This may be due to a connection issue at C4628.",
+    "concern": "This article supersedes TSB 24-2443 to update the vehicles affected.Some of the vehicles listed in the Model statement above equipped with the 400-watt direct current/alternating current DC/AC inverter system (minor feature code HUKAJ) with a pickup bed AC power outlet socket may exhibit inoperative power outlets with DTC B1330:9A stored in the BCM. This may be due to a connection issue at C4628.",
+    "description": "This article supersedes TSB 24-2443 to update the vehicles affected.Some of the vehicles listed in the Model statement above equipped with the 400-watt direct current/alternating current DC/AC inverter system (minor feature code HUKAJ) with a pickup bed AC power outlet socket may exhibit inoperative power outlets with DTC B1330:9A stored in the BCM. This may be due to a connection issue at C4628.",
+    "status": "Current",
+    "supersedes": [
+      "24-2443"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2230.pdf",
+    "filename": "26-2230.pdf",
+    "manualOnly": false,
+    "searchText": "26-2230 tsb 400 watt dc/ac inverter system inoperative with b1330:9a in the bcm - 24 june 2026 everest, f-150 2021-2025 this article supersedes tsb 24-2443 to update the vehicles affected.some of the vehicles listed in the model statement above equipped with the 400-watt direct current/alternating current dc/ac inverter system (minor feature code hukaj) with a pickup bed ac power outlet socket may exhibit inoperative power outlets with dtc b1330:9a stored in the bcm. this may be due to a connection issue at c4628. current 26-2230.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "24-2443"
+      ],
       "supersededBy": []
     }
   },
@@ -2205,6 +2277,46 @@
     "supersessionLinks": {
       "supersedes": [
         "24-2271"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
+    "number": "24-2130",
+    "tsbNumber": "24-2130",
+    "bulletinNumber": "24-2130",
+    "displayNumber": "24-2130",
+    "type": "TSB",
+    "title": "Malfunction Indicator Lamp (MIL) With Diagnostic Trouble Code (DTC) - 28 June 2026",
+    "model": "Everest, Transit",
+    "years": [
+      "2019-2024"
+    ],
+    "yearRange": "2019-2024",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2019-2024 Transit vehicles equipped with a 2.0L (Panther) engine may experience an illuminated MIL with DTC P2002-00-**.",
+    "concern": "Some 2019-2024 Transit vehicles equipped with a 2.0L (Panther) engine may experience an illuminated MIL with DTC P2002-00-**.",
+    "description": "Some 2019-2024 Transit vehicles equipped with a 2.0L (Panther) engine may experience an illuminated MIL with DTC P2002-00-**.",
+    "status": "Current",
+    "supersedes": [
+      "21-2416",
+      "22-2482"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/24-2130.pdf",
+    "filename": "24-2130.pdf",
+    "manualOnly": false,
+    "searchText": "24-2130 tsb malfunction indicator lamp (mil) with diagnostic trouble code (dtc) - 28 june 2026 everest, transit 2019-2024 some 2019-2024 transit vehicles equipped with a 2.0l (panther) engine may experience an illuminated mil with dtc p2002-00-**. current 24-2130.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "21-2416",
+        "22-2482"
       ],
       "supersededBy": []
     }
