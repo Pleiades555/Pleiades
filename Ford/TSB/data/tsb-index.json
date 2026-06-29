@@ -837,9 +837,500 @@
     "searchText": "20-2193 tsb vehicles equipped with a 2.0l (panther) engine and 10r80 transmission - loss of motive power with dtc p0868 ranger, everest 2018-2019 2020-08-20 some 2018-2019 ranger and everest vehicles equipped with a 2.0l (panther) engine and 10r80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with diagnostic trouble code (dtc) p0868. other dtcs may also be present. current 20-2193.pdf",
     "parts": {
       "staticParts": [],
-      "variants": {}
+      "variants": {
+        "Everest 4X4": [
+          {
+            "partNumber": "EB3G10R80K1TA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Everest 4x4 10R80 Kit",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto-Stop Start",
+            "note": "Auto-Stop Start"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W718158S300",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retaining Ring, Pump Driven Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7J048A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Driven Gear (Pump)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7177A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Drive Gear (Torque Converter)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7025A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Bearing, Idler Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Idler Gear",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Everest 4X2": [
+          {
+            "partNumber": "EB3G10R80K1TB",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Everest 4x2 10R80 Kit",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto Stop-Start Vehicles",
+            "note": "Auto Stop-Start Vehicles"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W718158S300",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retaining Ring, Pump Driven Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7J048A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Driven Gear (Pump)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7177A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Drive Gear (Torque Converter)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7025A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Bearing, Idler Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Idler Gear",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Ranger 4x4": [
+          {
+            "partNumber": "JB3G10R80K1TA",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Ranger 4x4 10R80 Kit",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto Stop-Start Vehicles",
+            "note": "Auto Stop-Start Vehicles"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W718158S300",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retaining Ring, Pump Driven Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7J048A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Driven Gear (Pump)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7177A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Drive Gear (Torque Converter)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7025A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Bearing, Idler Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Idler Gear",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Ranger 4x2": [
+          {
+            "partNumber": "JB3G10R80K1TB",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Ranger 4x2 10R80 Kit",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto stop-start vehicles",
+            "note": "Auto stop-start vehicles"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W718158S300",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retaining Ring, Pump Driven Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7J048A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Driven Gear (Pump)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7177A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Drive Gear (Torque Converter)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7025A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Bearing, Idler Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Idler Gear",
+            "comments": "",
+            "note": ""
+          }
+        ],
+        "Raptor": [
+          {
+            "partNumber": "JB3G10R80K1TC",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Raptor 10R80 Kit",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "XT12QULV",
+            "qty": "10",
+            "quantity": "10",
+            "description": "Mercon ULV",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G199A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Aux Pump",
+            "comments": "Auto Stop-Start Vehicles",
+            "note": "Auto Stop-Start Vehicles"
+          },
+          {
+            "partNumber": "7T4Z7Z302A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Filter",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "L1MZ7A098A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Filter Assembly",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7G090A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal Stator Support",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "W718158S300",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Retaining Ring, Pump Driven Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7J048A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Driven Gear (Pump)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7A248A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Seal, Converter Hub",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z7177A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Drive Gear (Torque Converter)",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "HL3Z7025A",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Bearing, Idler Gear",
+            "comments": "",
+            "note": ""
+          },
+          {
+            "partNumber": "JB3Z6652B",
+            "qty": "1",
+            "quantity": "1",
+            "description": "Idler Gear",
+            "comments": "",
+            "note": ""
+          }
+        ]
+      }
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "19-2350"
