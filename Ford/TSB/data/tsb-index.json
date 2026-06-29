@@ -2494,6 +2494,43 @@
     }
   },
   {
+    "number": "22N17",
+    "tsbNumber": "22N17",
+    "bulletinNumber": "22N17",
+    "displayNumber": "22N17",
+    "type": "FSA",
+    "title": "22N17 ESCAPE - Power Window Switch Chrome Tip Replacement - Single Repair Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and",
+    "model": "Escape, Edge",
+    "years": [
+      "2019",
+      "2020",
+      "2023",
+      "2024"
+    ],
+    "yearRange": "2019, 2020, 2023, 2024",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "22N17 ESCAPE - Power Window Switch Chrome Tip Replacement - Single Repair Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and",
+    "concern": "22N17 ESCAPE - Power Window Switch Chrome Tip Replacement - Single Repair Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and",
+    "description": "22N17 ESCAPE - Power Window Switch Chrome Tip Replacement - Single Repair Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/22N17.pdf",
+    "filename": "22N17.pdf",
+    "manualOnly": false,
+    "searchText": "22n17 fsa 22n17 escape - power window switch chrome tip replacement - single repair special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and escape, edge 2019, 2020, 2023, 2024 22n17 escape - power window switch chrome tip replacement - single repair special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and current 22n17.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "22N13",
     "tsbNumber": "22N13",
     "bulletinNumber": "22N13",
