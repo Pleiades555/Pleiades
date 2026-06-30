@@ -50,5 +50,18 @@
     "source": "AW",
     "updated": "2026-06-19 05:15:48",
     "source_type": "manual"
+  },
+  {
+    "basic": "3078",
+    "description": "Front Lower Control Arm",
+    "category": "Suspension",
+    "aliases": "LCA, Lower Control Arm",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "AW",
+    "updated": "2026-06-30 23:20:04",
+    "source_type": "manual"
   }
 ]
