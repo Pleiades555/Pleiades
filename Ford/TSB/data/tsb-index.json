@@ -32,6 +32,40 @@
     }
   },
   {
+    "number": "26-2292",
+    "tsbNumber": "26-2292",
+    "bulletinNumber": "26-2292",
+    "displayNumber": "26-2292",
+    "type": "TSB",
+    "title": "Engine Misfire With An Illuminated MIL And DTC(s) P0301, P0302, P0303, - And/Or P0304 Stored In The PCM",
+    "model": "Mustang, Bronco, Explorer",
+    "years": [
+      "2024-2025"
+    ],
+    "yearRange": "2024-2025",
+    "fordUploadDate": "2026-06-26",
+    "issueDate": "2026-06-26",
+    "symptom": "Some of the vehicles listed equipped with 2.3L EcoBoost may exhibit all of the following conditions:\n• Engine misfire condition. \n• Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
+    "concern": "Some of the vehicles listed equipped with 2.3L EcoBoost may exhibit all of the following conditions:\n• Engine misfire condition. \n• Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
+    "description": "Some of the vehicles listed in the Model statement above may exhibit all of the following conditions • Engine misfire condition. • Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2292.pdf",
+    "filename": "26-2292.pdf",
+    "manualOnly": false,
+    "searchText": "26-2292 tsb engine misfire with an illuminated mil and dtc(s) p0301, p0302, p0303, - and/or p0304 stored in the pcm mustang, bronco, explorer 2024-2025 2026-06-26 2026-06-26 some of the vehicles listed equipped with 2.3l ecoboost may exhibit all of the following conditions: • engine misfire condition. • illuminated mil with dtcs p0301, p0302, p0303, and/or p0304 stored in the pcm. current 26-2292.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2274",
     "tsbNumber": "26-2274",
     "bulletinNumber": "26-2274",
@@ -1542,40 +1576,6 @@
       }
     },
     "hasManualParts": true,
-    "supersessionLinks": {
-      "supersedes": [],
-      "supersededBy": []
-    }
-  },
-  {
-    "number": "26-2292",
-    "tsbNumber": "26-2292",
-    "bulletinNumber": "26-2292",
-    "displayNumber": "26-2292",
-    "type": "TSB",
-    "title": "Engine Misfire With An Illuminated MIL And DTC(s) P0301, P0302, P0303, - And/Or P0304 Stored In The PCM",
-    "model": "Everest, Mustang, Bronco, Explorer",
-    "years": [
-      "2024-2025"
-    ],
-    "yearRange": "2024-2025",
-    "fordUploadDate": "",
-    "issueDate": "",
-    "symptom": "Some of the vehicles listed in the Model statement above may exhibit all of the following conditions • Engine misfire condition. • Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
-    "concern": "Some of the vehicles listed in the Model statement above may exhibit all of the following conditions • Engine misfire condition. • Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
-    "description": "Some of the vehicles listed in the Model statement above may exhibit all of the following conditions • Engine misfire condition. • Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
-    "status": "Current",
-    "supersedes": [],
-    "supersededBy": [],
-    "file": "Ford/TSB/pdf/26-2292.pdf",
-    "filename": "26-2292.pdf",
-    "manualOnly": false,
-    "searchText": "26-2292 tsb engine misfire with an illuminated mil and dtc(s) p0301, p0302, p0303, - and/or p0304 stored in the pcm everest, mustang, bronco, explorer 2024-2025 some of the vehicles listed in the model statement above may exhibit all of the following conditions • engine misfire condition. • illuminated mil with dtcs p0301, p0302, p0303, and/or p0304 stored in the pcm. current 26-2292.pdf",
-    "parts": {
-      "staticParts": [],
-      "variants": {}
-    },
-    "hasManualParts": false,
     "supersessionLinks": {
       "supersedes": [],
       "supersededBy": []
