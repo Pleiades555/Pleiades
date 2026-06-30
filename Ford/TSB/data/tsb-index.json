@@ -764,8 +764,8 @@
     "yearRange": "2018-2020",
     "fordUploadDate": "2021-06-23",
     "issueDate": "2021-06-23",
-    "symptom": "21P08",
-    "concern": "21P08",
+    "symptom": "Certain Endura vehicles 2.0L EcoBlue (Panther) Engine may have been affected by the blocking ofthe EGR mesh filter. Blocking is caused by deposits from Urea/SCR emission after-treatment system. If filter becomes blocked a MIL can be set by DTC P049B due to low flow condition in low pressure EGR system.",
+    "concern": "Certain Endura vehicles 2.0L EcoBlue (Panther) Engine may have been affected by the blocking ofthe EGR mesh filter. Blocking is caused by deposits from Urea/SCR emission after-treatment system. If filter becomes blocked a MIL can be set by DTC P049B due to low flow condition in low pressure EGR system.",
     "description": "21P08",
     "status": "Current",
     "supersedes": [],
@@ -773,7 +773,7 @@
     "file": "Ford/TSB/pdf/21P08.pdf",
     "filename": "21P08.pdf",
     "manualOnly": false,
-    "searchText": "21p08 fsa endura - 2.0l ecoblue (panther) egr mesh filter blockage endura 2018-2020 2021-06-23 2021-06-23 21p08 current 21p08.pdf",
+    "searchText": "21p08 fsa endura - 2.0l ecoblue (panther) egr mesh filter blockage endura 2018-2020 2021-06-23 2021-06-23 certain endura vehicles 2.0l ecoblue (panther) engine may have been affected by the blocking ofthe egr mesh filter. blocking is caused by deposits from urea/scr emission after-treatment system. if filter becomes blocked a mil can be set by dtc p049b due to low flow condition in low pressure egr system. current 21p08.pdf",
     "parts": {
       "staticParts": [
         {
