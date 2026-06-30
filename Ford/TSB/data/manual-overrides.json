@@ -94,5 +94,15 @@
     "symptom": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
     "concern": "Some 2018-2019 Ranger and Everest vehicles equipped with a 2.0L (Panther) engine and 10R80 transmission may experience loss of motive power while in any gear (forward or reverse) accompanied with Diagnostic Trouble Code (DTC) P0868. Other DTCs may also be present.",
     "status": "Current"
+  },
+  "26-2292": {
+    "title": "Engine Misfire With An Illuminated MIL And DTC(s) P0301, P0302, P0303, - And/Or P0304 Stored In The PCM",
+    "model": "Mustang, Bronco, Explorer",
+    "yearRange": "2024-2025",
+    "fordUploadDate": "2026-06-26",
+    "issueDate": "2026-06-26",
+    "symptom": "Some of the vehicles listed equipped with 2.3L EcoBoost may exhibit all of the following conditions:\n• Engine misfire condition. \n• Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
+    "concern": "Some of the vehicles listed equipped with 2.3L EcoBoost may exhibit all of the following conditions:\n• Engine misfire condition. \n• Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
+    "status": "Current"
   }
 }
