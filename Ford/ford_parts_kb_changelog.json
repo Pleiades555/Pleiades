@@ -1,5 +1,21 @@
 [
   {
+    "timestamp": "2026-06-30 23:20:04",
+    "type": "edit",
+    "basic": "3078",
+    "title": "Updated 3078 – Front Lower Control Arm",
+    "details": "Description: Front Lower Control Arm | Aliases: LCA, Lower Control Arm | Source: AW",
+    "version": "Manual protected"
+  },
+  {
+    "timestamp": "2026-06-19 06:02:57",
+    "type": "add",
+    "basic": "3078",
+    "title": "Added 3078 – Front Lower Control Arm Rear Bush",
+    "details": "Description: Front Lower Control Arm Rear Bush | Aliases: LCA bush, Lower Control Arm bushing | Source: AW",
+    "version": "Manual protected"
+  },
+  {
     "timestamp": "2026-06-19 05:15:48",
     "type": "add",
     "basic": "3C377",
