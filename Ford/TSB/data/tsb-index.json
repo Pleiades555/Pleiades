@@ -2704,6 +2704,40 @@
     }
   },
   {
+    "number": "26-2136",
+    "tsbNumber": "26-2136",
+    "bulletinNumber": "26-2136",
+    "displayNumber": "26-2136",
+    "type": "Recall",
+    "title": "No Start, LH Headlamp Fogging And Heated Systems Always On Due To - Water Ingress At Ground Connection G110 - DTCs B1D00-15, B1097-14,",
+    "model": "Transit",
+    "years": [
+      "2024-2025"
+    ],
+    "yearRange": "2024-2025",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Should a customer express a concern that the vehicle does not start or about water ingress into the left hand side headlamp assembly (fogged) or that the heated windshield glass and exterior mirrors are permanently switched ON in conjunction with the following DTCs, the probable cause is water ingress via the ground connection G110 into the wiring harness / electrical connectors. • B1D00-15: Left Low Beam • B1097-14: Heated windshield relay • B147C-14: Heated windshied relay • B1C83-14: Rear def",
+    "concern": "Should a customer express a concern that the vehicle does not start or about water ingress into the left hand side headlamp assembly (fogged) or that the heated windshield glass and exterior mirrors are permanently switched ON in conjunction with the following DTCs, the probable cause is water ingress via the ground connection G110 into the wiring harness / electrical connectors. • B1D00-15: Left Low Beam • B1097-14: Heated windshield relay • B147C-14: Heated windshied relay • B1C83-14: Rear def",
+    "description": "Should a customer express a concern that the vehicle does not start or about water ingress into the left hand side headlamp assembly (fogged) or that the heated windshield glass and exterior mirrors are permanently switched ON in conjunction with the following DTCs, the probable cause is water ingress via the ground connection G110 into the wiring harness / electrical connectors. • B1D00-15: Left Low Beam • B1097-14: Heated windshield relay • B147C-14: Heated windshied relay • B1C83-14: Rear def",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2136.pdf",
+    "filename": "26-2136.pdf",
+    "manualOnly": false,
+    "searchText": "26-2136 recall no start, lh headlamp fogging and heated systems always on due to - water ingress at ground connection g110 - dtcs b1d00-15, b1097-14, transit 2024-2025 should a customer express a concern that the vehicle does not start or about water ingress into the left hand side headlamp assembly (fogged) or that the heated windshield glass and exterior mirrors are permanently switched on in conjunction with the following dtcs, the probable cause is water ingress via the ground connection g110 into the wiring harness / electrical connectors. • b1d00-15: left low beam • b1097-14: heated windshield relay • b147c-14: heated windshied relay • b1c83-14: rear def current 26-2136.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "23S12",
     "tsbNumber": "23S12",
     "bulletinNumber": "23S12",
@@ -3208,22 +3242,24 @@
     "bulletinNumber": "21P14",
     "displayNumber": "21P14",
     "type": "FSA",
-    "title": "DEALER NOTIFIED SERVICE PROGRAM SUBJECT: RELEASE OF SERVICE PR - Service ProcedureRefer to the attached procedure.Parts RequirementPart NumberDescriptionQuantit",
+    "title": "DEALER NOTIFIED SERVICE PROGRAM - RELEASE OF SERVICE PROGRAM",
     "model": "Ranger",
-    "years": [],
-    "yearRange": "",
+    "years": [
+      "2020-2021"
+    ],
+    "yearRange": "2020-2021",
     "fordUploadDate": "",
     "issueDate": "",
-    "symptom": "DEALER NOTIFIED SERVICE PROGRAM SUBJECT: RELEASE OF SERVICE PR - Service ProcedureRefer to the attached procedure.Parts RequirementPart NumberDescriptionQuantit",
-    "concern": "DEALER NOTIFIED SERVICE PROGRAM SUBJECT: RELEASE OF SERVICE PR - Service ProcedureRefer to the attached procedure.Parts RequirementPart NumberDescriptionQuantit",
-    "description": "DEALER NOTIFIED SERVICE PROGRAM SUBJECT: RELEASE OF SERVICE PR - Service ProcedureRefer to the attached procedure.Parts RequirementPart NumberDescriptionQuantit",
+    "symptom": "DEALER NOTIFIED SERVICE PROGRAM - RELEASE OF SERVICE PROGRAM",
+    "concern": "DEALER NOTIFIED SERVICE PROGRAM - RELEASE OF SERVICE PROGRAM",
+    "description": "DEALER NOTIFIED SERVICE PROGRAM - RELEASE OF SERVICE PROGRAM",
     "status": "Current",
     "supersedes": [],
     "supersededBy": [],
     "file": "Ford/TSB/pdf/21P14.pdf",
     "filename": "21P14.pdf",
     "manualOnly": false,
-    "searchText": "21p14 fsa dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit ranger dealer notified service program subject: release of service pr - service procedurerefer to the attached procedure.parts requirementpart numberdescriptionquantit current 21p14.pdf",
+    "searchText": "21p14 fsa dealer notified service program - release of service program ranger 2020-2021 dealer notified service program - release of service program current 21p14.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
