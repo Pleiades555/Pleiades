@@ -1,0 +1,58 @@
+[
+  {
+    "timestamp": "2026-06-30 23:20:04",
+    "type": "edit",
+    "basic": "3078",
+    "title": "Updated 3078 – Front Lower Control Arm",
+    "details": "Description: Front Lower Control Arm | Aliases: LCA, Lower Control Arm | Source: AW",
+    "version": "Manual protected"
+  },
+  {
+    "timestamp": "2026-06-19 06:02:57",
+    "type": "add",
+    "basic": "3078",
+    "title": "Added 3078 – Front Lower Control Arm Rear Bush",
+    "details": "Description: Front Lower Control Arm Rear Bush | Aliases: LCA bush, Lower Control Arm bushing | Source: AW",
+    "version": "Manual protected"
+  },
+  {
+    "timestamp": "2026-06-19 05:15:48",
+    "type": "add",
+    "basic": "3C377",
+    "title": "Added 3C377 – Front Lower Control Arm Rear Bush",
+    "details": "Description: Front Lower Control Arm Rear Bush | Aliases: LCA bush, Lower Control Arm bushing | Source: AW",
+    "version": "Manual protected"
+  },
+  {
+    "timestamp": "2026-06-19 05:14:20",
+    "type": "add",
+    "basic": "3050",
+    "title": "Added 3050 – Front Lower Control Arm Ball Joint",
+    "details": "Description: Front Lower Control Arm Ball Joint | Aliases: LCA, Lower Control Arm joint | Source: AW",
+    "version": "Manual protected"
+  },
+  {
+    "timestamp": "2026-06-19 05:11:56",
+    "type": "add",
+    "basic": "3069",
+    "title": "Added 3069 – Front Lower Control Arm Bush",
+    "details": "Description: Front Lower Control Arm Bush | Aliases: Arm bush | Source: AW",
+    "version": "Manual protected"
+  },
+  {
+    "timestamp": "2026-06-19 04:22:23",
+    "type": "add",
+    "basic": "1007",
+    "title": "Added 1007 – Wheel",
+    "details": "Description: Wheel | Aliases: rim, alloy wheel, wheel | Source: AW",
+    "version": "Manual protected"
+  },
+  {
+    "timestamp": "",
+    "type": "system",
+    "basic": "",
+    "title": "Fresh manual-protected database created",
+    "details": "Core database starts empty. Manual entries are stored separately so future package updates do not wipe them.",
+    "version": "Manual protected v1"
+  }
+]
