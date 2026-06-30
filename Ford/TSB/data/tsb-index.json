@@ -3314,6 +3314,45 @@
     }
   },
   {
+    "number": "17S09",
+    "tsbNumber": "17S09",
+    "bulletinNumber": "17S09",
+    "displayNumber": "17S09",
+    "type": "FSA",
+    "title": "17S09/S3 – 1.6L EcoBoost Kuga / Fiesta ST - Cooling System Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "model": "Fiesta, Kuga",
+    "years": [
+      "2012",
+      "2013",
+      "2014",
+      "2017",
+      "2018",
+      "2023"
+    ],
+    "yearRange": "2012, 2013, 2014, 2017, 2018, 2023",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "17S09/S3 – 1.6L EcoBoost Kuga / Fiesta ST - Cooling System Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "concern": "17S09/S3 – 1.6L EcoBoost Kuga / Fiesta ST - Cooling System Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "description": "17S09/S3 – 1.6L EcoBoost Kuga / Fiesta ST - Cooling System Special Attention: The Dealer Field Service Action Co-ordinator has overall responsibility for implementing this action within your Dealership and Branches.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/17S09.pdf",
+    "filename": "17S09.pdf",
+    "manualOnly": false,
+    "searchText": "17s09 fsa 17s09/s3 – 1.6l ecoboost kuga / fiesta st - cooling system special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. fiesta, kuga 2012, 2013, 2014, 2017, 2018, 2023 17s09/s3 – 1.6l ecoboost kuga / fiesta st - cooling system special attention: the dealer field service action co-ordinator has overall responsibility for implementing this action within your dealership and branches. current 17s09.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "16S38S2",
     "tsbNumber": "16S38S2",
     "bulletinNumber": "16S38S2",
