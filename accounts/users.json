@@ -1,0 +1,22 @@
+[
+  {
+    "username": "bsumpter",
+    "name": "Brandon Sumpter",
+    "title": "Parts Legend",
+    "dealer": "11290 - Metro Ford",
+    "fordStartDate": "2025-06-09",
+    "role": "unrestricted",
+    "createdAt": "2026-07-01T01:43:47.102Z",
+    "updatedAt": "2026-07-01T01:43:47.102Z"
+  },
+  {
+    "username": "gurneywhite",
+    "name": "Ashton White",
+    "title": "Admin",
+    "dealer": "11290 - Metro Ford",
+    "fordStartDate": "2020-01-01",
+    "role": "unrestricted",
+    "createdAt": "2026-07-01T01:22:20.871Z",
+    "updatedAt": "2026-07-01T01:22:20.871Z"
+  }
+]
