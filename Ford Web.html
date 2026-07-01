@@ -6,15 +6,19 @@
 
 <style>
 :root {
-  --panel-bg: rgba(10, 12, 16, 0.78);
-  --panel-bg-strong: rgba(10, 12, 16, 0.92);
-  --link-bg: rgba(26, 26, 26, 0.78);
-  --border: rgba(255,255,255,0.18);
   --text: #f5f5f5;
-  --muted: #c7d0d4;
+  --muted: #d7e0e4;
   --accent: #a3c5c6;
+  --border: rgba(255,255,255,0.24);
+  --soft-bg: rgba(255,255,255,0.08);
+  --soft-bg-hover: rgba(255,255,255,0.16);
+  --card-bg: rgba(10, 12, 16, 0.72);
   --danger: #ff9b9b;
   --good: #9bffbf;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -24,76 +28,92 @@ body {
   background-position: center;
   background-size: cover;
   font-family: Avenir, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 23px;
   color: var(--text);
   margin: 0;
   padding: 28px;
+  min-height: 100vh;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.75);
 }
 
 .page-shell {
   max-width: 1100px;
-}
-
-.header-panel,
-.section-panel,
-.account-panel,
-.login-panel {
-  background: var(--panel-bg);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 18px 22px;
-  margin-bottom: 18px;
-  backdrop-filter: blur(8px);
+  padding-right: 330px;
 }
 
 h1 {
-  margin: 0 0 8px;
-  font-size: 44px;
+  margin: 0 0 22px;
+  font-size: 46px;
+  letter-spacing: 0.5px;
 }
 
 h2 {
-  margin: 0 0 12px;
+  margin: 28px 0 12px;
   font-size: 31px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   color: var(--muted);
 }
 
-a {
-  color: var(--accent);
-  background: var(--link-bg);
-  padding: 8px 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover {
-  background: rgba(45, 55, 62, 0.92);
+ul {
+  padding-left: 28px;
 }
 
 li {
   margin: 10px 0;
 }
 
+a {
+  color: #d8fcff;
+  background: rgba(0,0,0,0.28);
+  border: 1px solid rgba(255,255,255,0.14);
+  padding: 7px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  backdrop-filter: blur(2px);
+}
+
+a:hover {
+  background: rgba(163,197,198,0.22);
+  border-color: rgba(163,197,198,0.55);
+}
+
+.header-area,
+.section-area {
+  margin-bottom: 18px;
+}
+
+.login-panel,
+.account-panel {
+  background: rgba(10, 12, 16, 0.58);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  backdrop-filter: blur(8px);
+  text-shadow: none;
+}
+
 .admin-toggle {
   position: fixed;
   top: 14px;
   right: 14px;
-  z-index: 20;
-  background: rgba(0,0,0,0.68);
+  z-index: 40;
+  background: rgba(0,0,0,0.50);
   color: var(--accent);
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 10px 14px;
   cursor: pointer;
   font-size: 14px;
+  backdrop-filter: blur(8px);
 }
 
 .admin-toggle:hover {
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.76);
 }
 
 .hidden {
@@ -112,12 +132,11 @@ input,
 select,
 textarea {
   width: 100%;
-  box-sizing: border-box;
   padding: 10px;
   margin: 6px 0 12px;
   border-radius: 8px;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.94);
   color: #111;
 }
 
@@ -138,11 +157,6 @@ button.secondary {
 
 button.danger {
   background: #ffb1b1;
-}
-
-.small-note {
-  font-size: 14px;
-  color: var(--muted);
 }
 
 .status {
@@ -170,6 +184,7 @@ button.danger {
   border-radius: 12px;
   padding: 12px;
   font-size: 15px;
+  color: #fff;
 }
 
 .account-card strong {
@@ -188,12 +203,103 @@ button.danger {
 }
 
 .denied-message {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.42);
   border: 1px solid var(--border);
-  padding: 14px;
+  padding: 12px 14px;
   border-radius: 12px;
   color: #ffd0d0;
-  font-size: 17px;
+  font-size: 16px;
+  display: inline-block;
+  backdrop-filter: blur(5px);
+}
+
+.user-card {
+  position: fixed;
+  top: 64px;
+  right: 14px;
+  width: 300px;
+  z-index: 30;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 34px rgba(0,0,0,0.35);
+  text-shadow: none;
+}
+
+.user-card h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+  color: #fff;
+}
+
+.user-card .role-line {
+  color: var(--accent);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.user-detail {
+  font-size: 14px;
+  color: #eef5f6;
+  margin: 7px 0;
+}
+
+.user-detail span {
+  color: var(--muted);
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+}
+
+.suffer-counter {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(163,197,198,0.13);
+  border: 1px solid rgba(163,197,198,0.34);
+}
+
+.suffer-counter .number {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.suffer-counter .label {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #dff6f7;
+}
+
+.card-buttons {
+  margin-top: 12px;
+}
+
+.card-buttons button {
+  font-size: 13px;
+  padding: 8px 10px;
+}
+
+@media (max-width: 900px) {
+  .page-shell {
+    padding-right: 0;
+  }
+
+  .user-card {
+    position: static;
+    width: auto;
+    margin-bottom: 18px;
+  }
+
+  .admin-toggle {
+    position: static;
+    margin-bottom: 14px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -213,11 +319,6 @@ button.danger {
   .account-grid {
     grid-template-columns: 1fr;
   }
-
-  .admin-toggle {
-    position: static;
-    margin-bottom: 14px;
-  }
 }
 </style>
 </head>
@@ -226,14 +327,39 @@ button.danger {
 
 <button class="admin-toggle" onclick="openAdminPassword()">Admin</button>
 
+<div id="userCard" class="user-card hidden">
+  <h3 id="cardName">User Name</h3>
+  <div id="cardRole" class="role-line">Role</div>
+
+  <div class="user-detail">
+    <span>Title</span>
+    <div id="cardTitle">Not specified</div>
+  </div>
+
+  <div class="user-detail">
+    <span>Dealership</span>
+    <div id="cardDealer">Not specified</div>
+  </div>
+
+  <div class="suffer-counter">
+    <div id="cardDays" class="number">0</div>
+    <div class="label">Days suffered dealing with Ford</div>
+  </div>
+
+  <div class="card-buttons">
+    <button class="secondary" onclick="showLoginPanel()">Switch User</button>
+    <button class="danger" onclick="logoutUser()">Log Out</button>
+  </div>
+</div>
+
 <div class="page-shell">
 
-  <div class="header-panel">
+  <div class="header-area">
     <h1>Ford Shortcuts</h1>
     <p id="currentUserText">Current access: not signed in</p>
   </div>
 
-  <div class="login-panel">
+  <div id="loginPanel" class="login-panel">
     <h2>User Access</h2>
     <p>Enter an approved email to load the Ford Web access level for this browser.</p>
 
@@ -246,7 +372,7 @@ button.danger {
     <div id="loginStatus" class="status"></div>
   </div>
 
-  <div class="section-panel">
+  <div class="section-area">
     <h2>Ford Shortcuts</h2>
     <ul>
       <li data-access="basic"><a href="https://login.superservice.com/">1. Ford Catalogue</a></li>
@@ -259,7 +385,7 @@ button.danger {
     </ul>
   </div>
 
-  <div class="section-panel">
+  <div class="section-area">
     <h2>Ford Specifics</h2>
     <ul>
       <li data-access="basic"><a href="./Ford/Ford Processes.htm">7. Ford Triage Example</a></li>
@@ -282,8 +408,7 @@ button.danger {
   <div id="adminPanel" class="account-panel hidden">
     <h2>Account Creation</h2>
     <p>
-      This section is hidden behind the local admin password. Password:
-      <strong>Pleiades</strong>
+      This section is hidden behind the local admin password.
     </p>
 
     <label for="accountEmail">Email</label>
@@ -292,8 +417,14 @@ button.danger {
     <label for="accountName">Name</label>
     <input id="accountName" type="text" placeholder="Ash White">
 
-    <label for="dealerName">Dealer / Group</label>
+    <label for="accountTitle">Title</label>
+    <input id="accountTitle" type="text" placeholder="Parts Interpreter">
+
+    <label for="dealerName">Dealership / Group</label>
     <input id="dealerName" type="text" placeholder="Eagers Automotive">
+
+    <label for="fordStartDate">First started dealing with Ford</label>
+    <input id="fordStartDate" type="date">
 
     <label for="accountRole">Role</label>
     <select id="accountRole">
@@ -370,7 +501,9 @@ function openAdminPassword() {
 function saveAccount() {
   const email = normaliseEmail(document.getElementById("accountEmail").value);
   const name = document.getElementById("accountName").value.trim();
+  const title = document.getElementById("accountTitle").value.trim();
   const dealer = document.getElementById("dealerName").value.trim();
+  const fordStartDate = document.getElementById("fordStartDate").value;
   const role = document.getElementById("accountRole").value;
 
   if (!email) {
@@ -381,19 +514,23 @@ function saveAccount() {
   const accounts = getAccounts();
   const existingIndex = accounts.findIndex(account => normaliseEmail(account.email) === email);
 
+  const now = new Date().toISOString();
+
   const newAccount = {
     email,
     name: name || email,
+    title: title || "Not specified",
     dealer: dealer || "Not specified",
+    fordStartDate: fordStartDate || "",
     role,
-    createdAt: new Date().toISOString()
+    createdAt: existingIndex >= 0 ? accounts[existingIndex].createdAt : now,
+    updatedAt: now
   };
 
   if (existingIndex >= 0) {
     accounts[existingIndex] = {
       ...accounts[existingIndex],
-      ...newAccount,
-      updatedAt: new Date().toISOString()
+      ...newAccount
     };
   } else {
     accounts.push(newAccount);
@@ -403,12 +540,15 @@ function saveAccount() {
   setAdminStatus("Account saved.", true);
   clearAccountForm();
   renderAccounts();
+  applyAccess();
 }
 
 function seedOwnerAccount() {
   document.getElementById("accountEmail").value = "ash.white@eagersautomotive.com.au";
   document.getElementById("accountName").value = "Ash White";
+  document.getElementById("accountTitle").value = "Completely Unrestricted";
   document.getElementById("dealerName").value = "Eagers Automotive";
+  document.getElementById("fordStartDate").value = "";
   document.getElementById("accountRole").value = "unrestricted";
   saveAccount();
 }
@@ -416,7 +556,9 @@ function seedOwnerAccount() {
 function clearAccountForm() {
   document.getElementById("accountEmail").value = "";
   document.getElementById("accountName").value = "";
+  document.getElementById("accountTitle").value = "";
   document.getElementById("dealerName").value = "";
+  document.getElementById("fordStartDate").value = "";
   document.getElementById("accountRole").value = "readOnly";
 }
 
@@ -466,13 +608,16 @@ function renderAccounts() {
   accountList.innerHTML = accounts.map(account => {
     const permissions = ROLE_PERMISSIONS[account.role] || [];
     const tags = permissions.map(permission => `<span class="permission-tag">${permission}</span>`).join("");
+    const days = calculateFordDays(account.fordStartDate);
 
     return `
       <div class="account-card">
         <strong>${escapeHtml(account.name || account.email)}</strong><br>
         ${escapeHtml(account.email)}<br>
-        Dealer: ${escapeHtml(account.dealer || "Not specified")}<br>
+        Title: ${escapeHtml(account.title || "Not specified")}<br>
+        Dealership: ${escapeHtml(account.dealer || "Not specified")}<br>
         Role: ${escapeHtml(ROLE_LABELS[account.role] || account.role)}<br>
+        Days suffered dealing with Ford: ${days}<br>
         <div>${tags}</div>
         <button class="danger" onclick="deleteAccount('${escapeHtml(account.email)}')">Delete</button>
       </div>
@@ -509,6 +654,11 @@ function logoutUser() {
   applyAccess();
 }
 
+function showLoginPanel() {
+  document.getElementById("loginPanel").classList.remove("hidden");
+  document.getElementById("loginEmail").focus();
+}
+
 function getCurrentAccount() {
   const email = normaliseEmail(localStorage.getItem(CURRENT_USER_KEY));
 
@@ -535,14 +685,53 @@ function applyAccess() {
 
   const currentUserText = document.getElementById("currentUserText");
   const noAccessMessage = document.getElementById("noAccessMessage");
+  const loginPanel = document.getElementById("loginPanel");
+  const userCard = document.getElementById("userCard");
 
   if (account) {
     currentUserText.textContent = `Current access: ${account.email} — ${ROLE_LABELS[account.role] || account.role}`;
     noAccessMessage.classList.add("hidden");
+    loginPanel.classList.add("hidden");
+    userCard.classList.remove("hidden");
+    updateUserCard(account);
   } else {
     currentUserText.textContent = "Current access: not signed in";
     noAccessMessage.classList.remove("hidden");
+    loginPanel.classList.remove("hidden");
+    userCard.classList.add("hidden");
   }
+}
+
+function updateUserCard(account) {
+  document.getElementById("cardName").textContent = account.name || account.email;
+  document.getElementById("cardRole").textContent = ROLE_LABELS[account.role] || account.role;
+  document.getElementById("cardTitle").textContent = account.title || "Not specified";
+  document.getElementById("cardDealer").textContent = account.dealer || "Not specified";
+  document.getElementById("cardDays").textContent = calculateFordDays(account.fordStartDate);
+}
+
+function calculateFordDays(startDate) {
+  if (!startDate) {
+    return "0";
+  }
+
+  const start = new Date(startDate + "T00:00:00");
+  const today = new Date();
+
+  start.setHours(0, 0, 0, 0);
+  today.setHours(0, 0, 0, 0);
+
+  if (isNaN(start.getTime())) {
+    return "0";
+  }
+
+  const difference = today.getTime() - start.getTime();
+
+  if (difference < 0) {
+    return "0";
+  }
+
+  return Math.floor(difference / 86400000).toLocaleString();
 }
 
 function setAdminStatus(message, success) {
@@ -572,7 +761,9 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         email: "ash.white@eagersautomotive.com.au",
         name: "Ash White",
+        title: "Completely Unrestricted",
         dealer: "Eagers Automotive",
+        fordStartDate: "",
         role: "unrestricted",
         createdAt: new Date().toISOString()
       }
