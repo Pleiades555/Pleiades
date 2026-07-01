@@ -3,50 +3,586 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ford Web</title>
+
 <style>
+:root {
+  --panel-bg: rgba(10, 12, 16, 0.78);
+  --panel-bg-strong: rgba(10, 12, 16, 0.92);
+  --link-bg: rgba(26, 26, 26, 0.78);
+  --border: rgba(255,255,255,0.18);
+  --text: #f5f5f5;
+  --muted: #c7d0d4;
+  --accent: #a3c5c6;
+  --danger: #ff9b9b;
+  --good: #9bffbf;
+}
+
 body {
   background-image: url('https://images5.alphacoders.com/979/979947.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  font-family: Arial, sans-serif;
-  font-size: 30px;
-  color: #f5f5f5;
+  background-size: cover;
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 24px;
+  color: var(--text);
+  margin: 0;
+  padding: 28px;
 }
+
+.page-shell {
+  max-width: 1100px;
+}
+
+.header-panel,
+.section-panel,
+.account-panel,
+.login-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  backdrop-filter: blur(8px);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 44px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 31px;
+}
+
+p {
+  font-size: 18px;
+  color: var(--muted);
+}
+
 a {
-  color: #a3c5c6;
-  background: #1a1a1a;
-  opacity: .78;
-  padding: 2px 6px;
-  border-radius: 4px;
+  color: var(--accent);
+  background: var(--link-bg);
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
 }
-li { margin: 8px 0; }
+
+a:hover {
+  background: rgba(45, 55, 62, 0.92);
+}
+
+li {
+  margin: 10px 0;
+}
+
+.admin-toggle {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 20;
+  background: rgba(0,0,0,0.68);
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin-toggle:hover {
+  background: rgba(0,0,0,0.9);
+}
+
+.hidden {
+  display: none !important;
+}
+
+input,
+select,
+button,
+textarea {
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 16px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 6px 0 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.92);
+  color: #111;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  background: #a3c5c6;
+  color: #0c1214;
+  font-weight: 700;
+  margin: 4px 4px 4px 0;
+}
+
+button.secondary {
+  background: #d6dde0;
+}
+
+button.danger {
+  background: #ffb1b1;
+}
+
+.small-note {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.status {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.good {
+  color: var(--good);
+}
+
+.bad {
+  color: var(--danger);
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.account-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 15px;
+}
+
+.account-card strong {
+  font-size: 17px;
+}
+
+.permission-tag {
+  display: inline-block;
+  background: rgba(163,197,198,0.18);
+  color: #dff6f7;
+  border: 1px solid rgba(163,197,198,0.35);
+  border-radius: 999px;
+  padding: 3px 8px;
+  margin: 3px;
+  font-size: 13px;
+}
+
+.denied-message {
+  background: rgba(0,0,0,0.7);
+  border: 1px solid var(--border);
+  padding: 14px;
+  border-radius: 12px;
+  color: #ffd0d0;
+  font-size: 17px;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 19px;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .account-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-toggle {
+    position: static;
+    margin-bottom: 14px;
+  }
+}
 </style>
 </head>
-<body>
-<h1>Ford Shortcuts</h1>
-<ul>
-  <li><a href="https://login.superservice.com/">1. Ford Catalogue</a></li>
-  <li><a href="https://www.fmcdealer.ford.com/content/apr/au/en/home.html">2. Ford FMC Dealer Portal</a></li>
-  <li><a href="https://triage-apac.superservice.com/">3.Ford Triage</a></li>
-  <li><a href="https://www-pandaprod.app.ford.com/forms/frmservlet?config=pandaaudlr">4. Panda (Ford Stock availability)</a></li>
-  <li><a href="https://accessoryportal.ford.com.au/">5. Ford Accessories</a></li>
-  <li><a href="https://www.fordtechservice.dealerconnection.com">6. Ford Professional Technician System (PTS)</a></li>
-  <li><a href="./HomePageLogin.html">?. Back</a></li>
-</ul>
 
-<h2>Ford Specifics</h2>
-<ul>
-  <li><a href="./Ford/Ford Processes.htm">7. Ford Triage Example</a></li>
-  <li><a href="./Ford/TSB/index.html">8. Ford TSB Library</a></li>
-  <li><a href="./Ford/Ford Repair Connection Guide.pdf">9. Ford Repair Connection Procedure</a></li>
-  <li><a href="./Ford/FOA Full Dealer List May 2026.pdf">10. Ford Dealer Contact List @ 1/5/26</a></li>
-  <li><a href="./Ford/FOA Quick Dealer List by Dealer Code May 2026.pdf">11. Ford Dealer Code List @ 1/5/26</a></li>
-  <li><a href="./Ford/Ford FSM.html">12. Ford FSM's</a></li>
-  <li><a href="./Ford/mc_oc_battery_warranty.pdf">13. Ford Battery Warranties</a></li>
-  <li><a href="./Ford/Ford Parts Knowledge Base.html">14. Ford Basic Number / Parts Knowledge Base</a></li>
-  <li><a href="./Fluids/Fluids Compatibility Hub.html?brand=Ford">15. Ford Fluids Compatibility Guide</a></li>
-  <li><a href="./HomePageLogin.html">?. Back</a></li>
-</ul>
+<body>
+
+<button class="admin-toggle" onclick="openAdminPassword()">Admin</button>
+
+<div class="page-shell">
+
+  <div class="header-panel">
+    <h1>Ford Shortcuts</h1>
+    <p id="currentUserText">Current access: not signed in</p>
+  </div>
+
+  <div class="login-panel">
+    <h2>User Access</h2>
+    <p>Enter an approved email to load the Ford Web access level for this browser.</p>
+
+    <label for="loginEmail">Email</label>
+    <input id="loginEmail" type="email" placeholder="example@dealer.com.au">
+
+    <button onclick="loginUser()">Load Access</button>
+    <button class="secondary" onclick="logoutUser()">Clear Access</button>
+
+    <div id="loginStatus" class="status"></div>
+  </div>
+
+  <div class="section-panel">
+    <h2>Ford Shortcuts</h2>
+    <ul>
+      <li data-access="basic"><a href="https://login.superservice.com/">1. Ford Catalogue</a></li>
+      <li data-access="basic"><a href="https://www.fmcdealer.ford.com/content/apr/au/en/home.html">2. Ford FMC Dealer Portal</a></li>
+      <li data-access="basic"><a href="https://triage-apac.superservice.com/">3. Ford Triage</a></li>
+      <li data-access="basic"><a href="https://www-pandaprod.app.ford.com/forms/frmservlet?config=pandaaudlr">4. Panda (Ford Stock availability)</a></li>
+      <li data-access="basic"><a href="https://accessoryportal.ford.com.au/">5. Ford Accessories</a></li>
+      <li data-access="basic"><a href="https://www.fordtechservice.dealerconnection.com">6. Ford Professional Technician System (PTS)</a></li>
+      <li data-access="basic"><a href="./HomePageLogin.html">?. Back</a></li>
+    </ul>
+  </div>
+
+  <div class="section-panel">
+    <h2>Ford Specifics</h2>
+    <ul>
+      <li data-access="basic"><a href="./Ford/Ford Processes.htm">7. Ford Triage Example</a></li>
+      <li data-access="basic"><a href="./Ford/TSB/index.html">8. Ford TSB Library</a></li>
+      <li data-access="eagers"><a href="./Ford/Ford Repair Connection Guide.pdf">9. Ford Repair Connection Procedure</a></li>
+      <li data-access="basic"><a href="./Ford/FOA Full Dealer List May 2026.pdf">10. Ford Dealer Contact List @ 1/5/26</a></li>
+      <li data-access="basic"><a href="./Ford/FOA Quick Dealer List by Dealer Code May 2026.pdf">11. Ford Dealer Code List @ 1/5/26</a></li>
+      <li data-access="basic"><a href="./Ford/Ford FSM.html">12. Ford FSM's</a></li>
+      <li data-access="basic"><a href="./Ford/mc_oc_battery_warranty.pdf">13. Ford Battery Warranties</a></li>
+      <li data-access="basic"><a href="./Ford/Ford Parts Knowledge Base.html">14. Ford Basic Number / Parts Knowledge Base</a></li>
+      <li data-access="basic"><a href="./Fluids/Fluids Compatibility Hub.html?brand=Ford">15. Ford Fluids Compatibility Guide</a></li>
+      <li data-access="basic"><a href="./HomePageLogin.html">?. Back</a></li>
+    </ul>
+  </div>
+
+  <div id="noAccessMessage" class="denied-message hidden">
+    No approved account is currently loaded. Basic links are shown.
+  </div>
+
+  <div id="adminPanel" class="account-panel hidden">
+    <h2>Account Creation</h2>
+    <p>
+      This section is hidden behind the local admin password. Password:
+      <strong>Pleiades</strong>
+    </p>
+
+    <label for="accountEmail">Email</label>
+    <input id="accountEmail" type="email" placeholder="ash.white@eagersautomotive.com.au">
+
+    <label for="accountName">Name</label>
+    <input id="accountName" type="text" placeholder="Ash White">
+
+    <label for="dealerName">Dealer / Group</label>
+    <input id="dealerName" type="text" placeholder="Eagers Automotive">
+
+    <label for="accountRole">Role</label>
+    <select id="accountRole">
+      <option value="unrestricted">Completely unrestricted</option>
+      <option value="eagers">Eagers internal</option>
+      <option value="externalDealer">External Ford dealer</option>
+      <option value="parts">Parts interpreter</option>
+      <option value="workshop">Workshop</option>
+      <option value="readOnly">Read only</option>
+    </select>
+
+    <button onclick="saveAccount()">Save Account</button>
+    <button class="secondary" onclick="seedOwnerAccount()">Add Ash as Unrestricted</button>
+    <button class="danger" onclick="clearAllAccounts()">Clear All Accounts</button>
+
+    <div id="adminStatus" class="status"></div>
+
+    <h2>Saved Accounts</h2>
+    <div id="accountList" class="account-grid"></div>
+  </div>
+
+</div>
+
+<script>
+const ADMIN_PASSWORD = "Pleiades";
+const ACCOUNT_STORAGE_KEY = "pleiadesFordAccounts";
+const CURRENT_USER_KEY = "pleiadesFordCurrentUser";
+
+const ROLE_PERMISSIONS = {
+  unrestricted: ["basic", "tsb", "parts", "workshop", "eagers", "admin"],
+  eagers: ["basic", "tsb", "parts", "workshop", "eagers"],
+  externalDealer: ["basic", "tsb", "parts"],
+  parts: ["basic", "tsb", "parts"],
+  workshop: ["basic", "tsb", "workshop"],
+  readOnly: ["basic"]
+};
+
+const ROLE_LABELS = {
+  unrestricted: "Completely unrestricted",
+  eagers: "Eagers internal",
+  externalDealer: "External Ford dealer",
+  parts: "Parts interpreter",
+  workshop: "Workshop",
+  readOnly: "Read only"
+};
+
+function getAccounts() {
+  try {
+    return JSON.parse(localStorage.getItem(ACCOUNT_STORAGE_KEY)) || [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function setAccounts(accounts) {
+  localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(accounts));
+}
+
+function normaliseEmail(email) {
+  return String(email || "").trim().toLowerCase();
+}
+
+function openAdminPassword() {
+  const entered = prompt("Enter admin password:");
+
+  if (entered === ADMIN_PASSWORD) {
+    document.getElementById("adminPanel").classList.remove("hidden");
+    renderAccounts();
+  } else if (entered !== null) {
+    alert("Incorrect password.");
+  }
+}
+
+function saveAccount() {
+  const email = normaliseEmail(document.getElementById("accountEmail").value);
+  const name = document.getElementById("accountName").value.trim();
+  const dealer = document.getElementById("dealerName").value.trim();
+  const role = document.getElementById("accountRole").value;
+
+  if (!email) {
+    setAdminStatus("Email is required.", false);
+    return;
+  }
+
+  const accounts = getAccounts();
+  const existingIndex = accounts.findIndex(account => normaliseEmail(account.email) === email);
+
+  const newAccount = {
+    email,
+    name: name || email,
+    dealer: dealer || "Not specified",
+    role,
+    createdAt: new Date().toISOString()
+  };
+
+  if (existingIndex >= 0) {
+    accounts[existingIndex] = {
+      ...accounts[existingIndex],
+      ...newAccount,
+      updatedAt: new Date().toISOString()
+    };
+  } else {
+    accounts.push(newAccount);
+  }
+
+  setAccounts(accounts);
+  setAdminStatus("Account saved.", true);
+  clearAccountForm();
+  renderAccounts();
+}
+
+function seedOwnerAccount() {
+  document.getElementById("accountEmail").value = "ash.white@eagersautomotive.com.au";
+  document.getElementById("accountName").value = "Ash White";
+  document.getElementById("dealerName").value = "Eagers Automotive";
+  document.getElementById("accountRole").value = "unrestricted";
+  saveAccount();
+}
+
+function clearAccountForm() {
+  document.getElementById("accountEmail").value = "";
+  document.getElementById("accountName").value = "";
+  document.getElementById("dealerName").value = "";
+  document.getElementById("accountRole").value = "readOnly";
+}
+
+function deleteAccount(email) {
+  const confirmed = confirm("Delete account for " + email + "?");
+
+  if (!confirmed) {
+    return;
+  }
+
+  const accounts = getAccounts().filter(account => normaliseEmail(account.email) !== normaliseEmail(email));
+  setAccounts(accounts);
+
+  const currentEmail = localStorage.getItem(CURRENT_USER_KEY);
+
+  if (normaliseEmail(currentEmail) === normaliseEmail(email)) {
+    localStorage.removeItem(CURRENT_USER_KEY);
+  }
+
+  renderAccounts();
+  applyAccess();
+}
+
+function clearAllAccounts() {
+  const confirmed = confirm("This will remove every saved account from this browser. Continue?");
+
+  if (!confirmed) {
+    return;
+  }
+
+  localStorage.removeItem(ACCOUNT_STORAGE_KEY);
+  localStorage.removeItem(CURRENT_USER_KEY);
+  renderAccounts();
+  applyAccess();
+  setAdminStatus("All accounts cleared.", true);
+}
+
+function renderAccounts() {
+  const accountList = document.getElementById("accountList");
+  const accounts = getAccounts();
+
+  if (!accounts.length) {
+    accountList.innerHTML = "<p>No accounts saved yet.</p>";
+    return;
+  }
+
+  accountList.innerHTML = accounts.map(account => {
+    const permissions = ROLE_PERMISSIONS[account.role] || [];
+    const tags = permissions.map(permission => `<span class="permission-tag">${permission}</span>`).join("");
+
+    return `
+      <div class="account-card">
+        <strong>${escapeHtml(account.name || account.email)}</strong><br>
+        ${escapeHtml(account.email)}<br>
+        Dealer: ${escapeHtml(account.dealer || "Not specified")}<br>
+        Role: ${escapeHtml(ROLE_LABELS[account.role] || account.role)}<br>
+        <div>${tags}</div>
+        <button class="danger" onclick="deleteAccount('${escapeHtml(account.email)}')">Delete</button>
+      </div>
+    `;
+  }).join("");
+}
+
+function loginUser() {
+  const email = normaliseEmail(document.getElementById("loginEmail").value);
+  const accounts = getAccounts();
+  const account = accounts.find(item => normaliseEmail(item.email) === email);
+
+  if (!email) {
+    setLoginStatus("Enter an email address.", false);
+    return;
+  }
+
+  if (!account) {
+    localStorage.removeItem(CURRENT_USER_KEY);
+    setLoginStatus("No approved account found for that email.", false);
+    applyAccess();
+    return;
+  }
+
+  localStorage.setItem(CURRENT_USER_KEY, account.email);
+  setLoginStatus("Access loaded for " + account.email + ".", true);
+  applyAccess();
+}
+
+function logoutUser() {
+  localStorage.removeItem(CURRENT_USER_KEY);
+  document.getElementById("loginEmail").value = "";
+  setLoginStatus("Access cleared.", true);
+  applyAccess();
+}
+
+function getCurrentAccount() {
+  const email = normaliseEmail(localStorage.getItem(CURRENT_USER_KEY));
+
+  if (!email) {
+    return null;
+  }
+
+  return getAccounts().find(account => normaliseEmail(account.email) === email) || null;
+}
+
+function applyAccess() {
+  const account = getCurrentAccount();
+  const allowed = account ? ROLE_PERMISSIONS[account.role] || [] : ["basic"];
+
+  document.querySelectorAll("[data-access]").forEach(element => {
+    const required = element.getAttribute("data-access");
+
+    if (allowed.includes(required)) {
+      element.classList.remove("hidden");
+    } else {
+      element.classList.add("hidden");
+    }
+  });
+
+  const currentUserText = document.getElementById("currentUserText");
+  const noAccessMessage = document.getElementById("noAccessMessage");
+
+  if (account) {
+    currentUserText.textContent = `Current access: ${account.email} — ${ROLE_LABELS[account.role] || account.role}`;
+    noAccessMessage.classList.add("hidden");
+  } else {
+    currentUserText.textContent = "Current access: not signed in";
+    noAccessMessage.classList.remove("hidden");
+  }
+}
+
+function setAdminStatus(message, success) {
+  const status = document.getElementById("adminStatus");
+  status.textContent = message;
+  status.className = "status " + (success ? "good" : "bad");
+}
+
+function setLoginStatus(message, success) {
+  const status = document.getElementById("loginStatus");
+  status.textContent = message;
+  status.className = "status " + (success ? "good" : "bad");
+}
+
+function escapeHtml(value) {
+  return String(value || "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (!getAccounts().length) {
+    setAccounts([
+      {
+        email: "ash.white@eagersautomotive.com.au",
+        name: "Ash White",
+        dealer: "Eagers Automotive",
+        role: "unrestricted",
+        createdAt: new Date().toISOString()
+      }
+    ]);
+  }
+
+  renderAccounts();
+  applyAccess();
+});
+</script>
+
 </body>
 </html>
