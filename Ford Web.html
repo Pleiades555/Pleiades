@@ -10,8 +10,6 @@
   --muted: #d7e0e4;
   --accent: #a3c5c6;
   --border: rgba(255,255,255,0.24);
-  --soft-bg: rgba(255,255,255,0.08);
-  --soft-bg-hover: rgba(255,255,255,0.16);
   --card-bg: rgba(10, 12, 16, 0.72);
   --danger: #ff9b9b;
   --good: #9bffbf;
@@ -285,6 +283,24 @@ button.danger {
   padding: 8px 10px;
 }
 
+.github-box {
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid rgba(163,197,198,0.35);
+  border-radius: 14px;
+  background: rgba(163,197,198,0.10);
+}
+
+.warning-box {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255,180,80,0.14);
+  border: 1px solid rgba(255,210,140,0.38);
+  color: #ffe9c7;
+  font-size: 14px;
+}
+
 @media (max-width: 900px) {
   .page-shell {
     padding-right: 0;
@@ -366,7 +382,7 @@ button.danger {
 
   <div id="loginPanel" class="login-panel">
     <h2>User Access</h2>
-    <p>Enter an approved username to load the Ford Web access level for this browser.</p>
+    <p>Enter an approved username to load the Ford Web access level.</p>
 
     <label for="loginUsername">Username</label>
     <input id="loginUsername" type="text" placeholder="ash" autocomplete="username">
@@ -439,11 +455,30 @@ button.danger {
       <option value="readOnly">Read only</option>
     </select>
 
-    <button onclick="saveAccount()">Save Account</button>
-    <button class="secondary" onclick="seedOwnerAccount()">Add Ash as Unrestricted</button>
-    <button class="danger" onclick="clearAllAccounts()">Clear All Accounts</button>
+    <button onclick="saveAccountLocal()">Save Account Locally</button>
+    <button onclick="saveAccountAndPush()">Save Account + Push to GitHub</button>
+    <button class="secondary" onclick="seedOwnerAccount()">Fill Ash as Unrestricted</button>
+    <button class="danger" onclick="clearAllAccountsLocal()">Clear Local Accounts</button>
 
     <div id="adminStatus" class="status"></div>
+
+    <div class="github-box">
+      <h2>GitHub Push Settings</h2>
+
+      <label for="githubToken">GitHub token</label>
+      <input id="githubToken" type="password" placeholder="Paste token here for this session only" autocomplete="off">
+
+      <button class="secondary" onclick="saveSessionToken()">Use Token This Session</button>
+      <button class="danger" onclick="clearSessionToken()">Clear Session Token</button>
+      <button onclick="pushUsersToGitHub()">Push Current Account List to GitHub</button>
+      <button class="secondary" onclick="reloadUsersFromJson()">Reload users.json</button>
+
+      <div class="warning-box">
+        Do not commit your GitHub token into this HTML file. Paste it only when you are doing admin updates.
+      </div>
+
+      <div id="githubStatus" class="status"></div>
+    </div>
 
     <h2>Saved Accounts</h2>
     <div id="accountList" class="account-grid"></div>
@@ -453,8 +488,20 @@ button.danger {
 
 <script>
 const ADMIN_PASSWORD = "Pleiades";
-const ACCOUNT_STORAGE_KEY = "pleiadesFordAccounts";
+
+const USERS_JSON_PATH = "./accounts/users.json";
+const LOCAL_ACCOUNT_STORAGE_KEY = "pleiadesFordAccounts";
 const CURRENT_USER_KEY = "pleiadesFordCurrentUser";
+const SESSION_TOKEN_KEY = "pleiadesGithubSessionToken";
+
+/*
+  GitHub repo settings.
+  Update these if your repo or branch changes.
+*/
+const GITHUB_OWNER = "Pleiades555";
+const GITHUB_REPO = "Pleiades";
+const GITHUB_BRANCH = "main";
+const GITHUB_USERS_PATH = "accounts/users.json";
 
 const ROLE_PERMISSIONS = {
   unrestricted: ["basic", "tsb", "parts", "workshop", "eagers", "admin"],
@@ -474,30 +521,98 @@ const ROLE_LABELS = {
   readOnly: "Read only"
 };
 
+function normaliseUsername(username) {
+  return String(username || "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, "");
+}
+
 function getAccounts() {
   try {
-    return JSON.parse(localStorage.getItem(ACCOUNT_STORAGE_KEY)) || [];
+    return JSON.parse(localStorage.getItem(LOCAL_ACCOUNT_STORAGE_KEY)) || [];
   } catch (error) {
     return [];
   }
 }
 
 function setAccounts(accounts) {
-  localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(accounts));
+  const cleaned = cleanAccounts(accounts);
+  localStorage.setItem(LOCAL_ACCOUNT_STORAGE_KEY, JSON.stringify(cleaned));
 }
 
-/*
-  Custom username support:
-  - Preserves dots, hyphens, underscores, and numbers.
-  - Converts to lowercase.
-  - Removes leading/trailing spaces.
-  - Internal spaces are removed to avoid login mismatches.
-*/
-function normaliseUsername(username) {
-  return String(username || "")
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, "");
+function cleanAccounts(accounts) {
+  const seen = new Set();
+
+  return (accounts || [])
+    .map(account => ({
+      username: normaliseUsername(account.username || ""),
+      name: String(account.name || account.username || "").trim(),
+      title: String(account.title || "Not specified").trim(),
+      dealer: String(account.dealer || "Not specified").trim(),
+      fordStartDate: String(account.fordStartDate || "").trim(),
+      role: account.role || "readOnly",
+      createdAt: account.createdAt || new Date().toISOString(),
+      updatedAt: account.updatedAt || new Date().toISOString()
+    }))
+    .filter(account => {
+      if (!account.username || seen.has(account.username)) {
+        return false;
+      }
+
+      seen.add(account.username);
+      return true;
+    })
+    .sort((a, b) => a.username.localeCompare(b.username));
+}
+
+async function reloadUsersFromJson() {
+  try {
+    setGithubStatus("Loading users.json...", true);
+
+    const response = await fetch(USERS_JSON_PATH + "?v=" + Date.now(), {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error("Could not load " + USERS_JSON_PATH + " — HTTP " + response.status);
+    }
+
+    const accounts = await response.json();
+
+    if (!Array.isArray(accounts)) {
+      throw new Error("users.json must contain a JSON array.");
+    }
+
+    setAccounts(accounts);
+    renderAccounts();
+    applyAccess();
+    setGithubStatus("users.json loaded successfully.", true);
+  } catch (error) {
+    console.error(error);
+    setGithubStatus("Could not load users.json: " + error.message, false);
+
+    if (!getAccounts().length) {
+      setAccounts(getFallbackAccounts());
+      renderAccounts();
+      applyAccess();
+    }
+  }
+}
+
+function getFallbackAccounts() {
+  return [
+    {
+      username: "ash",
+      name: "Ash White",
+      title: "Completely Unrestricted",
+      dealer: "Eagers Automotive",
+      fordStartDate: "",
+      role: "unrestricted",
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    }
+  ];
 }
 
 function openAdminPassword() {
@@ -511,7 +626,7 @@ function openAdminPassword() {
   }
 }
 
-function saveAccount() {
+function getAccountFromForm() {
   const username = normaliseUsername(document.getElementById("accountUsername").value);
   const name = document.getElementById("accountName").value.trim();
   const title = document.getElementById("accountTitle").value.trim();
@@ -520,21 +635,26 @@ function saveAccount() {
   const role = document.getElementById("accountRole").value;
 
   if (!username) {
-    setAdminStatus("Custom username is required.", false);
-    return;
+    throw new Error("Custom username is required.");
   }
 
-  const accounts = getAccounts();
-  const existingIndex = accounts.findIndex(account => normaliseUsername(account.username) === username);
-  const now = new Date().toISOString();
-
-  const newAccount = {
+  return {
     username,
     name: name || username,
     title: title || "Not specified",
     dealer: dealer || "Not specified",
     fordStartDate: fordStartDate || "",
-    role,
+    role
+  };
+}
+
+function upsertAccount(accountData) {
+  const accounts = getAccounts();
+  const existingIndex = accounts.findIndex(account => normaliseUsername(account.username) === accountData.username);
+  const now = new Date().toISOString();
+
+  const newAccount = {
+    ...accountData,
     createdAt: existingIndex >= 0 ? accounts[existingIndex].createdAt : now,
     updatedAt: now
   };
@@ -549,10 +669,33 @@ function saveAccount() {
   }
 
   setAccounts(accounts);
-  setAdminStatus("Account saved.", true);
-  clearAccountForm();
   renderAccounts();
   applyAccess();
+
+  return getAccounts();
+}
+
+function saveAccountLocal() {
+  try {
+    const accountData = getAccountFromForm();
+    upsertAccount(accountData);
+    setAdminStatus("Account saved locally. Use Push to GitHub to update users.json for everyone.", true);
+    clearAccountForm();
+  } catch (error) {
+    setAdminStatus(error.message, false);
+  }
+}
+
+async function saveAccountAndPush() {
+  try {
+    const accountData = getAccountFromForm();
+    upsertAccount(accountData);
+    clearAccountForm();
+    setAdminStatus("Account saved locally. Pushing to GitHub...", true);
+    await pushUsersToGitHub();
+  } catch (error) {
+    setAdminStatus(error.message, false);
+  }
 }
 
 function seedOwnerAccount() {
@@ -562,7 +705,6 @@ function seedOwnerAccount() {
   document.getElementById("dealerName").value = "Eagers Automotive";
   document.getElementById("fordStartDate").value = "";
   document.getElementById("accountRole").value = "unrestricted";
-  saveAccount();
 }
 
 function clearAccountForm() {
@@ -574,7 +716,7 @@ function clearAccountForm() {
   document.getElementById("accountRole").value = "readOnly";
 }
 
-function deleteAccount(username) {
+function deleteAccountLocal(username) {
   const confirmed = confirm("Delete account for " + username + "?");
 
   if (!confirmed) {
@@ -592,20 +734,26 @@ function deleteAccount(username) {
 
   renderAccounts();
   applyAccess();
+  setAdminStatus("Account deleted locally. Push to GitHub to update users.json for everyone.", true);
 }
 
-function clearAllAccounts() {
+async function deleteAccountAndPush(username) {
+  deleteAccountLocal(username);
+  await pushUsersToGitHub();
+}
+
+function clearAllAccountsLocal() {
   const confirmed = confirm("This will remove every saved account from this browser. Continue?");
 
   if (!confirmed) {
     return;
   }
 
-  localStorage.removeItem(ACCOUNT_STORAGE_KEY);
+  localStorage.removeItem(LOCAL_ACCOUNT_STORAGE_KEY);
   localStorage.removeItem(CURRENT_USER_KEY);
   renderAccounts();
   applyAccess();
-  setAdminStatus("All accounts cleared.", true);
+  setAdminStatus("All local accounts cleared. users.json has not been changed.", true);
 }
 
 function renderAccounts() {
@@ -631,7 +779,8 @@ function renderAccounts() {
         Role: ${escapeHtml(ROLE_LABELS[account.role] || account.role)}<br>
         Days suffered dealing with Ford: ${days}<br>
         <div>${tags}</div>
-        <button class="danger" onclick="deleteAccount('${escapeJsString(account.username)}')">Delete</button>
+        <button class="danger" onclick="deleteAccountLocal('${escapeJsString(account.username)}')">Delete Local</button>
+        <button class="danger" onclick="deleteAccountAndPush('${escapeJsString(account.username)}')">Delete + Push</button>
       </div>
     `;
   }).join("");
@@ -683,11 +832,6 @@ function getCurrentAccount() {
 
 function applyAccess() {
   const account = getCurrentAccount();
-
-  /*
-    No account = no Ford options shown.
-    Logged-in account = only permissions assigned to their role are shown.
-  */
   const allowed = account ? ROLE_PERMISSIONS[account.role] || [] : [];
 
   document.querySelectorAll("[data-access]").forEach(element => {
@@ -752,6 +896,130 @@ function calculateFordDays(startDate) {
   return Math.floor(difference / 86400000).toLocaleString();
 }
 
+function saveSessionToken() {
+  const token = document.getElementById("githubToken").value.trim();
+
+  if (!token) {
+    setGithubStatus("Paste a GitHub token first.", false);
+    return;
+  }
+
+  sessionStorage.setItem(SESSION_TOKEN_KEY, token);
+  document.getElementById("githubToken").value = "";
+  setGithubStatus("GitHub token saved for this browser session only.", true);
+}
+
+function clearSessionToken() {
+  sessionStorage.removeItem(SESSION_TOKEN_KEY);
+  document.getElementById("githubToken").value = "";
+  setGithubStatus("Session token cleared.", true);
+}
+
+function getGithubToken() {
+  const pastedToken = document.getElementById("githubToken").value.trim();
+
+  if (pastedToken) {
+    sessionStorage.setItem(SESSION_TOKEN_KEY, pastedToken);
+    document.getElementById("githubToken").value = "";
+    return pastedToken;
+  }
+
+  return sessionStorage.getItem(SESSION_TOKEN_KEY) || "";
+}
+
+async function pushUsersToGitHub() {
+  const token = getGithubToken();
+
+  if (!token) {
+    setGithubStatus("GitHub token required. Paste token and try again.", false);
+    throw new Error("GitHub token required.");
+  }
+
+  const accounts = cleanAccounts(getAccounts());
+
+  if (!accounts.length) {
+    setGithubStatus("No accounts to push.", false);
+    throw new Error("No accounts to push.");
+  }
+
+  const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${GITHUB_USERS_PATH}`;
+
+  try {
+    setGithubStatus("Checking existing users.json on GitHub...", true);
+
+    let sha = null;
+
+    const getResponse = await fetch(`${apiUrl}?ref=${encodeURIComponent(GITHUB_BRANCH)}`, {
+      headers: {
+        "Accept": "application/vnd.github+json",
+        "Authorization": "Bearer " + token,
+        "X-GitHub-Api-Version": "2022-11-28"
+      }
+    });
+
+    if (getResponse.ok) {
+      const currentFile = await getResponse.json();
+      sha = currentFile.sha;
+    } else if (getResponse.status !== 404) {
+      const errorText = await getResponse.text();
+      throw new Error("GitHub read failed: " + errorText);
+    }
+
+    const jsonText = JSON.stringify(accounts, null, 2) + "\n";
+    const encodedContent = base64EncodeUnicode(jsonText);
+
+    setGithubStatus("Pushing users.json to GitHub...", true);
+
+    const putBody = {
+      message: `Update Ford user accounts (${new Date().toLocaleString()})`,
+      content: encodedContent,
+      branch: GITHUB_BRANCH
+    };
+
+    if (sha) {
+      putBody.sha = sha;
+    }
+
+    const putResponse = await fetch(apiUrl, {
+      method: "PUT",
+      headers: {
+        "Accept": "application/vnd.github+json",
+        "Authorization": "Bearer " + token,
+        "X-GitHub-Api-Version": "2022-11-28",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(putBody)
+    });
+
+    if (!putResponse.ok) {
+      const errorText = await putResponse.text();
+      throw new Error("GitHub push failed: " + errorText);
+    }
+
+    setAccounts(accounts);
+    renderAccounts();
+    applyAccess();
+    setGithubStatus("users.json pushed to GitHub successfully.", true);
+    setAdminStatus("Account list pushed to GitHub.", true);
+  } catch (error) {
+    console.error(error);
+    setGithubStatus(error.message, false);
+    setAdminStatus(error.message, false);
+    throw error;
+  }
+}
+
+function base64EncodeUnicode(value) {
+  const bytes = new TextEncoder().encode(value);
+  let binary = "";
+
+  bytes.forEach(byte => {
+    binary += String.fromCharCode(byte);
+  });
+
+  return btoa(binary);
+}
+
 function setAdminStatus(message, success) {
   const status = document.getElementById("adminStatus");
   status.textContent = message;
@@ -760,6 +1028,12 @@ function setAdminStatus(message, success) {
 
 function setLoginStatus(message, success) {
   const status = document.getElementById("loginStatus");
+  status.textContent = message;
+  status.className = "status " + (success ? "good" : "bad");
+}
+
+function setGithubStatus(message, success) {
+  const status = document.getElementById("githubStatus");
   status.textContent = message;
   status.className = "status " + (success ? "good" : "bad");
 }
@@ -782,52 +1056,11 @@ function escapeJsString(value) {
     .replaceAll("\r", "\\r");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const existingAccounts = getAccounts();
-
-  /*
-    Migration helper:
-    Converts old email-based or ash.white-based accounts into custom username accounts.
-  */
-  const migratedAccounts = existingAccounts.map(account => {
-    if (account.username) {
-      return {
-        ...account,
-        username: normaliseUsername(account.username)
-      };
-    }
-
-    if (account.email) {
-      return {
-        ...account,
-        username: normaliseUsername(account.email.split("@")[0])
-      };
-    }
-
-    return account;
-  }).filter(account => account.username);
-
-  if (migratedAccounts.length) {
-    setAccounts(migratedAccounts);
-  }
+document.addEventListener("DOMContentLoaded", async () => {
+  await reloadUsersFromJson();
 
   if (!getAccounts().length) {
-    setAccounts([
-      {
-        username: "ash",
-        name: "Ash White",
-        title: "Completely Unrestricted",
-        dealer: "Eagers Automotive",
-        fordStartDate: "",
-        role: "unrestricted",
-        createdAt: new Date().toISOString()
-      }
-    ]);
-  }
-
-  const oldCurrentUser = localStorage.getItem(CURRENT_USER_KEY);
-  if (oldCurrentUser) {
-    localStorage.setItem(CURRENT_USER_KEY, normaliseUsername(oldCurrentUser));
+    setAccounts(getFallbackAccounts());
   }
 
   renderAccounts();
