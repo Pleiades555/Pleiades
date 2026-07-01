@@ -332,6 +332,11 @@ button.danger {
   <div id="cardRole" class="role-line">Role</div>
 
   <div class="user-detail">
+    <span>Username</span>
+    <div id="cardUsername">Not specified</div>
+  </div>
+
+  <div class="user-detail">
     <span>Title</span>
     <div id="cardTitle">Not specified</div>
   </div>
@@ -361,10 +366,10 @@ button.danger {
 
   <div id="loginPanel" class="login-panel">
     <h2>User Access</h2>
-    <p>Enter an approved email to load the Ford Web access level for this browser.</p>
+    <p>Enter an approved username to load the Ford Web access level for this browser.</p>
 
-    <label for="loginEmail">Email</label>
-    <input id="loginEmail" type="email" placeholder="example@dealer.com.au">
+    <label for="loginUsername">Username</label>
+    <input id="loginUsername" type="text" placeholder="ash.white" autocomplete="username">
 
     <button onclick="loginUser()">Load Access</button>
     <button class="secondary" onclick="logoutUser()">Clear Access</button>
@@ -373,7 +378,7 @@ button.danger {
   </div>
 
   <div class="section-area">
-    <h2>Ford Shortcuts</h2>
+    <h2 data-access="basic">Ford Shortcuts</h2>
     <ul>
       <li data-access="basic"><a href="https://login.superservice.com/">1. Ford Catalogue</a></li>
       <li data-access="basic"><a href="https://www.fmcdealer.ford.com/content/apr/au/en/home.html">2. Ford FMC Dealer Portal</a></li>
@@ -386,7 +391,7 @@ button.danger {
   </div>
 
   <div class="section-area">
-    <h2>Ford Specifics</h2>
+    <h2 data-access="basic">Ford Specifics</h2>
     <ul>
       <li data-access="basic"><a href="./Ford/Ford Processes.htm">7. Ford Triage Example</a></li>
       <li data-access="basic"><a href="./Ford/TSB/index.html">8. Ford TSB Library</a></li>
@@ -402,17 +407,15 @@ button.danger {
   </div>
 
   <div id="noAccessMessage" class="denied-message hidden">
-    No approved account is currently loaded. Basic links are shown.
+    No approved account is currently loaded. Please sign in to view Ford options.
   </div>
 
   <div id="adminPanel" class="account-panel hidden">
     <h2>Account Creation</h2>
-    <p>
-      This section is hidden behind the local admin password.
-    </p>
+    <p>This section is hidden behind the local admin password.</p>
 
-    <label for="accountEmail">Email</label>
-    <input id="accountEmail" type="email" placeholder="ash.white@eagersautomotive.com.au">
+    <label for="accountUsername">Username</label>
+    <input id="accountUsername" type="text" placeholder="ash.white" autocomplete="off">
 
     <label for="accountName">Name</label>
     <input id="accountName" type="text" placeholder="Ash White">
@@ -483,8 +486,11 @@ function setAccounts(accounts) {
   localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(accounts));
 }
 
-function normaliseEmail(email) {
-  return String(email || "").trim().toLowerCase();
+function normaliseUsername(username) {
+  return String(username || "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, ".");
 }
 
 function openAdminPassword() {
@@ -499,26 +505,25 @@ function openAdminPassword() {
 }
 
 function saveAccount() {
-  const email = normaliseEmail(document.getElementById("accountEmail").value);
+  const username = normaliseUsername(document.getElementById("accountUsername").value);
   const name = document.getElementById("accountName").value.trim();
   const title = document.getElementById("accountTitle").value.trim();
   const dealer = document.getElementById("dealerName").value.trim();
   const fordStartDate = document.getElementById("fordStartDate").value;
   const role = document.getElementById("accountRole").value;
 
-  if (!email) {
-    setAdminStatus("Email is required.", false);
+  if (!username) {
+    setAdminStatus("Username is required.", false);
     return;
   }
 
   const accounts = getAccounts();
-  const existingIndex = accounts.findIndex(account => normaliseEmail(account.email) === email);
-
+  const existingIndex = accounts.findIndex(account => normaliseUsername(account.username) === username);
   const now = new Date().toISOString();
 
   const newAccount = {
-    email,
-    name: name || email,
+    username,
+    name: name || username,
     title: title || "Not specified",
     dealer: dealer || "Not specified",
     fordStartDate: fordStartDate || "",
@@ -544,7 +549,7 @@ function saveAccount() {
 }
 
 function seedOwnerAccount() {
-  document.getElementById("accountEmail").value = "ash.white@eagersautomotive.com.au";
+  document.getElementById("accountUsername").value = "ash.white";
   document.getElementById("accountName").value = "Ash White";
   document.getElementById("accountTitle").value = "Completely Unrestricted";
   document.getElementById("dealerName").value = "Eagers Automotive";
@@ -554,7 +559,7 @@ function seedOwnerAccount() {
 }
 
 function clearAccountForm() {
-  document.getElementById("accountEmail").value = "";
+  document.getElementById("accountUsername").value = "";
   document.getElementById("accountName").value = "";
   document.getElementById("accountTitle").value = "";
   document.getElementById("dealerName").value = "";
@@ -562,19 +567,19 @@ function clearAccountForm() {
   document.getElementById("accountRole").value = "readOnly";
 }
 
-function deleteAccount(email) {
-  const confirmed = confirm("Delete account for " + email + "?");
+function deleteAccount(username) {
+  const confirmed = confirm("Delete account for " + username + "?");
 
   if (!confirmed) {
     return;
   }
 
-  const accounts = getAccounts().filter(account => normaliseEmail(account.email) !== normaliseEmail(email));
+  const accounts = getAccounts().filter(account => normaliseUsername(account.username) !== normaliseUsername(username));
   setAccounts(accounts);
 
-  const currentEmail = localStorage.getItem(CURRENT_USER_KEY);
+  const currentUsername = localStorage.getItem(CURRENT_USER_KEY);
 
-  if (normaliseEmail(currentEmail) === normaliseEmail(email)) {
+  if (normaliseUsername(currentUsername) === normaliseUsername(username)) {
     localStorage.removeItem(CURRENT_USER_KEY);
   }
 
@@ -612,66 +617,71 @@ function renderAccounts() {
 
     return `
       <div class="account-card">
-        <strong>${escapeHtml(account.name || account.email)}</strong><br>
-        ${escapeHtml(account.email)}<br>
+        <strong>${escapeHtml(account.name || account.username)}</strong><br>
+        Username: ${escapeHtml(account.username)}<br>
         Title: ${escapeHtml(account.title || "Not specified")}<br>
         Dealership: ${escapeHtml(account.dealer || "Not specified")}<br>
         Role: ${escapeHtml(ROLE_LABELS[account.role] || account.role)}<br>
         Days suffered dealing with Ford: ${days}<br>
         <div>${tags}</div>
-        <button class="danger" onclick="deleteAccount('${escapeHtml(account.email)}')">Delete</button>
+        <button class="danger" onclick="deleteAccount('${escapeJsString(account.username)}')">Delete</button>
       </div>
     `;
   }).join("");
 }
 
 function loginUser() {
-  const email = normaliseEmail(document.getElementById("loginEmail").value);
+  const username = normaliseUsername(document.getElementById("loginUsername").value);
   const accounts = getAccounts();
-  const account = accounts.find(item => normaliseEmail(item.email) === email);
+  const account = accounts.find(item => normaliseUsername(item.username) === username);
 
-  if (!email) {
-    setLoginStatus("Enter an email address.", false);
+  if (!username) {
+    setLoginStatus("Enter a username.", false);
     return;
   }
 
   if (!account) {
     localStorage.removeItem(CURRENT_USER_KEY);
-    setLoginStatus("No approved account found for that email.", false);
+    setLoginStatus("No approved account found for that username.", false);
     applyAccess();
     return;
   }
 
-  localStorage.setItem(CURRENT_USER_KEY, account.email);
-  setLoginStatus("Access loaded for " + account.email + ".", true);
+  localStorage.setItem(CURRENT_USER_KEY, account.username);
+  setLoginStatus("Access loaded for " + account.username + ".", true);
   applyAccess();
 }
 
 function logoutUser() {
   localStorage.removeItem(CURRENT_USER_KEY);
-  document.getElementById("loginEmail").value = "";
+  document.getElementById("loginUsername").value = "";
   setLoginStatus("Access cleared.", true);
   applyAccess();
 }
 
 function showLoginPanel() {
   document.getElementById("loginPanel").classList.remove("hidden");
-  document.getElementById("loginEmail").focus();
+  document.getElementById("loginUsername").focus();
 }
 
 function getCurrentAccount() {
-  const email = normaliseEmail(localStorage.getItem(CURRENT_USER_KEY));
+  const username = normaliseUsername(localStorage.getItem(CURRENT_USER_KEY));
 
-  if (!email) {
+  if (!username) {
     return null;
   }
 
-  return getAccounts().find(account => normaliseEmail(account.email) === email) || null;
+  return getAccounts().find(account => normaliseUsername(account.username) === username) || null;
 }
 
 function applyAccess() {
   const account = getCurrentAccount();
-  const allowed = account ? ROLE_PERMISSIONS[account.role] || [] : ["basic"];
+
+  /*
+    No account = no Ford options shown.
+    Logged-in account = only permissions assigned to their role are shown.
+  */
+  const allowed = account ? ROLE_PERMISSIONS[account.role] || [] : [];
 
   document.querySelectorAll("[data-access]").forEach(element => {
     const required = element.getAttribute("data-access");
@@ -689,7 +699,7 @@ function applyAccess() {
   const userCard = document.getElementById("userCard");
 
   if (account) {
-    currentUserText.textContent = `Current access: ${account.email} — ${ROLE_LABELS[account.role] || account.role}`;
+    currentUserText.textContent = `Current access: ${account.username} — ${ROLE_LABELS[account.role] || account.role}`;
     noAccessMessage.classList.add("hidden");
     loginPanel.classList.add("hidden");
     userCard.classList.remove("hidden");
@@ -703,7 +713,8 @@ function applyAccess() {
 }
 
 function updateUserCard(account) {
-  document.getElementById("cardName").textContent = account.name || account.email;
+  document.getElementById("cardName").textContent = account.name || account.username;
+  document.getElementById("cardUsername").textContent = account.username || "Not specified";
   document.getElementById("cardRole").textContent = ROLE_LABELS[account.role] || account.role;
   document.getElementById("cardTitle").textContent = account.title || "Not specified";
   document.getElementById("cardDealer").textContent = account.dealer || "Not specified";
@@ -755,11 +766,48 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function escapeJsString(value) {
+  return String(value || "")
+    .replaceAll("\\", "\\\\")
+    .replaceAll("'", "\\'")
+    .replaceAll('"', "&quot;")
+    .replaceAll("\n", "\\n")
+    .replaceAll("\r", "\\r");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  const existingAccounts = getAccounts();
+
+  /*
+    Migration helper:
+    If your browser still has the old email-based account stored,
+    this converts it into a username-based account automatically.
+  */
+  const migratedAccounts = existingAccounts.map(account => {
+    if (account.username) {
+      return account;
+    }
+
+    if (account.email) {
+      return {
+        ...account,
+        username: normaliseUsername(account.email.split("@")[0])
+      };
+    }
+
+    return account;
+  }).filter(account => account.username);
+
+  if (migratedAccounts.length !== existingAccounts.length) {
+    setAccounts(migratedAccounts);
+  } else if (migratedAccounts.length) {
+    setAccounts(migratedAccounts);
+  }
+
   if (!getAccounts().length) {
     setAccounts([
       {
-        email: "ash.white@eagersautomotive.com.au",
+        username: "ash.white",
         name: "Ash White",
         title: "Completely Unrestricted",
         dealer: "Eagers Automotive",
@@ -768,6 +816,11 @@ document.addEventListener("DOMContentLoaded", () => {
         createdAt: new Date().toISOString()
       }
     ]);
+  }
+
+  const oldCurrentEmail = localStorage.getItem("pleiadesFordCurrentUser");
+  if (oldCurrentEmail && oldCurrentEmail.includes("@")) {
+    localStorage.setItem(CURRENT_USER_KEY, normaliseUsername(oldCurrentEmail.split("@")[0]));
   }
 
   renderAccounts();
