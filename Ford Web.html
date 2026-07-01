@@ -369,7 +369,7 @@ button.danger {
     <p>Enter an approved username to load the Ford Web access level for this browser.</p>
 
     <label for="loginUsername">Username</label>
-    <input id="loginUsername" type="text" placeholder="ash.white" autocomplete="username">
+    <input id="loginUsername" type="text" placeholder="ash" autocomplete="username">
 
     <button onclick="loginUser()">Load Access</button>
     <button class="secondary" onclick="logoutUser()">Clear Access</button>
@@ -414,8 +414,8 @@ button.danger {
     <h2>Account Creation</h2>
     <p>This section is hidden behind the local admin password.</p>
 
-    <label for="accountUsername">Username</label>
-    <input id="accountUsername" type="text" placeholder="ash.white" autocomplete="off">
+    <label for="accountUsername">Custom Username</label>
+    <input id="accountUsername" type="text" placeholder="fordadmin, ash, dealer123, eagersparts01" autocomplete="off">
 
     <label for="accountName">Name</label>
     <input id="accountName" type="text" placeholder="Ash White">
@@ -486,11 +486,18 @@ function setAccounts(accounts) {
   localStorage.setItem(ACCOUNT_STORAGE_KEY, JSON.stringify(accounts));
 }
 
+/*
+  Custom username support:
+  - Preserves dots, hyphens, underscores, and numbers.
+  - Converts to lowercase.
+  - Removes leading/trailing spaces.
+  - Internal spaces are removed to avoid login mismatches.
+*/
 function normaliseUsername(username) {
   return String(username || "")
     .trim()
     .toLowerCase()
-    .replace(/\s+/g, ".");
+    .replace(/\s+/g, "");
 }
 
 function openAdminPassword() {
@@ -513,7 +520,7 @@ function saveAccount() {
   const role = document.getElementById("accountRole").value;
 
   if (!username) {
-    setAdminStatus("Username is required.", false);
+    setAdminStatus("Custom username is required.", false);
     return;
   }
 
@@ -549,7 +556,7 @@ function saveAccount() {
 }
 
 function seedOwnerAccount() {
-  document.getElementById("accountUsername").value = "ash.white";
+  document.getElementById("accountUsername").value = "ash";
   document.getElementById("accountName").value = "Ash White";
   document.getElementById("accountTitle").value = "Completely Unrestricted";
   document.getElementById("dealerName").value = "Eagers Automotive";
@@ -780,12 +787,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /*
     Migration helper:
-    If your browser still has the old email-based account stored,
-    this converts it into a username-based account automatically.
+    Converts old email-based or ash.white-based accounts into custom username accounts.
   */
   const migratedAccounts = existingAccounts.map(account => {
     if (account.username) {
-      return account;
+      return {
+        ...account,
+        username: normaliseUsername(account.username)
+      };
     }
 
     if (account.email) {
@@ -798,16 +807,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return account;
   }).filter(account => account.username);
 
-  if (migratedAccounts.length !== existingAccounts.length) {
-    setAccounts(migratedAccounts);
-  } else if (migratedAccounts.length) {
+  if (migratedAccounts.length) {
     setAccounts(migratedAccounts);
   }
 
   if (!getAccounts().length) {
     setAccounts([
       {
-        username: "ash.white",
+        username: "ash",
         name: "Ash White",
         title: "Completely Unrestricted",
         dealer: "Eagers Automotive",
@@ -818,9 +825,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ]);
   }
 
-  const oldCurrentEmail = localStorage.getItem("pleiadesFordCurrentUser");
-  if (oldCurrentEmail && oldCurrentEmail.includes("@")) {
-    localStorage.setItem(CURRENT_USER_KEY, normaliseUsername(oldCurrentEmail.split("@")[0]));
+  const oldCurrentUser = localStorage.getItem(CURRENT_USER_KEY);
+  if (oldCurrentUser) {
+    localStorage.setItem(CURRENT_USER_KEY, normaliseUsername(oldCurrentUser));
   }
 
   renderAccounts();
