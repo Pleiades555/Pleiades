@@ -1,0 +1,69 @@
+{
+  "site": [
+    { "key": "site-basic", "label": "Site / portal access" },
+    { "key": "site-admin", "label": "Site administration" }
+  ],
+  "ford": [
+    { "key": "ford-basic", "label": "Ford basic" },
+    { "key": "ford-tsb", "label": "Ford TSB / recalls" },
+    { "key": "ford-fsm", "label": "Ford FSM" },
+    { "key": "ford-parts", "label": "Ford parts knowledge base" },
+    { "key": "ford-fluids", "label": "Ford fluids" },
+    { "key": "ford-repair", "label": "Ford repair procedures" }
+  ],
+  "jlr": [
+    { "key": "jlr-basic", "label": "JLR basic" },
+    { "key": "jlr-accessories", "label": "JLR accessories" },
+    { "key": "jlr-fsm", "label": "JLR FSM" },
+    { "key": "jlr-service", "label": "JLR service" },
+    { "key": "jlr-processes", "label": "JLR processes" },
+    { "key": "jlr-repairs", "label": "JLR common repairs" },
+    { "key": "jlr-decoder", "label": "JLR service decoder" },
+    { "key": "jlr-fluids", "label": "JLR fluids" }
+  ],
+  "subaru": [
+    { "key": "subaru-basic", "label": "Subaru basic" },
+    { "key": "subaru-accessories", "label": "Subaru accessories" },
+    { "key": "subaru-fsm", "label": "Subaru FSM" },
+    { "key": "subaru-parts", "label": "Subaru parts" },
+    { "key": "subaru-learning", "label": "Subaru learning" },
+    { "key": "subaru-advanced", "label": "Subaru advanced info" },
+    { "key": "subaru-fluids", "label": "Subaru fluids" }
+  ],
+  "honda": [
+    { "key": "honda-basic", "label": "Honda basic" },
+    { "key": "honda-accessories", "label": "Honda accessories" },
+    { "key": "honda-tsb", "label": "Honda TSB" },
+    { "key": "honda-fsm", "label": "Honda FSM" },
+    { "key": "honda-parts", "label": "Honda parts" },
+    { "key": "honda-decoder", "label": "Honda service decoder" },
+    { "key": "honda-common", "label": "Honda common items" },
+    { "key": "honda-fluids", "label": "Honda fluids" }
+  ],
+  "nissan": [
+    { "key": "nissan-basic", "label": "Nissan basic" },
+    { "key": "nissan-accessories", "label": "Nissan accessories" },
+    { "key": "nissan-tsb", "label": "Nissan TSB" },
+    { "key": "nissan-fsm", "label": "Nissan FSM" },
+    { "key": "nissan-parts", "label": "Nissan parts" },
+    { "key": "nissan-fluids", "label": "Nissan fluids" }
+  ],
+  "otherBrands": [
+    { "key": "bmw-basic", "label": "BMW basic" },
+    { "key": "bmw-fluids", "label": "BMW fluids" },
+    { "key": "porsche-basic", "label": "Porsche basic" },
+    { "key": "porsche-fluids", "label": "Porsche fluids" },
+    { "key": "bentley-basic", "label": "Bentley basic" },
+    { "key": "bentley-fluids", "label": "Bentley fluids" },
+    { "key": "volvo-basic", "label": "Volvo basic" },
+    { "key": "volvo-fluids", "label": "Volvo fluids" },
+    { "key": "alfa-basic", "label": "Alfa Romeo basic" },
+    { "key": "alfa-fluids", "label": "Alfa Romeo fluids" },
+    { "key": "kia-basic", "label": "Kia basic" },
+    { "key": "kia-fluids", "label": "Kia fluids" },
+    { "key": "gwm-basic", "label": "GWM basic" },
+    { "key": "gwm-fluids", "label": "GWM fluids" },
+    { "key": "byd-basic", "label": "BYD basic" },
+    { "key": "byd-fluids", "label": "BYD fluids" }
+  ]
+}
