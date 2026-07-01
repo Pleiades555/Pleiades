@@ -28,5 +28,15 @@
     "role": "unrestricted",
     "createdAt": "2026-07-01T01:22:20.871Z",
     "updatedAt": "2026-07-01T01:22:20.871Z"
+  },
+  {
+    "username": "kenw",
+    "name": "Ken Walter",
+    "title": "Parts Manager",
+    "dealer": "11290 - Metro Ford",
+    "fordStartDate": "2016-12-05",
+    "role": "unrestricted",
+    "createdAt": "2026-07-01T04:59:08.043Z",
+    "updatedAt": "2026-07-01T04:59:08.043Z"
   }
 ]
