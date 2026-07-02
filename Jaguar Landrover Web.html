@@ -1,93 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            background-image: url('https://images.hgmsites.net/hug/jaguar-vision-gran-turismo-sv-concept_100774242_h.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-weight: 300;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            font-weight: 400;
-            margin: 0;
-        }
-
-        h2 {
-            font-size: 1.8em;
-            font-weight: 300;
-            margin: 20px auto;
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 20px auto;
-            max-width: 600px;
-        }
-
-        li {
-            margin: 10px 0;
-        }
-
-        a {
-            color: #fff;
-            background: #0055a6;
-            text-decoration: none;
-            padding: 12px 18px;
-            border-radius: 25px;
-            display: inline-block;
-            text-align: center;
-            transition: background 0.3s;
-            font-size: 16px;
-        }
-
-        a:hover {
-            background: #003a7c;
-        }
-    </style>
-    <title>Jaguar Land Rover Shortcuts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JLR Portal</title>
+<link rel="stylesheet" href="./assets/auth.css">
+<script defer src="./assets/auth.js"></script>
+<style>
+:root{--panel:rgba(10,12,16,.70);--border:rgba(255,255,255,.16);--text:#f5f5f5;--muted:#cbd5e1;--brand:#2f855a;--brand-bg:rgba(47,133,90,.18)}
+*{box-sizing:border-box}body{min-height:100vh;margin:0;padding:32px;background:radial-gradient(circle at top left,var(--brand-bg),transparent 34%),linear-gradient(135deg,#071019 0%,#111827 48%,#05070b 100%);font-family:Avenir,Arial,sans-serif;color:var(--text)}.portal-shell{max-width:1180px;padding-right:340px}.hero{margin-bottom:24px;padding:24px;border:1px solid var(--border);border-radius:24px;background:var(--panel);box-shadow:0 18px 48px rgba(0,0,0,.28);backdrop-filter:blur(10px)}.eyebrow{margin:0 0 8px;color:var(--brand);font-size:13px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}h1{margin:0;font-size:clamp(36px,6vw,64px);line-height:.98}.hero-copy{max-width:780px;margin:14px 0 0;color:var(--muted);font-size:18px;line-height:1.45}.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:26px 0 12px}.section-title h2{margin:0;font-size:26px}.section-title p{margin:0;color:var(--muted);font-size:14px}.tile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.portal-tile{--accent:var(--brand);--accent-bg:var(--brand-bg);min-height:126px;display:flex;flex-direction:column;justify-content:space-between;padding:16px;border:1px solid color-mix(in srgb,var(--accent) 38%,rgba(255,255,255,.12));border-left:5px solid var(--accent);border-radius:18px;background:linear-gradient(140deg,var(--accent-bg),rgba(255,255,255,.055) 58%,rgba(0,0,0,.12));color:var(--text);text-decoration:none;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease}.portal-tile:hover{transform:translateY(-2px);border-color:var(--accent);background:linear-gradient(140deg,var(--accent-bg),rgba(255,255,255,.09));box-shadow:0 16px 34px rgba(0,0,0,.24)}.tile-kicker{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.tile-name{margin-top:10px;font-size:23px;font-weight:850}.tile-detail{margin-top:8px;color:var(--muted);font-size:14px;line-height:1.35}.tile-stock{--accent:#22c55e;--accent-bg:rgba(34,197,94,.16)}.tile-accessories{--accent:#a855f7;--accent-bg:rgba(168,85,247,.16)}.tile-fsm{--accent:#14b8a6;--accent-bg:rgba(20,184,166,.17)}.tile-process{--accent:#f59e0b;--accent-bg:rgba(245,158,11,.17)}.tile-service{--accent:#38bdf8;--accent-bg:rgba(56,189,248,.17)}.back-link{display:inline-block;margin-top:24px;color:#d8fcff;text-decoration:none;border:1px solid var(--border);border-radius:14px;padding:10px 14px;background:rgba(255,255,255,.07)}@media(max-width:940px){body{padding:18px}.portal-shell{padding-right:0}.section-title{display:block}}
+</style>
 </head>
-<body>
-    <header>
-        <h1>Jaguar Land Rover Shortcuts</h1>
-    </header>
-    <main>
-        <ul>
-            <li><a href="https://login.sso.jaguarlandrover.com/login.do">1. JLR Catalogue</a></li>
-            <li><a href="https://www.jlr.unipart.co.uk/RIM/Login.jsp">2. RPOS (Stock availability)</a></li>
-            <li><a href="https://triage-apac.superservice.com/">3. Triage</a></li>
-            <li><a href="https://accessories.jaguar.com/au/en/xe//">4. Official Jaguar Accessories</a></li>
-            <li><a href="https://accessories.landrover.com/au/en/">5. Official Land Rover Accessories</a></li>
-            <li><a href="./HomePageLogin.html">. Back</a></li>
-        </ul>
-
-        <h2>Jaguar Land Rover Specific Info</h2>
-        <ul>
-            <li><a href="./JLR/FSM/Land Rover FSM.html">6. Land Rover Workshop Manuals</a></li>
-            <li><a href="./JLR/Processes/JLRProcesses.html">7. JLR Specific Processes</a></li>
-            <li><a href="./JLR/Service.html">8. JLR Useful Information (Under Construction)</a></li>
-            <li><a href="./HomePageLogin.html">. Back</a></li>
-        </ul>
-    </main>
+<body data-requires-access="jlr-basic">
+<div class="portal-shell" data-auth-content>
+<header class="hero"><p class="eyebrow">JLR portal</p><h1>Jaguar Land Rover Reference Hub</h1><p class="hero-copy">JLR shortcuts, stock availability, accessories, FSMs, processes and service information.</p></header>
+<section><div class="section-title"><h2>JLR shortcuts</h2><p>External systems and brand launch points.</p></div><div class="tile-grid">
+<a class="portal-tile" data-access="jlr-basic" href="https://login.sso.jaguarlandrover.com/login.do"><span class="tile-kicker">External</span><span class="tile-name">JLR Catalogue</span><span class="tile-detail">Jaguar Land Rover catalogue login.</span></a>
+<a class="portal-tile tile-stock" data-access="jlr-basic" href="https://www.jlr.unipart.co.uk/RIM/Login.jsp"><span class="tile-kicker">External</span><span class="tile-name">RPOS</span><span class="tile-detail">JLR stock availability via Unipart.</span></a>
+<a class="portal-tile" data-access="jlr-basic" href="https://triage-apac.superservice.com/"><span class="tile-kicker">External</span><span class="tile-name">Triage</span><span class="tile-detail">Superservice triage portal.</span></a>
+<a class="portal-tile tile-accessories" data-access="jlr-accessories" href="https://accessories.jaguar.com/au/en/xe//"><span class="tile-kicker">Accessories</span><span class="tile-name">Jaguar Accessories</span><span class="tile-detail">Official Jaguar accessories portal.</span></a>
+<a class="portal-tile tile-accessories" data-access="jlr-accessories" href="https://accessories.landrover.com/au/en/"><span class="tile-kicker">Accessories</span><span class="tile-name">Land Rover Accessories</span><span class="tile-detail">Official Land Rover accessories portal.</span></a>
+</div></section>
+<section><div class="section-title"><h2>JLR specifics</h2><p>Local Pleiades JLR references.</p></div><div class="tile-grid">
+<a class="portal-tile tile-fsm" data-access="jlr-fsm" href="./JLR/FSM/Land Rover FSM.html"><span class="tile-kicker">FSM</span><span class="tile-name">Land Rover Workshop Manuals</span><span class="tile-detail">JLR / Land Rover FSM references.</span></a>
+<a class="portal-tile tile-process" data-access="jlr-processes" href="./JLR/Processes/JLRProcesses.html"><span class="tile-kicker">Processes</span><span class="tile-name">JLR Specific Processes</span><span class="tile-detail">Brand-specific local process references.</span></a>
+<a class="portal-tile tile-service" data-access="jlr-service" href="./JLR/Service.html"><span class="tile-kicker">Service</span><span class="tile-name">JLR Useful Information</span><span class="tile-detail">JLR useful information and references.</span></a>
+</div></section>
+<a class="back-link" data-access="site-basic" href="./HomePageLogin.html">← Back to Dealer Reference Hub</a>
+</div>
 </body>
 </html>
-
