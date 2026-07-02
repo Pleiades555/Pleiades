@@ -2,68 +2,284 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pleiades Parts</title>
+<title>Pleiades Parts Portal</title>
 <link rel="stylesheet" href="./assets/auth.css">
 <script defer src="./assets/auth.js"></script>
 <style>
+:root {
+  --page-bg: #0b1118;
+  --panel: rgba(10, 12, 16, 0.68);
+  --panel-soft: rgba(255,255,255,0.07);
+  --border: rgba(255,255,255,0.16);
+  --text: #f5f5f5;
+  --muted: #cbd5e1;
+  --accent: #a3c5c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #111827;
-  font-family: Arial, sans-serif;
-  font-size: 30px;
-  color: #f5f5f5;
+  min-height: 100vh;
+  margin: 0;
+  padding: 32px;
+  background:
+    radial-gradient(circle at top left, rgba(163,197,198,0.18), transparent 34%),
+    linear-gradient(135deg, #071019 0%, #111827 48%, #05070b 100%);
+  font-family: Avenir, Arial, sans-serif;
+  color: var(--text);
 }
-a {
-  color: #a3c5c6;
-  background: #1a1a1a;
-  opacity: .85;
-  padding: 2px 6px;
-  border-radius: 4px;
+
+.portal-shell {
+  max-width: 1180px;
+  padding-right: 340px;
 }
-li { margin: 8px 0; }
-.note {
-  font-size: 20px;
-  color: #cbd5e1;
+
+.hero {
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--panel);
+  box-shadow: 0 18px 48px rgba(0,0,0,0.28);
+  backdrop-filter: blur(10px);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: .98;
+}
+
+.hero-copy {
+  max-width: 760px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.user-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(130px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.summary-pill {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+}
+
+.summary-pill span {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.summary-pill strong {
+  font-size: 15px;
+}
+
+.section-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 26px 0 12px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.section-title p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.portal-tile {
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--panel-soft);
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+  transition: transform .16s ease, border-color .16s ease, background .16s ease;
+}
+
+.portal-tile:hover {
+  transform: translateY(-2px);
+  border-color: rgba(163,197,198,0.55);
+  background: rgba(163,197,198,0.14);
+}
+
+.tile-kicker {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.tile-name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.tile-detail {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.footer-note {
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 940px) {
+  body {
+    padding: 18px;
+  }
+
+  .portal-shell {
+    padding-right: 0;
+  }
+
+  .user-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .user-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    display: block;
+  }
 }
 </style>
 </head>
 <body data-requires-access="site-basic">
-<div data-auth-content>
-<h1>Pleiades Parts Project</h1>
+<div class="portal-shell" data-auth-content>
+  <header class="hero">
+    <p class="eyebrow">Pleiades dealer knowledge portal</p>
+    <h1>Parts & Service Reference Hub</h1>
+    <p class="hero-copy">Choose a brand or shared tool. Your account permissions decide which portals, guides, FSMs, TSBs and knowledge bases are visible.</p>
 
-<h2>Brand Pages</h2>
-<ul>
-  <li data-access="subaru-basic"><a href="./Subaru Web.html">1. Subaru</a></li>
-  <li data-access="jlr-basic"><a href="./Jaguar Landrover Web.html">2. Jaguar and Land Rover</a></li>
-  <li data-access="ford-basic"><a href="./Ford Web.html">3. Ford</a></li>
-  <li data-access="nissan-basic"><a href="./Nissan Web.html">4. Nissan</a></li>
-  <li data-access="honda-basic"><a href="./Honda Web.html">5. Honda</a></li>
-  <li data-access="mazda-basic"><a href="./Mazda Web.html">6. Mazda</a></li>
-  <li data-access="volkswagen-basic"><a href="./Volkswagen Web.html">7. Volkswagen</a></li>
-  <li data-access="toyota-basic"><a href="./Toyota Web.html">8. Toyota</a></li>
-  <li data-access="hyundai-basic"><a href="./Hyundai Web.html">9. Hyundai</a></li>
-  <li data-access="kia-basic"><a href="./Kia Web.html">10. Kia</a></li>
-  <li data-access="porsche-basic"><a href="./Porsche Web.html">11. Porsche</a></li>
-  <li data-access="bmw-basic"><a href="./BMW Web.html">12. BMW</a></li>
-  <li data-access="audi-basic"><a href="./Audi Web.html">13. Audi</a></li>
-  <li data-access="volvo-basic"><a href="./Volvo Web.html">14. Volvo</a></li>
-  <li data-access="byd-basic"><a href="./BYD Web.html">15. BYD</a></li>
-  <li data-access="alfa-basic"><a href="./Alfa Web.html">16. Alfa Romeo</a></li>
-  <li data-access="bentley-basic"><a href="./Bentley Web.html">17. Bentley</a></li>
-  <li data-access="mitsubishi-basic"><a href="./Mitsubishi Web.html">18. Mitsubishi</a></li>
-  <li data-access="renault-basic"><a href="./Renault Web.html">19. Renault</a></li>
-</ul>
+    <div class="user-summary">
+      <div class="summary-pill"><span>Signed in as</span><strong id="portalUserName">Loading...</strong></div>
+      <div class="summary-pill"><span>Title</span><strong id="portalUserTitle">Loading...</strong></div>
+      <div class="summary-pill"><span>Dealership</span><strong id="portalUserDealer">Loading...</strong></div>
+      <div class="summary-pill"><span>Access</span><strong id="portalUserRole">Loading...</strong></div>
+    </div>
+  </header>
 
-<h2>Shared Tools</h2>
-<ul>
-  <li data-access="fluids-basic"><a href="./Fluids/Fluids Compatibility Hub.html">Fluids Compatibility Hub</a></li>
-</ul>
+  <section>
+    <div class="section-title">
+      <h2>Brand portals</h2>
+      <p>Only authorised brands are shown.</p>
+    </div>
 
-<h2>Site Information</h2>
-<ul>
-  <li data-access="site-basic"><a href="./Newstead.html">Newstead Specific Info</a></li>
-</ul>
+    <div class="tile-grid">
+      <a class="portal-tile" data-access="subaru-basic" href="./Subaru Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Subaru</span><span class="tile-detail">Accessories, FSMs, learning and parts references.</span></a>
+      <a class="portal-tile" data-access="jlr-basic" href="./Jaguar Landrover Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Jaguar Land Rover</span><span class="tile-detail">JLR service, accessories, FSMs and common repairs.</span></a>
+      <a class="portal-tile" data-access="ford-basic" href="./Ford Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Ford</span><span class="tile-detail">Ford shortcuts, TSBs, FSMs, fluids and parts knowledge.</span></a>
+      <a class="portal-tile" data-access="nissan-basic" href="./Nissan Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Nissan</span><span class="tile-detail">Nissan references, accessories and fluids.</span></a>
+      <a class="portal-tile" data-access="honda-basic" href="./Honda Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Honda</span><span class="tile-detail">Honda accessories, TSBs, common items and decoder tools.</span></a>
+      <a class="portal-tile" data-access="mazda-basic" href="./Mazda Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Mazda</span><span class="tile-detail">Mazda brand portal.</span></a>
+      <a class="portal-tile" data-access="volkswagen-basic" href="./Volkswagen Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Volkswagen</span><span class="tile-detail">Volkswagen brand portal.</span></a>
+      <a class="portal-tile" data-access="toyota-basic" href="./Toyota Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Toyota</span><span class="tile-detail">Toyota brand portal.</span></a>
+      <a class="portal-tile" data-access="hyundai-basic" href="./Hyundai Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Hyundai</span><span class="tile-detail">Hyundai brand portal.</span></a>
+      <a class="portal-tile" data-access="kia-basic" href="./Kia Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Kia</span><span class="tile-detail">Kia brand portal and fluids references.</span></a>
+      <a class="portal-tile" data-access="porsche-basic" href="./Porsche Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Porsche</span><span class="tile-detail">Porsche brand portal.</span></a>
+      <a class="portal-tile" data-access="bmw-basic" href="./BMW Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">BMW</span><span class="tile-detail">BMW brand portal and fluids references.</span></a>
+      <a class="portal-tile" data-access="audi-basic" href="./Audi Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Audi</span><span class="tile-detail">Audi brand portal.</span></a>
+      <a class="portal-tile" data-access="volvo-basic" href="./Volvo Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Volvo</span><span class="tile-detail">Volvo brand portal.</span></a>
+      <a class="portal-tile" data-access="byd-basic" href="./BYD Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">BYD</span><span class="tile-detail">BYD brand portal.</span></a>
+      <a class="portal-tile" data-access="alfa-basic" href="./Alfa Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Alfa Romeo</span><span class="tile-detail">Alfa Romeo brand portal and fluids references.</span></a>
+      <a class="portal-tile" data-access="bentley-basic" href="./Bentley Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Bentley</span><span class="tile-detail">Bentley brand portal.</span></a>
+      <a class="portal-tile" data-access="mitsubishi-basic" href="./Mitsubishi Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Mitsubishi</span><span class="tile-detail">Mitsubishi brand portal.</span></a>
+      <a class="portal-tile" data-access="renault-basic" href="./Renault Web.html"><span class="tile-kicker">Brand</span><span class="tile-name">Renault</span><span class="tile-detail">Renault brand portal.</span></a>
+    </div>
+  </section>
 
-<p class="note">Links rebuilt from the current repository tree.</p>
+  <section>
+    <div class="section-title">
+      <h2>Shared tools</h2>
+      <p>Cross-brand references and site information.</p>
+    </div>
+
+    <div class="tools-grid">
+      <a class="portal-tile" data-access="fluids-basic" href="./Fluids/Fluids Compatibility Hub.html"><span class="tile-kicker">Shared</span><span class="tile-name">Fluids Compatibility Hub</span><span class="tile-detail">Cross-brand fluids and compatibility references.</span></a>
+      <a class="portal-tile" data-access="site-basic" href="./Newstead.html"><span class="tile-kicker">Site</span><span class="tile-name">Newstead Specific Info</span><span class="tile-detail">Local site reference information.</span></a>
+    </div>
+  </section>
+
+  <p class="footer-note">Pleiades v3 test portal running from the site-wide login branch.</p>
 </div>
+
+<script>
+(function () {
+  function updatePortalUserDetails() {
+    if (!window.PleiadesAuth || !window.PleiadesAuth.getCurrentUser) {
+      setTimeout(updatePortalUserDetails, 150);
+      return;
+    }
+
+    const user = window.PleiadesAuth.getCurrentUser();
+    if (!user) return;
+
+    document.getElementById('portalUserName').textContent = user.name || user.username || 'Unknown';
+    document.getElementById('portalUserTitle').textContent = user.title || 'Not specified';
+    document.getElementById('portalUserDealer').textContent = user.dealer || 'Not specified';
+    document.getElementById('portalUserRole').textContent = user.role || 'custom';
+  }
+
+  document.addEventListener('DOMContentLoaded', updatePortalUserDetails);
+  window.addEventListener('storage', updatePortalUserDetails);
+  setInterval(updatePortalUserDetails, 1000);
+})();
+</script>
 </body>
 </html>
