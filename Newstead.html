@@ -1,88 +1,45 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
-	<style>
-		
-			
-		body {	
-			background-image: url('https://cdn.carbuzz.com/gallery-images/1600/944000/400/944413.jpg');
-        		background-repeat: no-repeat;
-        		background-attachment: fixed;
-        		background-position: left;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pentana/ERA Procedures</title>
+<link rel="stylesheet" href="./assets/auth.css">
+<script defer src="./assets/auth.js"></script>
+<style>
+:root{--panel:rgba(10,12,16,.70);--border:rgba(255,255,255,.16);--text:#f5f5f5;--muted:#cbd5e1;--accent:#a3c5c6;--era:#a3c5c6}
+*{box-sizing:border-box}body{min-height:100vh;margin:0;padding:32px;background:radial-gradient(circle at top left,rgba(163,197,198,.18),transparent 34%),linear-gradient(135deg,#071019 0%,#111827 48%,#05070b 100%);font-family:Avenir,Arial,sans-serif;color:var(--text)}
+.portal-shell{max-width:1180px;padding-right:340px}.hero{margin-bottom:24px;padding:24px;border:1px solid var(--border);border-radius:24px;background:var(--panel);box-shadow:0 18px 48px rgba(0,0,0,.28);backdrop-filter:blur(10px)}
+.eyebrow{margin:0 0 8px;color:var(--era);font-size:13px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}h1{margin:0;font-size:clamp(34px,5vw,58px);line-height:1}.hero-copy{max-width:760px;margin:14px 0 0;color:var(--muted);font-size:18px;line-height:1.45}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:26px 0 12px}.section-title h2{margin:0;font-size:26px}.section-title p{margin:0;color:var(--muted);font-size:14px}
+.tile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.portal-tile{--brand:var(--era);--brand-bg:rgba(163,197,198,.15);min-height:126px;display:flex;flex-direction:column;justify-content:space-between;padding:16px;border:1px solid color-mix(in srgb,var(--brand) 38%,rgba(255,255,255,.12));border-left:5px solid var(--brand);border-radius:18px;background:linear-gradient(140deg,var(--brand-bg),rgba(255,255,255,.055) 58%,rgba(0,0,0,.12));color:var(--text);text-decoration:none;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease}.portal-tile:hover{transform:translateY(-2px);border-color:var(--brand);background:linear-gradient(140deg,var(--brand-bg),rgba(255,255,255,.09));box-shadow:0 16px 34px rgba(0,0,0,.24)}
+.tile-kicker{color:var(--brand);font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.tile-name{margin-top:10px;font-size:22px;font-weight:850}.tile-detail{margin-top:8px;color:var(--muted);font-size:14px;line-height:1.35}.back-link{display:inline-block;margin-top:24px;color:#d8fcff;text-decoration:none;border:1px solid var(--border);border-radius:14px;padding:10px 14px;background:rgba(255,255,255,.07)}
+.tile-returns{--brand:#f59e0b;--brand-bg:rgba(245,158,11,.17)}.tile-payment{--brand:#38bdf8;--brand-bg:rgba(56,189,248,.17)}.tile-stock{--brand:#22c55e;--brand-bg:rgba(34,197,94,.17)}.tile-super{--brand:#a855f7;--brand-bg:rgba(168,85,247,.17)}.tile-kit{--brand:#f43f5e;--brand-bg:rgba(244,63,94,.17)}
+@media(max-width:940px){body{padding:18px}.portal-shell{padding-right:0}.section-title{display:block}}
+</style>
+</head>
+<body data-requires-access="site-basic">
+<div class="portal-shell" data-auth-content>
+  <header class="hero">
+    <p class="eyebrow">Basic access</p>
+    <h1>Pentana/ERA Procedures</h1>
+    <p class="hero-copy">Common Pentana/ERA procedures and process references for parts operations.</p>
+  </header>
 
+  <section>
+    <div class="section-title"><h2>Core procedures</h2><p>Newstead Parts Inquiry has been removed.</p></div>
+    <div class="tile-grid">
+      <a class="portal-tile" data-access="site-basic" href="./Newstead/How to check stock availability.pdf"><span class="tile-kicker">Procedure</span><span class="tile-name">Check Stock Availability</span><span class="tile-detail">How to check stock availability in ERA/Pentana.</span></a>
+      <a class="portal-tile" data-access="site-basic" href="./Newstead/Adding items to RO.pdf"><span class="tile-kicker">Procedure</span><span class="tile-name">Adding Items to ROs</span><span class="tile-detail">Adding parts/items to repair orders.</span></a>
+      <a class="portal-tile tile-returns" data-access="site-basic" href="./Newstead/Returns.pdf"><span class="tile-kicker">Procedure</span><span class="tile-name">No Longer Required Returns</span><span class="tile-detail">Parts return process for no longer required items.</span></a>
+      <a class="portal-tile tile-payment" data-access="site-basic" href="./Newstead/Changing payment types on closed RO.pdf"><span class="tile-kicker">Procedure</span><span class="tile-name">Changing Payment Types</span><span class="tile-detail">Changing payment method after invoicing and processing Autogami payments in ERA.</span></a>
+      <a class="portal-tile tile-stock" data-access="site-basic" href="./Newstead/Stock Orders.pdf"><span class="tile-kicker">Procedure</span><span class="tile-name">Generating Stock Orders</span><span class="tile-detail">Stock order generation process.</span></a>
+      <a class="portal-tile tile-super" data-access="site-basic" href="./Newstead/Creating supersession list.pdf"><span class="tile-kicker">Procedure</span><span class="tile-name">Linking a Supersession</span><span class="tile-detail">Creating and linking a supersession list.</span></a>
+      <a class="portal-tile tile-super" data-access="site-basic" href="./Newstead/Removing a supersession.pdf"><span class="tile-kicker">Procedure</span><span class="tile-name">Removing a Supersession</span><span class="tile-detail">How to remove or unlink a supersession.</span></a>
+      <a class="portal-tile tile-kit" data-access="site-basic" href="./Newstead/How to make kits in ERA.pdf"><span class="tile-kicker">Procedure</span><span class="tile-name">Creating Kits in ERA</span><span class="tile-detail">Kit creation process in ERA.</span></a>
+    </div>
+  </section>
 
-
-			font-family: Arial, sans-serif;  /* set font family */
-			font-size: 30px;  /* set font size */
-			color: #f5f5f5;  /* set font color */
-	}		
-			a {
-		        color: #f5f5f5;
-			background: #1a1a1a;
-			opacity: .75;
-    			  }
-
-	</style>
-
-
-<h1>Newstead Parts Basics</h1>
-
-</ul>
-
-	
-	<li><a href="./Newstead/How to perform a basic parts inquiry.pdf">1. How to perform a Basic Parts Inquiry</a></li>
-	<li><a href="./Newstead/How to check stock availability.pdf">2. How to check stock availability</a></li>
-	<li><a href="./Newstead/.pdf">3. Parts Quoting (Under Construction)</a></li>
-	<li><a href="./Newstead/.pdf">4. Parts Quote Conversion (Under Construction)</a></li>
-	<li><a href="./Newstead/Adding items to RO.pdf">5. Adding items to RO's</a></li>
-	
-	<li><a href="./HomePageLogin.html"> Back</a></li> 
-</ul>
-</p>
-
-
-
-<h2>Newstead Advanced Information</h2>
-
-</ul>
-
-
-	
-	<li><a href="./Newstead/Triage Overview.pdf">6. Triage Overview</a></li>
-	<li><a href="./Newstead/Newstead Run.docx">7. Triage Tip #1 - Okay, who did it?(Coming soon)</a></li>
-	<li><a href="./Newstead/Triage Tip 2.pdf">8. Triage Tip #2 - Dude, Where are my parts?</a></li>
-	<li><a href="./Newstead/Returns.pdf">9. No Longer Required Parts return process.</a></li>
-	<li><a href="./Newstead/Changing payment types on closed RO.pdf">10. Changing payment method after invoicing and processing Autogami payments in ERA.</a></li>
-	<li><a href="./Newstead/Stock Orders.pdf">11. Generating Stock Orders.</a></li>
-	<li><a href="./Newstead/Creating supersession list.pdf">12. Linking a supersession.</a></li>
-	<li><a href="./Newstead/Removing a supersession.pdf">13. How to remove/unlink a supersession.</a></li>
-	<li><a href="./Newstead/How to make kits in ERA.pdf">14. Creating Kits in ERA.</a></li>
-	<li><a href="./HomePageLogin.html"> Back</a></li> 
-</ul>
-</p>
-
-<h3>General Tools Information</h3>
-
-</ul>
-
-
-	<li><a href="./Newstead/Newstead Parts Inquiry.html">. Newstead Parts Inquiry</a></li>
-	<li><a href="https://www.paintscratch.com/">14. Colour Codes Information</a></li>
-	<li><a href="https://www.sparkplug-crossreference.com/">15. Spark Plug Cross Reference Information</a></li>
-	<li><a href="https://www.airfilter-crossreference.com">16. Air Filter Cross Reference Information</a></li>
-	<li><a href="https://www.oilfilter-crossreference.com">17. Oil Filter Cross Reference Information</a></li>
-	<li><a href="https://www.alcofilters.com/en-gb/catalogue/">18. (Better) Oil Filter Cross Reference Information</a></li>
-	<li><a href="https://www.westernfilters.net.au">19. General Cross Reference Information</a></li>
-	
-	
-	<li><a href="./HomePageLogin.html"> Back</a></li> 
-</ul>
-</p>
-
-	
-<br>
+  <a class="back-link" data-access="site-basic" href="./HomePageLogin.html">← Back to Dealer Reference Hub</a>
+</div>
 </body>
 </html>
