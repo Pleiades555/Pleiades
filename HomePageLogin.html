@@ -86,7 +86,9 @@ h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: .98; }
 .brand-mitsubishi { --brand:#ef4444; --brand-bg:rgba(239,68,68,.16); }
 .brand-renault { --brand:#facc15; --brand-bg:rgba(250,204,21,.16); }
 .brand-fluids { --brand:#14b8a6; --brand-bg:rgba(20,184,166,.17); }
-.brand-site { --brand:#a3c5c6; --brand-bg:rgba(163,197,198,.14); }
+.brand-era { --brand:#a3c5c6; --brand-bg:rgba(163,197,198,.14); }
+.brand-triage { --brand:#38bdf8; --brand-bg:rgba(56,189,248,.17); }
+.brand-tools { --brand:#f59e0b; --brand-bg:rgba(245,158,11,.17); }
 .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
 .footer-note { margin: 26px 0 0; color: var(--muted); font-size: 14px; }
 @media (max-width: 940px) { body { padding: 18px; } .portal-shell { padding-right: 0; } .user-summary { grid-template-columns: repeat(2, 1fr); } }
@@ -134,10 +136,12 @@ h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); line-height: .98; }
   </section>
 
   <section>
-    <div class="section-title"><h2>Shared tools</h2><p>Cross-brand references and site information.</p></div>
+    <div class="section-title"><h2>Basic tools</h2><p>Pentana/ERA procedures, triage help and general reference links.</p></div>
     <div class="tools-grid">
+      <a class="portal-tile brand-era" data-access="site-basic" href="./Newstead.html"><span class="tile-kicker">Basic</span><span class="tile-name">Pentana/ERA Procedures</span><span class="tile-detail">Common ERA procedures including stock, RO items, returns, supersessions and kits.</span></a>
+      <a class="portal-tile brand-triage" data-access="site-basic" href="./Superservice Triage Tips.html"><span class="tile-kicker">Basic</span><span class="tile-name">Superservice Triage Tips</span><span class="tile-detail">Triage overview and parts triage tips.</span></a>
+      <a class="portal-tile brand-tools" data-access="site-basic" href="./General Tools.html"><span class="tile-kicker">Basic</span><span class="tile-name">General Tools</span><span class="tile-detail">Colour codes, spark plug references, air/oil filters and cross-reference tools.</span></a>
       <a class="portal-tile brand-fluids" data-access="fluids-basic" href="./Fluids/Fluids Compatibility Hub.html"><span class="tile-kicker">Shared</span><span class="tile-name">Fluids Compatibility Hub</span><span class="tile-detail">Cross-brand fluids and compatibility references.</span></a>
-      <a class="portal-tile brand-site" data-access="site-basic" href="./Newstead.html"><span class="tile-kicker">Site</span><span class="tile-name">Newstead Specific Info</span><span class="tile-detail">Local site reference information.</span></a>
     </div>
   </section>
 
