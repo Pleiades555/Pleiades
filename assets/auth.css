@@ -1,0 +1,279 @@
+:root {
+  --pleiades-bg: #0b1118;
+  --pleiades-card: rgba(10, 12, 16, 0.76);
+  --pleiades-card-soft: rgba(10, 12, 16, 0.55);
+  --pleiades-border: rgba(255,255,255,0.22);
+  --pleiades-text: #f5f5f5;
+  --pleiades-muted: #d7e0e4;
+  --pleiades-accent: #a3c5c6;
+  --pleiades-danger: #ff9b9b;
+  --pleiades-good: #9bffbf;
+}
+
+[data-access], [data-auth-gate] {
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.pleiades-hidden {
+  display: none !important;
+}
+
+.pleiades-auth-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9990;
+  background: radial-gradient(circle at top left, rgba(163,197,198,0.22), transparent 32%), rgba(5, 8, 12, 0.82);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  text-shadow: none;
+}
+
+.pleiades-auth-card,
+.pleiades-user-card,
+.pleiades-admin-panel {
+  background: var(--pleiades-card);
+  border: 1px solid var(--pleiades-border);
+  color: var(--pleiades-text);
+  border-radius: 18px;
+  box-shadow: 0 18px 44px rgba(0,0,0,.38);
+  backdrop-filter: blur(12px);
+  font-family: Avenir, Arial, sans-serif;
+  text-shadow: none;
+}
+
+.pleiades-auth-card {
+  width: min(460px, 96vw);
+  padding: 22px;
+}
+
+.pleiades-auth-card h2,
+.pleiades-admin-panel h2 {
+  margin: 0 0 10px;
+  color: var(--pleiades-text);
+}
+
+.pleiades-auth-card p,
+.pleiades-admin-panel p {
+  color: var(--pleiades-muted);
+  font-size: 15px;
+}
+
+.pleiades-auth-card label,
+.pleiades-admin-panel label {
+  display: block;
+  color: var(--pleiades-muted);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin: 12px 0 5px;
+}
+
+.pleiades-auth-card input,
+.pleiades-admin-panel input,
+.pleiades-admin-panel select,
+.pleiades-admin-panel textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--pleiades-border);
+  border-radius: 10px;
+  background: rgba(255,255,255,.94);
+  color: #111;
+  font-size: 15px;
+  font-family: Avenir, Arial, sans-serif;
+}
+
+.pleiades-auth-card button,
+.pleiades-user-card button,
+.pleiades-admin-panel button {
+  border: 0;
+  border-radius: 10px;
+  padding: 9px 12px;
+  cursor: pointer;
+  background: var(--pleiades-accent);
+  color: #0c1214;
+  font-weight: 700;
+  margin: 8px 6px 0 0;
+  font-family: Avenir, Arial, sans-serif;
+}
+
+.pleiades-auth-card button.secondary,
+.pleiades-user-card button.secondary,
+.pleiades-admin-panel button.secondary {
+  background: #d6dde0;
+}
+
+.pleiades-auth-card button.danger,
+.pleiades-user-card button.danger,
+.pleiades-admin-panel button.danger {
+  background: #ffb1b1;
+}
+
+.pleiades-status {
+  min-height: 20px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.pleiades-good { color: var(--pleiades-good); }
+.pleiades-bad { color: var(--pleiades-danger); }
+
+.pleiades-user-card {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  width: 310px;
+  z-index: 9980;
+  padding: 15px;
+}
+
+.pleiades-user-card h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.pleiades-user-role {
+  color: var(--pleiades-accent);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.pleiades-user-detail {
+  margin: 7px 0;
+  font-size: 13px;
+  color: #eef5f6;
+}
+
+.pleiades-user-detail span {
+  display: block;
+  color: var(--pleiades-muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 11px;
+}
+
+.pleiades-counter {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(163,197,198,.13);
+  border: 1px solid rgba(163,197,198,.34);
+}
+
+.pleiades-counter-number {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pleiades-counter-label {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #dff6f7;
+}
+
+.pleiades-admin-toggle {
+  position: fixed;
+  bottom: 14px;
+  right: 14px;
+  z-index: 9981;
+  background: rgba(0,0,0,.52);
+  color: var(--pleiades-accent);
+  border: 1px solid var(--pleiades-border);
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.pleiades-admin-panel {
+  position: fixed;
+  inset: 20px;
+  z-index: 9995;
+  overflow: auto;
+  padding: 20px;
+}
+
+.pleiades-admin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.pleiades-permission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.pleiades-check {
+  display: flex !important;
+  gap: 8px;
+  align-items: center;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-size: 14px !important;
+  color: var(--pleiades-text) !important;
+  margin: 0 !important;
+  background: rgba(255,255,255,.08);
+  border: 1px solid var(--pleiades-border);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.pleiades-check input {
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.pleiades-account-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.pleiades-account-card {
+  border: 1px solid var(--pleiades-border);
+  border-radius: 14px;
+  background: rgba(255,255,255,.08);
+  padding: 12px;
+  font-size: 14px;
+}
+
+.pleiades-brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.pleiades-brand-tile {
+  display: block;
+  text-decoration: none;
+  color: #d8fcff;
+  background: rgba(0,0,0,.30);
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.pleiades-brand-tile:hover {
+  background: rgba(163,197,198,.22);
+  border-color: rgba(163,197,198,.55);
+}
+
+@media (max-width: 900px) {
+  .pleiades-user-card {
+    position: static;
+    width: auto;
+    margin: 12px;
+  }
+
+  .pleiades-admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
