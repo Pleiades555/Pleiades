@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-07-02T00:00:00.000Z",
+  "settings": {
+    "mode": "random",
+    "loopPlaylist": true,
+    "mobileVideo": false,
+    "fallbackToGradient": true
+  },
+  "brands": {
+    "ford": {
+      "label": "Ford",
+      "folder": "/Pleiades/assets/video/ford/",
+      "videos": [
+        "ford-01.mp4",
+        "ford-02.mp4",
+        "ford-03.mp4"
+      ]
+    },
+    "subaru": {
+      "label": "Subaru",
+      "folder": "/Pleiades/assets/video/subaru/",
+      "videos": [
+        "subaru-01.mp4",
+        "subaru-02.mp4",
+        "subaru-03.mp4"
+      ]
+    },
+    "jlr": {
+      "label": "Jaguar Land Rover",
+      "folder": "/Pleiades/assets/video/jlr/",
+      "videos": [
+        "jlr-01.mp4",
+        "jlr-02.mp4",
+        "jlr-03.mp4"
+      ]
+    },
+    "honda": {
+      "label": "Honda",
+      "folder": "/Pleiades/assets/video/honda/",
+      "videos": [
+        "honda-01.mp4",
+        "honda-02.mp4",
+        "honda-03.mp4"
+      ]
+    },
+    "nissan": {
+      "label": "Nissan",
+      "folder": "/Pleiades/assets/video/nissan/",
+      "videos": [
+        "nissan-01.mp4",
+        "nissan-02.mp4",
+        "nissan-03.mp4"
+      ]
+    },
+    "toyota": {
+      "label": "Toyota",
+      "folder": "/Pleiades/assets/video/toyota/",
+      "videos": ["toyota-01.mp4"]
+    },
+    "mazda": {
+      "label": "Mazda",
+      "folder": "/Pleiades/assets/video/mazda/",
+      "videos": ["mazda-01.mp4"]
+    },
+    "bmw": {
+      "label": "BMW",
+      "folder": "/Pleiades/assets/video/bmw/",
+      "videos": ["bmw-01.mp4"]
+    },
+    "porsche": {
+      "label": "Porsche",
+      "folder": "/Pleiades/assets/video/porsche/",
+      "videos": ["porsche-01.mp4"]
+    },
+    "audi": {
+      "label": "Audi",
+      "folder": "/Pleiades/assets/video/audi/",
+      "videos": ["audi-01.mp4"]
+    },
+    "volvo": {
+      "label": "Volvo",
+      "folder": "/Pleiades/assets/video/volvo/",
+      "videos": ["volvo-01.mp4"]
+    },
+    "kia": {
+      "label": "Kia",
+      "folder": "/Pleiades/assets/video/kia/",
+      "videos": ["kia-01.mp4"]
+    },
+    "hyundai": {
+      "label": "Hyundai",
+      "folder": "/Pleiades/assets/video/hyundai/",
+      "videos": ["hyundai-01.mp4"]
+    }
+  }
+}

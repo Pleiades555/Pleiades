@@ -1,0 +1,12 @@
+Place brand background videos in subfolders here.
+
+Recommended layout:
+
+assets/video/ford/ford-01.mp4
+assets/video/ford/ford-02.mp4
+assets/video/subaru/subaru-01.mp4
+assets/video/jlr/jlr-01.mp4
+assets/video/honda/honda-01.mp4
+assets/video/nissan/nissan-01.mp4
+
+Update assets/video/brand-playlists.json after adding or renaming videos.
