@@ -1,0 +1,113 @@
+/* Pleiades brand portal cinematic layer */
+.brand-video-bg,
+.brand-video-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.brand-video-bg {
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .34;
+  filter: saturate(.95) contrast(1.05);
+}
+
+.brand-video-overlay {
+  z-index: -2;
+  background:
+    radial-gradient(circle at top left, var(--brand-bg, rgba(163,197,198,.16)), transparent 35%),
+    linear-gradient(115deg, rgba(4,8,13,.92), rgba(8,14,22,.78) 45%, rgba(2,5,8,.94));
+}
+
+body.brand-cinematic {
+  background: linear-gradient(135deg, #071019 0%, #111827 48%, #05070b 100%);
+  overflow-x: hidden;
+}
+
+body.brand-cinematic::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+  background:
+    radial-gradient(circle at 18% 14%, var(--brand-bg, rgba(163,197,198,.20)), transparent 28%),
+    radial-gradient(circle at 88% 20%, rgba(255,255,255,.07), transparent 26%),
+    linear-gradient(135deg, #071019, #111827 52%, #05070b);
+  animation: pleiadesDrift 18s ease-in-out infinite alternate;
+}
+
+@keyframes pleiadesDrift {
+  from { transform: scale(1); filter: hue-rotate(0deg); }
+  to { transform: scale(1.06); filter: hue-rotate(6deg); }
+}
+
+.brand-portal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.brand-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--brand, #a3c5c6) 35%, rgba(255,255,255,.18));
+  background: rgba(255,255,255,.065);
+  color: #edf7f8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.brand-chip::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--brand, #a3c5c6);
+  box-shadow: 0 0 14px var(--brand, #a3c5c6);
+}
+
+.portal-tile {
+  position: relative;
+  overflow: hidden;
+}
+
+.portal-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.085), transparent);
+  transform: translateX(-130%);
+  transition: transform .55s ease;
+  pointer-events: none;
+}
+
+.portal-tile:hover::after {
+  transform: translateX(130%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.brand-cinematic::before,
+  .portal-tile::after {
+    animation: none;
+    transition: none;
+  }
+
+  .brand-video-bg {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .brand-video-bg {
+    display: none;
+  }
+}
