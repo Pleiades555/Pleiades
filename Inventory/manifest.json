@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-07-03T00:00:00.000Z",
+  "permission": "eagersinventory",
+  "brands": [
+    {
+      "id": "ford",
+      "label": "Ford",
+      "accent": "#3b82f6",
+      "folder": "./Inventory/Ford/",
+      "documents": [
+        { "title": "Ford Ordering Process", "file": "Ordering Process.pdf", "type": "Ordering" }
+      ]
+    },
+    {
+      "id": "jlr",
+      "label": "Jaguar Land Rover",
+      "accent": "#2f855a",
+      "folder": "./Inventory/JLR/",
+      "documents": [
+        { "title": "JLR Ordering Process", "file": "Ordering Process.pdf", "type": "Ordering" }
+      ]
+    },
+    {
+      "id": "subaru",
+      "label": "Subaru",
+      "accent": "#2b6cb0",
+      "folder": "./Inventory/Subaru/",
+      "documents": [
+        { "title": "Subaru Ordering Process", "file": "Ordering Process.pdf", "type": "Ordering" }
+      ]
+    },
+    {
+      "id": "honda",
+      "label": "Honda",
+      "accent": "#dc2626",
+      "folder": "./Inventory/Honda/",
+      "documents": [
+        { "title": "Honda Ordering Process", "file": "Ordering Process.pdf", "type": "Ordering" }
+      ]
+    },
+    {
+      "id": "nissan",
+      "label": "Nissan",
+      "accent": "#ef4444",
+      "folder": "./Inventory/Nissan/",
+      "documents": [
+        { "title": "Nissan Ordering Process", "file": "Ordering Process.pdf", "type": "Ordering" }
+      ]
+    },
+    {
+      "id": "general",
+      "label": "General Inventory",
+      "accent": "#14b8a6",
+      "folder": "./Inventory/General/",
+      "documents": [
+        { "title": "General Inventory Procedure", "file": "General Inventory Procedure.pdf", "type": "General" }
+      ]
+    }
+  ]
+}

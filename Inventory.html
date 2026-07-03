@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventory Knowledge Centre</title>
+<link rel="stylesheet" href="./assets/auth.css">
+<script defer src="./assets/auth.js"></script>
+<style>
+:root{--panel:rgba(10,12,16,.70);--border:rgba(255,255,255,.16);--text:#f5f5f5;--muted:#cbd5e1;--brand:#14b8a6;--brand-bg:rgba(20,184,166,.18)}
+*{box-sizing:border-box}body{min-height:100vh;margin:0;padding:32px;background:radial-gradient(circle at top left,var(--brand-bg),transparent 34%),linear-gradient(135deg,#071019 0%,#111827 48%,#05070b 100%);font-family:Avenir,Arial,sans-serif;color:var(--text)}
+.portal-shell{max-width:1180px;padding-right:340px}.hero{margin-bottom:24px;padding:24px;border:1px solid var(--border);border-radius:24px;background:var(--panel);box-shadow:0 18px 48px rgba(0,0,0,.28);backdrop-filter:blur(10px)}
+.eyebrow{margin:0 0 8px;color:var(--brand);font-size:13px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}h1{margin:0;font-size:clamp(36px,6vw,64px);line-height:.98}.hero-copy{max-width:800px;margin:14px 0 0;color:var(--muted);font-size:18px;line-height:1.45}
+.inventory-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0}.inventory-toolbar input{min-width:min(420px,100%);flex:1;padding:12px 14px;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,.92);font:15px Avenir,Arial,sans-serif;color:#111}.inventory-toolbar button{border:0;border-radius:14px;padding:12px 14px;background:var(--brand);color:#061011;font-weight:900;cursor:pointer}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:26px 0 12px}.section-title h2{margin:0;font-size:26px}.section-title p{margin:0;color:var(--muted);font-size:14px}.brand-section{margin-bottom:28px}.tile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.portal-tile{--accent:var(--brand);--accent-bg:var(--brand-bg);min-height:128px;display:flex;flex-direction:column;justify-content:space-between;padding:16px;border:1px solid color-mix(in srgb,var(--accent) 38%,rgba(255,255,255,.12));border-left:5px solid var(--accent);border-radius:18px;background:linear-gradient(140deg,var(--accent-bg),rgba(255,255,255,.055) 58%,rgba(0,0,0,.12));color:var(--text);text-decoration:none;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease}.portal-tile:hover{transform:translateY(-2px);border-color:var(--accent);background:linear-gradient(140deg,var(--accent-bg),rgba(255,255,255,.09));box-shadow:0 16px 34px rgba(0,0,0,.24)}
+.tile-kicker{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.tile-name{margin-top:10px;font-size:23px;font-weight:850}.tile-detail{margin-top:8px;color:var(--muted);font-size:14px;line-height:1.35}.empty-state{padding:18px;border:1px dashed var(--border);border-radius:18px;color:var(--muted);background:rgba(255,255,255,.05)}.back-link{display:inline-block;margin-top:24px;color:#d8fcff;text-decoration:none;border:1px solid var(--border);border-radius:14px;padding:10px 14px;background:rgba(255,255,255,.07)}
+@media(max-width:940px){body{padding:18px}.portal-shell{padding-right:0}.section-title{display:block}}
+</style>
+</head>
+<body data-requires-access="eagersinventory">
+<div class="portal-shell" data-auth-content>
+  <header class="hero">
+    <p class="eyebrow">Eagers Inventory</p>
+    <h1>Inventory Knowledge Centre</h1>
+    <p class="hero-copy">Brand-specific inventory, unlinked ordering and ordering-process PDFs. This section is visible only to accounts with <strong>eagersinventory</strong> permission.</p>
+    <div class="inventory-toolbar">
+      <input id="inventorySearch" type="search" placeholder="Search brand, process, VOR, campaign, backorder, returns...">
+      <button id="inventoryClear" type="button">Clear</button>
+    </div>
+  </header>
+
+  <main id="inventoryContent">
+    <div class="empty-state">Loading inventory procedures...</div>
+  </main>
+
+  <a class="back-link" data-access="site-basic" href="./HomePageLogin.html">← Back to Dealer Reference Hub</a>
+</div>
+
+<script>
+(function(){
+  const manifestPath = './Inventory/manifest.json';
+  const content = document.getElementById('inventoryContent');
+  const search = document.getElementById('inventorySearch');
+  const clear = document.getElementById('inventoryClear');
+  let manifest = null;
+
+  function escapeHtml(value){return String(value||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;');}
+  function normalise(value){return String(value||'').toLowerCase();}
+
+  async function loadManifest(){
+    try{
+      const response = await fetch(manifestPath + '?v=' + Date.now(), {cache:'no-store'});
+      if(!response.ok) throw new Error('HTTP ' + response.status);
+      manifest = await response.json();
+      render();
+    }catch(error){
+      content.innerHTML = '<div class="empty-state">Unable to load Inventory/manifest.json. Add PDFs and check the manifest file.</div>';
+    }
+  }
+
+  function render(){
+    if(!manifest || !Array.isArray(manifest.brands)){
+      content.innerHTML = '<div class="empty-state">No inventory procedures configured yet.</div>';
+      return;
+    }
+    const q = normalise(search.value);
+    const html = manifest.brands.map(brand => renderBrand(brand, q)).filter(Boolean).join('');
+    content.innerHTML = html || '<div class="empty-state">No matching inventory procedures found.</div>';
+  }
+
+  function renderBrand(brand, q){
+    const docs = Array.isArray(brand.documents) ? brand.documents : [];
+    const matches = docs.filter(doc => {
+      const haystack = normalise([brand.label, doc.title, doc.file, doc.type, doc.description].join(' '));
+      return !q || haystack.includes(q);
+    });
+    if(!matches.length) return '';
+    const accent = brand.accent || '#14b8a6';
+    return `
+      <section class="brand-section">
+        <div class="section-title"><h2>${escapeHtml(brand.label)}</h2><p>${matches.length} procedure${matches.length === 1 ? '' : 's'}</p></div>
+        <div class="tile-grid">
+          ${matches.map(doc => renderDoc(brand, doc, accent)).join('')}
+        </div>
+      </section>`;
+  }
+
+  function renderDoc(brand, doc, accent){
+    const href = (brand.folder || './Inventory/') + (doc.file || '#');
+    const type = doc.type || 'PDF';
+    const detail = doc.description || doc.file || 'Inventory / ordering PDF.';
+    return `<a class="portal-tile" style="--accent:${escapeHtml(accent)};--accent-bg:${hexToRgba(accent,.17)}" data-access="eagersinventory" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer"><span class="tile-kicker">${escapeHtml(type)}</span><span class="tile-name">${escapeHtml(doc.title || doc.file || 'Inventory Procedure')}</span><span class="tile-detail">${escapeHtml(detail)}</span></a>`;
+  }
+
+  function hexToRgba(hex, alpha){
+    const clean = String(hex || '#14b8a6').replace('#','');
+    const value = parseInt(clean.length === 3 ? clean.split('').map(c=>c+c).join('') : clean, 16);
+    const r = (value >> 16) & 255, g = (value >> 8) & 255, b = value & 255;
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
+
+  search.addEventListener('input', render);
+  clear.addEventListener('click', () => { search.value = ''; render(); search.focus(); });
+  loadManifest();
+})();
+</script>
+</body>
+</html>
