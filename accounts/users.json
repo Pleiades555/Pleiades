@@ -4,8 +4,11 @@
     "name": "Brandon Sumpter",
     "title": "Parts Legend",
     "dealer": "11290 - Metro Ford",
+    "department": "",
     "fordStartDate": "2025-06-09",
     "role": "unrestricted",
+    "enabled": true,
+    "permissions": null,
     "createdAt": "2026-07-01T01:43:47.102Z",
     "updatedAt": "2026-07-01T01:43:47.102Z"
   },
@@ -14,8 +17,11 @@
     "name": "Craig Odger",
     "title": "Parts Manager & Ford Legend",
     "dealer": "14160 - Scenic Ford",
+    "department": "",
     "fordStartDate": "1980-02-01",
     "role": "externalDealer",
+    "enabled": true,
+    "permissions": null,
     "createdAt": "2026-07-01T02:14:00.576Z",
     "updatedAt": "2026-07-01T02:14:00.576Z"
   },
@@ -24,18 +30,39 @@
     "name": "Ashton White",
     "title": "Admin",
     "dealer": "11290 - Metro Ford",
+    "department": "",
     "fordStartDate": "2020-01-01",
     "role": "unrestricted",
+    "enabled": true,
+    "permissions": null,
     "createdAt": "2026-07-01T01:22:20.871Z",
     "updatedAt": "2026-07-01T01:22:20.871Z"
+  },
+  {
+    "username": "invtester",
+    "name": "Sample Text Bro",
+    "title": "Inventory Tester",
+    "dealer": "S200 - Inventory",
+    "department": "Parts - Inventory",
+    "fordStartDate": "2026-01-01",
+    "role": "custom",
+    "enabled": true,
+    "permissions": [
+      "eagersinventory"
+    ],
+    "createdAt": "2026-07-03T05:51:47.114Z",
+    "updatedAt": "2026-07-03T05:51:47.114Z"
   },
   {
     "username": "kenw",
     "name": "Ken Walter",
     "title": "Parts Manager",
     "dealer": "11290 - Metro Ford",
+    "department": "",
     "fordStartDate": "2016-12-05",
     "role": "unrestricted",
+    "enabled": true,
+    "permissions": null,
     "createdAt": "2026-07-01T04:59:08.043Z",
     "updatedAt": "2026-07-01T04:59:08.043Z"
   }
