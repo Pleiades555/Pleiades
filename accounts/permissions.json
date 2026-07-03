@@ -3,6 +3,9 @@
     { "key": "site-basic", "label": "Site / portal access" },
     { "key": "site-admin", "label": "Site administration" }
   ],
+  "inventory": [
+    { "key": "eagersinventory", "label": "Eagers inventory / ordering procedures" }
+  ],
   "ford": [
     { "key": "ford-basic", "label": "Ford basic" },
     { "key": "ford-tsb", "label": "Ford TSB / recalls" },
