@@ -1,8 +1,17 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-07-03T00:00:00.000Z",
   "permission": "eagersinventory",
   "brands": [
+    {
+      "id": "vag",
+      "label": "Volkswagen / Cupra",
+      "accent": "#60a5fa",
+      "folder": "./Inventory/",
+      "documents": [
+        { "title": "VW/Cupra Unlinked Orders", "file": "VAG-Unlinked-Orders.html", "type": "Interactive", "description": "Transaction-code driven guide for VW and Cupra unlinked orders." }
+      ]
+    },
     {
       "id": "ford",
       "label": "Ford",
