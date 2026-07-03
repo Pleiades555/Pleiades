@@ -39,19 +39,19 @@
     "updatedAt": "2026-07-01T01:22:20.871Z"
   },
   {
-    "username": "invtester",
-    "name": "Sample Text Bro",
-    "title": "Inventory Tester",
-    "dealer": "S200 - Inventory",
-    "department": "Parts - Inventory",
-    "fordStartDate": "2026-01-01",
+    "username": "inv",
+    "name": "Inv Test",
+    "title": "Not specified",
+    "dealer": "Not specified",
+    "department": "",
+    "fordStartDate": "",
     "role": "custom",
     "enabled": true,
     "permissions": [
       "eagersinventory"
     ],
-    "createdAt": "2026-07-03T05:51:47.114Z",
-    "updatedAt": "2026-07-03T05:51:47.114Z"
+    "createdAt": "2026-07-03T05:59:36.432Z",
+    "updatedAt": "2026-07-03T05:59:36.432Z"
   },
   {
     "username": "kenw",
