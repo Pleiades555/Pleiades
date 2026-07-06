@@ -1582,6 +1582,38 @@
     }
   },
   {
+    "number": "OPS_CONNECTORS_V2",
+    "tsbNumber": "OPS_CONNECTORS_V2",
+    "bulletinNumber": "OPS_CONNECTORS_V2",
+    "displayNumber": "OPS_CONNECTORS_V2",
+    "type": "TSB",
+    "title": "Ops Connectors V2",
+    "model": "",
+    "years": [],
+    "yearRange": "",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Ops Connectors V2",
+    "concern": "Ops Connectors V2",
+    "description": "Ops Connectors V2",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/OPS_Connectors_V2.pdf",
+    "filename": "OPS_Connectors_V2.pdf",
+    "manualOnly": false,
+    "searchText": "ops_connectors_v2 tsb ops connectors v2 ops connectors v2 current ops_connectors_v2.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2303",
     "tsbNumber": "26-2303",
     "bulletinNumber": "26-2303",
