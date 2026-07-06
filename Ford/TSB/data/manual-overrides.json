@@ -104,5 +104,15 @@
     "symptom": "Some of the vehicles listed equipped with 2.3L EcoBoost may exhibit all of the following conditions:\n• Engine misfire condition. \n• Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
     "concern": "Some of the vehicles listed equipped with 2.3L EcoBoost may exhibit all of the following conditions:\n• Engine misfire condition. \n• Illuminated MIL with DTCs P0301, P0302, P0303, and/or P0304 stored in the PCM.",
     "status": "Current"
+  },
+  "26-2303": {
+    "title": "Illuminated Airbag Warning Lamp With Diagnostic Trouble Codes (DTCs) - B1405-13 And/or B1408-13",
+    "model": "Ranger, Everest",
+    "yearRange": "2022-2026",
+    "fordUploadDate": "2026-06-30",
+    "issueDate": "2026-06-30",
+    "symptom": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or Ford App.",
+    "concern": "Some 2022–2026 Next-Generation Ranger, Raptor, and Everest vehicles may exhibit an illuminated airbag warning lamp with DTCs B1405-13 and/or B1408-13 in the Instrument Panel Cluster (IPC) or Ford App.",
+    "status": "Current"
   }
 }
