@@ -1,5 +1,5 @@
 {
-  "version": "1.3.1",
+  "version": "1.4.0",
   "updatedAt": "2026-07-03T00:00:00.000Z",
   "permission": "eagersinventory",
   "brands": [
@@ -22,12 +22,22 @@
       ]
     },
     {
+      "id": "gm",
+      "label": "GM",
+      "accent": "#22c55e",
+      "folder": "./Inventory/",
+      "documents": [
+        { "title": "GM Unlinked Orders", "file": "GM-Unlinked-Orders.html", "type": "Interactive", "description": "Transaction-code driven guide for GM unlinked orders." }
+      ]
+    },
+    {
       "id": "ford",
       "label": "Ford",
       "accent": "#3b82f6",
-      "folder": "./Inventory/Ford/",
+      "folder": "./Inventory/",
       "documents": [
-        { "title": "Ford Ordering Process", "file": "Ordering Process.pdf", "type": "Ordering" }
+        { "title": "Ford Unlinked Orders", "file": "Ford-Unlinked-Orders.html", "type": "Interactive", "description": "Transaction-code driven guide for Ford unlinked orders." },
+        { "title": "Ford Ordering Process", "file": "Ford/Ordering Process.pdf", "type": "Ordering" }
       ]
     },
     {
