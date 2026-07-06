@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "updatedAt": "2026-07-03T00:00:00.000Z",
   "permission": "eagersinventory",
   "brands": [
@@ -52,9 +52,10 @@
       "id": "nissan",
       "label": "Nissan",
       "accent": "#ef4444",
-      "folder": "./Inventory/Nissan/",
+      "folder": "./Inventory/",
       "documents": [
-        { "title": "Nissan Ordering Process", "file": "Ordering Process.pdf", "type": "Ordering" }
+        { "title": "Nissan Unlinked Orders", "file": "Nissan-Unlinked-Orders.html", "type": "Interactive", "description": "Transaction-code driven guide for Nissan unlinked orders." },
+        { "title": "Nissan Ordering Process", "file": "Nissan/Ordering Process.pdf", "type": "Ordering" }
       ]
     },
     {
