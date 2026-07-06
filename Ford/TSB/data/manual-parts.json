@@ -1298,5 +1298,26 @@
   "26-2292": {
     "staticParts": [],
     "variants": {}
+  },
+  "26-2303": {
+    "staticParts": [
+      {
+        "partNumber": "DU2Z14474CA",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Terminal Wire",
+        "comments": "",
+        "note": ""
+      },
+      {
+        "partNumber": "BU2Z14S411BHA",
+        "qty": "1",
+        "quantity": "1",
+        "description": "Kit Wire Assembly",
+        "comments": "",
+        "note": ""
+      }
+    ],
+    "variants": {}
   }
 }
