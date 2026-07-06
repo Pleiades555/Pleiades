@@ -1608,10 +1608,27 @@
     "manualOnly": false,
     "searchText": "26-2303 tsb illuminated airbag warning lamp with diagnostic trouble codes (dtcs) - b1405-13 and/or b1408-13 ranger, everest 2022-2026 some 2022–2026 next-generation ranger, raptor, and everest vehicles may exhibit an illuminated airbag warning lamp with dtcs b1405-13 and/or b1408-13 in the instrument panel cluster (ipc) or ford app; • intermittent or active airbag warning indicator lamp. • ford app warning message; safety control module detected a fault in the inflatable curtain circuit. current 26-2303.pdf",
     "parts": {
-      "staticParts": [],
+      "staticParts": [
+        {
+          "partNumber": "DU2Z14474CA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Terminal Wire",
+          "comments": "",
+          "note": ""
+        },
+        {
+          "partNumber": "BU2Z14S411BHA",
+          "qty": "1",
+          "quantity": "1",
+          "description": "Kit Wire Assembly",
+          "comments": "",
+          "note": ""
+        }
+      ],
       "variants": {}
     },
-    "hasManualParts": false,
+    "hasManualParts": true,
     "supersessionLinks": {
       "supersedes": [
         "26-2253"
