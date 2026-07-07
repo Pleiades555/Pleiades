@@ -134,6 +134,29 @@
     "updatedAt": "2026-07-07T03:55:06.465Z"
   },
   {
+    "username": "randrewjlr",
+    "name": "Robert Andrew",
+    "title": "Biggest Hot Dog Holder Champion",
+    "dealer": "S08 - Newstead JLR",
+    "department": "Parts",
+    "fordStartDate": "2026-01-01",
+    "role": "custom",
+    "enabled": true,
+    "permissions": [
+      "site-basic",
+      "jlr-basic",
+      "jlr-accessories",
+      "jlr-fsm",
+      "jlr-service",
+      "jlr-processes",
+      "jlr-repairs",
+      "jlr-decoder",
+      "jlr-fluids"
+    ],
+    "createdAt": "2026-07-07T23:09:53.000Z",
+    "updatedAt": "2026-07-07T23:09:53.000Z"
+  },
+  {
     "username": "simonh",
     "name": "Simon Heilig",
     "title": "Inventory Jesus",
