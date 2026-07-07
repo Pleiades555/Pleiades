@@ -43,6 +43,7 @@
       "tx-gm-ms",
       "tx-gm-bo",
       "tx-ford-fa-f1",
+      "tx-ford-fr-f2",
       "tx-ford-fs",
       "tx-vw-eo",
       "tx-vw-em",
@@ -87,7 +88,7 @@
       "nissan-fluids"
     ],
     "createdAt": "2026-07-01T01:22:20.871Z",
-    "updatedAt": "2026-07-06T23:28:09.621Z"
+    "updatedAt": "2026-07-07T01:13:05.665Z"
   },
   {
     "username": "inv",
