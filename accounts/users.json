@@ -119,6 +119,21 @@
     "updatedAt": "2026-07-01T04:59:08.043Z"
   },
   {
+    "username": "pjones",
+    "name": "Peter Jones",
+    "title": "Parts Manager",
+    "dealer": "S200 - Eagers Automotive",
+    "department": "Parts",
+    "fordStartDate": "2025-06-01",
+    "role": "unrestricted",
+    "enabled": true,
+    "permissions": [
+      "*"
+    ],
+    "createdAt": "2026-07-07T03:55:06.465Z",
+    "updatedAt": "2026-07-07T03:55:06.465Z"
+  },
+  {
     "username": "simonh",
     "name": "Simon Heilig",
     "title": "Inventory Jesus",
