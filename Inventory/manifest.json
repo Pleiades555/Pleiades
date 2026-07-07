@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "updatedAt": "2026-07-03T00:00:00.000Z",
   "permission": "eagersinventory",
   "brands": [
@@ -37,6 +37,7 @@
       "folder": "./Inventory/",
       "documents": [
         { "title": "Ford Unlinked Orders", "file": "Ford-Unlinked-Orders.html", "type": "Interactive", "description": "Transaction-code driven guide for Ford unlinked orders." },
+        { "title": "Ford Cancel Back Orders", "file": "Ford-Cancel-Back-Orders.html", "type": "Interactive", "description": "Interactive Ford back-order cancellation procedure with invoice, register and item reference fields." },
         { "title": "Ford Ordering Process", "file": "Ford/Ordering Process.pdf", "type": "Ordering" }
       ]
     },
