@@ -1,65 +1,31 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
-	<style>
-		
-			
-		body {	
-			background-image: url('./back.jpg');
-        		background-repeat: no-repeat;
-        		background-attachment: fixed;
-        		background-position: center;
-
-
-
-			font-family: Arial, sans-serif;  /* set font family */
-			font-size: 24px;  /* set font size */
-			color: #0B9EEB;  /* set font color */
-}
-			a {
-		        color: #0B9EEB;
-			background: #1a1a1a;
-			opacity: .75;
-    			  }
-
-		}
-	</style>
-
-
-
-
-
-
-<h1>Land Rover Accessories</h1>
-
-<h2>Accessories list for Land Rover</h2>
-
-
-</ul>
-
-	<li><a href="./Accessories/Defender 90/MYAccessories.html">1. Defender 90</a></li>
-	<li><a href="./Accessories/Defender 110/MYAccessories.html">2. Defender 110</a></li>
-	<li><a href="./Accessories/Defender 130/MYAccessories.html">3. Defender 130</a></li>
-	<li><a href="./Accessories/Defender Hardtop/MYAccessories.html">4. Defender Hardtop</a></li>
-	<li><a href="./Accessories/Dicovery/MYAccessories.html">5. Discovery</a></li>
-	<li><a href="./Accessories/Discovery/MYAccessories.html">6. Discovery Sport</a></li>
-	<li><a href="./Accessories/Range Rover/MYAccessories.html">7. Range Rover</a></li>
-	<li><a href="./Accessories/Range Rover Evoque/MYAccessories.html">8. Range Rover Evoque </a></li>
-	<li><a href="./Accessories/Range Rover Sport/MYAccessories.html">9. Range Rover Sport</a></li>
-	<li><a href="./Accessories/Range Rover Velar/MYAccessories.html">10. Range Rover Velar</a></li>
-	
-	
-	
-	
-
-	<li><a href="./Service.html">?. Back</a></li>
-
-</ul>
-</p>
-
-<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Land Rover Accessories</title>
+<link rel="stylesheet" href="../assets/auth.css">
+<link rel="stylesheet" href="../assets/jlr-premium.css">
+<script defer src="../assets/auth.js"></script>
+<style>body.jlr-premium{background-image:url('./back.jpg')}</style>
+</head>
+<body class="jlr-premium" data-requires-access="jlr-accessories">
+<div class="jlr-shell" data-auth-content>
+<nav class="jlr-topbar"><div class="jlr-mark">Land Rover Accessories</div><div class="jlr-nav"><a href="../Jaguar Landrover Web.html">JLR Home</a><a href="./Service.html">Service</a><a href="./FSM/Land Rover FSM.html">FSM</a></div></nav>
+<header class="jlr-hero"><p class="jlr-kicker">Accessory selector</p><h1>Land Rover Accessories</h1><p>Select a model line to open the matching accessory reference. The underlying model folders and pages remain unchanged.</p></header>
+<input class="jlr-search" id="accessorySearch" placeholder="Search accessory model..." oninput="filterCards()">
+<section class="jlr-section"><div class="jlr-section-head"><h2>Model lines</h2><p>Accessory references by model.</p></div><div class="jlr-grid">
+<a class="jlr-card" href="./Accessories/Defender 90/MYAccessories.html"><small>Defender</small><strong>Defender 90</strong><span>Accessories for Defender 90.</span></a>
+<a class="jlr-card" href="./Accessories/Defender 110/MYAccessories.html"><small>Defender</small><strong>Defender 110</strong><span>Accessories for Defender 110.</span></a>
+<a class="jlr-card" href="./Accessories/Defender 130/MYAccessories.html"><small>Defender</small><strong>Defender 130</strong><span>Accessories for Defender 130.</span></a>
+<a class="jlr-card" href="./Accessories/Defender Hardtop/MYAccessories.html"><small>Defender</small><strong>Defender Hardtop</strong><span>Accessories for Defender Hardtop.</span></a>
+<a class="jlr-card" href="./Accessories/Discovery/MYAccessories.html"><small>Discovery</small><strong>Discovery / Discovery Sport</strong><span>Accessories for Discovery family models.</span></a>
+<a class="jlr-card" href="./Accessories/Range Rover/MYAccessories.html"><small>Range Rover</small><strong>Range Rover</strong><span>Accessories for Range Rover.</span></a>
+<a class="jlr-card" href="./Accessories/Range Rover Evoque/MYAccessories.html"><small>Range Rover</small><strong>Range Rover Evoque</strong><span>Accessories for Evoque.</span></a>
+<a class="jlr-card" href="./Accessories/Range Rover Sport/MYAccessories.html"><small>Range Rover</small><strong>Range Rover Sport</strong><span>Accessories for Range Rover Sport.</span></a>
+<a class="jlr-card" href="./Accessories/Range Rover Velar/MYAccessories.html"><small>Range Rover</small><strong>Range Rover Velar</strong><span>Accessories for Velar.</span></a>
+</div></section>
+<a class="jlr-back" href="./Service.html">← Back to Service</a>
+</div>
+<script>function filterCards(){const q=document.getElementById('accessorySearch').value.toLowerCase();document.querySelectorAll('.jlr-card').forEach(card=>{card.style.display=card.textContent.toLowerCase().includes(q)?'flex':'none'})}</script>
 </body>
 </html>
