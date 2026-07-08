@@ -2345,8 +2345,8 @@
     "yearRange": "2020-2024, 2023-2024",
     "fordUploadDate": "",
     "issueDate": "",
-    "symptom": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction",
-    "concern": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction",
+    "symptom": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction \nExample Part Number (M1TZ17757D)\nSupersedes 20-7020",
+    "concern": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction \nExample Part Number (M1TZ17757D)\nSupersedes 20-7020",
     "description": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction",
     "status": "Current",
     "supersedes": [
@@ -2356,7 +2356,7 @@
     "file": "Ford/TSB/pdf/24-7057.pdf",
     "filename": "24-7057.pdf",
     "manualOnly": false,
-    "searchText": "24-7057 tsb general service bulletin - front bumper beam rework instruction transit, courier, puma 2020-2024, 2023-2024 general service bulletin - front bumper beam rework instruction current 24-7057.pdf",
+    "searchText": "24-7057 tsb general service bulletin - front bumper beam rework instruction transit, courier, puma 2020-2024, 2023-2024 general service bulletin - front bumper beam rework instruction example part number (m1tz17757d) supersedes 20-7020 current 24-7057.pdf",
     "parts": {
       "staticParts": [],
       "variants": {}
