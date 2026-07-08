@@ -2331,6 +2331,45 @@
     }
   },
   {
+    "number": "24-7057",
+    "tsbNumber": "24-7057",
+    "bulletinNumber": "24-7057",
+    "displayNumber": "24-7057",
+    "type": "TSB",
+    "title": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction",
+    "model": "Transit, Courier, Puma",
+    "years": [
+      "2020-2024",
+      "2023-2024"
+    ],
+    "yearRange": "2020-2024, 2023-2024",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction",
+    "concern": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction",
+    "description": "GENERAL SERVICE BULLETIN - Front bumper beam rework instruction",
+    "status": "Current",
+    "supersedes": [
+      "20-7020"
+    ],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/24-7057.pdf",
+    "filename": "24-7057.pdf",
+    "manualOnly": false,
+    "searchText": "24-7057 tsb general service bulletin - front bumper beam rework instruction transit, courier, puma 2020-2024, 2023-2024 general service bulletin - front bumper beam rework instruction current 24-7057.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [
+        "20-7020"
+      ],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "24-2373",
     "tsbNumber": "24-2373",
     "bulletinNumber": "24-2373",
