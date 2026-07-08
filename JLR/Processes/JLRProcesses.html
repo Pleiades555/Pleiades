@@ -1,69 +1,38 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
-	<style>
-		
-			
-		body {	
-			background-image: url('../back2.jpg');
-        		background-repeat: no-repeat;
-        		background-attachment: fixed;
-        		background-position: left;
-			background-size: cover;
-
-
-
-			font-family: Arial, sans-serif;  /* set font family */
-			font-size: 24px;  /* set font size */
-			color: #ff6600;  /* set font color */
-}
-			a {
-		        color: #ff6600;
-			background: #1a1a1a;
-			opacity: .75;
-    			  }
-
-		}
-	</style>
-
-
-
-
-
-
-<h1>Jaguar Land Rover Procedures</h1>
-
-<h2>Procedures for JLR</h2>
-
-
-</ul>
-	
-	<li><a href="./">1. How to check if an item in stock at JLR </a></li>
-	<li><a href="./">2. How to check if an item has an equivalent part replacement</a></li>
-	<li><a href="">3. Ordering items to RO's from Melbourne JLR</a></li>
-	<li><a href="">4. Ordering items to RO's from UK JLR</a></li>
-	<li><a href="./ServiceSheets.pdf">5. Printing Service sheets from Topix</a></li>
-	<li><a href="">6. Triage</a></li>
-	<li><a href="./">7. Cash Sale Procedure</a></li>
-	<li><a href="./Updating JLR CRC on the status.pdf">8. Updating CRC on Status of Parts Order</a></li>
-	<li><a href="./JLR Backorder Maintainence 1.pdf">9. JLR Ageing Back Order System Monthly Maintainence</a></li>
-	<li><a href="./4D Tracking.pdf">10. How to track Directship Overnight orders from Melbourne</a></li>
-	
-	
-	
-
-
-
-
-
-	<li><a href="../../Jaguar Landrover Web.html">?. Back</a></li>
-
-</ul>
-</p>
-
-<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JLR Processes</title>
+<link rel="stylesheet" href="../../assets/auth.css">
+<link rel="stylesheet" href="../../assets/jlr-premium.css">
+<script defer src="../../assets/auth.js"></script>
+<style>body.jlr-premium{background-image:url('../back2.jpg')}</style>
+</head>
+<body class="jlr-premium" data-requires-access="jlr-processes">
+<div class="jlr-shell" data-auth-content>
+<nav class="jlr-topbar"><div class="jlr-mark">JLR Processes</div><div class="jlr-nav"><a href="../../Jaguar Landrover Web.html">JLR Home</a><a href="../Service.html">Service</a><a href="../FSM/Land Rover FSM.html">FSM</a></div></nav>
+<header class="jlr-hero"><p class="jlr-kicker">Process library</p><h1>Jaguar Land Rover Procedures</h1><p>Cleaned-up process references for stock checks, supersessions, RO ordering, triage, CRC updates, backorder maintenance and directship tracking.</p></header>
+<input class="jlr-search" id="processSearch" placeholder="Search JLR procedures..." oninput="filterCards()">
+<section class="jlr-section"><div class="jlr-section-head"><h2>Stock and ordering</h2><p>Day-to-day ordering support.</p></div><div class="jlr-grid">
+<a class="jlr-card process" href="./"><small>Stock</small><strong>Check JLR Stock</strong><span>How to check if an item is in stock at JLR.</span></a>
+<a class="jlr-card process" href="./"><small>Supersession</small><strong>Equivalent Part Replacement</strong><span>How to check if an item has an equivalent replacement.</span></a>
+<a class="jlr-card process" href=""><small>Ordering</small><strong>RO Orders from Melbourne</strong><span>Ordering items to repair orders from Melbourne JLR.</span></a>
+<a class="jlr-card process" href=""><small>Ordering</small><strong>RO Orders from UK</strong><span>Ordering items to repair orders from UK JLR.</span></a>
+<a class="jlr-card process" href="./4D Tracking.pdf"><small>Directship</small><strong>Track 4D Overnight Orders</strong><span>How to track directship overnight orders from Melbourne.</span></a>
+</div></section>
+<section class="jlr-section"><div class="jlr-section-head"><h2>Service and triage</h2><p>Operational procedures.</p></div><div class="jlr-grid">
+<a class="jlr-card service" href="./ServiceSheets.pdf"><small>Topix</small><strong>Print Service Sheets</strong><span>Printing service sheets from Topix.</span></a>
+<a class="jlr-card service" href=""><small>Triage</small><strong>Superservice Triage</strong><span>Triage process reference.</span></a>
+<a class="jlr-card service" href="./"><small>Sales</small><strong>Cash Sale Procedure</strong><span>JLR cash sale procedure reference.</span></a>
+</div></section>
+<section class="jlr-section"><div class="jlr-section-head"><h2>Backorder and CRC</h2><p>Order follow-up and maintenance.</p></div><div class="jlr-grid">
+<a class="jlr-card" href="./Updating JLR CRC on the status.pdf"><small>CRC</small><strong>Update CRC Status</strong><span>Updating CRC on the status of a parts order.</span></a>
+<a class="jlr-card" href="./JLR Backorder Maintainence 1.pdf"><small>Backorder</small><strong>Monthly Backorder Maintenance</strong><span>JLR ageing backorder system monthly maintenance.</span></a>
+</div></section>
+<a class="jlr-back" href="../../Jaguar Landrover Web.html">← Back to JLR Home</a>
+</div>
+<script>
+function filterCards(){const q=document.getElementById('processSearch').value.toLowerCase();document.querySelectorAll('.jlr-card').forEach(card=>{card.style.display=card.textContent.toLowerCase().includes(q)?'flex':'none'})}
+</script>
 </body>
 </html>
