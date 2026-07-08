@@ -1,53 +1,28 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
-	<style>
-		
-			
-		body {	
-			background-image: url('https://images.hgmsites.net/hug/jaguar-vision-gran-turismo-sv-concept_100774242_h.jpg');
-        		background-repeat: no-repeat;
-        		background-attachment: fixed;
-        		background-position: center;
-
-
-
-			font-family: Arial, sans-serif;  /* set font family */
-			font-size: 24px;  /* set font size */
-			color: #ff6600;  /* set font color */
-}
-			a {
-		        color: #ff6600;
-			background: #1a1a1a;
-			opacity: .75;
-    			  }
-
-		}
-	</style>
-
-
-
-
-
-
-<h1>Land Rover FSM</h1>
-
-</ul>
-	
-	<li><a href="./P38A/P38A FSM.html">1. P38A Range Rover 1994 - 2001</a></li>
-	<li><a href="./L320/L320 FSM.html">2. L320 Range Rover Sport 2005 - 2013</a></li>
-	<li><a href="./L322/L322 FSM.html">3. L322 Range Rover 2002 - 2012</a></li>
-	<li><a href="./L405/L405 FSM.html">4. L405 Range Rover 2014 - 2021</a></li>
-
-	<li><a href="../../Jaguar Landrover Web.html">7. Back</a></li>
-
-
-</ul>
-</p>
-
-<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Land Rover FSM</title>
+<link rel="stylesheet" href="../../assets/auth.css">
+<link rel="stylesheet" href="../../assets/jlr-premium.css">
+<script defer src="../../assets/auth.js"></script>
+<style>body.jlr-premium{background-image:url('../../assets/jlr-service-bg.jpg'),linear-gradient(135deg,#050607,#111827)}</style>
+</head>
+<body class="jlr-premium" data-requires-access="jlr-fsm">
+<div class="jlr-shell" data-auth-content>
+<nav class="jlr-topbar"><div class="jlr-mark">Land Rover FSM</div><div class="jlr-nav"><a href="../../Jaguar Landrover Web.html">JLR Home</a><a href="../Processes/JLRProcesses.html">Processes</a><a href="../Service.html">Service</a></div></nav>
+<header class="jlr-hero"><p class="jlr-kicker">Workshop manuals</p><h1>Land Rover FSM Library</h1><p>Model-specific factory service manual references. Existing FSM files and folders are preserved; this page is a cleaner landing layer.</p></header>
+<input class="jlr-search" id="fsmSearch" placeholder="Search model, code or year..." oninput="filterCards()">
+<section class="jlr-section"><div class="jlr-section-head"><h2>Model libraries</h2><p>Choose a Land Rover manual set.</p></div><div class="jlr-grid">
+<a class="jlr-card fsm" href="./P38A/P38A FSM.html"><small>1994–2001</small><strong>P38A Range Rover</strong><span>Range Rover P38A factory service manual reference.</span></a>
+<a class="jlr-card fsm" href="./L320/L320 FSM.html"><small>2005–2013</small><strong>L320 Range Rover Sport</strong><span>Range Rover Sport L320 factory service manual reference.</span></a>
+<a class="jlr-card fsm" href="./L322/L322 FSM.html"><small>2002–2012</small><strong>L322 Range Rover</strong><span>Range Rover L322 factory service manual reference.</span></a>
+<a class="jlr-card fsm" href="./L405/L405 FSM.html"><small>2014–2021</small><strong>L405 Range Rover</strong><span>Range Rover L405 factory service manual reference.</span></a>
+</div></section>
+<a class="jlr-back" href="../../Jaguar Landrover Web.html">← Back to JLR Home</a>
+</div>
+<script>
+function filterCards(){const q=document.getElementById('fsmSearch').value.toLowerCase();document.querySelectorAll('.jlr-card').forEach(card=>{card.style.display=card.textContent.toLowerCase().includes(q)?'flex':'none'})}
+</script>
 </body>
 </html>
