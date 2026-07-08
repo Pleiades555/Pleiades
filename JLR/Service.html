@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            background-image: url('https://images.hgmsites.net/hug/jaguar-vision-gran-turismo-sv-concept_100774242_h.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            font-size: 24px;
-            color: #ff6600;
-        }
-
-        a {
-            color: #ff6600;
-            background: #1a1a1a;
-            opacity: 0.75;
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JLR Service Information</title>
+<link rel="stylesheet" href="../assets/auth.css">
+<link rel="stylesheet" href="../assets/jlr-premium.css">
+<script defer src="../assets/auth.js"></script>
+<style>body.jlr-premium{background-image:url('../assets/jlr-service-bg.jpg'),linear-gradient(135deg,#050607,#111827)}</style>
 </head>
-<body>
-    <h1>Jaguar Land Rover Useful Information</h1>
-    <h2>Navigation to service items</h2>
-    <ul>
-        <li><a href="./LRService.html">1. Land Rover Service Kits (Under construction)</a></li>
-        <li><a href="./Service Line Decoder/Common Items LR/LRCommonItems.html">2. Land Rover Common Information</a></li>
-        <li><a href="./Service Line Decoder/Common Items LR/LRServiceDecoder.html">3. Land Rover Batch Service Line Decoder</a></li>
-	<li><a href="./CommonRepairs.html">4. Land Rover Common Repairs - Parts List</a></li>
-	<li><a href="../Jaguar Landrover Web.html">5. Back</a></li>
-    </ul>
+<body class="jlr-premium" data-requires-access="jlr-service">
+<div class="jlr-shell" data-auth-content>
+<nav class="jlr-topbar"><div class="jlr-mark">JLR Service</div><div class="jlr-nav"><a href="../Jaguar Landrover Web.html">JLR Home</a><a href="./Processes/JLRProcesses.html">Processes</a><a href="./FSM/Land Rover FSM.html">FSM</a></div></nav>
+<header class="jlr-hero"><p class="jlr-kicker">Service reference</p><h1>Jaguar Land Rover Useful Information</h1><p>Service kits, common information, batch service line decoding and common repair part lists.</p></header>
+<section class="jlr-section"><div class="jlr-section-head"><h2>Service tools</h2><p>Common service references.</p></div><div class="jlr-grid">
+<a class="jlr-card service" href="./LRService.html"><small>Service Kits</small><strong>Land Rover Service Kits</strong><span>Service kit reference. Currently under construction.</span></a>
+<a class="jlr-card service" href="./Service Line Decoder/Common Items LR/LRCommonItems.html"><small>Common Info</small><strong>Land Rover Common Information</strong><span>Common service and parts reference information.</span></a>
+<a class="jlr-card service" href="./Service Line Decoder/Common Items LR/LRServiceDecoder.html"><small>Decoder</small><strong>Batch Service Line Decoder</strong><span>Decode Land Rover service line information in batch format.</span></a>
+<a class="jlr-card service" href="./CommonRepairs.html"><small>Repairs</small><strong>Common Repairs Parts List</strong><span>Land Rover common repairs and related parts lists.</span></a>
+</div></section>
+<a class="jlr-back" href="../Jaguar Landrover Web.html">← Back to JLR Home</a>
+</div>
 </body>
 </html>
