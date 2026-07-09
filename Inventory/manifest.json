@@ -1,6 +1,6 @@
 {
-  "version": "1.5.0",
-  "updatedAt": "2026-07-03T00:00:00.000Z",
+  "version": "1.6.0",
+  "updatedAt": "2026-07-09T00:00:00.000Z",
   "permission": "eagersinventory",
   "brands": [
     {
@@ -45,9 +45,10 @@
       "id": "jlr",
       "label": "Jaguar Land Rover",
       "accent": "#2f855a",
-      "folder": "./Inventory/JLR/",
+      "folder": "./Inventory/",
       "documents": [
-        { "title": "JLR Ordering Process", "file": "Ordering Process.pdf", "type": "Ordering" }
+        { "title": "JLR Unlinked Orders", "file": "JLR-Unlinked-Orders.html", "type": "Interactive", "description": "Interactive Jaguar and Land Rover unlinked order process with ERA, RPOS, destination and reference fields." },
+        { "title": "JLR Ordering Process", "file": "JLR/Ordering Process.pdf", "type": "Ordering" }
       ]
     },
     {
