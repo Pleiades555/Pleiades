@@ -52,18 +52,48 @@
 }
 
 .pleiades-user-card {
-  position: fixed; top: 16px; right: 16px; width: 300px; z-index: 9980; padding: 16px; border-radius: 22px;
-  background: linear-gradient(155deg, rgba(16,24,33,.96), rgba(5,9,14,.90));
-  border: 1px solid rgba(255,255,255,.18); box-shadow: 0 18px 46px rgba(0,0,0,.42);
+  position: fixed;
+  left: 14px;
+  bottom: 14px;
+  top: auto;
+  right: auto;
+  width: 218px;
+  max-height: 54px;
+  z-index: 9975;
+  padding: 10px 12px;
+  border-radius: 18px;
+  overflow: hidden;
+  opacity: .82;
+  background: linear-gradient(155deg, rgba(16,24,33,.90), rgba(5,9,14,.82));
+  border: 1px solid rgba(255,255,255,.14); box-shadow: 0 12px 30px rgba(0,0,0,.34);
+  transition: max-height .22s ease, width .22s ease, opacity .18s ease, transform .18s ease, background .18s ease;
 }
-.pleiades-user-card::before { content: ''; display: block; width: 44px; height: 4px; border-radius: 999px; background: var(--pleiades-accent); opacity: .95; margin-bottom: 12px; }
-.pleiades-user-card h3 { margin: 0; color: #fff; font-size: 20px; font-weight: 850; line-height: 1.2; letter-spacing: -.01em; }
+.pleiades-user-card:hover,
+.pleiades-user-card:focus-within {
+  width: 300px;
+  max-height: min(82vh, 560px);
+  opacity: .98;
+  transform: translateY(-2px);
+  overflow: auto;
+  background: linear-gradient(155deg, rgba(16,24,33,.97), rgba(5,9,14,.93));
+}
+.pleiades-user-card::before { content: ''; display: block; width: 32px; height: 3px; border-radius: 999px; background: var(--pleiades-accent); opacity: .95; margin-bottom: 7px; }
+.pleiades-user-card h3 { margin: 0; color: #fff; font-size: 14px; font-weight: 850; line-height: 1.1; letter-spacing: -.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pleiades-user-card:hover h3,
+.pleiades-user-card:focus-within h3 { font-size: 20px; line-height: 1.2; white-space: normal; overflow: visible; }
 .pleiades-user-card .role-line, .pleiades-user-role {
-  display: inline-block; margin: 8px 0 12px; padding: 5px 9px; border-radius: 999px; color: #dff6f7; background: rgba(163,197,198,.14); border: 1px solid rgba(163,197,198,.30); font-size: 11px; font-weight: 850; letter-spacing: .05em; text-transform: uppercase;
+  display: inline-block; margin: 7px 0 12px; padding: 5px 9px; border-radius: 999px; color: #dff6f7; background: rgba(163,197,198,.14); border: 1px solid rgba(163,197,198,.30); font-size: 11px; font-weight: 850; letter-spacing: .05em; text-transform: uppercase;
 }
 .pleiades-user-card .detail, .pleiades-user-detail {
   margin: 0; padding: 9px 0; border-top: 1px solid rgba(255,255,255,.09); color: #f4f8f9; font-size: 14px; line-height: 1.35;
 }
+.pleiades-user-card:not(:hover):not(:focus-within) .role-line,
+.pleiades-user-card:not(:hover):not(:focus-within) .pleiades-user-role,
+.pleiades-user-card:not(:hover):not(:focus-within) .detail,
+.pleiades-user-card:not(:hover):not(:focus-within) .pleiades-user-detail,
+.pleiades-user-card:not(:hover):not(:focus-within) .suffer-counter,
+.pleiades-user-card:not(:hover):not(:focus-within) .pleiades-counter,
+.pleiades-user-card:not(:hover):not(:focus-within) .pleiades-button-row { display: none !important; }
 .pleiades-user-card .detail span, .pleiades-user-detail span {
   display: block; margin-bottom: 3px; color: rgba(215,224,228,.82); text-transform: uppercase; letter-spacing: .07em; font-size: 10px; font-weight: 850; line-height: 1.2;
 }
@@ -89,6 +119,7 @@
 .pleiades-brand-tile:hover { background: rgba(163,197,198,.22); border-color: rgba(163,197,198,.55); }
 
 @media (max-width: 900px) {
-  .pleiades-user-card { position: static; width: auto; margin: 12px; }
+  .pleiades-user-card { position: fixed; left: 10px; bottom: 10px; width: min(210px, calc(100vw - 20px)); max-height: 50px; margin: 0; }
+  .pleiades-user-card:hover, .pleiades-user-card:focus-within { width: min(300px, calc(100vw - 20px)); max-height: 70vh; }
   .pleiades-admin-grid { grid-template-columns: 1fr; }
 }
