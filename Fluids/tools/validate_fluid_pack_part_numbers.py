@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+"""Validate that fluid part numbers are not silently reused across pack sizes.
+
+Usage:
+    python Fluids/tools/validate_fluid_pack_part_numbers.py Fluids/fluids_master.json
+    python Fluids/tools/validate_fluid_pack_part_numbers.py Fluids/nissan_fluids_import.csv
+
+The script does not assume that changing a quantity creates a new part number. It flags
+any exact brand/part-number combination associated with more than one non-empty volume
+so it can be checked against an OEM catalogue before publication.
+"""
+from __future__ import annotations
+
+import csv
+import json
+import pathlib
+import sys
+from collections import defaultdict
+from typing import Any
+
+
+def norm(value: Any) -> str:
+    return str(value or "").strip().upper().replace(" ", "")
+
+
+def load_rows(path: pathlib.Path) -> list[dict[str, Any]]:
+    if path.suffix.lower() == ".json":
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, list):
+            raise ValueError("JSON root must be an array")
+        return [row for row in data if isinstance(row, dict)]
+    if path.suffix.lower() == ".csv":
+        with path.open("r", encoding="utf-8-sig", newline="") as handle:
+            return list(csv.DictReader(handle))
+    raise ValueError("Expected a .json or .csv file")
+
+
+def main() -> int:
+    if len(sys.argv) != 2:
+        print("Usage: validate_fluid_pack_part_numbers.py <fluids.json|fluids.csv>")
+        return 2
+
+    path = pathlib.Path(sys.argv[1])
+    rows = load_rows(path)
+    volumes: dict[tuple[str, str], set[str]] = defaultdict(set)
+    duplicate_keys: dict[tuple[str, str, str], int] = defaultdict(int)
+
+    for row in rows:
+        brand = norm(row.get("brand"))
+        part = norm(row.get("part_number"))
+        volume = norm(row.get("volume"))
+        if brand and part:
+            if volume:
+                volumes[(brand, part)].add(volume)
+            duplicate_keys[(brand, part, volume)] += 1
+
+    problems = 0
+    for (brand, part), sizes in sorted(volumes.items()):
+        if len(sizes) > 1:
+            problems += 1
+            print(f"PACK-SIZE CHECK REQUIRED: {brand} {part} appears as {', '.join(sorted(sizes))}")
+
+    for (brand, part, volume), count in sorted(duplicate_keys.items()):
+        if count > 1:
+            problems += 1
+            print(f"DUPLICATE: {brand} {part} {volume or '[NO VOLUME]'} occurs {count} times")
+
+    print(f"Checked {len(rows)} rows; {problems} issue(s) found.")
+    return 1 if problems else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
