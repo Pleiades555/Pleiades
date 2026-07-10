@@ -2,6 +2,7 @@
 from __future__ import annotations
 import csv, json, pathlib
 
+# Australia-first merge: preserve local/manual records over external research.
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 MASTER = ROOT / 'fluids_master.json'
 IMPORT = ROOT / 'nissan_fluids_import.csv'
@@ -31,12 +32,10 @@ for new in incoming:
     if k in index:
         old = master[index[k]]
         if is_manual(old) and not is_manual(new):
-            # Keep local/manual values, only fill blanks and audit fields.
             merged = dict(new)
             merged.update({a:b for a,b in old.items() if b not in ('', None)})
             preserved += 1
         else:
-            # Incoming Australian/local record wins, but preserve useful fields not supplied.
             merged = dict(old)
             merged.update({a:b for a,b in new.items() if b not in ('', None)})
             updated += 1
