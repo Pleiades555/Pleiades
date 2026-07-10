@@ -277,7 +277,7 @@
   },
   {
     "brand": "Ford",
-    "engineering_part_number": "",
+    "engineering_part_number": "GU2J19A509AA",
     "part_number": "XT12QULV",
     "description": "Motorcraft Mercon ULV",
     "volume": "946ml",
@@ -1988,16 +1988,16 @@
   },
   {
     "brand": "Ford",
-    "engineering_part_number": "WSSM2C949A",
+    "engineering_part_number": "WSS-M2C942-A",
     "part_number": "XY75W85QL",
-    "description": "Motorcraft Mercon ULV",
+    "description": "Rear Axle Oil",
     "volume": "946ml",
-    "brand_spec": "",
+    "brand_spec": "WSS-M2C942-A",
     "general_spec": "",
     "industry_standard": "",
-    "uses_in_brand": "Transmission Fluid",
-    "previous_part_numbers": "WSZ19A509B, WSSM2C949A",
+    "uses_in_brand": "Rear Axle Oil",
+    "previous_part_numbers": "CU2J19K261AA",
     "compatible_substitutes": "",
-    "notes": ""
+    "notes": "75W-85"
   }
 ]
