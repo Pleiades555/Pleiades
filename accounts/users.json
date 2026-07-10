@@ -139,6 +139,35 @@
     "updatedAt": "2026-07-03T05:59:36.432Z"
   },
   {
+    "username": "jweidner",
+    "name": "Josh Weidner",
+    "title": "Ford Senior Parts Interpreter & Mazda Silver Level Parts Interpreter",
+    "dealer": "S200 - Eagers Automotive",
+    "department": "Parts",
+    "fordStartDate": "2025-03-18",
+    "role": "custom",
+    "enabled": true,
+    "permissions": [
+      "site-basic",
+      "ford-basic",
+      "ford-tsb",
+      "ford-fsm",
+      "ford-parts",
+      "ford-fluids",
+      "ford-repair",
+      "jlr-basic",
+      "jlr-fluids",
+      "subaru-basic",
+      "subaru-fluids",
+      "honda-basic",
+      "honda-fluids",
+      "nissan-basic",
+      "nissan-fluids"
+    ],
+    "createdAt": "2026-07-10T00:15:25.497Z",
+    "updatedAt": "2026-07-10T00:15:25.496Z"
+  },
+  {
     "username": "kenw",
     "name": "Ken Walter",
     "title": "Parts Manager",
