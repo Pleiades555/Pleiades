@@ -1,0 +1,80 @@
+[
+  {
+    "basic": "1007",
+    "description": "Wheel",
+    "category": "Wheels",
+    "aliases": "rim, alloy wheel, wheel",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "AW",
+    "updated": "2026-06-19 04:22:23",
+    "source_type": "manual"
+  },
+  {
+    "basic": "3069",
+    "description": "Front Lower Control Arm Bush",
+    "category": "Suspension",
+    "aliases": "Arm bush",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "If Applicable, may have to get whole front arm (3078) instead",
+    "source": "AW",
+    "updated": "2026-06-19 05:11:56",
+    "source_type": "manual"
+  },
+  {
+    "basic": "3050",
+    "description": "Front Lower Control Arm Ball Joint",
+    "category": "Suspension",
+    "aliases": "LCA, Lower Control Arm joint",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "May not be applicable, May have to get entire arm (3078)",
+    "source": "AW",
+    "updated": "2026-06-19 05:14:20",
+    "source_type": "manual"
+  },
+  {
+    "basic": "3C377",
+    "description": "Front Lower Control Arm Rear Bush",
+    "category": "Suspension",
+    "aliases": "LCA bush, Lower Control Arm bushing",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "May not be applicable, May have to get entire arm (3078)",
+    "source": "AW",
+    "updated": "2026-06-19 05:15:48",
+    "source_type": "manual"
+  },
+  {
+    "basic": "3078",
+    "description": "Front Lower Control Arm",
+    "category": "Suspension",
+    "aliases": "LCA, Lower Control Arm",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "AW",
+    "updated": "2026-06-30 23:20:04",
+    "source_type": "manual"
+  },
+  {
+    "basic": "6G004",
+    "description": "Cylinder Head Temperature Sensor",
+    "category": "Powertrain Electrical",
+    "aliases": "CHT",
+    "part_numbers": "",
+    "applications": "",
+    "supersessions": "",
+    "notes": "",
+    "source": "AW",
+    "updated": "2026-07-10 00:49:43",
+    "source_type": "manual"
+  }
+]
