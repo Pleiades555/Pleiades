@@ -65,16 +65,16 @@
     "source_type": "manual"
   },
   {
-    "basic": "9J460",
-    "description": "Exhaust Pressure Sensor",
-    "category": "",
-    "aliases": "",
+    "basic": "6G004",
+    "description": "Cylinder Head Temperature Sensor",
+    "category": "Powertrain Electrical",
+    "aliases": "CHT",
     "part_numbers": "",
     "applications": "",
     "supersessions": "",
     "notes": "",
-    "source": "",
-    "updated": "2026-07-10 00:22:56",
+    "source": "AW",
+    "updated": "2026-07-10 00:49:43",
     "source_type": "manual"
   }
 ]
