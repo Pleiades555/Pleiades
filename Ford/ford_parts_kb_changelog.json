@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "2026-07-10 00:22:56",
+    "type": "add",
+    "basic": "9J460",
+    "title": "Added 9J460 – Exhaust Pressure Sensor",
+    "details": "Description: Exhaust Pressure Sensor",
+    "version": "Manual protected"
+  },
+  {
     "timestamp": "2026-06-30 23:20:04",
     "type": "edit",
     "basic": "3078",
