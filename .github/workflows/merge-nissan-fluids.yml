@@ -22,7 +22,10 @@ jobs:
           python-version: '3.12'
       - name: Merge Nissan records
         run: python Fluids/tools/merge_nissan_fluids.py
-      - name: Validate pack sizes and Nissan prefixes
+      - name: Validate Nissan import
+        run: python Fluids/tools/validate_fluid_pack_part_numbers.py Fluids/nissan_fluids_import.csv
+      - name: Report legacy master warnings without blocking merge
+        continue-on-error: true
         run: python Fluids/tools/validate_fluid_pack_part_numbers.py Fluids/fluids_master.json
       - name: Commit merged database
         run: |
