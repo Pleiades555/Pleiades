@@ -1,0 +1,19 @@
+Title:           Engine oill application booklet feb 2025 final v2.xlsx
+Author:          Adam Rivett
+Producer:        Microsoft: Print To PDF
+CreationDate:    Thu Apr  3 02:57:20 2025 UTC
+ModDate:         Thu Apr  3 02:57:20 2025 UTC
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           3
+Encrypted:       no
+Page size:       1190.52 x 841.92 pts (A3)
+Page rot:        0
+File size:       106172 bytes
+Optimized:       no
+PDF version:     1.7
