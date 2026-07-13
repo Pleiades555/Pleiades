@@ -1,0 +1,22 @@
+{
+  "market":"Australia",
+  "brands":[
+    {"brand":"Honda","wmis":["MRH","JHM"],"portal":"../Honda Web.html","access":"honda-basic"},
+    {"brand":"Ford","wmis":["6FP","WF0","1FA","1FM","NM0"],"portal":"../Ford Web.html","access":"ford-basic"},
+    {"brand":"Subaru","wmis":["JF1","JF2"],"portal":"../Subaru Web.html","access":"subaru-basic"},
+    {"brand":"Land Rover","wmis":["SAL"],"portal":"../Jaguar Landrover Web.html","access":"jlr-basic"},
+    {"brand":"Jaguar","wmis":["SAJ"],"portal":"../Jaguar Landrover Web.html","access":"jlr-basic"},
+    {"brand":"Toyota","wmis":["JTD","JTN","JT1","JT2","MR0","6T1"],"portal":"../Toyota Web.html","access":"toyota-basic"},
+    {"brand":"Mazda","wmis":["JM0","JM1","JM3","MM0"],"portal":"../Mazda Web.html","access":"mazda-basic"},
+    {"brand":"Nissan","wmis":["JN1","JN8","MNT","SJN","VSK"],"portal":"../Nissan Web.html","access":"nissan-basic"},
+    {"brand":"Mitsubishi","wmis":["JMB","JMFS","MMB","MMT"],"portal":"../Mitsubishi Web.html","access":"mitsubishi-basic"},
+    {"brand":"Hyundai","wmis":["KMH","TMA","MAL"],"portal":"../Hyundai Web.html","access":"hyundai-basic"},
+    {"brand":"Kia","wmis":["KNA","KND","U5Y","MZB"],"portal":"../Kia Web.html","access":"kia-basic"},
+    {"brand":"Volkswagen","wmis":["WVW","WVG","WV1","WV2"],"portal":"../Volkswagen Web.html","access":"volkswagen-basic"},
+    {"brand":"Audi","wmis":["WAU","TRU"],"portal":"../Audi Web.html","access":"audi-basic"},
+    {"brand":"BMW","wmis":["WBA","WBS","WBY"],"portal":"../BMW Web.html","access":"bmw-basic"},
+    {"brand":"Volvo","wmis":["YV1","YV4"],"portal":"../Volvo Web.html","access":"volvo-basic"},
+    {"brand":"Porsche","wmis":["WP0","WP1"],"portal":"../Porsche Web.html","access":"porsche-basic"},
+    {"brand":"Renault","wmis":["VF1"],"portal":"../Renault Web.html","access":"renault-basic"}
+  ]
+}
