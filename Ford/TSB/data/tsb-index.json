@@ -1963,6 +1963,41 @@
     }
   },
   {
+    "number": "26-2218",
+    "tsbNumber": "26-2218",
+    "bulletinNumber": "26-2218",
+    "displayNumber": "26-2218",
+    "type": "TSB",
+    "title": "Ambient Air Temperature Not Displayed - 09 July 2026",
+    "model": "Ranger, Everest, RA",
+    "years": [
+      "2021-2026",
+      "2022-2026"
+    ],
+    "yearRange": "2021-2026, 2022-2026",
+    "fordUploadDate": "",
+    "issueDate": "",
+    "symptom": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience the ambient (outside) air temperature is not being displayed. A possible cause for this concern is a faulty ambient air temperature sensor.",
+    "concern": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience the ambient (outside) air temperature is not being displayed. A possible cause for this concern is a faulty ambient air temperature sensor.",
+    "description": "Some 2021-2026 Next-Generation Ranger and Everest vehicles may experience the ambient (outside) air temperature is not being displayed. A possible cause for this concern is a faulty ambient air temperature sensor.",
+    "status": "Current",
+    "supersedes": [],
+    "supersededBy": [],
+    "file": "Ford/TSB/pdf/26-2218.pdf",
+    "filename": "26-2218.pdf",
+    "manualOnly": false,
+    "searchText": "26-2218 tsb ambient air temperature not displayed - 09 july 2026 ranger, everest, ra 2021-2026, 2022-2026 some 2021-2026 next-generation ranger and everest vehicles may experience the ambient (outside) air temperature is not being displayed. a possible cause for this concern is a faulty ambient air temperature sensor. current 26-2218.pdf",
+    "parts": {
+      "staticParts": [],
+      "variants": {}
+    },
+    "hasManualParts": false,
+    "supersessionLinks": {
+      "supersedes": [],
+      "supersededBy": []
+    }
+  },
+  {
     "number": "26-2212",
     "tsbNumber": "26-2212",
     "bulletinNumber": "26-2212",
