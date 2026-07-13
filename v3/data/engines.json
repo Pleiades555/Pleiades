@@ -1,4 +1,10 @@
 {
   "market": "Australia",
-  "engines": []
+  "engines": [
+    {"id":"SUB-EZ30","brand":"Subaru","code":"EZ30","family":"Subaru EZ flat-six","configuration":"Horizontally opposed six-cylinder","fuel":"Petrol","induction":"Naturally aspirated","displacementCc":2999,"notes":"Vehicle-specific revision and output require separate evidence. Do not assume EZ30, EZ30D and informal EZ30R labels are interchangeable.","confidence":"user-confirmed family and code; detailed specification partial"},
+    {"id":"SUB-EJ255","brand":"Subaru","code":"EJ255","family":"Subaru EJ flat-four","configuration":"Horizontally opposed four-cylinder","fuel":"Petrol","induction":"Turbocharged","confidence":"confirmed current vehicle record"},
+    {"id":"HON-L15B7","brand":"Honda","code":"L15B7","family":"Honda L-series","configuration":"Inline four-cylinder","fuel":"Petrol","induction":"Turbocharged","confidence":"confirmed current vehicle record"},
+    {"id":"LR-276DT","brand":"Land Rover","code":"276DT","family":"Ford/PSA Lion V6 diesel","marketingNames":["TDV6"],"alternateCodes":["AJD-V6","DT17"],"displacementCc":2720,"confidence":"confirmed current vehicle record"},
+    {"id":"LR-B6324S","brand":"Land Rover","code":"B6324S","family":"Volvo SI6","marketingNames":["Si6"],"displacementCc":3192,"confidence":"confirmed current vehicle record"}
+  ]
 }
