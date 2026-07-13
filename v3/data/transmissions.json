@@ -1,4 +1,6 @@
 {
   "market": "Australia",
-  "transmissions": []
+  "transmissions": [
+    {"id":"SUB-TY85","brand":"Subaru","family":"TY85","type":"6-speed manual transaxle family","drive":"AWD","variants":[{"centreDifferential":"DCCD","status":"family variant"},{"centreDifferential":"Non-DCCD","status":"family variant"}],"notes":"TY85 identifies a gearbox family, not one exact transmission. Exact suffix/code, ratios, final drive and DCCD status must be confirmed for each vehicle.","confidence":"user-confirmed family definition"}
+  ]
 }
