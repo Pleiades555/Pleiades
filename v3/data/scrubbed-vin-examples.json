@@ -1,0 +1,22 @@
+{
+  "privacy":"Serial sequence characters are masked. These examples are routing aids, not complete vehicle records.",
+  "examples":[
+    {"brand":"Honda","pattern":"MRHFC1680HT******","level":"exact fingerprint","vehicle":"2017 Civic RS Sedan"},
+    {"brand":"Ford","pattern":"6FP**************","level":"brand WMI"},
+    {"brand":"Subaru","pattern":"JF1**************","level":"brand WMI"},
+    {"brand":"Land Rover","pattern":"SAL**************","level":"brand WMI"},
+    {"brand":"Jaguar","pattern":"SAJ**************","level":"brand WMI"},
+    {"brand":"Toyota","pattern":"MR0**************","level":"brand WMI"},
+    {"brand":"Mazda","pattern":"JM0**************","level":"brand WMI"},
+    {"brand":"Nissan","pattern":"MNT**************","level":"brand WMI"},
+    {"brand":"Mitsubishi","pattern":"MMB**************","level":"brand WMI"},
+    {"brand":"Hyundai","pattern":"KMH**************","level":"brand WMI"},
+    {"brand":"Kia","pattern":"KNA**************","level":"brand WMI"},
+    {"brand":"Volkswagen","pattern":"WVW**************","level":"brand WMI"},
+    {"brand":"Audi","pattern":"WAU**************","level":"brand WMI"},
+    {"brand":"BMW","pattern":"WBA**************","level":"brand WMI"},
+    {"brand":"Volvo","pattern":"YV1**************","level":"brand WMI"},
+    {"brand":"Porsche","pattern":"WP0**************","level":"brand WMI"},
+    {"brand":"Renault","pattern":"VF1**************","level":"brand WMI"}
+  ]
+}
