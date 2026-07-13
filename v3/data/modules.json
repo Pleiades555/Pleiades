@@ -1,0 +1,13 @@
+{
+  "modules":[
+    {"name":"VIN & Vehicle Profiles","type":"vehicle","status":"live","href":"./index.html#vin","keywords":"vin decode vehicle specification power torque weight"},
+    {"name":"Honda Hosted Accessories","type":"accessory","status":"live","href":"../Honda/Accessories.html","keywords":"honda civic accessory part number"},
+    {"name":"Fluids Compatibility Hub","type":"fluid","status":"live","href":"../Fluids/Fluids Compatibility Hub.html","keywords":"oil coolant transmission fluid specification substitute"},
+    {"name":"Ford TSB Knowledge Base","type":"tsb","status":"live","href":"../Ford/TSB/index.html","keywords":"ford tsb bulletin recall symptom"},
+    {"name":"Honda TSB Library","type":"tsb","status":"live","href":"../Honda/TSB/HondaTSB.html","keywords":"honda tsb bulletin"},
+    {"name":"Ford Workshop & Parts Portal","type":"technical","status":"legacy-connected","href":"../Ford Web.html","keywords":"ford fsm workshop parts"},
+    {"name":"Subaru Workshop & Accessories Portal","type":"technical","status":"legacy-connected","href":"../Subaru Web.html","keywords":"subaru fsm accessory"},
+    {"name":"Jaguar Land Rover Portal","type":"technical","status":"legacy-connected","href":"../Jaguar Landrover Web.html","keywords":"jlr land rover jaguar fsm accessory"},
+    {"name":"Inventory Knowledge Centre","type":"inventory","status":"separate","href":"../Inventory.html","keywords":"inventory ordering stock warehouse"}
+  ]
+}
