@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "market": "Australia",
+  "brand": "Subaru",
+  "items": [
+    {"brand":"Subaru","model":"360","type":"catalogue","description":"Subaru 360 accessory catalogue","href":"../Accessories/360/Subaru 360 Cat.pdf"},
+    {"brand":"Subaru","model":"BRZ","type":"accessory-index","description":"BRZ accessory model-year lists","href":"../Accessories/BRZ/MYAccessories.html"},
+    {"brand":"Subaru","model":"Crosstrek","type":"accessory-index","description":"Crosstrek accessory model-year lists","href":"../Accessories/CrossTrek/MYAccessories.html"},
+    {"brand":"Subaru","model":"Forester","type":"accessory-index","description":"Forester accessories for SF, SG, SH, SJ and SK generations","href":"../Accessories/Forester/MYAccessories.html"},
+    {"brand":"Subaru","model":"Impreza","type":"accessory-index","description":"Impreza accessory model-year lists","href":"../Accessories/Impreza/MYAccessories.html"},
+    {"brand":"Subaru","model":"Outback","type":"accessory-index","description":"Outback accessory model-year lists","href":"../Accessories/Outback/MYAccessories.html"},
+    {"brand":"Subaru","model":"WRX","type":"accessory-index","description":"WRX accessory model-year lists","href":"../Accessories/WRX/MYAccessories.html"}
+  ]
+}
