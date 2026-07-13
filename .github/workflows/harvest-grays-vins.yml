@@ -1,0 +1,41 @@
+name: Harvest Grays VIN candidates
+
+on:
+  workflow_dispatch:
+    inputs:
+      headed:
+        description: "Run headed browser through Xvfb"
+        required: false
+        default: "true"
+
+permissions:
+  contents: read
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Harvest queued lots
+        run: |
+          if [ "${{ inputs.headed }}" = "true" ]; then
+            xvfb-run -a python v3/tools/harvest_grays.py --headed
+          else
+            python v3/tools/harvest_grays.py
+          fi
+      - name: Upload review output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: grays-vin-review
+          path: v3/data/source-review.json
+          if-no-files-found: warn
