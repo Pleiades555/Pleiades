@@ -1,0 +1,25 @@
+name: Validate Pleiades V3
+
+on:
+  pull_request:
+    paths:
+      - 'v3/**'
+      - 'Honda/Accessories/data/accessories.json'
+  push:
+    branches: [main]
+    paths:
+      - 'v3/**'
+      - 'Honda/Accessories/data/accessories.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate V3 core data
+        run: python v3/tools/validate_v3_data.py
+      - name: Validate hosted Honda accessories JSON
+        run: python -m json.tool Honda/Accessories/data/accessories.json > /dev/null
