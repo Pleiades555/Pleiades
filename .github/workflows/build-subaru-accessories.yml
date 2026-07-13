@@ -1,0 +1,33 @@
+name: Build Subaru Accessories
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'Subaru/Accessories/**'
+      - '.github/workflows/build-subaru-accessories.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract Subaru accessory records
+        run: python Subaru/Accessories/tools/build_subaru_accessories.py
+      - name: Validate generated JSON
+        run: python -m json.tool Subaru/Accessories/data/accessories.json > /dev/null
+      - name: Commit generated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Subaru/Accessories/data/accessories.json
+          git diff --cached --quiet || git commit -m "Rebuild Subaru accessory data"
+          git push
