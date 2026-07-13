@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-13T00:00:00Z",
+  "market": "Australia",
+  "brand": "Honda",
+  "items": [
+    {"year":2020,"model":"Civic","body":"Hatch","category":"Alloy Wheels","partNumber":"08W17TEA700AX","description":"17-Inch Black Alloy Wheel","notes":"Price shown for set of 4; tyres additional for VTi-S.","variants":["VTi-S","VTi-L"],"frt":"0.8","listPrice":"$1,116","fittedPrice":"$1,360"},
+    {"year":2020,"model":"Civic","body":"Hatch","category":"Alloy Wheels","partNumber":"08W17TEA700CX","description":"17-Inch Alloy Wheel Red Stripe","notes":"Price shown for set of 4; tyres additional for VTi-S.","variants":["VTi-S","VTi-L"],"frt":"0.8","listPrice":"$1,261","fittedPrice":"$1,520"},
+    {"year":2020,"model":"Civic","body":"Hatch","category":"Alloy Wheels","partNumber":"08W17TEA700EX","description":"17-Inch Alloy Wheel Silver Stripe","notes":"Price shown for set of 4; tyres additional for VTi-S.","variants":["VTi-S","VTi-L"],"frt":"0.8","listPrice":"$1,261","fittedPrice":"$1,520"},
+    {"year":2020,"model":"Civic","body":"Hatch","category":"Alloy Wheels","partNumber":"08W42SR3600K","description":"Wheel Lock Nut Set","notes":"Contains 4 chrome lock nuts and 1 key.","variants":["VTi-S","VTi-L","RS"],"frt":"0.1","listPrice":"$49","fittedPrice":"$70"},
+    {"year":2020,"model":"Civic","body":"Hatch","category":"Protection","partNumber":"08P15TEAL00","description":"Carpet Mat Set","notes":"Set of 4 with Civic metal badges on front mats.","variants":["VTi-S","VTi-L"],"frt":"0.2","listPrice":"$133","fittedPrice":"$180"},
+    {"year":2020,"model":"Civic","body":"Hatch","category":"Protection","partNumber":"08P15TEAL50","description":"Carpet Mat Set - RS","notes":"Set of 4 with RS badges and metal corner clips.","variants":["RS"],"frt":"0.2","listPrice":"$161","fittedPrice":"$210"},
+    {"year":2020,"model":"Civic","body":"Hatch","category":"Protection","partNumber":"08P17TEA710X","description":"Rubber Mat Set","notes":"Rubber mat set.","variants":["VTi-S","VTi-L","RS"],"frt":"0.2","listPrice":"$70","fittedPrice":"$110"},
+    {"year":2020,"model":"Civic","body":"Hatch","category":"Protection","partNumber":"08P01TEAL00DS","description":"Bonnet Protector","notes":"Dark smoked.","variants":["VTi-S","VTi-L","RS"],"frt":"0.2","listPrice":"$133","fittedPrice":"$180"}
+  ]
+}
