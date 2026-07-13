@@ -1,0 +1,31 @@
+name: Build Honda accessory data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'Honda/Accessories/**'
+      - '!Honda/Accessories/data/accessories.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build hosted accessory database
+        run: python Honda/Accessories/tools/build_accessory_data.py
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- Honda/Accessories/data/accessories.json; then
+            echo "Accessory database is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Honda/Accessories/data/accessories.json
+          git commit -m "Rebuild Honda accessory database"
+          git push
