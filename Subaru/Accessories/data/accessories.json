@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-13T00:00:00Z",
+  "market": "Australia",
+  "brand": "Subaru",
+  "sourceFilesScanned": 1,
+  "recordCount": 4,
+  "items": [
+    {"brand":"Subaru","model":"Forester","yearFrom":2003,"yearTo":2008,"generation":"SG","category":"Styling","partNumber":"E721ESA000","description":"Rear Roof Spoiler - Unpainted","variants":["X"],"notes":"","source":"Subaru/Accessories/Forester/MY03-08/03 Accessories_files/sheet001.htm","href":"../Subaru/Accessories/Forester/MY03-08/03 Accessories_files/sheet001.htm","recordType":"part"},
+    {"brand":"Subaru","model":"Forester","yearFrom":2003,"yearTo":2008,"generation":"SG","category":"Styling","partNumber":"J101ESA200","description":"Fender Flares - Grey base - Unpainted (MY03-05)","variants":["X","XS","XT"],"notes":"","source":"Subaru/Accessories/Forester/MY03-08/03 Accessories_files/sheet001.htm","href":"../Subaru/Accessories/Forester/MY03-08/03 Accessories_files/sheet001.htm","recordType":"part"},
+    {"brand":"Subaru","model":"Forester","yearFrom":2003,"yearTo":2008,"generation":"SG","category":"Styling","partNumber":"SA1051","description":"Rear Dust Deflector","variants":["X"],"notes":"","source":"Subaru/Accessories/Forester/MY03-08/03 Accessories_files/sheet001.htm","href":"../Subaru/Accessories/Forester/MY03-08/03 Accessories_files/sheet001.htm","recordType":"part"},
+    {"brand":"Subaru","model":"Forester","yearFrom":2003,"yearTo":2008,"generation":"SG","category":"Styling","partNumber":"44370FC000","description":"Tail Pipe Cover","variants":["X","XS"],"notes":"","source":"Subaru/Accessories/Forester/MY03-08/03 Accessories_files/sheet001.htm","href":"../Subaru/Accessories/Forester/MY03-08/03 Accessories_files/sheet001.htm","recordType":"part"}
+  ]
+}
