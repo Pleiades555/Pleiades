@@ -1,0 +1,14 @@
+{
+  "market":"Australia",
+  "vehicles":[
+    {"id":"HON-CIV-2017-RS-SED","brand":"Honda","year":2017,"model":"Civic","body":"Sedan","variant":"RS","vinPrefixes":["MRHFC1680H"],"chassis":"FC1","engine":{"code":"L15B7","description":"1.5L DOHC VTEC Turbo","powerKw":127,"powerRpm":5500,"torqueNm":220,"torqueRpm":"1700-5500","sourceType":"confirmed-user-plus-public-spec"},"transmission":"CVT","drive":"FWD","kerbWeightKg":null,"zeroToHundredSec":null,"confidence":"confirmed-vin; partial-spec"},
+    {"id":"HON-CIV-2017-VTI-HTH","brand":"Honda","year":2017,"model":"Civic","body":"Hatch","variant":"VTi","vinPrefixes":["MRHFK5850H"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
+    {"id":"HON-CIV-2018-VTIS-HTH","brand":"Honda","year":2018,"model":"Civic","body":"Hatch","variant":"VTi-S","vinPrefixes":["MRHFK5860J"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
+    {"id":"HON-CIV-2018-VTILX-HTH","brand":"Honda","year":2018,"model":"Civic","body":"Hatch","variant":"VTi-LX","vinPrefixes":["MRHFK4890H"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
+    {"id":"HON-CIV-2019-VTI-SED","brand":"Honda","year":2019,"model":"Civic","body":"Sedan","variant":"VTi","vinPrefixes":["MRHFC6650K"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
+    {"id":"HON-CIV-2019-RS-HTH","brand":"Honda","year":2019,"model":"Civic","body":"Hatch","variant":"RS","vinPrefixes":["MRHFK4880K"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
+    {"id":"HON-CIV-2020-VTIS-SED","brand":"Honda","year":2020,"model":"Civic","body":"Sedan","variant":"VTi-S","vinPrefixes":["MRHFC6670L"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
+    {"id":"HON-CIV-2020-VTIL-HTH","brand":"Honda","year":2020,"model":"Civic","body":"Hatch","variant":"VTi-L","vinPrefixes":["MRHFK4860L"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
+    {"id":"HON-CIV-2022-VTILX-HTH","brand":"Honda","year":2022,"model":"Civic","body":"Hatch","variant":"VTi-LX","vinPrefixes":["JHMFL1860NX"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"}
+  ]
+}
