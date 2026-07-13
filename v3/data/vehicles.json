@@ -9,6 +9,7 @@
     {"id":"HON-CIV-2019-RS-HTH","brand":"Honda","year":2019,"model":"Civic","body":"Hatch","variant":"RS","vinPrefixes":["MRHFK4880K"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
     {"id":"HON-CIV-2020-VTIS-SED","brand":"Honda","year":2020,"model":"Civic","body":"Sedan","variant":"VTi-S","vinPrefixes":["MRHFC6670L"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
     {"id":"HON-CIV-2020-VTIL-HTH","brand":"Honda","year":2020,"model":"Civic","body":"Hatch","variant":"VTi-L","vinPrefixes":["MRHFK4860L"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
-    {"id":"HON-CIV-2022-VTILX-HTH","brand":"Honda","year":2022,"model":"Civic","body":"Hatch","variant":"VTi-LX","vinPrefixes":["JHMFL1860NX"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"}
+    {"id":"HON-CIV-2022-VTILX-HTH","brand":"Honda","year":2022,"model":"Civic","body":"Hatch","variant":"VTi-LX","vinPrefixes":["JHMFL1860NX"],"transmission":"CVT","drive":"FWD","confidence":"confirmed-vin"},
+    {"id":"SUB-FOR-2009-SH9-XT-MAN","brand":"Subaru","year":2009,"model":"Forester","body":"Wagon/SUV","variant":"XT Turbo","vinPrefixes":["JF2SH9KD39"],"chassis":"SH9","engine":{"code":"EJ255","description":"2.5L turbocharged horizontally opposed petrol","powerKw":169,"torqueNm":320,"sourceType":"public-australian-sh-series-spec"},"transmission":"5-speed manual","drive":"AWD","kerbWeightKg":null,"zeroToHundredSec":null,"confidence":"user-confirmed exact VIN/configuration; public engine-output support"}
   ]
 }
