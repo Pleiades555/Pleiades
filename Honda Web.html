@@ -1,1 +1,170 @@
-<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Honda Portal</title><link rel="stylesheet" href="./assets/auth.css"><link rel="stylesheet" href="./assets/simple-brand-portal.css"><script defer src="./assets/auth.js"></script><script defer src="./assets/brand-video.js"></script></head><body class="simple-brand" data-requires-access="honda-basic" style="--brand:#dc2626;--brand-bg:rgba(220,38,38,.18)"><div class="simple-shell" data-auth-content><header class="simple-hero"><p class="simple-eyebrow">Honda portal</p><h1>Honda Reference Hub</h1><p>Honda extranet, catalogue, accessories, common items, bulletins, FSM references, parts and fluids.</p></header><section><div class="simple-section-title"><h2>Honda shortcuts</h2><p>External systems and local references.</p></div><div class="simple-grid"><a class="simple-card" data-access="honda-basic" href="https://hondaweb.honda.com.au/"><small>External</small><strong>Honda Extranet</strong><span>Honda Australia extranet access.</span></a><a class="simple-card" data-access="honda-basic" href="https://microcat-apac.superservice.com/"><small>Catalogue</small><strong>Honda Catalogue</strong><span>Microcat APAC catalogue.</span></a><a class="simple-card" data-access="honda-accessories" href="./Honda/Accessories.html"><small>Accessories</small><strong>Honda Accessories</strong><span>Local Honda accessories reference.</span></a><a class="simple-card" data-access="honda-common" href="./Honda/Common Items/HondaCommonItems.html"><small>Common</small><strong>Honda Common Items</strong><span>Common item references and quick lookups.</span></a><a class="simple-card" data-access="honda-tsb" href="./Honda/TSB/HondaTSB.html"><small>TSB</small><strong>Honda Bulletins / TSB</strong><span>Honda bulletin and TSB references.</span></a><a class="simple-card" data-access="honda-fsm" href="https://jdmfsm.info/Auto/Japan/Honda/"><small>FSM</small><strong>Honda Service Manuals</strong><span>External Honda manual archive.</span></a><a class="simple-card" data-access="honda-parts" href="https://partsouq.com/en/catalog/genuine/locate?c=Honda"><small>Parts</small><strong>Honda Backup EPC</strong><span>Partsouq Honda genuine parts lookup.</span></a><a class="simple-card fluids" data-access="honda-fluids" href="./Fluids/Fluids Compatibility Hub.html?brand=Honda"><small>Fluids</small><strong>Honda Fluids & Lubricants</strong><span>Honda fluids, specifications and compatible substitutes.</span></a></div></section><a class="simple-back" href="./HomePageLogin.html">← Back to Dealer Reference Hub</a></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Honda Reference Hub</title>
+  <link rel="stylesheet" href="./assets/auth.css">
+  <link rel="stylesheet" href="./assets/simple-brand-portal.css">
+  <script defer src="./assets/auth.js"></script>
+  <script defer src="./assets/brand-video.js"></script>
+  <style>
+    :root{
+      --brand:#e40521;
+      --brand-bg:rgba(228,5,33,.18);
+      --honda-red:#e40521;
+      --honda-dark:#15171b;
+      --honda-white:#fff;
+    }
+    body.simple-brand{
+      background:
+        radial-gradient(circle at 12% 0%,rgba(228,5,33,.30),transparent 32%),
+        linear-gradient(140deg,#08090b 0%,#17191e 52%,#090a0d 100%);
+    }
+    body.simple-brand:before{
+      background:
+        linear-gradient(115deg,rgba(0,0,0,.78),rgba(0,0,0,.35)),
+        repeating-linear-gradient(135deg,transparent 0 32px,rgba(255,255,255,.015) 32px 33px);
+    }
+    .portal-shell{max-width:1180px;margin:0 auto;padding-right:0}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border-top:5px solid var(--honda-red);
+      background:linear-gradient(135deg,rgba(18,20,24,.95),rgba(28,30,35,.84));
+    }
+    .hero:after{
+      content:"H";
+      position:absolute;
+      right:24px;
+      top:-46px;
+      color:rgba(255,255,255,.035);
+      font-size:210px;
+      font-weight:950;
+      line-height:1;
+      pointer-events:none;
+    }
+    .eyebrow{color:#ff5367}
+    .hero-copy{max-width:800px}
+    .section-title{border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:12px}
+    .portal-tile{
+      min-height:154px;
+      position:relative;
+      overflow:hidden;
+      border-left-width:5px;
+    }
+    .portal-tile:after{
+      content:"→";
+      position:absolute;
+      right:17px;
+      bottom:13px;
+      color:var(--accent);
+      font-size:22px;
+      font-weight:900;
+      opacity:.78;
+      transition:transform .16s ease;
+    }
+    .portal-tile:hover:after{transform:translateX(4px)}
+    .tile-honda{--accent:#ff4058;--accent-bg:rgba(228,5,33,.16)}
+    .tile-catalogue{--accent:#f5f5f5;--accent-bg:rgba(255,255,255,.09)}
+    .tile-common{--accent:#f59e0b;--accent-bg:rgba(245,158,11,.14)}
+    .tile-tsb{--accent:#fb7185;--accent-bg:rgba(251,113,133,.14)}
+    .tile-fsm{--accent:#60a5fa;--accent-bg:rgba(96,165,250,.14)}
+    .status-strip{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+    .status-pill{
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      color:#dbe1e8;
+      border-radius:999px;
+      padding:7px 11px;
+      font-size:12px;
+      font-weight:800;
+    }
+    .status-pill strong{color:#fff}
+    @media(max-width:700px){
+      .hero{padding:22px}
+      .hero:after{font-size:145px;right:5px;top:-20px}
+      .tile-grid{grid-template-columns:1fr}
+      .portal-tile{min-height:132px}
+    }
+  </style>
+</head>
+<body class="simple-brand" data-requires-access="honda-basic" style="--brand:#e40521;--brand-bg:rgba(228,5,33,.18)">
+  <div class="portal-shell" data-auth-content>
+    <header class="hero">
+      <p class="eyebrow">Honda Australia reference portal</p>
+      <h1>Honda Reference Hub</h1>
+      <p class="hero-copy">Fast access to Honda catalogues, technical bulletins, common items, service information, accessories and genuine fluid references.</p>
+      <div class="status-strip" aria-label="Honda hub highlights">
+        <span class="status-pill"><strong>Australia-first</strong> fluid data</span>
+        <span class="status-pill"><strong>Part-number-first</strong> search</span>
+        <span class="status-pill"><strong>Dealer</strong> reference shortcuts</span>
+      </div>
+    </header>
+
+    <section aria-labelledby="honda-shortcuts">
+      <div class="section-title">
+        <h2 id="honda-shortcuts">Honda shortcuts</h2>
+        <p>External systems and locally maintained references.</p>
+      </div>
+
+      <div class="tile-grid">
+        <a class="portal-tile tile-honda" data-access="honda-basic" href="https://hondaweb.honda.com.au/">
+          <span class="tile-kicker">External system</span>
+          <span class="tile-name">Honda Extranet</span>
+          <span class="tile-detail">Open the Honda Australia dealer extranet.</span>
+        </a>
+
+        <a class="portal-tile tile-catalogue" data-access="honda-basic" href="https://microcat-apac.superservice.com/">
+          <span class="tile-kicker">Parts catalogue</span>
+          <span class="tile-name">Honda Microcat</span>
+          <span class="tile-detail">APAC genuine-parts catalogue and vehicle lookup.</span>
+        </a>
+
+        <a class="portal-tile tile-accessories" data-access="honda-accessories" href="./Honda/Accessories.html">
+          <span class="tile-kicker">Accessories</span>
+          <span class="tile-name">Honda Accessories</span>
+          <span class="tile-detail">Local model-year accessory references and catalogues.</span>
+        </a>
+
+        <a class="portal-tile tile-common" data-access="honda-common" href="./Honda/Common Items/HondaCommonItems.html">
+          <span class="tile-kicker">Quick reference</span>
+          <span class="tile-name">Common Items</span>
+          <span class="tile-detail">Frequently requested Honda parts and workshop items.</span>
+        </a>
+
+        <a class="portal-tile tile-tsb" data-access="honda-tsb" href="./Honda/TSB/HondaTSB.html">
+          <span class="tile-kicker">Technical information</span>
+          <span class="tile-name">Bulletins &amp; TSB</span>
+          <span class="tile-detail">Search Honda technical service bulletin references.</span>
+        </a>
+
+        <a class="portal-tile tile-fsm" data-access="honda-fsm" href="https://jdmfsm.info/Auto/Japan/Honda/">
+          <span class="tile-kicker">Service manuals</span>
+          <span class="tile-name">Honda FSM Archive</span>
+          <span class="tile-detail">External workshop and service-manual reference archive.</span>
+        </a>
+
+        <a class="portal-tile tile-parts" data-access="honda-parts" href="https://partsouq.com/en/catalog/genuine/locate?c=Honda">
+          <span class="tile-kicker">Backup EPC</span>
+          <span class="tile-name">Honda Parts Lookup</span>
+          <span class="tile-detail">Backup genuine-parts catalogue lookup through Partsouq.</span>
+        </a>
+
+        <a class="portal-tile tile-fluids" data-access="honda-fluids" href="./Fluids/Fluids Compatibility Hub.html?brand=Honda">
+          <span class="tile-kicker">Fluids &amp; lubricants</span>
+          <span class="tile-name">Honda Fluids</span>
+          <span class="tile-detail">Australian genuine oils, transmission fluids, coolant and brake fluid.</span>
+        </a>
+      </div>
+    </section>
+
+    <a class="back-link" href="./HomePageLogin.html">← Back to Dealer Reference Hub</a>
+  </div>
+</body>
+</html>
