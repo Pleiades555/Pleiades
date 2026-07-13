@@ -1,0 +1,12 @@
+{
+  "market": "Australia",
+  "rules": [
+    {"prefix":"J","level":"region","label":"Japan-built vehicle","description":"VIN country identifier: Japan.","confidence":"standard"},
+    {"prefix":"JF","level":"manufacturer-family","brand":"Subaru","label":"Subaru / Fuji Heavy Industries","description":"Japanese-built Subaru vehicle family.","confidence":"confirmed"},
+    {"prefix":"JF2","level":"vehicle-type","brand":"Subaru","label":"Subaru multipurpose passenger vehicle","description":"Subaru MPV/SUV vehicle type identifier.","confidence":"confirmed"},
+    {"prefix":"JF2SH","level":"platform","brand":"Subaru","model":"Forester","generation":"SH","label":"Subaru Forester SH","description":"Third-generation Forester SH platform.","confidence":"confirmed"},
+    {"prefix":"JF2SH9","level":"chassis","brand":"Subaru","model":"Forester","generation":"SH","chassis":"SH9","yearFrom":2009,"yearTo":2013,"label":"Subaru Forester SH9","description":"Forester SH9 family. Exact year, engine, transmission and grade require additional characters.","confidence":"confirmed-user-plus-platform"},
+    {"prefix":"JF2SH9KD3","level":"configuration","brand":"Subaru","model":"Forester","generation":"SH","chassis":"SH9","variant":"XT Turbo","transmission":"5-speed manual","label":"Subaru Forester SH9 XT Turbo – 5-speed manual","description":"Configuration confirmed from supplied Australian example VIN. The 10th character still determines the exact model year.","confidence":"user-confirmed"},
+    {"prefix":"JF2SH9KD39","level":"exact-year-configuration","brand":"Subaru","year":2009,"model":"Forester","generation":"SH","chassis":"SH9","variant":"XT Turbo","transmission":"5-speed manual","label":"2009 Subaru Forester SH9 XT Turbo – 5-speed manual","description":"Exact model-year/configuration rule from supplied VIN JF2SH9KD39G******.","confidence":"user-confirmed"}
+  ]
+}
