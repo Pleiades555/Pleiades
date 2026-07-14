@@ -12,6 +12,31 @@
   ],
   "transmissions": [
     {
+      "id": "SUB-TY75",
+      "brand": "Subaru",
+      "family": "TY75",
+      "type": "5-speed manual transaxle family",
+      "drive": "AWD",
+      "notes": "TY75 identifies a gearbox family. Exact suffix/code, ratios, final drive and differential specification must be confirmed per application.",
+      "confidence": "family identification"
+    },
+    {
+      "id": "SUB-TY758VGZAA",
+      "brand": "Subaru",
+      "family": "TY75",
+      "exactCode": "TY758VGZAA",
+      "type": "5-speed manual transaxle",
+      "drive": "AWD",
+      "exampleVins": ["JF2SH9KD39G009340"],
+      "modelApplications": ["2009 Subaru Forester SH9 XT Turbo manual"],
+      "centreDifferential": null,
+      "dccd": null,
+      "gearRatios": null,
+      "finalDrive": null,
+      "sourceType": "user-confirmed exact vehicle transmission code",
+      "confidence": "confirmed exact gearbox code; internal ratios and differential specification pending chart verification"
+    },
+    {
       "id": "SUB-TY85",
       "brand": "Subaru",
       "family": "TY85",
