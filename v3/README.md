@@ -24,7 +24,6 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 6. Inventory remains a separate permission-controlled module.
 7. Engine identity is stored separately as `code`, `family` and `marketingName`; cross-brand aliases belong in `alternateCodes`.
 8. Conflicting source fields are retained as a `sourceWarning` and are not allowed to override a confirmed VIN/configuration record.
-9. Harvested auction data is written to a review file and never promoted directly into `vehicles.json`.
 
 ## Core data packs
 
