@@ -1,5 +1,27 @@
 [
   {
+    "username": "aaron.morse",
+    "name": "Aaron Morse",
+    "title": "Parts Legend",
+    "dealer": "11050 - Kedron Byrne Ford",
+    "department": "Parts",
+    "fordStartDate": "2026-01-01",
+    "role": "custom",
+    "enabled": true,
+    "permissions": [
+      "site-basic",
+      "fluids-basic",
+      "ford-basic",
+      "ford-tsb",
+      "ford-fsm",
+      "ford-parts",
+      "ford-fluids",
+      "ford-repair"
+    ],
+    "createdAt": "2026-07-14T00:57:10.592Z",
+    "updatedAt": "2026-07-14T00:57:10.591Z"
+  },
+  {
     "username": "bsumpter",
     "name": "Brandon Sumpter",
     "title": "Parts Legend",
