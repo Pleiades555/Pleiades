@@ -1,6 +1,48 @@
 {
   "market": "Australia",
+  "sources": [
+    {
+      "id": "SUBARU-TRANSMISSION-ID-CHART",
+      "title": "Subaru Transmission Gear Chart",
+      "url": "https://cdn.shopify.com/s/files/1/0655/5143/3782/files/Transmission_ID_Chart_Public.pdf?v=1761839494",
+      "type": "public transmission identification chart",
+      "scope": "Subaru manual and automatic transmission codes across multiple markets; Australian applications must be explicitly marked AU in the model-range field",
+      "confidence": "reference source"
+    }
+  ],
   "transmissions": [
-    {"id":"SUB-TY85","brand":"Subaru","family":"TY85","type":"6-speed manual transaxle family","drive":"AWD","variants":[{"centreDifferential":"DCCD","status":"family variant"},{"centreDifferential":"Non-DCCD","status":"family variant"}],"notes":"TY85 identifies a gearbox family, not one exact transmission. Exact suffix/code, ratios, final drive and DCCD status must be confirmed for each vehicle.","confidence":"user-confirmed family definition"}
+    {
+      "id": "SUB-TY85",
+      "brand": "Subaru",
+      "family": "TY85",
+      "type": "6-speed manual transaxle family",
+      "drive": "AWD",
+      "variants": [
+        {"centreDifferential":"DCCD","status":"family variant"},
+        {"centreDifferential":"Non-DCCD","status":"family variant"}
+      ],
+      "notes": "TY85 identifies a gearbox family, not one exact transmission. Exact suffix/code, ratios, final drive and DCCD status must be confirmed for each vehicle.",
+      "confidence": "user-confirmed family definition"
+    },
+    {
+      "id": "SUB-TY856WVCAA",
+      "brand": "Subaru",
+      "family": "TY85",
+      "exactCode": "TY856WVCAA",
+      "type": "6-speed manual transaxle",
+      "drive": "AWD",
+      "marketApplications": ["Japan","United Kingdom","Europe","Australia","Hong Kong"],
+      "modelApplications": ["Legacy / Liberty 3.0R Spec B MY06","Legacy / Liberty Blitzen MY06"],
+      "gearRatios": {"first":3.636,"second":2.375,"third":1.761,"fourth":1.346,"fifth":0.971,"sixth":0.756,"reverse":3.545},
+      "transferRatio": 1.1,
+      "finalDrive": 3.9,
+      "centreDifferential": "Viscous 50:50",
+      "dccd": false,
+      "frontDifferential": "Open",
+      "rearDifferential": "R160 viscous LSD, 3.545",
+      "oilPump": true,
+      "sourceId": "SUBARU-TRANSMISSION-ID-CHART",
+      "confidence": "confirmed chart record"
+    }
   ]
 }
