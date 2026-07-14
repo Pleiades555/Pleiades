@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "errors": [],
+  "counts": {
+    "brands": 5,
+    "vehicles": 13,
+    "engines": 5,
+    "transmissionFamilies": 2,
+    "transmissions": 2,
+    "differentials": 1,
+    "fluids": 122,
+    "parts": 688,
+    "accessories": 15,
+    "tsbs": 0,
+    "recalls": 0,
+    "workshopManuals": 0,
+    "procedures": 0,
+    "sources": 6,
+    "reviewItems": 1,
+    "importBatches": 1,
+    "changelog": 1
+  }
+}

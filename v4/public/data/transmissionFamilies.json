@@ -1,0 +1,38 @@
+[
+  {
+    "id": "transmission:subaru-ty75",
+    "brand": "Subaru",
+    "family": "TY75",
+    "type": "5-speed manual transaxle family",
+    "drive": "AWD",
+    "notes": "TY75 identifies a gearbox family. Exact suffix/code, ratios, final drive and differential specification must be confirmed per application.",
+    "confidence": "family identification",
+    "status": "confirmed",
+    "sourceIds": [
+      "source:v3-transmissions"
+    ]
+  },
+  {
+    "id": "transmission:subaru-ty85",
+    "brand": "Subaru",
+    "family": "TY85",
+    "type": "6-speed manual transaxle family",
+    "drive": "AWD",
+    "variants": [
+      {
+        "centreDifferential": "DCCD",
+        "status": "family variant"
+      },
+      {
+        "centreDifferential": "Non-DCCD",
+        "status": "family variant"
+      }
+    ],
+    "notes": "TY85 identifies a gearbox family, not one exact transmission. Exact suffix/code, ratios, final drive and DCCD status must be confirmed for each vehicle.",
+    "confidence": "user-confirmed family definition",
+    "status": "confirmed",
+    "sourceIds": [
+      "source:v3-transmissions"
+    ]
+  }
+]

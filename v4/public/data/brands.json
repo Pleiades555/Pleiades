@@ -1,0 +1,22 @@
+[
+  {
+    "id": "brand:ford",
+    "name": "Ford"
+  },
+  {
+    "id": "brand:honda",
+    "name": "Honda"
+  },
+  {
+    "id": "brand:jaguar",
+    "name": "Jaguar"
+  },
+  {
+    "id": "brand:land-rover",
+    "name": "Land Rover"
+  },
+  {
+    "id": "brand:subaru",
+    "name": "Subaru"
+  }
+]

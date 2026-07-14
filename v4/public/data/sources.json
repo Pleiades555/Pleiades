@@ -1,0 +1,40 @@
+[
+  {
+    "id": "source:v3-vehicles",
+    "title": "Legacy V3 vehicles JSON",
+    "url": "../v3/data/vehicles.json",
+    "type": "legacy-json"
+  },
+  {
+    "id": "source:v3-engines",
+    "title": "Legacy V3 engines JSON",
+    "url": "../v3/data/engines.json",
+    "type": "legacy-json"
+  },
+  {
+    "id": "source:v3-transmissions",
+    "title": "Legacy V3 transmissions JSON",
+    "url": "../v3/data/transmissions.json",
+    "type": "legacy-json"
+  },
+  {
+    "id": "source:ford-parts-kb",
+    "title": "Ford parts knowledge base",
+    "url": "../Ford/ford_parts_kb_data.json",
+    "type": "legacy-json"
+  },
+  {
+    "id": "source:fluids-master",
+    "title": "Fluids master",
+    "url": "../Fluids/fluids_master.json",
+    "type": "legacy-json"
+  },
+  {
+    "id": "SUBARU-TRANSMISSION-ID-CHART",
+    "title": "Subaru Transmission Gear Chart",
+    "url": "https://cdn.shopify.com/s/files/1/0655/5143/3782/files/Transmission_ID_Chart_Public.pdf?v=1761839494",
+    "type": "public transmission identification chart",
+    "scope": "Subaru manual and automatic transmission codes across multiple markets; Australian applications must be explicitly marked AU in the model-range field",
+    "confidence": "reference source"
+  }
+]

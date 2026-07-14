@@ -1,0 +1,14 @@
+[
+  {
+    "id": "differential:subaru-r160-rear-estimate",
+    "brand": "Subaru",
+    "family": "R160",
+    "position": "rear",
+    "type": "unknown",
+    "ratio": null,
+    "status": "estimated",
+    "confidence": 0.35,
+    "reviewRequired": true,
+    "note": "R160 rear differential for JF2SH9KD39G009340 is an estimate/manual-review item and is not confirmed."
+  }
+]

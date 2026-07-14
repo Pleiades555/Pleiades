@@ -1,0 +1,21 @@
+{
+  "migrated": {
+    "vehicles": 13,
+    "engines": 5,
+    "transmissions": 2,
+    "transmissionFamilies": 2,
+    "fluids": 122,
+    "parts": 688,
+    "accessories": 15,
+    "tsbs": 0,
+    "sources": 6
+  },
+  "manualReview": [
+    {
+      "id": "review:r160-forester-vin",
+      "entityId": "differential:subaru-r160-rear-estimate",
+      "reason": "Estimated rear differential for JF2SH9KD39G009340 requires source confirmation.",
+      "status": "open"
+    }
+  ]
+}
