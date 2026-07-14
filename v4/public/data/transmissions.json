@@ -1,0 +1,70 @@
+[
+  {
+    "id": "transmission:subaru-ty758vgzaa",
+    "brand": "Subaru",
+    "family": "TY75",
+    "exactCode": "TY758VGZAA",
+    "type": "5-speed manual transaxle",
+    "drive": "AWD",
+    "exampleVins": [
+      "JF2SH9KD39G009340"
+    ],
+    "modelApplications": [
+      "2009 Subaru Forester SH9 XT Turbo manual"
+    ],
+    "centreDifferential": null,
+    "dccd": null,
+    "gearRatios": null,
+    "finalDrive": null,
+    "rearDifferentialEstimate": "R160",
+    "rearDifferentialStatus": "estimated-manual-review",
+    "estimateBasis": "Provisional application-based estimate supplied by user; not confirmed by the transmission chart or a vehicle-specific parts catalogue.",
+    "sourceType": "user-confirmed exact vehicle transmission code; rear differential estimate unverified",
+    "confidence": "confirmed exact gearbox code; rear differential family estimated; internal ratios and differential specification pending verification",
+    "status": "source-confirmed",
+    "sourceIds": [
+      "source:v3-transmissions"
+    ]
+  },
+  {
+    "id": "transmission:subaru-ty856wvcaa",
+    "brand": "Subaru",
+    "family": "TY85",
+    "exactCode": "TY856WVCAA",
+    "type": "6-speed manual transaxle",
+    "drive": "AWD",
+    "marketApplications": [
+      "Japan",
+      "United Kingdom",
+      "Europe",
+      "Australia",
+      "Hong Kong"
+    ],
+    "modelApplications": [
+      "Legacy / Liberty 3.0R Spec B MY06",
+      "Legacy / Liberty Blitzen MY06"
+    ],
+    "gearRatios": {
+      "first": 3.636,
+      "second": 2.375,
+      "third": 1.761,
+      "fourth": 1.346,
+      "fifth": 0.971,
+      "sixth": 0.756,
+      "reverse": 3.545
+    },
+    "transferRatio": 1.1,
+    "finalDrive": 3.9,
+    "centreDifferential": "Viscous 50:50",
+    "dccd": false,
+    "frontDifferential": "Open",
+    "rearDifferential": "R160 viscous LSD, 3.545",
+    "oilPump": true,
+    "sourceId": "SUBARU-TRANSMISSION-ID-CHART",
+    "confidence": "confirmed chart record",
+    "status": "source-confirmed",
+    "sourceIds": [
+      "SUBARU-TRANSMISSION-ID-CHART"
+    ]
+  }
+]

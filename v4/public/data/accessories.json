@@ -1,0 +1,92 @@
+[
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my10accessories-html",
+    "title": "MY10Accessories",
+    "sourcePath": "Honda/Accessories/MY10Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my24accessories-html",
+    "title": "MY24Accessories",
+    "sourcePath": "Honda/Accessories/MY24Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my22accessories-html",
+    "title": "MY22Accessories",
+    "sourcePath": "Honda/Accessories/MY22Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my20civichatch-html",
+    "title": "MY20CivicHatch",
+    "sourcePath": "Honda/Accessories/MY20CivicHatch.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my22-civic-html",
+    "title": "MY22 Civic",
+    "sourcePath": "Honda/Accessories/MY22 Civic.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my21accessories-html",
+    "title": "MY21Accessories",
+    "sourcePath": "Honda/Accessories/MY21Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-25ym-civic-accessories-html",
+    "title": "25YM Civic Accessories",
+    "sourcePath": "Honda/Accessories/25YM Civic Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my24-accord-html",
+    "title": "MY24 Accord",
+    "sourcePath": "Honda/Accessories/MY24 Accord.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my20accessories-html",
+    "title": "MY20Accessories",
+    "sourcePath": "Honda/Accessories/MY20Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my25accessories-html",
+    "title": "MY25Accessories",
+    "sourcePath": "Honda/Accessories/MY25Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-25ym-hr-v-html",
+    "title": "25YM HR-V",
+    "sourcePath": "Honda/Accessories/25YM HR-V.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my23accessories-html",
+    "title": "MY23Accessories",
+    "sourcePath": "Honda/Accessories/MY23Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-honda-accessories-my24-cr-v-html",
+    "title": "MY24 CR-V",
+    "sourcePath": "Honda/Accessories/MY24 CR-V.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-subaru-accessories-html",
+    "title": "Accessories",
+    "sourcePath": "Subaru/Accessories.html",
+    "status": "manual-review"
+  },
+  {
+    "id": "accessory-source:workspace-pleiades-jlr-lraccessories-html",
+    "title": "LRAccessories",
+    "sourcePath": "JLR/LRAccessories.html",
+    "status": "manual-review"
+  }
+]

@@ -1,0 +1,437 @@
+[
+  {
+    "id": "vehicle:hon-civ-2017-rs-sed",
+    "brand": "Honda",
+    "year": 2017,
+    "model": "Civic",
+    "body": "Sedan",
+    "variant": "RS",
+    "vinPrefixes": [
+      "MRHFC1680H"
+    ],
+    "chassis": "FC1",
+    "transmission": "CVT",
+    "drive": "FWD",
+    "kerbWeightKg": null,
+    "zeroToHundredSec": null,
+    "confidence": "confirmed-vin; partial-spec",
+    "engineRef": "engine:honda-l15b7",
+    "legacyEngineSnapshot": {
+      "code": "L15B7",
+      "description": "1.5L DOHC VTEC Turbo",
+      "powerKw": 127,
+      "powerRpm": 5500,
+      "torqueNm": 220,
+      "torqueRpm": "1700-5500",
+      "sourceType": "confirmed-user-plus-public-spec"
+    },
+    "claims": {
+      "identity": {
+        "value": "2017 Honda Civic RS",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:hon-civ-2017-vti-hth",
+    "brand": "Honda",
+    "year": 2017,
+    "model": "Civic",
+    "body": "Hatch",
+    "variant": "VTi",
+    "vinPrefixes": [
+      "MRHFK5850H"
+    ],
+    "transmission": "CVT",
+    "drive": "FWD",
+    "confidence": "confirmed-vin",
+    "claims": {
+      "identity": {
+        "value": "2017 Honda Civic VTi",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:hon-civ-2018-vtis-hth",
+    "brand": "Honda",
+    "year": 2018,
+    "model": "Civic",
+    "body": "Hatch",
+    "variant": "VTi-S",
+    "vinPrefixes": [
+      "MRHFK5860J"
+    ],
+    "transmission": "CVT",
+    "drive": "FWD",
+    "confidence": "confirmed-vin",
+    "claims": {
+      "identity": {
+        "value": "2018 Honda Civic VTi-S",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:hon-civ-2018-vtilx-hth",
+    "brand": "Honda",
+    "year": 2018,
+    "model": "Civic",
+    "body": "Hatch",
+    "variant": "VTi-LX",
+    "vinPrefixes": [
+      "MRHFK4890H"
+    ],
+    "transmission": "CVT",
+    "drive": "FWD",
+    "confidence": "confirmed-vin",
+    "claims": {
+      "identity": {
+        "value": "2018 Honda Civic VTi-LX",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:hon-civ-2019-vti-sed",
+    "brand": "Honda",
+    "year": 2019,
+    "model": "Civic",
+    "body": "Sedan",
+    "variant": "VTi",
+    "vinPrefixes": [
+      "MRHFC6650K"
+    ],
+    "transmission": "CVT",
+    "drive": "FWD",
+    "confidence": "confirmed-vin",
+    "claims": {
+      "identity": {
+        "value": "2019 Honda Civic VTi",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:hon-civ-2019-rs-hth",
+    "brand": "Honda",
+    "year": 2019,
+    "model": "Civic",
+    "body": "Hatch",
+    "variant": "RS",
+    "vinPrefixes": [
+      "MRHFK4880K"
+    ],
+    "transmission": "CVT",
+    "drive": "FWD",
+    "confidence": "confirmed-vin",
+    "claims": {
+      "identity": {
+        "value": "2019 Honda Civic RS",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:hon-civ-2020-vtis-sed",
+    "brand": "Honda",
+    "year": 2020,
+    "model": "Civic",
+    "body": "Sedan",
+    "variant": "VTi-S",
+    "vinPrefixes": [
+      "MRHFC6670L"
+    ],
+    "transmission": "CVT",
+    "drive": "FWD",
+    "confidence": "confirmed-vin",
+    "claims": {
+      "identity": {
+        "value": "2020 Honda Civic VTi-S",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:hon-civ-2020-vtil-hth",
+    "brand": "Honda",
+    "year": 2020,
+    "model": "Civic",
+    "body": "Hatch",
+    "variant": "VTi-L",
+    "vinPrefixes": [
+      "MRHFK4860L"
+    ],
+    "transmission": "CVT",
+    "drive": "FWD",
+    "confidence": "confirmed-vin",
+    "claims": {
+      "identity": {
+        "value": "2020 Honda Civic VTi-L",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:hon-civ-2022-vtilx-hth",
+    "brand": "Honda",
+    "year": 2022,
+    "model": "Civic",
+    "body": "Hatch",
+    "variant": "VTi-LX",
+    "vinPrefixes": [
+      "JHMFL1860NX"
+    ],
+    "transmission": "CVT",
+    "drive": "FWD",
+    "confidence": "confirmed-vin",
+    "claims": {
+      "identity": {
+        "value": "2022 Honda Civic VTi-LX",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": []
+  },
+  {
+    "id": "vehicle:sub-for-2009-sh9-xt-man",
+    "brand": "Subaru",
+    "year": 2009,
+    "model": "Forester",
+    "body": "Wagon/SUV",
+    "variant": "XT Turbo",
+    "vinPrefixes": [
+      "JF2SH9KD39"
+    ],
+    "chassis": "SH9",
+    "transmission": "5-speed manual",
+    "drive": "AWD",
+    "kerbWeightKg": null,
+    "zeroToHundredSec": null,
+    "confidence": "user-confirmed exact VIN/configuration; public engine-output support",
+    "engineRef": "engine:subaru-ej255",
+    "legacyEngineSnapshot": {
+      "code": "EJ255",
+      "description": "2.5L turbocharged horizontally opposed petrol",
+      "powerKw": 169,
+      "torqueNm": 320,
+      "sourceType": "public-australian-sh-series-spec"
+    },
+    "transmissionRef": "transmission:subaru-ty758vgzaa",
+    "differentialRefs": [
+      "differential:subaru-r160-rear-estimate"
+    ],
+    "claims": {
+      "identity": {
+        "value": "2009 Subaru Forester XT Turbo",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": [
+      "JF2SH9KD39G009340"
+    ]
+  },
+  {
+    "id": "vehicle:lr-freelander2-2007-si6-se",
+    "brand": "Land Rover",
+    "year": 2007,
+    "model": "Freelander 2",
+    "body": "5-door SUV",
+    "variant": "Si6 SE",
+    "vinPrefixes": [
+      "SALFA23A87H"
+    ],
+    "exampleVins": [
+      "SALFA23A87H021769"
+    ],
+    "chassis": "L359 / LF",
+    "transmission": "6-speed Aisin automatic",
+    "drive": "AWD",
+    "kerbWeightKg": null,
+    "tareWeightKg": null,
+    "gvmKg": null,
+    "zeroToHundredSec": null,
+    "performanceSourceType": null,
+    "confidence": "confirmed exact Australian VIN/configuration; weights and performance not yet verified",
+    "sourceWarning": "One auction detail table incorrectly described the vehicle as a 1951 cc diesel; the Si6 model identity and 3192 cc petrol evidence take precedence.",
+    "engineRef": "engine:land-rover-b6324s",
+    "legacyEngineSnapshot": {
+      "code": "B6324S",
+      "family": "Volvo SI6",
+      "marketingName": "Si6",
+      "description": "3.2L naturally aspirated inline-six petrol",
+      "displacementCc": 3192,
+      "induction": "Naturally aspirated",
+      "powerKw": 171,
+      "powerRpm": 6300,
+      "torqueNm": 317,
+      "torqueRpm": 3200,
+      "sourceType": "user-confirmed-vin-plus-australian-market-spec"
+    },
+    "claims": {
+      "identity": {
+        "value": "2007 Land Rover Freelander 2 Si6 SE",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": [
+      "SALFA23A87H021769",
+      "SALFA23A87H021769"
+    ]
+  },
+  {
+    "id": "vehicle:lr-rrs-2007-l320-tdv6",
+    "brand": "Land Rover",
+    "year": 2007,
+    "model": "Range Rover Sport",
+    "body": "5-door SUV",
+    "variant": "TDV6",
+    "vinPrefixes": [
+      "SALLSAA137A"
+    ],
+    "exampleVins": [
+      "SALLSAA137A998181"
+    ],
+    "chassis": "L320 / LS",
+    "transmission": "6-speed ZF automatic",
+    "drive": "4WD",
+    "kerbWeightKg": null,
+    "tareWeightKg": null,
+    "gvmKg": null,
+    "zeroToHundredSec": null,
+    "performanceSourceType": null,
+    "confidence": "confirmed exact Australian VIN/configuration; trim, weights and performance not yet verified",
+    "engineRef": "engine:land-rover-276dt",
+    "legacyEngineSnapshot": {
+      "code": "276DT",
+      "family": "Ford/PSA Lion V6 diesel",
+      "marketingName": "TDV6",
+      "alternateCodes": [
+        "AJD-V6",
+        "DT17"
+      ],
+      "description": "2.7L turbocharged V6 diesel",
+      "displacementCc": 2720,
+      "induction": "Single variable-geometry turbocharger",
+      "powerKw": 140,
+      "powerRpm": 4000,
+      "torqueNm": 440,
+      "torqueRpm": 1900,
+      "sourceType": "user-confirmed-vin-plus-australian-market-spec"
+    },
+    "claims": {
+      "identity": {
+        "value": "2007 Land Rover Range Rover Sport TDV6",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": [
+      "SALLSAA137A998181",
+      "SALLSAA137A998181"
+    ]
+  },
+  {
+    "id": "vehicle:sub-lib-2006-blitzen-sed-man",
+    "brand": "Subaru",
+    "year": 2006,
+    "model": "Liberty",
+    "body": "Sedan",
+    "variant": "Blitzen",
+    "exampleVins": [
+      "JF1BLEKN36G023480"
+    ],
+    "vinPrefixes": [
+      "JF1BLEKN36G"
+    ],
+    "chassis": "BL",
+    "engineRef": "engine:subaru-ez30",
+    "transmissionRef": "transmission:subaru-ty856wvcaa",
+    "drive": "AWD",
+    "claims": {
+      "centreDifferential": {
+        "value": "Viscous 50:50",
+        "status": "source-confirmed",
+        "confidence": 0.82,
+        "sourceIds": [
+          "source:subaru-transmission-id-chart"
+        ]
+      },
+      "dccd": {
+        "value": false,
+        "status": "source-confirmed",
+        "confidence": 0.82,
+        "sourceIds": [
+          "source:subaru-transmission-id-chart"
+        ]
+      },
+      "identity": {
+        "value": "2006 Subaru Liberty Blitzen",
+        "status": "confirmed",
+        "confidence": 0.75,
+        "sourceIds": [
+          "source:v3-vehicles"
+        ]
+      }
+    },
+    "exactVins": [
+      "JF1BLEKN36G023480",
+      "JF1BLEKN36G023480"
+    ]
+  }
+]

@@ -1,0 +1,452 @@
+{
+  "v3Vehicles": [
+    {
+      "id": "HON-CIV-2017-RS-SED",
+      "brand": "Honda",
+      "year": 2017,
+      "model": "Civic",
+      "body": "Sedan",
+      "variant": "RS",
+      "vinPrefixes": [
+        "MRHFC1680H"
+      ],
+      "chassis": "FC1",
+      "engine": {
+        "code": "L15B7",
+        "description": "1.5L DOHC VTEC Turbo",
+        "powerKw": 127,
+        "powerRpm": 5500,
+        "torqueNm": 220,
+        "torqueRpm": "1700-5500",
+        "sourceType": "confirmed-user-plus-public-spec"
+      },
+      "transmission": "CVT",
+      "drive": "FWD",
+      "kerbWeightKg": null,
+      "zeroToHundredSec": null,
+      "confidence": "confirmed-vin; partial-spec"
+    },
+    {
+      "id": "HON-CIV-2017-VTI-HTH",
+      "brand": "Honda",
+      "year": 2017,
+      "model": "Civic",
+      "body": "Hatch",
+      "variant": "VTi",
+      "vinPrefixes": [
+        "MRHFK5850H"
+      ],
+      "transmission": "CVT",
+      "drive": "FWD",
+      "confidence": "confirmed-vin"
+    },
+    {
+      "id": "HON-CIV-2018-VTIS-HTH",
+      "brand": "Honda",
+      "year": 2018,
+      "model": "Civic",
+      "body": "Hatch",
+      "variant": "VTi-S",
+      "vinPrefixes": [
+        "MRHFK5860J"
+      ],
+      "transmission": "CVT",
+      "drive": "FWD",
+      "confidence": "confirmed-vin"
+    },
+    {
+      "id": "HON-CIV-2018-VTILX-HTH",
+      "brand": "Honda",
+      "year": 2018,
+      "model": "Civic",
+      "body": "Hatch",
+      "variant": "VTi-LX",
+      "vinPrefixes": [
+        "MRHFK4890H"
+      ],
+      "transmission": "CVT",
+      "drive": "FWD",
+      "confidence": "confirmed-vin"
+    },
+    {
+      "id": "HON-CIV-2019-VTI-SED",
+      "brand": "Honda",
+      "year": 2019,
+      "model": "Civic",
+      "body": "Sedan",
+      "variant": "VTi",
+      "vinPrefixes": [
+        "MRHFC6650K"
+      ],
+      "transmission": "CVT",
+      "drive": "FWD",
+      "confidence": "confirmed-vin"
+    },
+    {
+      "id": "HON-CIV-2019-RS-HTH",
+      "brand": "Honda",
+      "year": 2019,
+      "model": "Civic",
+      "body": "Hatch",
+      "variant": "RS",
+      "vinPrefixes": [
+        "MRHFK4880K"
+      ],
+      "transmission": "CVT",
+      "drive": "FWD",
+      "confidence": "confirmed-vin"
+    },
+    {
+      "id": "HON-CIV-2020-VTIS-SED",
+      "brand": "Honda",
+      "year": 2020,
+      "model": "Civic",
+      "body": "Sedan",
+      "variant": "VTi-S",
+      "vinPrefixes": [
+        "MRHFC6670L"
+      ],
+      "transmission": "CVT",
+      "drive": "FWD",
+      "confidence": "confirmed-vin"
+    },
+    {
+      "id": "HON-CIV-2020-VTIL-HTH",
+      "brand": "Honda",
+      "year": 2020,
+      "model": "Civic",
+      "body": "Hatch",
+      "variant": "VTi-L",
+      "vinPrefixes": [
+        "MRHFK4860L"
+      ],
+      "transmission": "CVT",
+      "drive": "FWD",
+      "confidence": "confirmed-vin"
+    },
+    {
+      "id": "HON-CIV-2022-VTILX-HTH",
+      "brand": "Honda",
+      "year": 2022,
+      "model": "Civic",
+      "body": "Hatch",
+      "variant": "VTi-LX",
+      "vinPrefixes": [
+        "JHMFL1860NX"
+      ],
+      "transmission": "CVT",
+      "drive": "FWD",
+      "confidence": "confirmed-vin"
+    },
+    {
+      "id": "SUB-FOR-2009-SH9-XT-MAN",
+      "brand": "Subaru",
+      "year": 2009,
+      "model": "Forester",
+      "body": "Wagon/SUV",
+      "variant": "XT Turbo",
+      "vinPrefixes": [
+        "JF2SH9KD39"
+      ],
+      "chassis": "SH9",
+      "engine": {
+        "code": "EJ255",
+        "description": "2.5L turbocharged horizontally opposed petrol",
+        "powerKw": 169,
+        "torqueNm": 320,
+        "sourceType": "public-australian-sh-series-spec"
+      },
+      "transmission": "5-speed manual",
+      "drive": "AWD",
+      "kerbWeightKg": null,
+      "zeroToHundredSec": null,
+      "confidence": "user-confirmed exact VIN/configuration; public engine-output support"
+    },
+    {
+      "id": "LR-FREELANDER2-2007-SI6-SE",
+      "brand": "Land Rover",
+      "year": 2007,
+      "model": "Freelander 2",
+      "body": "5-door SUV",
+      "variant": "Si6 SE",
+      "vinPrefixes": [
+        "SALFA23A87H"
+      ],
+      "exampleVins": [
+        "SALFA23A87H021769"
+      ],
+      "chassis": "L359 / LF",
+      "engine": {
+        "code": "B6324S",
+        "family": "Volvo SI6",
+        "marketingName": "Si6",
+        "description": "3.2L naturally aspirated inline-six petrol",
+        "displacementCc": 3192,
+        "induction": "Naturally aspirated",
+        "powerKw": 171,
+        "powerRpm": 6300,
+        "torqueNm": 317,
+        "torqueRpm": 3200,
+        "sourceType": "user-confirmed-vin-plus-australian-market-spec"
+      },
+      "transmission": "6-speed Aisin automatic",
+      "drive": "AWD",
+      "kerbWeightKg": null,
+      "tareWeightKg": null,
+      "gvmKg": null,
+      "zeroToHundredSec": null,
+      "performanceSourceType": null,
+      "confidence": "confirmed exact Australian VIN/configuration; weights and performance not yet verified",
+      "sourceWarning": "One auction detail table incorrectly described the vehicle as a 1951 cc diesel; the Si6 model identity and 3192 cc petrol evidence take precedence."
+    },
+    {
+      "id": "LR-RRS-2007-L320-TDV6",
+      "brand": "Land Rover",
+      "year": 2007,
+      "model": "Range Rover Sport",
+      "body": "5-door SUV",
+      "variant": "TDV6",
+      "vinPrefixes": [
+        "SALLSAA137A"
+      ],
+      "exampleVins": [
+        "SALLSAA137A998181"
+      ],
+      "chassis": "L320 / LS",
+      "engine": {
+        "code": "276DT",
+        "family": "Ford/PSA Lion V6 diesel",
+        "marketingName": "TDV6",
+        "alternateCodes": [
+          "AJD-V6",
+          "DT17"
+        ],
+        "description": "2.7L turbocharged V6 diesel",
+        "displacementCc": 2720,
+        "induction": "Single variable-geometry turbocharger",
+        "powerKw": 140,
+        "powerRpm": 4000,
+        "torqueNm": 440,
+        "torqueRpm": 1900,
+        "sourceType": "user-confirmed-vin-plus-australian-market-spec"
+      },
+      "transmission": "6-speed ZF automatic",
+      "drive": "4WD",
+      "kerbWeightKg": null,
+      "tareWeightKg": null,
+      "gvmKg": null,
+      "zeroToHundredSec": null,
+      "performanceSourceType": null,
+      "confidence": "confirmed exact Australian VIN/configuration; trim, weights and performance not yet verified"
+    },
+    {
+      "id": "SUB-LIB-2006-BLITZEN-SED-MAN",
+      "brand": "Subaru",
+      "year": 2006,
+      "model": "Liberty",
+      "body": "Sedan",
+      "variant": "Blitzen",
+      "exampleVins": [
+        "JF1BLEKN36G023480"
+      ],
+      "vinPrefixes": [
+        "JF1BLEKN36G"
+      ],
+      "chassis": "BL",
+      "engineRef": "engine:subaru-ez30",
+      "transmissionRef": "transmission:subaru-ty856wvcaa",
+      "drive": "AWD",
+      "claims": {
+        "centreDifferential": {
+          "value": "Viscous 50:50",
+          "status": "source-confirmed",
+          "confidence": 0.82,
+          "sourceIds": [
+            "source:subaru-transmission-id-chart"
+          ]
+        },
+        "dccd": {
+          "value": false,
+          "status": "source-confirmed",
+          "confidence": 0.82,
+          "sourceIds": [
+            "source:subaru-transmission-id-chart"
+          ]
+        },
+        "identity": {
+          "value": "2006 Subaru Liberty Blitzen",
+          "status": "confirmed",
+          "confidence": 0.75,
+          "sourceIds": [
+            "source:v3-vehicles"
+          ]
+        }
+      }
+    }
+  ],
+  "v3Engines": [
+    {
+      "id": "SUB-EZ30",
+      "brand": "Subaru",
+      "code": "EZ30",
+      "family": "Subaru EZ flat-six",
+      "configuration": "Horizontally opposed six-cylinder",
+      "fuel": "Petrol",
+      "induction": "Naturally aspirated",
+      "displacementCc": 2999,
+      "notes": "Vehicle-specific revision and output require separate evidence. Do not assume EZ30, EZ30D and informal EZ30R labels are interchangeable.",
+      "confidence": "user-confirmed family and code; detailed specification partial"
+    },
+    {
+      "id": "SUB-EJ255",
+      "brand": "Subaru",
+      "code": "EJ255",
+      "family": "Subaru EJ flat-four",
+      "configuration": "Horizontally opposed four-cylinder",
+      "fuel": "Petrol",
+      "induction": "Turbocharged",
+      "confidence": "confirmed current vehicle record"
+    },
+    {
+      "id": "HON-L15B7",
+      "brand": "Honda",
+      "code": "L15B7",
+      "family": "Honda L-series",
+      "configuration": "Inline four-cylinder",
+      "fuel": "Petrol",
+      "induction": "Turbocharged",
+      "confidence": "confirmed current vehicle record"
+    },
+    {
+      "id": "LR-276DT",
+      "brand": "Land Rover",
+      "code": "276DT",
+      "family": "Ford/PSA Lion V6 diesel",
+      "marketingNames": [
+        "TDV6"
+      ],
+      "alternateCodes": [
+        "AJD-V6",
+        "DT17"
+      ],
+      "displacementCc": 2720,
+      "confidence": "confirmed current vehicle record"
+    },
+    {
+      "id": "LR-B6324S",
+      "brand": "Land Rover",
+      "code": "B6324S",
+      "family": "Volvo SI6",
+      "marketingNames": [
+        "Si6"
+      ],
+      "displacementCc": 3192,
+      "confidence": "confirmed current vehicle record"
+    }
+  ],
+  "v3Transmissions": {
+    "market": "Australia",
+    "sources": [
+      {
+        "id": "SUBARU-TRANSMISSION-ID-CHART",
+        "title": "Subaru Transmission Gear Chart",
+        "url": "https://cdn.shopify.com/s/files/1/0655/5143/3782/files/Transmission_ID_Chart_Public.pdf?v=1761839494",
+        "type": "public transmission identification chart",
+        "scope": "Subaru manual and automatic transmission codes across multiple markets; Australian applications must be explicitly marked AU in the model-range field",
+        "confidence": "reference source"
+      }
+    ],
+    "transmissions": [
+      {
+        "id": "SUB-TY75",
+        "brand": "Subaru",
+        "family": "TY75",
+        "type": "5-speed manual transaxle family",
+        "drive": "AWD",
+        "notes": "TY75 identifies a gearbox family. Exact suffix/code, ratios, final drive and differential specification must be confirmed per application.",
+        "confidence": "family identification"
+      },
+      {
+        "id": "SUB-TY758VGZAA",
+        "brand": "Subaru",
+        "family": "TY75",
+        "exactCode": "TY758VGZAA",
+        "type": "5-speed manual transaxle",
+        "drive": "AWD",
+        "exampleVins": [
+          "JF2SH9KD39G009340"
+        ],
+        "modelApplications": [
+          "2009 Subaru Forester SH9 XT Turbo manual"
+        ],
+        "centreDifferential": null,
+        "dccd": null,
+        "gearRatios": null,
+        "finalDrive": null,
+        "rearDifferentialEstimate": "R160",
+        "rearDifferentialStatus": "estimated-manual-review",
+        "estimateBasis": "Provisional application-based estimate supplied by user; not confirmed by the transmission chart or a vehicle-specific parts catalogue.",
+        "sourceType": "user-confirmed exact vehicle transmission code; rear differential estimate unverified",
+        "confidence": "confirmed exact gearbox code; rear differential family estimated; internal ratios and differential specification pending verification"
+      },
+      {
+        "id": "SUB-TY85",
+        "brand": "Subaru",
+        "family": "TY85",
+        "type": "6-speed manual transaxle family",
+        "drive": "AWD",
+        "variants": [
+          {
+            "centreDifferential": "DCCD",
+            "status": "family variant"
+          },
+          {
+            "centreDifferential": "Non-DCCD",
+            "status": "family variant"
+          }
+        ],
+        "notes": "TY85 identifies a gearbox family, not one exact transmission. Exact suffix/code, ratios, final drive and DCCD status must be confirmed for each vehicle.",
+        "confidence": "user-confirmed family definition"
+      },
+      {
+        "id": "SUB-TY856WVCAA",
+        "brand": "Subaru",
+        "family": "TY85",
+        "exactCode": "TY856WVCAA",
+        "type": "6-speed manual transaxle",
+        "drive": "AWD",
+        "marketApplications": [
+          "Japan",
+          "United Kingdom",
+          "Europe",
+          "Australia",
+          "Hong Kong"
+        ],
+        "modelApplications": [
+          "Legacy / Liberty 3.0R Spec B MY06",
+          "Legacy / Liberty Blitzen MY06"
+        ],
+        "gearRatios": {
+          "first": 3.636,
+          "second": 2.375,
+          "third": 1.761,
+          "fourth": 1.346,
+          "fifth": 0.971,
+          "sixth": 0.756,
+          "reverse": 3.545
+        },
+        "transferRatio": 1.1,
+        "finalDrive": 3.9,
+        "centreDifferential": "Viscous 50:50",
+        "dccd": false,
+        "frontDifferential": "Open",
+        "rearDifferential": "R160 viscous LSD, 3.545",
+        "oilPump": true,
+        "sourceId": "SUBARU-TRANSMISSION-ID-CHART",
+        "confidence": "confirmed chart record"
+      }
+    ]
+  },
+  "fluidsMasterCount": 122,
+  "fordPartsCount": 688
+}
