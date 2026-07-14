@@ -33,8 +33,11 @@
       "dccd": null,
       "gearRatios": null,
       "finalDrive": null,
-      "sourceType": "user-confirmed exact vehicle transmission code",
-      "confidence": "confirmed exact gearbox code; internal ratios and differential specification pending chart verification"
+      "rearDifferentialEstimate": "R160",
+      "rearDifferentialStatus": "estimated-manual-review",
+      "estimateBasis": "Provisional application-based estimate supplied by user; not confirmed by the transmission chart or a vehicle-specific parts catalogue.",
+      "sourceType": "user-confirmed exact vehicle transmission code; rear differential estimate unverified",
+      "confidence": "confirmed exact gearbox code; rear differential family estimated; internal ratios and differential specification pending verification"
     },
     {
       "id": "SUB-TY85",
