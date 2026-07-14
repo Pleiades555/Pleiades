@@ -1,0 +1,76 @@
+{
+  "market": "Australia",
+  "sources": [
+    {
+      "id": "SUBARU-TRANSMISSION-ID-CHART",
+      "title": "Subaru Transmission Gear Chart",
+      "url": "https://cdn.shopify.com/s/files/1/0655/5143/3782/files/Transmission_ID_Chart_Public.pdf?v=1761839494",
+      "type": "public transmission identification chart",
+      "scope": "Subaru manual and automatic transmission codes across multiple markets; Australian applications must be explicitly marked AU in the model-range field",
+      "confidence": "reference source"
+    }
+  ],
+  "transmissions": [
+    {
+      "id": "SUB-TY75",
+      "brand": "Subaru",
+      "family": "TY75",
+      "type": "5-speed manual transaxle family",
+      "drive": "AWD",
+      "notes": "TY75 identifies a gearbox family. Exact suffix/code, ratios, final drive and differential specification must be confirmed per application.",
+      "confidence": "family identification"
+    },
+    {
+      "id": "SUB-TY758VGZAA",
+      "brand": "Subaru",
+      "family": "TY75",
+      "exactCode": "TY758VGZAA",
+      "type": "5-speed manual transaxle",
+      "drive": "AWD",
+      "exampleVins": ["JF2SH9KD39G009340"],
+      "modelApplications": ["2009 Subaru Forester SH9 XT Turbo manual"],
+      "centreDifferential": null,
+      "dccd": null,
+      "gearRatios": null,
+      "finalDrive": null,
+      "rearDifferentialEstimate": "R160",
+      "rearDifferentialStatus": "estimated-manual-review",
+      "estimateBasis": "Provisional application-based estimate supplied by user; not confirmed by the transmission chart or a vehicle-specific parts catalogue.",
+      "sourceType": "user-confirmed exact vehicle transmission code; rear differential estimate unverified",
+      "confidence": "confirmed exact gearbox code; rear differential family estimated; internal ratios and differential specification pending verification"
+    },
+    {
+      "id": "SUB-TY85",
+      "brand": "Subaru",
+      "family": "TY85",
+      "type": "6-speed manual transaxle family",
+      "drive": "AWD",
+      "variants": [
+        {"centreDifferential":"DCCD","status":"family variant"},
+        {"centreDifferential":"Non-DCCD","status":"family variant"}
+      ],
+      "notes": "TY85 identifies a gearbox family, not one exact transmission. Exact suffix/code, ratios, final drive and DCCD status must be confirmed for each vehicle.",
+      "confidence": "user-confirmed family definition"
+    },
+    {
+      "id": "SUB-TY856WVCAA",
+      "brand": "Subaru",
+      "family": "TY85",
+      "exactCode": "TY856WVCAA",
+      "type": "6-speed manual transaxle",
+      "drive": "AWD",
+      "marketApplications": ["Japan","United Kingdom","Europe","Australia","Hong Kong"],
+      "modelApplications": ["Legacy / Liberty 3.0R Spec B MY06","Legacy / Liberty Blitzen MY06"],
+      "gearRatios": {"first":3.636,"second":2.375,"third":1.761,"fourth":1.346,"fifth":0.971,"sixth":0.756,"reverse":3.545},
+      "transferRatio": 1.1,
+      "finalDrive": 3.9,
+      "centreDifferential": "Viscous 50:50",
+      "dccd": false,
+      "frontDifferential": "Open",
+      "rearDifferential": "R160 viscous LSD, 3.545",
+      "oilPump": true,
+      "sourceId": "SUBARU-TRANSMISSION-ID-CHART",
+      "confidence": "confirmed chart record"
+    }
+  ]
+}

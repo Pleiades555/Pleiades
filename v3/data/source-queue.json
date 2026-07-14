@@ -1,0 +1,22 @@
+{
+  "market": "Australia",
+  "updated": "2026-07-14",
+  "sources": [
+    {
+      "id": "grays-0064-23500990",
+      "url": "https://www.grays.com/lot/0064-23500990/motor-vehicles-motor-cycles/2010-land-rover-range-rover-sport-autobiography-sport-diesel",
+      "brand": "Land Rover",
+      "titleHint": "2010 Land Rover Range Rover Sport Autobiography Sport Diesel",
+      "status": "queued",
+      "notes": "Do not create a VIN fingerprint until the exact public VIN and Australian configuration are extracted."
+    },
+    {
+      "id": "grays-0042-23500894",
+      "url": "https://www.grays.com/lot/0042-23500894/motor-vehicles-motor-cycles/2017-land-rover-range-rover-evoque-se-dynamic-diesel",
+      "brand": "Land Rover",
+      "titleHint": "2017 Land Rover Range Rover Evoque SE Dynamic Diesel",
+      "status": "queued",
+      "notes": "Exact engine tune and VIN must be taken from the listing; do not substitute data from a similar Evoque listing."
+    }
+  ]
+}
