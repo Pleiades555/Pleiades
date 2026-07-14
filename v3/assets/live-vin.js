@@ -1,17 +1,26 @@
 (()=>{'use strict';
+const VIN_LENGTH=17;
+const POSITION_HINTS=['Region','Manufacturer','Vehicle type','Restraint/body','Model line','Series','Body/engine','Engine/grade','Check digit','Model year','Plant','Serial 1','Serial 2','Serial 3','Serial 4','Serial 5','Serial 6'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-let rules=[];
-function clean(v){return String(v||'').toUpperCase().replace(/[^A-HJ-NPR-Z0-9]/g,'').slice(0,17)}
+let rules=[],brands=[];
+function clean(v){return String(v||'').toUpperCase().replace(/[^A-HJ-NPR-Z0-9]/g,'').slice(0,VIN_LENGTH)}
+function labelForRule(r){return [r.year,r.brand,r.model,r.variant].filter(Boolean).join(' ')||r.label||r.brand||r.prefix}
+function confidenceClass(c=''){if(/exact|confirmed|user/.test(c))return'ok';if(/standard|platform/.test(c))return'partial';return'research'}
+function findBrand(value){const wmi=value.slice(0,3);return value.length>=3?brands.find(b=>(b.wmis||[]).includes(wmi)):null}
+function renderRuler(value){return `<div class="vin-ruler" aria-label="VIN progress">${Array.from({length:VIN_LENGTH},(_,i)=>`<div class="vin-cell ${value[i]?'filled':''}"><strong>${esc(value[i]||'·')}</strong><small>${i+1}</small><span>${esc(POSITION_HINTS[i])}</span></div>`).join('')}</div>`}
+function renderProgress(value,matched,next){const pct=Math.round((value.length/VIN_LENGTH)*100);const best=matched[0];const status=best?`${best.level} match`:next.length?'narrowing candidates':'no hosted rule';return `<div class="vin-preview-head"><div><strong>${esc(value.length)} / ${VIN_LENGTH} characters</strong><p class="muted">${esc(status)}. Decode remains evidence-only; unknown trim/spec fields are not inferred.</p></div><div class="vin-meter" aria-label="${pct}% complete"><span style="width:${pct}%"></span></div></div>`}
+function renderNextChars(value,next){const counts=new Map();next.forEach(r=>{const ch=r.prefix[value.length];if(ch)counts.set(ch,(counts.get(ch)||0)+1)});const chips=[...counts.entries()].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,14);return chips.length?`<div class="vin-next"><strong>Observed next characters</strong><div>${chips.map(([ch,n])=>`<span class="badge">${esc(ch)} · ${n}</span>`).join('')}</div></div>`:''}
+function renderStats(matched,next){const levels=new Map();[...matched,...next].forEach(r=>levels.set(r.level,(levels.get(r.level)||0)+1));return levels.size?`<div class="vin-stats">${[...levels.entries()].map(([level,n])=>`<div class="fact"><small>${esc(level)}</small><strong>${n}</strong></div>`).join('')}</div>`:''}
+function renderBest(best,value){if(!best)return `<div class="notice">No confirmed progressive rule yet for <strong>${esc(value)}</strong>.</div>`;const cls=confidenceClass(best.confidence);const facts=[['Prefix',best.prefix],['Level',best.level],['Brand',best.brand],['Model',best.model],['Generation',best.generation],['Chassis',best.chassis],['Variant',best.variant],['Engine',best.engineCode],['Transmission',best.transmission||best.transmissionCode],['Confidence',best.confidence]].filter(([,v])=>v);return `<div class="notice ${cls==='ok'?'ok':''}"><strong>Most specific confirmed match</strong><div class="results"><article class="result-card"><span class="badge">${esc(best.prefix)} · ${esc(best.level)}</span><h3>${esc(labelForRule(best))}</h3><p class="muted">${esc(best.description||'')}</p><div class="vin-stats">${facts.map(([k,v])=>`<div class="fact"><small>${esc(k)}</small><strong>${esc(v)}</strong></div>`).join('')}</div></article></div></div>`}
+function renderWmi(value){const brand=findBrand(value);if(!brand)return'';return `<div class="notice"><strong>WMI route:</strong> ${esc(value.slice(0,3))} is hosted as ${esc(brand.brand)}. <a href="${esc(brand.portal)}">Open brand portal</a></div>`}
 function render(value){const box=document.getElementById('vinLiveResult');if(!box)return;if(!value){box.innerHTML='';return}
 const matched=rules.filter(r=>value.startsWith(r.prefix)).sort((a,b)=>b.prefix.length-a.prefix.length);
 const best=matched[0]||null;
-const next=rules.filter(r=>r.prefix.startsWith(value)&&r.prefix.length>value.length).sort((a,b)=>a.prefix.length-b.prefix.length);
-let html='';
-if(best){html+=`<div class="notice ok"><strong>Most specific confirmed match</strong><div class="results"><article class="result-card"><span class="badge">${esc(best.prefix)} · ${esc(best.level)}</span><h3>${esc(best.label)}</h3><p class="muted">${esc(best.description||'')}</p></article></div></div>`}
-else html+=`<div class="notice">No confirmed progressive rule yet for <strong>${esc(value)}</strong>.</div>`;
-if(next.length){const seen=new Set();const immediate=[];for(const r of next){const key=r.prefix.slice(0,Math.min(r.prefix.length,value.length+3));if(!seen.has(key)){seen.add(key);immediate.push(r)}if(immediate.length>=8)break}html+=`<div class="panel"><h3>Possible continuations</h3><div class="results">${immediate.map(r=>`<article class="result-card"><span class="badge">${esc(r.prefix)}</span><h3>${esc(r.label)}</h3><p class="muted">${esc(r.description||'')}</p></article>`).join('')}</div></div>`}
-box.innerHTML=html}
-async function init(){try{const res=await fetch('./data/vin-prefixes.json',{cache:'no-store'});const data=await res.json();rules=data.rules||[]}catch(e){console.warn('Progressive VIN rules unavailable',e)}
+const next=rules.filter(r=>r.prefix.startsWith(value)&&r.prefix.length>value.length).sort((a,b)=>a.prefix.length-b.prefix.length||a.label.localeCompare(b.label));
+let html=`<section class="vin-preview">${renderProgress(value,matched,next)}${renderRuler(value)}${renderWmi(value)}${renderBest(best,value)}${renderNextChars(value,next)}${renderStats(matched,next)}`;
+if(next.length){const seen=new Set();const immediate=[];for(const r of next){const key=r.prefix.slice(0,Math.min(r.prefix.length,value.length+3));if(!seen.has(key)){seen.add(key);immediate.push(r)}if(immediate.length>=8)break}html+=`<div class="panel vin-continuations"><h3>Possible continuations</h3><p class="muted">Showing the nearest hosted evidence paths, grouped to avoid duplicate serial-number examples.</p><div class="results">${immediate.map(r=>`<article class="result-card"><span class="badge">${esc(r.prefix)}</span><h3>${esc(r.label)}</h3><p class="muted">${esc(r.description||'')}</p></article>`).join('')}</div></div>`}
+box.innerHTML=html+'</section>'}
+async function init(){try{const [prefixRes,wmiRes]=await Promise.all([fetch('./data/vin-prefixes.json',{cache:'no-store'}),fetch('./data/wmi.json',{cache:'no-store'})]);const data=await prefixRes.json();const wmi=await wmiRes.json();rules=data.rules||[];brands=wmi.brands||[]}catch(e){console.warn('Progressive VIN rules unavailable',e)}
 const input=document.getElementById('vinInput');if(!input)return;input.addEventListener('input',()=>{const v=clean(input.value);input.value=v;render(v)});render(clean(input.value))}
 document.addEventListener('DOMContentLoaded',init);
 })();
