@@ -1,4 +1,4 @@
-# Pleiades Version 3.6
+# Pleiades Version 3.7
 
 Version 3 is a shared Australian-market vehicle knowledge application. It does not merge Inventory into the vehicle portal.
 
@@ -6,10 +6,11 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 
 - Shared responsive application shell and navigation
 - VIN fingerprint matching with manual no-guess fallback
+- Exact lookup for reviewed factory VINs, Australian `6ZZ` surrogate VINs and hosted Japanese chassis numbers
 - Progressive VIN prefix trail, WMI candidates, region, repeating model-year code, plant, serial and check-digit analysis
 - Searchable Australian make directory covering 90 current, legacy and major commercial marques
 - Shared-manufacturer warnings where one WMI cannot safely distinguish a marque
-- Opt-in official vPIC, Australian Vehicle Recalls and exact Australian web research links
+- Opt-in in-page official vPIC decoding, Australian Vehicle Recalls and exact Australian web research links
 - Browser-private local analysis until an external research link is deliberately opened
 - Vehicle profile and specification cards
 - Power, torque, kerb weight, calculated kW/tonne and 0–100 fields
@@ -21,7 +22,7 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 
 ## Data rules
 
-1. Australian-market records only.
+1. Australian-market records and confirmed vehicles present in Australian import/register research workflows only; original Australian delivery must not be inferred.
 2. A VIN fingerprint must be confirmed before it can automatically identify a vehicle.
 3. Kerb weight must match the exact year, body and variant before power-to-weight is calculated.
 4. Manufacturer-rated and independently tested performance figures must be labelled separately.
@@ -32,10 +33,12 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 9. A WMI is manufacturer-routing evidence only. It cannot by itself confirm Australian delivery, model, trim, engine, transmission or parts fitment.
 10. Shared group WMIs return multiple candidate marques rather than silently selecting the first match.
 11. VINs are not sent to external services automatically. External research is user initiated.
+12. Australian surrogate VINs and Japanese chassis numbers are stored as identifier mappings; they do not inherit model, engine, transmission or DCCD detail without separate evidence.
 
 ## Core data packs
 
 - `data/vehicles.json` — VIN fingerprints, vehicle identity and specifications
+- `data/identifiers.json` — confirmed administrative surrogate VIN and Japanese chassis-number mappings
 - `data/modules.json` — connected TSB, FSM, fluids and specialist modules
 - `data/source-queue.json` — public auction/dealer URLs awaiting extraction
 - `data/source-review.json` — generated evidence requiring human/specification review
@@ -61,4 +64,4 @@ python v3/tools/validate_v3_data.py
 node v3/tools/test_vin_workbench.js
 ```
 
-The regression test protects the confirmed Honda, Subaru and Land Rover examples, shared-WMI handling, VIN cleaning, check-digit calculation and broad Australian make coverage.
+The regression test protects the confirmed Honda, Subaru and Land Rover examples, Subaru surrogate/chassis mappings, shared-WMI handling, VIN cleaning, check-digit calculation and broad Australian make coverage.

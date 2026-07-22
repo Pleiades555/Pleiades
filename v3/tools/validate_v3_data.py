@@ -100,6 +100,37 @@ def validate_vin_prefixes(data: dict, known_brands: set[str]) -> None:
         if brand and brand.casefold() not in known_brands:
             ERRORS.append(f"{label}: brand {brand!r} is not in wmi.json")
 
+def validate_identifiers(data: dict, known_brands: set[str]) -> None:
+    rows = data.get("identifiers")
+    if not isinstance(rows, list):
+        ERRORS.append("identifiers.json: identifiers must be an array")
+        return
+    if len(rows) < 1:
+        ERRORS.append("identifiers.json: at least one confirmed identifier is required")
+    ids: set[str] = set()
+    values: set[str] = set()
+    allowed_types = {"australian-surrogate-vin", "japanese-chassis-number"}
+    for i, row in enumerate(rows, 1):
+        label = f"identifiers[{i}]"
+        rid = row.get("id")
+        value = row.get("identifier")
+        if not rid or rid in ids:
+            ERRORS.append(f"{label}: missing or duplicate id {rid!r}")
+        ids.add(rid)
+        if not isinstance(value, str) or not re.fullmatch(r"[A-HJ-NPR-Z0-9]{8,17}", value):
+            ERRORS.append(f"{label}: invalid identifier {value!r}")
+        elif value in values:
+            ERRORS.append(f"{label}: duplicate identifier {value}")
+        values.add(value)
+        if row.get("type") not in allowed_types:
+            ERRORS.append(f"{label}: unsupported type {row.get('type')!r}")
+        brand = str(row.get("brand", ""))
+        if brand.casefold() not in known_brands:
+            ERRORS.append(f"{label}: brand {brand!r} is not in wmi.json")
+        for related in [row.get("linkedIdentifier"), *(row.get("aliases") or [])]:
+            if related and (not isinstance(related, str) or not re.fullmatch(r"[A-HJ-NPR-Z0-9]{8,17}", related)):
+                ERRORS.append(f"{label}: invalid related identifier {related!r}")
+
 def validate_modules(data: dict) -> None:
     rows = data.get("modules")
     if not isinstance(rows, list):
@@ -120,6 +151,7 @@ def main() -> int:
         if str(vehicle.get("brand", "")).casefold() not in known_brands:
             ERRORS.append(f"vehicles[{i}]: brand {vehicle.get('brand')!r} is not in wmi.json")
     validate_vin_prefixes(load("vin-prefixes.json"), known_brands)
+    validate_identifiers(load("identifiers.json"), known_brands)
     validate_modules(load("modules.json"))
     if ERRORS:
         print("V3 validation failed:")

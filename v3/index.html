@@ -8,12 +8,12 @@
 <link rel="stylesheet" href="./assets/v3.css">
 <script defer src="../assets/auth.js"></script>
 <script defer src="./assets/live-vin.js?v=5.0.0"></script>
-<script defer src="./assets/v3.js?v=3.6.0"></script>
+<script defer src="./assets/v3.js?v=3.7.0"></script>
 </head>
 <body data-requires-access="site-basic">
 <div class="app" data-auth-content>
   <aside class="sidebar">
-    <div class="logo">PLEIADES <span>V3.6</span></div>
+    <div class="logo">PLEIADES <span>V3.7</span></div>
     <nav>
       <button type="button" data-view="dashboard" class="active">Dashboard</button>
       <button type="button" data-view="vin">VIN Intelligence</button>
@@ -30,7 +30,7 @@
   <main>
     <header>
       <div><p class="eyebrow">Australian dealer knowledge platform</p><h1 id="pageTitle">Dashboard</h1></div>
-      <div class="version">Version 3.6.0 · Australian VIN Intelligence</div>
+      <div class="version">Version 3.7.0 · Confirmed VIN &amp; Identifier Sync</div>
     </header>
 
     <section id="dashboard" class="view active">
@@ -48,15 +48,15 @@
       <div class="panel vin-entry-panel">
         <div class="section-line">
           <div><p class="eyebrow">Progressive local analysis</p><h2>VIN Intelligence</h2></div>
-          <span class="badge">17 characters · excludes I, O and Q</span>
+          <span class="badge">VINs and hosted chassis numbers · excludes I, O and Q</span>
         </div>
         <div class="quick vin-quick">
-          <input id="vinInput" type="text" maxlength="17" autocomplete="off" spellcheck="false" aria-label="Vehicle identification number" placeholder="Start typing a VIN">
+          <input id="vinInput" type="text" maxlength="17" autocomplete="off" spellcheck="false" aria-label="VIN, surrogate VIN or chassis number" placeholder="VIN, 6ZZ surrogate VIN or hosted chassis number">
           <button id="vinGo" type="button">Decode</button>
           <button id="copyVin" class="secondary-action" type="button">Copy</button>
           <button id="vinClear" class="secondary-action" type="button">Clear</button>
         </div>
-        <p id="vinStatus" class="muted" aria-live="polite">Start typing to progressively narrow the vehicle.</p>
+        <p id="vinStatus" class="muted" aria-live="polite">Enter a VIN, Australian 6ZZ surrogate VIN or hosted chassis number.</p>
         <div class="privacy-note"><strong>Private by default:</strong> local prefix and structural analysis does not send the VIN anywhere. The VIN is shared only if you click an external research link.</div>
         <div id="vinLiveResult" class="results"></div>
         <div id="vehicleResult"></div>

@@ -8,6 +8,7 @@ const vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
 const wmi=JSON.parse(fs.readFileSync(path.join(root,'data','wmi.json'),'utf8'));
 const vehicles=JSON.parse(fs.readFileSync(path.join(root,'data','vehicles.json'),'utf8')).vehicles;
+const identifiers=JSON.parse(fs.readFileSync(path.join(root,'data','identifiers.json'),'utf8')).identifiers;
 const source=fs.readFileSync(path.join(root,'assets','live-vin.js'),'utf8');
 const sandbox={
   window:{},
@@ -44,5 +45,18 @@ assert.ok(wmi.brands.some(row=>row.brand==='XPeng'),'Makes without hosted WMI ev
 assert.ok(vehicles.some(row=>row.vinPrefixes.includes('JHMFL1860NX')),'Confirmed Honda VIN profile must remain');
 assert.ok(vehicles.some(row=>row.vinPrefixes.includes('JF2SH9KD39')),'Confirmed Subaru VIN profile must remain');
 assert.ok(vehicles.some(row=>row.vinPrefixes.includes('SALFA23A87H')),'Confirmed Land Rover VIN profile must remain');
+const rb320=vehicles.find(row=>row.vinPrefixes.includes('JF1GDFKH37G067898'));
+const p1=vehicles.find(row=>row.vinPrefixes.includes('JF1GM8KDGYG002614'));
+assert.equal(rb320?.variant,'RB320','Confirmed RB320 exact VIN must be hosted');
+assert.equal(p1?.variant,'P1','Confirmed Impreza P1 exact VIN must be hosted');
+assert.match(rb320?.marketStatus||'',/original Australian delivery not asserted/);
+assert.match(p1?.marketStatus||'',/original Australian delivery not asserted/);
+assert.equal(rb320?.transmission,undefined,'RB320 transmission must not be inferred');
+assert.equal(p1?.transmission,undefined,'P1 transmission must not be inferred');
+assert.equal(identifiers.find(row=>row.identifier==='6ZZ00000GVB005008')?.linkedIdentifier,'GVB005008');
+assert.equal(identifiers.find(row=>row.identifier==='6ZZ00000GDB013732')?.linkedIdentifier,'GDB013732');
+assert.equal(identifiers.find(row=>row.identifier==='6ZZ50000GDB037137')?.linkedIdentifier,'GDB037137');
+assert.ok(identifiers.some(row=>row.identifier==='BL5037631'&&row.type==='japanese-chassis-number'));
+assert.ok(identifiers.length>=20,'Confirmed surrogate and chassis identifier register must remain');
 
-console.log(`VIN workbench regression passed: ${wmi.brands.length} Australian makes, ${vehicles.length} confirmed profiles.`);
+console.log(`VIN workbench regression passed: ${wmi.brands.length} Australian makes, ${vehicles.length} confirmed profiles, ${identifiers.length} confirmed identifiers.`);
