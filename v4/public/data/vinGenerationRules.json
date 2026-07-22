@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vin-rule:subaru-forester-sg",
+    "prefix": "JF2SG",
+    "manufacturer": "Subaru",
+    "model": "Forester",
+    "generation": "SG",
+    "bodyFamily": "wagon/SUV",
+    "marketScope": "international; Australian applicability requires a matching Australian vehicle record or source",
+    "confidence": "confirmed-generation",
+    "variant": null,
+    "engineRef": null,
+    "transmissionRef": null,
+    "sourceType": "user-confirmed model-series mapping",
+    "reviewNote": "Generation-level rule only. Do not infer engine, transmission, trim, model year or Australian delivery from this prefix alone."
+  },
+  {
+    "id": "vin-rule:subaru-forester-sh",
+    "prefix": "JF2SH",
+    "manufacturer": "Subaru",
+    "model": "Forester",
+    "generation": "SH",
+    "bodyFamily": "wagon/SUV",
+    "marketScope": "international; confirmed against an Australian SH9 exact VIN already held by Pleiades",
+    "confidence": "confirmed-generation",
+    "variant": null,
+    "engineRef": null,
+    "transmissionRef": null,
+    "sourceType": "user-confirmed mapping plus existing exact Australian VIN",
+    "reviewNote": "Generation-level rule only. Longer fingerprints may add powertrain details; exact trim must remain unresolved unless separately evidenced."
+  },
+  {
+    "id": "vin-rule:subaru-forester-sk",
+    "prefix": "JF2SK",
+    "manufacturer": "Subaru",
+    "model": "Forester",
+    "generation": "SK",
+    "bodyFamily": "wagon/SUV",
+    "marketScope": "international; Australian applicability requires a matching Australian vehicle record or source",
+    "confidence": "confirmed-generation",
+    "variant": null,
+    "engineRef": null,
+    "transmissionRef": null,
+    "sourceType": "user-confirmed model-series mapping",
+    "reviewNote": "Generation-level rule only. Do not infer 2.5i, Premium, Sport, 2.5i-S, engine output or weight from JF2SK alone."
+  },
+  {
+    "id": "vin-rule:subaru-forester-sl",
+    "prefix": "JF2SL",
+    "manufacturer": "Subaru",
+    "model": "Forester",
+    "generation": "SL",
+    "bodyFamily": "wagon/SUV",
+    "marketScope": "current-generation international prefix; Australian applicability requires a matching Australian vehicle record or source",
+    "confidence": "confirmed-generation",
+    "variant": null,
+    "engineRef": null,
+    "transmissionRef": null,
+    "sourceType": "user-confirmed model-series mapping",
+    "reviewNote": "Generation-level rule only. Do not infer powertrain, hybrid status, trim or model year from JF2SL alone."
+  }
+]
