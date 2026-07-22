@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ford Freight Calculator</title>
+<link rel="stylesheet" href="../assets/auth.css">
+<script defer src="../assets/auth.js"></script>
+<style>
+:root{color-scheme:dark;--bg:#071019;--panel:rgba(10,18,29,.88);--panel2:#111d2d;--line:rgba(255,255,255,.15);--text:#f8fafc;--muted:#bdc9d8;--blue:#60a5fa;--orange:#fb923c;--orange-soft:rgba(251,146,60,.14);--red:#f87171;--green:#34d399}
+*{box-sizing:border-box}
+body{min-height:100vh;margin:0;background:radial-gradient(circle at top left,rgba(59,130,246,.18),transparent 32%),linear-gradient(135deg,#071019,#111827 52%,#05070b);color:var(--text);font-family:Avenir,Arial,sans-serif}
+button,input{font:inherit}
+button{cursor:pointer}
+.shell{width:min(1240px,calc(100% - 32px));margin:0 auto;padding:28px 0 44px}
+.hero,.panel,.notice{border:1px solid var(--line);border-radius:20px;background:var(--panel);box-shadow:0 16px 44px rgba(0,0,0,.24)}
+.hero{padding:24px;margin-bottom:16px}
+.eyebrow{margin:0 0 8px;color:var(--orange);font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+h1{margin:0;font-size:clamp(32px,5vw,52px);line-height:1}
+.hero p:last-child{max-width:820px;margin:14px 0 0;color:var(--muted);font-size:17px;line-height:1.5}
+.notice{margin-bottom:16px;padding:16px 18px;border-color:rgba(251,146,60,.45);background:linear-gradient(135deg,var(--orange-soft),rgba(10,18,29,.9))}
+.notice strong{color:#fdba74}
+.notice p{margin:5px 0;color:#e5e7eb;line-height:1.45}
+.panel{padding:20px}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.toolbar h2{margin:0;font-size:24px}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn{min-height:42px;padding:9px 14px;border:1px solid var(--line);border-radius:11px;background:#1b2a3d;color:var(--text);font-weight:800}
+.btn:hover{border-color:#7dd3fc;background:#22354d}
+.btn-primary{border-color:#2563eb;background:#2563eb}.btn-primary:hover{background:#1d4ed8}
+.btn-danger{color:#fecaca}.btn-danger:hover{border-color:var(--red);background:rgba(248,113,113,.12)}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;table-layout:fixed;background:rgba(5,10,18,.35)}
+th,td{padding:11px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{background:#132238;color:#cfe5ff;font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+tbody tr:last-child td{border-bottom:0}
+th:nth-child(1){width:46px}th:nth-child(2){width:30%}th:nth-child(3){width:128px}th:nth-child(4){width:120px}th:nth-child(5),th:nth-child(6){width:122px}th:nth-child(7){width:58px}
+.field{width:100%;min-height:42px;padding:9px 10px;border:1px solid #53657b;border-radius:9px;background:#0a1422;color:var(--text)}
+.field:focus{outline:3px solid rgba(96,165,250,.25);border-color:var(--blue)}
+.field::placeholder{color:#8090a4}
+.number{text-align:right;font-variant-numeric:tabular-nums}
+.row-number{color:var(--muted);font-weight:900;text-align:center}
+.quoted-kg,.line-price{font-weight:850;font-variant-numeric:tabular-nums;white-space:nowrap}
+.remove{width:38px;height:38px;border:1px solid rgba(248,113,113,.45);border-radius:9px;background:rgba(248,113,113,.09);color:#fecaca;font-size:21px;line-height:1}
+.remove:hover{background:rgba(248,113,113,.2)}
+.summary-grid{display:grid;grid-template-columns:repeat(4,minmax(160px,1fr));gap:12px;margin-top:16px}
+.summary{padding:15px;border:1px solid var(--line);border-radius:14px;background:var(--panel2)}
+.summary .label{display:block;margin-bottom:6px;color:var(--muted);font-size:12px;font-weight:850;letter-spacing:.05em;text-transform:uppercase}
+.summary .value{display:block;font-size:clamp(22px,3vw,31px);font-weight:900;font-variant-numeric:tabular-nums}
+.summary-road{border-color:rgba(52,211,153,.42)}.summary-road .value{color:#6ee7b7}
+.summary-air{border-color:rgba(96,165,250,.48)}.summary-air .value{color:#93c5fd}
+.method-note{margin:14px 0 0;color:var(--muted);font-size:13px;line-height:1.5}
+.back{display:inline-block;margin-top:18px;padding:10px 14px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.06);color:#d8fcff;text-decoration:none;font-weight:800}
+.back:hover{border-color:var(--blue)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){.summary-grid{grid-template-columns:repeat(2,1fr)}.toolbar{align-items:flex-start;flex-direction:column}}
+@media(max-width:720px){
+  .shell{width:min(100% - 20px,1240px);padding-top:10px}.hero,.panel{padding:16px}.actions{width:100%}.actions .btn{flex:1 1 140px}
+  .table-wrap{overflow:visible;border:0;background:transparent}table,tbody{display:block}thead{display:none}
+  tbody{display:grid;gap:12px}tbody tr{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(5,10,18,.48)}
+  td{display:block;padding:0;border:0}td::before{content:attr(data-label);display:block;margin-bottom:5px;color:#cfe5ff;font-size:11px;font-weight:850;letter-spacing:.04em;text-transform:uppercase}
+  td:nth-child(1){display:none}td:nth-child(2){grid-column:1/-1}td:nth-child(7){display:flex;align-items:end;justify-content:flex-end}
+  td:nth-child(7)::before{display:none}.remove{width:100%;font-size:16px}.remove::after{content:" Remove part"}
+}
+@media(max-width:480px){.summary-grid{grid-template-columns:1fr}tbody tr{grid-template-columns:1fr}td:nth-child(2){grid-column:auto}}
+@media print{body{background:#fff;color:#111}.shell{width:100%;padding:0}.hero,.panel,.notice,.summary{box-shadow:none;background:#fff;color:#111;border-color:#aaa}.hero p:last-child,.notice p,.method-note,.summary .label{color:#333}.actions,.back,.remove{display:none}.field{border:0;background:transparent;color:#111;padding:0}.summary-road .value,.summary-air .value{color:#111}}
+</style>
+</head>
+<body data-requires-access="ford-basic">
+<main class="shell" data-auth-content>
+  <header class="hero">
+    <p class="eyebrow">Ford parts tools</p>
+    <h1>Freight Calculator</h1>
+    <p>Estimate road and air freight for Ford parts travelling from Melbourne to the Brisbane Eagers Parts Distribution Centre.</p>
+  </header>
+
+  <aside class="notice" aria-label="Important estimate information">
+    <strong>Rough estimate only — restricted route.</strong>
+    <p>This calculator is only for freight from Ford in Melbourne to Brisbane Eagers PDC. It is not a general freight quote and should not be used for any other origin or destination.</p>
+    <p>Each part's weight is rounded up to the next whole kilogram to provide a conservative quoting allowance.</p>
+  </aside>
+
+  <section class="panel" aria-labelledby="parts-heading">
+    <div class="toolbar">
+      <h2 id="parts-heading">Parts</h2>
+      <div class="actions">
+        <button class="btn btn-primary" id="addPart" type="button">+ Add part</button>
+        <button class="btn" id="printEstimate" type="button">Print estimate</button>
+        <button class="btn btn-danger" id="resetEstimate" type="button">Reset</button>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Part / description</th>
+            <th scope="col">Weight (kg)</th>
+            <th scope="col">Quoted kg</th>
+            <th scope="col">Road @ $5/kg</th>
+            <th scope="col">Air @ $10/kg</th>
+            <th scope="col"><span class="sr-only">Remove</span></th>
+          </tr>
+        </thead>
+        <tbody id="partRows"></tbody>
+      </table>
+    </div>
+
+    <div class="summary-grid" aria-live="polite">
+      <div class="summary"><span class="label">Parts added</span><span class="value" id="partCount">0</span></div>
+      <div class="summary"><span class="label">Quoted weight</span><span class="value" id="quotedWeight">0 kg</span></div>
+      <div class="summary summary-road"><span class="label">Road estimate</span><span class="value" id="roadTotal">$0.00</span></div>
+      <div class="summary summary-air"><span class="label">Air estimate</span><span class="value" id="airTotal">$0.00</span></div>
+    </div>
+
+    <p class="method-note">Rates used: road freight $5.00 per quoted kilogram; air freight $10.00 per quoted kilogram. The quoted weight is the sum of each entered part weight after rounding that part up to the nearest whole kilogram. Confirm actual charges and any additional fees before committing to a customer quote.</p>
+  </section>
+
+  <a class="back" href="../Ford Web.html">← Back to Ford Reference Hub</a>
+</main>
+
+<template id="partRowTemplate">
+  <tr>
+    <td class="row-number" data-label="Part"></td>
+    <td data-label="Part / description"><input class="field part-name" type="text" autocomplete="off" placeholder="Part number or description"></td>
+    <td data-label="Weight (kg)"><input class="field number part-weight" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0.00" aria-label="Part weight in kilograms"></td>
+    <td class="quoted-kg number" data-label="Quoted kg">0 kg</td>
+    <td class="line-price road-price number" data-label="Road @ $5/kg">$0.00</td>
+    <td class="line-price air-price number" data-label="Air @ $10/kg">$0.00</td>
+    <td data-label="Remove"><button class="remove" type="button" aria-label="Remove part">×</button></td>
+  </tr>
+</template>
+
+<script>
+(function(){
+  "use strict";
+  const ROAD_RATE=5;
+  const AIR_RATE=10;
+  const STORAGE_KEY="ford_freight_estimate_v1";
+  const rows=document.getElementById("partRows");
+  const template=document.getElementById("partRowTemplate");
+  const money=new Intl.NumberFormat("en-AU",{style:"currency",currency:"AUD"});
+
+  function cleanWeight(value){
+    const weight=Number.parseFloat(value);
+    return Number.isFinite(weight)&&weight>0?weight:0;
+  }
+
+  function addRow(part={name:"",weight:""},focus=false){
+    const row=template.content.firstElementChild.cloneNode(true);
+    row.querySelector(".part-name").value=part.name||"";
+    row.querySelector(".part-weight").value=part.weight||"";
+    row.querySelectorAll("input").forEach(input=>input.addEventListener("input",calculate));
+    row.querySelector(".remove").addEventListener("click",()=>{
+      row.remove();
+      if(!rows.children.length)addRow();
+      calculate();
+    });
+    rows.appendChild(row);
+    calculate();
+    if(focus)row.querySelector(".part-name").focus();
+  }
+
+  function currentParts(){
+    return [...rows.querySelectorAll("tr")].map(row=>({
+      name:row.querySelector(".part-name").value,
+      weight:row.querySelector(".part-weight").value
+    }));
+  }
+
+  function save(){
+    try{localStorage.setItem(STORAGE_KEY,JSON.stringify(currentParts()));}catch(error){}
+  }
+
+  function calculate(){
+    let quotedTotal=0;
+    [...rows.querySelectorAll("tr")].forEach((row,index)=>{
+      const weight=cleanWeight(row.querySelector(".part-weight").value);
+      const quotedKg=Math.ceil(weight);
+      quotedTotal+=quotedKg;
+      row.querySelector(".row-number").textContent=index+1;
+      row.querySelector(".quoted-kg").textContent=quotedKg+" kg";
+      row.querySelector(".road-price").textContent=money.format(quotedKg*ROAD_RATE);
+      row.querySelector(".air-price").textContent=money.format(quotedKg*AIR_RATE);
+      row.querySelector(".remove").setAttribute("aria-label","Remove part "+(index+1));
+    });
+    document.getElementById("partCount").textContent=rows.children.length;
+    document.getElementById("quotedWeight").textContent=quotedTotal+" kg";
+    document.getElementById("roadTotal").textContent=money.format(quotedTotal*ROAD_RATE);
+    document.getElementById("airTotal").textContent=money.format(quotedTotal*AIR_RATE);
+    save();
+  }
+
+  function restore(){
+    let saved=[];
+    try{saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");}catch(error){}
+    if(!Array.isArray(saved)||!saved.length)saved=[{}];
+    saved.forEach(part=>addRow(part));
+  }
+
+  document.getElementById("addPart").addEventListener("click",()=>addRow({},true));
+  document.getElementById("printEstimate").addEventListener("click",()=>window.print());
+  document.getElementById("resetEstimate").addEventListener("click",()=>{
+    rows.replaceChildren();
+    try{localStorage.removeItem(STORAGE_KEY);}catch(error){}
+    addRow({},true);
+  });
+  restore();
+})();
+</script>
+</body>
+</html>
