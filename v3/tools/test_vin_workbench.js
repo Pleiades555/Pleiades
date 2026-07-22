@@ -49,6 +49,8 @@ const rb320=vehicles.find(row=>row.vinPrefixes.includes('JF1GDFKH37G067898'));
 const p1=vehicles.find(row=>row.vinPrefixes.includes('JF1GM8KDGYG002614'));
 assert.equal(rb320?.variant,'RB320','Confirmed RB320 exact VIN must be hosted');
 assert.equal(p1?.variant,'P1','Confirmed Impreza P1 exact VIN must be hosted');
+assert.match(rb320?.marketStatus||'',/original Australian delivery not asserted/);
+assert.match(p1?.marketStatus||'',/original Australian delivery not asserted/);
 assert.equal(rb320?.transmission,undefined,'RB320 transmission must not be inferred');
 assert.equal(p1?.transmission,undefined,'P1 transmission must not be inferred');
 assert.equal(identifiers.find(row=>row.identifier==='6ZZ00000GVB005008')?.linkedIdentifier,'GVB005008');
