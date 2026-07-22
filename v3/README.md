@@ -22,7 +22,7 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 
 ## Data rules
 
-1. Australian-market records only.
+1. Australian-market records and confirmed vehicles present in Australian import/register research workflows only; original Australian delivery must not be inferred.
 2. A VIN fingerprint must be confirmed before it can automatically identify a vehicle.
 3. Kerb weight must match the exact year, body and variant before power-to-weight is calculated.
 4. Manufacturer-rated and independently tested performance figures must be labelled separately.
