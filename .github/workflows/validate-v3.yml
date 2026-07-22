@@ -21,5 +21,7 @@ jobs:
           python-version: '3.12'
       - name: Validate V3 core data
         run: python v3/tools/validate_v3_data.py
+      - name: Test VIN workbench
+        run: node v3/tools/test_vin_workbench.js
       - name: Validate hosted Honda accessories JSON
         run: python -m json.tool Honda/Accessories/data/accessories.json > /dev/null

@@ -1,4 +1,4 @@
-# Pleiades Version 3
+# Pleiades Version 3.6
 
 Version 3 is a shared Australian-market vehicle knowledge application. It does not merge Inventory into the vehicle portal.
 
@@ -6,6 +6,11 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 
 - Shared responsive application shell and navigation
 - VIN fingerprint matching with manual no-guess fallback
+- Progressive VIN prefix trail, WMI candidates, region, repeating model-year code, plant, serial and check-digit analysis
+- Searchable Australian make directory covering 90 current, legacy and major commercial marques
+- Shared-manufacturer warnings where one WMI cannot safely distinguish a marque
+- Opt-in official vPIC, Australian Vehicle Recalls and exact Australian web research links
+- Browser-private local analysis until an external research link is deliberately opened
 - Vehicle profile and specification cards
 - Power, torque, kerb weight, calculated kW/tonne and 0–100 fields
 - Global search across V3 vehicle profiles, hosted Honda accessories and connected modules
@@ -24,6 +29,9 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 6. Inventory remains a separate permission-controlled module.
 7. Engine identity is stored separately as `code`, `family` and `marketingName`; cross-brand aliases belong in `alternateCodes`.
 8. Conflicting source fields are retained as a `sourceWarning` and are not allowed to override a confirmed VIN/configuration record.
+9. A WMI is manufacturer-routing evidence only. It cannot by itself confirm Australian delivery, model, trim, engine, transmission or parts fitment.
+10. Shared group WMIs return multiple candidate marques rather than silently selecting the first match.
+11. VINs are not sent to external services automatically. External research is user initiated.
 
 ## Core data packs
 
@@ -31,6 +39,7 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 - `data/modules.json` — connected TSB, FSM, fluids and specialist modules
 - `data/source-queue.json` — public auction/dealer URLs awaiting extraction
 - `data/source-review.json` — generated evidence requiring human/specification review
+- `data/wmi.json` — Australian make directory, selected WMI routes, aliases, portals and source policy
 - `../Honda/Accessories/data/accessories.json` — hosted Honda accessory records
 
 ## Grays acquisition
@@ -42,3 +51,14 @@ The GitHub Actions workflow **Harvest Grays VIN candidates** performs the same p
 ## Migration approach
 
 Existing brand portals remain available while their content is converted into structured V3 records. A module is not labelled fully migrated until its primary records are searchable from V3 and its importer/validator is committed.
+
+## Validation
+
+Run both checks before publishing VIN changes:
+
+```text
+python v3/tools/validate_v3_data.py
+node v3/tools/test_vin_workbench.js
+```
+
+The regression test protects the confirmed Honda, Subaru and Land Rover examples, shared-WMI handling, VIN cleaning, check-digit calculation and broad Australian make coverage.

@@ -1,6 +1,8 @@
 {
   "modules":[
-    {"name":"VIN & Vehicle Profiles","type":"vehicle","status":"live","href":"./index.html#vin","keywords":"vin decode vehicle specification power torque weight"},
+    {"name":"VIN Intelligence & Australian Make Directory","type":"vehicle","status":"live","href":"./index.html#vin","keywords":"vin decode vehicle specification power torque weight wmi australian makes current legacy commercial"},
+    {"name":"Australian Government Vehicle Recalls","type":"research","status":"official-external","href":"https://www.vehiclerecalls.gov.au/","keywords":"australia vehicle recall vin make model safety campaign government"},
+    {"name":"NHTSA vPIC WMI and VIN Research","type":"research","status":"official-external","href":"https://vpic.nhtsa.dot.gov/","keywords":"vin wmi manufacturer decode official international evidence"},
     {"name":"Honda Hosted Accessories","type":"accessory","status":"live","href":"../Honda/Accessories.html","keywords":"honda civic accessory part number"},
     {"name":"Fluids Compatibility Hub","type":"fluid","status":"live","href":"../Fluids/Fluids Compatibility Hub.html","keywords":"oil coolant transmission fluid specification substitute"},
     {"name":"Ford TSB Knowledge Base","type":"tsb","status":"live","href":"../Ford/TSB/index.html","keywords":"ford tsb bulletin recall symptom"},
