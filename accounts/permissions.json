@@ -2,6 +2,7 @@
   "site": [
     {"key":"site-basic","label":"Site / portal access"},
     {"key":"site-admin","label":"Site administration"},
+    {"key":"pentana-procedures","label":"Pentana/ERA procedures"},
     {"key":"fluids-basic","label":"Shared fluids hub access"},
     {"key":"fluids-editor","label":"Fluids add / edit / import"},
     {"key":"fluids-admin","label":"Fluids administration and GitHub push"}
