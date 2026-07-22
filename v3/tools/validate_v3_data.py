@@ -3,6 +3,7 @@
 from __future__ import annotations
 import json
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,6 +46,60 @@ def validate_vehicles(data: dict) -> None:
         if power is not None and (not isinstance(power, (int, float)) or power <= 0):
             ERRORS.append(f"{label}: invalid power")
 
+def validate_wmi(data: dict) -> None:
+    brands = data.get("brands")
+    sources = data.get("sources")
+    if not isinstance(brands, list):
+        ERRORS.append("wmi.json: brands must be an array")
+        return
+    if len(brands) < 70:
+        ERRORS.append(f"wmi.json: expected broad Australian make coverage, found {len(brands)}")
+    if not isinstance(sources, list) or len(sources) < 2:
+        ERRORS.append("wmi.json: official source register is incomplete")
+    names: set[str] = set()
+    for i, row in enumerate(brands, 1):
+        label = f"wmi.brands[{i}]"
+        brand = row.get("brand")
+        if not brand:
+            ERRORS.append(f"{label}: missing brand")
+        elif brand.casefold() in names:
+            ERRORS.append(f"{label}: duplicate brand {brand}")
+        else:
+            names.add(brand.casefold())
+        if not row.get("status"):
+            ERRORS.append(f"{label}: missing Australian coverage status")
+        if not isinstance(row.get("aliases", []), list):
+            ERRORS.append(f"{label}: aliases must be an array")
+        wmis = row.get("wmis")
+        if not isinstance(wmis, list):
+            ERRORS.append(f"{label}: wmis must be an array")
+            continue
+        for wmi in wmis:
+            if not isinstance(wmi, str) or not re.fullmatch(r"[A-HJ-NPR-Z0-9]{3}", wmi):
+                ERRORS.append(f"{label}: invalid WMI {wmi!r}")
+        portal = row.get("portal")
+        if portal and not portal.startswith("../"):
+            ERRORS.append(f"{label}: portal must be a relative site link")
+
+def validate_vin_prefixes(data: dict, known_brands: set[str]) -> None:
+    rules = data.get("rules")
+    if not isinstance(rules, list):
+        ERRORS.append("vin-prefixes.json: rules must be an array")
+        return
+    seen: set[tuple[str, str]] = set()
+    for i, row in enumerate(rules, 1):
+        label = f"vin-prefixes.rules[{i}]"
+        prefix = row.get("prefix")
+        if not isinstance(prefix, str) or not re.fullmatch(r"[A-HJ-NPR-Z0-9]{1,17}", prefix):
+            ERRORS.append(f"{label}: invalid prefix {prefix!r}")
+        key = (prefix or "", row.get("label") or "")
+        if key in seen:
+            ERRORS.append(f"{label}: duplicate prefix/label {key}")
+        seen.add(key)
+        brand = row.get("brand")
+        if brand and brand.casefold() not in known_brands:
+            ERRORS.append(f"{label}: brand {brand!r} is not in wmi.json")
+
 def validate_modules(data: dict) -> None:
     rows = data.get("modules")
     if not isinstance(rows, list):
@@ -56,7 +111,15 @@ def validate_modules(data: dict) -> None:
                 ERRORS.append(f"modules[{i}]: missing {field}")
 
 def main() -> int:
-    validate_vehicles(load("vehicles.json"))
+    wmi = load("wmi.json")
+    validate_wmi(wmi)
+    known_brands = {str(row.get("brand", "")).casefold() for row in wmi.get("brands", [])}
+    vehicles = load("vehicles.json")
+    validate_vehicles(vehicles)
+    for i, vehicle in enumerate(vehicles.get("vehicles", []), 1):
+        if str(vehicle.get("brand", "")).casefold() not in known_brands:
+            ERRORS.append(f"vehicles[{i}]: brand {vehicle.get('brand')!r} is not in wmi.json")
+    validate_vin_prefixes(load("vin-prefixes.json"), known_brands)
     validate_modules(load("modules.json"))
     if ERRORS:
         print("V3 validation failed:")

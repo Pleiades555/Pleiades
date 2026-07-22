@@ -1,16 +1,19 @@
 {
-  "version": "3.0.0",
+  "version": "3.6.0",
   "releaseName": "Pleiades Vehicle Intelligence",
   "market": "Australia",
   "inventorySeparate": true,
   "modules": [
-    {"name":"Vehicle Intelligence Hub","status":"live","notes":"Shared entry point for VIN, specifications, accessories, fluids, service and technical resources."},
+    {"name":"Vehicle Intelligence Hub","status":"live","notes":"Shared entry point for progressive VIN analysis, 90 Australian makes, specifications, accessories, fluids, service and technical resources."},
+    {"name":"Australian Make Directory","status":"live","notes":"Current, legacy and major commercial makes are searchable by name, alias and selected WMI routes. Missing WMI evidence remains manual-research rather than guessed."},
+    {"name":"VIN Structure Analysis","status":"live","notes":"Local region, WMI, descriptor, repeating year-code candidates, plant, serial and check-digit analysis with non-North-American caveats."},
+    {"name":"External VIN Research","status":"live","notes":"User-initiated links to official vPIC, Australian Vehicle Recalls and exact Australian web research. VINs are not sent automatically."},
     {"name":"Honda VIN Decoder","status":"live","notes":"Confirmed Australian-market Civic VIN fingerprints with manual fallback and no-guess behaviour."},
     {"name":"Honda Accessory Database","status":"live","notes":"Website-hosted JSON data with importer and rebuild workflow; legacy Excel pages retained as archive sources."},
     {"name":"Vehicle Specifications","status":"partial","notes":"Engine, power, torque, transmission and drivetrain supported; exact kerb weight, kW/tonne and 0-100 remain unavailable where not verified."},
     {"name":"Fluids Compatibility","status":"live","notes":"Existing structured cross-brand fluids hub retained."},
     {"name":"Brand Portals","status":"live","notes":"Existing specialist portals remain available while structured migration continues."},
-    {"name":"Australian VIN Research","status":"active-research","notes":"Public Australian sources only; uncertain records remain manual-review."},
+    {"name":"Australian VIN Research","status":"active-research","notes":"Australian Government recall evidence and official manufacturer/WMI evidence are kept separate; uncertain model and configuration records remain manual-review."},
     {"name":"Inventory & Ordering","status":"separate","notes":"Permission-gated and not merged into Vehicle Intelligence."}
   ]
 }
