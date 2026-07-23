@@ -29,7 +29,11 @@
   TL.codeId=(rowId,code)=>`${rowId}-${TL.permissionKey(code)}`;
   TL.encodeFirebaseKey=value=>btoa(unescape(encodeURIComponent(value))).replaceAll('+','-').replaceAll('/','_').replaceAll('=','');
   TL.parseTime=time=>{const [hour,minute]=time.split(':').map(Number),date=new Date();date.setHours(hour,minute,0,0);return date};
-  TL.minutesUntil=time=>Math.round((TL.parseTime(time)-new Date())/60000);
+  TL.secondsUntil=time=>Math.ceil((TL.parseTime(time)-new Date())/1000);
+  TL.minutesUntil=time=>Math.ceil(TL.secondsUntil(time)/60);
+  TL.durationText=seconds=>{const total=Math.abs(Math.trunc(Number(seconds)||0)),hours=Math.floor(total/3600),minutes=Math.floor(total%3600/60),secs=total%60;return hours?`${hours}h ${String(minutes).padStart(2,'0')}m ${String(secs).padStart(2,'0')}s`:`${minutes}m ${String(secs).padStart(2,'0')}s`};
+  TL.countdownLabel=time=>{const seconds=TL.secondsUntil(time);if(seconds===0)return'Due now';return`${TL.durationText(seconds)} ${seconds<0?'overdue':'remaining'}`};
+  TL.countdownStatus=time=>{const seconds=TL.secondsUntil(time);return seconds<0?'late':seconds<=1800?'soon':''};
   TL.escapeHtml=value=>String(value??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;');
   TL.displayTime=time=>{let [hour,minute]=time.split(':').map(Number);const suffix=hour>=12?'PM':'AM';hour=hour%12||12;return `${hour}:${String(minute).padStart(2,'0')} ${suffix}`};
   TL.formatDateTime=value=>{if(!value)return'';const date=new Date(value);return Number.isNaN(date.getTime())?'':date.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'})};
