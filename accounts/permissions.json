@@ -8,7 +8,8 @@
     {"key":"fluids-admin","label":"Fluids administration and GitHub push"}
   ],
   "inventory": [
-    {"key":"eagersinventory","label":"Eagers inventory / ordering procedures"}
+    {"key":"eagersinventory","label":"Eagers inventory / ordering procedures"},
+    {"key":"inventory-daily-view-only","label":"Daily ordering — full-day view only (excluded from assignments)"}
   ],
   "inventoryTransactions": [
     {"key":"tx-nissan-bo-md","label":"Nissan BO+MD grouped emergency"},
