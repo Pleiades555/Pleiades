@@ -14,9 +14,13 @@
   TL.canCode=code=>(Array.isArray(code[2])?code[2]:[code[2]]).some(TL.canPermission)||TL.can('*');
   TL.normaliseUsername=value=>String(value||'').trim().toLowerCase().replace(/\s+/g,'');
   TL.assignmentManagers=()=>{const config=window.PleiadesTimelineSyncConfig||{},configured=Array.isArray(config.assignmentManagers)?config.assignmentManagers:['simonh'];return new Set(configured.map(TL.normaliseUsername).filter(Boolean))};
-  TL.isAssignmentManager=()=>TL.can('site-admin')||TL.assignmentManagers().has(TL.normaliseUsername(TL.state.username));
+  TL.hasExplicitPermission=(user,permission)=>Array.isArray(user&&user.permissions)&&user.permissions.includes(permission);
+  TL.isUserAssignmentManager=user=>{const auth=window.PleiadesAuth;return !!(user&&auth&&(auth.hasAccess('site-admin',user)||TL.assignmentManagers().has(TL.normaliseUsername(user.username))))};
+  TL.isAssignmentManager=()=>TL.isUserAssignmentManager(TL.user());
+  TL.isReadOnlyOverseer=()=>!TL.isAssignmentManager()&&TL.hasExplicitPermission(TL.user(),'inventory-daily-view-only');
+  TL.canEditTimeline=()=>!TL.isReadOnlyOverseer();
   TL.liveConfigured=()=>{const config=window.PleiadesTimelineSyncConfig||{};return config.enabled===true&&config.provider==='firebase'};
-  TL.eligibleAssignees=()=>{const auth=window.PleiadesAuth;if(!auth||!auth.state||!Array.isArray(auth.state.users))return[];return auth.state.users.filter(user=>user&&user.enabled!==false&&auth.hasAccess('eagersinventory',user)).sort((a,b)=>(a.name||a.username).localeCompare(b.name||b.username))};
+  TL.eligibleAssignees=()=>{const auth=window.PleiadesAuth;if(!auth||!auth.state||!Array.isArray(auth.state.users))return[];return auth.state.users.filter(user=>user&&user.enabled!==false&&auth.hasAccess('eagersinventory',user)&&!TL.hasExplicitPermission(user,'inventory-daily-view-only')&&!TL.isUserAssignmentManager(user)).sort((a,b)=>(a.name||a.username).localeCompare(b.name||b.username))};
   TL.todayKey=()=>new Date().toLocaleDateString('en-CA');
   TL.storageKey=type=>`pleiades.inventory.timeline.${type}.${TL.state.username||'anonymous'}.${TL.todayKey()}`;
   TL.preferenceKey=()=>`pleiades.inventory.timeline.preferences.${TL.state.username||'anonymous'}`;
@@ -36,7 +40,7 @@
   TL.saveLocal=()=>{localStorage.setItem(TL.storageKey('codes'),JSON.stringify([...TL.state.done]));localStorage.setItem(TL.storageKey('orders'),JSON.stringify(TL.state.orders));localStorage.setItem(TL.storageKey('activity'),JSON.stringify(TL.state.activity));localStorage.setItem(TL.storageKey('assignments'),JSON.stringify(TL.state.assignments));localStorage.setItem(TL.storageKey('expanded'),JSON.stringify([...TL.state.expanded]));if(TL.state.broadcast)TL.state.broadcast.postMessage({type:'refresh',username:TL.state.username,date:TL.todayKey()})};
   TL.applyPreferences=()=>{document.documentElement.style.setProperty('--accent',TL.state.prefs.accent);document.documentElement.style.setProperty('--accent-soft',TL.hexToRgba(TL.state.prefs.accent,.18));document.body.classList.toggle('compact',TL.state.prefs.density==='compact')};
   TL.allDefinitionSlots=()=>{const day=new Date().getDay();return TL.data.filter(slot=>!slot.days||slot.days.includes(day)).map(slot=>({...slot,items:slot.items.map(item=>({...item,codes:[...item.codes]}))}))};
-  TL.codeVisibleToCurrentUser=(rowId,code)=>{if(TL.isAssignmentManager())return true;if(TL.state.assignmentLoaded){const assignment=TL.state.assignments[TL.codeId(rowId,code)];return TL.normaliseUsername(assignment&&assignment.assignedTo)===TL.normaliseUsername(TL.state.username)}if(TL.liveConfigured())return false;return TL.canCode(code)};
+  TL.codeVisibleToCurrentUser=(rowId,code)=>{if(TL.isAssignmentManager()||TL.isReadOnlyOverseer())return true;if(TL.state.assignmentLoaded){const assignment=TL.state.assignments[TL.codeId(rowId,code)];return TL.normaliseUsername(assignment&&assignment.assignedTo)===TL.normaliseUsername(TL.state.username)}if(TL.liveConfigured())return false;return TL.canCode(code)};
   TL.rawAssignedSlots=()=>TL.allDefinitionSlots().map(slot=>({...slot,items:slot.items.map(item=>{const rowId=TL.idFor(slot.time,item.brand);return{...item,codes:item.codes.filter(code=>TL.codeVisibleToCurrentUser(rowId,code))}}).filter(item=>item.codes.length)})).filter(slot=>slot.items.length);
   TL.activeSlots=()=>{const hidden=new Set(TL.state.prefs.hiddenCodes);return TL.rawAssignedSlots().map(slot=>({...slot,items:slot.items.map(item=>({...item,codes:item.codes.filter(code=>!hidden.has(TL.permissionKey(code)))})).filter(item=>item.codes.length)})).filter(slot=>slot.items.length)};
   TL.itemComplete=(rowId,item)=>item.codes.every(code=>TL.state.done.has(TL.codeId(rowId,code)));
