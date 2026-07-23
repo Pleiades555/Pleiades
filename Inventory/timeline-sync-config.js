@@ -5,6 +5,7 @@
 window.PleiadesTimelineSyncConfig = {
   enabled: true,
   provider: 'firebase',
+  assignmentManagers: ['simonh'],
   firebase: {
     apiKey: 'AIzaSyAR4KlnQtZ8lcKsP99BuuzTkJv1xOnQJsY',
     authDomain: 'pleiades-inventory.firebaseapp.com',
