@@ -17,7 +17,7 @@
 body{min-height:100vh;margin:0;padding:34px;background:radial-gradient(circle at top left,var(--accent-soft),transparent 34%),linear-gradient(135deg,#071019,#111827 48%,#05070b);font-family:Avenir,Arial,sans-serif;color:var(--text)}
 button,input,select{font:inherit}
 .shell{max-width:1360px;margin:auto;padding-right:300px}
-.hero,.slot,.summary,.custom-panel{border:1px solid var(--border);border-radius:26px;background:var(--panel);box-shadow:0 18px 48px rgba(0,0,0,.22);backdrop-filter:blur(10px)}
+.hero,.slot,.summary,.custom-panel,.day-health{border:1px solid var(--border);border-radius:26px;background:var(--panel);box-shadow:0 18px 48px rgba(0,0,0,.22);backdrop-filter:blur(10px)}
 .hero{padding:30px;margin-bottom:24px}
 .eyebrow{margin:0 0 10px;color:var(--accent);font-size:13px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
 h1{margin:0;font-size:clamp(36px,5vw,64px);line-height:1}
@@ -30,6 +30,36 @@ p{color:var(--muted);line-height:1.5}
 .export-sort{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:12px;padding:7px 9px;background:rgba(255,255,255,.07);color:#d8fcff;font-weight:900}
 .export-sort span{font-size:11px;text-transform:uppercase;letter-spacing:.06em}
 .export-sort select{border:0;border-radius:8px;padding:4px 7px;background:#fff;color:#111;font-weight:800}
+.day-health{position:relative;overflow:hidden;margin-bottom:24px;padding:22px 24px;transition:border-color .2s,box-shadow .2s,background .2s}
+.day-health::before{content:"";position:absolute;inset:0 auto 0 0;width:8px;background:#22c55e}
+.day-health.yellow::before{background:#facc15}.day-health.orange::before{background:#fb923c}.day-health.red::before{background:#ef4444}
+.day-health.yellow{border-color:rgba(250,204,21,.45);box-shadow:0 18px 48px rgba(250,204,21,.08)}
+.day-health.orange{border-color:rgba(251,146,60,.5);box-shadow:0 18px 48px rgba(251,146,60,.1)}
+.day-health.red{border-color:rgba(239,68,68,.58);box-shadow:0 18px 48px rgba(239,68,68,.14)}
+.health-overview{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:center}
+.traffic-lights{display:grid;grid-template-columns:repeat(4,52px);gap:9px;align-items:start}
+.traffic-light{display:grid;justify-items:center;gap:6px;color:var(--muted);font-size:10px;font-weight:950;text-transform:uppercase;letter-spacing:.05em}
+.traffic-light::before{content:"";width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.12);box-shadow:inset 0 0 12px rgba(0,0,0,.35)}
+.traffic-light[data-health-light=green]::before{background:rgba(34,197,94,.18)}
+.traffic-light[data-health-light=yellow]::before{background:rgba(250,204,21,.18)}
+.traffic-light[data-health-light=orange]::before{background:rgba(251,146,60,.18)}
+.traffic-light[data-health-light=red]::before{background:rgba(239,68,68,.18)}
+.traffic-light.active[data-health-light=green]::before{background:#22c55e;box-shadow:0 0 24px rgba(34,197,94,.9)}
+.traffic-light.active[data-health-light=yellow]::before{background:#facc15;box-shadow:0 0 24px rgba(250,204,21,.9)}
+.traffic-light.active[data-health-light=orange]::before{background:#fb923c;box-shadow:0 0 24px rgba(251,146,60,.9)}
+.traffic-light.active[data-health-light=red]::before{background:#ef4444;box-shadow:0 0 26px rgba(239,68,68,.95)}
+.health-copy .eyebrow{margin-bottom:6px}.health-copy h2{margin:0;font-size:clamp(24px,3vw,38px)}.health-copy p{margin:7px 0 0}
+.health-counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:18px}
+.health-count{border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:11px 13px;background:rgba(255,255,255,.045)}
+.health-count span{display:block;color:var(--muted);font-size:10px;font-weight:950;text-transform:uppercase}.health-count strong{display:block;margin-top:3px;font-size:25px}
+.health-count.green strong{color:#86efac}.health-count.yellow strong{color:#fde047}.health-count.orange strong{color:#fdba74}.health-count.red strong{color:#fca5a5}
+.health-interventions{display:flex;align-items:flex-start;gap:12px;margin-top:15px;padding-top:15px;border-top:1px solid rgba(255,255,255,.09)}
+.health-interventions>strong{min-width:115px}.health-interventions>span,.health-interventions small{color:var(--muted)}
+.health-alert-list{display:flex;flex-wrap:wrap;gap:7px;flex:1}
+.health-alert{border-radius:999px;padding:7px 10px;font-size:12px;font-weight:850;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1)}
+.health-alert.yellow{color:#fef08a;border-color:rgba(250,204,21,.45);background:rgba(250,204,21,.1)}
+.health-alert.orange{color:#fed7aa;border-color:rgba(251,146,60,.48);background:rgba(251,146,60,.11)}
+.health-alert.red{color:#fecaca;border-color:rgba(239,68,68,.55);background:rgba(239,68,68,.13)}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px}
 .summary{position:sticky;top:20px;padding:20px;height:max-content}
 .summary-row{display:grid;grid-template-columns:125px 1fr;gap:10px;padding:12px 0;border-top:1px solid rgba(255,255,255,.08)}
@@ -88,7 +118,7 @@ body.compact .code{padding:8px}
 .custom-code{padding:8px;border-radius:10px;background:rgba(255,255,255,.05)}
 .custom-code small{color:var(--muted)}
 @media(max-width:1050px){body{padding:22px}.shell{padding-right:0}.layout{grid-template-columns:1fr}.summary{position:static}}
-@media(max-width:760px){.slot-head,.brand-row{display:block}.minute{margin-top:12px;text-align:left}.brand-head{align-items:center}.code-order{grid-template-columns:1fr!important}.custom-grid,.custom-code-list{grid-template-columns:1fr}.export-sort{width:100%;justify-content:space-between}}
+@media(max-width:760px){.slot-head,.brand-row{display:block}.minute{margin-top:12px;text-align:left}.brand-head{align-items:center}.code-order{grid-template-columns:1fr!important}.custom-grid,.custom-code-list{grid-template-columns:1fr}.export-sort{width:100%;justify-content:space-between}.health-overview{grid-template-columns:1fr}.traffic-lights{grid-template-columns:repeat(4,minmax(54px,1fr))}.health-counts{grid-template-columns:repeat(2,minmax(0,1fr))}.health-interventions{display:block}.health-interventions>strong{display:block;margin-bottom:9px}}
 </style>
 </head>
 <body data-requires-access="eagersinventory">
@@ -106,6 +136,28 @@ body.compact .code{padding:8px}
 <a class="btn" href="../Inventory.html">← Inventory Knowledge Centre</a>
 </div>
 </header>
+<section class="day-health green" id="dayHealth" aria-live="polite" aria-atomic="true">
+<div class="health-overview">
+<div class="traffic-lights" aria-label="Daily order warning level">
+<span class="traffic-light active" data-health-light="green">Green</span>
+<span class="traffic-light" data-health-light="yellow">Yellow</span>
+<span class="traffic-light" data-health-light="orange">Orange</span>
+<span class="traffic-light" data-health-light="red">Red</span>
+</div>
+<div class="health-copy">
+<p class="eyebrow" id="dayHealthScope">Daily ordering status</p>
+<h2 id="dayHealthTitle">Checking today's orders…</h2>
+<p id="dayHealthMessage">Live warning status will appear here.</p>
+</div>
+</div>
+<div class="health-counts">
+<div class="health-count green"><span>On track</span><strong id="healthGreenCount">0</strong></div>
+<div class="health-count yellow"><span>Due within 5 min</span><strong id="healthYellowCount">0</strong></div>
+<div class="health-count orange"><span>Submitted late</span><strong id="healthOrangeCount">0</strong></div>
+<div class="health-count red"><span>Missed / outstanding</span><strong id="healthRedCount">0</strong></div>
+</div>
+<div class="health-interventions" id="dayHealthInterventions"><strong>Checking status</strong><span>Loading live ordering data…</span></div>
+</section>
 <div class="layout">
 <main id="timeline"></main>
 <aside class="summary">
