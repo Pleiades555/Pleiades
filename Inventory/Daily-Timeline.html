@@ -27,6 +27,9 @@ p{color:var(--muted);line-height:1.5}
 .btn:hover,.expand-btn:hover{border-color:var(--accent)}
 .btn.primary,.procedure-link,.copy-order{background:var(--accent);color:#06111c;border:0}
 .btn:disabled{cursor:not-allowed;opacity:.48}
+.export-sort{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:12px;padding:7px 9px;background:rgba(255,255,255,.07);color:#d8fcff;font-weight:900}
+.export-sort span{font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.export-sort select{border:0;border-radius:8px;padding:4px 7px;background:#fff;color:#111;font-weight:800}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px}
 .summary{position:sticky;top:20px;padding:20px;height:max-content}
 .summary-row{display:grid;grid-template-columns:125px 1fr;gap:10px;padding:12px 0;border-top:1px solid rgba(255,255,255,.08)}
@@ -67,6 +70,7 @@ p{color:var(--muted);line-height:1.5}
 .note{margin-top:12px;color:#f5d6a2}
 .row-actions{margin-top:10px}
 .minute{text-align:right;font-weight:950}
+.minute.done{color:#bbf7d0}
 .minute.late{color:#fecaca}
 .minute.soon{color:#fde68a}
 .hidden{display:none!important}
@@ -84,7 +88,7 @@ body.compact .code{padding:8px}
 .custom-code{padding:8px;border-radius:10px;background:rgba(255,255,255,.05)}
 .custom-code small{color:var(--muted)}
 @media(max-width:1050px){body{padding:22px}.shell{padding-right:0}.layout{grid-template-columns:1fr}.summary{position:static}}
-@media(max-width:760px){.slot-head,.brand-row{display:block}.minute{margin-top:12px;text-align:left}.brand-head{align-items:center}.code-order{grid-template-columns:1fr!important}.custom-grid,.custom-code-list{grid-template-columns:1fr}}
+@media(max-width:760px){.slot-head,.brand-row{display:block}.minute{margin-top:12px;text-align:left}.brand-head{align-items:center}.code-order{grid-template-columns:1fr!important}.custom-grid,.custom-code-list{grid-template-columns:1fr}.export-sort{width:100%;justify-content:space-between}}
 </style>
 </head>
 <body data-requires-access="eagersinventory">
@@ -97,7 +101,8 @@ body.compact .code{padding:8px}
 <button class="btn primary" id="resetButton" type="button">Reset today</button>
 <button class="btn" id="doneToggle" type="button">Hide completed</button>
 <button class="btn" id="customizeButton" type="button">Customize my view</button>
-<button class="btn hidden" id="exportButton" type="button">Export daily CSV</button>
+<label class="export-sort hidden" id="exportSortWrap"><span>Sort CSV by</span><select id="exportSort"><option value="time">Cut-off time</option><option value="user">Assigned user</option><option value="brand">Brand</option><option value="status">Status</option><option value="code">Order code</option></select></label>
+<button class="btn hidden" id="exportButton" type="button">Export sorted CSV</button>
 <a class="btn" href="../Inventory.html">← Inventory Knowledge Centre</a>
 </div>
 </header>
