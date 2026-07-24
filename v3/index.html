@@ -5,21 +5,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pleiades Vehicle Intelligence</title>
 <link rel="stylesheet" href="../assets/auth.css">
-<link rel="stylesheet" href="./assets/v3.css?v=3.8.0">
-<link rel="stylesheet" href="./assets/vin-navigation.css?v=1.0.0">
+<link rel="stylesheet" href="./assets/v3.css?v=3.9.0">
 <script defer src="../assets/auth.js"></script>
 <script defer src="./assets/live-vin.js?v=5.0.0"></script>
-<script defer src="./assets/v3.js?v=3.7.0"></script>
+<script defer src="./assets/v3.js?v=3.9.0"></script>
 <script defer src="./assets/vin-entry.js?v=1.0.0"></script>
 </head>
 <body data-requires-access="site-basic">
 <div class="app" data-auth-content>
   <aside class="sidebar">
-    <div class="logo">PLEIADES <span>V3.8</span></div>
+    <div class="logo">PLEIADES <span>V3.9</span></div>
     <nav>
       <button type="button" data-view="dashboard" class="active">Dashboard</button>
       <button type="button" data-view="vin">Decode a VIN</button>
-      <a class="vin-finder-nav" href="./vin-intelligence.html">Find an EPC VIN</a>
+      <a class="vin-finder-nav" href="./vin-intelligence.html">Find VIN / EPC Reference</a>
       <button type="button" data-view="search">Global Search</button>
       <button type="button" data-view="accessories">Accessories</button>
       <button type="button" data-view="fluids">Fluids</button>
@@ -33,26 +32,26 @@
   <main>
     <header>
       <div><p class="eyebrow">Australian dealer knowledge platform</p><h1 id="pageTitle">Dashboard</h1></div>
-      <div class="version">Version 3.8.0 · VIN Intelligence Navigation</div>
+      <div class="version">Version 3.9.0 · Restored VIN &amp; Special-Identifier Register</div>
     </header>
 
     <section id="dashboard" class="view active">
       <div class="hero">
         <p class="eyebrow">Australian market · evidence first</p>
         <h2>One VIN. Every Australian make. No invented answers.</h2>
-        <p>Progressive VIN routing, reviewed vehicle profiles, manufacturer-family warnings, exact research links, accessories, fluids and technical resources. Unknown data stays unknown.</p>
-        <div class="quick"><input id="quickSearch" type="text" aria-label="Quick search" placeholder="VIN, make, WMI, part number, engine, transmission, fluid, TSB or procedure"><button id="quickGo" type="button">Search</button></div>
+        <p>Progressive VIN routing, reviewed vehicle profiles, exact factory VINs, surrogate VINs, chassis numbers, manufacturer-family warnings and connected technical resources. Unknown data stays unknown.</p>
+        <div class="quick"><input id="quickSearch" type="text" aria-label="Quick search" placeholder="VIN, chassis number, edition, make, model code, engine, transmission, fluid, TSB or procedure"><button id="quickGo" type="button">Search</button></div>
         <div class="hero-actions">
           <button type="button" data-view="vin">Decode a VIN</button>
-          <a href="./vin-intelligence.html">Find a known VIN for EPC</a>
+          <a href="./vin-intelligence.html">Find a known VIN or chassis reference</a>
         </div>
       </div>
       <div id="coverageCards" class="cards"></div>
       <div class="panel vin-finder-callout">
         <div>
           <p class="eyebrow">EPC and parts catalogue support</p>
-          <h2>Need a known Australian VIN?</h2>
-          <p class="muted">Search saved full VINs by year, model, powertrain, body or model code such as L663, L405, L460, L461 and L551.</p>
+          <h2>Need a known VIN or special-edition chassis number?</h2>
+          <p class="muted">Search saved references by year, model, edition, production number, body or model code such as L663, GDB, GC8, SH9 and BL.</p>
         </div>
         <a class="action" href="./vin-intelligence.html">Open VIN / EPC Reference Finder</a>
       </div>
@@ -62,25 +61,25 @@
     <section id="vin" class="view">
       <div class="panel vin-finder-callout compact">
         <div>
-          <p class="eyebrow">Reference VIN lookup</p>
-          <h2>Looking for an EPC example VIN?</h2>
-          <p class="muted">Use the dedicated finder to search by model year, powertrain or model code, then send the selected VIN back here for decoding.</p>
+          <p class="eyebrow">Reference lookup</p>
+          <h2>Looking for an EPC example VIN or chassis number?</h2>
+          <p class="muted">Use the dedicated finder to search model year, edition, production number, powertrain or model code, then send the selected reference back here for decoding.</p>
         </div>
-        <a class="action" href="./vin-intelligence.html">Find an EPC VIN</a>
+        <a class="action" href="./vin-intelligence.html">Find VIN / EPC Reference</a>
       </div>
 
       <div class="panel vin-entry-panel">
         <div class="section-line">
           <div><p class="eyebrow">Progressive local analysis</p><h2>VIN Intelligence</h2></div>
-          <span class="badge">VINs and hosted chassis numbers · excludes I, O and Q</span>
+          <span class="badge">Factory VINs, AU/NZ surrogate VINs and hosted chassis numbers · excludes I, O and Q</span>
         </div>
         <div class="quick vin-quick">
-          <input id="vinInput" type="text" maxlength="17" autocomplete="off" spellcheck="false" aria-label="VIN, surrogate VIN or chassis number" placeholder="VIN, 6ZZ surrogate VIN or hosted chassis number">
+          <input id="vinInput" type="text" maxlength="17" autocomplete="off" spellcheck="false" aria-label="VIN, surrogate VIN or chassis number" placeholder="VIN, 6ZZ/7AT surrogate VIN or hosted chassis number">
           <button id="vinGo" type="button">Decode</button>
           <button id="copyVin" class="secondary-action" type="button">Copy</button>
           <button id="vinClear" class="secondary-action" type="button">Clear</button>
         </div>
-        <p id="vinStatus" class="muted" aria-live="polite">Enter a VIN, Australian 6ZZ surrogate VIN or hosted chassis number.</p>
+        <p id="vinStatus" class="muted" aria-live="polite">Enter a VIN, Australian or New Zealand surrogate VIN, or hosted chassis number.</p>
         <div class="privacy-note"><strong>Private by default:</strong> local prefix and structural analysis does not send the VIN anywhere. The VIN is shared only if you click an external research link.</div>
         <div id="vinLiveResult" class="results"></div>
         <div id="vehicleResult"></div>
@@ -101,7 +100,7 @@
 
       <div class="panel source-register">
         <h2>Evidence and source policy</h2>
-        <p class="muted">Manufacturer/WMI routing, Australian-market confirmation and exact vehicle configuration are separate evidence levels.</p>
+        <p class="muted">Manufacturer/WMI routing, Australian-market confirmation, exact vehicle identity and administrative identifier mappings are separate evidence levels.</p>
         <div id="vinSources" class="source-grid"></div>
       </div>
     </section>
@@ -109,7 +108,7 @@
     <section id="search" class="view">
       <div class="panel">
         <h2>Global search</h2>
-        <div class="quick"><input id="globalInput" type="text" aria-label="Global search" placeholder="Search all makes, WMIs, vehicles, engine codes and transmission families"><button id="globalGo" type="button">Search</button></div>
+        <div class="quick"><input id="globalInput" type="text" aria-label="Global search" placeholder="Search makes, WMIs, VINs, chassis numbers, editions, engine codes and transmission families"><button id="globalGo" type="button">Search</button></div>
         <div id="searchFilters" class="filters"></div>
         <div id="searchResults" class="results"></div>
       </div>
