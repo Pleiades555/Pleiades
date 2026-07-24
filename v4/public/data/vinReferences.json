@@ -1,0 +1,354 @@
+[
+  {
+    "id": "vinref:salga2ae4ka517874",
+    "vin": "SALGA2AE4KA517874",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Range Rover",
+    "modelCode": "L405",
+    "body": "5-door SUV",
+    "modelYear": 2019,
+    "advertisedYear": 2018,
+    "powertrain": "V8SC",
+    "variant": "Autobiography",
+    "engineFamily": "AJ133 5.0 supercharged V8",
+    "transmission": "8-speed automatic",
+    "drivetrain": "4WD",
+    "aliases": [
+      "MY19 Range Rover V8SC",
+      "L405 Autobiography",
+      "5.0 supercharged"
+    ],
+    "confidence": "confirmed-exact-public-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "source": {
+      "type": "Australian vehicle listing",
+      "url": "https://www.carsales.com.au/cars/details/2018-land-rover-range-rover-v8sc-autobiography-auto-4x4-my19/OAG-AD-25951988/",
+      "vinCapture": "user-transcribed from publicly visible listing details"
+    }
+  },
+  {
+    "id": "vinref:salga2ee6ea189372",
+    "vin": "SALGA2EE6EA189372",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Range Rover",
+    "modelCode": "L405",
+    "body": "5-door SUV",
+    "modelYear": 2014,
+    "advertisedYear": 2014,
+    "powertrain": "V8SC",
+    "variant": "Autobiography",
+    "engineFamily": "AJ133 5.0 supercharged V8",
+    "transmission": "8-speed automatic",
+    "drivetrain": "4WD",
+    "aliases": [
+      "2014 Range Rover V8SC",
+      "L405 Autobiography",
+      "5.0 supercharged"
+    ],
+    "confidence": "confirmed-exact-public-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "source": {
+      "type": "Australian vehicle listing",
+      "url": "https://www.drive.com.au/cars-for-sale/car/970186986/",
+      "vinCapture": "user-transcribed from publicly visible listing details"
+    }
+  },
+  {
+    "id": "vinref:salka9a90ra235568",
+    "vin": "SALKA9A90RA235568",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Range Rover",
+    "modelCode": "L460",
+    "body": "SWB 5-door SUV",
+    "modelYear": 2024,
+    "advertisedYear": 2024,
+    "powertrain": "P530",
+    "variant": "Autobiography",
+    "engineFamily": "NC10 4.4 twin-turbo V8",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2024 Range Rover P530",
+      "L460 Autobiography",
+      "P530 SWB"
+    ],
+    "confidence": "confirmed-exact-public-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "source": {
+      "type": "Australian vehicle listing",
+      "url": "https://www.drive.com.au/cars-for-sale/car/970038179/",
+      "vinCapture": "user-transcribed from publicly visible listing details"
+    }
+  },
+  {
+    "id": "vinref:salea7a97s2475198",
+    "vin": "SALEA7A97S2475198",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Defender",
+    "modelCode": "L663",
+    "body": "110",
+    "modelYear": 2025,
+    "advertisedYear": 2025,
+    "powertrain": "P635",
+    "variant": "OCTA",
+    "engineFamily": "S68 4.4 twin-turbo V8 MHEV",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2025 Defender OCTA",
+      "Defender 110 P635",
+      "L663 OCTA"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "L18252324",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/demo-charente-grey-2025-land-rover-defender-l18252324",
+      "vinCapture": "user-transcribed from publicly visible listing details"
+    }
+  },
+  {
+    "id": "vinref:salea7aw8p2115516",
+    "vin": "SALEA7AW8P2115516",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Defender",
+    "modelCode": "L663",
+    "body": "110",
+    "modelYear": 2023,
+    "advertisedYear": 2022,
+    "powertrain": "D300",
+    "variant": "SE",
+    "engineFamily": "Ingenium inline-six diesel",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2023 Defender D300",
+      "Defender 110 D300",
+      "L663 D300",
+      "MY23 Defender"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "138034",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/used-green-2022-land-rover-defender-138034",
+      "vinCapture": "publicly visible dealer Car Details"
+    }
+  },
+  {
+    "id": "vinref:salea7ay8s2385033",
+    "vin": "SALEA7AY8S2385033",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Defender",
+    "modelCode": "L663",
+    "body": "110",
+    "modelYear": 2025,
+    "advertisedYear": 2024,
+    "powertrain": "P400e",
+    "variant": "X-Dynamic SE",
+    "engineFamily": "Ingenium 2.0 petrol PHEV",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2025 Defender P400e",
+      "Defender 110 P400e",
+      "L663 P400e",
+      "MY25 Defender PHEV"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "L18010553",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/demo-fuji-white-2024-land-rover-defender-l18010553",
+      "vinCapture": "publicly visible dealer Car Details"
+    }
+  },
+  {
+    "id": "vinref:salea7aw7t2503816",
+    "vin": "SALEA7AW7T2503816",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Defender",
+    "modelCode": "L663",
+    "body": "110",
+    "modelYear": 2026,
+    "advertisedYear": 2026,
+    "powertrain": "D350",
+    "variant": "X-Dynamic SE",
+    "engineFamily": "Ingenium inline-six diesel",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2026 Defender D350",
+      "Defender 110 D350",
+      "L663 D350",
+      "MY26 Defender"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "L18368162",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/demo-gondwana-stone-2026-land-rover-defender-l18368162",
+      "vinCapture": "publicly visible dealer Car Details"
+    }
+  },
+  {
+    "id": "vinref:sal1a2a9xsa491614",
+    "vin": "SAL1A2A9XSA491614",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Range Rover Sport",
+    "modelCode": "L461",
+    "body": "5-door SUV",
+    "modelYear": 2025,
+    "advertisedYear": 2025,
+    "powertrain": "P530",
+    "variant": "Autobiography",
+    "engineFamily": "NC10 4.4 twin-turbo V8",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2025 Range Rover Sport P530",
+      "L461 P530",
+      "Range Rover Sport Autobiography"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "L18272137",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/demo-ostuni-pearl-white-2025-land-rover-range-rover-sport-l18272137",
+      "vinCapture": "publicly visible dealer Car Details"
+    }
+  },
+  {
+    "id": "vinref:salea7ay6s2430180",
+    "vin": "SALEA7AY6S2430180",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Defender",
+    "modelCode": "L663",
+    "body": "110",
+    "modelYear": 2025,
+    "advertisedYear": 2025,
+    "powertrain": "P400e",
+    "variant": "X-Dynamic SE",
+    "engineFamily": "Ingenium 2.0 petrol PHEV",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2025 Defender P400e",
+      "Defender 110 P400e",
+      "L663 P400e"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "L18160171",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/demo-santorini-black-2025-land-rover-defender-l18160171",
+      "vinCapture": "user-transcribed from publicly visible listing details"
+    }
+  },
+  {
+    "id": "vinref:salea7aw5t2515950",
+    "vin": "SALEA7AW5T2515950",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Defender",
+    "modelCode": "L663",
+    "body": "110",
+    "modelYear": 2026,
+    "advertisedYear": 2025,
+    "powertrain": "D350",
+    "variant": "X-Dynamic SE",
+    "engineFamily": "Ingenium inline-six diesel",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2026 Defender D350",
+      "2025 Defender D350",
+      "Defender 110 D350",
+      "L663 D350"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "L18436885",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/demo-borasco-grey-2025-land-rover-defender-l18436885",
+      "vinCapture": "user-transcribed from publicly visible listing details"
+    }
+  },
+  {
+    "id": "vinref:salza2ax9th314739",
+    "vin": "SALZA2AX9TH314739",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Range Rover Evoque",
+    "modelCode": "L551",
+    "body": "5-door SUV",
+    "modelYear": 2026,
+    "advertisedYear": 2025,
+    "powertrain": "P250",
+    "variant": "Dynamic SE",
+    "engineFamily": "Ingenium 2.0 turbo petrol",
+    "transmission": "9-speed automatic",
+    "drivetrain": "AWD",
+    "aliases": [
+      "2026 Evoque P250",
+      "2025 Evoque P250",
+      "L551 P250",
+      "Range Rover Evoque Dynamic SE"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "L18404439",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/demo-eiger-grey-2025-land-rover-range-rover-evoque-l18404439",
+      "vinCapture": "user-transcribed from publicly visible listing details"
+    }
+  },
+  {
+    "id": "vinref:salea7aw5t2513776",
+    "vin": "SALEA7AW5T2513776",
+    "market": "Australia",
+    "brand": "Land Rover",
+    "model": "Defender",
+    "modelCode": "L663",
+    "body": "110",
+    "modelYear": 2026,
+    "advertisedYear": 2025,
+    "powertrain": "D350",
+    "variant": "unresolved",
+    "engineFamily": "Ingenium inline-six diesel",
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD dual-range",
+    "aliases": [
+      "2026 Defender D350",
+      "2025 Defender D350",
+      "Defender 110 D350",
+      "L663 D350"
+    ],
+    "confidence": "confirmed-exact-public-dealer-listing",
+    "epcUsage": "Reference VIN for EPC lookup only; confirm part applicability against the target vehicle.",
+    "stockNumber": "L18402515",
+    "review": "Exact grade should remain unresolved until separately confirmed.",
+    "source": {
+      "type": "Australian Land Rover dealer listing",
+      "url": "https://www.frizellesunshine.com.au/cars/demo-carpathian-grey-2025-land-rover-defender-l18402515",
+      "vinCapture": "user-transcribed from publicly visible listing details"
+    }
+  }
+]

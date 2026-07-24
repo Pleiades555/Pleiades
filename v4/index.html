@@ -1,1 +1,62 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pleiades V4 Preview</title><link rel="stylesheet" href="public/styles.css"></head><body><header><a class="logo" href="./">Pleiades V4</a><nav><a data-section="vehicles">Vehicles</a><a data-section="engines">Engines</a><a data-section="transmissions">Transmissions</a><a data-section="differentials">Differentials</a><a data-section="fluids">Fluids</a><a data-section="parts">Parts</a><a data-section="accessories">Accessories</a><a data-section="tsbs">TSBs</a><a data-section="reviewItems">Review Queue</a><a href="admin.html">Administration</a></nav></header><main><section class="hero"><h1>Automotive knowledge base preview</h1><label>Global search<input id="search" placeholder="EZ30, TY856WVCAA, 276DT, rim, R160…"></label><div id="searchResults"></div><form id="vinForm"><label>VIN Decoder<input id="vin" placeholder="Enter 17-character VIN"></label><button>Decode VIN</button></form><div id="vinResult"></div></section><section id="panel"></section></main><script src="public/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pleiades V4 Preview</title>
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="./">Pleiades V4</a>
+    <nav>
+      <a data-section="vehicles">Vehicles</a>
+      <a data-section="vinReferences">VIN References</a>
+      <a data-section="engines">Engines</a>
+      <a data-section="transmissions">Transmissions</a>
+      <a data-section="differentials">Differentials</a>
+      <a data-section="fluids">Fluids</a>
+      <a data-section="parts">Parts</a>
+      <a data-section="accessories">Accessories</a>
+      <a data-section="tsbs">TSBs</a>
+      <a data-section="reviewItems">Review Queue</a>
+      <a href="admin.html">Administration</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Automotive knowledge base preview</h1>
+
+      <label>
+        Global search
+        <input id="search" placeholder="EZ30, TY856WVCAA, 2023 Defender D300, L663…">
+      </label>
+      <div id="searchResults"></div>
+
+      <section class="lookup-block" aria-labelledby="epcLookupHeading">
+        <h2 id="epcLookupHeading">VIN / EPC reference finder</h2>
+        <p>Search progressively by model year, model, powertrain, model code, stock number or full VIN. Example: <code>2023 Defender D300</code> or <code>L663</code>.</p>
+        <label>
+          Vehicle reference search
+          <input id="vehicleLookup" autocomplete="off" placeholder="2023 Defender D300 or L663">
+        </label>
+        <div id="vehicleLookupResults" aria-live="polite"></div>
+      </section>
+
+      <form id="vinForm">
+        <label>
+          VIN Decoder
+          <input id="vin" placeholder="Enter 17-character VIN">
+        </label>
+        <button>Decode VIN</button>
+      </form>
+      <div id="vinResult"></div>
+    </section>
+
+    <section id="panel"></section>
+  </main>
+
+  <script src="public/app.js"></script>
+</body>
+</html>
