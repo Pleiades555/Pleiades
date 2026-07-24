@@ -1,10 +1,11 @@
 {
-  "version": "3.7.0",
-  "releaseName": "Pleiades Vehicle Intelligence",
+  "version": "3.8.0",
+  "releaseName": "Pleiades VIN Intelligence Navigation",
   "market": "Australia",
   "inventorySeparate": true,
   "modules": [
     {"name":"Vehicle Intelligence Hub","status":"live","notes":"Shared entry point for progressive VIN analysis, 90 Australian makes, specifications, accessories, fluids, service and technical resources."},
+    {"name":"VIN / EPC Reference Finder","status":"live","notes":"Dedicated progressive finder for saved public Australian full VINs. Search by year, model, powertrain, model code, stock number, partial VIN or full VIN, then copy the VIN or send it to the main decoder."},
     {"name":"Australian Make Directory","status":"live","notes":"Current, legacy and major commercial makes are searchable by name, alias and selected WMI routes. Missing WMI evidence remains manual-research rather than guessed."},
     {"name":"VIN Structure Analysis","status":"live","notes":"Local region, WMI, descriptor, repeating year-code candidates, plant, serial and check-digit analysis with non-North-American caveats."},
     {"name":"Confirmed Identifier Register","status":"live","notes":"Reviewed factory VINs, Australian 6ZZ surrogate VIN mappings and Japanese chassis numbers are searchable without inferring unverified vehicle details."},
