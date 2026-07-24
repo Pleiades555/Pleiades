@@ -1,20 +1,21 @@
 {
-  "version": "3.8.0",
-  "releaseName": "Pleiades VIN Intelligence Navigation",
+  "version": "3.9.0",
+  "releaseName": "Pleiades Restored VIN and Special-Identifier Register",
   "market": "Australia",
   "inventorySeparate": true,
   "modules": [
-    {"name":"Vehicle Intelligence Hub","status":"live","notes":"Shared entry point for progressive VIN analysis, 90 Australian makes, specifications, accessories, fluids, service and technical resources."},
-    {"name":"VIN / EPC Reference Finder","status":"live","notes":"Dedicated progressive finder for saved public Australian full VINs. Search by year, model, powertrain, model code, stock number, partial VIN or full VIN, then copy the VIN or send it to the main decoder."},
+    {"name":"Vehicle Intelligence Hub","status":"live","notes":"Shared entry point for progressive VIN analysis, exact factory VINs, surrogate VINs, chassis numbers, 90 Australian makes, specifications and connected technical resources."},
+    {"name":"VIN / EPC Reference Finder","status":"live","notes":"Dedicated progressive finder for public Australian VINs, confirmed imported factory VINs, Australian and New Zealand surrogate VINs and Japanese chassis numbers. Search by year, model, edition, production number, powertrain, model code, partial identifier or full identifier."},
+    {"name":"Subaru Special-Identifier Register","status":"live","notes":"Restores 14 previously supplied Subaru factory VINs and 22 surrogate/chassis identifiers covering Forester, Blitzen, RB320, P1, CS400, Peter Solberg Edition, GB270, Vortex, S201-S206, S401, 22B and Tommy Kaira research records."},
     {"name":"Australian Make Directory","status":"live","notes":"Current, legacy and major commercial makes are searchable by name, alias and selected WMI routes. Missing WMI evidence remains manual-research rather than guessed."},
     {"name":"VIN Structure Analysis","status":"live","notes":"Local region, WMI, descriptor, repeating year-code candidates, plant, serial and check-digit analysis with non-North-American caveats."},
-    {"name":"Confirmed Identifier Register","status":"live","notes":"Reviewed factory VINs, Australian 6ZZ surrogate VIN mappings and Japanese chassis numbers are searchable without inferring unverified vehicle details."},
+    {"name":"Confirmed Identifier Register","status":"live","notes":"Reviewed factory VINs, Australian 6ZZ surrogate VIN mappings, New Zealand 7AT candidates and Japanese chassis numbers are searchable without inferring unverified powertrain or parts-fitment details."},
     {"name":"External VIN Research","status":"live","notes":"User-initiated in-page official vPIC decoding plus links to Australian Vehicle Recalls and exact Australian web research. VINs are not sent automatically."},
     {"name":"Honda VIN Decoder","status":"live","notes":"Confirmed Australian-market Civic VIN fingerprints with manual fallback and no-guess behaviour."},
     {"name":"Honda Accessory Database","status":"live","notes":"Website-hosted JSON data with importer and rebuild workflow; legacy Excel pages retained as archive sources."},
     {"name":"Vehicle Specifications","status":"partial","notes":"Engine, power, torque, transmission and drivetrain supported; exact kerb weight, kW/tonne and 0-100 remain unavailable where not verified."},
     {"name":"Fluids Compatibility","status":"live","notes":"Existing structured cross-brand fluids hub retained."},
-    {"name":"Brand Portals","status":"live","notes":"Existing specialist portals remain available while structured migration continues."},
+    {"name":"Brand Portals","status":"live","notes":"Existing specialist portals remain available while their content is converted into structured records."},
     {"name":"Australian VIN Research","status":"active-research","notes":"Australian Government recall evidence and official manufacturer/WMI evidence are kept separate; uncertain model and configuration records remain manual-review."},
     {"name":"Inventory & Ordering","status":"separate","notes":"Permission-gated and not merged into Vehicle Intelligence."}
   ]
