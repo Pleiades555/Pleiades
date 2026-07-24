@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIN Intelligence &amp; EPC Reference Finder | Pleiades</title>
+<link rel="stylesheet" href="../assets/auth.css">
+<link rel="stylesheet" href="./assets/vin-intelligence.css?v=1.0.0">
+<script defer src="../assets/auth.js"></script>
+<script defer src="./assets/vin-intelligence.js?v=1.0.0"></script>
+</head>
+<body data-requires-access="site-basic">
+<div class="shell" data-auth-content>
+  <header class="topbar">
+    <a class="brand" href="./index.html">PLEIADES <span>VIN INTELLIGENCE</span></a>
+    <nav aria-label="VIN intelligence navigation">
+      <a href="./index.html#vin">Decode a VIN</a>
+      <a class="active" href="./vin-intelligence.html">Find an EPC VIN</a>
+      <a href="./index.html#search">Global Search</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Australian market · evidence first</p>
+      <h1>Find a known VIN for EPC lookup</h1>
+      <p>Search publicly confirmed Australian VIN examples by year, vehicle, powertrain, model code, stock number, partial VIN or full VIN. Results update as you type.</p>
+      <div class="search-row">
+        <label class="search-box">
+          <span>Vehicle or VIN search</span>
+          <input id="vinReferenceSearch" type="search" autocomplete="off" spellcheck="false" placeholder="Try 2023 Defender D300, L663, P400e or SAL…">
+        </label>
+        <button id="clearSearch" type="button">Clear</button>
+      </div>
+      <div id="exampleQueries" class="query-chips" aria-label="Example VIN searches"></div>
+      <p id="searchStatus" class="status" aria-live="polite">Loading confirmed VIN references…</p>
+    </section>
+
+    <section class="summary-grid" aria-label="VIN reference summary">
+      <article><strong id="referenceCount">0</strong><span>saved full VINs</span></article>
+      <article><strong id="modelCount">0</strong><span>vehicle families</span></article>
+      <article><strong id="codeCount">0</strong><span>model codes</span></article>
+      <article><strong>AU</strong><span>Australian evidence focus</span></article>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Fast navigation</p>
+          <h2>Browse by model code</h2>
+        </div>
+        <a class="secondary-link" href="./index.html#vin">Open VIN decoder</a>
+      </div>
+      <div id="modelCodeBrowser" class="code-browser"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Progressive results</p>
+          <h2>VIN / EPC references</h2>
+        </div>
+        <span class="warning-badge">Reference VINs are not universal fitment guarantees</span>
+      </div>
+      <div id="vinReferenceResults" class="results"></div>
+    </section>
+
+    <section class="policy">
+      <h2>How to use these VINs</h2>
+      <p>Use a matching reference VIN to reach the correct EPC vehicle family, then verify the target vehicle’s build date, model code, powertrain, body and fitted options before ordering parts. Unknown or unresolved grades remain clearly marked.</p>
+      <p>Only VINs already made public through Australian dealer, auction, vehicle-listing or confirmed Pleiades evidence are shown. No owner or registration-holder personal information is stored.</p>
+    </section>
+  </main>
+</div>
+</body>
+</html>
