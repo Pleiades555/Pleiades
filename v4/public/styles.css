@@ -1,1 +1,218 @@
-:root{color-scheme:light dark;--bg:#0d1117;--fg:#e6edf3;--card:#161b22;--line:#30363d;--accent:#58a6ff}body{margin:0;font:16px/1.5 system-ui,Segoe UI,sans-serif;background:var(--bg);color:var(--fg)}header{position:sticky;top:0;display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:1rem;background:#010409;border-bottom:1px solid var(--line);z-index:1}.logo{font-weight:800;color:var(--fg);text-decoration:none}nav{display:flex;gap:.75rem;flex-wrap:wrap}nav a,a{color:var(--accent);cursor:pointer}main{max-width:1180px;margin:auto;padding:1rem}.hero{padding:2rem 0}input,textarea,button{font:inherit;border-radius:.6rem;border:1px solid var(--line);padding:.75rem;background:var(--card);color:var(--fg)}input{width:min(100%,42rem);display:block;margin:.4rem 0 1rem}button{cursor:pointer}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}.card{display:block;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1rem}.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;background:#29313a}.estimated,.manual-review{background:#5b3b00}.confirmed,.source-confirmed{background:#063}.error,.warning{color:#ffb4a9}.empty{opacity:.75}.result{display:block;width:100%;margin:.35rem 0}.result small{display:block;opacity:.7}@media(max-width:700px){header{display:block}nav{margin-top:1rem}main{padding:.75rem}}
+:root {
+  color-scheme: light dark;
+  --bg: #0d1117;
+  --fg: #e6edf3;
+  --card: #161b22;
+  --line: #30363d;
+  --accent: #58a6ff;
+  --muted: #8b949e;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.5 system-ui, Segoe UI, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #010409;
+  border-bottom: 1px solid var(--line);
+  z-index: 1;
+}
+
+.logo {
+  font-weight: 800;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+nav a,
+a {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+main {
+  max-width: 1180px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.hero {
+  padding: 2rem 0;
+}
+
+.lookup-block {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgba(22, 27, 34, .55);
+}
+
+.lookup-block h2 {
+  margin-top: 0;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  border-radius: .6rem;
+  border: 1px solid var(--line);
+  padding: .75rem;
+  background: var(--card);
+  color: var(--fg);
+}
+
+input {
+  width: min(100%, 42rem);
+  display: block;
+  margin: .4rem 0 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.grid,
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: block;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card dl {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, auto) 1fr;
+  gap: .25rem .75rem;
+}
+
+.card dt {
+  color: var(--muted);
+}
+
+.card dd {
+  margin: 0;
+}
+
+.vin-reference {
+  min-width: 0;
+}
+
+.vin-line {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  flex-wrap: wrap;
+  margin: .75rem 0 1rem;
+}
+
+.vin-line code {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  overflow-wrap: anywhere;
+}
+
+.copy-vin {
+  padding: .45rem .7rem;
+}
+
+.epc-note {
+  border-left: 3px solid var(--accent);
+  padding-left: .75rem;
+  color: var(--muted);
+}
+
+.source-link {
+  display: inline-block;
+  margin-top: .35rem;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: .15rem .55rem;
+  background: #29313a;
+}
+
+.estimated,
+.manual-review {
+  background: #5b3b00;
+}
+
+.confirmed,
+.source-confirmed,
+.confirmed-vin,
+.confirmed-exact-public-listing,
+.confirmed-exact-public-dealer-listing {
+  background: #063;
+}
+
+.error,
+.warning {
+  color: #ffb4a9;
+}
+
+.empty {
+  opacity: .75;
+}
+
+.result {
+  display: block;
+  width: 100%;
+  margin: .35rem 0;
+}
+
+.result small {
+  display: block;
+  opacity: .7;
+}
+
+@media (max-width: 700px) {
+  header {
+    display: block;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  main {
+    padding: .75rem;
+  }
+
+  .card dl {
+    grid-template-columns: 1fr;
+  }
+}
