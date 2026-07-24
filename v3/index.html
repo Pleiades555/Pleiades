@@ -5,18 +5,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pleiades Vehicle Intelligence</title>
 <link rel="stylesheet" href="../assets/auth.css">
-<link rel="stylesheet" href="./assets/v3.css">
+<link rel="stylesheet" href="./assets/v3.css?v=3.8.0">
 <script defer src="../assets/auth.js"></script>
 <script defer src="./assets/live-vin.js?v=5.0.0"></script>
 <script defer src="./assets/v3.js?v=3.7.0"></script>
+<script defer src="./assets/vin-entry.js?v=1.0.0"></script>
 </head>
 <body data-requires-access="site-basic">
 <div class="app" data-auth-content>
   <aside class="sidebar">
-    <div class="logo">PLEIADES <span>V3.7</span></div>
+    <div class="logo">PLEIADES <span>V3.8</span></div>
     <nav>
       <button type="button" data-view="dashboard" class="active">Dashboard</button>
-      <button type="button" data-view="vin">VIN Intelligence</button>
+      <button type="button" data-view="vin">Decode a VIN</button>
+      <a class="vin-finder-nav" href="./vin-intelligence.html">Find an EPC VIN</a>
       <button type="button" data-view="search">Global Search</button>
       <button type="button" data-view="accessories">Accessories</button>
       <button type="button" data-view="fluids">Fluids</button>
@@ -30,7 +32,7 @@
   <main>
     <header>
       <div><p class="eyebrow">Australian dealer knowledge platform</p><h1 id="pageTitle">Dashboard</h1></div>
-      <div class="version">Version 3.7.0 · Confirmed VIN &amp; Identifier Sync</div>
+      <div class="version">Version 3.8.0 · VIN Intelligence Navigation</div>
     </header>
 
     <section id="dashboard" class="view active">
@@ -39,12 +41,33 @@
         <h2>One VIN. Every Australian make. No invented answers.</h2>
         <p>Progressive VIN routing, reviewed vehicle profiles, manufacturer-family warnings, exact research links, accessories, fluids and technical resources. Unknown data stays unknown.</p>
         <div class="quick"><input id="quickSearch" type="text" aria-label="Quick search" placeholder="VIN, make, WMI, part number, engine, transmission, fluid, TSB or procedure"><button id="quickGo" type="button">Search</button></div>
+        <div class="hero-actions">
+          <button type="button" data-view="vin">Decode a VIN</button>
+          <a href="./vin-intelligence.html">Find a known VIN for EPC</a>
+        </div>
       </div>
       <div id="coverageCards" class="cards"></div>
+      <div class="panel vin-finder-callout">
+        <div>
+          <p class="eyebrow">EPC and parts catalogue support</p>
+          <h2>Need a known Australian VIN?</h2>
+          <p class="muted">Search saved full VINs by year, model, powertrain, body or model code such as L663, L405, L460, L461 and L551.</p>
+        </div>
+        <a class="action" href="./vin-intelligence.html">Open VIN / EPC Reference Finder</a>
+      </div>
       <div class="panel"><h2>Australian make coverage</h2><div id="brandCoverage" class="results"></div></div>
     </section>
 
     <section id="vin" class="view">
+      <div class="panel vin-finder-callout compact">
+        <div>
+          <p class="eyebrow">Reference VIN lookup</p>
+          <h2>Looking for an EPC example VIN?</h2>
+          <p class="muted">Use the dedicated finder to search by model year, powertrain or model code, then send the selected VIN back here for decoding.</p>
+        </div>
+        <a class="action" href="./vin-intelligence.html">Find an EPC VIN</a>
+      </div>
+
       <div class="panel vin-entry-panel">
         <div class="section-line">
           <div><p class="eyebrow">Progressive local analysis</p><h2>VIN Intelligence</h2></div>
