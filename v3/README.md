@@ -1,10 +1,22 @@
-# Pleiades Version 3.7
+# Pleiades Version 3.8
 
 Version 3 is a shared Australian-market vehicle knowledge application. It does not merge Inventory into the vehicle portal.
+
+## VIN intelligence access
+
+- Main application: `v3/index.html`
+- VIN decoder: open **Decode a VIN** in the V3 sidebar
+- VIN / EPC Reference Finder: `v3/vin-intelligence.html`
+- Direct repository entry point: `VIN Intelligence.html`
+- Canonical saved public VIN records: `v4/public/data/vinReferences.json`
+
+The VIN / EPC Reference Finder searches progressively by year, model, body, powertrain, model code, stock number, partial VIN or full VIN. A result can be copied or sent directly to the main VIN decoder.
 
 ## Live V3 components
 
 - Shared responsive application shell and navigation
+- Clearly separated **Decode a VIN** and **Find an EPC VIN** workflows
+- Progressive VIN / EPC reference search with model-code compatibility such as `L663`, `L405`, `L460`, `L461` and `L551`
 - VIN fingerprint matching with manual no-guess fallback
 - Exact lookup for reviewed factory VINs, Australian `6ZZ` surrogate VINs and hosted Japanese chassis numbers
 - Progressive VIN prefix trail, WMI candidates, region, repeating model-year code, plant, serial and check-digit analysis
@@ -34,10 +46,12 @@ Version 3 is a shared Australian-market vehicle knowledge application. It does n
 10. Shared group WMIs return multiple candidate marques rather than silently selecting the first match.
 11. VINs are not sent to external services automatically. External research is user initiated.
 12. Australian surrogate VINs and Japanese chassis numbers are stored as identifier mappings; they do not inherit model, engine, transmission or DCCD detail without separate evidence.
+13. EPC reference VINs are examples only. Final part applicability must be checked against the target vehicle, build date and fitted options.
 
 ## Core data packs
 
 - `data/vehicles.json` — VIN fingerprints, vehicle identity and specifications
+- `../v4/public/data/vinReferences.json` — full public Australian VIN examples for EPC/reference lookup
 - `data/identifiers.json` — confirmed administrative surrogate VIN and Japanese chassis-number mappings
 - `data/modules.json` — connected TSB, FSM, fluids and specialist modules
 - `data/source-queue.json` — public auction/dealer URLs awaiting extraction
@@ -57,11 +71,12 @@ Existing brand portals remain available while their content is converted into st
 
 ## Validation
 
-Run both checks before publishing VIN changes:
+Run these checks before publishing VIN changes:
 
 ```text
 python v3/tools/validate_v3_data.py
 node v3/tools/test_vin_workbench.js
+python v3/scripts/test_vin_intelligence.py
 ```
 
-The regression test protects the confirmed Honda, Subaru and Land Rover examples, Subaru surrogate/chassis mappings, shared-WMI handling, VIN cleaning, check-digit calculation and broad Australian make coverage.
+The regression tests protect the confirmed Honda, Subaru and Land Rover examples, Subaru surrogate/chassis mappings, shared-WMI handling, VIN cleaning, check-digit calculation, broad Australian make coverage and the progressive VIN / EPC reference finder.

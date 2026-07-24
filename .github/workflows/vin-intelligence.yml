@@ -1,0 +1,23 @@
+name: VIN intelligence validation
+
+on:
+  pull_request:
+    paths:
+      - 'v3/**'
+      - 'v4/public/data/vinReferences.json'
+      - '.github/workflows/vin-intelligence.yml'
+  push:
+    paths:
+      - 'v3/**'
+      - 'v4/public/data/vinReferences.json'
+      - '.github/workflows/vin-intelligence.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python3 v3/scripts/test_vin_intelligence.py
